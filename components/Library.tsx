@@ -84,8 +84,9 @@ export default function Library({ items }: { items: LibItem[] }) {
           const g = res ? list : list.filter((e) => e.typ === t);
           if (!g.length) return null;
           return (
-            <section className="group" key={t}>
-              <h3>{name} <small>{g.length} · {sub}</small></h3>
+            // Geschlossen beim Start; offen bei Suche oder gewähltem Typ. Der key setzt den Zustand bei Filterwechsel zurück.
+            <details className="group" key={`${t}-${res ? "s" : ""}-${active.has(t) ? "a" : ""}`} open={!!res || active.has(t)}>
+              <summary><h3>{name} <small>{g.length} · {sub}</small></h3></summary>
               <div className="grid">
                 {g.map((e) => (
                   <Link key={e.id} href={`/eintrag/${e.id}`} className={`cell${isWritten(e) ? "" : " dim"}`}>
@@ -94,7 +95,7 @@ export default function Library({ items }: { items: LibItem[] }) {
                   </Link>
                 ))}
               </div>
-            </section>
+            </details>
           );
         })}
         {!list.length && <p className="count">Nichts gefunden. Versuche ein anderes Wort, z. B. „saftig“ oder „Sauce“.</p>}
