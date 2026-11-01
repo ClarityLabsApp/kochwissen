@@ -16,7 +16,7 @@ Lies vor jeder Arbeit auch **`DESIGN.md`** (Bildsprache, Farben, Vorlagen). Was 
 | `app/` | Next.js App Router: Bibliothek `/`, Eintrag `/eintrag/[id]` |
 | `lib/search.ts` | Suche: gewichtet (Titel 3, Synonyme 2.5, Kurz 1), deutsche Stammformen, Tippfehler, Wörterbuch `THESAURUS` (Problem ↔ Ziel), „Beste Antwort“ |
 | `components/` | Library (Suche), Diagnosis, Term (Glossar-Popup), RichText |
-| `public/prototypen/` | Die drei interaktiven HTML-Prototypen (Maillard, Gluten, Steak grau) |
+| `public/prototypen/` | Die drei ursprünglichen HTML-Prototypen, nur noch als Referenz (alle als Komponenten nachgebaut) |
 
 Befehle: `npm run dev` · `npm run validate` · `npm run build`
 
@@ -74,12 +74,12 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - `ParticleSim` – Canvas-Simulationen pro Prozess (emulsion, osmose, pektin-abbau, reduktion, hefegaerung, chemische-lockerung, waermeleitung, schaumbildung, diffusion, zucker-kristallisation, leidenfrost, gelbildung-pektin, chlorophyll-farbe, eiweiss-denaturierung, glutenbildung, karamellisierung). Neue Presets dort anlegen und in `SIMS` in `Visual.tsx` eintragen
 - `MaillardSim` – Maillard-Reaktion in drei Zoomstufen (Gericht, Oberfläche, Moleküle), ersetzt den alten Prototyp
 - `ExperimentCompare` – Vorher-Nachher für Experimente: `vorlage: vergleich`, `params.vergleich` = Felder mit `gefaess` (glas, flasche, schuessel, teller, pfanne), `inhalt`, `vorher`/`nachher` (farbe, fuell, trueb, schaum, blasen, ballon, kristalle, tropfen, klumpen, bodensatz, tanzen)
-- Nur noch der Prototyp „Steak grau“ wird per iframe eingebettet
+- Kein Prototyp mehr per iframe: `PROTOTYPES` in `lib/content.ts` ist leer, „Steak grau“ nutzt `PanTest`
 
 ## Offene Aufgaben
 
 - [x] Simulationen Gluten-Netz und Karamellisierung, Maillard als React-Komponente (2. November 2026)
-- [ ] „Steak grau“-Prototyp in die Seite übernehmen (PanTest erweitern)
+- [x] Alle drei Prototypen als Komponenten (Maillard → `MaillardSim`, Gluten → Preset `glutenbildung`, Steak grau → `PanTest`)
 - [x] Alle 197 Einträge der Masterliste als Entwurf geschrieben (1. November 2026)
 - [ ] Review durch Phil: Status von `entwurf` auf `geprueft`
 - [x] 15 Gerichte und 12 Experimente ergänzt (Generator `scripts/batches/gen_batch_gerichte_experimente.py`)

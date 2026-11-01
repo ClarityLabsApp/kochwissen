@@ -94,7 +94,6 @@ export function parseText(s: string): TextPart[] {
 
 /** Interaktive Prototypen, bis die Simulationen als Komponenten portiert sind. */
 export const PROTOTYPES: Record<string, string> = {
-  "steak-grau": "/prototypen/steak-grau.html",
 };
 
 export const TYP_NAME: Record<Typ, string> = {
