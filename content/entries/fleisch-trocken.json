@@ -1,0 +1,138 @@
+{
+  "id": "fleisch-trocken",
+  "typ": "symptom",
+  "titel": "Fleisch ist trocken",
+  "synonyme": [
+    "trocken",
+    "Pouletbrust trocken",
+    "Braten trocken",
+    "strohig"
+  ],
+  "kurz": "Das Fleisch wurde innen zu heiß. Die Fasern haben ihren Saft herausgepresst.",
+  "bild_im_kopf": "Wie ein ausgewrungenes Handtuch: Das Wasser ist nicht verschwunden, es wurde herausgedrückt.",
+  "ursachen": [
+    {
+      "titel": "Zu hohe Kerntemperatur",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "Über etwa 66 °C ziehen sich die Fasern stark zusammen und verlieren viel Saft.",
+      "fix": [
+        "Mit Thermometer garen",
+        "Einige Grad vor dem Ziel herausnehmen, es gart nach"
+      ]
+    },
+    {
+      "titel": "Mageres Stück ohne Vorbereitung",
+      "haeufigkeit": 2,
+      "prinzip": "wasserbindung-salz",
+      "warum": "Pouletbrust und Schweinefilet haben kaum Fett und Bindegewebe, die Saftigkeit vortäuschen könnten.",
+      "fix": [
+        "Über Nacht trocken salzen",
+        "Oder 1–2 Stunden in eine Salzlake legen"
+      ]
+    },
+    {
+      "titel": "Zu heiß und zu lange im Ofen",
+      "haeufigkeit": 2,
+      "prinzip": "waermeleitung",
+      "warum": "Bei hoher Ofenhitze übergart der Rand, während die Mitte noch aufholt.",
+      "fix": [
+        "Niedrigere Ofentemperatur",
+        "Rückwärtsgaren für dicke Stücke"
+      ]
+    },
+    {
+      "titel": "Sofort angeschnitten",
+      "haeufigkeit": 1,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "Direkt nach dem Garen läuft mehr Saft aus, das Fleisch wirkt auf dem Teller trockener.",
+      "fix": [
+        "5–10 Minuten ruhen lassen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hast du mit Thermometer gegart?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "War es ein mageres Stück wie Pouletbrust oder Schweinefilet?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "q3"
+        ]
+      ]
+    },
+    "q3": {
+      "frage": "Hast du es direkt nach dem Garen angeschnitten?",
+      "antworten": [
+        [
+          "Ja",
+          "u3"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    },
+    "u3": {
+      "ursache": 3
+    }
+  },
+  "links": [
+    "eiweiss-denaturierung",
+    "trockensalzen",
+    "lake",
+    "ruhen-lassen",
+    "saftig",
+    "rueckwaerts-garen"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-gefluegel"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "ThermoWorks: How Meat Cooks – Heat’s Effects on Muscle Fibers",
+      "url": "https://blog.thermoworks.com/coming-heat-effects-muscle-fibers-meat/"
+    },
+    {
+      "titel": "America’s Test Kitchen: Salting turkey – how long is long enough?",
+      "url": "https://www.americastestkitchen.com/how_tos/6543-salting-turkey-how-long-is-long-enough"
+    },
+    {
+      "titel": "America’s Test Kitchen: Resting meat is worth it",
+      "url": "https://www.americastestkitchen.com/articles/5710-resting-meat-is-worth-it-and-we-ve-got-the-data-to-prove-it"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

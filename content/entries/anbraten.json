@@ -1,0 +1,51 @@
+{
+  "id": "anbraten",
+  "typ": "technik",
+  "titel": "Scharf anbraten",
+  "synonyme": [
+    "Searing",
+    "Steak braten",
+    "Kruste braten"
+  ],
+  "kurz": "Heiße Pfanne, trockene Oberfläche, wenig Bewegung am Anfang: So entsteht eine braune, aromatische Kruste.",
+  "bild_im_kopf": "Wie ein Stempel: Er braucht festen, ruhigen Kontakt, sonst verschmiert der Abdruck.",
+  "was_passiert": "Die heiße Pfanne verdampft das letzte Wasser an der Oberfläche, danach steigt die Temperatur über 140 °C und die Bräunung beginnt. Am Anfang klebt das Fleisch, bis sich eine Kruste gebildet hat, dann löst es sich von selbst. Danach darf man öfter wenden, das gart sogar gleichmäßiger.",
+  "warum_wichtig": "Die Kruste liefert den Großteil des Geschmacks bei kurz gebratenem Fleisch.",
+  "schritte": [
+    "Fleisch trocken tupfen.",
+    "Pfanne mit wenig hitzefestem Öl stark vorheizen.",
+    "Fleisch einlegen, es soll laut zischen.",
+    "Liegen lassen, bis es sich von selbst löst.",
+    "Wenden, bis zur gewünschten Kerntemperatur braten, am Ende Butter zum [[arosieren|Arosieren]]."
+  ],
+  "wirkt_auf": [
+    "farbe",
+    "mehr-geschmack"
+  ],
+  "faustregeln": [
+    "Kein Zischen heißt: Pfanne zu kalt.",
+    "Lieber in zwei Portionen braten als in einer vollen Pfanne."
+  ],
+  "links": [
+    "maillard-reaktion",
+    "pfanne-vorheizen",
+    "trocken-tupfen",
+    "steak-grau",
+    "rauchpunkt",
+    "arosieren"
+  ],
+  "welten": [
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

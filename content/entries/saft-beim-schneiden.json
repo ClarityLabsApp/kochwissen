@@ -1,0 +1,98 @@
+{
+  "id": "saft-beim-schneiden",
+  "typ": "symptom",
+  "titel": "Viel Saft beim Anschneiden",
+  "synonyme": [
+    "Saft läuft aus",
+    "Brett voller Saft",
+    "blutet aus"
+  ],
+  "kurz": "Das Fleisch wurde zu früh angeschnitten oder war innen sehr heiß. Der Saft ist dann dünnflüssig und läuft aus.",
+  "bild_im_kopf": "Wie eine frisch geschüttelte Flasche, die man sofort öffnet.",
+  "ursachen": [
+    {
+      "titel": "Sofort angeschnitten",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "Direkt nach dem Braten ist der Saft dünn und die Fasern stehen unter Spannung.",
+      "fix": [
+        "Steaks 5 Minuten, Braten 10–20 Minuten ruhen lassen"
+      ]
+    },
+    {
+      "titel": "Starke Hitze bis zum Schluss",
+      "haeufigkeit": 2,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "Je größer der Temperaturunterschied zwischen Rand und Mitte, desto mehr Spannung und Saft.",
+      "fix": [
+        "Sanfter garen, z. B. rückwärts",
+        "Am Ende kurz ruhen lassen"
+      ]
+    },
+    {
+      "titel": "Längs zur Faser geschnitten",
+      "haeufigkeit": 1,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "Lange, offene Fasern lassen Saft leichter auslaufen.",
+      "fix": [
+        "Quer zur Faser schneiden"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Wie lange hast du nach dem Braten gewartet?",
+      "antworten": [
+        [
+          "Gar nicht",
+          "u0"
+        ],
+        [
+          "Einige Minuten",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Hast du bis zum Schluss mit starker Hitze gebraten?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "ruhen-lassen",
+    "saftig",
+    "rueckwaerts-garen"
+  ],
+  "welten": [
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: Resting meat is worth it",
+      "url": "https://www.americastestkitchen.com/articles/5710-resting-meat-is-worth-it-and-we-ve-got-the-data-to-prove-it"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

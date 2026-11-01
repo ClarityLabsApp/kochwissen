@@ -1,0 +1,135 @@
+{
+  "id": "maillard-reaktion",
+  "typ": "prozess",
+  "titel": "Maillard-Reaktion",
+  "synonyme": [
+    "Bräunung",
+    "Röstaromen",
+    "Kruste",
+    "anbraten"
+  ],
+  "kurz": "Bei starker Hitze reagieren Eiweiß und Zucker miteinander. Dabei entstehen braune Farbe und hunderte Röstaromen.",
+  "bild_im_kopf": "Wie ein Lagerfeuer mit nassem Holz: Erst muss das Wasser raus, dann brennt es. Solange die Oberfläche nass ist, kocht sie bei 100 °C, egal wie heiß die Pfanne ist.",
+  "was_passiert": "Ab etwa 140 °C verbinden sich Bausteine von Eiweiß mit Zucker zu hunderten neuen Aromastoffen und brauner Farbe. Solange Wasser auf der Oberfläche ist, bleibt sie bei rund 100 °C hängen, weil das Wasser erst verdampfen muss. Erst wenn sie trocken ist, steigt die Temperatur und die Bräunung beginnt. Eine basische Umgebung beschleunigt die Reaktion.",
+  "warum_wichtig": "Kruste beim Steak, Brotkruste, geröstete Zwiebeln, Kaffee, Röstgemüse: Fast alles, was herzhaft geröstet schmeckt, kommt von hier.",
+  "faustregeln": [
+    "Oberfläche trocken tupfen, bevor sie in die Pfanne kommt.",
+    "Pfanne richtig vorheizen und nicht überladen.",
+    "Am Anfang liegen lassen, bis sich die Kruste von selbst löst.",
+    "Eine Prise Natron beschleunigt die Bräunung, z. B. bei Zwiebeln."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "heißer → schneller"
+    },
+    {
+      "id": "feuchtigkeit",
+      "wirkung": "trockener → schneller"
+    },
+    {
+      "id": "ph-wert",
+      "wirkung": "basisch → schneller"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "länger → dunkler"
+    }
+  ],
+  "typische_fehler": [
+    "Pfanne überladen: Saft tritt aus, das Fleisch kocht grau statt zu braten."
+  ],
+  "mythos": {
+    "behauptung": "Anbraten versiegelt den Fleischsaft.",
+    "richtig": "Stimmt nicht. Die Kruste ist nicht dicht. Anbraten bringt Geschmack und Farbe, keinen Saft."
+  },
+  "praxis": [
+    {
+      "welt": "w-fleisch",
+      "text": "Trocken tupfen, heiße Pfanne, wenig auf einmal. Eine volle Pfanne kühlt ab und das Fleisch wird grau.",
+      "aroma": [
+        "fleischig",
+        "roestig",
+        "nussig"
+      ]
+    },
+    {
+      "welt": "w-brot",
+      "text": "Dampf am Anfang hält die Kruste weich, damit der Laib aufgehen kann. Danach trocken backen, dann bräunt sie. Laugenbrezeln werden so dunkel, weil die Lauge basisch ist.",
+      "aroma": [
+        "roestig",
+        "nussig",
+        "karamellig"
+      ]
+    },
+    {
+      "welt": "w-gemuese",
+      "text": "Gemüse gut trocknen und das Blech nicht überladen. Eine Prise Natron lässt Zwiebeln schneller bräunen.",
+      "aroma": [
+        "karamellig",
+        "roestig"
+      ]
+    },
+    {
+      "welt": "w-kaffee",
+      "text": "Beim Rösten laufen Maillard und Karamellisierung zusammen. Hell geröstet schmeckt nussig, dunkel röstig bis bitter.",
+      "aroma": [
+        "roestig",
+        "nussig",
+        "bitter"
+      ]
+    }
+  ],
+  "links": [
+    "karamellisierung",
+    "verdampfen",
+    "feuchtigkeit",
+    "steak-grau",
+    "anbraten",
+    "trocken-tupfen",
+    "natron"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-brot",
+    "w-gemuese",
+    "w-kaffee",
+    "w-kartoffeln"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation",
+    "ebenen": [
+      {
+        "name": "Das Gericht",
+        "massstab": "≈ 20 cm"
+      },
+      {
+        "name": "Die Oberfläche",
+        "massstab": "≈ 2 mm"
+      },
+      {
+        "name": "Die Moleküle",
+        "massstab": "≈ 1 nm"
+      }
+    ],
+    "params": {
+      "regler": [
+        "temperatur",
+        "feuchtigkeit"
+      ],
+      "schwellen_c": [
+        100,
+        140,
+        190
+      ]
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

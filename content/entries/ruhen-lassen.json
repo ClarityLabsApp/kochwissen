@@ -1,0 +1,47 @@
+{
+  "id": "ruhen-lassen",
+  "typ": "technik",
+  "titel": "Fleisch ruhen lassen",
+  "synonyme": [
+    "ruhen",
+    "Ruhezeit",
+    "nach dem Braten warten"
+  ],
+  "kurz": "Nach dem Braten einige Minuten warten, bevor man anschneidet. Es läuft deutlich weniger Saft aufs Brett.",
+  "bild_im_kopf": "Wie Mineralwasser nach dem Schütteln: Sofort geöffnet sprudelt es heraus, kurz gewartet bleibt es in der Flasche.",
+  "was_passiert": "Direkt nach dem Braten ist der Saft dünnflüssig und die Fasern stehen unter Spannung. Beim Abkühlen wird der Saft etwas dicker und weniger läuft beim Schneiden aus. Gleichzeitig steigt die Temperatur innen noch ein wenig an ([[nachgaren|Nachgaren]]).",
+  "warum_wichtig": "In einem Test verlor ein Schweinebraten nach 10 Minuten Ruhe rund 60 % weniger Saft als sofort angeschnitten.",
+  "schritte": [
+    "Fleisch aus der Pfanne auf ein Brett oder Gitter legen.",
+    "Locker, nicht dicht abdecken, sonst wird die Kruste weich.",
+    "Steaks etwa 5 Minuten, Braten 10–20 Minuten ruhen lassen.",
+    "Quer zur Faser aufschneiden."
+  ],
+  "wirkt_auf": [
+    "saftig"
+  ],
+  "mythos": {
+    "behauptung": "Ohne Ruhen läuft der ganze Saft raus.",
+    "richtig": "Ein Teil läuft immer aus. Ruhen verringert es deutlich, nach etwa 10 Minuten bringt längeres Warten nur noch wenig."
+  },
+  "links": [
+    "saft-beim-schneiden",
+    "saftig",
+    "eiweiss-denaturierung",
+    "nachgaren"
+  ],
+  "welten": [
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: Resting meat is worth it",
+      "url": "https://www.americastestkitchen.com/articles/5710-resting-meat-is-worth-it-and-we-ve-got-the-data-to-prove-it"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

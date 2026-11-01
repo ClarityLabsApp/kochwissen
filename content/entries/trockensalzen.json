@@ -1,0 +1,64 @@
+{
+  "id": "trockensalzen",
+  "typ": "technik",
+  "titel": "Trockensalzen (Dry Brine)",
+  "synonyme": [
+    "Dry Brine",
+    "vorsalzen",
+    "über Nacht salzen"
+  ],
+  "kurz": "Fleisch mit Salz einreiben und unbedeckt im Kühlschrank ruhen lassen. Es wird durch und durch gewürzt, saftiger, und die Oberfläche trocknet für eine bessere Kruste.",
+  "bild_im_kopf": "Wie Tee ziehen lassen: Die ersten Minuten passiert fast nichts, erst mit Zeit dringt es überall hin.",
+  "was_passiert": "Zuerst zieht das Salz Saft an die Oberfläche. Das Salz löst sich darin, und die salzige Lösung wandert langsam wieder ins Fleisch. Dort lockert sie Eiweiße, damit das Fleisch beim Garen mehr Wasser hält. Unbedeckt im Kühlschrank trocknet gleichzeitig die Oberfläche ab.",
+  "warum_wichtig": "Saftiger, gleichmäßig gewürzt und mit trockener Oberfläche für die Kruste: drei Vorteile aus einem Handgriff.",
+  "schritte": [
+    "Fleisch trocken tupfen.",
+    "Rundum gleichmäßig salzen, etwa 1 % des Fleischgewichts (Richtwert).",
+    "Auf einem Gitter unbedeckt in den Kühlschrank stellen.",
+    "Steaks mindestens über Nacht, Geflügel und Braten 24–48 Stunden.",
+    "Vor dem Braten nicht abspülen, nur trocken tupfen."
+  ],
+  "wirkt_auf": [
+    "saftig",
+    "knusprig"
+  ],
+  "faustregeln": [
+    "Nach einer Stunde ist das Salz erst außen: entweder direkt vor dem Braten salzen oder richtig lange vorher."
+  ],
+  "links": [
+    "osmose",
+    "wasserbindung-salz",
+    "salz",
+    "saftig",
+    "knusprig",
+    "lake"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-gefluegel"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "params": {
+      "zeitachse_h": [
+        0,
+        1,
+        12,
+        24,
+        48
+      ]
+    }
+  },
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: Salting turkey – how long is long enough?",
+      "url": "https://www.americastestkitchen.com/how_tos/6543-salting-turkey-how-long-is-long-enough"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

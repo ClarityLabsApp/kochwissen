@@ -1,0 +1,52 @@
+{
+  "id": "lake",
+  "typ": "technik",
+  "titel": "Nasspökeln in Salzlake",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "Brine",
+    "Lake",
+    "Salzlake",
+    "einlegen"
+  ],
+  "kurz": "Fleisch für einige Stunden in Salzwasser legen. Es nimmt Salz und Wasser auf und bleibt beim Garen saftiger.",
+  "bild_im_kopf": "Wie ein trockener Schwamm im Wasserbad: Er saugt sich voll, bevor er gedrückt wird.",
+  "was_passiert": "Das Salz aus der Lake dringt ins Fleisch und lockert Eiweiße, sodass es zusätzliches Wasser aufnimmt und hält. Das Fleisch wird saftiger, aber auch wässriger im Geschmack, und die Haut wird schwerer knusprig.",
+  "warum_wichtig": "Eine Alternative zum Trockensalzen für sehr mageres Fleisch wie Pouletbrust oder Schweinekoteletts.",
+  "schritte": [
+    "Salzlake mit etwa 5–6 % Salz anrühren (50–60 g pro Liter), Richtwert.",
+    "Fleisch vollständig eintauchen, kühl stellen.",
+    "Pouletbrust 1–2 Stunden, ganzes Huhn einige Stunden.",
+    "Herausnehmen, abspülen, sehr gut trocken tupfen."
+  ],
+  "wirkt_auf": [
+    "saftig"
+  ],
+  "typische_fehler": [
+    "Zu lange in der Lake: Das Fleisch wird schwammig und zu salzig."
+  ],
+  "links": [
+    "wasserbindung-salz",
+    "trockensalzen",
+    "saftig",
+    "salz"
+  ],
+  "welten": [
+    "w-gefluegel",
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch"
+    },
+    {
+      "titel": "America’s Test Kitchen: Salting turkey – how long is long enough?",
+      "url": "https://www.americastestkitchen.com/how_tos/6543-salting-turkey-how-long-is-long-enough"
+    }
+  ],
+  "status": "entwurf"
+}

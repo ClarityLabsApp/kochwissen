@@ -1,0 +1,47 @@
+{
+  "id": "w-fleisch",
+  "typ": "welt",
+  "titel": "Fleisch",
+  "synonyme": [
+    "Steak",
+    "Braten",
+    "Rind",
+    "Schwein",
+    "Kalb"
+  ],
+  "kurz": "Fleisch ist Muskel: Bündel aus Eiweißfasern, voller Wasser, zusammengehalten von Bindegewebe. Kochen heißt entscheiden, wie fest die Fasern werden und was mit dem Bindegewebe passiert.",
+  "bild_im_kopf": "Wie ein Bündel nasser Schwämme in einem Netz: Drückt man zu fest, läuft das Wasser raus. Löst man das Netz langsam auf, fällt alles zart auseinander.",
+  "was_passiert": "Beim Erhitzen ziehen sich die Muskelfasern zusammen und pressen Saft heraus, je heißer, desto mehr. Das Bindegewebe ist zäh, löst sich aber bei langer, feuchter Hitze zu Gelatine. Außen sorgt trockene, starke Hitze für Kruste und Röstaromen.",
+  "warum_wichtig": "Daraus folgen die zwei großen Wege: zarte Stücke kurz und genau garen, Stücke mit viel Bindegewebe lang und langsam schmoren.",
+  "faustregeln": [
+    "Kurzbraten für zarte Stücke mit wenig Bindegewebe (Filet, Entrecôte, Huft).",
+    "Schmoren für Stücke mit viel Bindegewebe (Schulter, Wade, Backe, Siedfleisch).",
+    "Ein Fleischthermometer ersetzt jedes Bauchgefühl."
+  ],
+  "links": [
+    "eiweiss-denaturierung",
+    "kollagen-gelatine",
+    "maillard-reaktion",
+    "saftig",
+    "zart",
+    "steak-grau",
+    "fleisch-zaeh",
+    "fleisch-trocken"
+  ],
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a raw beef steak on butcher paper with a sprig of thyme"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch"
+    },
+    {
+      "titel": "ThermoWorks: How Meat Cooks – Heat’s Effects on Muscle Fibers",
+      "url": "https://blog.thermoworks.com/coming-heat-effects-muscle-fibers-meat/"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

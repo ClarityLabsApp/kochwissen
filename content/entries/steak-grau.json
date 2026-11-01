@@ -1,0 +1,164 @@
+{
+  "id": "steak-grau",
+  "typ": "symptom",
+  "titel": "Steak wird grau statt braun",
+  "synonyme": [
+    "keine Kruste",
+    "Fleisch kocht im Saft",
+    "Steak nicht braun"
+  ],
+  "kurz": "Das Fleisch kocht im eigenen Saft, statt zu braten. Die Oberfläche wird nie heiß genug für eine Kruste.",
+  "bild_im_kopf": "Wie ein zu voller Frittierkorb: Das Öl kühlt ab, und die Pommes werden labbrig statt knusprig. Die Pfanne hat nur so viel Hitze, wie sie gespeichert hat.",
+  "ursachen": [
+    {
+      "titel": "Pfanne nicht heiß genug",
+      "haeufigkeit": 3,
+      "prinzip": "maillard-reaktion",
+      "warum": "Ohne Zischen verdampft das Wasser zu langsam. Die Oberfläche erreicht nie die 140 °C, ab denen die Bräunung startet.",
+      "fix": [
+        "Pfanne 3–5 Minuten vorheizen",
+        "Test: Ein Wassertropfen tanzt als Kügelchen",
+        "Erst dann Öl und Fleisch"
+      ]
+    },
+    {
+      "titel": "Pfanne überladen",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Jedes Stück entzieht der Pfanne Hitze. Sie kühlt so stark ab, dass der austretende Saft liegen bleibt und das Fleisch darin kocht.",
+      "fix": [
+        "In Portionen braten",
+        "Platz zwischen den Stücken lassen",
+        "Fertige Stücke im Ofen bei 80 °C warm halten"
+      ]
+    },
+    {
+      "titel": "Fleisch war nass",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "Wasser auf der Oberfläche muss zuerst verdampfen. Solange es da ist, bleibt die Oberfläche bei 100 °C hängen.",
+      "fix": [
+        "Gründlich trocken tupfen",
+        "Marinade abstreifen",
+        "Ideal: über Nacht unbedeckt im Kühlschrank antrocknen lassen"
+      ]
+    },
+    {
+      "titel": "Zu früh bewegt",
+      "haeufigkeit": 1,
+      "prinzip": "maillard-reaktion",
+      "warum": "Am Anfang braucht die Kruste ungestörten Kontakt. Wer schiebt und wendet, bevor sie sich löst, reißt sie ab und kühlt die Pfanne.",
+      "fix": [
+        "Liegen lassen, bis es sich von selbst löst",
+        "Erst danach wenden"
+      ]
+    },
+    {
+      "titel": "Die Pfanne speichert zu wenig Hitze",
+      "haeufigkeit": 1,
+      "prinzip": "waermeleitung",
+      "warum": "Ein dünner Boden kühlt beim Einlegen stark ab und heizt nur langsam nach.",
+      "fix": [
+        "Gusseisen oder dicken Stahlboden verwenden",
+        "Länger vorheizen",
+        "Weniger Stücke auf einmal"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hat es laut gezischt, als das Fleisch in die Pfanne kam?",
+      "antworten": [
+        [
+          "Ja",
+          "q2"
+        ],
+        [
+          "Nein, eher leise",
+          "u0"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Stand nach einer Minute Flüssigkeit in der Pfanne?",
+      "antworten": [
+        [
+          "Ja",
+          "q3"
+        ],
+        [
+          "Nein",
+          "q4"
+        ]
+      ]
+    },
+    "q3": {
+      "frage": "Wie voll war die Pfanne?",
+      "antworten": [
+        [
+          "Ziemlich voll",
+          "u1"
+        ],
+        [
+          "Nur ein, zwei Stücke",
+          "u2"
+        ]
+      ]
+    },
+    "q4": {
+      "frage": "Hast du das Fleisch früh gewendet oder herumgeschoben?",
+      "antworten": [
+        [
+          "Ja",
+          "u3"
+        ],
+        [
+          "Nein",
+          "u4"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    },
+    "u3": {
+      "ursache": 3
+    },
+    "u4": {
+      "ursache": 4
+    }
+  },
+  "links": [
+    "maillard-reaktion",
+    "pfanne-vorheizen",
+    "trocken-tupfen",
+    "anbraten",
+    "verdampfen",
+    "pfannenmaterial"
+  ],
+  "welten": [
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "pfannentest",
+    "params": {
+      "variante": "pfanne",
+      "regler": "stuecke",
+      "vorheizen_c": 210
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

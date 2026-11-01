@@ -1,0 +1,22 @@
+{
+  "id": "nachgaren",
+  "typ": "begriff",
+  "titel": "Nachgaren",
+  "synonyme": [
+    "Carry-over",
+    "Nachziehen"
+  ],
+  "kurz": "Nach dem Herausnehmen steigt die Kerntemperatur noch einige Grad, weil die Hitze vom Rand weiter nach innen wandert. Bei großen Braten mehr als bei dünnen Steaks.",
+  "links": [
+    "ruhen-lassen",
+    "kerntemperatur"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "temperatur",
+  "typ": "stellschraube",
+  "titel": "Temperatur",
+  "synonyme": [
+    "Hitze",
+    "Grad",
+    "Kerntemperatur",
+    "Ofentemperatur"
+  ],
+  "kurz": "Die wichtigste Stellschraube in der Küche. Wenige Grad entscheiden, welcher Vorgang läuft und welcher nicht.",
+  "bild_im_kopf": "Wie eine Treppe mit Stufen: Auf jeder Stufe öffnet sich eine andere Tür.",
+  "was_passiert": "Jeder Vorgang hat seine Schwelle: Eiweiß wird ab etwa 50 °C gar, Stärke quillt ab etwa 57 °C, Bindegewebe löst sich ab etwa 70 °C, Wasser verdampft bei 100 °C, Bräunung beginnt ab etwa 140 °C. Für Fleisch zählt außerdem der Unterschied zwischen Oberfläche und [[kerntemperatur|Kerntemperatur]].",
+  "faustregeln": [
+    "Ein Thermometer ist das wertvollste Werkzeug für bessere Ergebnisse.",
+    "Oberfläche heiß, Inneres sanft: Das ist bei Fleisch fast immer das Ziel."
+  ],
+  "links": [
+    "eiweiss-denaturierung",
+    "staerkeverkleisterung",
+    "kollagen-gelatine",
+    "verdampfen",
+    "maillard-reaktion",
+    "rauchpunkt"
+  ],
+  "visual": {
+    "vorlage": "temperaturskala",
+    "params": {
+      "schwellen_c": [
+        {
+          "c": 50,
+          "name": "Eiweiß wird gar"
+        },
+        {
+          "c": 57,
+          "name": "Stärke quillt"
+        },
+        {
+          "c": 66,
+          "name": "Fasern pressen Saft"
+        },
+        {
+          "c": 70,
+          "name": "Bindegewebe löst sich"
+        },
+        {
+          "c": 100,
+          "name": "Wasser verdampft"
+        },
+        {
+          "c": 140,
+          "name": "Bräunung"
+        }
+      ]
+    }
+  },
+  "quellen": [
+    {
+      "titel": "ThermoWorks: How Meat Cooks – Heat’s Effects on Muscle Fibers",
+      "url": "https://blog.thermoworks.com/coming-heat-effects-muscle-fibers-meat/"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

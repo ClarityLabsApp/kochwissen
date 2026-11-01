@@ -1,0 +1,60 @@
+{
+  "id": "osmose",
+  "typ": "prozess",
+  "titel": "Osmose: Salz und Zucker ziehen Wasser",
+  "synonyme": [
+    "Wasser ziehen",
+    "Salz zieht Wasser",
+    "Saft ziehen"
+  ],
+  "kurz": "Salz und Zucker ziehen Wasser an. Auf einer Oberfläche holen sie Feuchtigkeit aus dem Inneren heraus.",
+  "bild_im_kopf": "Wie trockener Sand am Strand, der jede Welle aufsaugt: Wo viel Salz ist, wandert Wasser hin.",
+  "was_passiert": "Wasser wandert dorthin, wo mehr gelöste Stoffe sind. Streut man Salz auf Fleisch oder Gemüse, tritt nach kurzer Zeit Saft aus und löst das Salz. Bei Fleisch zieht diese salzige Lösung mit der Zeit wieder ein. Bei Gemüse wie Auberginen oder Gurken nutzt man das, um Wasser loszuwerden.",
+  "warum_wichtig": "Erklärt, warum frisch gesalzenes Fleisch nass glänzt und warum man es dann entweder sofort brät oder lange wartet.",
+  "faustregeln": [
+    "Nach etwa 10–40 Minuten ist die Oberfläche am nassesten: dann nicht braten, Richtwert.",
+    "Gesalzenes Gemüse vor dem Braten ausdrücken oder trocken tupfen."
+  ],
+  "stellschrauben": [
+    {
+      "id": "salzgehalt",
+      "wirkung": "mehr → zieht mehr Wasser"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "erst raus, später wieder rein"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-fleisch",
+      "text": "Salz direkt vor dem Braten oder viele Stunden vorher, nicht dazwischen."
+    },
+    {
+      "welt": "w-gemuese",
+      "text": "Auberginen- oder Zucchinischeiben salzen, abtupfen, dann braten: Sie saugen weniger Öl."
+    }
+  ],
+  "links": [
+    "wasserbindung-salz",
+    "trockensalzen",
+    "salz",
+    "auberginen-salzen",
+    "steak-grau"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-gemuese"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

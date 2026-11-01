@@ -1,0 +1,52 @@
+{
+  "id": "rueckwaerts-garen",
+  "typ": "technik",
+  "titel": "Rückwärtsgaren (Reverse Sear)",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "Reverse Sear",
+    "Niedergaren",
+    "erst Ofen dann Pfanne"
+  ],
+  "kurz": "Dicke Steaks erst sanft im Ofen auf Temperatur bringen, dann ganz kurz scharf anbraten. Ergebnis: von Rand zu Rand rosa mit starker Kruste.",
+  "bild_im_kopf": "Wie ein Haus erst gleichmäßig vorheizen und dann nur die Fassade streichen, statt den Rand zu verbrennen, während die Mitte noch kalt ist.",
+  "was_passiert": "Im Ofen bei niedriger Temperatur steigt die Hitze innen und außen fast gleich schnell, der graue Rand bleibt dünn. Die trockene Ofenluft trocknet gleichzeitig die Oberfläche. Darum bräunt sie in der heißen Pfanne in kürzester Zeit.",
+  "warum_wichtig": "Die zuverlässigste Methode für Steaks und Braten ab etwa 3 cm Dicke.",
+  "schritte": [
+    "Fleisch salzen, am besten am Vortag.",
+    "Auf einem Gitter bei etwa 100–120 °C in den Ofen, Thermometer in die Mitte.",
+    "Herausnehmen, wenn die [[kerntemperatur|Kerntemperatur]] etwa 5 °C unter dem Ziel liegt.",
+    "In sehr heißer Pfanne pro Seite 1 Minute anbraten.",
+    "Kurz ruhen lassen ist hier kaum nötig, das Fleisch hat schon geruht."
+  ],
+  "wirkt_auf": [
+    "gleichmaessig-gar",
+    "saftig"
+  ],
+  "links": [
+    "gleichmaessig-gar",
+    "eiweiss-denaturierung",
+    "anbraten",
+    "maillard-reaktion",
+    "ruhen-lassen"
+  ],
+  "welten": [
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "params": {
+      "ofen_c": [
+        100,
+        120
+      ]
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch"
+    }
+  ],
+  "status": "entwurf"
+}

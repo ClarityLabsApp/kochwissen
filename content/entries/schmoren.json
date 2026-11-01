@@ -1,0 +1,63 @@
+{
+  "id": "schmoren",
+  "typ": "technik",
+  "titel": "Schmoren",
+  "synonyme": [
+    "Braten im Topf",
+    "Ragout",
+    "Schmorbraten",
+    "Gulasch",
+    "Brasieren"
+  ],
+  "kurz": "Fleisch anbraten, dann in wenig Flüssigkeit zugedeckt stundenlang leise garen. Das Bindegewebe wird zu Gelatine, das Fleisch zart.",
+  "bild_im_kopf": "Wie ein langes Bad statt einer heißen Dusche: Die Wärme hat Zeit, überall hinzukommen und alles zu lösen.",
+  "was_passiert": "Das Anbraten bringt Röstaromen in Fleisch und Bratensatz. In der leicht simmernden Flüssigkeit löst sich das Kollagen über Stunden zu Gelatine. Kocht die Flüssigkeit sprudelnd, pressen die Muskelfasern zu viel Saft aus und das Fleisch wird trocken und faserig.",
+  "warum_wichtig": "Macht günstige, zähe Stücke zu den zartesten Gerichten überhaupt.",
+  "schritte": [
+    "Fleisch trocken tupfen und portionsweise kräftig anbraten.",
+    "Gemüse anrösten, mit Wein oder Fond den Bratensatz lösen.",
+    "Fleisch zurück, Flüssigkeit bis etwa zur halben Höhe.",
+    "Zugedeckt bei kleiner Hitze oder im Ofen bei 140–150 °C leise simmern lassen.",
+    "Nach 2–3 Stunden prüfen: Die Gabel soll ohne Widerstand hineingleiten."
+  ],
+  "wirkt_auf": [
+    "zart",
+    "mehr-geschmack"
+  ],
+  "faustregeln": [
+    "Leise simmern, nie sprudelnd kochen.",
+    "Schmorgerichte schmecken am nächsten Tag oft besser: Gelatine und Aromen setzen sich."
+  ],
+  "links": [
+    "kollagen-gelatine",
+    "zart",
+    "anbraten",
+    "deglacieren",
+    "fleisch-zaeh",
+    "fond"
+  ],
+  "welten": [
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "params": {
+      "fluessigkeit_c": [
+        85,
+        90
+      ]
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Ricardo: How to perfect the art of braising",
+      "url": "https://www.ricardocuisine.com/en/articles/food-chemistry/643-how-to-perfect-the-art-of-braising"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

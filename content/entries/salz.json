@@ -1,0 +1,63 @@
+{
+  "id": "salz",
+  "typ": "zutat",
+  "titel": "Salz",
+  "synonyme": [
+    "Kochsalz",
+    "Meersalz",
+    "Fleur de Sel",
+    "salzen"
+  ],
+  "kurz": "Salz würzt nicht nur. Es zieht Wasser, hält Wasser im Fleisch, strafft Brotteig und bremst Hefe.",
+  "bild_im_kopf": "Wie ein Werkzeug mit mehreren Klingen: Je nach Zeitpunkt und Menge macht es etwas anderes.",
+  "rolle": [
+    {
+      "rolle": "zieht Wasser aus Oberflächen",
+      "prozess": "osmose"
+    },
+    {
+      "rolle": "hält Wasser im Fleisch",
+      "prozess": "wasserbindung-salz"
+    },
+    {
+      "rolle": "strafft das Glutennetz",
+      "prozess": "glutenbildung"
+    },
+    {
+      "rolle": "verstärkt Geschmack",
+      "prozess": "mehr-geschmack"
+    }
+  ],
+  "was_passiert": "Auf der Oberfläche zieht Salz zuerst Wasser heraus. Mit Zeit dringt es ein, würzt durch und durch und hilft dem Fleisch, Saft zu halten. Im Brotteig festigt es das Glutennetz, in großer Menge bremst es die Hefe.",
+  "faustregeln": [
+    "Fleisch direkt vor dem Braten oder viele Stunden vorher salzen.",
+    "Grobes Salz zum Vorsalzen, feines zum Abschmecken.",
+    "Salz nie direkt auf die Hefe geben."
+  ],
+  "links": [
+    "osmose",
+    "wasserbindung-salz",
+    "trockensalzen",
+    "glutenbildung",
+    "essen-versalzen"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-brot"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: Salting turkey – how long is long enough?",
+      "url": "https://www.americastestkitchen.com/how_tos/6543-salting-turkey-how-long-is-long-enough"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

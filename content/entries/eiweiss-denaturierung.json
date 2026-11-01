@@ -1,0 +1,101 @@
+{
+  "id": "eiweiss-denaturierung",
+  "typ": "prozess",
+  "titel": "Eiweiß verändert sich (Denaturierung)",
+  "synonyme": [
+    "Garen von Eiweiß",
+    "Garstufe",
+    "durchgaren",
+    "Fleisch wird fest"
+  ],
+  "kurz": "Hitze lässt die Eiweißfäden im Fleisch zusammenschnurren. Bis etwa 60 °C bleibt es saftig, darüber pressen die Fasern immer mehr Saft heraus.",
+  "bild_im_kopf": "Wie ein nasses Handtuch, das man auswringt: Leicht gedreht bleibt es feucht, kräftig gedreht tropft alles heraus.",
+  "was_passiert": "Muskelfasern bestehen aus langen Eiweißfäden. Ab etwa 50 °C verändert sich das erste Eiweiß, das Fleisch wird von roh zu gar, bleibt aber zart. Zwischen etwa 66 und 73 °C zieht sich ein zweites Eiweiß stark zusammen, die Fasern werden fest und drücken viel Saft heraus. Darum liegt das saftige Fenster bei Kurzgebratenem ungefähr zwischen 50 und 60 °C [[kerntemperatur|Kerntemperatur]].",
+  "warum_wichtig": "Erklärt, warum ein paar Grad den Unterschied zwischen saftig und trocken machen und warum ein Thermometer so viel bringt.",
+  "faustregeln": [
+    "Kurzgebratenes vom Rind: rosa bei etwa 54–57 °C Kerntemperatur, Richtwert.",
+    "Herausnehmen, bevor der Zielwert erreicht ist: Das [[nachgaren|Nachgaren]] bringt noch einige Grad.",
+    "Mageres Fleisch verzeiht weniger als fettes."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "über ca. 66 °C → deutlich trockener"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "länger → fester"
+    }
+  ],
+  "typische_fehler": [
+    "Nach Gefühl braten und erst aufhören, wenn kein Rosa mehr da ist."
+  ],
+  "praxis": [
+    {
+      "welt": "w-fleisch",
+      "text": "Steak und Filet im Fenster um 55 °C. Schweinefilet etwa 60–63 °C, Richtwert."
+    },
+    {
+      "welt": "w-fisch",
+      "text": "Fisch ist noch empfindlicher: Er wird schon ab etwa 50 °C fest und zerfällt bei zu viel Hitze."
+    },
+    {
+      "welt": "w-eier",
+      "text": "Auch Ei ist Eiweiß: Eiweiß stockt früher als Eigelb, darum gibt es weiche Eier mit flüssigem Dotter."
+    }
+  ],
+  "links": [
+    "kollagen-gelatine",
+    "fleisch-trocken",
+    "saftig",
+    "gleichmaessig-gar",
+    "rueckwaerts-garen",
+    "ruhen-lassen",
+    "temperatur"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-fisch",
+    "w-eier"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation",
+    "ebenen": [
+      {
+        "name": "Das Steak",
+        "massstab": "≈ 10 cm"
+      },
+      {
+        "name": "Die Fasern",
+        "massstab": "≈ 0,1 mm"
+      },
+      {
+        "name": "Die Eiweißfäden",
+        "massstab": "≈ 10 nm"
+      }
+    ],
+    "params": {
+      "regler": [
+        "kerntemperatur"
+      ],
+      "zonen_c": [
+        50,
+        60,
+        66,
+        73
+      ]
+    }
+  },
+  "quellen": [
+    {
+      "titel": "ThermoWorks: How Meat Cooks – Heat’s Effects on Muscle Fibers",
+      "url": "https://blog.thermoworks.com/coming-heat-effects-muscle-fibers-meat/"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

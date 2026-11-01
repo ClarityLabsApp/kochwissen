@@ -1,0 +1,62 @@
+{
+  "id": "zart",
+  "typ": "ziel",
+  "titel": "Zart",
+  "synonyme": [
+    "weich",
+    "nicht zäh",
+    "zarter",
+    "butterzart"
+  ],
+  "kurz": "Zart heißt: Die Fasern lassen sich leicht trennen. Dafür gibt es zwei Wege, je nach Stück.",
+  "bild_im_kopf": "Zwei Arten von Schlössern: Bei manchen reicht ein leichter Dreh (zartes Stück kurz garen), andere öffnen sich nur mit Geduld (Bindegewebe schmoren).",
+  "bedeutung": "Zäh machen zwei Dinge: fest zusammengezogene Muskelfasern und ungelöstes Bindegewebe. Zarte Stücke haben wenig Bindegewebe und bleiben zart, wenn man sie nicht übergart. Stücke mit viel Bindegewebe werden erst zart, wenn es sich in Stunden zu Gelatine löst.",
+  "hebel": [
+    "temperatur",
+    "zeit",
+    "feuchtigkeit",
+    "mechanik"
+  ],
+  "was_passiert": "Wer ein Schmorstück kurz brät oder ein Filet schmort, nimmt den falschen Weg. Quer zur Faser schneiden macht die Fasern kurz und jedes Stück zarter im Mund.",
+  "faustregeln": [
+    "Kurzbraten nur für zarte Stücke.",
+    "Schmorstücke lang und leise garen.",
+    "Immer quer zur Faser aufschneiden."
+  ],
+  "praxis": [
+    {
+      "welt": "w-fleisch",
+      "text": "Filet kurz und rosa, Schulter oder Wade stundenlang schmoren."
+    },
+    {
+      "welt": "w-gebaeck",
+      "text": "Bei Gebäck heißt zart: wenig Glutennetz. Kurz rühren, Fett hilft."
+    }
+  ],
+  "links": [
+    "kollagen-gelatine",
+    "eiweiss-denaturierung",
+    "schmoren",
+    "fleisch-zaeh",
+    "glutenbildung"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Ricardo: How to perfect the art of braising",
+      "url": "https://www.ricardocuisine.com/en/articles/food-chemistry/643-how-to-perfect-the-art-of-braising"
+    },
+    {
+      "titel": "ThermoWorks: How Meat Cooks – Heat’s Effects on Muscle Fibers",
+      "url": "https://blog.thermoworks.com/coming-heat-effects-muscle-fibers-meat/"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

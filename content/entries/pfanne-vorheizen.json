@@ -1,0 +1,45 @@
+{
+  "id": "pfanne-vorheizen",
+  "typ": "technik",
+  "titel": "Pfanne richtig vorheizen",
+  "synonyme": [
+    "Wassertropfen-Test",
+    "Pfanne heiß genug",
+    "Leidenfrost-Test"
+  ],
+  "kurz": "Eine Pfanne ist heiß genug, wenn ein Wassertropfen als Kügelchen über den Boden tanzt, statt zischend zu verdampfen.",
+  "bild_im_kopf": "Wie ein Airhockey-Puck: Ab einer bestimmten Hitze schwebt der Tropfen auf seinem eigenen Dampfpolster.",
+  "was_passiert": "Bei mittlerer Hitze verdampft ein Tropfen sofort zischend. Ist die Pfanne deutlich heißer, bildet sich unter dem Tropfen eine Dampfschicht, auf der er gleitet. Bei Edelstahl ist das auch der Moment, ab dem Fleisch und Fisch weniger kleben.",
+  "warum_wichtig": "Die häufigste Ursache für graues Fleisch und klebenden Fisch ist eine zu kalte Pfanne.",
+  "schritte": [
+    "Leere Pfanne bei mittlerer bis hoher Hitze 3–5 Minuten erhitzen.",
+    "Ein paar Tropfen Wasser hineinspritzen.",
+    "Tanzen sie als Kügelchen, ist sie bereit. Wasser wegwischen, Öl hinein, kurz warten.",
+    "Beschichtete Pfannen nicht leer überhitzen, dort nur mit Öl vorheizen."
+  ],
+  "wirkt_auf": [
+    "farbe"
+  ],
+  "links": [
+    "leidenfrost",
+    "steak-grau",
+    "fisch-klebt",
+    "anbraten",
+    "pfannenmaterial"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

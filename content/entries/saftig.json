@@ -1,0 +1,81 @@
+{
+  "id": "saftig",
+  "typ": "ziel",
+  "titel": "Saftig",
+  "synonyme": [
+    "nicht trocken",
+    "saftiger",
+    "juicy"
+  ],
+  "kurz": "Saftig heißt: Beim Garen ist möglichst wenig Wasser aus den Fasern gepresst worden.",
+  "bild_im_kopf": "Wie ein Schwamm, den man nur sanft drückt: Er bleibt voll, solange man nicht zu fest zupackt.",
+  "bedeutung": "Fleisch besteht zu etwa drei Vierteln aus Wasser. Je heißer es im Inneren wird, desto stärker ziehen sich die Fasern zusammen und pressen Saft heraus. Saftig bleibt, was im richtigen Temperaturfenster bleibt, vorher gesalzen wurde oder viel Gelatine und Fett enthält.",
+  "hebel": [
+    "temperatur",
+    "salzgehalt",
+    "zeit",
+    "fettgehalt"
+  ],
+  "was_passiert": "Die Kerntemperatur ist der größte Hebel. Dazu kommen Salz, das Wasser bindet, und Ruhezeit, damit beim Anschneiden weniger ausläuft. Bei Schmorgerichten übernimmt Gelatine die Rolle des Safts.",
+  "faustregeln": [
+    "Thermometer benutzen und früh herausnehmen.",
+    "Über Nacht salzen.",
+    "Kurz ruhen lassen, dann anschneiden.",
+    "Mageres Fleisch nie über die Zielhitze hinaus garen."
+  ],
+  "mythos": {
+    "behauptung": "Scharf anbraten schließt die Poren.",
+    "richtig": "Fleisch hat keine Poren, die sich schließen. Saftig macht die richtige Kerntemperatur."
+  },
+  "praxis": [
+    {
+      "welt": "w-fleisch",
+      "text": "Rückwärtsgaren hält das Innere gleichmäßig im saftigen Bereich."
+    },
+    {
+      "welt": "w-gefluegel",
+      "text": "Brust ist mager und trocknet schnell aus: salzen und genau auf Temperatur garen."
+    },
+    {
+      "welt": "w-gebaeck",
+      "text": "Bei Kuchen machen Zucker und Fett saftig, weil sie Wasser binden und das Austrocknen bremsen."
+    }
+  ],
+  "links": [
+    "eiweiss-denaturierung",
+    "wasserbindung-salz",
+    "trockensalzen",
+    "ruhen-lassen",
+    "rueckwaerts-garen",
+    "fleisch-trocken",
+    "saft-beim-schneiden"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-gefluegel",
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix",
+    "params": {
+      "zeilen": "hebel",
+      "spalten": "techniken"
+    }
+  },
+  "quellen": [
+    {
+      "titel": "ThermoWorks: How Meat Cooks – Heat’s Effects on Muscle Fibers",
+      "url": "https://blog.thermoworks.com/coming-heat-effects-muscle-fibers-meat/"
+    },
+    {
+      "titel": "America’s Test Kitchen: Salting turkey – how long is long enough?",
+      "url": "https://www.americastestkitchen.com/how_tos/6543-salting-turkey-how-long-is-long-enough"
+    },
+    {
+      "titel": "America’s Test Kitchen: Resting meat is worth it",
+      "url": "https://www.americastestkitchen.com/articles/5710-resting-meat-is-worth-it-and-we-ve-got-the-data-to-prove-it"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

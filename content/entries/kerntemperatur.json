@@ -1,0 +1,21 @@
+{
+  "id": "kerntemperatur",
+  "typ": "begriff",
+  "titel": "Kerntemperatur",
+  "synonyme": [
+    "Innentemperatur"
+  ],
+  "kurz": "Die Temperatur in der Mitte des dicksten Teils. Sie zeigt, wie gar das Fleisch wirklich ist, und wird mit einem Fleischthermometer gemessen.",
+  "links": [
+    "eiweiss-denaturierung",
+    "temperatur"
+  ],
+  "quellen": [
+    {
+      "titel": "ThermoWorks: How Meat Cooks – Heat’s Effects on Muscle Fibers",
+      "url": "https://blog.thermoworks.com/coming-heat-effects-muscle-fibers-meat/"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "gleichmaessig-gar",
+  "typ": "ziel",
+  "titel": "Gleichmäßig gar",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "rosa durch",
+    "kein grauer Rand",
+    "durchgehend rosa",
+    "Garstufe"
+  ],
+  "kurz": "Gleichmäßig gar heißt: Das Fleisch hat von Rand zu Rand dieselbe Garstufe, ohne breiten grauen Ring unter der Kruste.",
+  "bild_im_kopf": "Wie ein Haus im Winter: Mit voller Heizleistung wird es nur nahe am Ofen heiß, mit sanfter Wärme über lange Zeit überall gleich warm.",
+  "bedeutung": "Hitze wandert langsam von außen nach innen. Bei sehr starker Hitze ist der Rand längst übergart, wenn die Mitte endlich warm ist. Je sanfter und länger die Hitze, desto kleiner der Unterschied zwischen außen und innen.",
+  "hebel": [
+    "temperatur",
+    "zeit",
+    "pfannenmaterial"
+  ],
+  "was_passiert": "Sanft vorgaren und erst am Ende scharf anbraten trennt die zwei Aufgaben: gleichmäßiges Garen innen und Kruste außen.",
+  "faustregeln": [
+    "Dicke Stücke sanft vorgaren, dann kurz scharf anbraten.",
+    "Fleisch nicht eiskalt in die Pfanne geben, wenn es dick ist."
+  ],
+  "praxis": [
+    {
+      "welt": "w-fleisch",
+      "text": "Rückwärtsgaren oder Sous-vide für Stücke ab etwa 3 cm Dicke."
+    }
+  ],
+  "links": [
+    "rueckwaerts-garen",
+    "sous-vide",
+    "waermeleitung",
+    "eiweiss-denaturierung",
+    "anbraten"
+  ],
+  "welten": [
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch"
+    }
+  ],
+  "status": "entwurf"
+}

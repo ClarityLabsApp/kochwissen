@@ -1,0 +1,71 @@
+{
+  "id": "wasserbindung-salz",
+  "typ": "prozess",
+  "titel": "Salz hält Wasser im Fleisch",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "Brine",
+    "saftig durch Salz",
+    "Salz macht saftig"
+  ],
+  "kurz": "Salz lockert einen Teil der Eiweißstruktur im Fleisch. Dadurch hält es beim Garen mehr Wasser fest und bleibt saftiger.",
+  "bild_im_kopf": "Wie ein zu enges Korsett, das ein wenig gelockert wird: Es hält immer noch, drückt aber weniger heraus.",
+  "was_passiert": "Gelöstes Salz dringt langsam ins Fleisch ein und verändert Eiweiße in den Muskelfasern. Sie ziehen sich beim Erhitzen weniger stark zusammen und binden mehr Wasser. Das braucht Zeit: Nach einer Stunde ist das Salz erst in den äußeren Millimetern, nach einem Tag auch innen.",
+  "warum_wichtig": "Gesalzenes Fleisch verliert beim Braten weniger Saft und ist durch und durch gewürzt, nicht nur außen.",
+  "faustregeln": [
+    "Früh salzen oder erst ganz kurz vorher, nicht 20 Minuten vorher.",
+    "Dicke Stücke und Geflügel: über Nacht oder bis zu zwei Tage vorher salzen."
+  ],
+  "stellschrauben": [
+    {
+      "id": "salzgehalt",
+      "wirkung": "mehr → saftiger, bis es salzig wird"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "länger → tiefer im Fleisch"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-gefluegel",
+      "text": "Truthahn und Huhn profitieren am meisten, weil Brustfleisch mager ist und schnell austrocknet."
+    },
+    {
+      "welt": "w-fleisch",
+      "text": "Schweinekoteletts und Braten über Nacht trocken salzen."
+    }
+  ],
+  "links": [
+    "osmose",
+    "trockensalzen",
+    "lake",
+    "saftig",
+    "salz",
+    "fleisch-trocken"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-gefluegel"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation",
+    "params": {
+      "regler": [
+        "zeit"
+      ],
+      "zeige": "salzfront"
+    }
+  },
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: Salting turkey – how long is long enough?",
+      "url": "https://www.americastestkitchen.com/how_tos/6543-salting-turkey-how-long-is-long-enough"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch"
+    }
+  ],
+  "status": "entwurf"
+}

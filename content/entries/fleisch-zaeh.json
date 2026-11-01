@@ -1,0 +1,157 @@
+{
+  "id": "fleisch-zaeh",
+  "typ": "symptom",
+  "titel": "Fleisch ist zäh",
+  "synonyme": [
+    "zäh",
+    "faserig",
+    "kaut sich",
+    "Gulasch zäh"
+  ],
+  "kurz": "Entweder wurden die Fasern zu stark zusammengezogen, oder das Bindegewebe hatte nicht genug Zeit, sich zu lösen.",
+  "bild_im_kopf": "Zwei verschiedene Knoten: einer zu fest gezogen, einer noch nicht gelöst. Beide fühlen sich im Mund gleich an.",
+  "ursachen": [
+    {
+      "titel": "Schmorstück zu kurz gegart",
+      "haeufigkeit": 3,
+      "prinzip": "kollagen-gelatine",
+      "warum": "Das Bindegewebe braucht Stunden, um zu Gelatine zu werden. Nach einer Stunde ist es oft zäher als am Anfang.",
+      "fix": [
+        "Weiter schmoren, bis die Gabel ohne Widerstand hineingleitet",
+        "Nach Gefühl prüfen, nicht nach der Uhr"
+      ]
+    },
+    {
+      "titel": "Falsches Stück für die Methode",
+      "haeufigkeit": 2,
+      "prinzip": "kollagen-gelatine",
+      "warum": "Stücke mit viel Bindegewebe werden kurz gebraten immer zäh.",
+      "fix": [
+        "Schulter, Wade, Backe schmoren",
+        "Zum Kurzbraten Filet, Entrecôte oder Huft wählen"
+      ]
+    },
+    {
+      "titel": "Kurzgebratenes übergart",
+      "haeufigkeit": 2,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "Über etwa 66 °C ziehen sich die Fasern stark zusammen und werden fest.",
+      "fix": [
+        "Mit Thermometer braten",
+        "Früher herausnehmen"
+      ]
+    },
+    {
+      "titel": "Schmorflüssigkeit hat sprudelnd gekocht",
+      "haeufigkeit": 1,
+      "prinzip": "kollagen-gelatine",
+      "warum": "Zu viel Hitze presst die Fasern aus, bevor das Bindegewebe weich ist. Das Fleisch wird trocken und faserig.",
+      "fix": [
+        "Nur leise simmern lassen",
+        "Im Ofen bei 140–150 °C schmoren"
+      ]
+    },
+    {
+      "titel": "Längs zur Faser geschnitten",
+      "haeufigkeit": 1,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "Lange Fasern im Mund wirken zäh, auch wenn das Fleisch richtig gegart ist.",
+      "fix": [
+        "Quer zur Faser aufschneiden"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "War es ein Schmorgericht oder kurz gebraten?",
+      "antworten": [
+        [
+          "Geschmort",
+          "q2"
+        ],
+        [
+          "Kurz gebraten",
+          "q3"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Hat die Flüssigkeit sprudelnd gekocht?",
+      "antworten": [
+        [
+          "Ja",
+          "u3"
+        ],
+        [
+          "Nein, leise",
+          "u0"
+        ]
+      ]
+    },
+    "q3": {
+      "frage": "Welches Stück war es?",
+      "antworten": [
+        [
+          "Schulter, Wade, Hals oder ähnlich",
+          "u1"
+        ],
+        [
+          "Filet, Entrecôte, Huft",
+          "q4"
+        ]
+      ]
+    },
+    "q4": {
+      "frage": "War es innen noch rosa?",
+      "antworten": [
+        [
+          "Nein, durchgegart",
+          "u2"
+        ],
+        [
+          "Ja",
+          "u4"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    },
+    "u3": {
+      "ursache": 3
+    },
+    "u4": {
+      "ursache": 4
+    }
+  },
+  "links": [
+    "kollagen-gelatine",
+    "eiweiss-denaturierung",
+    "schmoren",
+    "zart"
+  ],
+  "welten": [
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "Ricardo: How to perfect the art of braising",
+      "url": "https://www.ricardocuisine.com/en/articles/food-chemistry/643-how-to-perfect-the-art-of-braising"
+    },
+    {
+      "titel": "ThermoWorks: How Meat Cooks – Heat’s Effects on Muscle Fibers",
+      "url": "https://blog.thermoworks.com/coming-heat-effects-muscle-fibers-meat/"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,99 @@
+{
+  "id": "kollagen-gelatine",
+  "typ": "prozess",
+  "titel": "Bindegewebe wird zu Gelatine",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "Kollagen",
+    "Bindegewebe",
+    "Schmoren macht zart",
+    "zart schmoren"
+  ],
+  "kurz": "Zähes Bindegewebe löst sich bei langer, feuchter Hitze zu Gelatine. Darum werden Schmorstücke nach Stunden butterzart.",
+  "bild_im_kopf": "Wie ein fest verknoteter Strick, der im warmen Wasser langsam aufquillt und sich löst: Mit Gewalt geht es nicht, nur mit Zeit.",
+  "was_passiert": "Bindegewebe besteht aus Kollagen, sehr zähen Eiweißseilen. Ab etwa 70 °C beginnen sie sich aufzulösen, aber nur langsam und am besten in feuchter Umgebung. Daraus wird Gelatine, die viel Wasser binden kann und das Fleisch saftig wirken lässt. Je heißer, desto schneller, aber zu viel Hitze presst die Muskelfasern aus.",
+  "warum_wichtig": "Erklärt, warum Schulter, Wade oder Backe kurz gebraten zäh sind und geschmort wunderbar zart.",
+  "faustregeln": [
+    "Schmorflüssigkeit nur leise simmern lassen, nicht kochen.",
+    "Im Topf bei etwa 85–90 °C rechne mit 2–3 Stunden, im Slow Cooker mit 6–8.",
+    "Fertig ist es, wenn eine Gabel ohne Widerstand hineingleitet, nicht nach der Uhr."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "heißer → schneller, aber trockener"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "länger → zarter"
+    },
+    {
+      "id": "feuchtigkeit",
+      "wirkung": "feucht → löst sich besser"
+    }
+  ],
+  "typische_fehler": [
+    "Schmorfleisch zu früh aus dem Topf nehmen: Es ist dann zäher als am Anfang."
+  ],
+  "praxis": [
+    {
+      "welt": "w-fleisch",
+      "text": "Ragout, Schmorbraten, Siedfleisch: Stücke mit viel Bindegewebe brauchen Stunden statt Minuten."
+    },
+    {
+      "welt": "w-saucen",
+      "text": "Ausgekochte Knochen geben Gelatine an den Fond ab. Kalt wird er fest, warm macht er Saucen sämig."
+    }
+  ],
+  "links": [
+    "schmoren",
+    "zart",
+    "fleisch-zaeh",
+    "fond",
+    "eiweiss-denaturierung"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-gefluegel",
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation",
+    "ebenen": [
+      {
+        "name": "Der Schmortopf",
+        "massstab": "≈ 25 cm"
+      },
+      {
+        "name": "Das Bindegewebe",
+        "massstab": "≈ 1 mm"
+      },
+      {
+        "name": "Die Kollagenseile",
+        "massstab": "≈ 10 nm"
+      }
+    ],
+    "params": {
+      "regler": [
+        "temperatur",
+        "zeit"
+      ],
+      "schwelle_c": 70
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Ricardo: How to perfect the art of braising",
+      "url": "https://www.ricardocuisine.com/en/articles/food-chemistry/643-how-to-perfect-the-art-of-braising"
+    },
+    {
+      "titel": "ThermoWorks: How Meat Cooks – Heat’s Effects on Muscle Fibers",
+      "url": "https://blog.thermoworks.com/coming-heat-effects-muscle-fibers-meat/"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch"
+    }
+  ],
+  "status": "entwurf"
+}
