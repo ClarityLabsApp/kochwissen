@@ -1,0 +1,46 @@
+{
+  "id": "backpulver",
+  "typ": "zutat",
+  "titel": "Backpulver",
+  "synonyme": [
+    "Triebmittel",
+    "Backtriebmittel",
+    "Weinsteinbackpulver"
+  ],
+  "kurz": "Backpulver ist Natron mit eingebauter Säure und etwas Stärke. Es reagiert einmal beim Anrühren und noch einmal in der Ofenhitze.",
+  "bild_im_kopf": "Wie ein Brausepulver mit Zeitzünder.",
+  "rolle": [
+    {
+      "rolle": "bildet Gas beim Anrühren",
+      "prozess": "chemische-lockerung"
+    },
+    {
+      "rolle": "bildet mehr Gas in der Hitze",
+      "prozess": "chemische-lockerung"
+    }
+  ],
+  "was_passiert": "Die Stärke hält Natron und Säure trocken getrennt. Mit Flüssigkeit beginnt die erste Reaktion, die zweite Säure reagiert erst bei Hitze. Altes oder feucht gelagertes Backpulver verliert seine Kraft.",
+  "faustregeln": [
+    "Test: Ein Teelöffel in heißem Wasser muss kräftig sprudeln.",
+    "Trocken und gut verschlossen lagern."
+  ],
+  "links": [
+    "chemische-lockerung",
+    "natron",
+    "kuchen-sinkt-ein"
+  ],
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: Baking powder vs. baking soda",
+      "url": "https://www.americastestkitchen.com/cooksillustrated/articles/6262-what-is-the-difference-between-baking-powder-and-baking-soda-ask-paul"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

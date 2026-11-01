@@ -1,0 +1,82 @@
+{
+  "id": "karamellisierung",
+  "typ": "prozess",
+  "titel": "Karamellisierung",
+  "synonyme": [
+    "Karamell",
+    "Zucker bräunen",
+    "karamellisieren"
+  ],
+  "kurz": "Wird reiner Zucker sehr heiß, zerfällt er in hunderte neue Stoffe: braune Farbe, Karamellaroma und am Ende Bitterkeit.",
+  "bild_im_kopf": "Wie ein Sonnenuntergang im Topf: von farblos über gold und bernstein zu dunkelbraun. Kurz danach wird es Nacht, also bitter.",
+  "was_passiert": "Anders als die Maillard-Reaktion braucht Karamellisierung kein Eiweiß, nur Zucker und hohe Hitze. Haushaltszucker beginnt ungefähr bei 160 °C zu karamellisieren. Je dunkler, desto weniger süß und desto bitterer.",
+  "warum_wichtig": "Gibt Crème brûlée, Karamellsauce, gebrannten Mandeln und gerösteten Zwiebeln ihre Tiefe. Fast immer läuft sie zusammen mit der Maillard-Reaktion.",
+  "faustregeln": [
+    "Topf mit hellem Boden, damit man die Farbe sieht.",
+    "Nicht rühren, eher schwenken, sonst kristallisiert der Zucker.",
+    "Bernsteinfarben ist meist ideal. Ein Schluck kaltes Wasser oder Sahne stoppt die Bräunung."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "heißer → dunkler"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "länger → bitterer"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-suesses",
+      "text": "Karamellsauce: Zucker bernsteinfarben schmelzen, dann warme Sahne und Butter einrühren."
+    },
+    {
+      "welt": "w-gemuese",
+      "text": "Bei Zwiebeln und Karotten laufen Karamellisierung und Maillard gemeinsam."
+    }
+  ],
+  "links": [
+    "maillard-reaktion",
+    "zucker",
+    "zucker-karamellisieren",
+    "karamell-kristallisiert"
+  ],
+  "welten": [
+    "w-suesses",
+    "w-gemuese",
+    "w-kaffee"
+  ],
+  "visual": {
+    "vorlage": "temperaturskala",
+    "params": {
+      "hinweis": "Richtwerte für Haushaltszucker",
+      "skala": [
+        {
+          "c": 160,
+          "name": "Zucker schmilzt und wird golden"
+        },
+        {
+          "c": 170,
+          "name": "bernstein: Karamellaroma"
+        },
+        {
+          "c": 180,
+          "name": "dunkel: kräftig, weniger süß"
+        },
+        {
+          "c": 200,
+          "name": "verbrannt und bitter"
+        }
+      ]
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

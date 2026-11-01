@@ -7,7 +7,7 @@ import ParticleSim, { type Preset } from "./ParticleSim";
 import Spectrum from "./Spectrum";
 
 // Muss hier stehen: Funktionen aus Client-Modulen sind auf dem Server nicht aufrufbar.
-const SIMS = new Set<string>(["emulsion", "osmose", "pektin-abbau", "reduktion", "hefegaerung"]);
+const SIMS = new Set<string>(["emulsion", "osmose", "pektin-abbau", "reduktion", "hefegaerung", "chemische-lockerung"]);
 const hasSim = (id: string): id is Preset => SIMS.has(id);
 
 /** Liest Temperatur-Schwellen aus visual.params, egal in welchem der bekannten Formate. */

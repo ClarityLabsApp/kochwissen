@@ -1,0 +1,43 @@
+{
+  "id": "blindbacken",
+  "typ": "technik",
+  "titel": "Blindbacken",
+  "synonyme": [
+    "vorbacken",
+    "Boden vorbacken",
+    "mit Hülsenfrüchten backen"
+  ],
+  "kurz": "Den Tarteboden vorbacken, bevor die Füllung hineinkommt. So wird er knusprig statt durchgeweicht.",
+  "bild_im_kopf": "Wie einen Regenschirm aufspannen, bevor es regnet.",
+  "was_passiert": "Ein roher Boden unter einer nassen Füllung kann nie richtig trocknen und bräunen. Vorgebacken ist er schon fest und trocken. Gewichte wie getrocknete Hülsenfrüchte verhindern, dass er Blasen wirft und der Rand zusammenrutscht.",
+  "schritte": [
+    "Teig in die Form legen, mit einer Gabel einstechen, kalt stellen.",
+    "Mit Backpapier auslegen und mit getrockneten Hülsenfrüchten füllen.",
+    "Bei etwa 180–200 °C rund 15 Minuten backen.",
+    "Papier und Gewichte entfernen, 5–10 Minuten weiterbacken, bis der Boden trocken und leicht golden ist.",
+    "Dann füllen und fertig backen."
+  ],
+  "wirkt_auf": [
+    "knusprig",
+    "muerbe"
+  ],
+  "links": [
+    "boden-durchgeweicht",
+    "muerbe",
+    "verdampfen"
+  ],
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

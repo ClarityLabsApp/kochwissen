@@ -1,0 +1,51 @@
+{
+  "id": "honig",
+  "typ": "zutat",
+  "titel": "Honig & Sirup",
+  "synonyme": [
+    "Honig",
+    "Ahornsirup",
+    "Zuckersirup",
+    "Melasse"
+  ],
+  "kurz": "Honig und Sirup sind flüssiger Zucker mit etwas Säure. Sie bräunen schneller und halten Gebäck feuchter als Kristallzucker.",
+  "bild_im_kopf": "Wie Zucker im Feuchtigkeitsmantel.",
+  "rolle": [
+    {
+      "rolle": "bräunt schneller",
+      "prozess": "maillard-reaktion"
+    },
+    {
+      "rolle": "hält Gebäck weich",
+      "prozess": "saftig"
+    },
+    {
+      "rolle": "bringt Säure für Natron",
+      "prozess": "chemische-lockerung"
+    }
+  ],
+  "was_passiert": "Honig enthält viel Fruchtzucker und etwas Säure. Fruchtzucker bräunt bei niedrigerer Temperatur und zieht Feuchtigkeit an.",
+  "faustregeln": [
+    "Mit Honig gebackenes etwas kühler backen, es bräunt schneller.",
+    "Lebkuchen bleiben dank Honig lange weich."
+  ],
+  "links": [
+    "zucker",
+    "maillard-reaktion",
+    "chemische-lockerung"
+  ],
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

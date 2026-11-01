@@ -1,0 +1,44 @@
+{
+  "id": "w-gebaeck",
+  "typ": "welt",
+  "titel": "Kuchen & Gebäck",
+  "synonyme": [
+    "Kuchen",
+    "Muffins",
+    "Kekse",
+    "Guetzli",
+    "Mürbeteig",
+    "Biskuit",
+    "Tarte"
+  ],
+  "kurz": "Gebäck ist ein Gleichgewicht: Mehl und Ei geben Halt, Zucker und Fett machen zart und saftig, Luft macht leicht.",
+  "bild_im_kopf": "Wie ein Haus aus zwei Mannschaften: Die einen bauen Wände (Mehl, Ei), die anderen machen es gemütlich (Zucker, Fett). Zu viel von einer Seite, und es wird zäh oder stürzt ein.",
+  "was_passiert": "Luft kommt durch Backpulver, Natron, eingeschlagene Luft oder Dampf in den Teig. Im Ofen dehnt sie sich aus, bis Eiweiß und Stärke fest werden und die Form halten. Zucker und Fett bremsen das Glutennetz, darum bleiben Kuchen zart.",
+  "warum_wichtig": "Backen verzeiht weniger als Kochen, weil Mengen und Reihenfolge die Struktur bestimmen. Wer die Rollen kennt, kann trotzdem anpassen.",
+  "faustregeln": [
+    "Abwiegen statt abmessen.",
+    "Zutaten auf Raumtemperatur bringen, wenn Butter schaumig gerührt wird.",
+    "Den Ofen nicht öffnen, bevor der Teig fest ist."
+  ],
+  "links": [
+    "chemische-lockerung",
+    "glutenbildung",
+    "schaumbildung",
+    "fluffig",
+    "muerbe",
+    "kuchen-sinkt-ein",
+    "kekse-breit"
+  ],
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a slice of simple sponge cake on a vintage plate with a fork"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,73 @@
+{
+  "typ": "symptom",
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "muffins-tunnel",
+  "titel": "Muffins haben Tunnel",
+  "synonyme": [
+    "Löcher im Muffin",
+    "Muffins zäh",
+    "Muffins spitz"
+  ],
+  "kurz": "Der Teig wurde zu lange gerührt. Das Glutennetz ist zu stark, Gas sammelt sich in langen Kanälen.",
+  "bild_im_kopf": "Wie Maulwurfsgänge im Rasen.",
+  "ursachen": [
+    {
+      "titel": "Zu lange gerührt",
+      "haeufigkeit": 3,
+      "prinzip": "glutenbildung",
+      "warum": "Langes Rühren baut ein zähes Netz, das Gas in Tunneln führt.",
+      "fix": [
+        "Nur rühren, bis das Mehl verschwunden ist",
+        "Klümpchen sind in Ordnung"
+      ]
+    },
+    {
+      "titel": "Ofen zu heiß",
+      "haeufigkeit": 1,
+      "prinzip": "chemische-lockerung",
+      "warum": "Außen fest, bevor innen das Gas verteilt ist: spitze Kuppel und Risse.",
+      "fix": [
+        "Temperatur prüfen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hast du den Teig glatt gerührt?",
+      "antworten": [
+        [
+          "Ja",
+          "u0"
+        ],
+        [
+          "Nein, nur kurz",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    }
+  },
+  "links": [
+    "glutenbildung",
+    "mechanik",
+    "fluffig"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

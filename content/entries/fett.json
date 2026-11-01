@@ -1,0 +1,57 @@
+{
+  "id": "fett",
+  "typ": "zutat",
+  "titel": "Fett allgemein",
+  "synonyme": [
+    "Butter",
+    "Öl",
+    "Margarine",
+    "Schmalz"
+  ],
+  "kurz": "Fett macht Gebäck zart, weil es das Mehl umhüllt, hält es saftig und trägt Geschmack. Welches Fett, entscheidet über die Textur.",
+  "bild_im_kopf": "Wie ein Regenmantel ums Mehl: Wasser kommt schlechter heran, das Netz bleibt schwach.",
+  "rolle": [
+    {
+      "rolle": "umhüllt Mehl, macht mürbe",
+      "prozess": "glutenbildung"
+    },
+    {
+      "rolle": "schaumig gerührt: hält Luft",
+      "prozess": "schaumbildung"
+    },
+    {
+      "rolle": "schmilzt und lässt Kekse breit laufen",
+      "prozess": "kekse-breit"
+    }
+  ],
+  "was_passiert": "Festes Fett wie kalte Butter bleibt in Stückchen und gibt Schichten. Weiche Butter lässt sich mit Zucker schaumig rühren und hält Luft. Öl macht Kuchen besonders saftig, kann aber keine Luft halten.",
+  "faustregeln": [
+    "Kalte Butter für Mürbeteig und Blätterteig, weiche für Rührkuchen, Öl für saftige Kuchen."
+  ],
+  "links": [
+    "glutenbildung",
+    "muerbe",
+    "kekse-breit",
+    "butter",
+    "oel"
+  ],
+  "welten": [
+    "w-gebaeck",
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    },
+    {
+      "titel": "The Bake School: Why chill cookie dough",
+      "url": "https://bakeschool.com/why-chill-cookie-dough/"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

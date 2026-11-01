@@ -1,0 +1,36 @@
+{
+  "id": "fettgehalt",
+  "typ": "stellschraube",
+  "titel": "Fettmenge",
+  "synonyme": [
+    "weniger Fett",
+    "mehr Butter"
+  ],
+  "kurz": "Mehr Fett macht zarter, saftiger und reicher, aber auch weicher und breiter laufend.",
+  "bild_im_kopf": "Ein Regler zwischen Brötchen und Butterkeks.",
+  "was_passiert": "Fett umhüllt Mehl und bremst das Glutennetz. Es hält Feuchtigkeit und trägt Aromen. Zu viel Fett lässt Gebäck auseinanderlaufen oder fettig werden.",
+  "faustregeln": [
+    "Fett ersetzen ist heikel: Apfelmus statt Butter macht Kuchen zäher und gummiger."
+  ],
+  "links": [
+    "fett",
+    "muerbe",
+    "glutenbildung",
+    "kekse-breit"
+  ],
+  "visual": {
+    "vorlage": "skala",
+    "params": {
+      "links": "wenig Fett: fester, zäher, trockener",
+      "rechts": "viel Fett: zart, mürbe, reich"
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,98 @@
+{
+  "typ": "symptom",
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "boden-durchgeweicht",
+  "titel": "Boden ist durchgeweicht",
+  "synonyme": [
+    "Tarteboden nass",
+    "matschiger Boden",
+    "soggy bottom"
+  ],
+  "kurz": "Die nasse Füllung hat den rohen Teig durchfeuchtet, bevor er backen konnte.",
+  "bild_im_kopf": "Wie ein Pappteller unter nasser Suppe.",
+  "ursachen": [
+    {
+      "titel": "Nicht vorgebacken",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Roher Teig unter feuchter Füllung trocknet nie richtig.",
+      "fix": [
+        "Blindbacken"
+      ]
+    },
+    {
+      "titel": "Zu wenig Hitze von unten",
+      "haeufigkeit": 2,
+      "prinzip": "waermeleitung",
+      "warum": "Der Boden bekommt in der Mitte des Ofens zu wenig Hitze.",
+      "fix": [
+        "Unterste Schiene",
+        "Auf einem vorgeheizten Blech backen"
+      ]
+    },
+    {
+      "titel": "Sehr flüssige Füllung",
+      "haeufigkeit": 1,
+      "prinzip": "verdampfen",
+      "warum": "Viel Saft weicht jeden Boden auf.",
+      "fix": [
+        "Obst mit etwas Stärke oder gemahlenen Nüssen binden",
+        "Boden mit Ei bestreichen und kurz backen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hast du den Boden vorgebacken?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Auf welcher Schiene hast du gebacken?",
+      "antworten": [
+        [
+          "Mitte oder oben",
+          "u1"
+        ],
+        [
+          "Unten",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "blindbacken",
+    "muerbe"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

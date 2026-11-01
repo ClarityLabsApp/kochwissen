@@ -1,0 +1,45 @@
+{
+  "id": "luftig",
+  "typ": "ziel",
+  "titel": "Luftig",
+  "synonyme": [
+    "Volumen",
+    "Mousse",
+    "schaumig",
+    "leicht"
+  ],
+  "kurz": "Luftig heißt: Viel Luft wird eingeschlagen und festgehalten, durch Eischnee, geschlagene Sahne oder schaumig gerührte Butter.",
+  "bild_im_kopf": "Wie Wolken: fast nur Luft, aber sie halten ihre Form.",
+  "bedeutung": "Mechanisch eingeschlagene Luft braucht eine Hülle, die sie hält: Eiweiß, Fett oder Gelatine. Wird die Hülle zu schwer belastet oder zu lange bearbeitet, entweicht die Luft wieder.",
+  "hebel": [
+    "schaumbildung",
+    "mechanik",
+    "temperatur"
+  ],
+  "was_passiert": "Butter und Zucker schaumig rühren schließt winzige Luftbläschen ein, die Backpulver später vergrößert. Eischnee und Sahne tragen Mousse und Biskuit.",
+  "faustregeln": [
+    "Butter zum Schaumigrühren weich, aber nicht geschmolzen.",
+    "Sahne gut gekühlt schlagen.",
+    "Schwere Massen zuerst mit etwas Schaum lockern, dann den Rest unterheben."
+  ],
+  "links": [
+    "aufschlagen",
+    "unterheben",
+    "schaumbildung"
+  ],
+  "welten": [
+    "w-gebaeck",
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

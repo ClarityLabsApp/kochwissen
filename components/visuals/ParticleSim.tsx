@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 const C = { water: "#8fb8c9", waterRim: "#5f8fa3", fat: "#f0d27a", fatRim: "#c9a24a", lab: "#2f6f73", salt: "#ffffff", sepia: "#7a5a3a",
   ink: "#2b2118", roast: "#6b3a1e", nut: "#b8873a", caramel: "#d9822b", meat: "#c97b72", meatRim: "#a9564e", cell: "#c8d9a8", cellRim: "#7f9a5a" };
 
-export type Preset = "emulsion" | "osmose" | "pektin-abbau" | "reduktion" | "hefegaerung";
+export type Preset = "emulsion" | "osmose" | "pektin-abbau" | "reduktion" | "hefegaerung" | "chemische-lockerung";
 
 interface Ctl { a: number; b: boolean; ph: number }
 interface Sim {
@@ -224,7 +224,50 @@ const hefe: Sim = {
   },
 };
 
-const PRESETS: Record<Preset, Sim> = { emulsion, osmose, "pektin-abbau": pektin, reduktion, hefegaerung: hefe };
+/* ---------------- Chemische Lockerung: Backpulver reagiert zweimal ---------------- */
+const lockerung: Sim = {
+  title: "Ebene 3 · Backpulver im Teig", scale: "≈ 1 mm",
+  controls: { slider: { label: "Temperatur", min: 20, max: 180, step: 1, def: 20, fmt: (v) => `${Math.round(v)} °C` }, toggle: { label: "Teig nass (Flüssigkeit eingerührt)", def: true }, reset: true },
+  init(W, H) {
+    const P = (n: number) => Array.from({ length: n }, () => ({ x: rnd(14, W - 14), y: rnd(H * .35, H - 24), used: false, slow: Math.random() < 0.4 }));
+    return { base: P(28), acid: P(28), bubbles: [] as { x: number; y: number; r: number }[], rise: 0, set: false };
+  },
+  step(s, dt, c, W, H) {
+    const wet = c.b, T = c.a;
+    if (T >= 110) s.set = true; // Teig wird fest, Trieb endet
+    if (wet && !s.set) {
+      const fast = T >= 60 ? 1 : 0;
+      for (let i = 0; i < s.base.length; i++) {
+        const b = s.base[i], a = s.acid[i];
+        if (b.used) continue;
+        const ready = a.slow ? fast : 1;            // „langsame“ Säure reagiert erst in der Hitze
+        if (ready && Math.random() < dt * (a.slow ? 0.6 : 0.12)) { b.used = a.used = true; s.bubbles.push({ x: (b.x + a.x) / 2, y: (b.y + a.y) / 2, r: 2 }); }
+      }
+    }
+    for (const bb of s.bubbles) { bb.r = Math.min(s.set ? bb.r : 9, bb.r + dt * (2 + c.a / 60)); }
+    const target = s.bubbles.length / 28;
+    if (!s.set) s.rise += (target - s.rise) * Math.min(1, dt * 2);
+  },
+  draw(g, s, c, W, H, t) {
+    const lift = s.rise * H * 0.22, top = H * 0.32 - lift;
+    g.fillStyle = s.set ? "#e6c38a" : "#f3e2bd"; g.fillRect(10, top, W - 20, H - 18 - top);
+    g.strokeStyle = "#c9b083"; g.lineWidth = 1.5; g.strokeRect(10, top, W - 20, H - 18 - top);
+    g.fillStyle = "#4a4642"; g.fillRect(4, H - 18, W - 8, 8);
+    const yMap = (y: number) => top + ((y - H * .35) / (H - 24 - H * .35)) * (H - 30 - top) + 6;
+    for (const bb of s.bubbles) dot(g, bb.x, yMap(bb.y), bb.r, "#fffaf0", "#c9b083", .8);
+    s.base.forEach((b: any) => { if (!b.used) dot(g, b.x + Math.sin(t + b.x) * 1.2, yMap(b.y), 3, "#ffffff", C.sepia, .8); });
+    s.acid.forEach((a: any) => { if (!a.used) dot(g, a.x + Math.cos(t + a.y) * 1.2, yMap(a.y), 3, a.slow ? C.caramel : C.fat, C.sepia, .8); });
+  },
+  status(s, c) {
+    if (!c.b) return "Trockenes Backpulver ruht: Natron und Säure reagieren erst, wenn Flüssigkeit dazukommt.";
+    if (s.set) return "Ab gut 100 °C wird der Teig fest. Die Gasblasen sind eingeschlossen, der Kuchen bleibt luftig.";
+    if (c.a >= 60) return "In der Hitze reagiert die zweite Säure: Viele neue Blasen, der Teig geht im Ofen richtig auf.";
+    return "Nass reagiert ein Teil schon jetzt: erste Blasen. Die zweite Säure wartet auf die Ofenhitze.";
+  },
+  readouts(s) { const left = s.base.filter((b: any) => !b.used).length; return [["Gasblasen", String(s.bubbles.length)], ["Teig", s.set ? "fest" : "weich"], ["Backpulver übrig", `${Math.round(left / 28 * 100)} %`]]; },
+};
+
+const PRESETS: Record<Preset, Sim> = { emulsion, osmose, "pektin-abbau": pektin, reduktion, hefegaerung: hefe, "chemische-lockerung": lockerung };
 
 /** Punkt-Simulation für einen Prozess. Läuft auf Canvas, mit Reglern aus dem Preset. */
 export default function ParticleSim({ preset }: { preset: Preset }) {
@@ -241,10 +284,11 @@ export default function ParticleSim({ preset }: { preset: Preset }) {
 
   // Osmose läuft beim Öffnen einmal von selbst durch
   useEffect(() => {
-    if (preset !== "osmose" && preset !== "reduktion") return;
+    if (preset !== "osmose" && preset !== "reduktion" && preset !== "chemische-lockerung") return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    let raf = 0; const start = performance.now(); const from = preset === "osmose" ? 0 : 1, to = preset === "osmose" ? 1 : 0.35;
-    const run = (now: number) => { const p = Math.min(1, (now - start) / 9000); setA(from + (to - from) * p); if (p < 1) raf = requestAnimationFrame(run); };
+    let raf = 0; const start = performance.now(); const [from, to] = preset === "osmose" ? [0, 1] : preset === "reduktion" ? [1, 0.35] : [20, 180];
+    const dur = preset === "chemische-lockerung" ? 12000 : 9000;
+    const run = (now: number) => { const p = Math.min(1, (now - start) / dur); setA(from + (to - from) * p); if (p < 1) raf = requestAnimationFrame(run); };
     raf = requestAnimationFrame(run);
     return () => cancelAnimationFrame(raf);
   }, [preset, reset]);

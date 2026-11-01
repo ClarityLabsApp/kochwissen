@@ -1,0 +1,38 @@
+{
+  "id": "zuckergehalt",
+  "typ": "stellschraube",
+  "titel": "Zuckermenge",
+  "synonyme": [
+    "weniger Zucker",
+    "mehr Zucker",
+    "Süße"
+  ],
+  "kurz": "Mehr Zucker heißt nicht nur süßer: Gebäck wird zarter, feuchter, dunkler und läuft breiter.",
+  "bild_im_kopf": "Ein Regler zwischen Brot und Bonbon.",
+  "was_passiert": "Zucker bindet Wasser, bremst Gluten und Eiweißgerinnung und bräunt. Weniger Zucker macht Gebäck fester, trockener und heller.",
+  "faustregeln": [
+    "Zucker um höchstens ein Viertel reduzieren, sonst leidet die Textur.",
+    "Mehr Zucker in Cremes lässt sie später gerinnen."
+  ],
+  "links": [
+    "zucker",
+    "kuchen-trocken",
+    "kekse-breit",
+    "eiweiss-gerinnung"
+  ],
+  "visual": {
+    "vorlage": "skala",
+    "params": {
+      "links": "wenig Zucker: fester, trockener, heller",
+      "rechts": "viel Zucker: zarter, feuchter, dunkler, läuft breiter"
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

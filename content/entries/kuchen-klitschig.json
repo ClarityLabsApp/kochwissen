@@ -1,0 +1,98 @@
+{
+  "typ": "symptom",
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "kuchen-klitschig",
+  "titel": "Kuchen ist klitschig",
+  "synonyme": [
+    "speckig",
+    "nicht durch",
+    "klebrige Schicht",
+    "Kuchen roh"
+  ],
+  "kurz": "Ein Teil des Teigs ist nicht durchgebacken oder wieder zusammengefallen. Die Stärke ist nicht richtig verkleistert.",
+  "bild_im_kopf": "Wie Pudding in einem Kuchenmantel.",
+  "ursachen": [
+    {
+      "titel": "Zu kurz gebacken",
+      "haeufigkeit": 3,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Die Mitte erreicht nicht die Temperatur, bei der Stärke fest wird.",
+      "fix": [
+        "Länger backen, mit Alufolie abdecken, wenn die Oberfläche zu dunkel wird"
+      ]
+    },
+    {
+      "titel": "Zu viel Flüssigkeit oder Obst",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "Saftiges Obst gibt Wasser ab und macht den Teig darunter nass.",
+      "fix": [
+        "Obst trocken tupfen und in etwas Mehl wenden",
+        "Etwas länger backen"
+      ]
+    },
+    {
+      "titel": "Ofen zu heiß",
+      "haeufigkeit": 1,
+      "prinzip": "waermeleitung",
+      "warum": "Außen fertig, innen noch roh.",
+      "fix": [
+        "10–20 °C weniger, dafür länger"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "War Obst oder viel Flüssigkeit im Teig?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "War die Oberfläche schon dunkel, als du ihn herausgenommen hast?",
+      "antworten": [
+        [
+          "Ja",
+          "u2"
+        ],
+        [
+          "Nein",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "staerkeverkleisterung",
+    "kuchen-sinkt-ein"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

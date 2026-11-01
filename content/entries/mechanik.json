@@ -1,0 +1,38 @@
+{
+  "id": "mechanik",
+  "typ": "stellschraube",
+  "titel": "Mechanik (kneten, schlagen, rühren)",
+  "synonyme": [
+    "kneten",
+    "rühren",
+    "schlagen",
+    "mixen"
+  ],
+  "kurz": "Wie viel und wie kräftig du bearbeitest, entscheidet über Netz, Luft und Emulsion.",
+  "bild_im_kopf": "Ein Regler zwischen Streicheln und Durchkneten.",
+  "was_passiert": "Kneten stärkt das Glutennetz, Schlagen bringt Luft hinein und zerteilt Fett in feine Tröpfchen. Zu viel davon macht Kuchen zäh, Eischnee krümelig und Sahne zu Butter.",
+  "faustregeln": [
+    "Brot: viel. Kuchen: wenig. Eischnee: bis glänzend steif, dann aufhören."
+  ],
+  "links": [
+    "glutenbildung",
+    "schaumbildung",
+    "emulsion",
+    "muffins-tunnel"
+  ],
+  "visual": {
+    "vorlage": "skala",
+    "params": {
+      "links": "wenig: zart, wenig Netz",
+      "rechts": "viel: starkes Netz, viel Luft, Gefahr zu überarbeiten"
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

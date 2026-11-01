@@ -1,0 +1,41 @@
+{
+  "id": "ph-wert",
+  "typ": "stellschraube",
+  "titel": "pH-Wert (sauer – basisch)",
+  "synonyme": [
+    "sauer",
+    "basisch",
+    "alkalisch",
+    "Säure"
+  ],
+  "kurz": "Ob eine Umgebung sauer oder basisch ist, verändert Bräunung, Farbe, Biss und Triebkraft.",
+  "bild_im_kopf": "Eine Waage zwischen Zitrone und Natron.",
+  "was_passiert": "Basisch beschleunigt Bräunung und macht Gemüse weich. Sauer hält Gemüse fest, färbt Rotkohl rot und stoppt das Braunwerden von Äpfeln. Natron braucht Säure, um Gas zu bilden.",
+  "faustregeln": [
+    "Für schnellere Bräunung eine Prise Natron.",
+    "Für festes Gemüse und frischen Geschmack etwas Säure."
+  ],
+  "links": [
+    "natron",
+    "saeure",
+    "maillard-reaktion",
+    "pektin-abbau",
+    "anthocyan-farbe"
+  ],
+  "visual": {
+    "vorlage": "skala",
+    "params": {
+      "links": "sauer: fest, rot, frisch",
+      "mitte": "neutral",
+      "rechts": "basisch: bräunt schnell, weich, blau"
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

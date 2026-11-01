@@ -1,0 +1,100 @@
+{
+  "typ": "symptom",
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "kekse-breit",
+  "titel": "Kekse laufen breit",
+  "synonyme": [
+    "Guetzli zerlaufen",
+    "Cookies flach",
+    "Kekse zu dünn"
+  ],
+  "kurz": "Die Butter ist geschmolzen, bevor die Ränder fest wurden.",
+  "bild_im_kopf": "Wie ein Schneemann in der Sonne: Wenn er schneller schmilzt, als er friert, wird er flach.",
+  "ursachen": [
+    {
+      "titel": "Teig zu warm",
+      "haeufigkeit": 3,
+      "prinzip": "fettgehalt",
+      "warum": "Butter schmilzt bei etwa 35 °C. Warmer Teig zerläuft sofort.",
+      "fix": [
+        "Teig vor dem Backen kalt stellen",
+        "Blech zwischen den Durchgängen abkühlen lassen"
+      ]
+    },
+    {
+      "titel": "Viel Zucker oder zu wenig Mehl",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "Zucker verflüssigt sich im Ofen, Mehl gibt Halt.",
+      "fix": [
+        "Mehl abwiegen",
+        "Etwas weniger Zucker oder etwas mehr Mehl"
+      ]
+    },
+    {
+      "titel": "Ofen zu kühl",
+      "haeufigkeit": 1,
+      "prinzip": "waermeleitung",
+      "warum": "Die Ränder brauchen zu lange, um fest zu werden.",
+      "fix": [
+        "Ofen ganz vorheizen",
+        "Temperatur mit Thermometer prüfen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Kam der Teig direkt aus dem Kühlschrank?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "War der Ofen ganz vorgeheizt?",
+      "antworten": [
+        [
+          "Nicht sicher",
+          "u2"
+        ],
+        [
+          "Ja",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "fett",
+    "zucker",
+    "zuckergehalt"
+  ],
+  "quellen": [
+    {
+      "titel": "The Bake School: Why chill cookie dough",
+      "url": "https://bakeschool.com/why-chill-cookie-dough/"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

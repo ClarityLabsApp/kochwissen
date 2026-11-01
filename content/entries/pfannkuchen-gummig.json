@@ -1,0 +1,97 @@
+{
+  "typ": "symptom",
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "pfannkuchen-gummig",
+  "titel": "Pfannkuchen werden gummig",
+  "synonyme": [
+    "Pancakes zäh",
+    "Crêpes gummig",
+    "Omeletten zäh"
+  ],
+  "kurz": "Der Teig wurde zu lange gerührt und nicht geruht. Das Glutennetz ist zu stark.",
+  "bild_im_kopf": "Wie ein Radiergummi statt ein Kissen.",
+  "ursachen": [
+    {
+      "titel": "Zu lange gerührt",
+      "haeufigkeit": 3,
+      "prinzip": "glutenbildung",
+      "warum": "Rühren baut ein zähes Netz.",
+      "fix": [
+        "Nur kurz vermischen, Klümpchen sind in Ordnung"
+      ]
+    },
+    {
+      "titel": "Nicht geruht",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "Frisch gerührter Teig ist gespannt.",
+      "fix": [
+        "Crêpe-Teig 30 Minuten ruhen lassen"
+      ]
+    },
+    {
+      "titel": "Zu wenig Hitze",
+      "haeufigkeit": 1,
+      "prinzip": "chemische-lockerung",
+      "warum": "In der lauwarmen Pfanne entweicht das Gas, bevor der Teig fest ist.",
+      "fix": [
+        "Pfanne mittelheiß vorheizen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "War der Teig ganz glatt gerührt?",
+      "antworten": [
+        [
+          "Ja",
+          "u0"
+        ],
+        [
+          "Nein",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Hat der Teig geruht?",
+      "antworten": [
+        [
+          "Nein",
+          "u1"
+        ],
+        [
+          "Ja",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "glutenbildung",
+    "ruhezeit",
+    "fluffig"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

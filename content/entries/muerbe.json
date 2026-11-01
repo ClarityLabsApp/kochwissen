@@ -1,0 +1,46 @@
+{
+  "id": "muerbe",
+  "typ": "ziel",
+  "titel": "Mürbe",
+  "synonyme": [
+    "krümelig",
+    "Mürbeteig",
+    "zart",
+    "kurz"
+  ],
+  "kurz": "Mürbe heißt: Der Teig bricht zart und zerfällt im Mund, weil kaum ein Glutennetz entstanden ist.",
+  "bild_im_kopf": "Wie Sand, der nur locker zusammenklebt, statt wie Kaugummi.",
+  "bedeutung": "Fett umhüllt das Mehl, bevor Wasser dazukommt. So können sich die Eiweiße kaum verbinden. Wenig Wasser, kalte Butter und kurzes Arbeiten halten den Teig mürbe.",
+  "hebel": [
+    "glutenbildung",
+    "fettgehalt",
+    "mechanik",
+    "temperatur"
+  ],
+  "was_passiert": "Jede Minute Kneten und jeder Schluck Wasser zu viel stärkt das Netz und macht den Teig zäh. Ruhen im Kühlschrank entspannt ihn und festigt die Butter.",
+  "faustregeln": [
+    "Kalte Butter, kurz zusammendrücken, nicht kneten.",
+    "So wenig Wasser wie möglich.",
+    "Vor dem Ausrollen kalt stellen."
+  ],
+  "links": [
+    "muerbeteig-zaeh",
+    "glutenbildung",
+    "fett",
+    "blindbacken"
+  ],
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

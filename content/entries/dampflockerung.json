@@ -1,0 +1,45 @@
+{
+  "id": "dampflockerung",
+  "typ": "prozess",
+  "titel": "Dampf lockert (Brandteig, Blätterteig)",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "Blätterteig",
+    "Brandteig",
+    "Windbeutel",
+    "Dampf als Triebmittel"
+  ],
+  "kurz": "Wasser im Teig wird im heißen Ofen zu Dampf und bläst Hohlräume auf. Blätterteig und Windbeutel gehen ganz ohne Backpulver auf.",
+  "bild_im_kopf": "Wie ein Popcorn-Korn: Das Wasser darin wird zu Dampf und sprengt es auf.",
+  "was_passiert": "Wasser dehnt sich beim Verdampfen enorm aus. Bei Blätterteig steckt es in dünnen Butter- und Teigschichten, der Dampf drückt die Schichten auseinander. Bei Brandteig bildet sich eine Hülle, die der Dampf wie einen Ballon aufbläst.",
+  "warum_wichtig": "Erklärt, warum diese Teige sehr heiß gebacken werden müssen und warum Windbeutel zusammenfallen, wenn man den Ofen zu früh öffnet.",
+  "faustregeln": [
+    "Sehr heiß starten, damit schnell viel Dampf entsteht.",
+    "Blätterteig kalt halten, damit die Butterschichten getrennt bleiben.",
+    "Ofen erst öffnen, wenn das Gebäck fest und gebräunt ist."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "heißer → mehr Dampf, mehr Volumen"
+    }
+  ],
+  "links": [
+    "verdampfen",
+    "butter",
+    "w-gebaeck"
+  ],
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf"
+}

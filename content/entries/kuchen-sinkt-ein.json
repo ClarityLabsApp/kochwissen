@@ -1,0 +1,130 @@
+{
+  "typ": "symptom",
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "kuchen-sinkt-ein",
+  "titel": "Kuchen sinkt ein",
+  "synonyme": [
+    "Kuchen fällt zusammen",
+    "Delle in der Mitte",
+    "Kuchen eingefallen"
+  ],
+  "kurz": "Der Kuchen ist schneller gestiegen, als er fest werden konnte, oder er kam zu früh aus dem Ofen.",
+  "bild_im_kopf": "Wie ein Zelt, das man aufbaut, bevor die Stangen eingerastet sind.",
+  "ursachen": [
+    {
+      "titel": "Nicht durchgebacken",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "Die Mitte war noch flüssig und konnte das Gas nicht halten.",
+      "fix": [
+        "Stäbchenprobe in der Mitte",
+        "Ofentemperatur mit einem Thermometer prüfen"
+      ]
+    },
+    {
+      "titel": "Ofen zu früh geöffnet",
+      "haeufigkeit": 2,
+      "prinzip": "chemische-lockerung",
+      "warum": "Kalte Luft lässt das Gas schrumpfen, bevor der Teig fest ist.",
+      "fix": [
+        "Erst nach zwei Dritteln der Backzeit öffnen",
+        "Tür sanft schließen"
+      ]
+    },
+    {
+      "titel": "Zu viel Triebmittel",
+      "haeufigkeit": 2,
+      "prinzip": "chemische-lockerung",
+      "warum": "Zu viel Gas lässt den Teig zu schnell steigen, dann fällt er zusammen.",
+      "fix": [
+        "Backpulver genau abwiegen",
+        "Nicht nach Gefühl nachgeben"
+      ]
+    },
+    {
+      "titel": "Zu viel geschlagen",
+      "haeufigkeit": 1,
+      "prinzip": "schaumbildung",
+      "warum": "Zu viel Luft ohne genug Struktur.",
+      "fix": [
+        "Nach Zugabe des Mehls nur noch kurz rühren"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Ist die eingesunkene Stelle innen klitschig oder roh?",
+      "antworten": [
+        [
+          "Ja",
+          "u0"
+        ],
+        [
+          "Nein, durchgebacken",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Hast du den Ofen in der ersten Hälfte der Backzeit geöffnet?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "q3"
+        ]
+      ]
+    },
+    "q3": {
+      "frage": "Hast du das Backpulver genau abgewogen?",
+      "antworten": [
+        [
+          "Nicht genau",
+          "u2"
+        ],
+        [
+          "Ja",
+          "u3"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    },
+    "u3": {
+      "ursache": 3
+    }
+  },
+  "links": [
+    "chemische-lockerung",
+    "backpulver",
+    "eiweiss-gerinnung",
+    "unterheben"
+  ],
+  "quellen": [
+    {
+      "titel": "KitchenAid: Why did my cake sink in the middle?",
+      "url": "https://www.kitchenaid.com/pinch-of-help/stand-mixers/why-did-my-cake-sink-in-the-middle.html"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

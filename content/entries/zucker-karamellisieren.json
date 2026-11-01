@@ -1,0 +1,43 @@
+{
+  "id": "zucker-karamellisieren",
+  "typ": "technik",
+  "titel": "Zucker karamellisieren",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "Karamell machen",
+    "Karamellsauce",
+    "trockenes Karamell"
+  ],
+  "kurz": "Zucker schmelzen und bräunen, bis er bernsteinfarben ist. Mit oder ohne Wasser.",
+  "bild_im_kopf": "Wie ein Ampelsignal: golden heißt los, bernstein heißt jetzt, dunkelbraun heißt sofort stoppen.",
+  "was_passiert": "Beim trockenen Karamell schmilzt Zucker direkt. Beim nassen Karamell löst man ihn erst in Wasser, das verdampft, dann bräunt der Zucker gleichmäßiger. Rühren kann ungelösten Zucker an die Wand bringen und Kristalle auslösen.",
+  "schritte": [
+    "Zucker in einen Topf mit hellem Boden geben, nach Wunsch mit etwas Wasser.",
+    "Bei mittlerer Hitze schmelzen, nicht rühren, nur schwenken.",
+    "Zuckerkristalle am Rand mit einem nassen Pinsel lösen.",
+    "Bei Bernsteinfarbe vom Herd nehmen.",
+    "Vorsichtig warme Sahne oder Butter einrühren, es spritzt."
+  ],
+  "wirkt_auf": [
+    "mehr-geschmack",
+    "farbe"
+  ],
+  "links": [
+    "karamellisierung",
+    "zucker-kristallisation",
+    "karamell-kristallisiert"
+  ],
+  "welten": [
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf"
+}

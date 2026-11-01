@@ -1,0 +1,97 @@
+{
+  "typ": "symptom",
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "muerbeteig-zaeh",
+  "titel": "Mürbeteig wird zäh",
+  "synonyme": [
+    "Mürbeteig hart",
+    "Teig schrumpft",
+    "Tarteboden zäh"
+  ],
+  "kurz": "Zu viel Wasser, zu warme Butter oder zu viel Kneten haben ein Glutennetz aufgebaut.",
+  "bild_im_kopf": "Wie Sand, der zu Beton geworden ist.",
+  "ursachen": [
+    {
+      "titel": "Zu viel geknetet",
+      "haeufigkeit": 3,
+      "prinzip": "glutenbildung",
+      "warum": "Kneten verbindet die Eiweiße.",
+      "fix": [
+        "Nur kurz zusammendrücken"
+      ]
+    },
+    {
+      "titel": "Zu viel Wasser",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "Mit mehr Wasser bildet sich mehr Netz.",
+      "fix": [
+        "Wasser löffelweise, nur bis der Teig gerade hält"
+      ]
+    },
+    {
+      "titel": "Butter zu warm",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "Weiche Butter vermischt sich, statt das Mehl in Stückchen zu umhüllen.",
+      "fix": [
+        "Kalte Butter, kalte Hände, Teig zwischendurch kühlen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hast du den Teig richtig geknetet?",
+      "antworten": [
+        [
+          "Ja",
+          "u0"
+        ],
+        [
+          "Nein, nur kurz",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "War die Butter weich oder der Teig sehr feucht?",
+      "antworten": [
+        [
+          "Butter weich",
+          "u2"
+        ],
+        [
+          "Teig feucht",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "glutenbildung",
+    "muerbe",
+    "fett"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

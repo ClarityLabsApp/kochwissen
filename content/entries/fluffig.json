@@ -1,0 +1,64 @@
+{
+  "id": "fluffig",
+  "typ": "ziel",
+  "titel": "Fluffig",
+  "synonyme": [
+    "locker",
+    "luftig",
+    "fluffiger",
+    "leicht",
+    "Pancakes fluffig"
+  ],
+  "kurz": "Fluffig heißt: viele kleine Gasblasen, die im Ofen festgehalten werden, und ein Teig, der zart genug ist, um nicht zäh zu sein.",
+  "bild_im_kopf": "Wie ein Schwamm mit tausend kleinen Löchern statt ein Ziegelstein.",
+  "bedeutung": "Gas kommt von Backpulver, Hefe, Eischnee oder Dampf. Fluffig wird es, wenn das Gas im richtigen Moment entsteht und der Teig fest wird, bevor es entweicht. Wenig Glutennetz hält das Ergebnis zart.",
+  "hebel": [
+    "chemische-lockerung",
+    "schaumbildung",
+    "hefegaerung",
+    "glutenbildung",
+    "mechanik"
+  ],
+  "was_passiert": "Zu viel Rühren macht zäh und treibt Luft wieder hinaus. Zu wenig Triebmittel oder zu langes Stehen lässt den Teig flach bleiben.",
+  "faustregeln": [
+    "Trockene und nasse Zutaten nur kurz vermengen.",
+    "Eischnee vorsichtig unterheben.",
+    "Teig mit Backpulver nicht lange stehen lassen."
+  ],
+  "praxis": [
+    {
+      "welt": "w-gebaeck",
+      "text": "Pancakes: Klümpchen im Teig sind in Ordnung. Glatt gerührt werden sie gummiartig."
+    },
+    {
+      "welt": "w-eier",
+      "text": "Soufflé und Omelette soufflé leben nur vom Eischnee."
+    }
+  ],
+  "links": [
+    "unterheben",
+    "aufschlagen",
+    "chemische-lockerung",
+    "pfannkuchen-gummig",
+    "muffins-tunnel"
+  ],
+  "welten": [
+    "w-gebaeck",
+    "w-eier"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: Baking powder vs. baking soda",
+      "url": "https://www.americastestkitchen.com/cooksillustrated/articles/6262-what-is-the-difference-between-baking-powder-and-baking-soda-ask-paul"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

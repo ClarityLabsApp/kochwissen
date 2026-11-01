@@ -1,0 +1,74 @@
+{
+  "id": "chemische-lockerung",
+  "typ": "prozess",
+  "titel": "Chemische Lockerung",
+  "synonyme": [
+    "Backpulver",
+    "Natron",
+    "Triebmittel",
+    "Kuchen geht auf",
+    "Treibmittel"
+  ],
+  "kurz": "Backpulver und Natron bilden mit Säure und Feuchtigkeit Gasblasen. Im Ofen dehnen sie sich aus, bis der Teig fest wird.",
+  "bild_im_kopf": "Wie eine Brausetablette im Wasser: Base und Säure treffen sich und sprudeln.",
+  "was_passiert": "Natron ist eine Base. Trifft es auf Säure und Wasser, entsteht Kohlendioxid. Backpulver bringt die Säure gleich mit: Ein Teil reagiert schon beim Anrühren, ein zweiter Teil erst in der Ofenhitze. So geht der Kuchen genau dann auf, wenn er im Ofen ist. Wird der Teig fest, bleiben die Blasen eingeschlossen.",
+  "warum_wichtig": "Erklärt, warum Natron Buttermilch oder Joghurt braucht, warum Teig nicht ewig stehen soll und warum zu viel Triebmittel den Kuchen einfallen lässt.",
+  "faustregeln": [
+    "Natron nur mit Säure im Rezept (Buttermilch, Joghurt, Zitrone, Honig).",
+    "Teig mit Backpulver bald backen.",
+    "Zu viel Triebmittel schmeckt seifig und lässt den Kuchen zusammenfallen."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "Hitze löst die zweite Reaktion aus"
+    },
+    {
+      "id": "ph-wert",
+      "wirkung": "Natron braucht Säure"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "lange stehen → Gas entweicht"
+    }
+  ],
+  "mythos": {
+    "behauptung": "Mehr Backpulver gibt einen höheren Kuchen.",
+    "richtig": "Nur bis zu einem Punkt. Zu viel Gas lässt den Teig schneller steigen, als er fest wird, und er fällt zusammen."
+  },
+  "praxis": [
+    {
+      "welt": "w-gebaeck",
+      "text": "Muffins, Rührkuchen, Pancakes: Backpulver. Buttermilch-Scones und Lebkuchen: oft Natron."
+    },
+    {
+      "welt": "w-brot",
+      "text": "Irisches Soda Bread geht ganz ohne Hefe nur mit Natron und Buttermilch auf."
+    }
+  ],
+  "links": [
+    "backpulver",
+    "natron",
+    "saeure",
+    "kuchen-sinkt-ein",
+    "fluffig"
+  ],
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: Baking powder vs. baking soda",
+      "url": "https://www.americastestkitchen.com/cooksillustrated/articles/6262-what-is-the-difference-between-baking-powder-and-baking-soda-ask-paul"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,100 @@
+{
+  "typ": "symptom",
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "kuchen-trocken",
+  "titel": "Kuchen ist trocken",
+  "synonyme": [
+    "Kuchen bröselig",
+    "Kuchen strohig",
+    "trockener Kuchen"
+  ],
+  "kurz": "Meist zu lange gebacken. Manchmal fehlt Zucker oder Fett, die Feuchtigkeit halten.",
+  "bild_im_kopf": "Wie ein Schwamm, der zu lange in der Sonne lag.",
+  "ursachen": [
+    {
+      "titel": "Zu lange oder zu heiß gebacken",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Jede Minute zu viel verdampft Wasser aus der Krume.",
+      "fix": [
+        "Früher prüfen",
+        "Stäbchen darf feuchte Krümel haben, keinen nassen Teig"
+      ]
+    },
+    {
+      "titel": "Zu viel Mehl",
+      "haeufigkeit": 2,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Abgemessene Tassen enthalten oft deutlich mehr Mehl als gedacht.",
+      "fix": [
+        "Mehl abwiegen"
+      ]
+    },
+    {
+      "titel": "Zucker oder Fett reduziert",
+      "haeufigkeit": 1,
+      "prinzip": "saftig",
+      "warum": "Beide halten Wasser im Kuchen.",
+      "fix": [
+        "Höchstens ein Viertel weniger Zucker",
+        "Etwas Joghurt oder Öl im Teig"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hast du dich genau an die Backzeit gehalten?",
+      "antworten": [
+        [
+          "Eher länger",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Hast du das Mehl abgewogen?",
+      "antworten": [
+        [
+          "Nein, abgemessen",
+          "u1"
+        ],
+        [
+          "Ja",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "zucker",
+    "fett",
+    "saftig",
+    "zuckergehalt"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kuchen, Gebäck, Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}
