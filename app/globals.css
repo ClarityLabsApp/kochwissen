@@ -113,7 +113,11 @@ ul.plain { margin: 0; padding-left: 1.1em; display: flex; flex-direction: column
 .vis-readouts .mono { font-size: 9.5px; }
 details.more > summary { cursor: pointer; padding: 4px 0; }
 details.more[open] > summary { margin-bottom: 8px; }
-@media (prefers-reduced-motion: reduce) { .vis-step { animation: none; } }
+.vis .steam { animation: rise 2.4s ease-in infinite; }
+.vis .bubble { animation: bubble 1.6s ease-out infinite; }
+@keyframes rise { 0% { transform: translateY(8px); opacity: 0; } 30% { opacity: 1; } 100% { transform: translateY(-22px); opacity: 0; } }
+@keyframes bubble { 0% { opacity: 0; transform: scale(.4); transform-box: fill-box; transform-origin: center; } 40% { opacity: 1; } 100% { opacity: 0; transform: scale(1.6); transform-box: fill-box; transform-origin: center; } }
+@media (prefers-reduced-motion: reduce) { .vis-step, .vis .steam, .vis .bubble { animation: none; } }
 
 /* Glossar */
 .term { position: relative; display: inline; }
