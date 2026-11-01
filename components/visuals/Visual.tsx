@@ -6,7 +6,7 @@ import DotNet, { type NetNode } from "./DotNet";
 import ParticleSim, { type Preset } from "./ParticleSim";
 
 // Muss hier stehen: Funktionen aus Client-Modulen sind auf dem Server nicht aufrufbar.
-const SIMS = new Set<string>(["emulsion", "osmose", "pektin-abbau", "reduktion"]);
+const SIMS = new Set<string>(["emulsion", "osmose", "pektin-abbau", "reduktion", "hefegaerung"]);
 const hasSim = (id: string): id is Preset => SIMS.has(id);
 
 /** Liest Temperatur-Schwellen aus visual.params, egal in welchem der bekannten Formate. */

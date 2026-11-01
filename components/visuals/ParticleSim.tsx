@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 const C = { water: "#8fb8c9", waterRim: "#5f8fa3", fat: "#f0d27a", fatRim: "#c9a24a", lab: "#2f6f73", salt: "#ffffff", sepia: "#7a5a3a",
   ink: "#2b2118", roast: "#6b3a1e", nut: "#b8873a", caramel: "#d9822b", meat: "#c97b72", meatRim: "#a9564e", cell: "#c8d9a8", cellRim: "#7f9a5a" };
 
-export type Preset = "emulsion" | "osmose" | "pektin-abbau" | "reduktion";
+export type Preset = "emulsion" | "osmose" | "pektin-abbau" | "reduktion" | "hefegaerung";
 
 interface Ctl { a: number; b: boolean; ph: number }
 interface Sim {
@@ -177,7 +177,54 @@ const reduktion: Sim = {
   readouts(_s, c) { return [["Wasser", `${Math.round(c.a * 100)} %`], ["Geschmack", `× ${(1 / c.a).toFixed(1)}`]]; },
 };
 
-const PRESETS: Record<Preset, Sim> = { emulsion, osmose, "pektin-abbau": pektin, reduktion };
+
+/* ---------------- Hefegärung: Teig geht je nach Temperatur auf ---------------- */
+const yeastRate = (T: number) => (T >= 55 ? 0 : T <= 2 ? 0 : T < 30 ? Math.pow((T - 2) / 28, 1.6) : Math.max(0, 1 - (T - 30) / 25));
+const hefe: Sim = {
+  title: "Ebene 2 · Teig mit Hefe und Gasblasen", scale: "≈ 2 cm",
+  controls: { slider: { label: "Temperatur", min: 4, max: 65, step: 1, def: 27, fmt: (v) => `${v} °C` }, reset: true },
+  init(W, H) {
+    return { yeast: Array.from({ length: 24 }, () => ({ a: rnd(0, Math.PI * 2), r: Math.sqrt(Math.random()), dead: false, ph: rnd(0, 6) })),
+             bubbles: [] as { a: number; r: number; s: number }[], gas: 0, collapsed: false, time: 0 };
+  },
+  step(s, dt, c) {
+    const T = c.a, rate = yeastRate(T);
+    s.time += dt;
+    if (T >= 55) for (const y of s.yeast) y.dead = true;
+    if (!s.collapsed && rate > 0) {
+      s.gas += rate * dt * 0.06;
+      if (Math.random() < rate * dt * 5 && s.bubbles.length < 160) s.bubbles.push({ a: rnd(0, Math.PI * 2), r: Math.sqrt(Math.random()) * 0.92, s: rnd(1.5, 3) });
+      for (const b of s.bubbles) b.s = Math.min(9, b.s + rate * dt * 0.6);
+    }
+    if (s.gas > 2.4 && !s.collapsed) s.collapsed = true; // Übergare: Netz reißt
+    if (s.collapsed) { s.gas = Math.max(1.1, s.gas - dt * 0.4); for (const b of s.bubbles) b.s = Math.max(2, b.s - dt * 2); }
+  },
+  draw(g, s, c, W, H, t) {
+    const vol = 1 + Math.min(s.gas, 2.4) * 0.55, cx = W / 2, base = H - 22;
+    const rx = Math.min(W * 0.42, 70 * Math.sqrt(vol) * 1.25), ry = Math.min(H * 0.8, 46 * vol * (s.collapsed ? 0.75 : 1));
+    g.fillStyle = "#4a4642"; g.fillRect(cx - W * 0.44, base, W * 0.88, 8);
+    g.beginPath(); g.ellipse(cx, base, rx, ry, 0, Math.PI, 0); g.closePath(); g.fillStyle = "#f3e2bd"; g.fill(); g.strokeStyle = "#c9b083"; g.lineWidth = 1.5; g.stroke();
+    const P = (a: number, r: number) => [cx + Math.cos(a) * r * rx * 0.9, base - Math.abs(Math.sin(a)) * r * ry * 0.9 - 4];
+    for (const b of s.bubbles) { const [x, y] = P(b.a, b.r); dot(g, x, y, b.s, "#fffaf0", "#c9b083", .8); }
+    for (const y of s.yeast) { const [x0, y0] = P(y.a, y.r); const j = y.dead ? 0 : 1.5; dot(g, x0 + Math.sin(t * 2 + y.ph) * j, y0 + Math.cos(t * 2 + y.ph) * j, 3, y.dead ? "#9a948e" : "#b8873a", y.dead ? "#6e6863" : "#7a5a3a", .8); }
+    g.font = '600 10px "JetBrains Mono", monospace'; g.fillStyle = C.sepia; g.fillText(`VOLUMEN × ${vol.toFixed(1)}`, 10, 16);
+  },
+  status(s, c) {
+    const T = c.a;
+    if (s.collapsed) return "Zu lange gegangen: Das Glutennetz ist überdehnt und reißt, der Teig fällt zusammen (Übergare).";
+    if (T >= 55) return "Ab etwa 55–60 °C stirbt die Hefe. Im Ofen ist das gewollt: Der Trieb endet, die Form wird fest.";
+    if (T < 8) return "Im Kühlschrank arbeitet die Hefe kaum. Der Teig geht sehr langsam, dafür entstehen mehr Aromen.";
+    if (T < 22) return "Kühl: Die Hefe arbeitet gemächlich. Gut für Geschmack und einen flexiblen Zeitplan.";
+    if (T <= 35) return "Die Hefe ist sehr aktiv. Sie frisst Zucker und bläst Gas in das Glutennetz: Der Teig geht auf.";
+    return "Zu warm für eine angenehme Gare: Die Hefe wird langsamer und bildet weniger feine Aromen.";
+  },
+  readouts(s, c) {
+    const T = c.a, r = yeastRate(T);
+    return [["Hefe", T >= 55 ? "tot" : r < 0.1 ? "schläft fast" : r < 0.6 ? "aktiv" : "sehr aktiv"], ["Volumen", `× ${(1 + Math.min(s.gas, 2.4) * 0.55).toFixed(1)}`]];
+  },
+};
+
+const PRESETS: Record<Preset, Sim> = { emulsion, osmose, "pektin-abbau": pektin, reduktion, hefegaerung: hefe };
 
 /** Punkt-Simulation für einen Prozess. Läuft auf Canvas, mit Reglern aus dem Preset. */
 export default function ParticleSim({ preset }: { preset: Preset }) {
