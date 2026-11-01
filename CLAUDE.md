@@ -83,5 +83,5 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - [x] 15 Gerichte und 12 Experimente ergänzt (Generator `scripts/batches/gen_batch_gerichte_experimente.py`)
 - [ ] Weitere Gerichte und Experimente; eigene Grafik für Experimente (Vorher/Nachher)
 - [ ] Semantische Suche (z. B. pgvector) als Ergänzung; bis dahin fehlende Alltagswörter in `THESAURUS` nachtragen
-- [ ] Aquarell-Illustrationen erzeugen: `OPENAI_API_KEY=… npm run illustrationen -- --test`, dann ohne `--test`. Motive in `visual.illustration` (Welten und Zutaten, 45 Stück), Ausgabe `public/illustrationen/<id>.png`, Anzeige automatisch im Seitenkopf
+- [x] 45 Aquarell-Illustrationen (Welten und Zutaten) in `public/illustrationen/<id>.webp`, Anzeige im Seitenkopf. Neue Motive: `visual.illustration` setzen, `npm run illustrationen -- --only id1,id2` (schreibt WebP, ca. 130 KB)
 - [ ] Prüfung für unmarkierte Fachbegriffe im Validator
