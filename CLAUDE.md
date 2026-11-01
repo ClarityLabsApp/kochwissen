@@ -81,5 +81,5 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - [ ] Review durch Phil: Status von `entwurf` auf `geprueft`
 - [ ] Masterliste erweitern (neue Gerichte, Techniken, Begriffe)
 - [ ] Semantische Suche (z. B. Supabase pgvector), aktuelle Wortsuche ersetzen
-- [ ] Aquarell-Illustrationen pro Welt und Zutat per Batch-Skript (Stil-Prompt in `DESIGN.md`)
+- [ ] Aquarell-Illustrationen erzeugen: `OPENAI_API_KEY=… npm run illustrationen -- --test`, dann ohne `--test`. Motive in `visual.illustration` (Welten und Zutaten, 45 Stück), Ausgabe `public/illustrationen/<id>.png`, Anzeige automatisch im Seitenkopf
 - [ ] Prüfung für unmarkierte Fachbegriffe im Validator

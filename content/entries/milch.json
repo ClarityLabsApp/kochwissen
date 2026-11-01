@@ -1,7 +1,8 @@
 {
   "typ": "zutat",
   "visual": {
-    "vorlage": "punktmatrix"
+    "vorlage": "punktmatrix",
+    "illustration": "a vintage glass milk bottle"
   },
   "id": "milch",
   "titel": "Milch",

@@ -8,7 +8,8 @@
     "validate": "node scripts/validate.mjs",
     "prebuild": "node scripts/validate.mjs",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "illustrationen": "node scripts/illustrations.mjs"
   },
   "dependencies": {
     "next": "14.2.35",

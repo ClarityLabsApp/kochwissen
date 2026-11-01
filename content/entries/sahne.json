@@ -1,7 +1,8 @@
 {
   "typ": "zutat",
   "visual": {
-    "vorlage": "punktmatrix"
+    "vorlage": "punktmatrix",
+    "illustration": "a small jug of cream with a drip on the spout"
   },
   "id": "sahne",
   "titel": "Sahne",

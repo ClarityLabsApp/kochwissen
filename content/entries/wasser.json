@@ -1,7 +1,8 @@
 {
   "typ": "zutat",
   "visual": {
-    "vorlage": "punktmatrix"
+    "vorlage": "punktmatrix",
+    "illustration": "a vintage enamel jug of water"
   },
   "id": "wasser",
   "titel": "Wasser",

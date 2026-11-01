@@ -129,6 +129,8 @@ details.more[open] > summary { margin-bottom: 8px; }
 .spec-knob { position: absolute; top: 50%; width: 22px; height: 22px; margin: -11px 0 0 -11px; border-radius: 50%; background: var(--paper-2); border: 2px solid var(--ink); }
 .spec-ends { display: flex; justify-content: space-between; gap: 8px; font: 11px var(--f-mono); color: var(--sepia); text-transform: uppercase; letter-spacing: .06em; }
 
+.illu { width: min(260px, 70%); height: auto; align-self: center; mix-blend-mode: multiply; }
+
 /* Glossar */
 .term { position: relative; display: inline; }
 .term > button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline dotted var(--crust); text-decoration-thickness: 2px; text-underline-offset: 3px; }

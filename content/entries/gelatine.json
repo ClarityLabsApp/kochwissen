@@ -1,7 +1,8 @@
 {
   "typ": "zutat",
   "visual": {
-    "vorlage": "punktmatrix"
+    "vorlage": "punktmatrix",
+    "illustration": "gelatin sheets fanned out"
   },
   "id": "gelatine",
   "titel": "Gelatine",

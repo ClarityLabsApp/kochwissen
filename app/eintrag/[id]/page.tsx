@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import type { Metadata } from "next";
 import RichText from "@/components/RichText";
 import Diagnosis from "@/components/Diagnosis";
@@ -45,6 +47,10 @@ export default function EntryPage({ params }: { params: { id: string } }) {
         {e?.schwierigkeit && <span className="mono">{e.schwierigkeit}</span>}
         <span className="mono">{e ? e.status : proto ? "Prototyp" : "geplant"}</span>
       </div>
+      {existsSync(join(process.cwd(), "public/illustrationen", `${params.id}.png`)) && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img className="illu" src={`/illustrationen/${params.id}.png`} alt="" width={1024} height={1024} />
+      )}
       <div>
         <h1>{e?.titel ?? m!.titel}</h1>
         {(e?.synonyme ?? m?.synonyme)?.length ? <p className="syn">Auch gesucht als: {(e?.synonyme ?? m!.synonyme).join(", ")}</p> : null}
