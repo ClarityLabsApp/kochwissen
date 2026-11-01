@@ -3,9 +3,9 @@ import { useEffect, useRef, useState } from "react";
 
 /* Punkt-Sprache laut DESIGN.md */
 const C = { water: "#8fb8c9", waterRim: "#5f8fa3", fat: "#f0d27a", fatRim: "#c9a24a", lab: "#2f6f73", salt: "#ffffff", sepia: "#7a5a3a",
-  ink: "#2b2118", roast: "#6b3a1e", nut: "#b8873a", caramel: "#d9822b", meat: "#c97b72", meatRim: "#a9564e", cell: "#c8d9a8", cellRim: "#7f9a5a" };
+  ink: "#2b2118", roast: "#6b3a1e", nut: "#b8873a", caramel: "#d9822b", meat: "#c97b72", meatRim: "#a9564e", cell: "#c8d9a8", cellRim: "#7f9a5a", sugar: "#e0ad3a" };
 
-export type Preset = "emulsion" | "osmose" | "pektin-abbau" | "reduktion" | "hefegaerung" | "chemische-lockerung";
+export type Preset = "emulsion" | "osmose" | "pektin-abbau" | "reduktion" | "hefegaerung" | "chemische-lockerung" | "waermeleitung" | "schaumbildung" | "diffusion" | "zucker-kristallisation" | "leidenfrost" | "gelbildung-pektin" | "chlorophyll-farbe" | "eiweiss-denaturierung";
 
 interface Ctl { a: number; b: boolean; ph: number }
 interface Sim {
@@ -267,7 +267,280 @@ const lockerung: Sim = {
   readouts(s) { const left = s.base.filter((b: any) => !b.used).length; return [["Gasblasen", String(s.bubbles.length)], ["Teig", s.set ? "fest" : "weich"], ["Backpulver übrig", `${Math.round(left / 28 * 100)} %`]]; },
 };
 
-const PRESETS: Record<Preset, Sim> = { emulsion, osmose, "pektin-abbau": pektin, reduktion, hefegaerung: hefe, "chemische-lockerung": lockerung };
+/* ---------------- Wärmeleitung: Hitze wandert durch ein Steak ---------------- */
+const doneColor = (tmax: number) => {
+  const mix2 = (a: string, b: string, t: number) => { const h = (s: string) => [1, 3, 5].map((i) => parseInt(s.slice(i, i + 2), 16)); const A = h(a), B = h(b); t = Math.max(0, Math.min(1, t)); return "#" + A.map((v, i) => Math.round(v + (B[i] - v) * t).toString(16).padStart(2, "0")).join(""); };
+  if (tmax < 45) return "#b8494f";
+  if (tmax < 57) return mix2("#b8494f", "#d98a86", (tmax - 45) / 12);
+  if (tmax < 70) return mix2("#d98a86", "#a39088", (tmax - 57) / 13);
+  if (tmax < 140) return "#a39088";
+  return mix2("#a8662e", "#5a3018", (tmax - 140) / 60);
+};
+const waerme: Sim = {
+  title: "Ebene 2 · Querschnitt durch ein Steak", scale: "≈ 3 cm",
+  controls: { slider: { label: "Pfannentemperatur", min: 100, max: 260, step: 5, def: 220, fmt: (v) => `${Math.round(v)} °C` }, toggle: { label: "Dickes Stück (4 cm statt 2 cm)", def: false }, reset: true },
+  init() { const N = 40; return { T: Array(N).fill(5), Tmax: Array(N).fill(5), time: 0, flip: false }; },
+  step(s, dt, c) {
+    const N = s.T.length, thick = c.b ? 2 : 1, k = 4 / (thick * thick);
+    s.time += dt;
+    for (let sub = 0; sub < 6; sub++) {
+      const T = s.T, nT = T.slice();
+      for (let i = 1; i < N - 1; i++) nT[i] = Math.min(100, T[i] + k * (dt / 6) * (T[i - 1] - 2 * T[i] + T[i + 1]) * N * N / 400); // Wasser im Fleisch hält das Innere unter 100 °C
+      nT[0] = c.a; nT[N - 1] = T[N - 1] + (25 - T[N - 1]) * 0.02;
+      s.T = nT;
+    }
+    for (let i = 0; i < N; i++) s.Tmax[i] = Math.max(s.Tmax[i], s.T[i]);
+  },
+  draw(g, s, c, W, H) {
+    const N = s.T.length, thick = c.b ? 1 : 0.6, x0 = 20, x1 = W - 70, h = (H - 50) * thick, y0 = 20 + ((H - 50) - h) / 2;
+    g.fillStyle = "#4a4642"; g.fillRect(x0 - 6, y0 + h, x1 - x0 + 12, 10);
+    for (let i = 0; i < N; i++) { const y = y0 + h - (i + 1) * (h / N); g.fillStyle = doneColor(s.Tmax[i]); g.fillRect(x0, y, x1 - x0, h / N + 0.6); }
+    g.strokeStyle = C.ink; g.lineWidth = 1; g.strokeRect(x0, y0, x1 - x0, h);
+    // Thermometer am Kern
+    const core = s.T[Math.floor(N / 2)], cy = y0 + h / 2;
+    g.fillStyle = C.ink; g.beginPath(); g.moveTo(x1 + 6, cy); g.lineTo(x1 + 14, cy - 5); g.lineTo(x1 + 14, cy + 5); g.fill();
+    g.font = '600 11px "JetBrains Mono", monospace'; g.fillText(`${Math.round(core)} °C`, x1 + 18, cy + 4);
+    g.font = '600 9px "JetBrains Mono", monospace'; g.fillStyle = C.sepia; g.fillText("KERN", x1 + 18, cy - 10); g.fillText("PFANNE", x0, y0 + h + 22); g.fillText("LUFT", x0, y0 - 6);
+  },
+  status(s) {
+    const N = s.T.length, core = s.T[Math.floor(N / 2)], grey = s.Tmax.filter((t: number) => t >= 68 && t < 140).length;
+    if (core < 30) return "Die Hitze kriecht langsam von unten nach oben. Die Mitte ist noch kalt.";
+    if (core < 54) return grey > 6 ? "Die Mitte ist noch nicht rosa, aber unten wächst schon ein breiter grauer Ring." : "Unten bildet sich die Kruste, die Hitze wandert Schicht für Schicht nach innen.";
+    if (core < 62) return "Der Kern ist rosa: Jetzt herausnehmen. Wie breit der graue Ring ist, hängt von der Pfannenhitze ab.";
+    return "Der Kern ist durch. Je heißer die Pfanne, desto mehr ist darunter längst übergart.";
+  },
+  readouts(s) { const N = s.T.length; const grey = s.Tmax.filter((t: number) => t >= 68 && t < 140).length; return [["Kern", `${Math.round(s.T[Math.floor(N / 2)])} °C`], ["Grauer Rand", `${Math.round(grey / N * 100)} %`]]; },
+};
+
+/* ---------------- Schaumbildung: Luft einschlagen ---------------- */
+const schaum: Sim = {
+  title: "Ebene 2 · Eiweiß wird zu Schaum", scale: "≈ 1 mm",
+  controls: { slider: { label: "Schlagen", min: 0, max: 1, step: 0.01, def: 0.7, fmt: (v) => (v < 0.05 ? "aus" : v < 0.4 ? "langsam" : v < 0.8 ? "kräftig" : "volle Stufe") }, toggle: { label: "Eine Spur Eigelb (Fett) im Eiweiß", def: false }, reset: true },
+  init() { return { b: [] as any[], work: 0, water: 0 }; },
+  step(s, dt, c, W, H) {
+    const sp = c.a;
+    s.work += sp * dt;
+    const over = s.work > 26;
+    if (sp > 0.05 && s.b.length < 170 && Math.random() < sp * dt * 14) s.b.push({ x: rnd(20, W - 20), y: rnd(H * 0.35, H - 20), r: rnd(9, 15) * (1.2 - Math.min(1, s.work / 18) * 0.6), coat: 0, life: 0 });
+    for (const p of s.b) {
+      p.life += dt; p.coat = Math.min(1, p.coat + dt * 0.5 * (c.b ? 0.15 : 1));
+      if (sp > 0.05 && p.r > 4 && Math.random() < sp * dt * 0.5) p.r *= 0.85;   // Schlagen macht Blasen kleiner
+      p.x += Math.sin(p.y / 30 + performance.now() / 500) * sp * 30 * dt; p.y += rnd(-1, 1) * 10 * dt;
+      p.x = Math.max(p.r, Math.min(W - p.r, p.x)); p.y = Math.max(H * 0.2, Math.min(H - p.r, p.y));
+    }
+    const popRate = c.b ? 0.9 : over ? 0.35 : 0.02;
+    s.b = s.b.filter((p: any) => !(p.coat < 0.6 && p.life > 0.6 && Math.random() < popRate * dt) && !(over && Math.random() < 0.1 * dt));
+    if (over) s.water = Math.min(1, s.water + dt * 0.05);
+  },
+  draw(g, s, c, W, H) {
+    const vol = s.b.length / 170, top = H - 20 - (H - 60) * (0.25 + vol * 0.75);
+    g.fillStyle = "rgba(246,238,221,.9)"; g.fillRect(14, top, W - 28, H - 20 - top);
+    if (s.water > 0) { g.fillStyle = "rgba(143,184,201,.45)"; g.fillRect(14, H - 20 - s.water * 30, W - 28, s.water * 30); }
+    for (const p of s.b) {
+      dot(g, p.x, Math.max(top + p.r, p.y), p.r, "rgba(255,255,255,.85)", "#c9b083", 1);
+      if (p.coat > 0.2) { g.strokeStyle = C.lab; g.globalAlpha = p.coat; g.lineWidth = 1.6 + (s.work > 26 ? 2 : 0); g.beginPath(); g.arc(p.x, Math.max(top + p.r, p.y), p.r + 1.5, 0, Math.PI * 2); g.stroke(); g.globalAlpha = 1; }
+    }
+    g.strokeStyle = C.ink; g.lineWidth = 1.2; g.beginPath(); g.moveTo(14, 20); g.lineTo(14, H - 20); g.lineTo(W - 14, H - 20); g.lineTo(W - 14, 20); g.stroke();
+  },
+  status(s, c) {
+    const v = s.b.length / 170;
+    if (c.b) return "Schon eine Spur Fett stört die Eiweißhaut um die Blasen: Sie platzen gleich wieder, der Schnee wird nicht steif.";
+    if (s.work > 26) return "Zu lange geschlagen: Die Eiweißhüllen werden zu fest, reißen, und Wasser tritt aus. Der Schnee wird krümelig.";
+    if (v < 0.25) return "Schlagen bringt Luft hinein. Die Eiweiße entfalten sich und legen sich um jede Blase.";
+    if (v < 0.7) return "Weiche Spitzen: Jetzt ist der richtige Moment für den Zucker.";
+    return "Steif und glänzend: viele kleine, gut umhüllte Blasen. Jetzt aufhören.";
+  },
+  readouts(s) { const v = s.b.length / 170; return [["Volumen", `× ${(1 + v * 6).toFixed(1)}`], ["Zustand", s.work > 26 ? "krümelig" : v < 0.25 ? "flüssig" : v < 0.7 ? "weich" : "steif"]]; },
+};
+
+/* ---------------- Diffusion: Salz wandert, Aromen bleiben außen ---------------- */
+const diffusion: Sim = {
+  title: "Ebene 2 · Marinade auf dem Fleisch", scale: "≈ 2 cm",
+  controls: { slider: { label: "Zeit", min: 0, max: 1, step: 0.005, def: 0, fmt: (v) => { const h = Math.pow(v, 2) * 48; return h < 1 ? `${Math.round(h * 60)} min` : `${Math.round(h)} h`; } } },
+  init(W) { return { salt: Array.from({ length: 70 }, () => ({ x: rnd(16, W - 16), d: Math.random(), ph: rnd(0, 6) })), aroma: Array.from({ length: 14 }, () => ({ x: rnd(16, W - 16), d: Math.random(), ph: rnd(0, 6) })) }; },
+  step() {},
+  draw(g, s, c, W, H, t) {
+    const top = H * 0.24, bot = H - 14, depth = (frac: number) => top + frac * (bot - top);
+    g.fillStyle = "#e8b2a8"; g.fillRect(0, top, W, bot - top);
+    g.strokeStyle = C.meatRim; g.globalAlpha = .3; for (let y = top + 18; y < bot; y += 22) { g.beginPath(); g.moveTo(0, y); g.bezierCurveTo(W * .3, y - 5, W * .6, y + 5, W, y - 2); g.stroke(); } g.globalAlpha = 1;
+    g.fillStyle = "rgba(201,162,74,.35)"; g.fillRect(0, top - 14, W, 14);
+    const reach = Math.sqrt(c.a) * 0.95; // Eindringtiefe wächst mit der Wurzel der Zeit
+    for (const p of s.salt) dot(g, p.x + Math.sin(t + p.ph) * 1.2, depth(p.d * reach) - (reach < 0.02 ? 7 : 0), 2.6, C.salt, C.sepia, .8);
+    for (const a of s.aroma) dot(g, a.x + Math.sin(t * .8 + a.ph) * 1.2, depth(a.d * reach * 0.06) - 6, 4.5, C.caramel, C.sepia, .8);
+    g.font = '600 9px "JetBrains Mono", monospace'; g.fillStyle = C.sepia; g.fillText("MARINADE", 8, top - 18); g.fillText("FLEISCH", 8, bot - 6);
+  },
+  status(_s, c) {
+    if (c.a < 0.05) return "Salz (weiß) und Aromen (orange) liegen auf der Oberfläche.";
+    if (c.a < 0.35) return "Das kleine Salz beginnt einzuwandern. Die großen Aromastoffe bleiben fast ganz außen.";
+    if (c.a < 0.75) return "Nach vielen Stunden ist das Salz tief im Fleisch. Die Aromen der Marinade haften weiterhin vor allem an der Oberfläche.";
+    return "Nach ein bis zwei Tagen ist das Salz überall. Aromen aus Kräutern und Öl sind kaum tiefer gekommen: Marinaden würzen die Oberfläche.";
+  },
+  readouts(_s, c) { return [["Salz", c.a < 0.1 ? "außen" : c.a < 0.6 ? "auf halbem Weg" : "überall"], ["Aromen", "außen"]]; },
+};
+
+/* ---------------- Zucker kristallisiert: Kettenreaktion ---------------- */
+const kristall: Sim = {
+  title: "Ebene 3 · Zuckersirup beim Abkühlen", scale: "≈ 0,1 mm",
+  controls: { toggle: { label: "Rühren", def: true }, slider: { label: "Glukosesirup oder Zitrone (Störstoff)", min: 0, max: 1, step: 1, def: 0, fmt: (v) => (v > 0.5 ? "drin" : "keiner") }, reset: true },
+  init(W, H) { return { m: Array.from({ length: 150 }, () => ({ x: rnd(10, W - 10), y: rnd(10, H - 10), vx: rnd(-1, 1), vy: rnd(-1, 1), fixed: false })), cryst: 0, seeded: false }; },
+  step(s, dt, c, W, H) {
+    const inhib = c.a > 0.5, stir = c.b;
+    if (!s.seeded && stir && Math.random() < dt * (inhib ? 0.03 : 0.5)) { const p = s.m[Math.floor(Math.random() * s.m.length)]; p.fixed = true; s.seeded = true; }
+    const fixed = s.m.filter((p: any) => p.fixed);
+    for (const p of s.m) {
+      if (p.fixed) continue;
+      const sp = stir ? 70 : 25;
+      p.vx += rnd(-1, 1) * dt * 3; p.vy += rnd(-1, 1) * dt * 3; const n = Math.hypot(p.vx, p.vy) || 1; p.vx /= n; p.vy /= n;
+      p.x += p.vx * sp * dt; p.y += p.vy * sp * dt;
+      if (p.x < 6 || p.x > W - 6) p.vx *= -1; if (p.y < 6 || p.y > H - 6) p.vy *= -1;
+      p.x = Math.max(6, Math.min(W - 6, p.x)); p.y = Math.max(6, Math.min(H - 6, p.y));
+      for (const f of fixed) if (Math.abs(f.x - p.x) < 9 && Math.abs(f.y - p.y) < 9 && Math.random() < (inhib ? 0.15 : 0.9)) {
+        const dir = Math.floor(Math.random() * 4); p.x = f.x + [8, -8, 0, 0][dir]; p.y = f.y + [0, 0, 8, -8][dir]; p.fixed = true; break;
+      }
+    }
+    s.cryst = fixed.length / s.m.length;
+  },
+  draw(g, s) {
+    for (const p of s.m) {
+      if (p.fixed) { g.fillStyle = "#ffffff"; g.strokeStyle = C.sepia; g.lineWidth = 1; g.fillRect(p.x - 4, p.y - 4, 8, 8); g.strokeRect(p.x - 4, p.y - 4, 8, 8); }
+      else dot(g, p.x, p.y, 3, C.sugar, C.sepia, .7);
+    }
+  },
+  status(s, c) {
+    if (!s.seeded) return c.b ? "Gerührt wird: Jeden Moment kann sich ein erster Kristall bilden." : "Ohne Rühren bleibt der Sirup glatt. Die Zuckermoleküle schwimmen frei.";
+    if (s.cryst < 0.25) return "Ein erster Kristall ist da. Jedes Zuckermolekül, das ihn berührt, lagert sich an.";
+    if (c.a > 0.5) return "Der Störstoff bremst: Die Moleküle haften viel schlechter an, der Sirup bleibt länger glatt.";
+    return "Kettenreaktion: Der Kristall wächst immer schneller. Das Karamell wird körnig wie Sand.";
+  },
+  readouts(s) { return [["Kristallisiert", `${Math.round(s.cryst * 100)} %`], ["Sirup", s.cryst < 0.1 ? "glatt" : s.cryst < 0.5 ? "wird körnig" : "sandig"]]; },
+};
+
+/* ---------------- Leidenfrost: Tropfen auf der heißen Pfanne ---------------- */
+const leiden: Sim = {
+  title: "Ebene 1 · Wassertropfen auf der Pfanne", scale: "≈ 5 cm",
+  controls: { slider: { label: "Pfannentemperatur", min: 60, max: 300, step: 5, def: 230, fmt: (v) => `${Math.round(v)} °C` } },
+  init(W) { return { d: [] as any[], t: 0, born: 0 }; },
+  step(s, dt, c, W, H) {
+    s.t += dt;
+    if (s.d.length < 3 && s.t - s.born > 1.2) { s.d.push({ x: rnd(W * .25, W * .75), r: rnd(9, 13), vx: rnd(-40, 40), life: 0 }); s.born = s.t; }
+    const T = c.a;
+    for (const d of s.d) {
+      d.life += dt;
+      const lev = T >= 200;
+      const rate = T < 100 ? 0.05 : lev ? 0.12 : 0.6 + (T - 100) / 100 * 1.2;
+      d.r -= rate * dt * 3;
+      if (lev) { d.x += d.vx * dt; if (d.x < 30 || d.x > W - 30) d.vx *= -1; }
+    }
+    s.d = s.d.filter((d: any) => d.r > 1.5);
+  },
+  draw(g, s, c, W, H, t) {
+    const T = c.a, py = H * 0.68;
+    g.fillStyle = T > 200 ? "#5a4a42" : "#55504b"; g.fillRect(16, py, W - 32, 14); g.fillRect(W - 24, py + 2, 40, 6);
+    for (const d of s.d) {
+      const lev = T >= 200, y = py - d.r - (lev ? 4 + Math.sin(t * 20 + d.x) * 1 : 0);
+      if (lev) { g.fillStyle = "rgba(255,255,255,.55)"; g.fillRect(d.x - d.r, py - 4, d.r * 2, 3); }
+      g.beginPath(); g.ellipse(d.x, y, d.r * (lev ? 1 : 1.25), d.r * (lev ? 1 : 0.7), 0, 0, Math.PI * 2); g.fillStyle = C.water; g.fill(); g.strokeStyle = C.waterRim; g.stroke();
+      if (T >= 100 && T < 200) for (let i = 0; i < 5; i++) { const a = rnd(Math.PI * 1.1, Math.PI * 1.9); dot(g, d.x + Math.cos(a) * d.r * 1.6, py - 4 + Math.sin(a) * d.r * 1.2, 1.6, "#ffffff"); }
+    }
+    g.font = '600 10px "JetBrains Mono", monospace'; g.fillStyle = C.sepia; g.fillText(`${Math.round(T)} °C`, 18, py + 32);
+  },
+  status(_s, c) {
+    const T = c.a;
+    if (T < 100) return "Unter 100 °C verdunstet der Tropfen nur langsam. Zum Anbraten viel zu kalt.";
+    if (T < 200) return "Der Tropfen zischt und verdampft in Sekunden. Die Pfanne ist warm, aber noch nicht heiß genug für Edelstahl.";
+    return "Der Tropfen schwebt auf seinem eigenen Dampfpolster und tanzt umher. Jetzt ist die Pfanne bereit.";
+  },
+  readouts(_s, c) { const T = c.a; return [["Tropfen", T < 100 ? "liegt" : T < 200 ? "zischt weg" : "tanzt"], ["Zum Anbraten", T >= 200 ? "bereit" : "zu kalt"]]; },
+};
+
+/* ---------------- Pektin-Gel: Zucker und Säure verbinden die Ketten ---------------- */
+const pektinGel: Sim = {
+  title: "Ebene 3 · Pektinketten in Fruchtsaft", scale: "≈ 10 nm",
+  controls: { toggle: { label: "Genug Zucker", def: true }, slider: { label: "Säure (Zitrone)", min: 0, max: 1, step: 1, def: 1, fmt: (v) => (v > 0.5 ? "drin" : "keine") }, reset: true },
+  init(W, H) { return { ch: Array.from({ length: 12 }, () => { const x = rnd(30, W - 30), y = rnd(30, H - 30), a = rnd(0, Math.PI); return { x, y, a, vx: rnd(-10, 10), vy: rnd(-10, 10) }; }), bonds: [] as [number, number][] }; },
+  step(s, dt, c, W, H) {
+    const gel = c.b && c.a > 0.5;
+    for (const k of s.ch) { const m = gel ? 0.25 : 1; k.x += k.vx * dt * m; k.y += k.vy * dt * m; k.a += rnd(-1, 1) * dt * m; if (k.x < 20 || k.x > W - 20) k.vx *= -1; if (k.y < 20 || k.y > H - 20) k.vy *= -1; }
+    if (gel && s.bonds.length < 22 && Math.random() < dt * 3) {
+      const i = Math.floor(Math.random() * s.ch.length); let best = -1, bd = 1e9;
+      s.ch.forEach((k: any, j: number) => { if (j === i || s.bonds.some(([a, b]: number[]) => (a === i && b === j) || (a === j && b === i))) return; const d = Math.hypot(k.x - s.ch[i].x, k.y - s.ch[i].y); if (d < bd) { bd = d; best = j; } });
+      if (best >= 0 && bd < 150) s.bonds.push([i, best]);
+    }
+    if (!gel && s.bonds.length && Math.random() < dt * 4) s.bonds.shift();
+  },
+  draw(g, s) {
+    for (const [a, b] of s.bonds) { const A = s.ch[a], B = s.ch[b]; g.strokeStyle = C.caramel; g.lineWidth = 2; g.setLineDash([3, 3]); g.beginPath(); g.moveTo(A.x, A.y); g.lineTo(B.x, B.y); g.stroke(); g.setLineDash([]); }
+    for (const k of s.ch) for (let i = -3; i <= 3; i++) dot(g, k.x + Math.cos(k.a) * i * 9, k.y + Math.sin(k.a) * i * 9 + Math.sin(i) * 3, 3.6, C.cellRim, "#4f6a33", .8);
+  },
+  status(s, c) {
+    if (!c.b && c.a <= 0.5) return "Ohne Zucker und Säure stoßen sich die Pektinketten ab und schwimmen frei. Es bleibt flüssig.";
+    if (!c.b) return "Säure allein reicht nicht: Ohne genug Zucker bleiben die Ketten von Wasser umgeben und finden nicht zusammen.";
+    if (c.a <= 0.5) return "Zucker allein reicht nicht: Ohne Säure stoßen sich die Ketten weiter ab.";
+    return s.bonds.length > 12 ? "Zucker und Säure zusammen: Die Ketten verbinden sich zu einem Netz. Die Konfitüre geliert." : "Die Ketten beginnen sich zu verbinden.";
+  },
+  readouts(s) { return [["Verbindungen", String(s.bonds.length)], ["Konfitüre", s.bonds.length > 12 ? "geliert" : s.bonds.length > 4 ? "dickt ein" : "flüssig"]]; },
+};
+
+/* ---------------- Chlorophyll: Grün wird olivgrün ---------------- */
+const gruen: Sim = {
+  title: "Ebene 1 · Bohnen im kochenden Wasser", scale: "≈ 10 cm",
+  controls: { slider: { label: "Kochzeit", min: 0, max: 12, step: 0.1, def: 0, fmt: (v) => `${v.toFixed(1)} min` }, toggle: { label: "Säure im Wasser (Zitrone, Tomate)", def: false } },
+  init(W, H) { return { beans: Array.from({ length: 9 }, (_, i) => ({ x: 40 + (i % 3) * ((W - 80) / 2), y: 50 + Math.floor(i / 3) * ((H - 90) / 2), a: rnd(-0.6, 0.6), ph: rnd(0, 6) })) }; },
+  step() {},
+  draw(g, s, c, W, H, t) {
+    const min = c.a, acid = c.b ? 2.5 : 1;
+    const bright = Math.min(1, min / 1.2), olive = Math.max(0, Math.min(1, ((min - 2) * acid) / 7));
+    const mix2 = (a: number[], b: number[], k: number) => `rgb(${a.map((v, i) => Math.round(v + (b[i] - v) * k)).join(",")})`;
+    const base = [104, 150, 74], vivid = [52, 168, 70], dull = [138, 134, 66];
+    const col = olive > 0 ? mix2(vivid, dull, olive) : mix2(base, vivid, bright);
+    g.fillStyle = "rgba(143,184,201,.25)"; g.fillRect(8, 8, W - 16, H - 16);
+    for (const b of s.beans) {
+      g.save(); g.translate(b.x + Math.sin(t * 2 + b.ph) * 2, b.y + Math.cos(t * 2 + b.ph) * 2); g.rotate(b.a);
+      g.beginPath(); (g as any).roundRect ? (g as any).roundRect(-38, -8, 76, 16, 8) : g.rect(-38, -8, 76, 16); g.fillStyle = col; g.fill(); g.strokeStyle = "rgba(0,0,0,.25)"; g.stroke(); g.restore();
+    }
+    for (let i = 0; i < 10; i++) { const x = 20 + ((i * 53 + t * 40) % (W - 40)), y = H - 16 - ((t * 60 + i * 37) % (H - 30)); dot(g, x, y, 2, "rgba(255,255,255,.7)"); }
+  },
+  status(_s, c) {
+    const m = c.a;
+    if (m < 0.2) return "Rohe Bohnen: mattgrün, weil Luft im Gewebe das Grün verschleiert.";
+    if (m < 2) return "In den ersten Minuten entweicht die Luft: Das Grün leuchtet. Jetzt abgießen und in Eiswasser abschrecken.";
+    if (c.b) return "Mit Säure im Wasser kippt das Grün viel schneller ins Olivgrüne.";
+    return m < 6 ? "Säuren aus den Zellen beginnen, das Chlorophyll zu verändern: Das Grün wird trüber." : "Lange gekocht: olivgrün und weich.";
+  },
+  readouts(_s, c) { const m = c.a, olive = Math.max(0, ((m - 2) * (c.b ? 2.5 : 1)) / 7); return [["Farbe", m < 0.3 ? "mattgrün" : olive < 0.15 ? "leuchtend" : olive < 0.6 ? "trüber" : "olivgrün"], ["Biss", m < 3 ? "knackig" : m < 7 ? "weich" : "sehr weich"]]; },
+};
+
+/* ---------------- Eiweiß-Denaturierung: Fasern pressen Saft aus ---------------- */
+const eiweiss: Sim = {
+  title: "Ebene 3 · Eiweißfäden im Muskel", scale: "≈ 10 nm",
+  controls: { slider: { label: "Kerntemperatur", min: 20, max: 85, step: 1, def: 20, fmt: (v) => `${Math.round(v)} °C` } },
+  init(W, H) { return { strands: Array.from({ length: 7 }, (_, i) => ({ y: 30 + i * ((H - 60) / 6), ph: rnd(0, 6) })), water: Array.from({ length: 60 }, () => ({ x: rnd(20, W - 20), y: rnd(30, H - 30), out: rnd(0, 1), ph: rnd(0, 6) })) }; },
+  step() {},
+  draw(g, s, c, W, H, t) {
+    const T = c.a, unfold = Math.max(0, Math.min(1, (T - 45) / 15)), squeeze = Math.max(0, Math.min(1, (T - 64) / 12));
+    const x0 = 20 + squeeze * 30, x1 = W - 20 - squeeze * 30;
+    for (const st of s.strands) {
+      g.beginPath(); g.strokeStyle = squeeze > 0.3 ? "#8c5a50" : C.lab; g.lineWidth = 3;
+      for (let x = x0; x <= x1; x += 3) { const amp = 9 * (1 - unfold) + 2, y = st.y + Math.sin(x / (8 + unfold * 10) + st.ph) * amp; if (x === x0) g.moveTo(x, y); else g.lineTo(x, y); }
+      g.stroke();
+    }
+    for (const w of s.water) {
+      const gone = w.out < squeeze;
+      const x = gone ? (w.x < W / 2 ? 10 + w.out * 10 : W - 10 - w.out * 10) : w.x + Math.sin(t + w.ph) * 2;
+      g.globalAlpha = gone ? 0.6 : 1; dot(g, x, w.y + Math.cos(t + w.ph) * 2, 3, C.water, C.waterRim, .7); g.globalAlpha = 1;
+    }
+  },
+  status(_s, c) {
+    const T = c.a;
+    if (T < 45) return "Roh: Die Eiweißfäden sind gefaltet, Wasser sitzt zwischen ihnen.";
+    if (T < 60) return "Ab etwa 50 °C entfalten sich die ersten Eiweiße. Das Fleisch wird gar, bleibt aber saftig.";
+    if (T < 66) return "Das saftige Fenster geht zu Ende. Noch hält das Fleisch den größten Teil seines Wassers.";
+    return "Über etwa 66 °C ziehen sich die Fasern stark zusammen und pressen Wasser heraus: Das Fleisch wird fest und trocken.";
+  },
+  readouts(_s, c) { const sq = Math.max(0, Math.min(1, (c.a - 64) / 12)); return [["Saft gehalten", `${Math.round(100 - sq * 45)} %`], ["Garstufe", c.a < 50 ? "roh" : c.a < 58 ? "rosa" : c.a < 66 ? "medium" : "durch"]]; },
+};
+
+const PRESETS: Record<Preset, Sim> = { emulsion, osmose, "pektin-abbau": pektin, reduktion, hefegaerung: hefe, "chemische-lockerung": lockerung, waermeleitung: waerme, schaumbildung: schaum, diffusion, "zucker-kristallisation": kristall, leidenfrost: leiden, "gelbildung-pektin": pektinGel, "chlorophyll-farbe": gruen, "eiweiss-denaturierung": eiweiss };
 
 /** Punkt-Simulation für einen Prozess. Läuft auf Canvas, mit Reglern aus dem Preset. */
 export default function ParticleSim({ preset }: { preset: Preset }) {
@@ -284,9 +557,9 @@ export default function ParticleSim({ preset }: { preset: Preset }) {
 
   // Osmose läuft beim Öffnen einmal von selbst durch
   useEffect(() => {
-    if (preset !== "osmose" && preset !== "reduktion" && preset !== "chemische-lockerung") return;
+    if (!["osmose", "reduktion", "chemische-lockerung", "diffusion", "chlorophyll-farbe", "eiweiss-denaturierung"].includes(preset)) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    let raf = 0; const start = performance.now(); const [from, to] = preset === "osmose" ? [0, 1] : preset === "reduktion" ? [1, 0.35] : [20, 180];
+    let raf = 0; const start = performance.now(); const [from, to] = preset === "osmose" || preset === "diffusion" ? [0, 1] : preset === "reduktion" ? [1, 0.35] : preset === "chlorophyll-farbe" ? [0, 8] : preset === "eiweiss-denaturierung" ? [20, 80] : [20, 180];
     const dur = preset === "chemische-lockerung" ? 12000 : 9000;
     const run = (now: number) => { const p = Math.min(1, (now - start) / dur); setA(from + (to - from) * p); if (p < 1) raf = requestAnimationFrame(run); };
     raf = requestAnimationFrame(run);
@@ -332,7 +605,7 @@ export default function ParticleSim({ preset }: { preset: Preset }) {
         {sim.controls.ph && <div className="seg" role="group" aria-label="pH-Wert">
           {["sauer", "neutral", "basisch"].map((l, i) => <button key={l} type="button" aria-pressed={ph === i} onClick={() => setPh(i)}>{l}</button>)}
         </div>}
-        {(sim.controls.reset || preset === "osmose" || preset === "reduktion") && <button type="button" className="vis-btn" onClick={() => setReset((r) => r + 1)}>Neu starten</button>}
+        {(sim.controls.reset || ["osmose", "reduktion", "diffusion", "chlorophyll-farbe", "eiweiss-denaturierung"].includes(preset)) && <button type="button" className="vis-btn" onClick={() => setReset((r) => r + 1)}>Neu starten</button>}
       </div>
       <span className="mono">Modell vereinfacht</span>
     </div>
