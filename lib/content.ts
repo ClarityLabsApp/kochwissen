@@ -74,7 +74,7 @@ export function libraryData() {
 /** Kurzinfos für Glossar-Popups. */
 export function termInfo(id: string) {
   const e = getEntry(id);
-  return { id, titel: titleOf(id), kurz: e?.kurz ?? null, typ: typOf(id) ?? "begriff", ausgeschrieben: !!e };
+  return { id, titel: titleOf(id), kurz: e?.kurz ? e.kurz.replace(/\[\[[a-z0-9-]+\|([^\]]+)\]\]/g, "$1").replace(/\[\[([a-z0-9-]+)\]\]/g, (_, x: string) => titleOf(x)) : null, typ: typOf(id) ?? "begriff", ausgeschrieben: !!e };
 }
 
 export type TextPart = { t: "text"; v: string } | { t: "term"; id: string; label: string };

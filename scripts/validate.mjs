@@ -4,6 +4,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import Ajv2020 from "ajv/dist/2020.js";
+import { findUnmarked } from "./glossar.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const read = (p) => JSON.parse(readFileSync(join(root, p), "utf8"));
@@ -55,6 +56,8 @@ for (const { file, data: e } of entries) {
   for (const t of textFields(e)) for (const m of t.matchAll(TERM)) if (!known.has(m[1])) err(file, `Glossar-Markierung [[${m[1]}]] ohne Eintrag`);
 }
 
+const unmarked = findUnmarked(entries.map((x) => x.data), known);
+if (unmarked.length) warn.push(`${unmarked.length} Fachwörter ohne Glossar-Link (Liste: npm run glossar, verlinken: npm run glossar -- --fix)`);
 for (const w of warn) console.warn("Hinweis:", w);
 if (errors.length) {
   console.error(`\n${errors.length} Fehler:\n` + errors.map((x) => "  - " + x).join("\n"));

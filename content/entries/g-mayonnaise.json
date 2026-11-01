@@ -6,13 +6,13 @@
     "Mayo",
     "Aioli"
   ],
-  "kurz": "Mayonnaise ist eine Emulsion: Ein Eigelb kann eine ganze Schüssel Öl in feinen Tröpfchen halten, wenn das Öl langsam kommt.",
+  "kurz": "Mayonnaise ist eine [[emulsion|Emulsion]]: Ein Eigelb kann eine ganze Schüssel Öl in feinen Tröpfchen halten, wenn das Öl langsam kommt.",
   "bild_im_kopf": "Wie viele Gäste, die einzeln durch eine Tür kommen, statt alle auf einmal.",
   "schwierigkeit": "einsteiger",
   "schluesselmomente": [
     {
       "schritt": "Eigelb, Senf, Säure und Salz verrühren",
-      "warum": "Eigelb und Senf bringen die Emulgatoren mit.",
+      "warum": "Eigelb und Senf bringen die [[emulgator|Emulgatoren]] mit.",
       "prinzip": "emulsion"
     },
     {

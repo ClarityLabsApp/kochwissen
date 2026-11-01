@@ -46,7 +46,7 @@
       "titel": "Zu kalter Ofen oder kein Dampf",
       "haeufigkeit": 1,
       "prinzip": "verdampfen",
-      "warum": "Ohne Ofentrieb bleibt das Brot klein und dicht.",
+      "warum": "Ohne [[ofentrieb|Ofentrieb]] bleibt das Brot klein und dicht.",
       "fix": [
         "Ofen gut vorheizen",
         "Die ersten 20 Minuten mit Dampf backen"

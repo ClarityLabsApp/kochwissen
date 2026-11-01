@@ -10,7 +10,7 @@
   ],
   "kurz": "Cremig heißt: dick, aber glatt, ohne Klümpchen und ohne Fettaugen.",
   "bild_im_kopf": "Wie ein frisch gemähter Rasen statt ein Acker: viele kleine, gleichmäßige Teilchen statt grober Brocken.",
-  "bedeutung": "Cremig entsteht durch viele sehr kleine, gleichmäßig verteilte Teilchen: feine Fetttröpfchen in einer Emulsion, gelöste Stärke oder Eiweiß, das sanft eingedickt ist, ohne zu klumpen.",
+  "bedeutung": "Cremig entsteht durch viele sehr kleine, gleichmäßig verteilte Teilchen: feine Fetttröpfchen in einer [[emulsion|Emulsion]], gelöste Stärke oder Eiweiß, das sanft eingedickt ist, ohne zu klumpen.",
   "hebel": [
     "emulsion",
     "staerkeverkleisterung",
@@ -18,7 +18,7 @@
     "mechanik",
     "temperatur"
   ],
-  "was_passiert": "Klümpchen entstehen, wenn Stärke außen verkleistert, bevor sie sich verteilt, oder wenn Eiweiß zu heiß wird. Fettaugen entstehen, wenn eine Emulsion bricht.",
+  "was_passiert": "Klümpchen entstehen, wenn Stärke außen [[staerkeverkleisterung|verkleistert]], bevor sie sich verteilt, oder wenn Eiweiß zu heiß wird. Fettaugen entstehen, wenn eine Emulsion bricht.",
   "faustregeln": [
     "Risotto und Pasta: Stärke durch Rühren und Schwenken lösen.",
     "Eiercremes nie kochen lassen.",

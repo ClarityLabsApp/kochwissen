@@ -7,7 +7,7 @@
     "Bratbutter",
     "Butterschmalz"
   ],
-  "kurz": "Butter ist selbst eine Emulsion aus Fett, Wasser und Milcheiweiß. Darum bindet sie Saucen, verbrennt aber schneller als Öl.",
+  "kurz": "Butter ist selbst eine [[emulsion|Emulsion]] aus Fett, Wasser und Milcheiweiß. Darum bindet sie Saucen, verbrennt aber schneller als Öl.",
   "bild_im_kopf": "Wie ein fertiges Päckchen: Fett, Wasser und Eiweiß schon zusammengeschnürt.",
   "rolle": [
     {
@@ -30,7 +30,7 @@
   "was_passiert": "Butter besteht zu etwa vier Fünfteln aus Fett, der Rest ist Wasser und Milcheiweiß. Das Milcheiweiß bräunt beim Erhitzen nussig und verbrennt dann. Bratbutter ist geklärte Butter ohne Wasser und Eiweiß und verträgt viel mehr Hitze.",
   "faustregeln": [
     "Zum scharfen Braten Bratbutter oder Öl, frische Butter erst am Ende.",
-    "Kalte Butter zum Montieren, weiche zum Backen."
+    "Kalte Butter zum [[montieren|Montieren]], weiche zum Backen."
   ],
   "links": [
     "montieren",

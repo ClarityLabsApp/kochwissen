@@ -12,7 +12,7 @@
   ],
   "kurz": "Vakuumiertes Fleisch oder Fisch im Wasserbad genau auf Zieltemperatur garen. Von Rand zu Rand gleich, dann kurz anbraten.",
   "bild_im_kopf": "Wie ein Thermostat statt eines Lagerfeuers.",
-  "was_passiert": "Das Wasser ist genau so warm wie die gewünschte Kerntemperatur. Das Essen kann darum nicht übergaren, nur länger werden. Danach braucht es eine sehr heiße Pfanne für die Kruste.",
+  "was_passiert": "Das Wasser ist genau so warm wie die gewünschte [[kerntemperatur|Kerntemperatur]]. Das Essen kann darum nicht übergaren, nur länger werden. Danach braucht es eine sehr heiße Pfanne für die Kruste.",
   "schritte": [
     "Fleisch würzen und vakuumieren.",
     "Wasserbad auf Zieltemperatur bringen, z. B. 55 °C für rosa Rind (Richtwert).",

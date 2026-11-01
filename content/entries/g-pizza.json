@@ -17,7 +17,7 @@
     },
     {
       "schritt": "Vor dem Ausziehen temperieren und ruhen lassen",
-      "warum": "Entspanntes Gluten schnurrt nicht zurück.",
+      "warum": "Entspanntes [[glutenbildung|Gluten]] schnurrt nicht zurück.",
       "prinzip": "teig-schnurrt"
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "schritt": "Auf vorgeheiztem Stein oder Stahl so heiß wie möglich backen",
-      "warum": "Starke Hitze von unten gibt Ofentrieb und Kruste, bevor der Belag austrocknet.",
+      "warum": "Starke Hitze von unten gibt [[ofentrieb|Ofentrieb]] und Kruste, bevor der Belag austrocknet.",
       "prinzip": "waermeleitung"
     }
   ],

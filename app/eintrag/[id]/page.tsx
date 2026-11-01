@@ -147,7 +147,7 @@ export default function EntryPage({ params }: { params: { id: string } }) {
             <ul className="causes">{causesSorted.map((u) => (
               <li key={u.titel}>
                 <div className="head"><strong>{u.titel}</strong><span className="freq">{[1, 2, 3].map((n) => <i key={n} className={n <= (u.haeufigkeit ?? 0) ? "f" : ""} />)}</span></div>
-                <p className="why">{u.warum}</p>
+                <p className="why"><RichText text={u.warum} /></p>
                 <p className="fix">Nächstes Mal: {u.fix.join(" · ")}</p>
               </li>
             ))}</ul>

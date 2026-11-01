@@ -1,0 +1,27 @@
+{
+  "id": "enzym",
+  "typ": "begriff",
+  "titel": "Enzym",
+  "synonyme": [
+    "Enzyme",
+    "Ferment"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "kurz": "Ein Eiweiß, das wie eine winzige Schere oder ein Werkzeug Stoffe im Lebensmittel umbaut, ohne sich selbst zu verbrauchen. Hitze schaltet es ab.",
+  "bild_im_kopf": "Wie ein Arbeiter am Fließband, der immer denselben Handgriff macht, bis ihn jemand nach Hause schickt.",
+  "links": [
+    "enzym-braeunung",
+    "autolyse",
+    "pektin-abbau",
+    "blanchieren"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "keine"
+  }
+}

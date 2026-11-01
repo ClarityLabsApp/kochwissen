@@ -15,7 +15,7 @@
       "titel": "Zu heiß geworden",
       "haeufigkeit": 3,
       "prinzip": "emulsion",
-      "warum": "Hitze lässt Butter-Emulsionen schmelzen und Eigelb gerinnen. Das Fett tritt aus.",
+      "warum": "Hitze lässt Butter-[[emulsion|Emulsionen]] schmelzen und Eigelb gerinnen. Das Fett tritt aus.",
       "fix": [
         "Vom Herd nehmen",
         "Einen Löffel kaltes Wasser oder Sahne kräftig einrühren"
@@ -25,7 +25,7 @@
       "titel": "Fett zu schnell zugegeben",
       "haeufigkeit": 3,
       "prinzip": "emulsion",
-      "warum": "Der Emulgator kommt nicht nach, die Tröpfchen umhüllen.",
+      "warum": "Der [[emulgator|Emulgator]] kommt nicht nach, die Tröpfchen umhüllen.",
       "fix": [
         "In neuer Schüssel mit wenig Wasser oder Eigelb neu beginnen",
         "Die getrennte Sauce tropfenweise einarbeiten"

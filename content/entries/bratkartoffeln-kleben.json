@@ -15,7 +15,7 @@
       "titel": "Pfanne nicht heiß genug",
       "haeufigkeit": 3,
       "prinzip": "staerkeverkleisterung",
-      "warum": "In lauwarmer Pfanne verkleistert die Stärke zu einer klebrigen Schicht, bevor sie austrocknet.",
+      "warum": "In lauwarmer Pfanne [[staerkeverkleisterung|verkleistert]] die Stärke zu einer klebrigen Schicht, bevor sie austrocknet.",
       "fix": [
         "Pfanne mit Fett gut vorheizen",
         "Kartoffeln erst hinein, wenn das Fett schimmert"
