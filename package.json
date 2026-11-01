@@ -1,0 +1,25 @@
+{
+  "name": "kochwissen",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Kochwissen – visuelle Bibliothek, die erklärt, warum Kochen und Backen funktionieren.",
+  "scripts": {
+    "dev": "next dev",
+    "validate": "node scripts/validate.mjs",
+    "prebuild": "node scripts/validate.mjs",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.10",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "ajv": "8.17.1",
+    "typescript": "5.5.4"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "vorkochen-aufrauen",
+  "typ": "technik",
+  "titel": "Vorkochen und aufrauen",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "Ofenkartoffeln",
+    "parboilen",
+    "Roast Potatoes",
+    "Natron-Trick"
+  ],
+  "kurz": "Kartoffeln kurz in leicht basischem Wasser vorkochen und im Topf aufschütteln. Die raue, stärkehaltige Oberfläche wird im Ofen zu einer dicken Kruste.",
+  "bild_im_kopf": "Wie Schmirgelpapier statt Glas: Eine raue Fläche hat viel mehr Stellen, die knusprig werden können.",
+  "was_passiert": "Das Natron macht das Wasser leicht basisch. Dadurch löst sich der Kitt zwischen den äußeren Zellen schneller, der Rand wird weich, während der Kern fest bleibt. Beim Schütteln reibt sich der Rand zu einem Stärkebrei auf, der sich um jedes Stück legt. Im heißen Ofen trocknet dieser Brei zu einer knusprigen, zerklüfteten Kruste.",
+  "warum_wichtig": "Das ist das Gegenteil vom Wässern und funktioniert trotzdem. Beide Wege steuern Stärke und Wasser an der Oberfläche, nur mit anderem Ziel: dünne, glatte Kruste oder dicke, zerklüftete Kruste.",
+  "schritte": [
+    "Kartoffeln in große Stücke schneiden, in kaltem, gut gesalzenem Wasser aufsetzen.",
+    "Etwa ½ TL Natron pro 2 Liter Wasser dazugeben.",
+    "Köcheln, bis ein Messer leicht in den Rand geht, der Kern aber noch Widerstand hat.",
+    "Abgießen und 1–2 Minuten ausdampfen lassen.",
+    "Im Topf mit heißem Fett kräftig schütteln, bis die Ränder rau und breiig sind.",
+    "Mit Abstand aufs vorgeheizte Blech, bei 220 °C rösten, einmal wenden."
+  ],
+  "wirkt_auf": [
+    "knusprig"
+  ],
+  "faustregeln": [
+    "Ausdampfen lassen: Nasse Kartoffeln rösten nicht.",
+    "Lieber zu wenig Natron als zu viel, sonst wird es seifig und matschig."
+  ],
+  "typische_fehler": [
+    "Zu lange vorgekocht: Die Stücke zerfallen beim Schütteln ganz."
+  ],
+  "links": [
+    "natron",
+    "pektin-abbau",
+    "staerkeverkleisterung",
+    "roesten-ofen",
+    "kaltwasserbad"
+  ],
+  "welten": [
+    "w-kartoffeln"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Food52 Genius Recipes: Kenji López-Alts Ofenkartoffeln mit Natron",
+      "url": "https://food52.com/blog/23722"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
+    }
+  ],
+  "status": "entwurf"
+}

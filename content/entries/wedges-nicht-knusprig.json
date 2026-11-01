@@ -1,0 +1,170 @@
+{
+  "id": "wedges-nicht-knusprig",
+  "typ": "symptom",
+  "titel": "Wedges und Pommes werden nicht knusprig",
+  "schwierigkeit": "einsteiger",
+  "synonyme": [
+    "Ofenkartoffeln labbrig",
+    "Wedges weich",
+    "Pommes labbrig",
+    "Wedges knuspriger"
+  ],
+  "kurz": "Die Oberfläche wird nicht trocken genug, um auszuhärten. Meist ist zu viel Wasser oder Dampf im Spiel.",
+  "bild_im_kopf": "Wie ein zu voller Wäscheständer: Alles ist warm, aber nichts wird trocken.",
+  "ursachen": [
+    {
+      "titel": "Blech zu voll",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Liegen die Stücke eng, kann der Dampf nicht entweichen. Er hält die Oberflächen bei 100 °C.",
+      "fix": [
+        "Abstand zwischen den Stücken lassen",
+        "Lieber zwei Bleche nehmen"
+      ]
+    },
+    {
+      "titel": "Zu nass in den Ofen",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Wasser auf der Oberfläche muss erst verdampfen. Bis dahin ist die Hälfte der Backzeit vorbei.",
+      "fix": [
+        "Nach dem Wässern sehr gründlich trocknen",
+        "Kurz an der Luft liegen lassen"
+      ]
+    },
+    {
+      "titel": "Stärkefilm auf der Schnittfläche",
+      "haeufigkeit": 2,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Lose Stärke und Zucker vom Schneiden werden klebrig und bräunen zu früh. Die Wedges werden dunkel, aber nicht fest.",
+      "fix": [
+        "30 Minuten kalt wässern",
+        "Spülen, bis das Wasser klar bleibt"
+      ]
+    },
+    {
+      "titel": "Ofen nicht heiß genug",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "In einem lauwarmen Ofen verdampft das Wasser langsam, die Stücke garen weich, bevor die Oberfläche trocknet.",
+      "fix": [
+        "Ofen und Blech auf 220 °C vorheizen",
+        "Erst hineinschieben, wenn er wirklich heiß ist"
+      ]
+    },
+    {
+      "titel": "Nach dem Backen weich geworden",
+      "haeufigkeit": 1,
+      "prinzip": "verdampfen",
+      "warum": "Gestapelt oder abgedeckt kondensiert der Dampf aus dem Inneren auf der Kruste.",
+      "fix": [
+        "Auf ein Gitter legen",
+        "Nicht abdecken, sofort servieren"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Lagen die Wedges eng oder übereinander auf dem Blech?",
+      "antworten": [
+        [
+          "Ja",
+          "u0"
+        ],
+        [
+          "Nein, mit Abstand",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Hast du sie vor dem Backen gründlich getrocknet?",
+      "antworten": [
+        [
+          "Nein",
+          "u1"
+        ],
+        [
+          "Ja",
+          "q3"
+        ]
+      ]
+    },
+    "q3": {
+      "frage": "Wurden sie dunkel, bevor sie knusprig waren?",
+      "antworten": [
+        [
+          "Ja",
+          "u2"
+        ],
+        [
+          "Nein",
+          "q4"
+        ]
+      ]
+    },
+    "q4": {
+      "frage": "War der Ofen beim Hineinschieben schon richtig heiß?",
+      "antworten": [
+        [
+          "Nein oder unsicher",
+          "u3"
+        ],
+        [
+          "Ja",
+          "u4"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    },
+    "u3": {
+      "ursache": 3
+    },
+    "u4": {
+      "ursache": 4
+    }
+  },
+  "links": [
+    "knusprig",
+    "kaltwasserbad",
+    "staerkeverkleisterung",
+    "verdampfen",
+    "roesten-ofen",
+    "trocken-tupfen",
+    "vorkochen-aufrauen"
+  ],
+  "welten": [
+    "w-kartoffeln",
+    "w-frittieren"
+  ],
+  "visual": {
+    "vorlage": "pfannentest",
+    "params": {
+      "variante": "backblech",
+      "regler": "stuecke_pro_blech"
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Potatoes USA: Why soak potatoes in cold water before cooking?",
+      "url": "https://potatogoodness.com/faq/why-soak-the-potatoes-in-cold-water-before-cooking/"
+    },
+    {
+      "titel": "Fine Dining Lovers: The science of French fries",
+      "url": "https://www.finedininglovers.com/explore/articles/science-french-fries"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
+    }
+  ],
+  "status": "entwurf"
+}

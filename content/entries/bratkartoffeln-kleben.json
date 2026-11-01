@@ -1,0 +1,130 @@
+{
+  "id": "bratkartoffeln-kleben",
+  "typ": "symptom",
+  "titel": "Bratkartoffeln kleben an",
+  "schwierigkeit": "einsteiger",
+  "synonyme": [
+    "Rösti klebt",
+    "Kartoffeln kleben in der Pfanne",
+    "Bratkartoffeln zerfallen"
+  ],
+  "kurz": "Stärke an der Oberfläche verbindet sich mit der Pfanne, bevor sich eine feste Kruste bilden kann.",
+  "bild_im_kopf": "Wie Kleister auf einer Tapete: Feucht klebt er fest, erst trocken lässt er los.",
+  "ursachen": [
+    {
+      "titel": "Pfanne nicht heiß genug",
+      "haeufigkeit": 3,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "In lauwarmer Pfanne verkleistert die Stärke zu einer klebrigen Schicht, bevor sie austrocknet.",
+      "fix": [
+        "Pfanne mit Fett gut vorheizen",
+        "Kartoffeln erst hinein, wenn das Fett schimmert"
+      ]
+    },
+    {
+      "titel": "Zu früh gewendet",
+      "haeufigkeit": 3,
+      "prinzip": "maillard-reaktion",
+      "warum": "Eine feste Kruste löst sich von selbst. Vorher reißt man sie ab.",
+      "fix": [
+        "Liegen lassen, bis sie sich lösen",
+        "Pfanne leicht rütteln, um zu testen"
+      ]
+    },
+    {
+      "titel": "Rohe Kartoffeln mit Stärkefilm",
+      "haeufigkeit": 2,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Frisch geschnittene rohe Kartoffeln bringen viel lose Stärke mit.",
+      "fix": [
+        "Gekochte Kartoffeln vom Vortag verwenden",
+        "Rohe Scheiben wässern und trocknen"
+      ]
+    },
+    {
+      "titel": "Zu wenig Fett",
+      "haeufigkeit": 1,
+      "prinzip": "maillard-reaktion",
+      "warum": "Ohne Fettfilm liegen die Stücke direkt auf dem Metall.",
+      "fix": [
+        "Boden dünn, aber vollständig bedecken"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hat das Fett gezischt, als die Kartoffeln hineinkamen?",
+      "antworten": [
+        [
+          "Nein, eher leise",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Hast du in den ersten Minuten schon gewendet?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "q3"
+        ]
+      ]
+    },
+    "q3": {
+      "frage": "Waren die Kartoffeln roh geschnitten?",
+      "antworten": [
+        [
+          "Ja",
+          "u2"
+        ],
+        [
+          "Nein, vorgekocht",
+          "u3"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    },
+    "u3": {
+      "ursache": 3
+    }
+  },
+  "links": [
+    "staerke",
+    "staerkeverkleisterung",
+    "pfanne-vorheizen",
+    "kaltwasserbad",
+    "pfannenmaterial"
+  ],
+  "welten": [
+    "w-kartoffeln"
+  ],
+  "visual": {
+    "vorlage": "pfannentest",
+    "params": {
+      "variante": "pfanne"
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
+    }
+  ],
+  "status": "entwurf"
+}

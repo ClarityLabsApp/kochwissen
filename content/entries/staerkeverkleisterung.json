@@ -1,0 +1,120 @@
+{
+  "id": "staerkeverkleisterung",
+  "typ": "prozess",
+  "titel": "Stärkeverkleisterung",
+  "schwierigkeit": "einsteiger",
+  "synonyme": [
+    "Verkleisterung",
+    "Gelatinisierung",
+    "binden",
+    "andicken",
+    "quellen"
+  ],
+  "kurz": "Stärkekörner saugen in warmem Wasser Wasser auf, quellen und werden weich und klebrig. So wird eine Kartoffel gar und eine Sauce dick.",
+  "bild_im_kopf": "Wie Wasserperlen aus dem Spielwarenladen: trocken winzig und hart, im Wasser quellen sie auf ein Vielfaches und werden weich.",
+  "was_passiert": "Stärke liegt in winzigen, dicht gepackten Körnern vor. Kalt passiert fast nichts. Ab etwa 57 °C bei Kartoffelstärke beginnen die Körner Wasser aufzunehmen, sie schwellen an und geben lange Stärkeketten ab. Diese Ketten verhaken sich und machen Flüssigkeit dick oder Gekochtes weich und klebrig. Kühlt die Stärke ab, ordnet sie sich langsam wieder und wird fester.",
+  "warum_wichtig": "Gare Kartoffeln, gebundene Saucen, Pudding, Risotto, Brotkrume: überall dieselbe Reaktion. Auf der Oberfläche kann sie stören, weil sie klebt.",
+  "faustregeln": [
+    "Stärke immer in kalter Flüssigkeit anrühren, dann in die heiße geben. Sonst gibt es Klumpen.",
+    "Maisstärke bindet erst richtig, wenn sie einmal aufkocht.",
+    "Mehligkochende Kartoffeln haben mehr Stärke: fluffig, aber sie zerfallen leichter.",
+    "Für Kruste losen Stärkefilm abspülen, für zerklüftete Kruste bewusst aufrauen."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "ab ca. 57 °C beginnt es, darunter nichts"
+    },
+    {
+      "id": "feuchtigkeit",
+      "wirkung": "ohne Wasser kein Quellen"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "länger → weicher"
+    },
+    {
+      "id": "mechanik",
+      "wirkung": "rühren setzt mehr Stärke frei"
+    }
+  ],
+  "typische_fehler": [
+    "Stärkepulver direkt in heiße Sauce: Außen verkleistert es sofort, innen bleibt Pulver."
+  ],
+  "mythos": {
+    "behauptung": "Für Bratkartoffeln müssen die Kartoffeln frisch gekocht sein.",
+    "richtig": "Gekochte Kartoffeln vom Vortag sind besser. Die abgekühlte Stärke ist fester, die Scheiben zerfallen nicht und bräunen schöner."
+  },
+  "praxis": [
+    {
+      "welt": "w-kartoffeln",
+      "text": "Gar heißt verkleistert. An der Schnittfläche kann der Stärkefilm kleben, darum wässern oder bewusst aufrauen."
+    },
+    {
+      "welt": "w-saucen",
+      "text": "Ein Löffel Maisstärke in kaltem Wasser angerührt bindet etwa einen halben Liter Sauce."
+    },
+    {
+      "welt": "w-getreide",
+      "text": "Risotto wird cremig, weil das Rühren Stärke aus dem Reis löst und sie verkleistert."
+    },
+    {
+      "welt": "w-suesses",
+      "text": "Pudding und Vanillecreme dicken erst, wenn sie kurz aufkochen."
+    }
+  ],
+  "links": [
+    "staerke",
+    "retrogradation",
+    "kaltwasserbad",
+    "vorkochen-aufrauen",
+    "knusprig",
+    "sauce-zu-duenn",
+    "sauce-klumpig"
+  ],
+  "welten": [
+    "w-kartoffeln",
+    "w-saucen",
+    "w-getreide",
+    "w-pasta"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation",
+    "ebenen": [
+      {
+        "name": "Die Kartoffel",
+        "massstab": "≈ 10 cm"
+      },
+      {
+        "name": "Die Zellen",
+        "massstab": "≈ 0,1 mm"
+      },
+      {
+        "name": "Die Stärke",
+        "massstab": "≈ 10 nm"
+      }
+    ],
+    "params": {
+      "regler": [
+        "temperatur",
+        "wasser"
+      ],
+      "schwelle_c": 57
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Foods (2021): Gelatinisierung von Kartoffelstärke, Beginn bei ca. 57 °C",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8156876"
+    },
+    {
+      "titel": "Potatoes USA: Why soak potatoes in cold water before cooking?",
+      "url": "https://potatogoodness.com/faq/why-soak-the-potatoes-in-cold-water-before-cooking/"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
+    }
+  ],
+  "status": "entwurf"
+}

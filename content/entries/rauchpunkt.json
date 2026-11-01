@@ -1,0 +1,78 @@
+{
+  "id": "rauchpunkt",
+  "typ": "prozess",
+  "titel": "Rauchpunkt von Fett",
+  "schwierigkeit": "einsteiger",
+  "synonyme": [
+    "Öl raucht",
+    "Butter verbrennt",
+    "Frittiertemperatur"
+  ],
+  "kurz": "Ab einer bestimmten Temperatur beginnt Fett zu rauchen und sich zu zersetzen. Es schmeckt dann bitter und reizt.",
+  "bild_im_kopf": "Wie ein Motor über dem roten Bereich: Er läuft noch, aber er nimmt Schaden.",
+  "was_passiert": "Jedes Fett verträgt nur eine bestimmte Hitze. Darüber zerfallen seine Bestandteile, es entsteht sichtbarer Rauch und bitterer Geschmack. Raffinierte Öle vertragen mehr als kaltgepresste, weil Schwebstoffe entfernt wurden. Butter verbrennt früh, weil ihr Milcheiweiß schon bei mittlerer Hitze schwarz wird.",
+  "warum_wichtig": "Für scharfes Anbraten und Frittieren braucht es ein Fett, das die Hitze aushält. Für Geschmack kommt Butter am Ende dazu.",
+  "faustregeln": [
+    "Zum Frittieren raffiniertes Öl, etwa Frittier- oder HOLL-Rapsöl.",
+    "Butter erst am Ende zum [[arosieren|Arosieren]], oder Bratbutter verwenden.",
+    "Raucht es, ist es zu heiß: Hitze runter, Öl ersetzen, wenn es stark geraucht hat."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "über dem Rauchpunkt → bitter"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-frittieren",
+      "text": "Frittieren bei 160–190 °C verlangt ein Öl, das deutlich mehr verträgt."
+    },
+    {
+      "welt": "w-fleisch",
+      "text": "Scharf anbraten mit Öl, am Schluss Butter und Kräuter dazu."
+    }
+  ],
+  "links": [
+    "oel",
+    "butter",
+    "temperatur",
+    "frittiertes-fettig",
+    "zweimal-frittieren"
+  ],
+  "welten": [
+    "w-frittieren",
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "temperaturskala",
+    "params": {
+      "hinweis": "Richtwerte, je nach Qualität verschieden",
+      "fette": [
+        {
+          "name": "Butter",
+          "c": 150
+        },
+        {
+          "name": "Olivenöl nativ extra",
+          "c": 190
+        },
+        {
+          "name": "Rapsöl raffiniert",
+          "c": 220
+        },
+        {
+          "name": "Bratbutter",
+          "c": 230
+        }
+      ]
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
+    }
+  ],
+  "status": "entwurf"
+}

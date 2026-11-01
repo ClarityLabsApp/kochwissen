@@ -1,0 +1,25 @@
+{
+  "id": "arosieren",
+  "typ": "begriff",
+  "titel": "Arosieren",
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "synonyme": [
+    "mit Butter übergießen",
+    "Basting"
+  ],
+  "kurz": "Fleisch gegen Ende des Bratens immer wieder mit heißer, schäumender Butter übergießen, oft mit Knoblauch und Kräutern.",
+  "links": [
+    "rauchpunkt",
+    "butter",
+    "maillard-reaktion"
+  ],
+  "welten": [
+    "w-fleisch"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "kaltwasserbad",
+  "typ": "technik",
+  "titel": "Kartoffeln kalt wässern",
+  "schwierigkeit": "einsteiger",
+  "synonyme": [
+    "Eiswasser",
+    "wässern",
+    "Stärke abspülen",
+    "einweichen"
+  ],
+  "kurz": "Geschnittene Kartoffeln in kaltes Wasser legen spült losen Stärkefilm von der Oberfläche. So werden sie im Ofen oder in der Fritteuse knuspriger.",
+  "bild_im_kopf": "Wie Mehlstaub von einem Brett wischen, bevor man es lackiert: Der Lack hält nur auf einer sauberen Fläche.",
+  "was_passiert": "Beim Schneiden werden Zellen aufgerissen, Stärkekörner und etwas Zucker landen auf der Schnittfläche. Im Ofen wird dieser Film klebrig und bräunt zu früh, bevor die Oberfläche trocken und fest ist. Das Wasserbad löst ihn ab. Kalt muss es sein: In warmem Wasser beginnt die Stärke zu quellen und klebt noch mehr.",
+  "warum_wichtig": "Gleichmäßigere Bräunung, weniger Ankleben, knusprigere Oberfläche bei Wedges, Pommes und Rösti.",
+  "schritte": [
+    "Kartoffeln schneiden und sofort in eine Schüssel mit kaltem Wasser legen.",
+    "Mindestens 30 Minuten liegen lassen, im Kühlschrank auch länger.",
+    "Wasser abgießen und frisch spülen, bis es klar bleibt.",
+    "Sehr gründlich trocknen: Tuch, dann ein paar Minuten an der Luft.",
+    "Erst jetzt mit wenig Öl mischen und heiß backen oder frittieren."
+  ],
+  "wirkt_auf": [
+    "knusprig"
+  ],
+  "faustregeln": [
+    "Kalt ja, Eis ist kein Muss.",
+    "Ohne gründliches Trocknen bringt das Wässern nichts.",
+    "Trübes Wasser zeigt: Da war Stärke, die jetzt nicht am Blech klebt."
+  ],
+  "mythos": {
+    "behauptung": "Gewässerte Kartoffeln werden wässrig.",
+    "richtig": "Es geht nur um die Oberfläche. Werden sie danach gut getrocknet, werden sie knuspriger, nicht wässriger."
+  },
+  "links": [
+    "staerke",
+    "staerkeverkleisterung",
+    "trocken-tupfen",
+    "wedges-nicht-knusprig",
+    "zweimal-frittieren"
+  ],
+  "welten": [
+    "w-kartoffeln",
+    "w-frittieren"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "params": {
+      "zeige": "truebes-wasser"
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Potatoes USA: Why soak potatoes in cold water before cooking?",
+      "url": "https://potatogoodness.com/faq/why-soak-the-potatoes-in-cold-water-before-cooking/"
+    },
+    {
+      "titel": "Fine Dining Lovers: The science of French fries",
+      "url": "https://www.finedininglovers.com/explore/articles/science-french-fries"
+    }
+  ],
+  "status": "entwurf"
+}

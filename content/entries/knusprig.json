@@ -1,0 +1,105 @@
+{
+  "id": "knusprig",
+  "typ": "ziel",
+  "titel": "Knusprig",
+  "schwierigkeit": "einsteiger",
+  "synonyme": [
+    "kross",
+    "krosser",
+    "knuspriger",
+    "crunchy",
+    "nicht labbrig",
+    "nicht matschig"
+  ],
+  "kurz": "Knusprig ist eine trockene, feste Oberfläche, die beim Beißen bricht, statt sich zu biegen.",
+  "bild_im_kopf": "Wie Cracker und Brot: fast dieselben Zutaten, aber dem Cracker fehlt das Wasser. Darum bricht er.",
+  "bedeutung": "Knusprig entsteht, wenn eine dünne Außenschicht aus Stärke oder Eiweiß ihr Wasser verliert und aushärtet. Bleibt Wasser drin oder kommt Dampf zurück, wird die Schicht wieder biegsam und weich.",
+  "hebel": [
+    "feuchtigkeit",
+    "verdampfen",
+    "staerkeverkleisterung",
+    "oberflaeche",
+    "temperatur",
+    "fettgehalt"
+  ],
+  "was_passiert": "Zuerst muss das Wasser an der Oberfläche verdampfen. Erst dann steigt die Temperatur über 100 °C, die Schicht trocknet aus und bräunt. Eine raue Oberfläche hat mehr Fläche, die knusprig werden kann. Ein dünner Film Fett leitet die Hitze gleichmäßig an jede Stelle.",
+  "warum_wichtig": "Bei Wedges, Pommes, Rösti, Geflügelhaut, Panaden und Brotkruste ist es dasselbe Ziel mit denselben Hebeln.",
+  "faustregeln": [
+    "Wasser ist der Gegner: trocken tupfen, Platz lassen, nicht abdecken.",
+    "Raue Oberfläche schlägt glatte Oberfläche.",
+    "Heiß genug starten, damit das Wasser schnell weg ist.",
+    "Nach dem Garen auf ein Gitter legen, nicht stapeln: Dampf von unten macht weich."
+  ],
+  "typische_fehler": [
+    "Blech oder Pfanne überladen: Die Stücke dämpfen sich gegenseitig.",
+    "Frisch Gebackenes zudecken, um es warm zu halten."
+  ],
+  "mythos": {
+    "behauptung": "Mehr Öl macht knuspriger.",
+    "richtig": "Ein dünner Film reicht, damit die Hitze überall ankommt. Zu viel Öl macht fettig, nicht knuspriger."
+  },
+  "praxis": [
+    {
+      "welt": "w-kartoffeln",
+      "text": "Wässern, gut trocknen, mit Abstand aufs heiße Blech. Oder vorkochen und aufrauen.",
+      "aroma": [
+        "roestig",
+        "nussig"
+      ]
+    },
+    {
+      "welt": "w-gefluegel",
+      "text": "Haut über Nacht unbedeckt im Kühlschrank antrocknen lassen, dann heiß braten oder backen.",
+      "aroma": [
+        "roestig",
+        "fleischig"
+      ]
+    },
+    {
+      "welt": "w-frittieren",
+      "text": "Zweimal frittieren: erst garen, dann bei hoher Hitze die Kruste trocknen.",
+      "aroma": [
+        "roestig"
+      ]
+    },
+    {
+      "welt": "w-brot",
+      "text": "Erst Dampf für den Ofentrieb, dann Dampf ablassen und trocken fertig backen.",
+      "aroma": [
+        "roestig",
+        "karamellig"
+      ]
+    }
+  ],
+  "links": [
+    "kaltwasserbad",
+    "vorkochen-aufrauen",
+    "mit-staerke-bestaeuben",
+    "zweimal-frittieren",
+    "trocken-tupfen",
+    "roesten-ofen",
+    "wedges-nicht-knusprig",
+    "frittiertes-fettig",
+    "maillard-reaktion"
+  ],
+  "welten": [
+    "w-kartoffeln",
+    "w-frittieren",
+    "w-gefluegel",
+    "w-brot"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix",
+    "params": {
+      "zeilen": "hebel",
+      "spalten": "techniken"
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
+    }
+  ],
+  "status": "entwurf"
+}

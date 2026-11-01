@@ -1,0 +1,89 @@
+{
+  "id": "pektin-abbau",
+  "typ": "prozess",
+  "titel": "Gemüse wird weich (Pektin-Abbau)",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "weich kochen",
+    "zerfallen",
+    "Pektin"
+  ],
+  "kurz": "Pektin ist der Kitt zwischen Pflanzenzellen. Hitze löst ihn, das Gemüse wird weich. Säure bremst das, Natron beschleunigt es.",
+  "bild_im_kopf": "Wie Mörtel zwischen Ziegelsteinen: Löst sich der Mörtel, kann man die Steine leicht auseinanderschieben.",
+  "was_passiert": "Pflanzenzellen kleben über Pektin aneinander. Beim Kochen zerfällt das Pektin langsam, die Zellen lösen sich voneinander, das Gemüse wird weich. In saurem Wasser geht das viel langsamer, in basischem Wasser viel schneller. Sanftes Vorgaren bei etwa 60–70 °C kann den Kitt sogar stärken, weil ein Enzym ihn festigt.",
+  "warum_wichtig": "Erklärt, warum Kartoffeln in Tomatensauce hart bleiben, warum Natron den Rand von Ofenkartoffeln aufraut und warum Gemüse matschig wird.",
+  "faustregeln": [
+    "Säure später zugeben, wenn Gemüse weich werden soll.",
+    "Prise Natron im Kochwasser macht den Rand weich und rau.",
+    "Sanft vorgegarte Kartoffeln bleiben beim späteren Braten fester."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "heißer → schneller weich"
+    },
+    {
+      "id": "ph-wert",
+      "wirkung": "sauer bremst, basisch beschleunigt"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "länger → weicher"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-kartoffeln",
+      "text": "Natron im Vorkochwasser löst den Rand, das ergibt eine zerklüftete Kruste. Essig im Wasser hält Kartoffelsalat in Form."
+    },
+    {
+      "welt": "w-gemuese",
+      "text": "Bohnen in Tomatensauce bleiben länger fest. Erst weich kochen, dann die Säure dazu."
+    }
+  ],
+  "links": [
+    "natron",
+    "saeure",
+    "vorkochen-aufrauen",
+    "gemuese-matschig",
+    "knackig"
+  ],
+  "welten": [
+    "w-gemuese",
+    "w-kartoffeln"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation",
+    "ebenen": [
+      {
+        "name": "Das Gemüse",
+        "massstab": "≈ 5 cm"
+      },
+      {
+        "name": "Die Zellen",
+        "massstab": "≈ 0,1 mm"
+      },
+      {
+        "name": "Der Kitt",
+        "massstab": "≈ 10 nm"
+      }
+    ],
+    "params": {
+      "regler": [
+        "temperatur",
+        "ph"
+      ]
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Food52 Genius Recipes: Kenji López-Alts Ofenkartoffeln mit Natron",
+      "url": "https://food52.com/blog/23722"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
+    }
+  ],
+  "status": "entwurf"
+}

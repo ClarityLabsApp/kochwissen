@@ -1,0 +1,61 @@
+{
+  "id": "natron",
+  "typ": "zutat",
+  "titel": "Natron",
+  "schwierigkeit": "einsteiger",
+  "synonyme": [
+    "Backsoda",
+    "Natriumhydrogencarbonat",
+    "Speisenatron",
+    "Baking Soda"
+  ],
+  "kurz": "Natron ist basisch. Es lockert Teig mit Säure, beschleunigt die Bräunung und macht Pflanzenzellen weich.",
+  "bild_im_kopf": "Wie ein Gaspedal für mehrere Vorgänge gleichzeitig: Bräunung, Weichwerden, Aufgehen. Darum reicht immer eine Prise.",
+  "rolle": [
+    {
+      "rolle": "lockert Teig zusammen mit Säure",
+      "prozess": "chemische-lockerung"
+    },
+    {
+      "rolle": "beschleunigt die Bräunung",
+      "prozess": "maillard-reaktion"
+    },
+    {
+      "rolle": "macht Gemüse- und Kartoffelränder weich",
+      "prozess": "pektin-abbau"
+    }
+  ],
+  "was_passiert": "Natron hebt den pH-Wert. In basischer Umgebung laufen Bräunung und das Lösen von Pektin deutlich schneller. Mit Säure wie Buttermilch oder Joghurt bildet es Gasbläschen, die Teig lockern.",
+  "faustregeln": [
+    "Prisen, nicht Löffel: Zu viel schmeckt seifig.",
+    "Im Kartoffel-Vorkochwasser etwa ½ TL auf 2 Liter.",
+    "Natron braucht Säure zum Lockern, Backpulver bringt sie mit."
+  ],
+  "links": [
+    "chemische-lockerung",
+    "maillard-reaktion",
+    "pektin-abbau",
+    "vorkochen-aufrauen",
+    "natron-zwiebeln",
+    "ph-wert"
+  ],
+  "welten": [
+    "w-gebaeck",
+    "w-gemuese",
+    "w-kartoffeln"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Food52 Genius Recipes: Kenji López-Alts Ofenkartoffeln mit Natron",
+      "url": "https://food52.com/blog/23722"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
+    }
+  ],
+  "status": "entwurf"
+}

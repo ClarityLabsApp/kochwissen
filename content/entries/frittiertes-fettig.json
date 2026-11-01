@@ -1,0 +1,134 @@
+{
+  "id": "frittiertes-fettig",
+  "typ": "symptom",
+  "titel": "Frittiertes ist fettig",
+  "schwierigkeit": "einsteiger",
+  "synonyme": [
+    "Pommes fettig",
+    "ölig",
+    "trieft"
+  ],
+  "kurz": "Das Öl war zu kalt oder das Frittiergut lag danach im eigenen Fett.",
+  "bild_im_kopf": "Wie ein Schwamm: Solange heißer Dampf aus dem Inneren drückt, kommt kaum Öl hinein. Hört der Dampf auf, saugt er sich voll.",
+  "ursachen": [
+    {
+      "titel": "Öl zu kalt",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Unter etwa 160 °C bildet sich die Kruste langsam, das Frittiergut liegt lange im Öl und nimmt es auf.",
+      "fix": [
+        "Mit Thermometer frittieren",
+        "Öl zwischen den Portionen wieder aufheizen"
+      ]
+    },
+    {
+      "titel": "Zu viel auf einmal",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Viel kaltes Frittiergut kühlt das Öl stark ab.",
+      "fix": [
+        "Kleine Portionen frittieren"
+      ]
+    },
+    {
+      "titel": "Schlecht abgetropft",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "Beim Abkühlen zieht die Oberfläche anhaftendes Öl ein.",
+      "fix": [
+        "Sofort abschütteln und auf ein Gitter legen",
+        "Nicht auf einem Teller stapeln"
+      ]
+    },
+    {
+      "titel": "Altes Öl",
+      "haeufigkeit": 1,
+      "prinzip": "rauchpunkt",
+      "warum": "Häufig benutztes Öl ist abgebaut, schäumt und haftet stärker.",
+      "fix": [
+        "Öl filtern und regelmäßig ersetzen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hast du die Öltemperatur gemessen?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja, über 160 °C",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Wie voll war der Topf?",
+      "antworten": [
+        [
+          "Ziemlich voll",
+          "u1"
+        ],
+        [
+          "Kleine Portion",
+          "q3"
+        ]
+      ]
+    },
+    "q3": {
+      "frage": "Wo lag das Frittierte danach?",
+      "antworten": [
+        [
+          "Auf Teller oder Papier gestapelt",
+          "u2"
+        ],
+        [
+          "Auf einem Gitter",
+          "u3"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    },
+    "u3": {
+      "ursache": 3
+    }
+  },
+  "links": [
+    "rauchpunkt",
+    "oel",
+    "zweimal-frittieren",
+    "verdampfen",
+    "temperatur"
+  ],
+  "welten": [
+    "w-frittieren"
+  ],
+  "visual": {
+    "vorlage": "pfannentest",
+    "params": {
+      "variante": "fritteuse",
+      "regler": "portionen"
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Fine Dining Lovers: The science of French fries",
+      "url": "https://www.finedininglovers.com/explore/articles/science-french-fries"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
+    }
+  ],
+  "status": "entwurf"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "roesten-ofen",
+  "typ": "technik",
+  "titel": "Im Ofen rösten",
+  "schwierigkeit": "einsteiger",
+  "synonyme": [
+    "Ofengemüse",
+    "Blech",
+    "backen im Ofen"
+  ],
+  "kurz": "Heißer Ofen, heißes Blech, Abstand zwischen den Stücken: So bräunt Gemüse, statt im eigenen Dampf zu garen.",
+  "bild_im_kopf": "Wie Wäsche aufhängen: Mit Abstand trocknet jedes Stück, auf einem Haufen bleibt alles feucht.",
+  "was_passiert": "Die trockene Ofenluft nimmt das Wasser der Oberfläche auf. Liegen die Stücke zu eng, sammelt sich Dampf zwischen ihnen und hält die Oberfläche bei 100 °C. Ein vorgeheiztes Blech gibt der Unterseite sofort Kontakthitze, dort entsteht die beste Kruste.",
+  "warum_wichtig": "Wedges, Ofengemüse, Rosenkohl: Der Unterschied zwischen gedämpft und geröstet liegt meist nur im Platz und der Hitze.",
+  "schritte": [
+    "Ofen mit Blech auf 220 °C (Umluft 200 °C) vorheizen.",
+    "Stücke trocknen und dünn mit Öl mischen.",
+    "Mit Abstand auf das heiße Blech legen, Schnittfläche nach unten.",
+    "Nach etwa 20 Minuten wenden, wenn sie sich lösen.",
+    "Fertig gebacken auf ein Gitter legen, nicht stapeln."
+  ],
+  "wirkt_auf": [
+    "knusprig"
+  ],
+  "faustregeln": [
+    "Lieber zwei Bleche als ein volles.",
+    "Was klebt, ist noch nicht fertig: warten, bis es sich löst."
+  ],
+  "links": [
+    "konvektion",
+    "maillard-reaktion",
+    "verdampfen",
+    "oberflaeche",
+    "wedges-nicht-knusprig"
+  ],
+  "welten": [
+    "w-kartoffeln",
+    "w-gemuese"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
+    }
+  ],
+  "status": "entwurf"
+}

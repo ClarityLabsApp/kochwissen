@@ -1,0 +1,4437 @@
+{
+ "version": 1,
+ "stand": "2026-11-01",
+ "anzahl": 197,
+ "eintraege": [
+  {
+   "id": "w-fleisch",
+   "typ": "welt",
+   "titel": "Fleisch",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "maillard-reaktion",
+    "kollagen-gelatine",
+    "eiweiss-denaturierung"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "keine"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "w-gefluegel",
+   "typ": "welt",
+   "titel": "Geflügel",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "maillard-reaktion",
+    "trockensalzen"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "keine"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "w-fisch",
+   "typ": "welt",
+   "titel": "Fisch & Meeresfrüchte",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "eiweiss-denaturierung",
+    "saeure-denaturierung"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "keine"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "w-eier",
+   "typ": "welt",
+   "titel": "Eier",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "eiweiss-gerinnung",
+    "schaumbildung",
+    "emulsion"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "keine"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "w-gemuese",
+   "typ": "welt",
+   "titel": "Gemüse",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "pektin-abbau",
+    "chlorophyll-farbe",
+    "maillard-reaktion"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "keine"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "w-kartoffeln",
+   "typ": "welt",
+   "titel": "Kartoffeln",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "staerkeverkleisterung",
+    "maillard-reaktion",
+    "knusprig"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "keine"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "w-getreide",
+   "typ": "welt",
+   "titel": "Reis & Getreide",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "staerkeverkleisterung",
+    "retrogradation"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "keine"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "w-pasta",
+   "typ": "welt",
+   "titel": "Pasta",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "staerkeverkleisterung",
+    "glutenbildung"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "keine"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "w-brot",
+   "typ": "welt",
+   "titel": "Brot",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "glutenbildung",
+    "hefegaerung",
+    "maillard-reaktion",
+    "staerkeverkleisterung"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "keine"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "w-gebaeck",
+   "typ": "welt",
+   "titel": "Kuchen & Gebäck",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "chemische-lockerung",
+    "glutenbildung",
+    "schaumbildung"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "keine"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "w-saucen",
+   "typ": "welt",
+   "titel": "Saucen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "emulsion",
+    "staerkeverkleisterung",
+    "reduktion"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "keine"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "w-suesses",
+   "typ": "welt",
+   "titel": "Desserts & Süßes",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "zucker-kristallisation",
+    "karamellisierung",
+    "gelbildung-gelatine"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "keine"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "w-kaffee",
+   "typ": "welt",
+   "titel": "Kaffee & Tee",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "maillard-reaktion",
+    "karamellisierung",
+    "diffusion"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "keine"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "w-milch",
+   "typ": "welt",
+   "titel": "Milch & Käse",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "milchsaeuregaerung",
+    "eiweiss-gerinnung",
+    "schaumbildung"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "keine"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "w-frittieren",
+   "typ": "welt",
+   "titel": "Frittiertes",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "verdampfen",
+    "knusprig",
+    "rauchpunkt"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "keine"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "maillard-reaktion",
+   "typ": "prozess",
+   "titel": "Maillard-Reaktion",
+   "status": "prototyp",
+   "pilot": false,
+   "links": [
+    "karamellisierung",
+    "temperatur",
+    "feuchtigkeit",
+    "ph-wert",
+    "steak-grau"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-brot",
+    "w-gemuese",
+    "w-kaffee",
+    "w-kartoffeln"
+   ],
+   "synonyme": [
+    "Bräunung",
+    "Röstaromen",
+    "Kruste"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "anbraten",
+    "brot-kruste-weich",
+    "farbe",
+    "gewuerze-roesten",
+    "grillen",
+    "honig",
+    "mehr-geschmack",
+    "milch",
+    "natron",
+    "natron-zwiebeln",
+    "pyrolyse",
+    "roesten-ofen",
+    "rueckwaerts-garen",
+    "trocken-tupfen",
+    "verdampfen",
+    "w-brot",
+    "w-fleisch",
+    "w-gefluegel",
+    "w-gemuese",
+    "w-kaffee",
+    "w-kartoffeln",
+    "zucker",
+    "zwiebel",
+    "zwiebeln-verbrennen"
+   ]
+  },
+  {
+   "id": "karamellisierung",
+   "typ": "prozess",
+   "titel": "Karamellisierung",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "maillard-reaktion",
+    "zucker",
+    "temperatur",
+    "karamell-kristallisiert"
+   ],
+   "welten": [
+    "w-suesses",
+    "w-gemuese",
+    "w-kaffee"
+   ],
+   "synonyme": [
+    "Karamell"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "w-kaffee",
+    "w-suesses",
+    "zucker-karamellisieren",
+    "zuckergehalt",
+    "zwiebel"
+   ]
+  },
+  {
+   "id": "pyrolyse",
+   "typ": "prozess",
+   "titel": "Verbrennen (Pyrolyse)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "maillard-reaktion",
+    "temperatur",
+    "knoblauch-bitter"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-gemuese"
+   ],
+   "synonyme": [
+    "angebrannt",
+    "bitter"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "knoblauch",
+    "zwiebeln-verbrennen"
+   ]
+  },
+  {
+   "id": "glutenbildung",
+   "typ": "prozess",
+   "titel": "Glutenbildung",
+   "status": "prototyp",
+   "pilot": false,
+   "links": [
+    "mehl",
+    "mechanik",
+    "ruhezeit",
+    "salz",
+    "fett",
+    "brot-zu-dicht"
+   ],
+   "welten": [
+    "w-brot",
+    "w-pasta",
+    "w-gebaeck"
+   ],
+   "synonyme": [
+    "Kleber",
+    "Teigstruktur"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "autolyse",
+    "brot-flach",
+    "dehnen-falten",
+    "fettgehalt",
+    "grosse-poren",
+    "muerbe",
+    "muerbeteig-zaeh",
+    "muffins-tunnel",
+    "pfannkuchen-gummig",
+    "teig-klebt",
+    "teig-schnurrt",
+    "w-brot",
+    "w-gebaeck",
+    "w-pasta",
+    "zart",
+    "zeit"
+   ]
+  },
+  {
+   "id": "staerkeverkleisterung",
+   "typ": "prozess",
+   "titel": "Stärkeverkleisterung",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "staerke",
+    "temperatur",
+    "feuchtigkeit",
+    "retrogradation",
+    "sauce-zu-duenn"
+   ],
+   "welten": [
+    "w-kartoffeln",
+    "w-getreide",
+    "w-saucen",
+    "w-pasta"
+   ],
+   "synonyme": [
+    "binden",
+    "andicken"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "abbinden-staerke",
+    "creme-klumpig",
+    "cremig",
+    "gebunden",
+    "kaltwasserbad",
+    "knusprig",
+    "kuchen-klitschig",
+    "mehl",
+    "mehlschwitze",
+    "pasta-klebt",
+    "reis-matschig",
+    "sauce-klumpig",
+    "vorkochen-aufrauen",
+    "w-brot",
+    "w-getreide",
+    "w-kartoffeln",
+    "w-pasta",
+    "w-saucen",
+    "wasser",
+    "wedges-nicht-knusprig"
+   ]
+  },
+  {
+   "id": "retrogradation",
+   "typ": "prozess",
+   "titel": "Altbackenwerden (Retrogradation)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "staerkeverkleisterung",
+    "brot-altbacken",
+    "reis-matschig"
+   ],
+   "welten": [
+    "w-brot",
+    "w-getreide"
+   ],
+   "synonyme": [
+    "altbacken",
+    "hart werden"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "laenger-frisch",
+    "w-getreide"
+   ]
+  },
+  {
+   "id": "eiweiss-denaturierung",
+   "typ": "prozess",
+   "titel": "Eiweiß verändert sich (Denaturierung)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "temperatur",
+    "eiweiss-gerinnung",
+    "fleisch-trocken"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-fisch",
+    "w-eier"
+   ],
+   "synonyme": [
+    "Garen von Eiweiß"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "fisch-zerfaellt",
+    "pochieren-proz",
+    "saeure-denaturierung",
+    "saftig",
+    "sous-vide",
+    "w-fisch",
+    "w-fleisch"
+   ]
+  },
+  {
+   "id": "eiweiss-gerinnung",
+   "typ": "prozess",
+   "titel": "Eiweiß gerinnt (Koagulation)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "eiweiss-denaturierung",
+    "ei",
+    "temperatur",
+    "ruehrei-waessrig",
+    "creme-klumpig"
+   ],
+   "welten": [
+    "w-eier",
+    "w-milch"
+   ],
+   "synonyme": [
+    "stocken",
+    "ausflocken"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "hollandaise-flockt",
+    "kaese",
+    "legieren",
+    "milch",
+    "w-eier",
+    "w-milch",
+    "wasserbad"
+   ]
+  },
+  {
+   "id": "kollagen-gelatine",
+   "typ": "prozess",
+   "titel": "Bindegewebe wird zu Gelatine",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "temperatur",
+    "zeit",
+    "schmoren",
+    "fleisch-zaeh"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-gefluegel"
+   ],
+   "synonyme": [
+    "Schmoren macht zart"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "fond",
+    "w-fleisch",
+    "zart"
+   ]
+  },
+  {
+   "id": "saeure-denaturierung",
+   "typ": "prozess",
+   "titel": "Säure gart Eiweiß",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "saeure",
+    "eiweiss-denaturierung"
+   ],
+   "welten": [
+    "w-fisch"
+   ],
+   "synonyme": [
+    "Ceviche"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "w-fisch"
+   ]
+  },
+  {
+   "id": "emulsion",
+   "typ": "prozess",
+   "titel": "Emulsion",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "ei",
+    "senf",
+    "fett",
+    "mechanik",
+    "sauce-trennt-sich",
+    "mayo-gerinnt"
+   ],
+   "welten": [
+    "w-saucen",
+    "w-eier"
+   ],
+   "synonyme": [
+    "Vinaigrette",
+    "Mayonnaise",
+    "binden"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "butter",
+    "cremig",
+    "eigelb",
+    "emulgieren",
+    "gebunden",
+    "hollandaise-flockt",
+    "kaese",
+    "mantecare",
+    "montieren",
+    "oel",
+    "sahne",
+    "w-eier",
+    "w-saucen"
+   ]
+  },
+  {
+   "id": "schaumbildung",
+   "typ": "prozess",
+   "titel": "Schaum & Luft einschlagen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "ei",
+    "sahne",
+    "mechanik",
+    "eischnee-nicht-steif"
+   ],
+   "welten": [
+    "w-eier",
+    "w-gebaeck",
+    "w-milch"
+   ],
+   "synonyme": [
+    "Eischnee",
+    "Sahne schlagen"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "aufschlagen",
+    "eiweiss",
+    "fluffig",
+    "kuchen-sinkt-ein",
+    "luftig",
+    "sahne-wird-butter",
+    "unterheben",
+    "w-eier",
+    "w-gebaeck",
+    "w-milch"
+   ]
+  },
+  {
+   "id": "zucker-kristallisation",
+   "typ": "prozess",
+   "titel": "Zucker kristallisiert",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "zucker",
+    "temperatur",
+    "karamell-kristallisiert"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [
+    "Fondant",
+    "Karamell"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "w-suesses"
+   ]
+  },
+  {
+   "id": "fett-kristallisation",
+   "typ": "prozess",
+   "titel": "Fett kristallisiert (Temperieren)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "schokolade",
+    "temperatur",
+    "temperieren",
+    "schokolade-grau"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [
+    "Schokolade temperieren"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "osmose",
+   "typ": "prozess",
+   "titel": "Osmose: Salz und Zucker ziehen Wasser",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "salz",
+    "zucker",
+    "trockensalzen",
+    "auberginen-salzen"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-gemuese"
+   ],
+   "synonyme": [
+    "Wasser ziehen"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "salzgehalt"
+   ]
+  },
+  {
+   "id": "diffusion",
+   "typ": "prozess",
+   "titel": "Diffusion: Geschmack wandert",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "salz",
+    "marinieren",
+    "lake",
+    "zeit"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-kaffee"
+   ],
+   "synonyme": [
+    "Durchziehen",
+    "Marinade"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "w-kaffee"
+   ]
+  },
+  {
+   "id": "wasserbindung-salz",
+   "typ": "prozess",
+   "titel": "Salz hält Wasser im Fleisch",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "salz",
+    "trockensalzen",
+    "lake",
+    "fleisch-trocken"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-gefluegel"
+   ],
+   "synonyme": [
+    "Brine",
+    "saftig"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "saftig"
+   ]
+  },
+  {
+   "id": "verdampfen",
+   "typ": "prozess",
+   "titel": "Verdampfen",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "feuchtigkeit",
+    "temperatur",
+    "maillard-reaktion",
+    "knusprig"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-kartoffeln",
+    "w-frittieren"
+   ],
+   "synonyme": [
+    "Wasser verdampft"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "dampflockerung",
+    "oberflaeche",
+    "reduktion",
+    "w-frittieren",
+    "wasser",
+    "zweimal-frittieren"
+   ]
+  },
+  {
+   "id": "waermeleitung",
+   "typ": "prozess",
+   "titel": "Wärmeleitung",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "pfannenmaterial",
+    "temperatur",
+    "gleichmaessig-gar"
+   ],
+   "welten": [
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "Hitze wandert nach innen"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "konvektion",
+   "typ": "prozess",
+   "titel": "Konvektion (Umluft, Kochen)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "temperatur",
+    "luftfeuchte-ofen"
+   ],
+   "welten": [
+    "w-gebaeck",
+    "w-kartoffeln"
+   ],
+   "synonyme": [
+    "Umluft",
+    "strömende Hitze"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "daempfen",
+    "roesten-ofen"
+   ]
+  },
+  {
+   "id": "waermestrahlung",
+   "typ": "prozess",
+   "titel": "Wärmestrahlung (Grill, Oberhitze)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "temperatur",
+    "grillen"
+   ],
+   "welten": [
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "Grillen",
+    "Gratinieren"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "leidenfrost",
+   "typ": "prozess",
+   "titel": "Leidenfrost-Effekt",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "temperatur",
+    "pfanne-vorheizen",
+    "fisch-klebt"
+   ],
+   "welten": [
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "tanzender Wassertropfen"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "rauchpunkt",
+   "typ": "prozess",
+   "titel": "Rauchpunkt von Fett",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "oel",
+    "butter",
+    "temperatur",
+    "frittiertes-fettig"
+   ],
+   "welten": [
+    "w-frittieren",
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "Öl raucht"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "w-frittieren"
+   ]
+  },
+  {
+   "id": "fett-ausbraten",
+   "typ": "prozess",
+   "titel": "Fett ausbraten (Auslassen)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "fett",
+    "temperatur",
+    "kalt-ansetzen"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-gefluegel"
+   ],
+   "synonyme": [
+    "Haut knusprig",
+    "Speck"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "reduktion",
+   "typ": "prozess",
+   "titel": "Einkochen (Reduktion)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "verdampfen",
+    "zeit",
+    "reduzieren",
+    "sauce-zu-duenn"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [
+    "reduzieren",
+    "konzentrieren"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "deglacieren",
+    "fond",
+    "mehr-geschmack",
+    "w-saucen",
+    "wein"
+   ]
+  },
+  {
+   "id": "hefegaerung",
+   "typ": "prozess",
+   "titel": "Hefegärung",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "hefe",
+    "zeit",
+    "temperatur",
+    "zucker",
+    "brot-flach"
+   ],
+   "welten": [
+    "w-brot",
+    "w-gebaeck"
+   ],
+   "synonyme": [
+    "Gehen lassen",
+    "Triebkraft"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "brot-zu-dicht",
+    "fluffig",
+    "grosse-poren",
+    "kalte-gare",
+    "sauerteig",
+    "vorteig",
+    "w-brot"
+   ]
+  },
+  {
+   "id": "milchsaeuregaerung",
+   "typ": "prozess",
+   "titel": "Milchsäuregärung",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "sauerteig",
+    "joghurt",
+    "saeure"
+   ],
+   "welten": [
+    "w-brot",
+    "w-milch"
+   ],
+   "synonyme": [
+    "Sauerteig",
+    "Joghurt",
+    "Fermentation"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "w-milch"
+   ]
+  },
+  {
+   "id": "chemische-lockerung",
+   "typ": "prozess",
+   "titel": "Chemische Lockerung",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "backpulver",
+    "natron",
+    "saeure",
+    "kuchen-sinkt-ein"
+   ],
+   "welten": [
+    "w-gebaeck"
+   ],
+   "synonyme": [
+    "Backpulver",
+    "Natron",
+    "Trieb"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "fluffig",
+    "w-gebaeck"
+   ]
+  },
+  {
+   "id": "dampflockerung",
+   "typ": "prozess",
+   "titel": "Dampf lockert (Brandteig, Blätterteig)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "verdampfen",
+    "temperatur"
+   ],
+   "welten": [
+    "w-gebaeck"
+   ],
+   "synonyme": [
+    "Blätterteig",
+    "Windbeutel"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "enzym-braeunung",
+   "typ": "prozess",
+   "titel": "Enzymatische Bräunung",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "saeure",
+    "oxidation-fett"
+   ],
+   "welten": [
+    "w-gemuese"
+   ],
+   "synonyme": [
+    "Apfel wird braun",
+    "Avocado"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "oxidation-fett",
+   "typ": "prozess",
+   "titel": "Fett wird ranzig (Oxidation)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "fett",
+    "oel"
+   ],
+   "welten": [
+    "w-milch"
+   ],
+   "synonyme": [
+    "ranzig"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "enzym-braeunung",
+    "laenger-frisch"
+   ]
+  },
+  {
+   "id": "gelbildung-pektin",
+   "typ": "prozess",
+   "titel": "Gelieren mit Pektin",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "pektin",
+    "zucker",
+    "saeure"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [
+    "Marmelade"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "gelbildung-gelatine",
+   "typ": "prozess",
+   "titel": "Gelieren mit Gelatine",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "gelatine",
+    "temperatur"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [
+    "Gelee",
+    "Panna Cotta"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "w-suesses"
+   ]
+  },
+  {
+   "id": "pektin-abbau",
+   "typ": "prozess",
+   "titel": "Gemüse wird weich (Pektin-Abbau)",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "temperatur",
+    "saeure",
+    "natron",
+    "gemuese-matschig"
+   ],
+   "welten": [
+    "w-gemuese",
+    "w-kartoffeln"
+   ],
+   "synonyme": [
+    "weich kochen"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "knackig",
+    "w-gemuese"
+   ]
+  },
+  {
+   "id": "chlorophyll-farbe",
+   "typ": "prozess",
+   "titel": "Grünes bleibt grün (Chlorophyll)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "saeure",
+    "zeit",
+    "blanchieren",
+    "gemuese-grau"
+   ],
+   "welten": [
+    "w-gemuese"
+   ],
+   "synonyme": [
+    "Farbe",
+    "grün halten"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": [
+    "farbe",
+    "w-gemuese"
+   ]
+  },
+  {
+   "id": "anthocyan-farbe",
+   "typ": "prozess",
+   "titel": "Rotkohl wechselt die Farbe (Anthocyane)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "ph-wert",
+    "saeure"
+   ],
+   "welten": [
+    "w-gemuese"
+   ],
+   "synonyme": [
+    "Rotkohl blau"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "aroma-blooming",
+   "typ": "prozess",
+   "titel": "Gewürze entfalten sich in Fett",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "fett",
+    "gewuerze",
+    "gewuerze-roesten"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [
+    "Blooming",
+    "anschwitzen"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "pochieren-proz",
+   "typ": "prozess",
+   "titel": "Sanftes Garen in Flüssigkeit",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "temperatur",
+    "eiweiss-denaturierung",
+    "pochieren"
+   ],
+   "welten": [
+    "w-fisch",
+    "w-eier"
+   ],
+   "synonyme": [
+    "Garziehen"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "mehl",
+   "typ": "zutat",
+   "titel": "Mehl",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "glutenbildung",
+    "staerkeverkleisterung",
+    "mehlschwitze"
+   ],
+   "welten": [
+    "w-brot",
+    "w-gebaeck",
+    "w-pasta"
+   ],
+   "synonyme": [
+    "Weißmehl",
+    "Ruchmehl",
+    "Dinkel"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "staerke",
+   "typ": "zutat",
+   "titel": "Stärke (Mais, Kartoffel)",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "staerkeverkleisterung",
+    "mit-staerke-bestaeuben",
+    "abbinden-staerke"
+   ],
+   "welten": [
+    "w-saucen",
+    "w-kartoffeln"
+   ],
+   "synonyme": [
+    "Maizena"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": [
+    "bratkartoffeln-kleben",
+    "kaltwasserbad",
+    "mantecare"
+   ]
+  },
+  {
+   "id": "zucker",
+   "typ": "zutat",
+   "titel": "Zucker",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "karamellisierung",
+    "zucker-kristallisation",
+    "osmose",
+    "maillard-reaktion"
+   ],
+   "welten": [
+    "w-gebaeck",
+    "w-suesses"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": [
+    "gelbildung-pektin",
+    "hefegaerung",
+    "honig",
+    "kekse-breit",
+    "kuchen-trocken",
+    "zuckergehalt"
+   ]
+  },
+  {
+   "id": "honig",
+   "typ": "zutat",
+   "titel": "Honig & Sirup",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "zucker",
+    "maillard-reaktion"
+   ],
+   "welten": [
+    "w-gebaeck"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "salz",
+   "typ": "zutat",
+   "titel": "Salz",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "osmose",
+    "wasserbindung-salz",
+    "glutenbildung",
+    "essen-versalzen"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-brot"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": [
+    "diffusion",
+    "salzgehalt"
+   ]
+  },
+  {
+   "id": "ei",
+   "typ": "zutat",
+   "titel": "Ei (ganz)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "eiweiss-gerinnung",
+    "emulsion",
+    "schaumbildung"
+   ],
+   "welten": [
+    "w-eier",
+    "w-gebaeck",
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "eigelb",
+   "typ": "zutat",
+   "titel": "Eigelb",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "emulsion",
+    "legieren",
+    "mayo-gerinnt"
+   ],
+   "welten": [
+    "w-saucen",
+    "w-eier"
+   ],
+   "synonyme": [
+    "Lecithin"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": [
+    "emulgieren"
+   ]
+  },
+  {
+   "id": "eiweiss",
+   "typ": "zutat",
+   "titel": "Eiweiß (Eiklar)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "schaumbildung",
+    "eischnee-nicht-steif"
+   ],
+   "welten": [
+    "w-eier",
+    "w-gebaeck"
+   ],
+   "synonyme": [
+    "Eischnee"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "butter",
+   "typ": "zutat",
+   "titel": "Butter",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "emulsion",
+    "fett",
+    "montieren",
+    "rauchpunkt"
+   ],
+   "welten": [
+    "w-saucen",
+    "w-gebaeck"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "oel",
+   "typ": "zutat",
+   "titel": "Öl",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "rauchpunkt",
+    "emulsion",
+    "frittiertes-fettig"
+   ],
+   "welten": [
+    "w-frittieren"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": [
+    "oxidation-fett"
+   ]
+  },
+  {
+   "id": "fett",
+   "typ": "zutat",
+   "titel": "Fett allgemein",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "glutenbildung",
+    "emulsion",
+    "zart"
+   ],
+   "welten": [
+    "w-gebaeck",
+    "w-fleisch"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": [
+    "aroma-blooming",
+    "butter",
+    "fett-ausbraten",
+    "fettgehalt",
+    "kekse-breit",
+    "kuchen-trocken",
+    "muerbe",
+    "muerbeteig-zaeh",
+    "oxidation-fett"
+   ]
+  },
+  {
+   "id": "sahne",
+   "typ": "zutat",
+   "titel": "Sahne",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "schaumbildung",
+    "emulsion",
+    "sahne-wird-butter"
+   ],
+   "welten": [
+    "w-milch",
+    "w-saucen"
+   ],
+   "synonyme": [
+    "Rahm"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "milch",
+   "typ": "zutat",
+   "titel": "Milch",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "eiweiss-gerinnung",
+    "maillard-reaktion"
+   ],
+   "welten": [
+    "w-milch"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "joghurt",
+   "typ": "zutat",
+   "titel": "Joghurt",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "milchsaeuregaerung",
+    "saeure",
+    "marinieren"
+   ],
+   "welten": [
+    "w-milch"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "kaese",
+   "typ": "zutat",
+   "titel": "Käse",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "eiweiss-gerinnung",
+    "emulsion"
+   ],
+   "welten": [
+    "w-milch"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "hefe",
+   "typ": "zutat",
+   "titel": "Hefe",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "hefegaerung",
+    "zeit",
+    "temperatur"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "sauerteig",
+   "typ": "zutat",
+   "titel": "Sauerteig",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "milchsaeuregaerung",
+    "hefegaerung"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "backpulver",
+   "typ": "zutat",
+   "titel": "Backpulver",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "chemische-lockerung"
+   ],
+   "welten": [
+    "w-gebaeck"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "natron",
+   "typ": "zutat",
+   "titel": "Natron",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "chemische-lockerung",
+    "ph-wert",
+    "maillard-reaktion",
+    "natron-zwiebeln"
+   ],
+   "welten": [
+    "w-gebaeck",
+    "w-gemuese",
+    "w-kartoffeln"
+   ],
+   "synonyme": [
+    "Backsoda"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": [
+    "pektin-abbau",
+    "vorkochen-aufrauen"
+   ]
+  },
+  {
+   "id": "saeure",
+   "typ": "zutat",
+   "titel": "Säure (Zitrone, Essig)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "ph-wert",
+    "saeure-denaturierung",
+    "abschmecken-saeure"
+   ],
+   "welten": [
+    "w-saucen",
+    "w-fisch"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": [
+    "anthocyan-farbe",
+    "chemische-lockerung",
+    "chlorophyll-farbe",
+    "enzym-braeunung",
+    "gelbildung-pektin",
+    "joghurt",
+    "marinieren",
+    "milchsaeuregaerung",
+    "pektin-abbau",
+    "wein"
+   ]
+  },
+  {
+   "id": "wein",
+   "typ": "zutat",
+   "titel": "Wein",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "saeure",
+    "deglacieren",
+    "reduktion"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "gelatine",
+   "typ": "zutat",
+   "titel": "Gelatine",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "gelbildung-gelatine"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "pektin",
+   "typ": "zutat",
+   "titel": "Pektin",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "gelbildung-pektin"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "senf",
+   "typ": "zutat",
+   "titel": "Senf",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "emulsion"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": [
+    "emulgieren"
+   ]
+  },
+  {
+   "id": "wasser",
+   "typ": "zutat",
+   "titel": "Wasser",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "verdampfen",
+    "staerkeverkleisterung"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": [
+    "teig-klebt"
+   ]
+  },
+  {
+   "id": "schokolade",
+   "typ": "zutat",
+   "titel": "Schokolade & Kakao",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "fett-kristallisation",
+    "temperieren"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": [
+    "schokolade-klumpt"
+   ]
+  },
+  {
+   "id": "zwiebel",
+   "typ": "zutat",
+   "titel": "Zwiebel",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "maillard-reaktion",
+    "karamellisierung",
+    "zwiebeln-verbrennen"
+   ],
+   "welten": [
+    "w-gemuese",
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "knoblauch",
+   "typ": "zutat",
+   "titel": "Knoblauch",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "pyrolyse",
+    "knoblauch-bitter"
+   ],
+   "welten": [
+    "w-gemuese",
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "gewuerze",
+   "typ": "zutat",
+   "titel": "Gewürze",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "aroma-blooming",
+    "gewuerze-roesten"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "fond",
+   "typ": "zutat",
+   "titel": "Fond & Brühe",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "kollagen-gelatine",
+    "reduktion"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "temperatur",
+   "typ": "stellschraube",
+   "titel": "Temperatur",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "maillard-reaktion",
+    "eiweiss-denaturierung"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "skala"
+   },
+   "verlinkt_von": [
+    "dampflockerung",
+    "eiweiss-gerinnung",
+    "fett-ausbraten",
+    "fett-kristallisation",
+    "frittiertes-fettig",
+    "gelbildung-gelatine",
+    "hefe",
+    "hefegaerung",
+    "karamellisierung",
+    "kollagen-gelatine",
+    "konvektion",
+    "leidenfrost",
+    "pektin-abbau",
+    "pfanne-vorheizen",
+    "pochieren-proz",
+    "pyrolyse",
+    "rauchpunkt",
+    "staerkeverkleisterung",
+    "verdampfen",
+    "waermeleitung",
+    "waermestrahlung",
+    "wasserbad",
+    "zucker-kristallisation"
+   ]
+  },
+  {
+   "id": "zeit",
+   "typ": "stellschraube",
+   "titel": "Zeit",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "kollagen-gelatine",
+    "glutenbildung"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "skala"
+   },
+   "verlinkt_von": [
+    "chlorophyll-farbe",
+    "diffusion",
+    "hefe",
+    "hefegaerung",
+    "kalte-gare",
+    "reduktion"
+   ]
+  },
+  {
+   "id": "feuchtigkeit",
+   "typ": "stellschraube",
+   "titel": "Feuchtigkeit",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "maillard-reaktion",
+    "verdampfen",
+    "knusprig"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "skala"
+   },
+   "verlinkt_von": [
+    "staerkeverkleisterung",
+    "trocken-tupfen"
+   ]
+  },
+  {
+   "id": "ph-wert",
+   "typ": "stellschraube",
+   "titel": "pH-Wert (sauer – basisch)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "maillard-reaktion",
+    "natron",
+    "saeure"
+   ],
+   "welten": [],
+   "synonyme": [
+    "sauer",
+    "basisch",
+    "alkalisch"
+   ],
+   "visual": {
+    "vorlage": "skala"
+   },
+   "verlinkt_von": [
+    "anthocyan-farbe"
+   ]
+  },
+  {
+   "id": "mechanik",
+   "typ": "stellschraube",
+   "titel": "Mechanik (kneten, schlagen, rühren)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "glutenbildung",
+    "emulsion",
+    "schaumbildung"
+   ],
+   "welten": [],
+   "synonyme": [
+    "kneten",
+    "rühren",
+    "schlagen"
+   ],
+   "visual": {
+    "vorlage": "skala"
+   },
+   "verlinkt_von": [
+    "dehnen-falten"
+   ]
+  },
+  {
+   "id": "ruhezeit",
+   "typ": "stellschraube",
+   "titel": "Ruhezeit",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "glutenbildung",
+    "ruhen-lassen"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "skala"
+   },
+   "verlinkt_von": [
+    "autolyse"
+   ]
+  },
+  {
+   "id": "salzgehalt",
+   "typ": "stellschraube",
+   "titel": "Salzmenge",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "salz",
+    "osmose"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "skala"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "zuckergehalt",
+   "typ": "stellschraube",
+   "titel": "Zuckermenge",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "zucker",
+    "karamellisierung"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "skala"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "fettgehalt",
+   "typ": "stellschraube",
+   "titel": "Fettmenge",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "fett",
+    "glutenbildung"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "skala"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "oberflaeche",
+   "typ": "stellschraube",
+   "titel": "Oberfläche & Schnittgröße",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "knusprig",
+    "verdampfen"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "skala"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "pfannenmaterial",
+   "typ": "stellschraube",
+   "titel": "Pfanne & Wärmespeicher",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "waermeleitung",
+    "steak-grau"
+   ],
+   "welten": [],
+   "synonyme": [
+    "Gusseisen",
+    "Edelstahl"
+   ],
+   "visual": {
+    "vorlage": "skala"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "luftfeuchte-ofen",
+   "typ": "stellschraube",
+   "titel": "Dampf im Ofen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "dampf-im-ofen",
+    "brot-kruste-weich"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "skala"
+   },
+   "verlinkt_von": [
+    "konvektion"
+   ]
+  },
+  {
+   "id": "knusprig",
+   "typ": "ziel",
+   "titel": "Knusprig",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "feuchtigkeit",
+    "verdampfen",
+    "staerkeverkleisterung",
+    "kaltwasserbad",
+    "trocken-tupfen",
+    "zweimal-frittieren",
+    "wedges-nicht-knusprig"
+   ],
+   "welten": [
+    "w-kartoffeln",
+    "w-frittieren",
+    "w-gefluegel",
+    "w-brot"
+   ],
+   "synonyme": [
+    "krosser",
+    "crunchy",
+    "nicht labbrig",
+    "knuspriger"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": [
+    "kalt-ansetzen",
+    "mit-staerke-bestaeuben",
+    "oberflaeche",
+    "panieren",
+    "trockensalzen",
+    "vorkochen-aufrauen",
+    "w-frittieren",
+    "w-kartoffeln"
+   ]
+  },
+  {
+   "id": "saftig",
+   "typ": "ziel",
+   "titel": "Saftig",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "wasserbindung-salz",
+    "eiweiss-denaturierung",
+    "ruhen-lassen",
+    "trockensalzen",
+    "fleisch-trocken"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-gefluegel",
+    "w-gebaeck"
+   ],
+   "synonyme": [
+    "nicht trocken",
+    "saftiger"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": [
+    "lake"
+   ]
+  },
+  {
+   "id": "zart",
+   "typ": "ziel",
+   "titel": "Zart",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "kollagen-gelatine",
+    "glutenbildung",
+    "schmoren",
+    "fleisch-zaeh"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-gebaeck"
+   ],
+   "synonyme": [
+    "weich",
+    "nicht zäh"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": [
+    "fett"
+   ]
+  },
+  {
+   "id": "fluffig",
+   "typ": "ziel",
+   "titel": "Fluffig",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "chemische-lockerung",
+    "schaumbildung",
+    "hefegaerung",
+    "unterheben"
+   ],
+   "welten": [
+    "w-gebaeck",
+    "w-brot",
+    "w-eier"
+   ],
+   "synonyme": [
+    "locker",
+    "luftig"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "luftig",
+   "typ": "ziel",
+   "titel": "Luftig",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "schaumbildung",
+    "aufschlagen"
+   ],
+   "welten": [
+    "w-gebaeck",
+    "w-suesses"
+   ],
+   "synonyme": [
+    "Volumen",
+    "Mousse"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "muerbe",
+   "typ": "ziel",
+   "titel": "Mürbe",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "glutenbildung",
+    "fett",
+    "muerbeteig-zaeh"
+   ],
+   "welten": [
+    "w-gebaeck"
+   ],
+   "synonyme": [
+    "krümelig",
+    "Mürbeteig"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "cremig",
+   "typ": "ziel",
+   "titel": "Cremig",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "emulsion",
+    "staerkeverkleisterung",
+    "mantecare"
+   ],
+   "welten": [
+    "w-saucen",
+    "w-getreide",
+    "w-milch"
+   ],
+   "synonyme": [
+    "sämig",
+    "samtig"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "knackig",
+   "typ": "ziel",
+   "titel": "Knackig (Gemüse)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "pektin-abbau",
+    "blanchieren",
+    "gemuese-matschig"
+   ],
+   "welten": [
+    "w-gemuese"
+   ],
+   "synonyme": [
+    "bissfest",
+    "al dente"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": [
+    "daempfen"
+   ]
+  },
+  {
+   "id": "gebunden",
+   "typ": "ziel",
+   "titel": "Gebunden (Saucen)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "emulsion",
+    "staerkeverkleisterung",
+    "abbinden-staerke",
+    "montieren"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [
+    "dicker",
+    "sämig"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "mehr-geschmack",
+   "typ": "ziel",
+   "titel": "Mehr Geschmack",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "maillard-reaktion",
+    "reduktion",
+    "abschmecken-saeure",
+    "essen-flach"
+   ],
+   "welten": [],
+   "synonyme": [
+    "würziger",
+    "Umami",
+    "intensiver"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": [
+    "deglacieren",
+    "reduzieren",
+    "vorteig"
+   ]
+  },
+  {
+   "id": "farbe",
+   "typ": "ziel",
+   "titel": "Schöne Farbe",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "maillard-reaktion",
+    "chlorophyll-farbe"
+   ],
+   "welten": [
+    "w-gemuese",
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "goldbraun",
+    "leuchtend grün"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "gleichmaessig-gar",
+   "typ": "ziel",
+   "titel": "Gleichmäßig gar",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "waermeleitung",
+    "rueckwaerts-garen",
+    "sous-vide"
+   ],
+   "welten": [
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "rosa durch",
+    "nicht grau am Rand"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "laenger-frisch",
+   "typ": "ziel",
+   "titel": "Länger frisch",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "retrogradation",
+    "oxidation-fett"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [
+    "haltbar",
+    "altbacken verhindern"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "grosse-poren",
+   "typ": "ziel",
+   "titel": "Große Poren im Brot",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "glutenbildung",
+    "hefegaerung",
+    "kalte-gare"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [
+    "offene Krume",
+    "luftiges Brot"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "trocken-tupfen",
+   "typ": "technik",
+   "titel": "Trocken tupfen",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "feuchtigkeit",
+    "maillard-reaktion",
+    "knusprig"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-gefluegel"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": [
+    "steak-grau"
+   ]
+  },
+  {
+   "id": "trockensalzen",
+   "typ": "technik",
+   "titel": "Trockensalzen (Dry Brine)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "osmose",
+    "wasserbindung-salz",
+    "saftig",
+    "knusprig"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-gefluegel"
+   ],
+   "synonyme": [
+    "Dry Brine"
+   ],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": [
+    "fleisch-trocken",
+    "w-gefluegel"
+   ]
+  },
+  {
+   "id": "lake",
+   "typ": "technik",
+   "titel": "Nasspökeln in Salzlake",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "wasserbindung-salz",
+    "diffusion",
+    "saftig"
+   ],
+   "welten": [
+    "w-gefluegel",
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "Brine",
+    "Lake"
+   ],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "kaltwasserbad",
+   "typ": "technik",
+   "titel": "Kartoffeln kalt wässern",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "staerke",
+    "staerkeverkleisterung",
+    "knusprig",
+    "wedges-nicht-knusprig"
+   ],
+   "welten": [
+    "w-kartoffeln",
+    "w-frittieren"
+   ],
+   "synonyme": [
+    "Eiswasser",
+    "wässern",
+    "Stärke abspülen"
+   ],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "vorkochen-aufrauen",
+   "typ": "technik",
+   "titel": "Vorkochen und aufrauen",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "staerkeverkleisterung",
+    "natron",
+    "knusprig"
+   ],
+   "welten": [
+    "w-kartoffeln"
+   ],
+   "synonyme": [
+    "Ofenkartoffeln",
+    "parboilen"
+   ],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "mit-staerke-bestaeuben",
+   "typ": "technik",
+   "titel": "Mit Stärke bestäuben",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "staerke",
+    "knusprig"
+   ],
+   "welten": [
+    "w-kartoffeln",
+    "w-gefluegel",
+    "w-frittieren"
+   ],
+   "synonyme": [
+    "Maizena-Trick"
+   ],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "panieren",
+   "typ": "technik",
+   "titel": "Panieren",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "knusprig",
+    "panade-faellt-ab"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-fisch",
+    "w-frittieren"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "zweimal-frittieren",
+   "typ": "technik",
+   "titel": "Zweimal frittieren",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "verdampfen",
+    "knusprig"
+   ],
+   "welten": [
+    "w-frittieren",
+    "w-kartoffeln"
+   ],
+   "synonyme": [
+    "Pommes doppelt"
+   ],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "anbraten",
+   "typ": "technik",
+   "titel": "Scharf anbraten",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "maillard-reaktion",
+    "pfanne-vorheizen"
+   ],
+   "welten": [
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "Searing"
+   ],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "pfanne-vorheizen",
+   "typ": "technik",
+   "titel": "Pfanne richtig vorheizen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "leidenfrost",
+    "temperatur",
+    "steak-grau"
+   ],
+   "welten": [
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "Wassertropfen-Test"
+   ],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": [
+    "anbraten",
+    "bratkartoffeln-kleben",
+    "fisch-klebt"
+   ]
+  },
+  {
+   "id": "rueckwaerts-garen",
+   "typ": "technik",
+   "titel": "Rückwärtsgaren (Reverse Sear)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "gleichmaessig-gar",
+    "maillard-reaktion"
+   ],
+   "welten": [
+    "w-fleisch"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "sous-vide",
+   "typ": "technik",
+   "titel": "Sous-vide",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "eiweiss-denaturierung",
+    "gleichmaessig-gar"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-fisch"
+   ],
+   "synonyme": [
+    "Vakuumgaren"
+   ],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "schmoren",
+   "typ": "technik",
+   "titel": "Schmoren",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "kollagen-gelatine",
+    "zart"
+   ],
+   "welten": [
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "Braten",
+    "Ragout"
+   ],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": [
+    "fleisch-zaeh"
+   ]
+  },
+  {
+   "id": "pochieren",
+   "typ": "technik",
+   "titel": "Pochieren",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "pochieren-proz"
+   ],
+   "welten": [
+    "w-fisch",
+    "w-eier"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "daempfen",
+   "typ": "technik",
+   "titel": "Dämpfen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "konvektion",
+    "knackig"
+   ],
+   "welten": [
+    "w-gemuese",
+    "w-fisch"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "roesten-ofen",
+   "typ": "technik",
+   "titel": "Im Ofen rösten",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "maillard-reaktion",
+    "konvektion"
+   ],
+   "welten": [
+    "w-gemuese",
+    "w-kartoffeln"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "grillen",
+   "typ": "technik",
+   "titel": "Grillen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "waermestrahlung",
+    "maillard-reaktion"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-gemuese"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "deglacieren",
+   "typ": "technik",
+   "titel": "Ablöschen (Deglacieren)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "reduktion",
+    "mehr-geschmack"
+   ],
+   "welten": [
+    "w-saucen",
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "Bratensatz"
+   ],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": [
+    "wein"
+   ]
+  },
+  {
+   "id": "reduzieren",
+   "typ": "technik",
+   "titel": "Reduzieren",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "reduktion",
+    "mehr-geschmack"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "montieren",
+   "typ": "technik",
+   "titel": "Mit Butter montieren",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "emulsion",
+    "butter",
+    "gebunden"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": [
+    "sauce-trennt-sich"
+   ]
+  },
+  {
+   "id": "legieren",
+   "typ": "technik",
+   "titel": "Mit Eigelb legieren",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "eiweiss-gerinnung",
+    "eigelb"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "abbinden-staerke",
+   "typ": "technik",
+   "titel": "Mit Stärke abbinden",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "staerkeverkleisterung",
+    "gebunden"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": [
+    "staerke"
+   ]
+  },
+  {
+   "id": "mehlschwitze",
+   "typ": "technik",
+   "titel": "Mehlschwitze (Roux)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "staerkeverkleisterung",
+    "mehl"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [
+    "Roux"
+   ],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": [
+    "sauce-klumpig"
+   ]
+  },
+  {
+   "id": "emulgieren",
+   "typ": "technik",
+   "titel": "Emulgieren",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "emulsion",
+    "senf",
+    "eigelb"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "aufschlagen",
+   "typ": "technik",
+   "titel": "Aufschlagen (Eischnee, Sahne)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "schaumbildung",
+    "luftig"
+   ],
+   "welten": [
+    "w-eier",
+    "w-gebaeck"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "unterheben",
+   "typ": "technik",
+   "titel": "Unterheben",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "schaumbildung",
+    "fluffig"
+   ],
+   "welten": [
+    "w-gebaeck"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "autolyse",
+   "typ": "technik",
+   "titel": "Autolyse",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "glutenbildung",
+    "ruhezeit"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "dehnen-falten",
+   "typ": "technik",
+   "titel": "Dehnen und Falten",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "glutenbildung",
+    "mechanik"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [
+    "Stretch and Fold"
+   ],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "kalte-gare",
+   "typ": "technik",
+   "titel": "Kalte Gare",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "hefegaerung",
+    "zeit",
+    "grosse-poren"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [
+    "Übernachtgare"
+   ],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "vorteig",
+   "typ": "technik",
+   "titel": "Vorteig (Poolish, Biga)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "hefegaerung",
+    "mehr-geschmack"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "dampf-im-ofen",
+   "typ": "technik",
+   "titel": "Dampf im Ofen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "luftfeuchte-ofen",
+    "brot-kruste-weich"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "blindbacken",
+   "typ": "technik",
+   "titel": "Blindbacken",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "boden-durchgeweicht"
+   ],
+   "welten": [
+    "w-gebaeck"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "ruhen-lassen",
+   "typ": "technik",
+   "titel": "Fleisch ruhen lassen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "saftig"
+   ],
+   "welten": [
+    "w-fleisch"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": [
+    "fleisch-trocken",
+    "ruhezeit",
+    "saft-beim-schneiden",
+    "teig-schnurrt"
+   ]
+  },
+  {
+   "id": "temperieren",
+   "typ": "technik",
+   "titel": "Schokolade temperieren",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "fett-kristallisation",
+    "schokolade"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": [
+    "schokolade-grau"
+   ]
+  },
+  {
+   "id": "zucker-karamellisieren",
+   "typ": "technik",
+   "titel": "Zucker karamellisieren",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "karamellisierung"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "gewuerze-roesten",
+   "typ": "technik",
+   "titel": "Gewürze rösten",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "aroma-blooming",
+    "maillard-reaktion"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": [
+    "gewuerze"
+   ]
+  },
+  {
+   "id": "marinieren",
+   "typ": "technik",
+   "titel": "Marinieren",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "diffusion",
+    "saeure"
+   ],
+   "welten": [
+    "w-fleisch"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": [
+    "joghurt"
+   ]
+  },
+  {
+   "id": "auberginen-salzen",
+   "typ": "technik",
+   "titel": "Auberginen salzen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "osmose"
+   ],
+   "welten": [
+    "w-gemuese"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "kalt-ansetzen",
+   "typ": "technik",
+   "titel": "Kalt ansetzen (Entenhaut, Speck)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "fett-ausbraten",
+    "knusprig"
+   ],
+   "welten": [
+    "w-gefluegel",
+    "w-fleisch"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "natron-zwiebeln",
+   "typ": "technik",
+   "titel": "Zwiebeln mit Natron bräunen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "natron",
+    "maillard-reaktion"
+   ],
+   "welten": [
+    "w-gemuese"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "blanchieren",
+   "typ": "technik",
+   "titel": "Blanchieren und abschrecken",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "chlorophyll-farbe",
+    "knackig"
+   ],
+   "welten": [
+    "w-gemuese"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "wasserbad",
+   "typ": "technik",
+   "titel": "Im Wasserbad garen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "temperatur",
+    "eiweiss-gerinnung"
+   ],
+   "welten": [
+    "w-suesses",
+    "w-saucen"
+   ],
+   "synonyme": [
+    "Bain-marie"
+   ],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": [
+    "hollandaise-flockt"
+   ]
+  },
+  {
+   "id": "abschmecken-saeure",
+   "typ": "technik",
+   "titel": "Mit Säure abschmecken",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "saeure",
+    "mehr-geschmack",
+    "essen-flach"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "mantecare",
+   "typ": "technik",
+   "titel": "Pasta im Nudelwasser binden",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "staerke",
+    "emulsion",
+    "cremig"
+   ],
+   "welten": [
+    "w-pasta",
+    "w-getreide"
+   ],
+   "synonyme": [
+    "Mantecare"
+   ],
+   "visual": {
+    "vorlage": "ablauf"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "steak-grau",
+   "typ": "symptom",
+   "titel": "Steak wird grau statt braun",
+   "status": "prototyp",
+   "pilot": false,
+   "links": [
+    "maillard-reaktion",
+    "pfanne-vorheizen",
+    "trocken-tupfen"
+   ],
+   "welten": [
+    "w-fleisch"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": [
+    "pfannenmaterial"
+   ]
+  },
+  {
+   "id": "fleisch-zaeh",
+   "typ": "symptom",
+   "titel": "Fleisch ist zäh",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "kollagen-gelatine",
+    "schmoren"
+   ],
+   "welten": [
+    "w-fleisch"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": [
+    "zart"
+   ]
+  },
+  {
+   "id": "fleisch-trocken",
+   "typ": "symptom",
+   "titel": "Fleisch ist trocken",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "eiweiss-denaturierung",
+    "trockensalzen",
+    "ruhen-lassen"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-gefluegel"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": [
+    "saftig",
+    "wasserbindung-salz"
+   ]
+  },
+  {
+   "id": "saft-beim-schneiden",
+   "typ": "symptom",
+   "titel": "Viel Saft beim Anschneiden",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "ruhen-lassen"
+   ],
+   "welten": [
+    "w-fleisch"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "kuchen-sinkt-ein",
+   "typ": "symptom",
+   "titel": "Kuchen sinkt ein",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "chemische-lockerung",
+    "schaumbildung"
+   ],
+   "welten": [
+    "w-gebaeck"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "kuchen-trocken",
+   "typ": "symptom",
+   "titel": "Kuchen ist trocken",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "zucker",
+    "fett"
+   ],
+   "welten": [
+    "w-gebaeck"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "kuchen-klitschig",
+   "typ": "symptom",
+   "titel": "Kuchen ist klitschig",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "staerkeverkleisterung"
+   ],
+   "welten": [
+    "w-gebaeck"
+   ],
+   "synonyme": [
+    "speckig",
+    "nicht durch"
+   ],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "muffins-tunnel",
+   "typ": "symptom",
+   "titel": "Muffins haben Tunnel",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "glutenbildung"
+   ],
+   "welten": [
+    "w-gebaeck"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "brot-zu-dicht",
+   "typ": "symptom",
+   "titel": "Brot ist zu dicht",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "glutenbildung",
+    "hefegaerung"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [
+    "kompakt",
+    "keine Poren"
+   ],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "brot-flach",
+   "typ": "symptom",
+   "titel": "Brot läuft breit",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "glutenbildung",
+    "hefegaerung"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "brot-kruste-weich",
+   "typ": "symptom",
+   "titel": "Brotkruste wird weich",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "dampf-im-ofen",
+    "maillard-reaktion"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": [
+    "luftfeuchte-ofen"
+   ]
+  },
+  {
+   "id": "brot-altbacken",
+   "typ": "symptom",
+   "titel": "Brot wird schnell altbacken",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "retrogradation"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "teig-klebt",
+   "typ": "symptom",
+   "titel": "Teig klebt",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "glutenbildung",
+    "wasser"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "teig-schnurrt",
+   "typ": "symptom",
+   "titel": "Teig schnurrt zurück",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "glutenbildung",
+    "ruhen-lassen"
+   ],
+   "welten": [
+    "w-brot",
+    "w-gebaeck"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "muerbeteig-zaeh",
+   "typ": "symptom",
+   "titel": "Mürbeteig wird zäh",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "glutenbildung",
+    "fett"
+   ],
+   "welten": [
+    "w-gebaeck"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": [
+    "muerbe"
+   ]
+  },
+  {
+   "id": "boden-durchgeweicht",
+   "typ": "symptom",
+   "titel": "Boden ist durchgeweicht",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "blindbacken"
+   ],
+   "welten": [
+    "w-gebaeck"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "sauce-trennt-sich",
+   "typ": "symptom",
+   "titel": "Sauce trennt sich",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "emulsion",
+    "montieren"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "mayo-gerinnt",
+   "typ": "symptom",
+   "titel": "Mayonnaise gerinnt",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "emulsion",
+    "eigelb"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "hollandaise-flockt",
+   "typ": "symptom",
+   "titel": "Hollandaise flockt aus",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "eiweiss-gerinnung",
+    "emulsion",
+    "wasserbad"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "sauce-zu-duenn",
+   "typ": "symptom",
+   "titel": "Sauce ist zu dünn",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "reduktion",
+    "staerkeverkleisterung"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "sauce-klumpig",
+   "typ": "symptom",
+   "titel": "Sauce ist klumpig oder mehlig",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "staerkeverkleisterung",
+    "mehlschwitze"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "eischnee-nicht-steif",
+   "typ": "symptom",
+   "titel": "Eischnee wird nicht steif",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "schaumbildung"
+   ],
+   "welten": [
+    "w-eier"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": [
+    "eiweiss"
+   ]
+  },
+  {
+   "id": "sahne-wird-butter",
+   "typ": "symptom",
+   "titel": "Sahne wird zu Butter",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "schaumbildung"
+   ],
+   "welten": [
+    "w-milch"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": [
+    "sahne"
+   ]
+  },
+  {
+   "id": "karamell-kristallisiert",
+   "typ": "symptom",
+   "titel": "Karamell wird körnig",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "zucker-kristallisation"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": [
+    "karamellisierung"
+   ]
+  },
+  {
+   "id": "schokolade-grau",
+   "typ": "symptom",
+   "titel": "Schokolade wird grau und streifig",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "fett-kristallisation",
+    "temperieren"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "schokolade-klumpt",
+   "typ": "symptom",
+   "titel": "Schokolade klumpt beim Schmelzen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "schokolade"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "gemuese-matschig",
+   "typ": "symptom",
+   "titel": "Gemüse wird matschig",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "pektin-abbau"
+   ],
+   "welten": [
+    "w-gemuese"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": [
+    "knackig"
+   ]
+  },
+  {
+   "id": "gemuese-grau",
+   "typ": "symptom",
+   "titel": "Grünes Gemüse wird grau",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "chlorophyll-farbe"
+   ],
+   "welten": [
+    "w-gemuese"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "wedges-nicht-knusprig",
+   "typ": "symptom",
+   "titel": "Wedges und Pommes werden nicht knusprig",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "knusprig",
+    "kaltwasserbad",
+    "staerkeverkleisterung"
+   ],
+   "welten": [
+    "w-kartoffeln",
+    "w-frittieren"
+   ],
+   "synonyme": [
+    "Ofenkartoffeln labbrig"
+   ],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "bratkartoffeln-kleben",
+   "typ": "symptom",
+   "titel": "Bratkartoffeln kleben an",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "staerke",
+    "pfanne-vorheizen"
+   ],
+   "welten": [
+    "w-kartoffeln"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "reis-matschig",
+   "typ": "symptom",
+   "titel": "Reis wird matschig",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "staerkeverkleisterung"
+   ],
+   "welten": [
+    "w-getreide"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": [
+    "retrogradation"
+   ]
+  },
+  {
+   "id": "pasta-klebt",
+   "typ": "symptom",
+   "titel": "Pasta klebt zusammen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "staerkeverkleisterung"
+   ],
+   "welten": [
+    "w-pasta"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "panade-faellt-ab",
+   "typ": "symptom",
+   "titel": "Panade fällt ab",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "panieren"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-fisch"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "frittiertes-fettig",
+   "typ": "symptom",
+   "titel": "Frittiertes ist fettig",
+   "status": "geplant",
+   "pilot": true,
+   "links": [
+    "temperatur",
+    "rauchpunkt"
+   ],
+   "welten": [
+    "w-frittieren"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": [
+    "oel"
+   ]
+  },
+  {
+   "id": "fisch-zerfaellt",
+   "typ": "symptom",
+   "titel": "Fisch zerfällt",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "eiweiss-denaturierung"
+   ],
+   "welten": [
+    "w-fisch"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "fisch-klebt",
+   "typ": "symptom",
+   "titel": "Fisch klebt an der Pfanne",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "leidenfrost",
+    "pfanne-vorheizen"
+   ],
+   "welten": [
+    "w-fisch"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "ruehrei-waessrig",
+   "typ": "symptom",
+   "titel": "Rührei wird wässrig",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "eiweiss-gerinnung"
+   ],
+   "welten": [
+    "w-eier"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "creme-klumpig",
+   "typ": "symptom",
+   "titel": "Creme oder Pudding klumpt",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "eiweiss-gerinnung",
+    "staerkeverkleisterung"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "zwiebeln-verbrennen",
+   "typ": "symptom",
+   "titel": "Zwiebeln verbrennen statt bräunen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "maillard-reaktion",
+    "pyrolyse"
+   ],
+   "welten": [
+    "w-gemuese"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": [
+    "zwiebel"
+   ]
+  },
+  {
+   "id": "knoblauch-bitter",
+   "typ": "symptom",
+   "titel": "Knoblauch wird bitter",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "pyrolyse"
+   ],
+   "welten": [
+    "w-gemuese"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": [
+    "knoblauch"
+   ]
+  },
+  {
+   "id": "essen-versalzen",
+   "typ": "symptom",
+   "titel": "Essen ist versalzen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "salz"
+   ],
+   "welten": [],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "essen-flach",
+   "typ": "symptom",
+   "titel": "Essen schmeckt flach",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "abschmecken-saeure",
+    "mehr-geschmack"
+   ],
+   "welten": [],
+   "synonyme": [
+    "fad",
+    "langweilig"
+   ],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "kekse-breit",
+   "typ": "symptom",
+   "titel": "Kekse laufen breit",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "fett",
+    "zucker"
+   ],
+   "welten": [
+    "w-gebaeck"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  },
+  {
+   "id": "pfannkuchen-gummig",
+   "typ": "symptom",
+   "titel": "Pfannkuchen werden gummig",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "glutenbildung"
+   ],
+   "welten": [
+    "w-gebaeck"
+   ],
+   "synonyme": [],
+   "visual": {
+    "vorlage": "pfannentest"
+   },
+   "verlinkt_von": []
+  }
+ ]
+}

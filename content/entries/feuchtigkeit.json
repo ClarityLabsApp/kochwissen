@@ -1,0 +1,40 @@
+{
+  "id": "feuchtigkeit",
+  "typ": "stellschraube",
+  "titel": "Feuchtigkeit",
+  "schwierigkeit": "einsteiger",
+  "synonyme": [
+    "nass",
+    "trocken",
+    "Wasser an der Oberfläche"
+  ],
+  "kurz": "Wie viel Wasser an einer Oberfläche ist, entscheidet zwischen dämpfen und bräunen.",
+  "bild_im_kopf": "Ein Schieberegler zwischen Dampfgarer und Grill: Je trockener die Oberfläche, desto mehr Richtung Grill.",
+  "was_passiert": "Nasse Oberflächen bleiben bei 100 °C hängen, sie garen, aber bräunen nicht. Trockene Oberflächen werden heißer, bräunen und werden knusprig. Ganz ausgetrocknet werden sie ledrig oder verbrennen.",
+  "faustregeln": [
+    "Trocknen vor dem Braten ist fast immer richtig.",
+    "Dampf ist willkommen, wenn es saftig oder weich werden soll."
+  ],
+  "links": [
+    "verdampfen",
+    "maillard-reaktion",
+    "knusprig",
+    "trocken-tupfen",
+    "steak-grau"
+  ],
+  "visual": {
+    "vorlage": "skala",
+    "params": {
+      "links": "nass: dämpft, grau, weich",
+      "mitte": "trocken: bräunt, knusprig",
+      "rechts": "ausgetrocknet: ledrig, verbrennt"
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
+    }
+  ],
+  "status": "entwurf"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "zweimal-frittieren",
+  "typ": "technik",
+  "titel": "Zweimal frittieren",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "Pommes doppelt",
+    "doppelt frittieren",
+    "Belgische Pommes"
+  ],
+  "kurz": "Erst bei mittlerer Hitze garen, dann bei hoher Hitze kurz knusprig frittieren. So werden Pommes innen weich und außen fest.",
+  "bild_im_kopf": "Wie Grundierung und Lack: Der erste Durchgang bereitet vor, der zweite macht die harte, glänzende Schicht.",
+  "was_passiert": "Im ersten Bad bei etwa 160 °C gart das Innere, die Stärke quillt, und die Oberfläche bildet eine dünne Haut. Beim Abkühlen verfestigt sich diese Haut. Im zweiten Bad bei etwa 190 °C verdampft das letzte Wasser an der Oberfläche schnell, die Haut härtet aus und bräunt, bevor das Innere austrocknet.",
+  "warum_wichtig": "Einmal heiß frittiert: außen dunkel, innen roh. Einmal mild frittiert: durch, aber labbrig. Erst die Trennung löst beides.",
+  "schritte": [
+    "Kartoffeln schneiden, wässern und sehr gründlich trocknen.",
+    "Bei etwa 160 °C 5–6 Minuten frittieren, bis sie gar, aber noch hell sind.",
+    "Auf einem Gitter abkühlen lassen, mindestens 15 Minuten.",
+    "Bei etwa 190 °C 2–3 Minuten goldbraun frittieren.",
+    "Auf einem Gitter abtropfen lassen und sofort salzen."
+  ],
+  "wirkt_auf": [
+    "knusprig"
+  ],
+  "faustregeln": [
+    "Thermometer benutzen: Die Temperatur ist der ganze Trick.",
+    "Kleine Portionen, sonst fällt die Öltemperatur stark ab."
+  ],
+  "links": [
+    "verdampfen",
+    "staerkeverkleisterung",
+    "kaltwasserbad",
+    "rauchpunkt",
+    "frittiertes-fettig",
+    "oel"
+  ],
+  "welten": [
+    "w-frittieren",
+    "w-kartoffeln"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "params": {
+      "temperaturen": [
+        160,
+        190
+      ]
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Fine Dining Lovers: The science of French fries",
+      "url": "https://www.finedininglovers.com/explore/articles/science-french-fries"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
+    }
+  ],
+  "status": "entwurf"
+}

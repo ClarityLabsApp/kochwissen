@@ -1,0 +1,44 @@
+{
+  "id": "w-kartoffeln",
+  "typ": "welt",
+  "titel": "Kartoffeln",
+  "schwierigkeit": "einsteiger",
+  "synonyme": [
+    "Erdäpfel",
+    "Härdöpfel",
+    "Wedges",
+    "Pommes",
+    "Rösti"
+  ],
+  "kurz": "Eine Kartoffel ist zu etwa vier Fünfteln Wasser und zu einem Sechstel Stärke. Fast alles, was beim Kartoffelkochen passiert, dreht sich um diese beiden.",
+  "bild_im_kopf": "Eine Kartoffel ist wie ein Wassersack voller winziger Stärkekügelchen, zusammengehalten von Zellwänden. Kochen heißt: entscheiden, was mit Wasser, Kügelchen und Wänden passiert.",
+  "was_passiert": "Beim Garen saugen die Stärkekörner Wasser auf und quellen, die Kartoffel wird weich. Gleichzeitig löst sich der Kitt zwischen den Zellen. Mehligkochende Sorten haben mehr Stärke und zerfallen leichter, festkochende halten zusammen. Für eine Kruste muss die Oberfläche trocken werden, damit sie bräunt.",
+  "warum_wichtig": "Wer weiß, welcher Teil gerade arbeitet, kann jede Kartoffelzubereitung steuern: fluffig, cremig, fest oder knusprig.",
+  "faustregeln": [
+    "Mehligkochend für Stock, Ofenkartoffeln und Pommes, festkochend für Salat und Bratkartoffeln.",
+    "Für Kruste: Oberfläche trocken und ohne losen Stärkefilm.",
+    "Gekochte Kartoffeln vom Vortag braten schöner als frisch gekochte."
+  ],
+  "links": [
+    "staerkeverkleisterung",
+    "pektin-abbau",
+    "knusprig",
+    "wedges-nicht-knusprig",
+    "bratkartoffeln-kleben",
+    "kaltwasserbad",
+    "vorkochen-aufrauen",
+    "zweimal-frittieren",
+    "roesten-ofen"
+  ],
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a single russet potato, one half cut into wedges"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
+    }
+  ],
+  "status": "entwurf"
+}

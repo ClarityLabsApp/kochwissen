@@ -1,0 +1,54 @@
+{
+  "id": "staerke",
+  "typ": "zutat",
+  "titel": "Stärke (Mais, Kartoffel)",
+  "schwierigkeit": "einsteiger",
+  "synonyme": [
+    "Maizena",
+    "Maisstärke",
+    "Kartoffelstärke",
+    "Speisestärke"
+  ],
+  "kurz": "Reine Stärke bindet Flüssigkeiten und macht Oberflächen knusprig. An der falschen Stelle macht sie klebrig.",
+  "bild_im_kopf": "Wie Mehl ohne alles andere: nur die Quellkügelchen, ohne Eiweiß, das zäh machen könnte.",
+  "rolle": [
+    {
+      "rolle": "bindet Saucen und Cremes",
+      "prozess": "staerkeverkleisterung"
+    },
+    {
+      "rolle": "bildet als Hauch eine knusprige Hülle",
+      "prozess": "knusprig"
+    },
+    {
+      "rolle": "macht als loser Film klebrig und bräunt zu früh",
+      "prozess": "wedges-nicht-knusprig"
+    }
+  ],
+  "was_passiert": "Speisestärke besteht nur aus Stärkekörnern. In warmem Wasser quellen sie und binden. Als trockene, dünne Schicht im Ofen härten sie zu einer spröden Kruste. Kartoffelstärke bindet schon bei niedrigerer Temperatur und klarer, Maisstärke muss aufkochen und wird leicht trüb.",
+  "faustregeln": [
+    "In kalter Flüssigkeit anrühren.",
+    "Maisstärke einmal aufkochen lassen.",
+    "Zum Knusprigmachen nur einen Hauch verwenden."
+  ],
+  "links": [
+    "staerkeverkleisterung",
+    "mit-staerke-bestaeuben",
+    "kaltwasserbad",
+    "abbinden-staerke"
+  ],
+  "welten": [
+    "w-saucen",
+    "w-kartoffeln"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
+    }
+  ],
+  "status": "entwurf"
+}

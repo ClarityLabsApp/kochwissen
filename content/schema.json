@@ -1,0 +1,330 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kochwissen/entry.schema.json",
+  "title": "Kochwissen – Eintrag",
+  "description": "Ein Eintrag der Kochwissen-Bibliothek. Alle Typen teilen die Grundfelder; typ-spezifische Felder sind optional und nur beim passenden Typ befüllt.",
+  "type": "object",
+  "required": [
+    "id",
+    "typ",
+    "titel",
+    "kurz",
+    "status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Stabiler Slug, z. B. maillard-reaktion"
+    },
+    "typ": {
+      "enum": [
+        "prozess",
+        "zutat",
+        "stellschraube",
+        "symptom",
+        "ziel",
+        "technik",
+        "welt",
+        "begriff"
+      ]
+    },
+    "titel": {
+      "type": "string"
+    },
+    "synonyme": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Andere Wörter, unter denen man den Eintrag sucht (krosser, nicht labbrig …)"
+    },
+    "schwierigkeit": {
+      "enum": [
+        "einsteiger",
+        "fortgeschritten",
+        "profi"
+      ]
+    },
+    "status": {
+      "enum": [
+        "geplant",
+        "entwurf",
+        "geprueft",
+        "prototyp"
+      ]
+    },
+    "kurz": {
+      "type": "string",
+      "description": "Ein Satz, der den Kern trifft"
+    },
+    "bild_im_kopf": {
+      "type": "string",
+      "description": "Analogie oder Metapher aus dem Alltag"
+    },
+    "was_passiert": {
+      "type": "string",
+      "description": "3–5 Sätze in Alltagssprache"
+    },
+    "warum_wichtig": {
+      "type": "string"
+    },
+    "faustregeln": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 5
+    },
+    "stellschrauben": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "wirkung"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "id eines Eintrags vom Typ stellschraube"
+          },
+          "wirkung": {
+            "type": "string",
+            "description": "z. B. heißer → schneller"
+          }
+        }
+      }
+    },
+    "typische_fehler": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mythos": {
+      "type": "object",
+      "properties": {
+        "behauptung": {
+          "type": "string"
+        },
+        "richtig": {
+          "type": "string"
+        }
+      }
+    },
+    "praxis": {
+      "type": "array",
+      "description": "Praxis-Karten: dieser Eintrag in einer Lebensmittel-Welt",
+      "items": {
+        "type": "object",
+        "required": [
+          "welt",
+          "text"
+        ],
+        "properties": {
+          "welt": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "aroma": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Punkt-Sprache: röstig, nussig, karamellig …"
+          }
+        }
+      }
+    },
+    "visual": {
+      "type": "object",
+      "required": [
+        "vorlage"
+      ],
+      "description": "Welche Grafik-Vorlage die Website rendert, mit Parametern. Keine Einzelgrafiken.",
+      "properties": {
+        "vorlage": {
+          "enum": [
+            "zoom3-simulation",
+            "temperaturskala",
+            "netz",
+            "ablauf",
+            "vergleich",
+            "entscheidungsbaum",
+            "punktmatrix",
+            "pfannentest",
+            "skala",
+            "keine"
+          ]
+        },
+        "ebenen": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "massstab": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "params": {
+          "type": "object",
+          "description": "Vorlagen-spezifisch, z. B. Temperaturzonen",
+          "additionalProperties": true
+        },
+        "illustration": {
+          "type": "string",
+          "description": "Optional: Motiv für die Aquarell-Illustration (KI-generiert, pro Zutat/Welt, nicht pro Eintrag)"
+        }
+      }
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "ids verwandter Einträge (beliebiger Typ)"
+    },
+    "welten": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "ids der Lebensmittel-Welten"
+    },
+    "quellen": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "titel"
+        ],
+        "properties": {
+          "titel": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "stelle": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "ursachen": {
+      "description": "Nur Typ symptom",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "titel",
+          "warum",
+          "fix"
+        ],
+        "properties": {
+          "titel": {
+            "type": "string"
+          },
+          "warum": {
+            "type": "string"
+          },
+          "fix": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "haeufigkeit": {
+            "enum": [
+              1,
+              2,
+              3
+            ]
+          },
+          "prinzip": {
+            "type": "string",
+            "description": "id des Prozesses dahinter"
+          }
+        }
+      }
+    },
+    "diagnose": {
+      "description": "Nur Typ symptom: Entscheidungsbaum. Knoten mit frage+antworten oder verweis auf eine Ursache (Index in ursachen).",
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "frage": {
+            "type": "string"
+          },
+          "antworten": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "ursache": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "bedeutung": {
+      "description": "Nur Typ ziel: was das Ziel physikalisch heißt",
+      "type": "string"
+    },
+    "hebel": {
+      "description": "Nur Typ ziel: ids von Stellschrauben/Prozessen",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "schritte": {
+      "description": "Nur Typ technik",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "wirkt_auf": {
+      "description": "Nur Typ technik: ids der Ziele, die sie unterstützt",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rolle": {
+      "description": "Nur Typ zutat: was die Zutat tut",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rolle": {
+            "type": "string"
+          },
+          "prozess": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": "verdampfen",
+  "typ": "prozess",
+  "titel": "Verdampfen",
+  "schwierigkeit": "einsteiger",
+  "synonyme": [
+    "Wasser verdampft",
+    "Dampf",
+    "ausdampfen"
+  ],
+  "kurz": "Bevor eine Oberfläche heißer als 100 °C werden kann, muss ihr Wasser verdampfen. Das kostet viel Energie und Zeit.",
+  "bild_im_kopf": "Wie ein Topf Wasser auf dem Herd: Egal wie stark die Flamme ist, mehr als 100 °C wird das Wasser nicht. Die ganze Energie geht ins Verdampfen.",
+  "was_passiert": "Wasser braucht sehr viel Energie, um zu Dampf zu werden. Solange eine Oberfläche nass ist, bleibt sie deshalb bei etwa 100 °C hängen. Erst wenn das Wasser weg ist, steigt die Temperatur und Bräunung oder Knusprigkeit beginnen. Der Dampf braucht einen Weg nach draußen: Kann er nicht entweichen, dämpft er die Nachbarstücke.",
+  "warum_wichtig": "Erklärt, warum Trocknen, Platz lassen und Hitze so viel ausmachen. Es ist der Schlüssel hinter knusprig, braun und Kruste.",
+  "faustregeln": [
+    "Nass rein heißt lange bei 100 °C hängen.",
+    "Dampf muss weg können: Abstand, kein Deckel, Gitter statt Teller."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "heißer → schneller trocken"
+    },
+    {
+      "id": "oberflaeche",
+      "wirkung": "mehr Fläche → schneller trocken"
+    },
+    {
+      "id": "feuchtigkeit",
+      "wirkung": "weniger Wasser → schneller über 100 °C"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-kartoffeln",
+      "text": "Gewässerte Kartoffeln ohne Trocknen: Das Wasser muss erst verdampfen, die Kruste kommt spät."
+    },
+    {
+      "welt": "w-frittieren",
+      "text": "Das Blubbern im Öl ist verdampfendes Wasser. Wird es ruhiger, ist die Oberfläche fast trocken."
+    },
+    {
+      "welt": "w-fleisch",
+      "text": "Eine volle Pfanne kann den austretenden Saft nicht mehr verdampfen. Das Fleisch kocht grau."
+    }
+  ],
+  "links": [
+    "feuchtigkeit",
+    "maillard-reaktion",
+    "knusprig",
+    "trocken-tupfen",
+    "steak-grau",
+    "zweimal-frittieren"
+  ],
+  "welten": [
+    "w-kartoffeln",
+    "w-frittieren",
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation",
+    "ebenen": [
+      {
+        "name": "Das Blech",
+        "massstab": "≈ 30 cm"
+      },
+      {
+        "name": "Die Oberfläche",
+        "massstab": "≈ 1 mm"
+      },
+      {
+        "name": "Die Wassermoleküle",
+        "massstab": "≈ 1 nm"
+      }
+    ],
+    "params": {
+      "regler": [
+        "temperatur",
+        "abstand"
+      ],
+      "plateau_c": 100
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
+    }
+  ],
+  "status": "entwurf"
+}

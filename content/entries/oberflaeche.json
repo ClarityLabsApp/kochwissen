@@ -1,0 +1,39 @@
+{
+  "id": "oberflaeche",
+  "typ": "stellschraube",
+  "titel": "Oberfläche & Schnittgröße",
+  "schwierigkeit": "einsteiger",
+  "synonyme": [
+    "schneiden",
+    "Schnittgröße",
+    "aufrauen",
+    "dicke"
+  ],
+  "kurz": "Je mehr Oberfläche im Verhältnis zur Größe, desto mehr Kruste und desto schneller gar.",
+  "bild_im_kopf": "Chips, Pommes, Wedges, ganze Ofenkartoffel: gleiche Kartoffel, aber jedes Mal ein anderes Verhältnis von Kruste zu weichem Inneren.",
+  "was_passiert": "Kleine oder dünne Stücke haben viel Fläche und wenig Inneres. Sie trocknen schnell, werden knusprig und garen rasch. Große Stücke haben viel weiches Inneres. Eine aufgeraute Oberfläche vergrößert die Fläche zusätzlich, ohne das Stück kleiner zu machen.",
+  "faustregeln": [
+    "Gleich große Stücke garen gleichmäßig.",
+    "Aufrauen bringt Kruste, ohne kleiner zu schneiden."
+  ],
+  "links": [
+    "knusprig",
+    "verdampfen",
+    "vorkochen-aufrauen",
+    "roesten-ofen"
+  ],
+  "visual": {
+    "vorlage": "skala",
+    "params": {
+      "links": "groß und glatt: wenig Kruste, weich innen",
+      "rechts": "klein oder rau: viel Kruste, schnell gar"
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
+    }
+  ],
+  "status": "entwurf"
+}

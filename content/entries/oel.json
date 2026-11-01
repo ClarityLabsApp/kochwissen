@@ -1,0 +1,53 @@
+{
+  "id": "oel",
+  "typ": "zutat",
+  "titel": "Öl",
+  "schwierigkeit": "einsteiger",
+  "synonyme": [
+    "Rapsöl",
+    "Sonnenblumenöl",
+    "Olivenöl",
+    "Frittieröl"
+  ],
+  "kurz": "Öl überträgt Hitze gleichmäßig an jede Stelle einer Oberfläche und trägt Geschmack.",
+  "bild_im_kopf": "Wie eine Brücke zwischen Pfanne und Essen: Ohne Öl berührt nur die Spitze jeder Unebenheit die Hitze.",
+  "rolle": [
+    {
+      "rolle": "leitet Hitze in jede Vertiefung",
+      "prozess": "maillard-reaktion"
+    },
+    {
+      "rolle": "Frittiermedium bei 160–190 °C",
+      "prozess": "zweimal-frittieren"
+    },
+    {
+      "rolle": "bildet mit Wasser Emulsionen",
+      "prozess": "emulsion"
+    }
+  ],
+  "was_passiert": "Eine Oberfläche ist nie ganz glatt. Öl füllt die Lücken und bringt die Hitze überall gleichmäßig hin, so bräunt die ganze Fläche statt nur einzelner Punkte. Wie viel Hitze ein Öl verträgt, hängt davon ab, ob es raffiniert oder kaltgepresst ist.",
+  "faustregeln": [
+    "Für Wedges reicht etwa 1 EL Öl pro 500 g.",
+    "Raffiniertes Öl für hohe Hitze, kaltgepresstes für Geschmack am Schluss."
+  ],
+  "links": [
+    "rauchpunkt",
+    "emulsion",
+    "frittiertes-fettig",
+    "zweimal-frittieren",
+    "fettgehalt"
+  ],
+  "welten": [
+    "w-frittieren"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
+    }
+  ],
+  "status": "entwurf"
+}
