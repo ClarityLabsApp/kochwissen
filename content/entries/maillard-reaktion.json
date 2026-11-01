@@ -121,6 +121,20 @@
         100,
         140,
         190
+      ],
+      "skala": [
+        {
+          "c": 100,
+          "name": "Wasser verdampft, Oberfläche hängt fest"
+        },
+        {
+          "c": 140,
+          "name": "Bräunung beginnt"
+        },
+        {
+          "c": 190,
+          "name": "wird bitter und verbrennt"
+        }
       ]
     }
   },

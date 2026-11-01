@@ -39,6 +39,20 @@
       "ofen_c": [
         100,
         120
+      ],
+      "skala": [
+        {
+          "c": 55,
+          "name": "Ziel rosa (Kern)"
+        },
+        {
+          "c": 110,
+          "name": "Ofen: sanft vorgaren"
+        },
+        {
+          "c": 230,
+          "name": "Pfanne: kurz anbraten"
+        }
       ]
     }
   },

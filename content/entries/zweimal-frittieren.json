@@ -44,6 +44,16 @@
       "temperaturen": [
         160,
         190
+      ],
+      "skala": [
+        {
+          "c": 160,
+          "name": "1. Bad: innen garen"
+        },
+        {
+          "c": 190,
+          "name": "2. Bad: Kruste trocknen und bräunen"
+        }
       ]
     }
   },

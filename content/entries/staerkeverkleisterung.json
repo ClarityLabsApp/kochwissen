@@ -99,7 +99,17 @@
         "temperatur",
         "wasser"
       ],
-      "schwelle_c": 57
+      "schwelle_c": 57,
+      "skala": [
+        {
+          "c": 57,
+          "name": "Kartoffelstärke beginnt zu quellen"
+        },
+        {
+          "c": 100,
+          "name": "Wasser kocht, Stärke voll verkleistert"
+        }
+      ]
     }
   },
   "quellen": [

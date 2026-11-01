@@ -78,7 +78,21 @@
         "temperatur",
         "zeit"
       ],
-      "schwelle_c": 70
+      "schwelle_c": 70,
+      "skala": [
+        {
+          "c": 70,
+          "name": "Bindegewebe beginnt sich zu lösen"
+        },
+        {
+          "c": 85,
+          "name": "ideal zum Schmoren"
+        },
+        {
+          "c": 100,
+          "name": "sprudelnd: Fasern trocknen aus"
+        }
+      ]
     }
   },
   "quellen": [

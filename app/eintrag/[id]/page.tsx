@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import RichText from "@/components/RichText";
 import Diagnosis from "@/components/Diagnosis";
+import Visual, { plain } from "@/components/visuals/Visual";
+import StepFlow from "@/components/visuals/StepFlow";
 import { allIds, getEntry, getMasterItem, titleOf, typOf, PROTOTYPES, TYP_NAME, type Typ } from "@/lib/content";
 
 export function generateStaticParams() {
@@ -94,6 +96,7 @@ export default function EntryPage({ params }: { params: { id: string } }) {
           </div>
         )}
         {e.bild_im_kopf && <div className="box"><span className="mono">Bild im Kopf</span><p><RichText text={e.bild_im_kopf} /></p></div>}
+        {!proto && <Visual e={e} />}
         {e.bedeutung && <div className="block"><h2>Was {e.titel} bedeutet</h2><div className="prose"><p><RichText text={e.bedeutung} /></p></div></div>}
         {e.was_passiert && <div className="block"><h2>Was passiert</h2><div className="prose"><p><RichText text={e.was_passiert} /></p></div></div>}
         {e.warum_wichtig && <div className="block"><h2>Warum wichtig</h2><div className="prose"><p><RichText text={e.warum_wichtig} /></p></div></div>}
@@ -106,7 +109,14 @@ export default function EntryPage({ params }: { params: { id: string } }) {
             <div className="knobs">{e.rolle.map((r) => <div key={r.rolle}><span>{r.rolle}</span><Link href={`/eintrag/${r.prozess}`} className="mono">{titleOf(r.prozess)}</Link></div>)}</div>
           </div>
         ) : null}
-        {e.schritte?.length ? <div className="block"><h2>So geht’s</h2><ol className="steps">{e.schritte.map((s) => <li key={s}><RichText text={s} /></li>)}</ol></div> : null}
+        {e.schritte?.length ? (
+          <div className="block"><h2>So geht’s</h2>
+            <StepFlow steps={e.schritte.map(plain)} />
+            <details className="more"><summary className="mono">Alle Schritte als Liste</summary>
+              <ol className="steps">{e.schritte.map((s) => <li key={s}><RichText text={s} /></li>)}</ol>
+            </details>
+          </div>
+        ) : null}
         {rules && knobs ? <div className="cols">{rules}{knobs}</div> : (rules ?? knobs)}
         {e.typische_fehler?.length ? <div className="block"><h2>Typische Fehler</h2><ul className="plain">{e.typische_fehler.map((f) => <li key={f}><RichText text={f} /></li>)}</ul></div> : null}
         {causesSorted.length > 0 && (

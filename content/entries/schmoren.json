@@ -45,6 +45,20 @@
       "fluessigkeit_c": [
         85,
         90
+      ],
+      "skala": [
+        {
+          "c": 70,
+          "name": "Bindegewebe beginnt sich zu lösen"
+        },
+        {
+          "c": 88,
+          "name": "leise simmern"
+        },
+        {
+          "c": 100,
+          "name": "sprudelnd: zu heiß"
+        }
       ]
     }
   },

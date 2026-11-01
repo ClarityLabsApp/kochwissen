@@ -83,6 +83,24 @@
         60,
         66,
         73
+      ],
+      "skala": [
+        {
+          "c": 50,
+          "name": "Eiweiß wird gar, bleibt zart"
+        },
+        {
+          "c": 60,
+          "name": "Ende des saftigen Fensters"
+        },
+        {
+          "c": 66,
+          "name": "Fasern pressen viel Saft aus"
+        },
+        {
+          "c": 73,
+          "name": "fest und trocken"
+        }
       ]
     }
   },

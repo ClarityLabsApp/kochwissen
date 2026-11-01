@@ -78,7 +78,17 @@
         "temperatur",
         "abstand"
       ],
-      "plateau_c": 100
+      "plateau_c": 100,
+      "skala": [
+        {
+          "c": 100,
+          "name": "Wasser verdampft, Temperatur bleibt stehen"
+        },
+        {
+          "c": 140,
+          "name": "trocken: Bräunung möglich"
+        }
+      ]
     }
   },
   "quellen": [
