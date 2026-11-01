@@ -7,7 +7,7 @@
 //   OPENAI_API_KEY=... node scripts/illustrations.mjs               # alle fehlenden
 //   OPENAI_API_KEY=... node scripts/illustrations.mjs --only mehl,salz
 //
-// Optional: IMAGE_MODEL (Standard gpt-image-1), IMAGE_QUALITY (low | medium | high, Standard medium).
+// Optional: IMAGE_MODEL (Standard gpt-image-2.5-flare; gpt-image-1 wurde im Oktober 2026 abgeschaltet), IMAGE_QUALITY (low | medium | high, Standard medium).
 // Der Stil-Prompt steht in DESIGN.md, Abschnitt 8. Hier gleich gehalten.
 import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -18,7 +18,7 @@ const STYLE = "Vintage cookbook illustration, loose watercolor and fine ink line
 
 const key = process.env.OPENAI_API_KEY;
 if (!key) { console.error("OPENAI_API_KEY fehlt."); process.exit(1); }
-const model = process.env.IMAGE_MODEL || "gpt-image-1";
+const model = process.env.IMAGE_MODEL || "gpt-image-2.5-flare";
 const quality = process.env.IMAGE_QUALITY || "medium";
 const args = process.argv.slice(2);
 const only = args.includes("--only") ? args[args.indexOf("--only") + 1].split(",") : null;
