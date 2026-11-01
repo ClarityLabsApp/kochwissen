@@ -1,0 +1,98 @@
+{
+  "id": "ruehrei-waessrig",
+  "typ": "symptom",
+  "titel": "Rührei wird wässrig",
+  "synonyme": [
+    "Rührei trocken",
+    "Rührei gummig",
+    "Rührei Wasser"
+  ],
+  "kurz": "Zu viel Hitze: Die Eiweiße ziehen sich zusammen und pressen Wasser aus. Das Rührei ist dann trocken und wässrig zugleich.",
+  "bild_im_kopf": "Wie ein Schwamm, den man zu fest drückt: Das Wasser steht daneben.",
+  "ursachen": [
+    {
+      "titel": "Zu heiß gebraten",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "Über etwa 80 °C ziehen sich die Eiweiße stark zusammen und pressen Flüssigkeit aus.",
+      "fix": [
+        "Kleine Hitze, ständig rühren",
+        "Vom Herd nehmen, solange es noch zu feucht aussieht"
+      ]
+    },
+    {
+      "titel": "Zu lange in der Pfanne",
+      "haeufigkeit": 2,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "Das Ei gart in der heißen Pfanne weiter.",
+      "fix": [
+        "Sofort auf den Teller geben"
+      ]
+    },
+    {
+      "titel": "Wässrige Zutaten",
+      "haeufigkeit": 1,
+      "prinzip": "osmose",
+      "warum": "Tomaten, Pilze oder früh zugegebenes Salz ziehen Wasser.",
+      "fix": [
+        "Gemüse vorher anbraten",
+        "Salz kurz vor Schluss"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Bei welcher Hitze hast du gebraten?",
+      "antworten": [
+        [
+          "Mittel bis hoch",
+          "u0"
+        ],
+        [
+          "Klein",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Waren Gemüse wie Tomaten oder Pilze darin?",
+      "antworten": [
+        [
+          "Ja",
+          "u2"
+        ],
+        [
+          "Nein",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "eiweiss-gerinnung",
+    "osmose"
+  ],
+  "welten": [
+    "w-eier"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

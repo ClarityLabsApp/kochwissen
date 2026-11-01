@@ -1,0 +1,42 @@
+{
+  "id": "wasserbad",
+  "typ": "technik",
+  "titel": "Im Wasserbad garen",
+  "synonyme": [
+    "Bain-marie",
+    "Wasserbad",
+    "über Dampf aufschlagen"
+  ],
+  "kurz": "Eine Schüssel über oder in heißem Wasser erwärmen. Die Temperatur steigt sanft und kann nicht über 100 °C gehen.",
+  "bild_im_kopf": "Wie ein Puffer zwischen Flamme und Schüssel: Das Wasser schluckt die Spitzen.",
+  "was_passiert": "Das Wasser verteilt die Hitze gleichmäßig und begrenzt sie. So gerinnen Eiercremes, Hollandaise oder Schokolade nicht so leicht.",
+  "schritte": [
+    "Topf mit wenig Wasser zum Simmern bringen.",
+    "Schüssel darüber setzen, sie soll das Wasser nicht berühren.",
+    "Unter ständigem Rühren erwärmen.",
+    "Bei Bedarf die Schüssel kurz abheben, wenn es zu schnell geht."
+  ],
+  "wirkt_auf": [
+    "cremig"
+  ],
+  "links": [
+    "eiweiss-gerinnung",
+    "hollandaise-flockt",
+    "temperieren"
+  ],
+  "welten": [
+    "w-suesses",
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

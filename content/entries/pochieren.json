@@ -1,0 +1,44 @@
+{
+  "id": "pochieren",
+  "typ": "technik",
+  "titel": "Pochieren",
+  "synonyme": [
+    "Ei pochieren",
+    "verlorene Eier",
+    "pochiertes Ei",
+    "garziehen"
+  ],
+  "kurz": "In heißem, aber nicht kochendem Wasser sanft garen. Klassisch für Eier und Fisch.",
+  "bild_im_kopf": "Wie in einer warmen Badewanne einschlafen statt im Whirlpool.",
+  "was_passiert": "Unter dem Siedepunkt stockt das Eiweiß gleichmäßig, ohne zu zerfasern. Ein Schuss Essig lässt das Eiklar schneller stocken, frische Eier halten besser zusammen.",
+  "schritte": [
+    "Wasser zum Simmern bringen, nur einzelne Bläschen.",
+    "Einen Schuss Essig dazugeben.",
+    "Ei in eine Tasse aufschlagen und vorsichtig ins Wasser gleiten lassen.",
+    "3–4 Minuten ziehen lassen.",
+    "Mit einer Schaumkelle herausheben und abtropfen."
+  ],
+  "wirkt_auf": [
+    "saftig"
+  ],
+  "links": [
+    "pochieren-proz",
+    "eiweiss-gerinnung",
+    "saeure"
+  ],
+  "welten": [
+    "w-eier",
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "knoblauch",
+  "typ": "zutat",
+  "titel": "Knoblauch",
+  "synonyme": [
+    "Knoblauchzehe",
+    "Knofi"
+  ],
+  "kurz": "Knoblauch entwickelt seine Schärfe erst beim Schneiden. Je feiner, desto stärker, und desto schneller verbrennt er.",
+  "bild_im_kopf": "Ein Gewürz mit Lautstärkeregler: ganze Zehe leise, gepresst laut.",
+  "rolle": [
+    {
+      "rolle": "Schärfe entsteht beim Zerkleinern",
+      "prozess": "mehr-geschmack"
+    },
+    {
+      "rolle": "verbrennt schnell und wird bitter",
+      "prozess": "pyrolyse"
+    }
+  ],
+  "was_passiert": "Erst wenn die Zellen zerstört werden, reagieren zwei getrennte Stoffe zu den typischen scharfen Aromen. Hitze macht ihn milder und süßlich, zu viel Hitze bitter.",
+  "faustregeln": [
+    "Ganze Zehen für milden Geschmack, gepresst für kräftigen.",
+    "Spät in die Pfanne geben."
+  ],
+  "links": [
+    "knoblauch-bitter",
+    "pyrolyse"
+  ],
+  "welten": [
+    "w-gemuese",
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

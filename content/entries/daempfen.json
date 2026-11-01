@@ -1,0 +1,42 @@
+{
+  "id": "daempfen",
+  "typ": "technik",
+  "titel": "Dämpfen",
+  "synonyme": [
+    "dünsten",
+    "im Dampf garen",
+    "Dampfgarer"
+  ],
+  "kurz": "Gemüse über kochendem Wasser im Dampf garen. Es behält mehr Geschmack und Nährstoffe als im Wasser.",
+  "bild_im_kopf": "Wie eine Sauna statt ein Bad: heiß, aber das Gemüse wird nicht ausgewaschen.",
+  "was_passiert": "Dampf überträgt viel Wärme, weil er beim Kondensieren auf dem kühleren Gemüse Energie abgibt. Weil das Gemüse nicht im Wasser liegt, laugen Aromen und Vitamine weniger aus.",
+  "schritte": [
+    "Wenig Wasser im Topf zum Kochen bringen.",
+    "Gemüse in einem Siebeinsatz darüber legen, Deckel drauf.",
+    "Gleich große Stücke wählen, je nach Sorte 4–10 Minuten.",
+    "Mit einem Messer prüfen, sofort servieren oder abschrecken."
+  ],
+  "wirkt_auf": [
+    "knackig"
+  ],
+  "links": [
+    "konvektion",
+    "pektin-abbau",
+    "knackig"
+  ],
+  "welten": [
+    "w-gemuese",
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

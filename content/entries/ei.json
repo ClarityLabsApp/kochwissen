@@ -1,0 +1,58 @@
+{
+  "id": "ei",
+  "typ": "zutat",
+  "titel": "Ei (ganz)",
+  "synonyme": [
+    "Eier",
+    "Vollei",
+    "Hühnerei"
+  ],
+  "kurz": "Das ganze Ei bindet, lockert, emulgiert und gibt Farbe. Darum ist es in so vielen Rezepten.",
+  "bild_im_kopf": "Ein Schweizer Taschenmesser der Küche.",
+  "rolle": [
+    {
+      "rolle": "bindet beim Erhitzen",
+      "prozess": "eiweiss-gerinnung"
+    },
+    {
+      "rolle": "lockert als Schaum",
+      "prozess": "schaumbildung"
+    },
+    {
+      "rolle": "verbindet Fett und Wasser",
+      "prozess": "emulsion"
+    },
+    {
+      "rolle": "gibt Glanz und Farbe beim Bestreichen",
+      "prozess": "maillard-reaktion"
+    }
+  ],
+  "was_passiert": "Eiweiß bindet und hält Luft, Eigelb emulgiert und macht reich. Zusammen geben sie Teigen Halt, Farbe und Feuchtigkeit.",
+  "faustregeln": [
+    "Zimmerwarme Eier verbinden sich besser mit Butter.",
+    "Zum Bestreichen Eigelb mit etwas Milch: schöne Farbe."
+  ],
+  "links": [
+    "eiweiss-gerinnung",
+    "schaumbildung",
+    "emulsion",
+    "eigelb",
+    "eiweiss"
+  ],
+  "welten": [
+    "w-eier",
+    "w-gebaeck",
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

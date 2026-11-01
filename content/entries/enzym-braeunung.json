@@ -1,0 +1,49 @@
+{
+  "id": "enzym-braeunung",
+  "typ": "prozess",
+  "titel": "Enzymatische Bräunung",
+  "synonyme": [
+    "Apfel wird braun",
+    "Avocado braun",
+    "Kartoffel wird braun",
+    "anlaufen"
+  ],
+  "kurz": "Aufgeschnittene Äpfel, Kartoffeln oder Avocados werden braun, weil ein Enzym mit dem Sauerstoff der Luft reagiert.",
+  "bild_im_kopf": "Wie Rost an einer frischen Schnittstelle: Wo die Schale fehlt, kommt Luft heran.",
+  "was_passiert": "Beim Schneiden werden Zellen geöffnet. Ein Enzym und farblose Stoffe aus der Zelle treffen auf Sauerstoff und bilden braune Farbstoffe. Säure bremst das Enzym, Kälte verlangsamt es, Hitze zerstört es, Wasser hält die Luft fern.",
+  "warum_wichtig": "Erklärt, warum Zitronensaft auf den Apfel gehört und rohe Kartoffeln in Wasser liegen sollten.",
+  "faustregeln": [
+    "Mit Zitronensaft beträufeln.",
+    "Geschnittene Kartoffeln in Wasser legen.",
+    "Kurz blanchieren stoppt die Bräunung dauerhaft."
+  ],
+  "stellschrauben": [
+    {
+      "id": "ph-wert",
+      "wirkung": "sauer → bremst"
+    },
+    {
+      "id": "temperatur",
+      "wirkung": "kalt → langsamer, heiß → stoppt"
+    }
+  ],
+  "links": [
+    "saeure",
+    "blanchieren",
+    "kaltwasserbad"
+  ],
+  "welten": [
+    "w-gemuese"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

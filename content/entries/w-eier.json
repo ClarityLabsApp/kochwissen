@@ -1,0 +1,44 @@
+{
+  "id": "w-eier",
+  "typ": "welt",
+  "titel": "Eier",
+  "synonyme": [
+    "Ei",
+    "Spiegelei",
+    "Rührei",
+    "gekochtes Ei",
+    "Eischnee"
+  ],
+  "kurz": "Ein Ei ist Wasser und Eiweiß, im Dotter zusätzlich Fett und Emulgator. Hitze macht es fest, Schlagen macht es luftig, Eigelb bindet Fett.",
+  "bild_im_kopf": "Ein Werkzeugkasten in einer Schale: Bindemittel, Treibmittel und Emulgator zugleich.",
+  "was_passiert": "Eiweiß wird bei Hitze erst cremig, dann fest. Geschlagen hält es Luftblasen fest. Eigelb verbindet Fett und Wasser und dickt bei Wärme ein.",
+  "warum_wichtig": "Fast jede Backware, viele Saucen und Desserts verlassen sich auf eine dieser Eigenschaften.",
+  "faustregeln": [
+    "Eier sanft garen: Ein paar Grad entscheiden zwischen cremig und gummiartig.",
+    "Für Eischnee: kein Fett, kein Eigelb.",
+    "Eigelb-Saucen nie kochen lassen."
+  ],
+  "links": [
+    "eiweiss-gerinnung",
+    "schaumbildung",
+    "emulsion",
+    "ruehrei-waessrig",
+    "eischnee-nicht-steif"
+  ],
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "three brown eggs and one cracked egg with a bright yolk in a ceramic bowl"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    },
+    {
+      "titel": "Mother Earth News: The science of egg white foam",
+      "url": "https://www.motherearthnews.com/real-food/meringue-science-egg-white-foam-zb0z1205zalt/"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

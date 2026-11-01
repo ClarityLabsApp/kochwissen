@@ -1,0 +1,49 @@
+{
+  "id": "blanchieren",
+  "typ": "technik",
+  "titel": "Blanchieren und abschrecken",
+  "synonyme": [
+    "blanchieren",
+    "abschrecken",
+    "Eiswasser",
+    "überbrühen"
+  ],
+  "kurz": "Gemüse kurz in kochendem Salzwasser garen und sofort in Eiswasser stoppen. Es bleibt knackig und leuchtend grün.",
+  "bild_im_kopf": "Wie ein Foto, das man im richtigen Moment schießt: Das Eiswasser friert den perfekten Zustand ein.",
+  "was_passiert": "Das kochende Wasser gart die Oberfläche schnell, löst etwas Kitt und treibt Luft aus, das Grün leuchtet. Das Eiswasser stoppt das Nachgaren sofort, bevor Säuren das Grün trüben und die Zellen zu weich werden.",
+  "schritte": [
+    "Viel Wasser kräftig salzen und sprudelnd kochen.",
+    "Daneben eine Schüssel Eiswasser bereitstellen.",
+    "Gemüse portionsweise 1–3 Minuten garen.",
+    "Sofort ins Eiswasser, bis es ganz kalt ist.",
+    "Abtropfen und trocken tupfen."
+  ],
+  "wirkt_auf": [
+    "knackig",
+    "farbe"
+  ],
+  "links": [
+    "chlorophyll-farbe",
+    "pektin-abbau",
+    "enzym-braeunung",
+    "gemuese-grau"
+  ],
+  "welten": [
+    "w-gemuese"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Education Bureau Hong Kong: STEM – Fruits and Vegetables",
+      "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/technology-edu/resources/technology-and-living/STEM03_Fruits_and_Veg_Eng.pdf"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

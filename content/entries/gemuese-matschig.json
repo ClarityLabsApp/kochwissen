@@ -1,0 +1,100 @@
+{
+  "id": "gemuese-matschig",
+  "typ": "symptom",
+  "titel": "Gemüse wird matschig",
+  "synonyme": [
+    "zerkocht",
+    "Gemüse zu weich",
+    "breiig"
+  ],
+  "kurz": "Der Kitt zwischen den Zellen hat sich zu weit gelöst. Meist war es zu lange, manchmal war das Wasser basisch.",
+  "bild_im_kopf": "Wie eine Mauer, deren Mörtel weggespült wurde.",
+  "ursachen": [
+    {
+      "titel": "Zu lange gegart",
+      "haeufigkeit": 3,
+      "prinzip": "pektin-abbau",
+      "warum": "Mit jeder Minute löst sich mehr Kitt.",
+      "fix": [
+        "Früher prüfen",
+        "Kleinere, gleich große Stücke"
+      ]
+    },
+    {
+      "titel": "Nachgegart",
+      "haeufigkeit": 2,
+      "prinzip": "pektin-abbau",
+      "warum": "Heißes Gemüse gart nach dem Abgießen weiter.",
+      "fix": [
+        "In Eiswasser abschrecken",
+        "Auf einem Blech ausbreiten statt im Topf liegen lassen"
+      ]
+    },
+    {
+      "titel": "Basisches Wasser oder Natron",
+      "haeufigkeit": 1,
+      "prinzip": "pektin-abbau",
+      "warum": "In basischer Umgebung zerfällt der Kitt besonders schnell.",
+      "fix": [
+        "Kein Natron ins Kochwasser",
+        "Ein Spritzer Säure hält fester"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "War das Gemüse direkt nach dem Garen noch bissfest?",
+      "antworten": [
+        [
+          "Ja, wurde später weich",
+          "u1"
+        ],
+        [
+          "Nein",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "War Natron im Wasser?",
+      "antworten": [
+        [
+          "Ja",
+          "u2"
+        ],
+        [
+          "Nein",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "pektin-abbau",
+    "blanchieren",
+    "knackig"
+  ],
+  "welten": [
+    "w-gemuese"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

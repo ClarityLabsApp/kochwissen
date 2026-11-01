@@ -1,0 +1,73 @@
+{
+  "id": "knoblauch-bitter",
+  "typ": "symptom",
+  "titel": "Knoblauch wird bitter",
+  "synonyme": [
+    "Knoblauch verbrannt",
+    "Knoblauch braun",
+    "bitterer Knoblauch"
+  ],
+  "kurz": "Knoblauch verbrennt sehr schnell. Schon goldbraun kann er bitter schmecken.",
+  "bild_im_kopf": "Wie Papier neben der Flamme: Ein Moment zu lang, und es ist schwarz.",
+  "ursachen": [
+    {
+      "titel": "Zu früh in die heiße Pfanne",
+      "haeufigkeit": 3,
+      "prinzip": "pyrolyse",
+      "warum": "Fein geschnittener Knoblauch hat viel Oberfläche und wenig Wasser, er verbrennt in Sekunden.",
+      "fix": [
+        "Erst gegen Ende zugeben",
+        "Bei mittlerer Hitze nur kurz anschwitzen"
+      ]
+    },
+    {
+      "titel": "Zu fein gehackt oder gepresst",
+      "haeufigkeit": 2,
+      "prinzip": "pyrolyse",
+      "warum": "Je feiner, desto schneller bräunt und verbrennt er.",
+      "fix": [
+        "In Scheiben schneiden, wenn er länger in der Pfanne bleibt"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Kam der Knoblauch gleich am Anfang mit in die Pfanne?",
+      "antworten": [
+        [
+          "Ja",
+          "u0"
+        ],
+        [
+          "Nein, später",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    }
+  },
+  "links": [
+    "pyrolyse",
+    "knoblauch",
+    "zwiebeln-verbrennen"
+  ],
+  "welten": [
+    "w-gemuese"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

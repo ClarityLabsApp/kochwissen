@@ -1,0 +1,70 @@
+{
+  "id": "chlorophyll-farbe",
+  "typ": "prozess",
+  "titel": "Grünes bleibt grün (Chlorophyll)",
+  "synonyme": [
+    "Farbe von grünem Gemüse",
+    "Gemüse olivgrün",
+    "Brokkoli grau",
+    "grün halten"
+  ],
+  "kurz": "Das Grün im Gemüse ist Chlorophyll. Hitze und Säure verwandeln es in einen olivbraunen Farbstoff. Kurz garen hält es leuchtend.",
+  "bild_im_kopf": "Wie eine Glühbirne mit Zeitschaltuhr: In den ersten Minuten leuchtet das Grün sogar heller, dann wird es mit jeder Minute trüber.",
+  "was_passiert": "In den ersten Minuten im heißen Wasser wird grünes Gemüse sogar leuchtender, weil Luft aus dem Gewebe entweicht. Beim weiteren Kochen treten Säuren aus den Zellen aus und verwandeln Chlorophyll in einen olivbraunen Farbstoff. Natron im Wasser neutralisiert die Säure und hält das Grün, zerstört aber Vitamine und macht weich.",
+  "warum_wichtig": "Erklärt, warum Bohnen im Eintopf grau werden und warum Restaurants Gemüse blanchieren und in Eiswasser abschrecken.",
+  "faustregeln": [
+    "Kurz in viel sprudelndem Salzwasser garen.",
+    "Sofort in Eiswasser abschrecken, damit es nicht nachgart.",
+    "Zitrone oder Essig erst kurz vor dem Servieren dazugeben.",
+    "Kein Natron: Das Grün bleibt, aber Vitamine und Biss gehen verloren."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zeit",
+      "wirkung": "länger → olivgrün"
+    },
+    {
+      "id": "ph-wert",
+      "wirkung": "sauer → schneller grau"
+    },
+    {
+      "id": "temperatur",
+      "wirkung": "heiß und kurz besser als lang"
+    }
+  ],
+  "mythos": {
+    "behauptung": "Mit Deckel kochen hält Gemüse grün.",
+    "richtig": "Eher umgekehrt: Ohne Deckel können flüchtige Säuren entweichen. Wichtiger sind aber kurze Garzeit und viel Wasser."
+  },
+  "praxis": [
+    {
+      "welt": "w-gemuese",
+      "text": "Bohnen, Erbsen, Brokkoli: blanchieren, abschrecken, erst beim Servieren mit Sauce mischen."
+    }
+  ],
+  "links": [
+    "blanchieren",
+    "gemuese-grau",
+    "farbe",
+    "saeure",
+    "natron"
+  ],
+  "welten": [
+    "w-gemuese"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "quellen": [
+    {
+      "titel": "Education Bureau Hong Kong: STEM – Fruits and Vegetables",
+      "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/technology-edu/resources/technology-and-living/STEM03_Fruits_and_Veg_Eng.pdf"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

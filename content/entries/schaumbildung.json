@@ -1,0 +1,78 @@
+{
+  "id": "schaumbildung",
+  "typ": "prozess",
+  "titel": "Schaum & Luft einschlagen",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "Eischnee",
+    "Sahne schlagen",
+    "aufschlagen",
+    "Baiser",
+    "Meringue",
+    "Schaum"
+  ],
+  "kurz": "Beim Schlagen entfalten sich Eiweiße und bilden eine Haut um Luftblasen. So entsteht ein stabiler Schaum.",
+  "bild_im_kopf": "Wie Seifenblasen, deren Haut aus Eiweiß statt Seife besteht.",
+  "was_passiert": "Der Schneebesen schlägt Luft ins Eiweiß und dehnt die Eiweißmoleküle. Sie lagern sich um die Luftblasen und verbinden sich zu einer Haut. Fett stört diese Haut, darum darf kein Eigelb hinein. Etwas Säure und nach und nach Zucker machen den Schaum stabiler.",
+  "warum_wichtig": "Baiser, Biskuit, Mousse und Soufflé bekommen ihre Luft von diesem Schaum, ganz ohne Backpulver.",
+  "faustregeln": [
+    "Saubere, fettfreie Schüssel, kein Eigelb.",
+    "Eine Prise Säure oder Weinsteinpulver stabilisiert.",
+    "Zucker erst einrieseln, wenn sich weiche Spitzen bilden.",
+    "Zimmerwarmes Eiweiß lässt sich besser schlagen."
+  ],
+  "stellschrauben": [
+    {
+      "id": "mechanik",
+      "wirkung": "länger schlagen → steifer, zu lang → krümelig"
+    },
+    {
+      "id": "fettgehalt",
+      "wirkung": "schon Spuren verhindern Schaum"
+    },
+    {
+      "id": "zuckergehalt",
+      "wirkung": "stabilisiert, aber später zugeben"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-eier",
+      "text": "Eischnee für Biskuit und Soufflé: steif, aber noch glänzend."
+    },
+    {
+      "welt": "w-milch",
+      "text": "Sahne bildet Schaum über ihr Fett: gut gekühlt schlagen, sonst wird sie zu Butter."
+    },
+    {
+      "welt": "w-gebaeck",
+      "text": "Biskuit geht nur durch die eingeschlagene Luft auf, darum vorsichtig unterheben."
+    }
+  ],
+  "links": [
+    "aufschlagen",
+    "unterheben",
+    "eiweiss",
+    "eischnee-nicht-steif",
+    "sahne-wird-butter"
+  ],
+  "welten": [
+    "w-eier",
+    "w-gebaeck",
+    "w-milch"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "quellen": [
+    {
+      "titel": "Mother Earth News: The science of egg white foam",
+      "url": "https://www.motherearthnews.com/real-food/meringue-science-egg-white-foam-zb0z1205zalt/"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf"
+}

@@ -1,0 +1,100 @@
+{
+  "id": "zwiebeln-verbrennen",
+  "typ": "symptom",
+  "titel": "Zwiebeln verbrennen statt bräunen",
+  "synonyme": [
+    "Zwiebeln schwarz",
+    "Zwiebeln bitter",
+    "Zwiebeln karamellisieren"
+  ],
+  "kurz": "Die Hitze war zu hoch für die Zeit. Außen verbrennt der Zucker, bevor die Zwiebel weich und gleichmäßig braun ist.",
+  "bild_im_kopf": "Wie ein Marathon, den man im Sprint beginnt.",
+  "ursachen": [
+    {
+      "titel": "Hitze zu hoch",
+      "haeufigkeit": 3,
+      "prinzip": "maillard-reaktion",
+      "warum": "Zwiebeln enthalten viel Zucker, der bei starker Hitze schnell verbrennt.",
+      "fix": [
+        "Mittlere bis kleine Hitze",
+        "Für tiefbraune Zwiebeln 30–45 Minuten einplanen"
+      ]
+    },
+    {
+      "titel": "Zu wenig Zwiebeln in der Pfanne",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "Wenige Zwiebeln in einer großen Pfanne trocknen sofort aus und verbrennen an den Rändern.",
+      "fix": [
+        "Passende Pfannengröße",
+        "Einen Schluck Wasser zugeben, wenn es zu schnell geht"
+      ]
+    },
+    {
+      "titel": "Ungleich geschnitten",
+      "haeufigkeit": 1,
+      "prinzip": "maillard-reaktion",
+      "warum": "Dünne Stücke verbrennen, während dicke noch roh sind.",
+      "fix": [
+        "Gleichmäßig dick schneiden"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Bei welcher Hitze hast du gebraten?",
+      "antworten": [
+        [
+          "Hoch",
+          "u0"
+        ],
+        [
+          "Mittel oder klein",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Waren die Zwiebeln dünn verteilt in einer großen Pfanne?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "maillard-reaktion",
+    "karamellisierung",
+    "natron-zwiebeln",
+    "pyrolyse"
+  ],
+  "welten": [
+    "w-gemuese"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

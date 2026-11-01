@@ -1,0 +1,41 @@
+{
+  "id": "auberginen-salzen",
+  "typ": "technik",
+  "titel": "Auberginen salzen",
+  "synonyme": [
+    "Aubergine entwässern",
+    "Zucchini salzen",
+    "Gurken salzen"
+  ],
+  "kurz": "Scheiben salzen, ziehen lassen, abtupfen. Sie verlieren Wasser, saugen weniger Öl und bräunen besser.",
+  "bild_im_kopf": "Wie einen Schwamm vorher auswringen, damit er später nicht so viel Öl aufsaugt.",
+  "was_passiert": "Salz zieht Wasser aus den Zellen. Die Luftkammern der Aubergine fallen dabei zusammen, darum saugt sie beim Braten weniger Öl. Die trockenere Oberfläche bräunt schneller.",
+  "schritte": [
+    "In Scheiben oder Würfel schneiden.",
+    "Großzügig salzen, in einem Sieb 20–30 Minuten ziehen lassen.",
+    "Austretendes Wasser abtupfen.",
+    "Heiß braten oder rösten."
+  ],
+  "wirkt_auf": [
+    "farbe"
+  ],
+  "links": [
+    "osmose",
+    "salz",
+    "maillard-reaktion"
+  ],
+  "welten": [
+    "w-gemuese"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

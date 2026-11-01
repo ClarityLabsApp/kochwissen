@@ -1,0 +1,51 @@
+{
+  "id": "eiweiss",
+  "typ": "zutat",
+  "titel": "Eiweiß (Eiklar)",
+  "synonyme": [
+    "Eiklar",
+    "Eiweiss",
+    "Eischnee"
+  ],
+  "kurz": "Eiklar ist fast nur Wasser und Eiweiß. Es lässt sich zu Schaum schlagen und wird bei Hitze fest.",
+  "bild_im_kopf": "Wie flüssiges Baumaterial, das man aufschäumen und dann fest werden lassen kann.",
+  "rolle": [
+    {
+      "rolle": "bildet Schaum",
+      "prozess": "schaumbildung"
+    },
+    {
+      "rolle": "wird bei Hitze fest",
+      "prozess": "eiweiss-gerinnung"
+    }
+  ],
+  "was_passiert": "Die Eiweiße im Eiklar entfalten sich beim Schlagen und umhüllen Luftblasen. Bei Hitze stocken sie früher als das Eigelb.",
+  "faustregeln": [
+    "Ohne Spur Eigelb trennen.",
+    "Übrig gebliebenes Eiweiß lässt sich gut einfrieren."
+  ],
+  "links": [
+    "schaumbildung",
+    "aufschlagen",
+    "eischnee-nicht-steif"
+  ],
+  "welten": [
+    "w-eier",
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Mother Earth News: The science of egg white foam",
+      "url": "https://www.motherearthnews.com/real-food/meringue-science-egg-white-foam-zb0z1205zalt/"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

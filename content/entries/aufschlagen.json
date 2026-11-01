@@ -1,0 +1,44 @@
+{
+  "id": "aufschlagen",
+  "typ": "technik",
+  "titel": "Aufschlagen (Eischnee, Sahne)",
+  "synonyme": [
+    "Eischnee schlagen",
+    "Sahne schlagen",
+    "steif schlagen"
+  ],
+  "kurz": "Eiweiß oder Sahne kräftig schlagen, bis sich ein fester Schaum bildet. Der richtige Moment zum Aufhören ist entscheidend.",
+  "bild_im_kopf": "Wie Ballons aufpusten: Bis zur richtigen Größe gut, darüber platzen sie.",
+  "was_passiert": "Am Anfang entstehen große, unregelmäßige Blasen. Mit der Zeit werden sie kleiner und gleichmäßiger, der Schaum wird steif. Schlägt man weiter, ziehen sich die Eiweiße zu stark zusammen, der Schaum wird krümelig und wässrig.",
+  "schritte": [
+    "Eiweiß in eine saubere, fettfreie Schüssel geben.",
+    "Langsam beginnen, bis es schäumt, dann eine Prise Säure dazu.",
+    "Schneller schlagen, bis sich weiche Spitzen bilden.",
+    "Zucker einrieseln lassen.",
+    "Aufhören, wenn der Schaum steif und glänzend ist."
+  ],
+  "wirkt_auf": [
+    "luftig",
+    "fluffig"
+  ],
+  "links": [
+    "schaumbildung",
+    "unterheben",
+    "eischnee-nicht-steif"
+  ],
+  "welten": [
+    "w-eier",
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Mother Earth News: The science of egg white foam",
+      "url": "https://www.motherearthnews.com/real-food/meringue-science-egg-white-foam-zb0z1205zalt/"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

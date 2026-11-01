@@ -1,0 +1,51 @@
+{
+  "id": "zwiebel",
+  "typ": "zutat",
+  "titel": "Zwiebel",
+  "synonyme": [
+    "Zwiebeln",
+    "Schalotte",
+    "Röstzwiebeln"
+  ],
+  "kurz": "Zwiebeln sind voller Zucker und Schwefelstoffe. Roh scharf, langsam gebraten süß und tief braun.",
+  "bild_im_kopf": "Zwei Persönlichkeiten in einer Knolle: roh feurig, gebraten mild und süß.",
+  "rolle": [
+    {
+      "rolle": "wird beim Braten süß und braun",
+      "prozess": "maillard-reaktion"
+    },
+    {
+      "rolle": "Zucker karamellisiert",
+      "prozess": "karamellisierung"
+    },
+    {
+      "rolle": "gibt Saucen Grundgeschmack",
+      "prozess": "mehr-geschmack"
+    }
+  ],
+  "was_passiert": "Beim Schneiden entstehen scharfe Schwefelstoffe, die auch die Augen reizen. Hitze baut die Schärfe ab und lässt den Zucker hervortreten. Langes, langsames Braten ergibt tiefbraune, süße Zwiebeln.",
+  "faustregeln": [
+    "Scharfes Messer: weniger zerstörte Zellen, weniger Tränen.",
+    "Für süße, braune Zwiebeln Geduld statt Hitze."
+  ],
+  "links": [
+    "maillard-reaktion",
+    "zwiebeln-verbrennen",
+    "natron-zwiebeln"
+  ],
+  "welten": [
+    "w-gemuese",
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

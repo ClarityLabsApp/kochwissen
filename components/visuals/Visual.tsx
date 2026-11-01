@@ -4,6 +4,7 @@ import TempScale, { type Mark } from "./TempScale";
 import PanTest from "./PanTest";
 import DotNet, { type NetNode } from "./DotNet";
 import ParticleSim, { type Preset } from "./ParticleSim";
+import Spectrum from "./Spectrum";
 
 // Muss hier stehen: Funktionen aus Client-Modulen sind auf dem Server nicht aufrufbar.
 const SIMS = new Set<string>(["emulsion", "osmose", "pektin-abbau", "reduktion", "hefegaerung"]);
@@ -68,6 +69,13 @@ export default function Visual({ e }: { e: Entry }) {
     const right = procs.map((id) => node(id));
     const edges = e.rolle.map((r, i) => [`r${i}`, r.prozess] as [string, string]);
     blocks.push(<DotNet key="net" title={`Was ${e.titel.split(" ")[0]} tut`} leftTitle="Rolle" rightTitle="Vorgang" left={left} right={right} edges={edges} />);
+  }
+
+  if (e.visual?.vorlage === "skala" && typeof p.links === "string" && typeof p.rechts === "string") {
+    const colors = e.id === "anthocyan-farbe" ? ["#b8325a", "#7a3e8c", "#3f5fa8", "#3f8a7a"]
+      : e.id === "feuchtigkeit" || e.id === "luftfeuchte-ofen" ? ["#8fb8c9", "#e0ad3a", "#b4542a"]
+      : ["#e6d3ae", "#b8873a", "#6b3a1e"];
+    blocks.push(<Spectrum key="spec" title={e.titel} left={p.links} mid={typeof p.mitte === "string" ? p.mitte : undefined} right={p.rechts} colors={colors} />);
   }
 
   const marks = marksOf(e);

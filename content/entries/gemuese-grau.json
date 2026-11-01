@@ -1,0 +1,103 @@
+{
+  "id": "gemuese-grau",
+  "typ": "symptom",
+  "titel": "Grünes Gemüse wird grau",
+  "synonyme": [
+    "Brokkoli olivgrün",
+    "Bohnen grau",
+    "Erbsen grau",
+    "Spinat dunkel"
+  ],
+  "kurz": "Säure und Zeit haben das Chlorophyll in einen olivbraunen Farbstoff verwandelt.",
+  "bild_im_kopf": "Wie ein Foto, das zu lange in der Sonne lag.",
+  "ursachen": [
+    {
+      "titel": "Zu lange gekocht",
+      "haeufigkeit": 3,
+      "prinzip": "chlorophyll-farbe",
+      "warum": "Je länger es kocht, desto mehr Säure tritt aus und trübt das Grün.",
+      "fix": [
+        "Kurz garen, 1–3 Minuten",
+        "Sofort abschrecken"
+      ]
+    },
+    {
+      "titel": "Säure zu früh",
+      "haeufigkeit": 2,
+      "prinzip": "chlorophyll-farbe",
+      "warum": "Zitrone, Essig oder Tomaten im Topf beschleunigen den Farbwechsel.",
+      "fix": [
+        "Säure erst beim Servieren dazugeben"
+      ]
+    },
+    {
+      "titel": "In der Sauce warm gehalten",
+      "haeufigkeit": 2,
+      "prinzip": "chlorophyll-farbe",
+      "warum": "Auch nach dem Kochen verändert Wärme das Grün weiter.",
+      "fix": [
+        "Gemüse getrennt garen und erst kurz vor dem Servieren mischen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Wie lange hat das Gemüse gekocht?",
+      "antworten": [
+        [
+          "Länger als 5 Minuten",
+          "u0"
+        ],
+        [
+          "Nur kurz",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "War Säure im Topf oder lag es lange in einer Sauce?",
+      "antworten": [
+        [
+          "Säure im Topf",
+          "u1"
+        ],
+        [
+          "Lange in Sauce",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "chlorophyll-farbe",
+    "blanchieren",
+    "farbe"
+  ],
+  "welten": [
+    "w-gemuese"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "Education Bureau Hong Kong: STEM – Fruits and Vegetables",
+      "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/technology-edu/resources/technology-and-living/STEM03_Fruits_and_Veg_Eng.pdf"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "anthocyan-farbe",
+  "typ": "prozess",
+  "titel": "Rotkohl wechselt die Farbe (Anthocyane)",
+  "synonyme": [
+    "Rotkohl blau",
+    "Blaukraut",
+    "Farbe Rotkohl",
+    "Anthocyane"
+  ],
+  "kurz": "Die roten Farbstoffe in Rotkohl, Beeren und roten Zwiebeln ändern ihre Farbe je nach Säure: sauer rot, neutral violett, basisch blau.",
+  "bild_im_kopf": "Wie ein natürlicher Säuretest: Rotkohl zeigt dir mit seiner Farbe, wie sauer dein Topf ist.",
+  "was_passiert": "Anthocyane sind Farbstoffe, die ihre Form mit dem pH-Wert ändern. In saurer Umgebung sind sie rot, neutral violett, in basischer Umgebung blau bis grünlich. Kalkhaltiges Wasser macht Rotkohl darum oft bläulich, ein Schuss Essig oder Apfel macht ihn wieder rot.",
+  "warum_wichtig": "Darum heißt es in manchen Regionen Rotkohl und in anderen Blaukraut. Und darum gehören Apfel und Essig ins Rezept.",
+  "faustregeln": [
+    "Für leuchtendes Rot: Essig, Wein oder Apfel dazu.",
+    "Rote Beeren in Teigen mit Natron können grünlich werden."
+  ],
+  "stellschrauben": [
+    {
+      "id": "ph-wert",
+      "wirkung": "sauer rot, basisch blau"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-gemuese",
+      "text": "Rotkohl mit Apfel und Essig schmoren: Farbe und Geschmack in einem."
+    },
+    {
+      "welt": "w-gebaeck",
+      "text": "Heidelbeermuffins mit viel Natron bekommen grünliche Flecken."
+    }
+  ],
+  "links": [
+    "ph-wert",
+    "saeure",
+    "natron"
+  ],
+  "welten": [
+    "w-gemuese"
+  ],
+  "visual": {
+    "vorlage": "skala",
+    "params": {
+      "links": "sauer: rot",
+      "mitte": "neutral: violett",
+      "rechts": "basisch: blau bis grün"
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

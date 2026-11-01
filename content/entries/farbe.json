@@ -1,0 +1,48 @@
+{
+  "id": "farbe",
+  "typ": "ziel",
+  "titel": "Schöne Farbe",
+  "synonyme": [
+    "goldbraun",
+    "leuchtend grün",
+    "Farbe",
+    "appetitlich"
+  ],
+  "kurz": "Schöne Farbe heißt je nach Lebensmittel etwas anderes: goldbraune Kruste, leuchtendes Grün oder tiefes Rot.",
+  "bild_im_kopf": "Drei Farbkästen: Braun kommt von Hitze und Trockenheit, Grün von Kürze, Rot von Säure.",
+  "bedeutung": "Braun entsteht durch Maillard-Reaktion und Karamellisierung bei trockener Hitze. Grün bleibt bei kurzer Garzeit erhalten. Rote Farbstoffe brauchen Säure.",
+  "hebel": [
+    "maillard-reaktion",
+    "chlorophyll-farbe",
+    "anthocyan-farbe",
+    "feuchtigkeit",
+    "temperatur"
+  ],
+  "was_passiert": "Farbe ist ein guter Hinweis auf Geschmack: Goldbraun heißt Röstaromen, leuchtend grün heißt frisch und knackig.",
+  "faustregeln": [
+    "Für Braun: trocken und heiß.",
+    "Für Grün: kurz und abschrecken.",
+    "Für Rot: etwas Säure."
+  ],
+  "links": [
+    "anbraten",
+    "blanchieren",
+    "trocken-tupfen",
+    "roesten-ofen"
+  ],
+  "welten": [
+    "w-gemuese",
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

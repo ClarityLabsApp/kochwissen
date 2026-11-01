@@ -69,12 +69,13 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - `StepFlow` – Ablauf für alle Einträge mit `schritte`
 - `PanTest` – Symptome mit `vorlage: pfannentest`, `params.variante`: pfanne | backblech | fritteuse
 - `DotNet` – Ziele (Hebel ↔ Techniken) und Zutaten (Rolle ↔ Vorgang)
-- `ParticleSim` – Canvas-Simulationen pro Prozess (emulsion, osmose, pektin-abbau, reduktion). Neue Presets dort anlegen und in `SIMS` in `Visual.tsx` eintragen
+- `Spectrum` – Skala für Stellschrauben und Anthocyane (`params.links`, `mitte`, `rechts`)
+- `ParticleSim` – Canvas-Simulationen pro Prozess (emulsion, osmose, pektin-abbau, reduktion, hefegaerung). Neue Presets dort anlegen und in `SIMS` in `Visual.tsx` eintragen
 - Prototypen in `public/prototypen/` (Maillard, Gluten, Steak grau) werden per iframe eingebettet
 
 ## Offene Aufgaben
 
-- [ ] Weitere Simulationen: Hefegärung, Glutenbildung als Komponente, Eiweiß-Denaturierung, Schaumbildung, Karamellisierung
+- [ ] Weitere Simulationen: Glutenbildung als Komponente, Eiweiß-Denaturierung, Schaumbildung, Karamellisierung
 - [ ] Maillard und Gluten-Prototyp als echte React-Komponenten portieren (statt iframe)
 - [ ] Inhalte: Welten Gemüse, Eier, Kuchen & Gebäck, Desserts, Fisch, Frittiertes ergänzen
 - [ ] Semantische Suche (z. B. Supabase pgvector), aktuelle Wortsuche ersetzen

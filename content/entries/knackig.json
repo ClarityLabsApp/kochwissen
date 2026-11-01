@@ -1,0 +1,51 @@
+{
+  "id": "knackig",
+  "typ": "ziel",
+  "titel": "Knackig (Gemüse)",
+  "synonyme": [
+    "bissfest",
+    "al dente",
+    "nicht matschig",
+    "knackiger"
+  ],
+  "kurz": "Knackig heißt: Die Zellen kleben noch aneinander und sind prall mit Wasser gefüllt.",
+  "bild_im_kopf": "Wie ein frischer Apfel gegen einen alten: Die Zellen sind prall und halten zusammen.",
+  "bedeutung": "Biss kommt vom Kitt zwischen den Zellen und vom Wasserdruck in ihnen. Hitze löst den Kitt, langes Liegen lässt das Wasser entweichen.",
+  "hebel": [
+    "pektin-abbau",
+    "zeit",
+    "temperatur",
+    "ph-wert"
+  ],
+  "was_passiert": "Kurzes, heißes Garen löst nur wenig Kitt. Säure im Kochwasser bremst das Weichwerden zusätzlich, Natron beschleunigt es. Schlaffes Gemüse wird in kaltem Wasser wieder praller.",
+  "faustregeln": [
+    "Kurz garen und abschrecken.",
+    "Schlaffen Salat oder Karotten 15 Minuten in kaltes Wasser legen."
+  ],
+  "praxis": [
+    {
+      "welt": "w-gemuese",
+      "text": "Wokgemüse: kleine Stücke, sehr heiß, wenige Minuten."
+    }
+  ],
+  "links": [
+    "blanchieren",
+    "daempfen",
+    "pektin-abbau",
+    "gemuese-matschig"
+  ],
+  "welten": [
+    "w-gemuese"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "pochieren-proz",
+  "typ": "prozess",
+  "titel": "Sanftes Garen in Flüssigkeit",
+  "synonyme": [
+    "Garziehen",
+    "pochieren",
+    "simmern",
+    "sieden"
+  ],
+  "kurz": "Unter dem Siedepunkt garen Eiweiße sanft und gleichmäßig. Sprudelndes Wasser macht sie zäh und reißt sie auseinander.",
+  "bild_im_kopf": "Wie ein warmes Bad statt eines Whirlpools.",
+  "was_passiert": "Wasser zwischen etwa 70 und 85 °C gart Eier und Fisch gleichmäßig, ohne dass der Rand übergart. Sprudelndes Kochen bewegt die Stücke, zerreißt zartes Eiweiß und presst Fisch aus.",
+  "warum_wichtig": "Pochierte Eier, Lachs, Hühnerbrust und Siedfleisch werden saftig, wenn das Wasser nur zieht und nicht kocht.",
+  "faustregeln": [
+    "Es sollen nur einzelne Bläschen aufsteigen.",
+    "Für pochierte Eier frische Eier verwenden."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "unter dem Sieden → zarter"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "länger → fester"
+    }
+  ],
+  "links": [
+    "pochieren",
+    "eiweiss-gerinnung",
+    "eiweiss-denaturierung"
+  ],
+  "welten": [
+    "w-eier",
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "temperaturskala",
+    "params": {
+      "hinweis": "Richtwerte",
+      "skala": [
+        {
+          "c": 70,
+          "name": "sanft: Fisch, Eier garziehen"
+        },
+        {
+          "c": 85,
+          "name": "leises Simmern"
+        },
+        {
+          "c": 100,
+          "name": "sprudelnd: zäh, reißt auseinander"
+        }
+      ]
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

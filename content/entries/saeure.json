@@ -1,0 +1,67 @@
+{
+  "id": "saeure",
+  "typ": "zutat",
+  "titel": "Säure (Zitrone, Essig)",
+  "synonyme": [
+    "Zitrone",
+    "Essig",
+    "Zitronensaft",
+    "sauer"
+  ],
+  "kurz": "Säure macht Geschmack frischer, hält Gemüse fest, lässt Rotkohl rot werden und stoppt das Braunwerden von Äpfeln.",
+  "bild_im_kopf": "Wie ein Lichtschalter für Geschmack: Ein Spritzer, und alles wirkt heller.",
+  "rolle": [
+    {
+      "rolle": "macht Geschmack frisch und lebendig",
+      "prozess": "mehr-geschmack"
+    },
+    {
+      "rolle": "hält Gemüse länger fest",
+      "prozess": "pektin-abbau"
+    },
+    {
+      "rolle": "färbt Rotkohl rot",
+      "prozess": "anthocyan-farbe"
+    },
+    {
+      "rolle": "bremst das Braunwerden",
+      "prozess": "enzym-braeunung"
+    },
+    {
+      "rolle": "trübt grünes Gemüse",
+      "prozess": "chlorophyll-farbe"
+    }
+  ],
+  "was_passiert": "Säure senkt den pH-Wert. Das verändert Farbstoffe, bremst Enzyme und hält den Kitt in Pflanzenzellen fester. Im Mund gleicht sie Fett und Süße aus.",
+  "faustregeln": [
+    "Schmeckt ein Gericht flach, fehlt oft Säure, nicht Salz.",
+    "Bei grünem Gemüse erst am Schluss zugeben."
+  ],
+  "links": [
+    "ph-wert",
+    "abschmecken-saeure",
+    "anthocyan-farbe",
+    "chlorophyll-farbe",
+    "enzym-braeunung"
+  ],
+  "welten": [
+    "w-saucen",
+    "w-gemuese",
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    },
+    {
+      "titel": "Education Bureau Hong Kong: STEM – Fruits and Vegetables",
+      "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/technology-edu/resources/technology-and-living/STEM03_Fruits_and_Veg_Eng.pdf"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

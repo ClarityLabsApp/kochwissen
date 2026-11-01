@@ -1,0 +1,43 @@
+{
+  "id": "unterheben",
+  "typ": "technik",
+  "titel": "Unterheben",
+  "synonyme": [
+    "vorsichtig mischen",
+    "Eischnee unterheben",
+    "folding"
+  ],
+  "kurz": "Eischnee oder Sahne so in eine schwere Masse falten, dass möglichst wenig Luft verloren geht.",
+  "bild_im_kopf": "Wie eine Decke falten statt sie zu zerknüllen.",
+  "was_passiert": "Beim Rühren werden Luftblasen zerdrückt. Beim Unterheben schneidet man durch die Masse und hebt sie von unten über den Schaum. So verteilt sich alles, während die meisten Blasen erhalten bleiben.",
+  "schritte": [
+    "Ein Drittel des Schaums kräftig einrühren, um die Masse aufzulockern.",
+    "Den Rest auf die Masse geben.",
+    "Mit dem Spatel in der Mitte durchschneiden, am Boden entlang und von unten nach oben heben.",
+    "Schüssel drehen und wiederholen, bis keine Schlieren mehr da sind. Nicht länger."
+  ],
+  "wirkt_auf": [
+    "fluffig",
+    "luftig"
+  ],
+  "links": [
+    "schaumbildung",
+    "aufschlagen",
+    "kuchen-sinkt-ein"
+  ],
+  "welten": [
+    "w-gebaeck",
+    "w-eier"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

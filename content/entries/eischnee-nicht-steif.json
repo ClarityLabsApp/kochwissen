@@ -1,0 +1,103 @@
+{
+  "id": "eischnee-nicht-steif",
+  "typ": "symptom",
+  "titel": "Eischnee wird nicht steif",
+  "synonyme": [
+    "Eiweiß schlägt nicht auf",
+    "Eischnee flüssig",
+    "Eischnee fällt zusammen"
+  ],
+  "kurz": "Meist ist Fett im Spiel: eine Spur Eigelb oder eine nicht ganz saubere Schüssel.",
+  "bild_im_kopf": "Wie Seifenblasen mit öligen Fingern: Sie platzen sofort.",
+  "ursachen": [
+    {
+      "titel": "Fett oder Eigelb im Eiweiß",
+      "haeufigkeit": 3,
+      "prinzip": "schaumbildung",
+      "warum": "Schon Spuren von Fett verhindern, dass sich eine stabile Haut um die Luftblasen bildet.",
+      "fix": [
+        "Eier sorgfältig trennen",
+        "Schüssel und Schneebesen mit etwas Zitrone auswischen"
+      ]
+    },
+    {
+      "titel": "Zucker zu früh",
+      "haeufigkeit": 2,
+      "prinzip": "schaumbildung",
+      "warum": "Zucker am Anfang macht das Aufschlagen viel langsamer.",
+      "fix": [
+        "Zucker erst einrieseln, wenn weiche Spitzen da sind"
+      ]
+    },
+    {
+      "titel": "Zu lange geschlagen",
+      "haeufigkeit": 1,
+      "prinzip": "schaumbildung",
+      "warum": "Überschlagener Schnee wird krümelig, sondert Wasser ab und fällt zusammen.",
+      "fix": [
+        "Aufhören, wenn er steif und glänzend ist",
+        "Ein frisches Eiweiß unterschlagen kann retten"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Wird der Schaum gar nicht fest?",
+      "antworten": [
+        [
+          "Ja, bleibt flüssig",
+          "q2"
+        ],
+        [
+          "Er war fest, wurde dann krümelig",
+          "u2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Hast du den Zucker schon am Anfang dazugegeben?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "schaumbildung",
+    "aufschlagen",
+    "eiweiss"
+  ],
+  "welten": [
+    "w-eier"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "Mother Earth News: The science of egg white foam",
+      "url": "https://www.motherearthnews.com/real-food/meringue-science-egg-white-foam-zb0z1205zalt/"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}
