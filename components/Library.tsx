@@ -5,7 +5,7 @@ import { search } from "@/lib/search";
 
 export interface LibItem {
   id: string; typ: string; titel: string; status: string; pilot: boolean;
-  links: string[]; verlinkt_von: string[]; synonyme: string[]; kurz: string | null;
+  links: string[]; verlinkt_von: string[]; synonyme: string[]; kurz: string | null; welten?: string[];
 }
 
 const TYPES: [string, string, string][] = [
@@ -22,13 +22,21 @@ const TYPES: [string, string, string][] = [
 ];
 const SING: Record<string, string> = { prozess: "Prozess", ziel: "Ziel", technik: "Technik", symptom: "Symptom", zutat: "Zutat", stellschraube: "Stellschraube", welt: "Welt", begriff: "Begriff", gericht: "Gericht", experiment: "Experiment" };
 const EXAMPLES = ["Wie werden meine Wedges knuspriger?", "Fleisch wird trocken", "Sauce zu dünn", "Rösti", "Experiment für Kinder", "Mayo gerinnt"];
-export default function Library({ items }: { items: LibItem[] }) {
+/** Bild für einen Eintrag: das eigene, sonst das seiner Welt. */
+function pictureOf(e: LibItem, has: Set<string>): string | null {
+  if (has.has(e.id)) return e.id;
+  return (e.welten ?? []).find((w) => has.has(w)) ?? null;
+}
+
+export default function Library({ items, illus = [] }: { items: LibItem[]; illus?: string[] }) {
+  const has = useMemo(() => new Set(illus), [illus]);
+  const worlds = items.filter((e) => e.typ === "welt" && has.has(e.id));
   const [q, setQ] = useState("");
   const [active, setActive] = useState<Set<string>>(new Set());
   const [onlyWritten, setOnlyWritten] = useState(false);
   const found = useMemo(() => (q.trim() ? search(items, q) : null), [items, q]);
   const res = found?.scores ?? null;
-  const best = found?.best ?? null;
+  const best = (found?.best ?? null) as LibItem | null;
   const isWritten = (e: LibItem) => e.status !== "geplant";
 
   let list = items.filter((e) => (!active.size || active.has(e.typ)) && (!onlyWritten || isWritten(e)) && (!res || res.has(e.id)));
@@ -43,12 +51,30 @@ export default function Library({ items }: { items: LibItem[] }) {
         <div className="examples">{EXAMPLES.map((x) => <button key={x} type="button" onClick={() => setQ(x)}>{x}</button>)}</div>
       </div>
       {best && (
-        <Link href={`/eintrag/${best.id}`} className="bestcard">
+        <Link href={`/eintrag/${best.id}`} className={`bestcard${pictureOf(best, has) ? " pic" : ""}`}>
+          {pictureOf(best, has) && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={`/illustrationen/${pictureOf(best, has)}.webp`} alt="" width={160} height={160} />
+          )}
           <span className="mono"><i style={{ background: `var(--t-${best.typ})` }} />Beste Antwort · {SING[best.typ]}</span>
           <strong>{best.titel}</strong>
           {best.kurz && <span className="k">{best.kurz.replace(/\[\[[a-z0-9-]+\|([^\]]+)\]\]/g, "$1").replace(/\[\[([a-z0-9-]+)\]\]/g, (_, id) => id.replace(/-/g, " "))}</span>}
           <span className="go">Eintrag öffnen →</span>
         </Link>
+      )}
+      {!res && worlds.length > 0 && (
+        <nav className="worlds" aria-label="Lebensmittel-Welten">
+          <span className="mono">Stöbern nach Welt</span>
+          <div className="worlds-row">
+            {worlds.map((w) => (
+              <Link key={w.id} href={`/eintrag/${w.id}`} className="world">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={`/illustrationen/${w.id}.webp`} alt="" width={120} height={120} loading="lazy" />
+                <span>{w.titel}</span>
+              </Link>
+            ))}
+          </div>
+        </nav>
       )}
       <div className="typechips" role="group" aria-label="Eintragstyp">
         {TYPES.map(([t, name]) => {
