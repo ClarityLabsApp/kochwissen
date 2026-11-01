@@ -1,0 +1,55 @@
+{
+  "id": "laenger-frisch",
+  "typ": "ziel",
+  "titel": "Länger frisch",
+  "synonyme": [
+    "haltbar",
+    "altbacken verhindern",
+    "Brot frisch halten"
+  ],
+  "kurz": "Brot bleibt länger frisch, wenn die Stärke langsamer erstarrt und das Brot nicht schimmelt.",
+  "bild_im_kopf": "Wie eine Uhr, die man langsamer laufen lassen kann: Säure, Wasser und die richtige Lagerung bremsen sie.",
+  "bedeutung": "Altbacken heißt: Die Stärke hat sich neu geordnet. Mehr Wasser im Teig, Säure aus Sauerteig, Fett und richtiges Lagern bremsen das.",
+  "hebel": [
+    "retrogradation",
+    "milchsaeuregaerung",
+    "temperatur",
+    "feuchtigkeit"
+  ],
+  "was_passiert": "Sauerteigbrote und Brote mit viel Wasser bleiben deutlich länger frisch. Im Kühlschrank erstarrt die Stärke schneller, im Tiefkühler hält sie still.",
+  "faustregeln": [
+    "Brotkasten oder Tuch statt Kühlschrank.",
+    "Was nicht in zwei Tagen gegessen wird, in Scheiben einfrieren.",
+    "Brot mit der Schnittfläche nach unten lagern."
+  ],
+  "praxis": [
+    {
+      "welt": "w-brot",
+      "text": "Ein Brühstück oder Kochstück im Teig bindet zusätzliches Wasser und hält die Krume länger weich."
+    }
+  ],
+  "links": [
+    "retrogradation",
+    "brot-altbacken",
+    "sauerteig",
+    "milchsaeuregaerung"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Today I Found Out: Bread goes stale faster in the refrigerator",
+      "url": "https://www.todayifoundout.com/?p=6163"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "w-brot",
+  "typ": "welt",
+  "titel": "Brot",
+  "synonyme": [
+    "Brot backen",
+    "Sauerteigbrot",
+    "Zopf",
+    "Baguette",
+    "Pizza"
+  ],
+  "kurz": "Brot ist Mehl, Wasser, Salz und Triebmittel. Drei Vorgänge machen daraus einen Laib: ein Netz aus Gluten, Gas aus der Gärung und eine Kruste aus dem Ofen.",
+  "bild_im_kopf": "Wie ein Ballon in einem Netz: Die Hefe bläst, das Gluten hält, der Ofen macht die Form fest.",
+  "was_passiert": "Beim Kneten oder Ruhen bildet sich ein dehnbares Glutennetz. Hefe oder Sauerteig erzeugen Gas, das im Netz Blasen bildet. Im Ofen dehnen sich die Blasen ein letztes Mal aus, die Stärke verkleistert und wird fest, und außen bräunt die Kruste.",
+  "warum_wichtig": "Jedes Brotproblem gehört zu einem der drei Vorgänge: Netz zu schwach, Gärung falsch oder Ofen ungünstig.",
+  "faustregeln": [
+    "Zeit ist die wichtigste Zutat: Lange, kühle Gare gibt Geschmack und Struktur.",
+    "Mehl, Wasser und Salz abwiegen, nicht abmessen.",
+    "Erst Dampf, dann trockene Hitze."
+  ],
+  "links": [
+    "glutenbildung",
+    "hefegaerung",
+    "staerkeverkleisterung",
+    "maillard-reaktion",
+    "grosse-poren",
+    "brot-zu-dicht",
+    "brot-flach",
+    "brot-kruste-weich"
+  ],
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a round rustic sourdough loaf with a scored ear on a linen cloth"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

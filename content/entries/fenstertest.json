@@ -1,0 +1,20 @@
+{
+  "id": "fenstertest",
+  "typ": "begriff",
+  "titel": "Fenstertest",
+  "synonyme": [
+    "Windowpane-Test"
+  ],
+  "kurz": "Ein Stück Teig zwischen den Fingern dünn ausziehen. Lässt es sich so dünn dehnen, dass Licht durchscheint, ohne zu reißen, ist das Glutennetz stark genug für Brot.",
+  "links": [
+    "glutenbildung"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

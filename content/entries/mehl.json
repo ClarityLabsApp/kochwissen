@@ -1,0 +1,57 @@
+{
+  "id": "mehl",
+  "typ": "zutat",
+  "titel": "Mehl",
+  "synonyme": [
+    "Weißmehl",
+    "Halbweißmehl",
+    "Ruchmehl",
+    "Dinkelmehl",
+    "Roggenmehl",
+    "Typ 550",
+    "Manitoba"
+  ],
+  "kurz": "Mehl liefert Stärke für die Krume und Eiweiß für das Glutennetz. Wie viel Eiweiß es hat, entscheidet, wofür es taugt.",
+  "bild_im_kopf": "Wie Baumaterial in zwei Sorten: Stärke ist die Füllung, Eiweiß das Gerüst.",
+  "rolle": [
+    {
+      "rolle": "bildet das Glutennetz",
+      "prozess": "glutenbildung"
+    },
+    {
+      "rolle": "Stärke wird beim Backen zur Krume",
+      "prozess": "staerkeverkleisterung"
+    },
+    {
+      "rolle": "bindet Saucen in der Mehlschwitze",
+      "prozess": "mehlschwitze"
+    }
+  ],
+  "was_passiert": "Weizenmehl mit viel Eiweiß (Manitoba, Brotmehl) gibt ein starkes Netz für Brot und Pizza. Eiweißärmeres Mehl eignet sich für Kuchen. Ruchmehl enthält mehr Schale, nimmt mehr Wasser auf und schmeckt kräftiger. Roggen bildet kaum Gluten und braucht Säure.",
+  "faustregeln": [
+    "Für Brot und Pizza Mehl mit viel Eiweiß, für Kuchen eher wenig.",
+    "Dunkleres Mehl braucht mehr Wasser."
+  ],
+  "links": [
+    "glutenbildung",
+    "staerkeverkleisterung",
+    "mehlschwitze",
+    "hydration"
+  ],
+  "welten": [
+    "w-brot",
+    "w-gebaeck",
+    "w-pasta"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

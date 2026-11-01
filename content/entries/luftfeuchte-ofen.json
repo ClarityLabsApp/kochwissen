@@ -1,0 +1,38 @@
+{
+  "id": "luftfeuchte-ofen",
+  "typ": "stellschraube",
+  "titel": "Feuchtigkeit im Ofen",
+  "synonyme": [
+    "Dampf",
+    "Schwaden",
+    "Umluft",
+    "Ofenklima"
+  ],
+  "kurz": "Feuchte Ofenluft hält Oberflächen weich, trockene lässt sie bräunen und knusprig werden.",
+  "bild_im_kopf": "Ein Regler zwischen Dampfbad und Sauna.",
+  "was_passiert": "Dampf kondensiert auf kalten Oberflächen und hält sie feucht und dehnbar. Trockene Luft, vor allem Umluft, entzieht Wasser und lässt Krusten entstehen.",
+  "faustregeln": [
+    "Brot: erst feucht, dann trocken.",
+    "Für Knusprigkeit am Ende Dampf ablassen, z. B. Ofentür kurz öffnen."
+  ],
+  "links": [
+    "dampf-im-ofen",
+    "brot-kruste-weich",
+    "knusprig"
+  ],
+  "visual": {
+    "vorlage": "skala",
+    "params": {
+      "links": "feucht: Oberfläche bleibt weich und dehnbar",
+      "rechts": "trocken: Kruste bildet sich und bräunt"
+    }
+  },
+  "quellen": [
+    {
+      "titel": "King Arthur Baking: Baking bread with steam at home",
+      "url": "https://www.kingarthurbaking.com/blog/2024/04/26/baking-bread-with-steam-at-home"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "sauerteig",
+  "typ": "zutat",
+  "titel": "Sauerteig",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "Anstellgut",
+    "Levain",
+    "Starter",
+    "Sauerteigstarter"
+  ],
+  "kurz": "Sauerteig ist eine Kultur aus wilden Hefen und Milchsäurebakterien. Er lässt Brot aufgehen und gibt ihm Säure und Tiefe.",
+  "bild_im_kopf": "Wie ein kleiner Garten im Glas, den man regelmäßig füttert.",
+  "rolle": [
+    {
+      "rolle": "lässt den Teig aufgehen",
+      "prozess": "hefegaerung"
+    },
+    {
+      "rolle": "säuert und gibt Geschmack",
+      "prozess": "milchsaeuregaerung"
+    },
+    {
+      "rolle": "hält Brot länger frisch",
+      "prozess": "laenger-frisch"
+    }
+  ],
+  "was_passiert": "Mehl und Wasser, regelmäßig gefüttert, werden von Hefen und Bakterien aus Mehl und Umgebung besiedelt. Ein aktiver Sauerteig wirft Blasen, riecht angenehm säuerlich und wächst nach dem Füttern deutlich.",
+  "faustregeln": [
+    "Verwenden, wenn er nach dem Füttern am höchsten ist.",
+    "Im Kühlschrank aufbewahren und vor dem Backen auffrischen."
+  ],
+  "links": [
+    "milchsaeuregaerung",
+    "hefegaerung",
+    "laenger-frisch"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf"
+}

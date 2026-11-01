@@ -1,0 +1,100 @@
+{
+  "id": "brot-flach",
+  "typ": "symptom",
+  "titel": "Brot läuft breit",
+  "synonyme": [
+    "Brot flach",
+    "Brot zerläuft",
+    "kein Stand"
+  ],
+  "kurz": "Dem Teig fehlt Spannung: zu wenig Netz, zu viel Wasser oder zu lange gegangen.",
+  "bild_im_kopf": "Wie ein Zelt ohne gespannte Schnüre: Es steht nicht.",
+  "ursachen": [
+    {
+      "titel": "Übergare",
+      "haeufigkeit": 3,
+      "prinzip": "hefegaerung",
+      "warum": "Zu lange gegangen: Das Netz ist überdehnt und reißt, der Teig sackt zusammen.",
+      "fix": [
+        "Kürzer oder kühler gehen lassen",
+        "Fingertest: Die Delle soll sich langsam wieder füllen"
+      ]
+    },
+    {
+      "titel": "Zu wenig Spannung beim Formen",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "Ohne straffe Oberfläche hat der Laib keinen Halt.",
+      "fix": [
+        "Beim Formen die Oberfläche straff ziehen",
+        "Im Gärkorb gehen lassen"
+      ]
+    },
+    {
+      "titel": "Zu viel Wasser für das Mehl",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "Sehr weiche Teige brauchen ein starkes Netz und Übung.",
+      "fix": [
+        "Etwas weniger Wasser",
+        "Mehl mit mehr Eiweiß"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Ist der Teig schon beim Gehen flach geworden?",
+      "antworten": [
+        [
+          "Ja",
+          "q2"
+        ],
+        [
+          "Nein, erst im Ofen",
+          "u1"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Wie lange und wie warm ist er gegangen?",
+      "antworten": [
+        [
+          "Lange oder sehr warm",
+          "u0"
+        ],
+        [
+          "Normal",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "hefegaerung",
+    "glutenbildung",
+    "dampf-im-ofen"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

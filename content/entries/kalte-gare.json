@@ -1,0 +1,47 @@
+{
+  "id": "kalte-gare",
+  "typ": "technik",
+  "titel": "Kalte Gare",
+  "synonyme": [
+    "Übernachtgare",
+    "Kühlschrankgare",
+    "Langzeitführung",
+    "Retard"
+  ],
+  "kurz": "Den Teig über Nacht im Kühlschrank gehen lassen. Er entwickelt mehr Aroma, und du bäckst, wann es dir passt.",
+  "bild_im_kopf": "Wie ein Schmorgericht, das über Nacht durchzieht: Langsam ist Geschmack.",
+  "was_passiert": "Im Kühlschrank arbeitet die Hefe sehr langsam, Enzyme und Bakterien arbeiten weiter. Es entstehen mehr Aromastoffe und Zucker, die später die Kruste besser bräunen. Kalter Teig lässt sich außerdem leichter einschneiden.",
+  "schritte": [
+    "Teig kneten und eine kurze erste Gare bei Raumtemperatur.",
+    "Formen und in einen Gärkorb legen.",
+    "Abgedeckt 8–48 Stunden in den Kühlschrank.",
+    "Direkt aus dem Kühlschrank einschneiden und backen."
+  ],
+  "wirkt_auf": [
+    "grosse-poren",
+    "mehr-geschmack"
+  ],
+  "links": [
+    "hefegaerung",
+    "zeit",
+    "vorteig"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Exploratorium: Yeast and temperature",
+      "url": "https://annex.exploratorium.edu/cooking/bread/yeast_temp.html"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

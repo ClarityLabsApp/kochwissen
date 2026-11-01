@@ -1,0 +1,101 @@
+{
+  "id": "teig-klebt",
+  "typ": "symptom",
+  "titel": "Teig klebt",
+  "synonyme": [
+    "Teig zu feucht",
+    "klebriger Teig",
+    "Teig pappt"
+  ],
+  "kurz": "Meist ist das Netz noch nicht entwickelt. Mehr Mehl ist selten die beste Lösung.",
+  "bild_im_kopf": "Wie frisch angerührter Kleister, der nach einer Weile zu einem glatten Teig wird.",
+  "ursachen": [
+    {
+      "titel": "Netz noch nicht entwickelt",
+      "haeufigkeit": 3,
+      "prinzip": "glutenbildung",
+      "warum": "Frisch gemischter Teig klebt, bis sich das Glutennetz gebildet hat.",
+      "fix": [
+        "Weiterkneten oder dehnen und falten",
+        "Ruhepausen einlegen",
+        "Hände anfeuchten statt bemehlen"
+      ]
+    },
+    {
+      "titel": "Zu viel Wasser für das Mehl",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "Helles Mehl nimmt weniger Wasser auf als Vollkorn- oder Ruchmehl.",
+      "fix": [
+        "Beim nächsten Mal etwas Wasser zurückhalten und nach Gefühl zugeben"
+      ]
+    },
+    {
+      "titel": "Roggenanteil",
+      "haeufigkeit": 1,
+      "prinzip": "milchsaeuregaerung",
+      "warum": "Roggenteige kleben immer, sie bilden kaum Gluten.",
+      "fix": [
+        "Mit nassen Händen oder einem Teigschaber arbeiten",
+        "Nicht kneten, nur mischen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Klebt er auch nach 10 Minuten Kneten oder ein paar Faltrunden noch stark?",
+      "antworten": [
+        [
+          "Nein, wird besser",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Ist Roggenmehl im Teig?",
+      "antworten": [
+        [
+          "Ja",
+          "u2"
+        ],
+        [
+          "Nein",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "glutenbildung",
+    "dehnen-falten",
+    "hydration",
+    "mehl"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

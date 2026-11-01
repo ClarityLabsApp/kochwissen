@@ -1,0 +1,104 @@
+{
+  "id": "brot-kruste-weich",
+  "typ": "symptom",
+  "titel": "Brotkruste wird weich",
+  "synonyme": [
+    "Kruste nicht knusprig",
+    "Kruste ledrig",
+    "Kruste wird weich"
+  ],
+  "kurz": "Die Kruste konnte nicht genug austrocknen, oder Feuchtigkeit aus dem Inneren hat sie nachträglich aufgeweicht.",
+  "bild_im_kopf": "Wie ein Keks, der neben der Teetasse liegt: Die Feuchtigkeit findet ihn.",
+  "ursachen": [
+    {
+      "titel": "Dampf zu lange im Ofen",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Ohne trockene Phase am Ende trocknet die Kruste nicht aus.",
+      "fix": [
+        "Nach 20 Minuten Dampf ablassen",
+        "Zum Schluss die Ofentür kurz öffnen"
+      ]
+    },
+    {
+      "titel": "Zu kurz oder zu hell gebacken",
+      "haeufigkeit": 2,
+      "prinzip": "maillard-reaktion",
+      "warum": "Eine helle Kruste hat noch viel Wasser.",
+      "fix": [
+        "Länger backen, bis die Kruste tief goldbraun ist"
+      ]
+    },
+    {
+      "titel": "Falsch abgekühlt oder gelagert",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "Dampf aus der Krume kondensiert in der Kruste, in Plastik bleibt er drin.",
+      "fix": [
+        "Auf einem Gitter auskühlen lassen",
+        "In Papier oder einem Tuch lagern"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "War die Kruste direkt nach dem Backen knusprig?",
+      "antworten": [
+        [
+          "Ja, wurde erst später weich",
+          "u2"
+        ],
+        [
+          "Nein",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Wie dunkel war die Kruste?",
+      "antworten": [
+        [
+          "Eher hell",
+          "u1"
+        ],
+        [
+          "Goldbraun",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "dampf-im-ofen",
+    "luftfeuchte-ofen",
+    "maillard-reaktion",
+    "knusprig"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "King Arthur Baking: Baking bread with steam at home",
+      "url": "https://www.kingarthurbaking.com/blog/2024/04/26/baking-bread-with-steam-at-home"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

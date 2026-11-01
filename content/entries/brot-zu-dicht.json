@@ -1,0 +1,134 @@
+{
+  "id": "brot-zu-dicht",
+  "typ": "symptom",
+  "titel": "Brot ist zu dicht",
+  "synonyme": [
+    "kompakt",
+    "keine Poren",
+    "Brot schwer",
+    "Ziegelstein",
+    "Brot speckig"
+  ],
+  "kurz": "Das Netz konnte das Gas nicht halten, oder es war zu wenig Gas da.",
+  "bild_im_kopf": "Wie ein Ballon mit Loch oder einer, der nie richtig aufgeblasen wurde.",
+  "ursachen": [
+    {
+      "titel": "Zu kurz gegangen",
+      "haeufigkeit": 3,
+      "prinzip": "hefegaerung",
+      "warum": "Die Hefe hatte nicht genug Zeit, Gas zu bilden.",
+      "fix": [
+        "Länger gehen lassen",
+        "Fingertest: Die Delle füllt sich langsam wieder"
+      ]
+    },
+    {
+      "titel": "Netz zu schwach",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "Zu wenig geknetet oder gefaltet, das Gas entweicht.",
+      "fix": [
+        "Länger kneten oder dehnen und falten",
+        "Fenstertest machen"
+      ]
+    },
+    {
+      "titel": "Zu wenig Wasser",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "Ein fester Teig lässt die Blasen nicht wachsen.",
+      "fix": [
+        "Etwas mehr Wasser verwenden",
+        "Bei Vollkorn- oder Ruchmehl mehr Wasser"
+      ]
+    },
+    {
+      "titel": "Zu kalter Ofen oder kein Dampf",
+      "haeufigkeit": 1,
+      "prinzip": "verdampfen",
+      "warum": "Ohne Ofentrieb bleibt das Brot klein und dicht.",
+      "fix": [
+        "Ofen gut vorheizen",
+        "Die ersten 20 Minuten mit Dampf backen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hatte der Teig vor dem Backen sein Volumen deutlich vergrößert?",
+      "antworten": [
+        [
+          "Nein, kaum",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "War der Teig eher fest und trocken?",
+      "antworten": [
+        [
+          "Ja",
+          "u2"
+        ],
+        [
+          "Nein, weich",
+          "q3"
+        ]
+      ]
+    },
+    "q3": {
+      "frage": "Ist das Brot im Ofen noch aufgegangen?",
+      "antworten": [
+        [
+          "Kaum",
+          "u3"
+        ],
+        [
+          "Ja, aber dann zusammengefallen",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    },
+    "u3": {
+      "ursache": 3
+    }
+  },
+  "links": [
+    "hefegaerung",
+    "glutenbildung",
+    "grosse-poren",
+    "dehnen-falten",
+    "dampf-im-ofen"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    },
+    {
+      "titel": "King Arthur Baking: Baking bread with steam at home",
+      "url": "https://www.kingarthurbaking.com/blog/2024/04/26/baking-bread-with-steam-at-home"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,99 @@
+{
+  "id": "hefegaerung",
+  "typ": "prozess",
+  "titel": "Hefegärung",
+  "synonyme": [
+    "gehen lassen",
+    "Gare",
+    "Triebkraft",
+    "Teig geht auf",
+    "Fermentation"
+  ],
+  "kurz": "Hefe frisst Zucker aus dem Mehl und gibt Gas und Aromen ab. Das Gas bläst den Teig auf, die Aromen machen den Geschmack.",
+  "bild_im_kopf": "Wie Millionen winzige Luftpumpen, die nur arbeiten, wenn es ihnen warm genug ist und sie zu essen haben.",
+  "was_passiert": "Hefen sind lebende Pilze. Sie verwandeln Zucker in Kohlendioxid und Alkohol und bilden dabei Aromastoffe. Am aktivsten sind sie zwischen etwa 27 und 32 °C, im Kühlschrank arbeiten sie nur noch sehr langsam. Ab etwa 55–60 °C sterben sie, darum endet der Trieb im Ofen.",
+  "warum_wichtig": "Die Temperatur steuert, wie schnell der Teig geht. Langsam und kühl gibt mehr Geschmack, schnell und warm mehr Volumen in kurzer Zeit.",
+  "faustregeln": [
+    "Kühle, lange Gare für Geschmack, warme, kurze Gare wenn es schnell gehen muss.",
+    "Salz nie direkt auf die Hefe geben.",
+    "Fertig gegangen: Eine Fingerdelle füllt sich langsam wieder, nicht sofort und gar nicht."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "wärmer → schneller"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "länger → mehr Geschmack"
+    },
+    {
+      "id": "salzgehalt",
+      "wirkung": "mehr → bremst"
+    },
+    {
+      "id": "zuckergehalt",
+      "wirkung": "viel → bremst"
+    }
+  ],
+  "typische_fehler": [
+    "Zu lange zu warm gehen lassen: Das Netz reißt, der Teig fällt zusammen."
+  ],
+  "praxis": [
+    {
+      "welt": "w-brot",
+      "text": "Über Nacht im Kühlschrank gehen lassen: mehr Aroma, bessere Kruste, flexiblerer Zeitplan."
+    },
+    {
+      "welt": "w-gebaeck",
+      "text": "Zopf und Hefekuchen gehen langsamer, weil Zucker und Butter die Hefe bremsen."
+    }
+  ],
+  "links": [
+    "hefe",
+    "kalte-gare",
+    "vorteig",
+    "brot-flach",
+    "brot-zu-dicht",
+    "milchsaeuregaerung"
+  ],
+  "welten": [
+    "w-brot",
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "temperaturskala",
+    "params": {
+      "skala": [
+        {
+          "c": 4,
+          "name": "Kühlschrank: arbeitet sehr langsam"
+        },
+        {
+          "c": 24,
+          "name": "Raum: gemütliche Gare"
+        },
+        {
+          "c": 27,
+          "name": "am aktivsten (27–32 °C)"
+        },
+        {
+          "c": 55,
+          "name": "Hefe beginnt zu sterben"
+        }
+      ]
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Exploratorium: Yeast and temperature",
+      "url": "https://annex.exploratorium.edu/cooking/bread/yeast_temp.html"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

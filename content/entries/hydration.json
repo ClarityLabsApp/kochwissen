@@ -1,0 +1,24 @@
+{
+  "id": "hydration",
+  "typ": "begriff",
+  "titel": "Hydration (Teigausbeute)",
+  "synonyme": [
+    "Wasseranteil",
+    "TA",
+    "Teigausbeute"
+  ],
+  "kurz": "Wie viel Wasser ein Teig im Verhältnis zum Mehl hat, in Prozent vom Mehlgewicht. 1000 g Mehl und 700 g Wasser sind 70 % Hydration.",
+  "links": [
+    "grosse-poren",
+    "mehl",
+    "teig-klebt"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

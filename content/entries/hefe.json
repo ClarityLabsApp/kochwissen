@@ -1,0 +1,52 @@
+{
+  "id": "hefe",
+  "typ": "zutat",
+  "titel": "Hefe",
+  "synonyme": [
+    "Frischhefe",
+    "Trockenhefe",
+    "Germ"
+  ],
+  "kurz": "Hefe ist ein lebender Pilz, der Zucker in Gas und Aromen verwandelt. Sie lässt Teig aufgehen.",
+  "bild_im_kopf": "Wie ein Haustier mit klaren Vorlieben: warm, aber nicht heiß, Futter, und kein Salz direkt auf den Kopf.",
+  "rolle": [
+    {
+      "rolle": "lässt den Teig aufgehen",
+      "prozess": "hefegaerung"
+    },
+    {
+      "rolle": "bildet Aromen",
+      "prozess": "mehr-geschmack"
+    }
+  ],
+  "was_passiert": "Frischhefe und Trockenhefe sind dieselbe Hefe, einmal feucht, einmal getrocknet. Etwa 1 Teil Trockenhefe ersetzt 3 Teile Frischhefe (Richtwert). Weniger Hefe und mehr Zeit gibt meist das bessere Brot.",
+  "faustregeln": [
+    "Weniger Hefe, mehr Zeit.",
+    "Wasser lauwarm, nie heiß.",
+    "Salz und Hefe nicht direkt zusammen."
+  ],
+  "links": [
+    "hefegaerung",
+    "kalte-gare",
+    "vorteig"
+  ],
+  "welten": [
+    "w-brot",
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Exploratorium: Yeast and temperature",
+      "url": "https://annex.exploratorium.edu/cooking/bread/yeast_temp.html"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

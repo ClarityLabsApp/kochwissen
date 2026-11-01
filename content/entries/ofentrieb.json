@@ -1,0 +1,21 @@
+{
+  "id": "ofentrieb",
+  "typ": "begriff",
+  "titel": "Ofentrieb",
+  "synonyme": [
+    "Oven Spring"
+  ],
+  "kurz": "Das letzte, schnelle Aufgehen des Brotes in den ersten Minuten im Ofen, bevor die Hefe stirbt und die Kruste fest wird.",
+  "links": [
+    "dampf-im-ofen",
+    "hefegaerung"
+  ],
+  "quellen": [
+    {
+      "titel": "King Arthur Baking: Baking bread with steam at home",
+      "url": "https://www.kingarthurbaking.com/blog/2024/04/26/baking-bread-with-steam-at-home"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

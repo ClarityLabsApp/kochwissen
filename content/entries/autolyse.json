@@ -1,0 +1,41 @@
+{
+  "id": "autolyse",
+  "typ": "technik",
+  "titel": "Autolyse",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "Teigruhe",
+    "Mehl quellen lassen",
+    "Quellzeit"
+  ],
+  "kurz": "Mehl und Wasser verrühren und 20–60 Minuten ruhen lassen, bevor Salz und Hefe dazukommen. Das Netz bildet sich fast von allein.",
+  "bild_im_kopf": "Wie ein Schwamm, der sich in Ruhe vollsaugt, bevor man ihn auswringt.",
+  "was_passiert": "In der Ruhezeit nimmt das Mehl Wasser auf, die Eiweiße beginnen sich ohne Kneten zu verbinden. Mehleigene Enzyme machen das Netz dehnbarer. Danach braucht der Teig deutlich weniger Kneten.",
+  "schritte": [
+    "Mehl und Wasser nur grob vermischen, bis kein trockenes Mehl mehr da ist.",
+    "Abgedeckt 20–60 Minuten ruhen lassen.",
+    "Salz und Hefe oder Sauerteig zugeben.",
+    "Kurz kneten oder dehnen und falten."
+  ],
+  "wirkt_auf": [
+    "grosse-poren"
+  ],
+  "links": [
+    "glutenbildung",
+    "ruhezeit",
+    "dehnen-falten"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf"
+}

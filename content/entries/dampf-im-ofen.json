@@ -1,0 +1,46 @@
+{
+  "id": "dampf-im-ofen",
+  "typ": "technik",
+  "titel": "Dampf im Ofen",
+  "synonyme": [
+    "Schwaden",
+    "beschwaden",
+    "Dampf beim Backen",
+    "Gusseisentopf"
+  ],
+  "kurz": "In den ersten rund 20 Minuten Dampf im Ofen, dann trocken weiterbacken. So geht das Brot schön auf und bekommt eine glänzende, knusprige Kruste.",
+  "bild_im_kopf": "Wie Gummi und Lack: Erst muss die Haut dehnbar bleiben, damit der Laib wachsen kann, dann darf sie hart werden.",
+  "was_passiert": "Am Anfang dehnt sich das Brot im Ofen stark aus ([[ofentrieb|Ofentrieb]]). Dampf hält die Oberfläche feucht und weich, damit sie dabei nicht reißt. Er verkleistert auch die Stärke an der Oberfläche, das gibt Glanz. Danach muss der Dampf raus, damit die Kruste trocknet und bräunt.",
+  "schritte": [
+    "Ofen mit Gusseisentopf oder Backstein gut vorheizen.",
+    "Brot einschneiden und in den Topf legen, Deckel drauf.",
+    "Nach etwa 20 Minuten Deckel abnehmen oder Dampf ablassen.",
+    "Trocken fertig backen, bis die Kruste tief goldbraun ist.",
+    "Umluft beim Einschießen ausschalten, sie trocknet zu früh."
+  ],
+  "wirkt_auf": [
+    "grosse-poren",
+    "knusprig"
+  ],
+  "links": [
+    "luftfeuchte-ofen",
+    "maillard-reaktion",
+    "brot-kruste-weich",
+    "brot-flach",
+    "ofentrieb"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "King Arthur Baking: Baking bread with steam at home",
+      "url": "https://www.kingarthurbaking.com/blog/2024/04/26/baking-bread-with-steam-at-home"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

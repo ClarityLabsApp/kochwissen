@@ -1,0 +1,100 @@
+{
+  "id": "teig-schnurrt",
+  "typ": "symptom",
+  "titel": "Teig schnurrt zurück",
+  "synonyme": [
+    "Teig zieht sich zusammen",
+    "Pizzateig zieht sich zurück",
+    "Teig lässt sich nicht ausrollen"
+  ],
+  "kurz": "Das Glutennetz ist gespannt. Es braucht Ruhe, nicht mehr Kraft.",
+  "bild_im_kopf": "Wie ein Gummiband, das man gerade gedehnt hat: Lässt man es kurz liegen, ist es wieder entspannt.",
+  "ursachen": [
+    {
+      "titel": "Direkt nach dem Kneten oder Formen",
+      "haeufigkeit": 3,
+      "prinzip": "glutenbildung",
+      "warum": "Frisch geknetete Glutenstränge sind gespannt und ziehen sich zurück.",
+      "fix": [
+        "10–20 Minuten abgedeckt ruhen lassen",
+        "Dann erneut ausrollen oder ausziehen"
+      ]
+    },
+    {
+      "titel": "Teig zu kalt",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "Kalter Teig ist steifer und weniger dehnbar.",
+      "fix": [
+        "Aus dem Kühlschrank nehmen und etwas temperieren lassen"
+      ]
+    },
+    {
+      "titel": "Mehl mit sehr viel Eiweiß",
+      "haeufigkeit": 1,
+      "prinzip": "glutenbildung",
+      "warum": "Sehr starkes Mehl ergibt ein besonders elastisches Netz.",
+      "fix": [
+        "Längere Ruhezeit",
+        "Etwas mehr Wasser"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hast du gerade erst geknetet oder geformt?",
+      "antworten": [
+        [
+          "Ja",
+          "u0"
+        ],
+        [
+          "Nein, er hat geruht",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Kam der Teig direkt aus dem Kühlschrank?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "glutenbildung",
+    "ruhezeit",
+    "ruhen-lassen"
+  ],
+  "welten": [
+    "w-brot",
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

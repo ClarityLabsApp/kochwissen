@@ -1,0 +1,58 @@
+{
+  "id": "grosse-poren",
+  "typ": "ziel",
+  "titel": "Große Poren im Brot",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "offene Krume",
+    "luftiges Brot",
+    "Löcher im Brot",
+    "luftiger"
+  ],
+  "kurz": "Große Poren brauchen drei Dinge: ein dehnbares Netz, genug Gas und einen Teig, der weich genug ist, um sich auszudehnen.",
+  "bild_im_kopf": "Wie Seifenblasen: Mit dünner, elastischer Seifenhaut werden sie groß, mit dicker, zäher Masse bleiben sie klein.",
+  "bedeutung": "Poren sind Gasblasen, die das Glutennetz im Ofen festhält. Mehr Wasser im Teig macht das Netz dehnbarer, lange Gare bringt mehr Gas, sanftes Formen erhält die Blasen.",
+  "hebel": [
+    "glutenbildung",
+    "hefegaerung",
+    "ruhezeit",
+    "luftfeuchte-ofen"
+  ],
+  "was_passiert": "Ein weicher Teig mit viel Wasser lässt Blasen groß werden. Dehnen und Falten stärkt das Netz, ohne die Blasen zu zerdrücken. Dampf im Ofen hält die Kruste weich, damit der Laib noch aufgehen kann.",
+  "faustregeln": [
+    "Mehr Wasser im Teig, aber nur so viel, wie du handhaben kannst.",
+    "Dehnen und Falten statt kneten.",
+    "Beim Formen nicht entgasen, sanft spannen."
+  ],
+  "praxis": [
+    {
+      "welt": "w-brot",
+      "text": "Ciabatta und Sauerteig mit viel Wasser, Toastbrot mit wenig: Die Wassermenge bestimmt die Porung."
+    }
+  ],
+  "links": [
+    "dehnen-falten",
+    "kalte-gare",
+    "autolyse",
+    "dampf-im-ofen",
+    "brot-zu-dicht",
+    "hydration"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "King Arthur Baking: Baking bread with steam at home",
+      "url": "https://www.kingarthurbaking.com/blog/2024/04/26/baking-bread-with-steam-at-home"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf"
+}

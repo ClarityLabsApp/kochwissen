@@ -1,0 +1,103 @@
+{
+  "id": "brot-altbacken",
+  "typ": "symptom",
+  "titel": "Brot wird schnell altbacken",
+  "synonyme": [
+    "Brot hart",
+    "altes Brot",
+    "Brot trocken"
+  ],
+  "kurz": "Die Stärke ordnet sich nach dem Backen neu und wird fest. Kühlschrank und wasserarme Teige beschleunigen das.",
+  "bild_im_kopf": "Wie eine Uhr, die im Kühlschrank schneller läuft.",
+  "ursachen": [
+    {
+      "titel": "Im Kühlschrank gelagert",
+      "haeufigkeit": 3,
+      "prinzip": "retrogradation",
+      "warum": "Bei Kühlschranktemperatur wird Brot etwa sechsmal schneller altbacken.",
+      "fix": [
+        "Bei Raumtemperatur im Tuch lagern",
+        "Reste einfrieren"
+      ]
+    },
+    {
+      "titel": "Teig mit wenig Wasser",
+      "haeufigkeit": 2,
+      "prinzip": "retrogradation",
+      "warum": "Feste Teige haben weniger Wasser, das die Stärke weich hält.",
+      "fix": [
+        "Etwas mehr Wasser im Teig",
+        "Brühstück oder Kochstück einarbeiten"
+      ]
+    },
+    {
+      "titel": "Ohne Sauerteig oder Fett",
+      "haeufigkeit": 1,
+      "prinzip": "milchsaeuregaerung",
+      "warum": "Säure und Fett bremsen das Altbackenwerden.",
+      "fix": [
+        "Sauerteig oder etwas Fett verwenden"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Wo hast du das Brot aufbewahrt?",
+      "antworten": [
+        [
+          "Im Kühlschrank",
+          "u0"
+        ],
+        [
+          "Bei Raumtemperatur",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "War der Teig eher fest?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein, weich",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "retrogradation",
+    "laenger-frisch",
+    "sauerteig"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "Today I Found Out: Bread goes stale faster in the refrigerator",
+      "url": "https://www.todayifoundout.com/?p=6163"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

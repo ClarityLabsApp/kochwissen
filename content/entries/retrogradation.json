@@ -1,0 +1,84 @@
+{
+  "id": "retrogradation",
+  "typ": "prozess",
+  "titel": "Altbackenwerden (Retrogradation)",
+  "synonyme": [
+    "altbacken",
+    "Brot wird hart",
+    "trocken werden",
+    "Brot aufbacken"
+  ],
+  "kurz": "Brot wird nicht hart, weil es austrocknet, sondern weil sich die verkleisterte Stärke beim Abkühlen wieder ordnet und fest wird.",
+  "bild_im_kopf": "Wie Menschen, die nach einem Fest wieder in Reih und Glied stehen: Im Ofen tanzt die Stärke locker, beim Abkühlen ordnet sie sich und wird steif.",
+  "was_passiert": "Beim Backen nimmt die Stärke Wasser auf und wird weich. Danach ordnen sich die Stärkeketten langsam wieder zu festen Strukturen. Im Kühlschrank geht das etwa sechsmal schneller als bei Raumtemperatur. Erwärmen löst die Ordnung wieder, darum wird altes Brot im Ofen kurz wieder weich.",
+  "warum_wichtig": "Erklärt, warum Brot nicht in den Kühlschrank gehört, warum Aufbacken hilft und warum Reis vom Vortag für Bratreis besser ist.",
+  "faustregeln": [
+    "Brot nie in den Kühlschrank, lieber einfrieren.",
+    "Altes Brot kurz mit etwas Wasser besprühen und im heißen Ofen aufbacken.",
+    "Gekochter Reis vom Vortag ist fester und klebt beim Braten weniger."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "kühl (nicht gefroren) → schneller altbacken"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "länger → härter"
+    }
+  ],
+  "mythos": {
+    "behauptung": "Brot wird altbacken, weil es austrocknet.",
+    "richtig": "Auch luftdicht verpacktes Brot wird hart. Der Hauptgrund ist die Stärke, die sich neu ordnet."
+  },
+  "praxis": [
+    {
+      "welt": "w-brot",
+      "text": "In Scheiben einfrieren und direkt toasten."
+    },
+    {
+      "welt": "w-getreide",
+      "text": "Bratreis aus Reis vom Vortag: die Körner sind fester und kleben weniger."
+    }
+  ],
+  "links": [
+    "staerkeverkleisterung",
+    "brot-altbacken",
+    "laenger-frisch"
+  ],
+  "welten": [
+    "w-brot",
+    "w-getreide"
+  ],
+  "visual": {
+    "vorlage": "temperaturskala",
+    "params": {
+      "skala": [
+        {
+          "c": 4,
+          "name": "Kühlschrank: etwa sechsmal schneller altbacken"
+        },
+        {
+          "c": 20,
+          "name": "Raumtemperatur: langsamer"
+        },
+        {
+          "c": 60,
+          "name": "Aufbacken: Stärke wird wieder weich"
+        }
+      ]
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Today I Found Out: Bread goes stale faster in the refrigerator",
+      "url": "https://www.todayifoundout.com/?p=6163"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

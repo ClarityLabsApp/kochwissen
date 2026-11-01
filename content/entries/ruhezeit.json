@@ -1,0 +1,38 @@
+{
+  "id": "ruhezeit",
+  "typ": "stellschraube",
+  "titel": "Ruhezeit",
+  "synonyme": [
+    "ruhen lassen",
+    "Teigruhe",
+    "warten"
+  ],
+  "kurz": "Zeit arbeitet für dich: Teige werden dehnbarer, Fleisch saftiger, Aromen tiefer.",
+  "bild_im_kopf": "Wie ein Gespräch, das sich erst nach einer Pause sortiert.",
+  "was_passiert": "In Ruhe quellen Mehl und Stärke, gespannte Glutenstränge entspannen sich, Enzyme arbeiten. Bei Fleisch dickt der Saft etwas ein, bei Teig verschwindet die Spannung.",
+  "faustregeln": [
+    "Teig, der sich zurückzieht, braucht Ruhe, keine Kraft.",
+    "Pastateig und Mürbeteig vor dem Ausrollen ruhen lassen."
+  ],
+  "links": [
+    "glutenbildung",
+    "autolyse",
+    "teig-schnurrt",
+    "ruhen-lassen"
+  ],
+  "visual": {
+    "vorlage": "skala",
+    "params": {
+      "links": "frisch geknetet: gespannt, zieht sich zurück",
+      "rechts": "geruht: entspannt, lässt sich formen"
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

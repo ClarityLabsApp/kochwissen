@@ -1,0 +1,82 @@
+{
+  "id": "glutenbildung",
+  "typ": "prozess",
+  "titel": "Glutenbildung",
+  "synonyme": [
+    "Gluten",
+    "Kleber",
+    "Teigstruktur",
+    "kneten"
+  ],
+  "kurz": "Wenn Weizenmehl mit Wasser geknetet wird, verbinden sich zwei Eiweiße zu einem elastischen Netz, dem Gluten.",
+  "bild_im_kopf": "Wie ein Netz aus Kaugummi: Je öfter du es ziehst und faltest, desto zäher und dehnbarer wird es. Ein starkes Netz hält Gasblasen fest wie ein Ballon.",
+  "was_passiert": "Im Mehl stecken zwei Eiweiße, Glutenin und Gliadin. Mit Wasser verbinden sie sich, durch Kneten oder lange Ruhe ordnen sie sich zu langen, dehnbaren Strängen. Glutenin gibt Kraft, Gliadin macht dehnbar. Fett und Zucker bremsen das Netz, Salz strafft es.",
+  "warum_wichtig": "Brot braucht viel Gluten für Poren und Biss. Kuchen, Mürbeteig und Pfannkuchen brauchen wenig, damit sie zart bleiben.",
+  "faustregeln": [
+    "Brot: lange kneten oder lange ruhen lassen. Zeit ersetzt Kneten.",
+    "Kuchen und Muffins: nur rühren, bis das Mehl verschwunden ist.",
+    "Fett und Zucker bremsen das Netz. Darum ist Mürbeteig mürbe.",
+    "Zurückschnurrender Teig braucht Ruhe, dann lässt er sich ausrollen."
+  ],
+  "stellschrauben": [
+    {
+      "id": "mechanik",
+      "wirkung": "mehr kneten → stärker"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "länger → stärker"
+    },
+    {
+      "id": "fettgehalt",
+      "wirkung": "mehr Fett → schwächer"
+    },
+    {
+      "id": "salzgehalt",
+      "wirkung": "Salz → straffer"
+    }
+  ],
+  "mythos": {
+    "behauptung": "Brotteig muss man lange und kräftig kneten.",
+    "richtig": "Muss man nicht. Ruht der Teig über Nacht, ordnen sich die Eiweiße von selbst. So funktioniert No-Knead-Brot."
+  },
+  "praxis": [
+    {
+      "welt": "w-brot",
+      "text": "Starkes Netz gewünscht: kneten bis zum [[fenstertest|Fenstertest]] oder lange kalte Gare."
+    },
+    {
+      "welt": "w-gebaeck",
+      "text": "Wenig Netz gewünscht: kurz rühren, kalte Butter, wenig Wasser."
+    },
+    {
+      "welt": "w-pasta",
+      "text": "Pastateig braucht ein festes Netz für Biss: kneten und eine halbe Stunde ruhen lassen."
+    }
+  ],
+  "links": [
+    "mehl",
+    "autolyse",
+    "dehnen-falten",
+    "teig-schnurrt",
+    "brot-zu-dicht",
+    "muffins-tunnel",
+    "muerbeteig-zaeh"
+  ],
+  "welten": [
+    "w-brot",
+    "w-pasta",
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

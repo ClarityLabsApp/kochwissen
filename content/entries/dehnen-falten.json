@@ -1,0 +1,42 @@
+{
+  "id": "dehnen-falten",
+  "typ": "technik",
+  "titel": "Dehnen und Falten",
+  "synonyme": [
+    "Stretch and Fold",
+    "falten",
+    "Coil Fold"
+  ],
+  "kurz": "Den Teig in der ersten Gare ein paar Mal hochziehen und übereinander falten. Das stärkt das Netz, ohne zu kneten.",
+  "bild_im_kopf": "Wie ein Handtuch, das man mehrmals faltet: Jede Lage ordnet die Fasern ein Stück mehr.",
+  "was_passiert": "Beim Dehnen werden die Glutenstränge in eine Richtung gezogen und geordnet. Beim Falten liegen sie in Schichten übereinander. Nach ein paar Runden mit Pausen ist der Teig glatt und straff, die Gasblasen bleiben erhalten.",
+  "schritte": [
+    "Hände anfeuchten.",
+    "Den Teig an einer Seite hochziehen und zur Mitte falten.",
+    "Schüssel drehen, ringsum wiederholen.",
+    "30 Minuten ruhen lassen.",
+    "3–4 Runden, bis der Teig straff ist."
+  ],
+  "wirkt_auf": [
+    "grosse-poren"
+  ],
+  "links": [
+    "glutenbildung",
+    "mechanik",
+    "grosse-poren"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot, Getreide"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}
