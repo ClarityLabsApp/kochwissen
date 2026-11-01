@@ -1,0 +1,50 @@
+{
+  "typ": "zutat",
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "id": "joghurt",
+  "titel": "Joghurt",
+  "synonyme": [
+    "Naturjoghurt",
+    "griechischer Joghurt",
+    "Buttermilch"
+  ],
+  "kurz": "Joghurt ist von Milchsäurebakterien gesäuerte Milch. Die Säure dickt ein, macht frisch und aktiviert Natron.",
+  "bild_im_kopf": "Milch, der Bakterien eine neue Form gegeben haben.",
+  "rolle": [
+    {
+      "rolle": "säuert und dickt ein",
+      "prozess": "milchsaeuregaerung"
+    },
+    {
+      "rolle": "aktiviert Natron im Teig",
+      "prozess": "chemische-lockerung"
+    },
+    {
+      "rolle": "macht Marinaden mild",
+      "prozess": "marinieren"
+    }
+  ],
+  "was_passiert": "Bakterien wandeln Milchzucker in Milchsäure um. Die Säure lässt das Milcheiweiß zu einem zarten Gel eindicken.",
+  "faustregeln": [
+    "Joghurt in heiße Saucen erst am Schluss einrühren, sonst flockt er aus.",
+    "Mit Natron im Teig: schöne Lockerung."
+  ],
+  "links": [
+    "milchsaeuregaerung",
+    "chemische-lockerung",
+    "marinieren"
+  ],
+  "welten": [
+    "w-milch"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Milch, Zucker, Schokolade"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,73 @@
+{
+  "typ": "symptom",
+  "welten": [
+    "w-milch"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "sahne-wird-butter",
+  "titel": "Sahne wird zu Butter",
+  "synonyme": [
+    "Rahm wird Butter",
+    "Sahne flockig",
+    "Schlagrahm körnig"
+  ],
+  "kurz": "Zu lange geschlagen: Die Fetttröpfchen sind zusammengeklebt und haben sich von der Flüssigkeit getrennt.",
+  "bild_im_kopf": "Wie ein Schneeball, der zu lange gerollt wurde und zu einem Klumpen geworden ist.",
+  "ursachen": [
+    {
+      "titel": "Zu lange geschlagen",
+      "haeufigkeit": 3,
+      "prinzip": "schaumbildung",
+      "warum": "Die Fetthüllen reißen, die Tröpfchen verkleben zu Butterkörnern.",
+      "fix": [
+        "Ein paar Löffel flüssige Sahne vorsichtig unterheben",
+        "Ganz zu Butter schlagen und weiterverwenden"
+      ]
+    },
+    {
+      "titel": "Sahne zu warm",
+      "haeufigkeit": 2,
+      "prinzip": "schaumbildung",
+      "warum": "Warmes Fett ist weich und klebt schneller zusammen.",
+      "fix": [
+        "Sahne, Schüssel und Schneebesen kühlen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "War die Sahne direkt aus dem Kühlschrank?",
+      "antworten": [
+        [
+          "Nein",
+          "u1"
+        ],
+        [
+          "Ja",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    }
+  },
+  "links": [
+    "schaumbildung",
+    "sahne",
+    "aufschlagen"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Milch, Zucker, Schokolade"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

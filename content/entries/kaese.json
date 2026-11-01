@@ -1,0 +1,50 @@
+{
+  "typ": "zutat",
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "id": "kaese",
+  "titel": "Käse",
+  "synonyme": [
+    "Gruyère",
+    "Emmentaler",
+    "Parmesan",
+    "Raclette",
+    "Mozzarella"
+  ],
+  "kurz": "Käse ist geronnenes Milcheiweiß mit Fett. Ob er cremig schmilzt oder Fäden zieht und Fett absondert, hängt von Alter, Feuchtigkeit und Säure ab.",
+  "bild_im_kopf": "Wie ein Netz aus Eiweiß, in dem Fett und Wasser gefangen sind.",
+  "rolle": [
+    {
+      "rolle": "schmilzt zu einer Emulsion",
+      "prozess": "emulsion"
+    },
+    {
+      "rolle": "gibt Umami und Würze",
+      "prozess": "mehr-geschmack"
+    }
+  ],
+  "was_passiert": "Beim Schmelzen lockert sich das Eiweißnetz. Junge, feuchte Käse schmelzen cremig. Sehr alte, trockene Käse geben eher Fett ab. Zu viel Hitze lässt das Eiweiß zusammenziehen: gummiartig mit Fettpfützen.",
+  "faustregeln": [
+    "Fein reiben und bei mittlerer Hitze schmelzen.",
+    "Für Fondue Weißwein und etwas Stärke: Säure und Stärke halten die Emulsion.",
+    "Parmesan in Pasta erst bei mittlerer Hitze einrühren."
+  ],
+  "links": [
+    "emulsion",
+    "mantecare",
+    "eiweiss-gerinnung"
+  ],
+  "welten": [
+    "w-milch",
+    "w-pasta"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Milch, Zucker, Schokolade"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

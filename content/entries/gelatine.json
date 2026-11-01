@@ -1,0 +1,44 @@
+{
+  "typ": "zutat",
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "id": "gelatine",
+  "titel": "Gelatine",
+  "synonyme": [
+    "Blattgelatine",
+    "Gelatinepulver"
+  ],
+  "kurz": "Gelatine ist gereinigtes Kollagen. Sie löst sich in Wärme und lässt Flüssigkeiten beim Abkühlen gelieren.",
+  "bild_im_kopf": "Wie ein Netz in Pulverform.",
+  "rolle": [
+    {
+      "rolle": "lässt Flüssigkeit fest werden",
+      "prozess": "gelbildung-gelatine"
+    },
+    {
+      "rolle": "macht Saucen sämig",
+      "prozess": "kollagen-gelatine"
+    }
+  ],
+  "was_passiert": "Gelatine stammt aus Bindegewebe. Eingeweicht und gelöst bildet sie beim Abkühlen ein Netz, das bei Körpertemperatur wieder schmilzt.",
+  "faustregeln": [
+    "Nie kochen.",
+    "Agar-Agar ist eine pflanzliche Alternative, muss aber kochen und wird fester."
+  ],
+  "links": [
+    "gelbildung-gelatine",
+    "kollagen-gelatine"
+  ],
+  "welten": [
+    "w-suesses"
+  ],
+  "quellen": [
+    {
+      "titel": "Johnson & Wales University: Baking Science – Thickening and Gelling",
+      "url": "https://jwu.pressbooks.pub/bakingsciencethickeningandgelling/?p=62"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

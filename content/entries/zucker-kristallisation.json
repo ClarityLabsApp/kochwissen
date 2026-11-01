@@ -1,0 +1,50 @@
+{
+  "id": "zucker-kristallisation",
+  "typ": "prozess",
+  "titel": "Zucker kristallisiert",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "Zucker wird körnig",
+    "auskristallisieren",
+    "Fondant",
+    "Fudge"
+  ],
+  "kurz": "Gelöster Zucker will wieder Kristalle bilden. Schon ein einziges Körnchen kann eine Kettenreaktion auslösen.",
+  "bild_im_kopf": "Wie Dominosteine: Fällt einer, fallen alle. Ein Zuckerkristall am Topfrand reicht als erster Stein.",
+  "was_passiert": "In heißem Sirup ist viel mehr Zucker gelöst, als er im Kalten halten kann. Beim Abkühlen oder durch Rühren lagern sich die Zuckermoleküle an jedes vorhandene Kristall an, und der Sirup wird körnig. Säure, Honig oder Glukosesirup stören die Kristallbildung und halten Karamell glatt.",
+  "warum_wichtig": "Erklärt, warum Karamell plötzlich sandig wird, und warum man bei Fudge gerade das Kristallisieren gezielt steuert.",
+  "faustregeln": [
+    "Nicht rühren, solange Zucker kocht. Schwenken statt rühren.",
+    "Kristalle am Topfrand mit einem nassen Pinsel herunterwaschen.",
+    "Ein Löffel Glukosesirup oder etwas Zitronensaft verhindert Körnigkeit."
+  ],
+  "stellschrauben": [
+    {
+      "id": "mechanik",
+      "wirkung": "rühren → Kristalle"
+    },
+    {
+      "id": "temperatur",
+      "wirkung": "Abkühlen → Kristallisation"
+    }
+  ],
+  "links": [
+    "karamell-kristallisiert",
+    "zucker-karamellisieren",
+    "karamellisierung",
+    "zucker"
+  ],
+  "welten": [
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Milch, Zucker, Schokolade"
+    }
+  ],
+  "status": "entwurf"
+}

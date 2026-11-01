@@ -1,0 +1,104 @@
+{
+  "typ": "symptom",
+  "welten": [
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "schokolade-grau",
+  "titel": "Schokolade wird grau und streifig",
+  "synonyme": [
+    "Fettreif",
+    "Zuckerreif",
+    "Schokolade weiß angelaufen",
+    "Bloom"
+  ],
+  "kurz": "Die Fettkristalle haben sich falsch angeordnet (Fettreif) oder Feuchtigkeit hat Zucker an die Oberfläche geholt (Zuckerreif).",
+  "bild_im_kopf": "Wie Raureif auf einer Scheibe: Etwas wandert an die Oberfläche und kristallisiert dort.",
+  "ursachen": [
+    {
+      "titel": "Nicht temperiert",
+      "haeufigkeit": 3,
+      "prinzip": "fett-kristallisation",
+      "warum": "Geschmolzene Schokolade wird ohne Temperieren in instabilen Kristallen fest.",
+      "fix": [
+        "Temperieren",
+        "Für Saucen und Kuchen ist es egal"
+      ]
+    },
+    {
+      "titel": "Zu warm gelagert",
+      "haeufigkeit": 2,
+      "prinzip": "fett-kristallisation",
+      "warum": "Wärme schmilzt Kakaobutter, die an der Oberfläche neu kristallisiert.",
+      "fix": [
+        "Kühl und trocken lagern, nicht im Kühlschrank"
+      ]
+    },
+    {
+      "titel": "Feuchtigkeit",
+      "haeufigkeit": 1,
+      "prinzip": "zucker-kristallisation",
+      "warum": "Kondenswasser löst Zucker, der beim Trocknen weiß auskristallisiert.",
+      "fix": [
+        "Nicht direkt aus dem Kühlschrank in die warme Küche",
+        "Gut verpacken"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hast du die Schokolade selbst geschmolzen und fest werden lassen?",
+      "antworten": [
+        [
+          "Ja",
+          "u0"
+        ],
+        [
+          "Nein, gekaufte Tafel",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Fühlt sich der Belag fettig oder eher rau und trocken an?",
+      "antworten": [
+        [
+          "Fettig",
+          "u1"
+        ],
+        [
+          "Rau",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "fett-kristallisation",
+    "temperieren",
+    "schokolade"
+  ],
+  "quellen": [
+    {
+      "titel": "Thermapen: The ultimate guide to tempering chocolate",
+      "url": "https://thermapen.co.uk/blogs/inspiration/tempering-chocolate-guide"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Milch, Zucker, Schokolade"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,74 @@
+{
+  "typ": "symptom",
+  "welten": [
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "schokolade-klumpt",
+  "titel": "Schokolade klumpt beim Schmelzen",
+  "synonyme": [
+    "Schokolade wird fest",
+    "Schokolade grieselig",
+    "seized chocolate"
+  ],
+  "kurz": "Ein paar Tropfen Wasser haben den Zucker in Sirup verwandelt, der die Kakaoteilchen zusammenklebt.",
+  "bild_im_kopf": "Wie Sand, auf den ein paar Regentropfen fallen: Plötzlich klumpt alles.",
+  "ursachen": [
+    {
+      "titel": "Wenig Wasser oder Dampf",
+      "haeufigkeit": 3,
+      "prinzip": "zucker-kristallisation",
+      "warum": "Schon ein Tropfen macht den Zucker klebrig, die Kakaoteilchen verklumpen.",
+      "fix": [
+        "Löffelweise kochendes Wasser einrühren, bis sie glatt ist",
+        "Dann für Sauce oder heiße Schokolade verwenden"
+      ]
+    },
+    {
+      "titel": "Zu heiß",
+      "haeufigkeit": 2,
+      "prinzip": "pyrolyse",
+      "warum": "Überhitzte Schokolade wird dick und bröselig.",
+      "fix": [
+        "Im Wasserbad sanft schmelzen",
+        "Mikrowelle nur in kurzen Stößen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Kann Wasser oder Dampf an die Schokolade gekommen sein?",
+      "antworten": [
+        [
+          "Ja",
+          "u0"
+        ],
+        [
+          "Nein",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    }
+  },
+  "links": [
+    "schokolade",
+    "wasserbad",
+    "temperieren"
+  ],
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: How to fix seized chocolate",
+      "url": "https://www.americastestkitchen.com/how_tos/5712-how-to-fix-seized-chocolate"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "gelbildung-gelatine",
+  "typ": "prozess",
+  "titel": "Gelieren mit Gelatine",
+  "synonyme": [
+    "Gelatine",
+    "Gelee",
+    "Panna cotta",
+    "fest werden"
+  ],
+  "kurz": "Gelatine löst sich in warmer Flüssigkeit und bildet beim Abkühlen ein Netz, das die Flüssigkeit festhält. Im Mund schmilzt es wieder.",
+  "bild_im_kopf": "Wie ein Fischernetz, das sich im Kalten zusammenzieht und das Wasser in seinen Maschen hält.",
+  "was_passiert": "Gelatine besteht aus langen Eiweißketten. Warm schwimmen sie frei, beim Abkühlen verbinden sie sich zu einem Netz. Weil es bei Körpertemperatur wieder schmilzt, zergeht Panna cotta auf der Zunge. Kochen schwächt die Gelatine, und Enzyme in roher Ananas oder Kiwi zerschneiden das Netz.",
+  "warum_wichtig": "Erklärt, warum Gelatine nie kochen darf, warum Desserts Zeit im Kühlschrank brauchen und warum Ananasgelee nicht fest wird.",
+  "faustregeln": [
+    "Blattgelatine in kaltem Wasser einweichen, ausdrücken, in warmer (nicht kochender) Flüssigkeit auflösen.",
+    "Mehrere Stunden kühlen.",
+    "Rohe Ananas, Kiwi, Papaya vorher erhitzen oder aus der Dose verwenden."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "warm → löst, kalt → geliert"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "länger kühl → fester"
+    }
+  ],
+  "links": [
+    "gelatine",
+    "kollagen-gelatine",
+    "gelbildung-pektin"
+  ],
+  "welten": [
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "temperaturskala",
+    "params": {
+      "hinweis": "Richtwerte",
+      "skala": [
+        {
+          "c": 10,
+          "name": "Kühlschrank: Netz wird fest"
+        },
+        {
+          "c": 30,
+          "name": "beginnt zu gelieren / schmilzt im Mund"
+        },
+        {
+          "c": 43,
+          "name": "vollständig gelöst"
+        },
+        {
+          "c": 100,
+          "name": "kochen schwächt die Gelatine"
+        }
+      ]
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Johnson & Wales University: Baking Science – Thickening and Gelling",
+      "url": "https://jwu.pressbooks.pub/bakingsciencethickeningandgelling/?p=62"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Milch, Zucker, Schokolade"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

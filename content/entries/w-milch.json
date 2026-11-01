@@ -1,0 +1,40 @@
+{
+  "id": "w-milch",
+  "typ": "welt",
+  "titel": "Milch & Käse",
+  "synonyme": [
+    "Milchprodukte",
+    "Rahm",
+    "Sahne",
+    "Joghurt",
+    "Käse",
+    "Butter"
+  ],
+  "kurz": "Milch ist Wasser mit Fetttröpfchen, Eiweiß und Milchzucker. Je nachdem, was man mit diesen Teilen macht, entstehen Sahne, Butter, Joghurt oder Käse.",
+  "bild_im_kopf": "Wie ein Baukasten mit drei Teilen: Fett, Eiweiß, Zucker. Jedes Milchprodukt nutzt einen anderen Teil.",
+  "was_passiert": "Sahne ist das abgetrennte Fett und lässt sich schlagen. Bakterien säuern Milchzucker zu Milchsäure, die das Eiweiß eindickt: Joghurt. Lab oder Säure bringen das Eiweiß zum Gerinnen: Käse.",
+  "warum_wichtig": "Erklärt, warum Sahne zu Butter wird, warum Milch anbrennt und warum manche Käse schmelzen und andere nicht.",
+  "faustregeln": [
+    "Milch nicht stark kochen lassen, sie brennt an und kocht über.",
+    "Sahne zum Schlagen gut gekühlt.",
+    "Käse zum Schmelzen fein reiben und nicht zu heiß werden lassen."
+  ],
+  "links": [
+    "schaumbildung",
+    "milchsaeuregaerung",
+    "eiweiss-gerinnung",
+    "emulsion"
+  ],
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a glass milk bottle beside a wedge of alpine cheese"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Milch, Zucker, Schokolade"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

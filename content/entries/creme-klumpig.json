@@ -1,0 +1,99 @@
+{
+  "typ": "symptom",
+  "welten": [
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "creme-klumpig",
+  "titel": "Creme oder Pudding klumpt",
+  "synonyme": [
+    "Vanillecreme geronnen",
+    "Pudding Klümpchen",
+    "Crème brûlée grieselig"
+  ],
+  "kurz": "Entweder ist das Ei geronnen oder die Stärke hat Klümpchen gebildet.",
+  "bild_im_kopf": "Wie Rührei in der Vanillesauce.",
+  "ursachen": [
+    {
+      "titel": "Zu heiß, Ei geronnen",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "Über etwa 80 °C gerinnt das Eigelb zu Krümeln.",
+      "fix": [
+        "Sofort durch ein Sieb in eine kalte Schüssel gießen und mit dem Mixstab glätten",
+        "Nächstes Mal im Wasserbad und ständig rühren"
+      ]
+    },
+    {
+      "titel": "Stärke nicht verteilt",
+      "haeufigkeit": 2,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Stärke direkt in heiße Milch bildet Klumpen.",
+      "fix": [
+        "Stärke in etwas kalter Milch anrühren",
+        "Mit dem Schneebesen einrühren"
+      ]
+    },
+    {
+      "titel": "Nicht gerührt",
+      "haeufigkeit": 1,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "Am Topfboden wird es heißer und gerinnt zuerst.",
+      "fix": [
+        "Ständig rühren, auch über den Boden"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Ist Stärke oder Puddingpulver im Rezept?",
+      "antworten": [
+        [
+          "Ja",
+          "q2"
+        ],
+        [
+          "Nein, nur Eier",
+          "u0"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Sind es weiche Körnchen oder trockene Mehlklümpchen?",
+      "antworten": [
+        [
+          "Weiche Körnchen",
+          "u2"
+        ],
+        [
+          "Trockene Klümpchen",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "eiweiss-gerinnung",
+    "staerkeverkleisterung",
+    "wasserbad"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Milch, Zucker, Schokolade"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

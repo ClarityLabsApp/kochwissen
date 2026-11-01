@@ -1,0 +1,49 @@
+{
+  "typ": "zutat",
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "id": "milch",
+  "titel": "Milch",
+  "synonyme": [
+    "Vollmilch",
+    "Magermilch"
+  ],
+  "kurz": "Milch bringt Eiweiß, Fett, Zucker und Wasser. Sie bräunt Gebäck, bindet mit Stärke und kann anbrennen und gerinnen.",
+  "bild_im_kopf": "Ein Allrounder mit Neigung zum Überkochen.",
+  "rolle": [
+    {
+      "rolle": "bräunt Teige durch Milchzucker",
+      "prozess": "maillard-reaktion"
+    },
+    {
+      "rolle": "kann ausflocken",
+      "prozess": "eiweiss-gerinnung"
+    },
+    {
+      "rolle": "wird mit Stärke zu Béchamel",
+      "prozess": "staerkeverkleisterung"
+    }
+  ],
+  "was_passiert": "Beim Erhitzen bildet Milch eine Haut aus Eiweiß, und am Boden brennt Eiweiß leicht an. Säure lässt sie ausflocken.",
+  "faustregeln": [
+    "Bei mittlerer Hitze erwärmen und rühren.",
+    "Topf vorher mit kaltem Wasser ausspülen: Milch brennt weniger an."
+  ],
+  "links": [
+    "eiweiss-gerinnung",
+    "maillard-reaktion",
+    "mehlschwitze"
+  ],
+  "welten": [
+    "w-milch"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Milch, Zucker, Schokolade"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

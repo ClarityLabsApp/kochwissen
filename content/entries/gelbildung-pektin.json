@@ -1,0 +1,50 @@
+{
+  "id": "gelbildung-pektin",
+  "typ": "prozess",
+  "titel": "Gelieren mit Pektin",
+  "synonyme": [
+    "Konfitüre",
+    "Marmelade",
+    "Gelierzucker",
+    "Pektin"
+  ],
+  "kurz": "Pektin aus Früchten bildet ein Gel, aber nur mit genug Zucker und Säure. Darum braucht Konfitüre beides.",
+  "bild_im_kopf": "Wie ein Schloss mit drei Schlüsseln: Pektin, Zucker und Säure. Fehlt einer, bleibt es flüssig.",
+  "was_passiert": "Pektin sind lange Ketten aus Fruchtzellwänden. Zucker entzieht ihnen das Wasser, Säure nimmt ihnen die Ladung, die sie abstößt. Dann können sie sich zu einem Netz verbinden. Äpfel, Quitten und Johannisbeeren haben viel Pektin, Erdbeeren wenig.",
+  "warum_wichtig": "Erklärt, warum Konfitüre mit wenig Zucker nicht fest wird und warum Zitronensaft hinein gehört.",
+  "faustregeln": [
+    "Gelierprobe: Ein Klecks auf einem kalten Teller soll nach einer Minute eine Haut bilden.",
+    "Pektinarme Früchte mit Äpfeln oder Gelierzucker kombinieren.",
+    "Zitronensaft hilft bei milden Früchten."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zuckergehalt",
+      "wirkung": "zu wenig → bleibt flüssig"
+    },
+    {
+      "id": "ph-wert",
+      "wirkung": "sauer → geliert besser"
+    }
+  ],
+  "links": [
+    "pektin",
+    "pektin-abbau",
+    "zucker",
+    "saeure"
+  ],
+  "welten": [
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Milch, Zucker, Schokolade"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

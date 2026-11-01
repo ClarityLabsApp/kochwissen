@@ -1,0 +1,53 @@
+{
+  "typ": "zutat",
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "id": "sahne",
+  "titel": "Sahne",
+  "synonyme": [
+    "Rahm",
+    "Vollrahm",
+    "Halbrahm",
+    "Schlagrahm",
+    "Doppelrahm"
+  ],
+  "kurz": "Sahne ist Milch mit viel Fett. Mit genug Fett lässt sie sich schlagen, kochen, ohne zu gerinnen, und macht Saucen rund.",
+  "bild_im_kopf": "Wie Milch mit Extraportion Fetttröpfchen.",
+  "rolle": [
+    {
+      "rolle": "lässt sich zu Schaum schlagen",
+      "prozess": "schaumbildung"
+    },
+    {
+      "rolle": "bindet und rundet Saucen",
+      "prozess": "emulsion"
+    },
+    {
+      "rolle": "schützt Eiercremes vor Gerinnen",
+      "prozess": "eiweiss-gerinnung"
+    }
+  ],
+  "was_passiert": "Beim Schlagen verbinden sich teilweise geöffnete Fetttröpfchen zu einem Gerüst um Luftblasen. Dafür braucht es genug Fett (Vollrahm) und Kälte. Viel Fett schützt auch vor dem Gerinnen beim Kochen.",
+  "faustregeln": [
+    "Zum Schlagen Vollrahm, gut gekühlt.",
+    "Zum Kochen Vollrahm oder Doppelrahm: Halbrahm kann ausflocken."
+  ],
+  "links": [
+    "schaumbildung",
+    "sahne-wird-butter",
+    "emulsion"
+  ],
+  "welten": [
+    "w-milch",
+    "w-saucen"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Milch, Zucker, Schokolade"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

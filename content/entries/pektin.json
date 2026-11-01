@@ -1,0 +1,43 @@
+{
+  "typ": "zutat",
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "id": "pektin",
+  "titel": "Pektin",
+  "synonyme": [
+    "Gelierzucker",
+    "Apfelpektin"
+  ],
+  "kurz": "Pektin ist der Kitt in Pflanzenzellen. Mit Zucker und Säure bildet es Gele, beim Kochen von Gemüse löst es sich.",
+  "bild_im_kopf": "Derselbe Mörtel, der Gemüse zusammenhält, macht Konfitüre fest.",
+  "rolle": [
+    {
+      "rolle": "lässt Konfitüre gelieren",
+      "prozess": "gelbildung-pektin"
+    },
+    {
+      "rolle": "hält Gemüse fest",
+      "prozess": "pektin-abbau"
+    }
+  ],
+  "was_passiert": "In Früchten und Gemüse verbindet Pektin die Zellen. Herausgelöst und mit viel Zucker und Säure gekocht, bildet es ein Gel.",
+  "faustregeln": [
+    "Gelierzucker enthält schon Pektin und Säure."
+  ],
+  "links": [
+    "gelbildung-pektin",
+    "pektin-abbau"
+  ],
+  "welten": [
+    "w-suesses"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Milch, Zucker, Schokolade"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

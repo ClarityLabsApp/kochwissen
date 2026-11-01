@@ -1,0 +1,98 @@
+{
+  "typ": "symptom",
+  "welten": [
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "karamell-kristallisiert",
+  "titel": "Karamell wird körnig",
+  "synonyme": [
+    "Karamell sandig",
+    "Zucker kristallisiert",
+    "Karamell bröselig"
+  ],
+  "kurz": "Ein Zuckerkristall hat eine Kettenreaktion ausgelöst. Der Sirup wird zu Sand.",
+  "bild_im_kopf": "Wie ein umgestoßener Dominostein.",
+  "ursachen": [
+    {
+      "titel": "Gerührt",
+      "haeufigkeit": 3,
+      "prinzip": "zucker-kristallisation",
+      "warum": "Rühren bringt Kristalle in Bewegung und schafft Ansatzpunkte.",
+      "fix": [
+        "Nur schwenken",
+        "Mit etwas Wasser neu auflösen und vorsichtiger kochen"
+      ]
+    },
+    {
+      "titel": "Kristalle am Topfrand",
+      "haeufigkeit": 2,
+      "prinzip": "zucker-kristallisation",
+      "warum": "Ein ungelöstes Körnchen fällt zurück und startet die Kristallisation.",
+      "fix": [
+        "Rand mit nassem Pinsel abwaschen",
+        "Deckel kurz auflegen, damit Dampf die Kristalle löst"
+      ]
+    },
+    {
+      "titel": "Kein Störstoff",
+      "haeufigkeit": 1,
+      "prinzip": "zucker-kristallisation",
+      "warum": "Reiner Zucker kristallisiert leichter.",
+      "fix": [
+        "Ein Löffel Glukosesirup oder ein paar Tropfen Zitronensaft"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hast du gerührt, während der Zucker kochte?",
+      "antworten": [
+        [
+          "Ja",
+          "u0"
+        ],
+        [
+          "Nein",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Waren Zuckerkristalle am Topfrand?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "zucker-kristallisation",
+    "zucker-karamellisieren"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Milch, Zucker, Schokolade"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}
