@@ -29,7 +29,39 @@
   ],
   "dauer": "15 Minuten",
   "visual": {
-    "vorlage": "ablauf"
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "frisch",
+      "nachher": "nach 15 Minuten",
+      "vergleich": [
+        {
+          "label": "gesalzen",
+          "gefaess": "teller",
+          "inhalt": "scheiben",
+          "vorher": {
+            "farbe": "#cfe0a8",
+            "tropfen": 0
+          },
+          "nachher": {
+            "farbe": "#bfd396",
+            "tropfen": 1
+          }
+        },
+        {
+          "label": "ungesalzen",
+          "gefaess": "teller",
+          "inhalt": "scheiben",
+          "vorher": {
+            "farbe": "#cfe0a8",
+            "tropfen": 0
+          },
+          "nachher": {
+            "farbe": "#cfe0a8",
+            "tropfen": 0
+          }
+        }
+      ]
+    }
   },
   "status": "entwurf",
   "schwierigkeit": "einsteiger",

@@ -34,7 +34,46 @@
   ],
   "dauer": "15 Minuten",
   "visual": {
-    "vorlage": "ablauf"
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "Rotkohlsaft",
+      "nachher": "mit Zusatz",
+      "vergleich": [
+        {
+          "label": "mit Essig",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#6b3f8f"
+          },
+          "nachher": {
+            "farbe": "#d23f6e"
+          }
+        },
+        {
+          "label": "ohne Zusatz",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#6b3f8f"
+          },
+          "nachher": {
+            "farbe": "#6b3f8f"
+          }
+        },
+        {
+          "label": "mit Natron",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#6b3f8f"
+          },
+          "nachher": {
+            "farbe": "#2f8a7a"
+          }
+        }
+      ]
+    }
   },
   "sicherheit": "Heißes Wasser: Erwachsene übergießen.",
   "status": "entwurf",

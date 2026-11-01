@@ -29,7 +29,46 @@
   ],
   "dauer": "30 Minuten",
   "visual": {
-    "vorlage": "ablauf"
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "frisch geschnitten",
+      "nachher": "nach 30 Minuten",
+      "vergleich": [
+        {
+          "label": "an der Luft",
+          "gefaess": "teller",
+          "inhalt": "apfel",
+          "vorher": {
+            "farbe": "#f6efc9"
+          },
+          "nachher": {
+            "farbe": "#b88a4f"
+          }
+        },
+        {
+          "label": "mit Zitrone",
+          "gefaess": "teller",
+          "inhalt": "apfel",
+          "vorher": {
+            "farbe": "#f6efc9"
+          },
+          "nachher": {
+            "farbe": "#f1e7bb"
+          }
+        },
+        {
+          "label": "im Wasser",
+          "gefaess": "teller",
+          "inhalt": "apfel",
+          "vorher": {
+            "farbe": "#f6efc9"
+          },
+          "nachher": {
+            "farbe": "#efe6bf"
+          }
+        }
+      ]
+    }
   },
   "status": "entwurf",
   "schwierigkeit": "einsteiger",

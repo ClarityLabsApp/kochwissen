@@ -29,7 +29,32 @@
   ],
   "dauer": "40 Minuten",
   "visual": {
-    "vorlage": "ablauf"
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "Teigball im Wasser",
+      "nachher": "ausgewaschen",
+      "vergleich": [
+        {
+          "label": "Schüssel",
+          "gefaess": "schuessel",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#eaf1f4",
+            "fuell": 0.8,
+            "trueb": 0,
+            "klumpen": 1,
+            "klumpenfarbe": "#ecdcb4"
+          },
+          "nachher": {
+            "farbe": "#eaf1f4",
+            "fuell": 0.8,
+            "trueb": 0.8,
+            "klumpen": 0.35,
+            "klumpenfarbe": "#c9b07a"
+          }
+        }
+      ]
+    }
   },
   "status": "entwurf",
   "schwierigkeit": "einsteiger",

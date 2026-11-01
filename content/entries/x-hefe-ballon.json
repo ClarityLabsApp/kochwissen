@@ -30,7 +30,48 @@
   ],
   "dauer": "45 Minuten",
   "visual": {
-    "vorlage": "ablauf"
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "Start",
+      "nachher": "nach 40 Minuten",
+      "vergleich": [
+        {
+          "label": "lauwarmes Wasser",
+          "gefaess": "flasche",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#efe2c4",
+            "fuell": 0.35,
+            "ballon": 0,
+            "blasen": 0
+          },
+          "nachher": {
+            "farbe": "#efe2c4",
+            "fuell": 0.35,
+            "ballon": 1,
+            "blasen": 0.8,
+            "schaum": 0.3
+          }
+        },
+        {
+          "label": "kaltes Wasser",
+          "gefaess": "flasche",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#efe2c4",
+            "fuell": 0.35,
+            "ballon": 0,
+            "blasen": 0
+          },
+          "nachher": {
+            "farbe": "#efe2c4",
+            "fuell": 0.35,
+            "ballon": 0.2,
+            "blasen": 0.2
+          }
+        }
+      ]
+    }
   },
   "status": "entwurf",
   "schwierigkeit": "einsteiger",

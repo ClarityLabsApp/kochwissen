@@ -36,7 +36,7 @@ Gilt für jeden Text in einem Eintrag.
 4. **Was passiert → warum wichtig → woran drehen.** In dieser Reihenfolge denken.
 5. **Faustregeln sind handfest.** Etwas, das man morgen in der Küche anders macht. Höchstens fünf.
 6. **Zahlen nur, wenn sie stimmen.** Temperaturen und Mengen mit Quelle, sonst als Richtwert kennzeichnen.
-7. **Fachbegriffe markieren.** Jedes Wort, das ein Hobbykoch nicht sicher kennt, beim ersten Vorkommen als `[[id]]` oder `[[id|Anzeigetext]]`. Fehlt der Begriff, einen `begriff`-Eintrag anlegen (ein Satz in `kurz`). Beispiel: `[[arosieren|Arosieren]]`.
+7. **Fachbegriffe markieren.** Nach dem Schreiben `npm run glossar` laufen lassen. Jedes Wort, das ein Hobbykoch nicht sicher kennt, beim ersten Vorkommen als `[[id]]` oder `[[id|Anzeigetext]]`. Fehlt der Begriff, einen `begriff`-Eintrag anlegen (ein Satz in `kurz`). Beispiel: `[[arosieren|Arosieren]]`.
 8. **Mythen nur, wenn sie wirklich verbreitet sind.** Behauptung, dann die Richtigstellung in einem Satz.
 9. **Schweizer Küche ist willkommen** (Ruchmehl, HOLL-Rapsöl, Bratbutter), Text bleibt Hochdeutsch mit ß.
 10. **Kein Werbeton.** Keine Ausrufezeichen, keine Emojis, kein „ganz einfach“, kein „Geheimtipp“.
@@ -71,17 +71,19 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - `PanTest` – Symptome mit `vorlage: pfannentest`, `params.variante`: pfanne | backblech | fritteuse
 - `DotNet` – Ziele (Hebel ↔ Techniken) und Zutaten (Rolle ↔ Vorgang)
 - `Spectrum` – Skala für Stellschrauben und Anthocyane (`params.links`, `mitte`, `rechts`)
-- `ParticleSim` – Canvas-Simulationen pro Prozess (emulsion, osmose, pektin-abbau, reduktion, hefegaerung, chemische-lockerung, waermeleitung, schaumbildung, diffusion, zucker-kristallisation, leidenfrost, gelbildung-pektin, chlorophyll-farbe, eiweiss-denaturierung). Neue Presets dort anlegen und in `SIMS` in `Visual.tsx` eintragen
-- Prototypen in `public/prototypen/` (Maillard, Gluten, Steak grau) werden per iframe eingebettet
+- `ParticleSim` – Canvas-Simulationen pro Prozess (emulsion, osmose, pektin-abbau, reduktion, hefegaerung, chemische-lockerung, waermeleitung, schaumbildung, diffusion, zucker-kristallisation, leidenfrost, gelbildung-pektin, chlorophyll-farbe, eiweiss-denaturierung, glutenbildung, karamellisierung). Neue Presets dort anlegen und in `SIMS` in `Visual.tsx` eintragen
+- `MaillardSim` – Maillard-Reaktion in drei Zoomstufen (Gericht, Oberfläche, Moleküle), ersetzt den alten Prototyp
+- `ExperimentCompare` – Vorher-Nachher für Experimente: `vorlage: vergleich`, `params.vergleich` = Felder mit `gefaess` (glas, flasche, schuessel, teller, pfanne), `inhalt`, `vorher`/`nachher` (farbe, fuell, trueb, schaum, blasen, ballon, kristalle, tropfen, klumpen, bodensatz, tanzen)
+- Nur noch der Prototyp „Steak grau“ wird per iframe eingebettet
 
 ## Offene Aufgaben
 
-- [ ] Weitere Simulationen: Glutenbildung als Komponente, Eiweiß-Denaturierung, Schaumbildung, Karamellisierung
-- [ ] Maillard und Gluten-Prototyp als echte React-Komponenten portieren (statt iframe)
+- [x] Simulationen Gluten-Netz und Karamellisierung, Maillard als React-Komponente (2. November 2026)
+- [ ] „Steak grau“-Prototyp in die Seite übernehmen (PanTest erweitern)
 - [x] Alle 197 Einträge der Masterliste als Entwurf geschrieben (1. November 2026)
 - [ ] Review durch Phil: Status von `entwurf` auf `geprueft`
 - [x] 15 Gerichte und 12 Experimente ergänzt (Generator `scripts/batches/gen_batch_gerichte_experimente.py`)
-- [ ] Weitere Gerichte und Experimente; eigene Grafik für Experimente (Vorher/Nachher)
+- [ ] Weitere Gerichte und Experimente (Vorher-Nachher-Grafik steht, neue Experimente brauchen `params.vergleich`)
 - [ ] Semantische Suche (z. B. pgvector) als Ergänzung; bis dahin fehlende Alltagswörter in `THESAURUS` nachtragen
 - [x] 45 Aquarell-Illustrationen (Welten und Zutaten) in `public/illustrationen/<id>.webp`, Anzeige im Seitenkopf. Neue Motive: `visual.illustration` setzen, `npm run illustrationen -- --only id1,id2` (schreibt WebP mit transparentem Hintergrund; ältere Bilder wurden per Skript freigestellt und beschnitten)
-- [ ] Prüfung für unmarkierte Fachbegriffe im Validator
+- [x] Glossar-Prüfung: `npm run glossar` (Bericht), `npm run glossar -- --fix` (verlinkt erstes Vorkommen). Fachwörter und Ausnahmen in `scripts/glossar.mjs`

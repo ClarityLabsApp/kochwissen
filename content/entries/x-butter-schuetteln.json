@@ -30,7 +30,30 @@
   ],
   "dauer": "20 Minuten",
   "visual": {
-    "vorlage": "ablauf"
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "Sahne",
+      "nachher": "nach 15 Minuten",
+      "vergleich": [
+        {
+          "label": "Schraubglas",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#fbf7ec",
+            "fuell": 0.55,
+            "klumpen": 0,
+            "klumpenfarbe": "#f2d36b"
+          },
+          "nachher": {
+            "farbe": "#f3f0e6",
+            "fuell": 0.35,
+            "klumpen": 1,
+            "klumpenfarbe": "#f2d36b"
+          }
+        }
+      ]
+    }
   },
   "status": "entwurf",
   "schwierigkeit": "einsteiger",

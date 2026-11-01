@@ -6,6 +6,7 @@ import DotNet, { type NetNode } from "./DotNet";
 import ParticleSim, { type Preset } from "./ParticleSim";
 import Spectrum from "./Spectrum";
 import MaillardSim from "./MaillardSim";
+import ExperimentCompare, { type Feld } from "./ExperimentCompare";
 
 // Muss hier stehen: Funktionen aus Client-Modulen sind auf dem Server nicht aufrufbar.
 const SIMS = new Set<string>(["emulsion", "osmose", "pektin-abbau", "reduktion", "hefegaerung", "chemische-lockerung", "waermeleitung", "schaumbildung", "diffusion", "zucker-kristallisation", "leidenfrost", "gelbildung-pektin", "chlorophyll-farbe", "eiweiss-denaturierung", "glutenbildung", "karamellisierung"]);
@@ -42,6 +43,9 @@ export default function Visual({ e }: { e: Entry }) {
   const p = (e.visual?.params ?? {}) as Record<string, unknown>;
   const blocks: React.ReactNode[] = [];
 
+  if (e.visual?.vorlage === "vergleich" && Array.isArray(p.vergleich)) {
+    blocks.push(<ExperimentCompare key="xp" felder={p.vergleich as Feld[]} vorher={typeof p.vorher === "string" ? p.vorher : undefined} nachher={typeof p.nachher === "string" ? p.nachher : undefined} />);
+  }
   if (e.id === "maillard-reaktion") blocks.push(<MaillardSim key="maillard" />);
   if (hasSim(e.id)) blocks.push(<ParticleSim key="sim" preset={e.id} />);
 

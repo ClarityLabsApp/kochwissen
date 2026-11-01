@@ -29,7 +29,41 @@
   ],
   "dauer": "5 Minuten",
   "visual": {
-    "vorlage": "ablauf"
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "Backpulver rein",
+      "nachher": "nach 1 Minute",
+      "vergleich": [
+        {
+          "label": "kaltes Wasser",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#eaf1f4",
+            "blasen": 0
+          },
+          "nachher": {
+            "farbe": "#eaf1f4",
+            "blasen": 0.3,
+            "schaum": 0.1
+          }
+        },
+        {
+          "label": "heißes Wasser",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#eaf1f4",
+            "blasen": 0
+          },
+          "nachher": {
+            "farbe": "#eaf1f4",
+            "blasen": 1,
+            "schaum": 0.7
+          }
+        }
+      ]
+    }
   },
   "sicherheit": "Heißes Wasser: Erwachsene gießen.",
   "status": "entwurf",

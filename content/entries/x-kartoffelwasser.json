@@ -29,7 +29,28 @@
   ],
   "dauer": "1½ Stunden",
   "visual": {
-    "vorlage": "ablauf"
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "frisch",
+      "nachher": "nach einer Stunde",
+      "vergleich": [
+        {
+          "label": "Wasser der Kartoffelstifte",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#eaf1f4",
+            "trueb": 0,
+            "bodensatz": 0
+          },
+          "nachher": {
+            "farbe": "#eaf1f4",
+            "trueb": 0.55,
+            "bodensatz": 0.9
+          }
+        }
+      ]
+    }
   },
   "status": "entwurf",
   "schwierigkeit": "einsteiger",

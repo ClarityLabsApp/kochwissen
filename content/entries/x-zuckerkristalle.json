@@ -30,7 +30,28 @@
   ],
   "dauer": "einige Tage",
   "visual": {
-    "vorlage": "ablauf"
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "erster Tag",
+      "nachher": "nach einigen Tagen",
+      "vergleich": [
+        {
+          "label": "Zuckerlösung",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "spiess": true,
+          "vorher": {
+            "farbe": "#f6eccd",
+            "kristalle": 0
+          },
+          "nachher": {
+            "farbe": "#f6eccd",
+            "fuell": 0.6,
+            "kristalle": 1
+          }
+        }
+      ]
+    }
   },
   "sicherheit": "Heißer Zuckersirup: nur Erwachsene kochen und gießen.",
   "status": "entwurf",

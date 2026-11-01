@@ -31,7 +31,46 @@
   ],
   "dauer": "20 Minuten",
   "visual": {
-    "vorlage": "ablauf"
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "roh",
+      "nachher": "gekocht",
+      "vergleich": [
+        {
+          "label": "2 Minuten",
+          "gefaess": "teller",
+          "inhalt": "bohnen",
+          "vorher": {
+            "farbe": "#68964a"
+          },
+          "nachher": {
+            "farbe": "#34a846"
+          }
+        },
+        {
+          "label": "10 Minuten",
+          "gefaess": "teller",
+          "inhalt": "bohnen",
+          "vorher": {
+            "farbe": "#68964a"
+          },
+          "nachher": {
+            "farbe": "#6f8a44"
+          }
+        },
+        {
+          "label": "10 Min. mit Säure",
+          "gefaess": "teller",
+          "inhalt": "bohnen",
+          "vorher": {
+            "farbe": "#68964a"
+          },
+          "nachher": {
+            "farbe": "#8a8642"
+          }
+        }
+      ]
+    }
   },
   "sicherheit": "Kochendes Wasser: nur mit Erwachsenen.",
   "status": "entwurf",

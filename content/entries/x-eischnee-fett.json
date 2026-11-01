@@ -31,7 +31,43 @@
   ],
   "dauer": "10 Minuten",
   "visual": {
-    "vorlage": "ablauf"
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "Eiweiß",
+      "nachher": "nach dem Schlagen",
+      "vergleich": [
+        {
+          "label": "ohne Fett",
+          "gefaess": "schuessel",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#f3efd9",
+            "fuell": 0.4,
+            "schaum": 0
+          },
+          "nachher": {
+            "farbe": "#f3efd9",
+            "fuell": 0.4,
+            "schaum": 1
+          }
+        },
+        {
+          "label": "ein Tropfen Eigelb",
+          "gefaess": "schuessel",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#f3efd9",
+            "fuell": 0.4,
+            "schaum": 0
+          },
+          "nachher": {
+            "farbe": "#f3efd9",
+            "fuell": 0.4,
+            "schaum": 0.22
+          }
+        }
+      ]
+    }
   },
   "status": "entwurf",
   "schwierigkeit": "einsteiger",
