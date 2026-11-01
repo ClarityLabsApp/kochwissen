@@ -1,0 +1,41 @@
+{
+  "id": "x-kartoffelwasser",
+  "typ": "experiment",
+  "titel": "Trübes Kartoffelwasser",
+  "synonyme": [
+    "Kartoffelstärke sichtbar machen",
+    "Stärke Experiment"
+  ],
+  "kurz": "Geschnittene Kartoffeln geben Stärke ins Wasser ab, und man kann sie sogar sehen.",
+  "material": [
+    "eine Kartoffel",
+    "Schüssel mit kaltem Wasser",
+    "ein Glas"
+  ],
+  "schritte": [
+    "Kartoffel in Stifte schneiden und ins Wasser legen.",
+    "Nach 30 Minuten die Stifte herausnehmen.",
+    "Das Wasser in ein Glas gießen und eine Stunde stehen lassen."
+  ],
+  "beobachtung": "Das Wasser ist trüb, und am Boden des Glases setzt sich eine weiße Schicht ab.",
+  "erklaerung": "Das ist Stärke, die beim Schneiden aus den Zellen gefallen ist. Abgespült klebt sie nicht mehr an der Oberfläche, darum werden gewässerte Pommes knuspriger.",
+  "links": [
+    "kaltwasserbad",
+    "staerke",
+    "staerkeverkleisterung"
+  ],
+  "welten": [
+    "w-kartoffeln"
+  ],
+  "dauer": "1½ Stunden",
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

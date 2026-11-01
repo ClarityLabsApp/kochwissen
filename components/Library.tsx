@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { search } from "@/lib/search";
 
 export interface LibItem {
   id: string; typ: string; titel: string; status: string; pilot: boolean;
@@ -9,6 +10,8 @@ export interface LibItem {
 
 const TYPES: [string, string, string][] = [
   ["ziel", "Ziele", "Was will ich erreichen?"],
+  ["gericht", "Gerichte", "Warum funktioniert dieses Rezept?"],
+  ["experiment", "Experimente", "Zum Ausprobieren in der Küche"],
   ["symptom", "Symptome", "Was ist schiefgelaufen?"],
   ["prozess", "Prozesse", "Was passiert beim Kochen?"],
   ["technik", "Techniken", "Welcher Handgriff hilft?"],
@@ -17,39 +20,15 @@ const TYPES: [string, string, string][] = [
   ["welt", "Lebensmittel-Welten", "Wo begegnet mir das?"],
   ["begriff", "Begriffe", "Was heißt das Wort?"],
 ];
-const SING: Record<string, string> = { prozess: "Prozess", ziel: "Ziel", technik: "Technik", symptom: "Symptom", zutat: "Zutat", stellschraube: "Stellschraube", welt: "Welt", begriff: "Begriff" };
-const EXAMPLES = ["Wie werden meine Wedges knuspriger?", "Fleisch wird trocken", "Sauce zu dünn", "Brot luftiger", "Gemüse bleibt grün"];
-const STOP = new Set("wie wird werden meine mein mache machen ich kann man was warum der die das den dem ein eine einen und oder mit beim bei zu zum zur ist sind nicht noch mehr immer so viel".split(" "));
-const norm = (s: string) => s.toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss").replace(/[^a-z0-9 ]/g, " ");
-const stem = (w: string) => (w.length > 5 ? w.slice(0, Math.max(5, w.length - 3)) : w);
-
-/** Einfache Wortsuche mit Stammformen. Später: semantische Suche (pgvector). */
-function search(items: LibItem[], q: string): Map<string, number> | null {
-  const terms = norm(q).split(/\s+/).filter((w) => w.length > 2 && !STOP.has(w)).map(stem);
-  if (!terms.length) return null;
-  const byId = new Map(items.map((e) => [e.id, e]));
-  const hits: [LibItem, number][] = [];
-  for (const e of items) {
-    const words = norm([e.titel, ...e.synonyme].join(" ")).split(/\s+/).filter(Boolean);
-    let s = 0;
-    for (const t of terms) if (words.some((w) => w.startsWith(t) || (t.length >= 5 && w.length >= 4 && t.startsWith(stem(w))))) s++;
-    if (s) hits.push([e, s + (e.typ === "ziel" || e.typ === "technik" ? 0.3 : 0) + (e.typ === "symptom" ? 0.2 : 0)]);
-  }
-  hits.sort((a, b) => b[1] - a[1]);
-  const best = hits[0]?.[1] ?? 0;
-  const seen = new Set(hits.map((h) => h[0].id));
-  for (const [e, s] of [...hits]) if (s >= best - 0.01) for (const l of [...e.links, ...e.verlinkt_von]) {
-    const n = byId.get(l);
-    if (n && !seen.has(l)) { seen.add(l); hits.push([n, 0.5]); }
-  }
-  return new Map(hits.map(([e, s]) => [e.id, s]));
-}
-
+const SING: Record<string, string> = { prozess: "Prozess", ziel: "Ziel", technik: "Technik", symptom: "Symptom", zutat: "Zutat", stellschraube: "Stellschraube", welt: "Welt", begriff: "Begriff", gericht: "Gericht", experiment: "Experiment" };
+const EXAMPLES = ["Wie werden meine Wedges knuspriger?", "Fleisch wird trocken", "Sauce zu dünn", "Rösti", "Experiment für Kinder", "Mayo gerinnt"];
 export default function Library({ items }: { items: LibItem[] }) {
   const [q, setQ] = useState("");
   const [active, setActive] = useState<Set<string>>(new Set());
   const [onlyWritten, setOnlyWritten] = useState(false);
-  const res = useMemo(() => (q.trim() ? search(items, q) : null), [items, q]);
+  const found = useMemo(() => (q.trim() ? search(items, q) : null), [items, q]);
+  const res = found?.scores ?? null;
+  const best = found?.best ?? null;
   const isWritten = (e: LibItem) => e.status !== "geplant";
 
   let list = items.filter((e) => (!active.size || active.has(e.typ)) && (!onlyWritten || isWritten(e)) && (!res || res.has(e.id)));
@@ -63,6 +42,14 @@ export default function Library({ items }: { items: LibItem[] }) {
         <input id="q" type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="z. B. Wie werden meine Wedges knuspriger?" autoComplete="off" />
         <div className="examples">{EXAMPLES.map((x) => <button key={x} type="button" onClick={() => setQ(x)}>{x}</button>)}</div>
       </div>
+      {best && (
+        <Link href={`/eintrag/${best.id}`} className="bestcard">
+          <span className="mono"><i style={{ background: `var(--t-${best.typ})` }} />Beste Antwort · {SING[best.typ]}</span>
+          <strong>{best.titel}</strong>
+          {best.kurz && <span className="k">{best.kurz.replace(/\[\[[a-z0-9-]+\|([^\]]+)\]\]/g, "$1").replace(/\[\[([a-z0-9-]+)\]\]/g, (_, id) => id.replace(/-/g, " "))}</span>}
+          <span className="go">Eintrag öffnen →</span>
+        </Link>
+      )}
       <div className="typechips" role="group" aria-label="Eintragstyp">
         {TYPES.map(([t, name]) => {
           const n = items.filter((e) => e.typ === t).length;
@@ -98,7 +85,7 @@ export default function Library({ items }: { items: LibItem[] }) {
             </details>
           );
         })}
-        {!list.length && <p className="count">Nichts gefunden. Versuche ein anderes Wort, z. B. „saftig“ oder „Sauce“.</p>}
+        {!list.length && <p className="count">Nichts gefunden. Versuche ein anderes Wort, z. B. „saftig“, „Sauce“ oder „Experiment“.</p>}
       </div>
     </>
   );

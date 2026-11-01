@@ -1,0 +1,47 @@
+{
+  "id": "x-rotkohl-indikator",
+  "typ": "experiment",
+  "titel": "Rotkohl als Farbzauber",
+  "synonyme": [
+    "Rotkohl Experiment",
+    "Säuretest",
+    "pH Experiment Kinder"
+  ],
+  "kurz": "Rotkohlsaft zeigt mit seiner Farbe, ob etwas sauer oder basisch ist.",
+  "material": [
+    "ein paar Blätter Rotkohl",
+    "heißes Wasser",
+    "drei Gläser",
+    "Essig oder Zitronensaft",
+    "Natron"
+  ],
+  "schritte": [
+    "Rotkohl klein schneiden, mit heißem Wasser übergießen, 10 Minuten ziehen lassen.",
+    "Den violetten Saft auf drei Gläser verteilen.",
+    "In ein Glas Essig geben, in eines eine Messerspitze Natron, das dritte bleibt so.",
+    "Farben vergleichen."
+  ],
+  "beobachtung": "Mit Essig wird der Saft pink bis rot, mit Natron blau bis grün, ohne Zusatz bleibt er violett.",
+  "erklaerung": "Die Farbstoffe im Rotkohl (Anthocyane) ändern ihre Form mit dem pH-Wert. Darum gehört Apfel oder Essig in Rotkohl, wenn er rot bleiben soll.",
+  "links": [
+    "anthocyan-farbe",
+    "ph-wert",
+    "saeure",
+    "natron"
+  ],
+  "welten": [
+    "w-gemuese"
+  ],
+  "dauer": "15 Minuten",
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "sicherheit": "Heißes Wasser: Erwachsene übergießen.",
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

@@ -106,6 +106,22 @@ export default function EntryPage({ params }: { params: { id: string } }) {
         {e.bedeutung && <div className="block"><h2>Was {e.titel} bedeutet</h2><div className="prose"><p><RichText text={e.bedeutung} /></p></div></div>}
         {e.was_passiert && <div className="block"><h2>Was passiert</h2><div className="prose"><p><RichText text={e.was_passiert} /></p></div></div>}
         {e.warum_wichtig && <div className="block"><h2>Warum wichtig</h2><div className="prose"><p><RichText text={e.warum_wichtig} /></p></div></div>}
+        {e.schluesselmomente?.length ? (
+          <div className="block"><h2>Die entscheidenden Momente</h2>
+            <ol className="moments">{e.schluesselmomente.map((m, i) => (
+              <li key={m.schritt}><span className="n">{i + 1}</span><div>
+                <strong>{m.schritt}</strong><p><RichText text={m.warum} /></p>
+                {m.prinzip && <Link className="chip" href={`/eintrag/${m.prinzip}`}><i style={{ background: `var(--t-${typOf(m.prinzip)})` }} />{titleOf(m.prinzip)}</Link>}
+              </div></li>
+            ))}</ol>
+          </div>
+        ) : null}
+        {e.typ === "experiment" && e.material?.length ? (
+          <div className="exp"><span className="mono">Du brauchst{e.dauer ? ` · ${e.dauer}` : ""}</span>
+            <ul className="plain">{e.material.map((m) => <li key={m}>{m}</li>)}</ul>
+            {e.sicherheit && <p className="safety">{e.sicherheit}</p>}
+          </div>
+        ) : null}
         {e.ursachen && e.diagnose && (
           <div className="block"><h2>Was ist bei dir passiert?</h2><Diagnosis tree={e.diagnose} causes={e.ursachen} principleTitles={principleTitles} /></div>
         )}
@@ -136,6 +152,8 @@ export default function EntryPage({ params }: { params: { id: string } }) {
             ))}</ul>
           </div>
         )}
+        {e.beobachtung && <div className="block"><h2>Was du siehst</h2><div className="prose"><p><RichText text={e.beobachtung} /></p></div></div>}
+        {e.erklaerung && <div className="box"><span className="mono">Warum das passiert</span><p><RichText text={e.erklaerung} /></p></div>}
         {e.mythos && <div className="myth"><span className="stamp">MYTHOS</span><p>„{e.mythos.behauptung}“ <RichText text={e.mythos.richtig} /></p></div>}
         {e.praxis?.length ? (
           <div className="block"><h2>In der Praxis</h2>

@@ -1,0 +1,54 @@
+{
+  "id": "g-wiener-schnitzel",
+  "typ": "gericht",
+  "titel": "Wiener Schnitzel",
+  "synonyme": [
+    "Schnitzel",
+    "paniertes Schnitzel",
+    "Kalbsschnitzel"
+  ],
+  "kurz": "Die soufflierte Panade entsteht, weil Dampf aus dem Fleisch die Panade abhebt, während sie im heißen Fett knusprig wird.",
+  "bild_im_kopf": "Wie ein Zelt, das sich über dem Fleisch aufbläht.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Dünn klopfen",
+      "warum": "Dünnes Fleisch ist gar, bevor die Panade verbrennt.",
+      "prinzip": "waermeleitung"
+    },
+    {
+      "schritt": "Mehl, Ei, Paniermehl, nicht andrücken",
+      "warum": "Lose Panade kann sich vom Fleisch heben und Wellen werfen.",
+      "prinzip": "panieren"
+    },
+    {
+      "schritt": "In reichlich heißem Fett schwimmend backen und die Pfanne schwenken",
+      "warum": "Heißes Fett läuft über die Oberseite. Dampf aus dem Fleisch bläht die Panade auf.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "Auf Küchenpapier oder Gitter kurz abtropfen",
+      "warum": "Abtropfen verhindert, dass die Panade Fett nachzieht.",
+      "prinzip": "frittiertes-fettig"
+    }
+  ],
+  "links": [
+    "panieren",
+    "panade-faellt-ab",
+    "verdampfen",
+    "knusprig"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-frittieren"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

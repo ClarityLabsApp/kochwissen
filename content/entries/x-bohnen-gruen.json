@@ -1,0 +1,44 @@
+{
+  "id": "x-bohnen-gruen",
+  "typ": "experiment",
+  "titel": "Grüne Bohnen: grün oder grau?",
+  "synonyme": [
+    "Chlorophyll Experiment",
+    "Gemüse Farbe Experiment"
+  ],
+  "kurz": "Dieselben Bohnen werden leuchtend grün oder olivgrau, je nach Kochzeit und Säure.",
+  "material": [
+    "eine Handvoll grüne Bohnen",
+    "zwei Töpfe Wasser",
+    "Zitronensaft",
+    "eine Schüssel Eiswasser"
+  ],
+  "schritte": [
+    "Beide Töpfe zum Kochen bringen, in einen einen Schuss Zitronensaft.",
+    "Bohnen auf beide Töpfe verteilen.",
+    "Nach 2 Minuten je einige Bohnen ins Eiswasser legen, die übrigen 10 Minuten weiterkochen.",
+    "Alle vergleichen."
+  ],
+  "beobachtung": "Nach 2 Minuten leuchten die Bohnen. Nach 10 Minuten sind sie trüber, im sauren Topf deutlich olivgrün.",
+  "erklaerung": "Kurzes Kochen treibt Luft aus dem Gewebe, das Grün leuchtet. Längeres Kochen und Säure verwandeln das Chlorophyll in einen olivbraunen Farbstoff.",
+  "links": [
+    "chlorophyll-farbe",
+    "blanchieren",
+    "gemuese-grau"
+  ],
+  "welten": [
+    "w-gemuese"
+  ],
+  "dauer": "20 Minuten",
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "sicherheit": "Kochendes Wasser: nur mit Erwachsenen.",
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

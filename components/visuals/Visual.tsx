@@ -23,7 +23,7 @@ export function marksOf(e: Entry): Mark[] {
 }
 
 const TYPE_COLOR: Record<string, string> = {
-  prozess: "#2f6f73", zutat: "#b8873a", stellschraube: "#7a5a3a", symptom: "#b4542a", ziel: "#6b3a1e", technik: "#8c2f2a", welt: "#3a3633", begriff: "#7fb0ac",
+  prozess: "#2f6f73", zutat: "#b8873a", stellschraube: "#7a5a3a", symptom: "#b4542a", ziel: "#6b3a1e", technik: "#8c2f2a", welt: "#3a3633", begriff: "#7fb0ac", gericht: "#9a6b2f", experiment: "#4f7a3a",
 };
 const short = (s: string, n = 20) => {
   const t = s.replace(/\s*\(.*?\)\s*/g, " ").replace(/:.*$/, "").trim();

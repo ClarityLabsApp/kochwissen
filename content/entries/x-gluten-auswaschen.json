@@ -1,0 +1,41 @@
+{
+  "id": "x-gluten-auswaschen",
+  "typ": "experiment",
+  "titel": "Gluten sichtbar machen",
+  "synonyme": [
+    "Gluten auswaschen",
+    "Kleber Experiment"
+  ],
+  "kurz": "Wäscht man einen Teigball unter Wasser aus, bleibt das Glutennetz übrig: ein zäher, gummiartiger Klumpen.",
+  "material": [
+    "100 g Weißmehl",
+    "60 ml Wasser",
+    "eine Schüssel Wasser"
+  ],
+  "schritte": [
+    "Mehl und Wasser zu einem Teig kneten, 20 Minuten ruhen lassen.",
+    "Den Teigball in der Schüssel Wasser kneten und drücken.",
+    "Das trübe Wasser wechseln, bis es fast klar bleibt."
+  ],
+  "beobachtung": "Das Wasser wird milchig weiß. Übrig bleibt ein kleiner, sehr dehnbarer, gummiartiger Klumpen.",
+  "erklaerung": "Das Milchige ist ausgewaschene Stärke, der Klumpen ist reines Gluten. Ziehe ihn auseinander: So hält er im Brot die Gasblasen fest.",
+  "links": [
+    "glutenbildung",
+    "mehl",
+    "staerke"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "dauer": "40 Minuten",
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

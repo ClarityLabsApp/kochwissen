@@ -1,0 +1,51 @@
+{
+  "id": "g-ofengemuese",
+  "typ": "gericht",
+  "titel": "Ofengemüse",
+  "synonyme": [
+    "geröstetes Gemüse",
+    "Blechgemüse"
+  ],
+  "kurz": "Ofengemüse wird süß und gebräunt statt gedämpft, wenn es trocken, mit Abstand und heiß in den Ofen kommt.",
+  "bild_im_kopf": "Wäsche aufhängen statt auf einem Haufen trocknen.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Gleich große Stücke schneiden",
+      "warum": "Alles wird gleichzeitig gar.",
+      "prinzip": "oberflaeche"
+    },
+    {
+      "schritt": "Trocknen und dünn mit Öl mischen",
+      "warum": "Öl leitet Hitze in jede Ecke, Wasser würde bremsen.",
+      "prinzip": "oel"
+    },
+    {
+      "schritt": "Mit Abstand auf das vorgeheizte Blech",
+      "warum": "Dampf kann entweichen, die Unterseite bräunt sofort.",
+      "prinzip": "roesten-ofen"
+    },
+    {
+      "schritt": "Bei 220 °C rösten, einmal wenden",
+      "warum": "Maillard und Karamellisierung machen das Gemüse süß und aromatisch.",
+      "prinzip": "maillard-reaktion"
+    }
+  ],
+  "links": [
+    "roesten-ofen",
+    "maillard-reaktion",
+    "knusprig"
+  ],
+  "welten": [
+    "w-gemuese"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

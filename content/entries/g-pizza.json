@@ -1,0 +1,52 @@
+{
+  "id": "g-pizza",
+  "typ": "gericht",
+  "titel": "Pizza",
+  "synonyme": [
+    "Pizzateig",
+    "Pizza napoletana"
+  ],
+  "kurz": "Eine gute Pizza braucht einen dehnbaren Teig mit Geschmack und einen Ofen, der so heiß ist wie möglich.",
+  "bild_im_kopf": "Ein Ballon, der in Sekunden aufbläht und fest wird.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Teig lange und kühl gehen lassen",
+      "warum": "Mehr Aroma, dehnbareres Netz.",
+      "prinzip": "kalte-gare"
+    },
+    {
+      "schritt": "Vor dem Ausziehen temperieren und ruhen lassen",
+      "warum": "Entspanntes Gluten schnurrt nicht zurück.",
+      "prinzip": "teig-schnurrt"
+    },
+    {
+      "schritt": "Von Hand ausziehen, Rand nicht flach drücken",
+      "warum": "Die Gasblasen im Rand machen den luftigen Cornicione.",
+      "prinzip": "grosse-poren"
+    },
+    {
+      "schritt": "Auf vorgeheiztem Stein oder Stahl so heiß wie möglich backen",
+      "warum": "Starke Hitze von unten gibt Ofentrieb und Kruste, bevor der Belag austrocknet.",
+      "prinzip": "waermeleitung"
+    }
+  ],
+  "links": [
+    "glutenbildung",
+    "kalte-gare",
+    "teig-schnurrt",
+    "maillard-reaktion"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

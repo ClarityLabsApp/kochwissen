@@ -1,0 +1,42 @@
+{
+  "id": "x-backpulver-kalt-heiss",
+  "typ": "experiment",
+  "titel": "Backpulver: kalt gegen heiß",
+  "synonyme": [
+    "Backpulver Experiment",
+    "Triebmittel testen"
+  ],
+  "kurz": "Backpulver sprudelt zweimal: einmal, wenn es nass wird, und noch einmal in der Hitze.",
+  "material": [
+    "Backpulver",
+    "zwei Gläser",
+    "kaltes Wasser",
+    "heißes Wasser"
+  ],
+  "schritte": [
+    "In beide Gläser je einen Teelöffel Backpulver geben.",
+    "Ins erste kaltes Wasser gießen, ins zweite heißes.",
+    "Beobachten, wo es stärker sprudelt."
+  ],
+  "beobachtung": "Im kalten Glas sprudelt es leicht, im heißen deutlich stärker.",
+  "erklaerung": "Backpulver enthält zwei Säuren: Eine reagiert schon mit Wasser, die andere erst bei Hitze. So geht der Kuchen genau im Ofen richtig auf.",
+  "links": [
+    "chemische-lockerung",
+    "backpulver"
+  ],
+  "welten": [
+    "w-gebaeck"
+  ],
+  "dauer": "5 Minuten",
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "sicherheit": "Heißes Wasser: Erwachsene gießen.",
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

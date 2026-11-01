@@ -1,0 +1,54 @@
+{
+  "id": "g-pommes",
+  "typ": "gericht",
+  "titel": "Pommes frites",
+  "synonyme": [
+    "Pommes",
+    "Fritten",
+    "French Fries"
+  ],
+  "kurz": "Knusprige Pommes entstehen in zwei Bädern: erst garen, dann trocknen und bräunen.",
+  "bild_im_kopf": "Erst Grundierung, dann Lack.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Schneiden und kalt wässern",
+      "warum": "Spült losen Stärkefilm ab, der klebt und zu früh bräunt.",
+      "prinzip": "kaltwasserbad"
+    },
+    {
+      "schritt": "Sehr gut trocknen",
+      "warum": "Wasser auf der Oberfläche kostet Hitze und spritzt.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "Bei etwa 160 °C hell vorfrittieren und abkühlen lassen",
+      "warum": "Das Innere gart, eine dünne Haut bildet sich.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Bei etwa 190 °C goldbraun frittieren",
+      "warum": "Die Haut trocknet schnell aus und wird knusprig.",
+      "prinzip": "zweimal-frittieren"
+    }
+  ],
+  "links": [
+    "zweimal-frittieren",
+    "kaltwasserbad",
+    "knusprig",
+    "frittiertes-fettig"
+  ],
+  "welten": [
+    "w-kartoffeln",
+    "w-frittieren"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

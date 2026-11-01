@@ -1,0 +1,43 @@
+{
+  "id": "x-eischnee-fett",
+  "typ": "experiment",
+  "titel": "Eischnee mit und ohne Fett",
+  "synonyme": [
+    "Eischnee Experiment",
+    "warum wird Eischnee nicht steif"
+  ],
+  "kurz": "Ein winziger Tropfen Eigelb verhindert, dass Eiweiß steif wird.",
+  "material": [
+    "2 Eiweiß",
+    "ein Tropfen Eigelb oder Öl",
+    "zwei saubere Schüsseln",
+    "Schneebesen oder Handmixer"
+  ],
+  "schritte": [
+    "Je ein Eiweiß in eine Schüssel geben.",
+    "In eine Schüssel einen winzigen Tropfen Eigelb oder Öl geben.",
+    "Beide gleich lange schlagen.",
+    "Vergleichen."
+  ],
+  "beobachtung": "Ohne Fett entsteht steifer, glänzender Schnee. Mit dem Tropfen Fett bleibt es flüssig oder schaumig weich.",
+  "erklaerung": "Die Eiweiße bilden eine Haut um die Luftblasen. Fett schiebt sich dazwischen, und die Blasen platzen.",
+  "links": [
+    "schaumbildung",
+    "eischnee-nicht-steif",
+    "aufschlagen"
+  ],
+  "welten": [
+    "w-eier"
+  ],
+  "dauer": "10 Minuten",
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

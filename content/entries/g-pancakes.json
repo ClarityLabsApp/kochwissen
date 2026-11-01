@@ -1,0 +1,51 @@
+{
+  "id": "g-pancakes",
+  "typ": "gericht",
+  "titel": "Pancakes",
+  "synonyme": [
+    "amerikanische Pfannkuchen",
+    "fluffige Pfannkuchen"
+  ],
+  "kurz": "Pancakes werden fluffig durch Backpulver und einen kaum gerührten Teig.",
+  "bild_im_kopf": "Kleine Kuchen, die in der Pfanne aufgehen.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Trockene und nasse Zutaten getrennt vorbereiten",
+      "warum": "So muss man am Ende nur noch kurz mischen.",
+      "prinzip": "glutenbildung"
+    },
+    {
+      "schritt": "Nur kurz zusammenrühren, Klümpchen bleiben",
+      "warum": "Wenig Gluten, zarter Pancake.",
+      "prinzip": "pfannkuchen-gummig"
+    },
+    {
+      "schritt": "Teig ein paar Minuten stehen lassen",
+      "warum": "Das Backpulver beginnt zu arbeiten, das Mehl quillt.",
+      "prinzip": "chemische-lockerung"
+    },
+    {
+      "schritt": "Bei mittlerer Hitze backen, wenden wenn Blasen platzen",
+      "warum": "Die Hitze treibt das Gas aus, die Unterseite bräunt.",
+      "prinzip": "maillard-reaktion"
+    }
+  ],
+  "links": [
+    "chemische-lockerung",
+    "fluffig",
+    "pfannkuchen-gummig"
+  ],
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

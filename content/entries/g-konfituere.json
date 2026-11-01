@@ -1,0 +1,52 @@
+{
+  "id": "g-konfituere",
+  "typ": "gericht",
+  "titel": "Konfitüre",
+  "synonyme": [
+    "Marmelade",
+    "Erdbeerkonfitüre",
+    "Aprikosenkonfitüre"
+  ],
+  "kurz": "Konfitüre geliert, wenn Pektin, Zucker und Säure zusammenkommen und genug Wasser verkocht ist.",
+  "bild_im_kopf": "Drei Schlüssel für ein Schloss.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Früchte mit Zucker mischen und ziehen lassen",
+      "warum": "Der Zucker zieht Saft aus den Früchten.",
+      "prinzip": "osmose"
+    },
+    {
+      "schritt": "Zitronensaft zugeben",
+      "warum": "Säure hilft dem Pektin zu gelieren und hält die Farbe frisch.",
+      "prinzip": "gelbildung-pektin"
+    },
+    {
+      "schritt": "Sprudelnd kochen, bis die Gelierprobe gelingt",
+      "warum": "Wasser verdampft, Zucker und Pektin werden konzentriert.",
+      "prinzip": "reduktion"
+    },
+    {
+      "schritt": "Heiß abfüllen",
+      "warum": "Heiß gefüllt und verschlossen hält sie länger.",
+      "prinzip": "gelbildung-pektin"
+    }
+  ],
+  "links": [
+    "gelbildung-pektin",
+    "pektin",
+    "zucker"
+  ],
+  "welten": [
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

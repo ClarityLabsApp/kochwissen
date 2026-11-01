@@ -1,0 +1,41 @@
+{
+  "id": "x-apfel-braun",
+  "typ": "experiment",
+  "titel": "Warum wird der Apfel braun?",
+  "synonyme": [
+    "Apfel braun Experiment",
+    "Zitrone Apfel"
+  ],
+  "kurz": "Apfelschnitze werden an der Luft braun, außer man schützt sie.",
+  "material": [
+    "ein Apfel",
+    "Zitronensaft",
+    "ein Glas Wasser",
+    "drei Teller"
+  ],
+  "schritte": [
+    "Apfel in Schnitze schneiden.",
+    "Einen Schnitz mit Zitronensaft beträufeln, einen ins Wasser legen, einen so liegen lassen.",
+    "Nach 30 Minuten vergleichen."
+  ],
+  "beobachtung": "Der unbehandelte Schnitz ist braun, die anderen beiden bleiben hell.",
+  "erklaerung": "Ein Enzym im Apfel reagiert mit dem Sauerstoff der Luft und bildet braune Farbstoffe. Säure bremst das Enzym, Wasser hält die Luft fern.",
+  "links": [
+    "enzym-braeunung",
+    "saeure"
+  ],
+  "welten": [
+    "w-gemuese"
+  ],
+  "dauer": "30 Minuten",
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "g-steak",
+  "typ": "gericht",
+  "titel": "Steak aus der Pfanne",
+  "synonyme": [
+    "Rindssteak",
+    "Entrecôte",
+    "Ribeye braten"
+  ],
+  "kurz": "Ein gutes Steak braucht zwei Dinge gleichzeitig: eine trockene, sehr heiße Oberfläche für die Kruste und ein sanft erwärmtes Inneres.",
+  "bild_im_kopf": "Außen Grill, innen Badewanne.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Am Vortag salzen und unbedeckt kühlen",
+      "warum": "Salz zieht ein und hält Wasser, die Oberfläche trocknet.",
+      "prinzip": "trockensalzen"
+    },
+    {
+      "schritt": "Trocken tupfen, Pfanne stark vorheizen",
+      "warum": "Nur eine trockene Oberfläche in heißer Pfanne bräunt.",
+      "prinzip": "maillard-reaktion"
+    },
+    {
+      "schritt": "Wenden, sobald es sich löst, mit Thermometer garen",
+      "warum": "Die Kerntemperatur entscheidet über saftig oder trocken.",
+      "prinzip": "eiweiss-denaturierung"
+    },
+    {
+      "schritt": "Am Ende Butter, Knoblauch, Thymian zum Arosieren",
+      "warum": "Schäumende Butter bringt Aroma und bräunt nach.",
+      "prinzip": "arosieren"
+    },
+    {
+      "schritt": "Kurz ruhen lassen und quer zur Faser schneiden",
+      "warum": "Weniger Saft läuft aus, kürzere Fasern wirken zarter.",
+      "prinzip": "ruhen-lassen"
+    }
+  ],
+  "links": [
+    "maillard-reaktion",
+    "steak-grau",
+    "eiweiss-denaturierung",
+    "rueckwaerts-garen",
+    "anbraten"
+  ],
+  "welten": [
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

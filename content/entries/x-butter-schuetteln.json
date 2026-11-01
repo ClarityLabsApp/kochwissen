@@ -1,0 +1,42 @@
+{
+  "id": "x-butter-schuetteln",
+  "typ": "experiment",
+  "titel": "Butter selber schütteln",
+  "synonyme": [
+    "Butter machen Kinder",
+    "Sahne schütteln"
+  ],
+  "kurz": "Aus Sahne wird Butter, wenn man lange genug schüttelt.",
+  "material": [
+    "200 ml kalte Vollrahm",
+    "ein Schraubglas",
+    "eine Prise Salz"
+  ],
+  "schritte": [
+    "Sahne ins Glas füllen und gut verschließen.",
+    "Kräftig schütteln, etwa 10–15 Minuten. Abwechseln!",
+    "Wenn sich ein Klumpen und Flüssigkeit trennen, die Flüssigkeit abgießen.",
+    "Butter mit kaltem Wasser spülen und salzen."
+  ],
+  "beobachtung": "Erst wird die Sahne schaumig, dann fest, dann trennt sie sich plötzlich in einen gelben Klumpen und weiße Buttermilch.",
+  "erklaerung": "Schütteln reißt die Hüllen der Fetttröpfchen auf, sie verkleben zu immer größeren Klumpen. Genau das passiert, wenn Schlagrahm zu lange geschlagen wird.",
+  "links": [
+    "sahne-wird-butter",
+    "schaumbildung",
+    "sahne"
+  ],
+  "welten": [
+    "w-milch"
+  ],
+  "dauer": "20 Minuten",
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "g-kaesefondue",
+  "typ": "gericht",
+  "titel": "Käsefondue",
+  "synonyme": [
+    "Fondue",
+    "Moitié-moitié"
+  ],
+  "kurz": "Fondue ist eine Käse-Emulsion. Wein und Stärke halten sie zusammen, zu viel Hitze lässt sie in Fett und Fäden zerfallen.",
+  "bild_im_kopf": "Wie eine Sauce, die nur in ihrem Wohlfühlbereich zusammenhält.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Käse fein reiben und mit etwas Maisstärke mischen",
+      "warum": "Stärke umhüllt das Eiweiß und verhindert Klumpen.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Weißwein erhitzen, Käse portionsweise einrühren",
+      "warum": "Die Säure im Wein hält das Käseeiweiß geschmeidig.",
+      "prinzip": "saeure"
+    },
+    {
+      "schritt": "Nur leise köcheln, ständig rühren (Achterform)",
+      "warum": "Zu viel Hitze zieht das Eiweiß zusammen, Fett tritt aus.",
+      "prinzip": "eiweiss-gerinnung"
+    },
+    {
+      "schritt": "Trennt es sich: Spritzer Zitrone und etwas angerührte Stärke",
+      "warum": "Säure und Stärke bringen die Emulsion zurück.",
+      "prinzip": "emulsion"
+    }
+  ],
+  "links": [
+    "kaese",
+    "emulsion",
+    "saeure",
+    "sauce-trennt-sich"
+  ],
+  "welten": [
+    "w-milch"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

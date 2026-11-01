@@ -1,0 +1,43 @@
+{
+  "id": "x-zuckerkristalle",
+  "typ": "experiment",
+  "titel": "Zuckerkristalle züchten",
+  "synonyme": [
+    "Kandiszucker selber machen",
+    "Kristalle Experiment"
+  ],
+  "kurz": "Aus einer heißen Zuckerlösung wachsen über Tage Zuckerkristalle an einem Faden.",
+  "material": [
+    "250 g Zucker",
+    "100 ml Wasser",
+    "ein sauberes Glas",
+    "ein Holzspieß oder Baumwollfaden"
+  ],
+  "schritte": [
+    "Wasser aufkochen und den Zucker darin vollständig auflösen.",
+    "Etwas abkühlen lassen und ins Glas gießen.",
+    "Den Spieß oder Faden eintauchen, ohne den Boden zu berühren.",
+    "Einige Tage ruhig stehen lassen."
+  ],
+  "beobachtung": "Am Spieß wachsen glitzernde Kristalle, jeden Tag ein Stück größer.",
+  "erklaerung": "Heißes Wasser kann viel mehr Zucker lösen als kaltes. Beim Abkühlen will der Zucker wieder fest werden und lagert sich an den Spieß an. Genau das macht Karamell körnig.",
+  "links": [
+    "zucker-kristallisation",
+    "zucker"
+  ],
+  "welten": [
+    "w-suesses"
+  ],
+  "dauer": "einige Tage",
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "sicherheit": "Heißer Zuckersirup: nur Erwachsene kochen und gießen.",
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

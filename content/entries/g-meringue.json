@@ -1,0 +1,53 @@
+{
+  "id": "g-meringue",
+  "typ": "gericht",
+  "titel": "Meringue",
+  "synonyme": [
+    "Baiser",
+    "Meringues",
+    "Schaumgebäck"
+  ],
+  "kurz": "Meringue ist getrockneter Eischnee: Zucker stabilisiert den Schaum, niedrige Hitze trocknet ihn, ohne ihn zu bräunen.",
+  "bild_im_kopf": "Wie gefrorene Wolken aus Zucker und Luft.",
+  "schwierigkeit": "fortgeschritten",
+  "schluesselmomente": [
+    {
+      "schritt": "Eiweiß in fettfreier Schüssel aufschlagen",
+      "warum": "Fett verhindert stabilen Schaum.",
+      "prinzip": "schaumbildung"
+    },
+    {
+      "schritt": "Zucker nach und nach einrieseln lassen",
+      "warum": "Gelöster Zucker macht die Blasenwände stabil und glänzend.",
+      "prinzip": "schaumbildung"
+    },
+    {
+      "schritt": "Bei etwa 100 °C lange trocknen (Richtwert)",
+      "warum": "Das Wasser verdampft langsam, der Schaum wird fest, ohne zu bräunen.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "Im Ofen auskühlen lassen",
+      "warum": "Schneller Temperaturwechsel lässt sie reißen oder kleben.",
+      "prinzip": "zeit"
+    }
+  ],
+  "links": [
+    "schaumbildung",
+    "aufschlagen",
+    "eischnee-nicht-steif"
+  ],
+  "welten": [
+    "w-eier",
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

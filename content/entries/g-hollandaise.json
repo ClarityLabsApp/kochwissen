@@ -1,0 +1,52 @@
+{
+  "id": "g-hollandaise",
+  "typ": "gericht",
+  "titel": "Sauce hollandaise",
+  "synonyme": [
+    "Hollandaise",
+    "Béarnaise"
+  ],
+  "kurz": "Hollandaise ist eine warme Emulsion mit Eigelb, die zwischen zwei Fehlern balanciert: zu kalt trennt sie sich, zu heiß gerinnt das Ei.",
+  "bild_im_kopf": "Wie ein Seiltanz zwischen Rührei und Butterlache.",
+  "schwierigkeit": "fortgeschritten",
+  "schluesselmomente": [
+    {
+      "schritt": "Eigelb mit etwas Wasser und Säure über dem Wasserbad aufschlagen",
+      "warum": "Das Eigelb dickt sanft ein und schließt Luft ein.",
+      "prinzip": "eiweiss-gerinnung"
+    },
+    {
+      "schritt": "Immer wieder vom Wasserbad nehmen",
+      "warum": "Über etwa 70 °C wird das Eigelb krümelig.",
+      "prinzip": "wasserbad"
+    },
+    {
+      "schritt": "Warme, flüssige Butter langsam einschlagen",
+      "warum": "Die Eigelbcreme emulgiert die Butter in feinen Tröpfchen.",
+      "prinzip": "emulsion"
+    },
+    {
+      "schritt": "Warm, nicht heiß servieren",
+      "warum": "Zu heiß gerinnt sie, zu kalt wird die Butter fest.",
+      "prinzip": "hollandaise-flockt"
+    }
+  ],
+  "links": [
+    "emulsion",
+    "eiweiss-gerinnung",
+    "hollandaise-flockt",
+    "wasserbad"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

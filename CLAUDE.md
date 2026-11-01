@@ -14,6 +14,7 @@ Lies vor jeder Arbeit auch **`DESIGN.md`** (Bildsprache, Farben, Vorlagen). Was 
 | `scripts/validate.mjs` | Prüft Schema, Verknüpfungen, Diagnosebäume, Glossar. Läuft vor jedem Build |
 | `lib/content.ts` | Lädt Inhalte, zerlegt Glossar-Markierungen |
 | `app/` | Next.js App Router: Bibliothek `/`, Eintrag `/eintrag/[id]` |
+| `lib/search.ts` | Suche: gewichtet (Titel 3, Synonyme 2.5, Kurz 1), deutsche Stammformen, Tippfehler, Wörterbuch `THESAURUS` (Problem ↔ Ziel), „Beste Antwort“ |
 | `components/` | Library (Suche), Diagnosis, Term (Glossar-Popup), RichText |
 | `public/prototypen/` | Die drei interaktiven HTML-Prototypen (Maillard, Gluten, Steak grau) |
 
@@ -21,7 +22,7 @@ Befehle: `npm run dev` · `npm run validate` · `npm run build`
 
 ## Eintragstypen
 
-`prozess` (was passiert) · `ziel` (was will ich erreichen) · `technik` (welcher Handgriff) · `symptom` (was ist schiefgelaufen) · `zutat` (was tut eine Zutat) · `stellschraube` (woran drehe ich) · `welt` (Lebensmittel-Welt) · `begriff` (Glossar).
+`prozess` (was passiert) · `ziel` (was will ich erreichen) · `technik` (welcher Handgriff) · `symptom` (was ist schiefgelaufen) · `zutat` (was tut eine Zutat) · `stellschraube` (woran drehe ich) · `welt` (Lebensmittel-Welt) · `begriff` (Glossar) · `gericht` (warum funktioniert ein Rezept: `schluesselmomente` mit `schritt`, `warum`, `prinzip`) · `experiment` (zum Ausprobieren, auch mit Kindern: `material`, `schritte`, `beobachtung`, `erklaerung`, `dauer`, `sicherheit`). IDs: Gerichte `g-…`, Experimente `x-…`.
 
 Drei Einstiege müssen immer funktionieren: vom Problem (Symptom), vom Ziel („Wie werden Wedges knuspriger?“) und vom Prinzip (Prozess). Darum: **jeder Eintrag verlinkt in alle Richtungen**, die Sinn ergeben.
 
@@ -79,7 +80,8 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - [ ] Maillard und Gluten-Prototyp als echte React-Komponenten portieren (statt iframe)
 - [x] Alle 197 Einträge der Masterliste als Entwurf geschrieben (1. November 2026)
 - [ ] Review durch Phil: Status von `entwurf` auf `geprueft`
-- [ ] Masterliste erweitern (neue Gerichte, Techniken, Begriffe)
-- [ ] Semantische Suche (z. B. Supabase pgvector), aktuelle Wortsuche ersetzen
+- [x] 15 Gerichte und 12 Experimente ergänzt (Generator `scripts/batches/gen_batch_gerichte_experimente.py`)
+- [ ] Weitere Gerichte und Experimente; eigene Grafik für Experimente (Vorher/Nachher)
+- [ ] Semantische Suche (z. B. pgvector) als Ergänzung; bis dahin fehlende Alltagswörter in `THESAURUS` nachtragen
 - [ ] Aquarell-Illustrationen erzeugen: `OPENAI_API_KEY=… npm run illustrationen -- --test`, dann ohne `--test`. Motive in `visual.illustration` (Welten und Zutaten, 45 Stück), Ausgabe `public/illustrationen/<id>.png`, Anzeige automatisch im Seitenkopf
 - [ ] Prüfung für unmarkierte Fachbegriffe im Validator

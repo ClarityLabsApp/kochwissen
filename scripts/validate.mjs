@@ -28,6 +28,7 @@ const textFields = (e) => [
   e.mythos?.behauptung, e.mythos?.richtig,
   ...(e.praxis || []).map((p) => p.text),
   ...(e.ursachen || []).flatMap((u) => [u.warum, ...(u.fix || [])]),
+  ...(e.schluesselmomente || []).map((m) => m.warum), e.beobachtung, e.erklaerung,
 ].filter(Boolean);
 
 for (const { file, data: e } of entries) {
@@ -39,6 +40,7 @@ for (const { file, data: e } of entries) {
     ...(e.links || []), ...(e.welten || []), ...(e.hebel || []), ...(e.wirkt_auf || []),
     ...(e.stellschrauben || []).map((s) => s.id), ...(e.praxis || []).map((p) => p.welt),
     ...(e.rolle || []).map((r) => r.prozess), ...(e.ursachen || []).map((u) => u.prinzip).filter(Boolean),
+    ...(e.schluesselmomente || []).map((m) => m.prinzip).filter(Boolean),
   ];
   for (const r of refs) if (!known.has(r)) err(file, `Verweis auf unbekannte id "${r}"`);
   for (const s of e.stellschrauben || []) if (masterTyp[s.id] && masterTyp[s.id] !== "stellschraube") err(file, `"${s.id}" ist keine Stellschraube`);

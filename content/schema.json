@@ -27,7 +27,9 @@
         "ziel",
         "technik",
         "welt",
-        "begriff"
+        "begriff",
+        "gericht",
+        "experiment"
       ]
     },
     "titel": {
@@ -325,6 +327,51 @@
           }
         }
       }
+    },
+    "schluesselmomente": {
+      "description": "Nur Typ gericht: die Momente, in denen die Physik entscheidet",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "schritt",
+          "warum"
+        ],
+        "properties": {
+          "schritt": {
+            "type": "string"
+          },
+          "warum": {
+            "type": "string"
+          },
+          "prinzip": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "material": {
+      "description": "Nur Typ experiment: was man braucht",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "beobachtung": {
+      "description": "Nur Typ experiment: was man sehen wird",
+      "type": "string"
+    },
+    "erklaerung": {
+      "description": "Nur Typ experiment: warum das passiert",
+      "type": "string"
+    },
+    "dauer": {
+      "description": "Typ experiment oder gericht: ungefähre Zeit",
+      "type": "string"
+    },
+    "sicherheit": {
+      "description": "Nur Typ experiment: Hinweis für Kinder oder heiße Pfannen",
+      "type": "string"
     }
   }
 }

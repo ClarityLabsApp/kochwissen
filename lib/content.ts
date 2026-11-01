@@ -1,7 +1,7 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 
-export type Typ = "prozess" | "zutat" | "stellschraube" | "symptom" | "ziel" | "technik" | "welt" | "begriff";
+export type Typ = "prozess" | "zutat" | "stellschraube" | "symptom" | "ziel" | "technik" | "welt" | "begriff" | "gericht" | "experiment";
 
 export interface Ursache { titel: string; warum: string; fix: string[]; haeufigkeit?: 1 | 2 | 3; prinzip?: string }
 export interface DiagnoseKnoten { frage?: string; antworten?: [string, string][]; ursache?: number }
@@ -17,6 +17,8 @@ export interface Entry {
   links?: string[]; welten?: string[]; quellen?: { titel: string; url?: string; stelle?: string }[];
   ursachen?: Ursache[]; diagnose?: Record<string, DiagnoseKnoten>;
   hebel?: string[]; schritte?: string[]; wirkt_auf?: string[]; rolle?: { rolle: string; prozess: string }[];
+  schluesselmomente?: { schritt: string; warum: string; prinzip?: string }[];
+  material?: string[]; beobachtung?: string; erklaerung?: string; dauer?: string; sicherheit?: string;
 }
 
 export interface MasterItem {
@@ -99,5 +101,5 @@ export const PROTOTYPES: Record<string, string> = {
 
 export const TYP_NAME: Record<Typ, string> = {
   prozess: "Prozess", ziel: "Ziel", technik: "Technik", symptom: "Symptom", zutat: "Zutat",
-  stellschraube: "Stellschraube", welt: "Welt", begriff: "Begriff",
+  stellschraube: "Stellschraube", welt: "Welt", begriff: "Begriff", gericht: "Gericht", experiment: "Experiment",
 };

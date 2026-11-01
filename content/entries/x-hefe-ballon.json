@@ -1,0 +1,42 @@
+{
+  "id": "x-hefe-ballon",
+  "typ": "experiment",
+  "titel": "Hefe bläst einen Ballon auf",
+  "synonyme": [
+    "Hefe Experiment Kinder",
+    "Hefe Ballon Flasche"
+  ],
+  "kurz": "Hefe produziert so viel Gas, dass sie einen Luftballon aufblasen kann.",
+  "material": [
+    "ein Päckchen Trockenhefe",
+    "2 TL Zucker",
+    "lauwarmes Wasser",
+    "eine kleine Flasche",
+    "ein Luftballon"
+  ],
+  "schritte": [
+    "Hefe und Zucker in die Flasche geben, etwa ein Drittel lauwarmes Wasser dazu.",
+    "Schwenken, dann den Ballon über den Flaschenhals ziehen.",
+    "An einen warmen Ort stellen und warten."
+  ],
+  "beobachtung": "Nach 20–40 Minuten schäumt es in der Flasche, und der Ballon richtet sich auf und bläht sich.",
+  "erklaerung": "Die Hefe frisst den Zucker und gibt Kohlendioxid ab. Dasselbe Gas bläst im Brotteig die Poren auf. Mit kaltem Wasser dauert es deutlich länger.",
+  "links": [
+    "hefegaerung",
+    "hefe"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "dauer": "45 Minuten",
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

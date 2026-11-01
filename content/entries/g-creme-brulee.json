@@ -1,0 +1,52 @@
+{
+  "id": "g-creme-brulee",
+  "typ": "gericht",
+  "titel": "Crème brûlée",
+  "synonyme": [
+    "Creme brulee",
+    "gebrannte Creme"
+  ],
+  "kurz": "Crème brûlée verbindet zwei Prinzipien: eine Eiercreme, die nur sanft stocken darf, und eine Zuckerschicht, die blitzschnell karamellisiert.",
+  "bild_im_kopf": "Weich und knackig in einer Schale: unten Pudding, oben Glas.",
+  "schwierigkeit": "fortgeschritten",
+  "schluesselmomente": [
+    {
+      "schritt": "Sahne, Eigelb und Zucker verrühren, nicht schaumig schlagen",
+      "warum": "Luftblasen würden in der Creme sichtbar bleiben.",
+      "prinzip": "eiweiss-gerinnung"
+    },
+    {
+      "schritt": "Im Wasserbad bei niedriger Ofentemperatur stocken lassen",
+      "warum": "Das Wasser hält die Temperatur sanft und gleichmäßig.",
+      "prinzip": "wasserbad"
+    },
+    {
+      "schritt": "Gut durchkühlen",
+      "warum": "Die Creme wird fest, die Oberfläche trocken.",
+      "prinzip": "eiweiss-gerinnung"
+    },
+    {
+      "schritt": "Dünn Zucker darüber und abflämmen",
+      "warum": "Der Zucker karamellisiert in Sekunden, die Creme darunter bleibt kalt.",
+      "prinzip": "karamellisierung"
+    }
+  ],
+  "links": [
+    "eiweiss-gerinnung",
+    "karamellisierung",
+    "wasserbad",
+    "creme-klumpig"
+  ],
+  "welten": [
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

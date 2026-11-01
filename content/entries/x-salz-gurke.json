@@ -1,0 +1,41 @@
+{
+  "id": "x-salz-gurke",
+  "typ": "experiment",
+  "titel": "Salz zieht Wasser",
+  "synonyme": [
+    "Osmose Experiment",
+    "Gurke salzen Experiment"
+  ],
+  "kurz": "Salz zieht Wasser aus Gemüse, und man kann zusehen.",
+  "material": [
+    "eine Gurke oder Zucchini",
+    "Salz",
+    "zwei Teller"
+  ],
+  "schritte": [
+    "Gemüse in gleich dicke Scheiben schneiden, auf zwei Teller verteilen.",
+    "Einen Teller salzen, den anderen nicht.",
+    "15 Minuten warten."
+  ],
+  "beobachtung": "Auf den gesalzenen Scheiben stehen Wassertropfen, auf dem Teller sammelt sich Flüssigkeit, und die Scheiben werden biegsam.",
+  "erklaerung": "Wasser wandert dorthin, wo mehr Salz ist (Osmose). Darum ist frisch gesalzenes Fleisch nass und sollte man es entweder sofort oder viel später braten.",
+  "links": [
+    "osmose",
+    "salz",
+    "auberginen-salzen"
+  ],
+  "welten": [
+    "w-gemuese"
+  ],
+  "dauer": "15 Minuten",
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

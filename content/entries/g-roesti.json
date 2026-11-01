@@ -1,0 +1,54 @@
+{
+  "id": "g-roesti",
+  "typ": "gericht",
+  "titel": "Rösti",
+  "synonyme": [
+    "Röschti",
+    "Kartoffelrösti",
+    "Bratkartoffeln gerieben"
+  ],
+  "kurz": "Rösti wird knusprig, wenn die Stärke richtig mitspielt: gekochte Kartoffeln vom Vortag, heiße Pfanne, Geduld.",
+  "bild_im_kopf": "Wie ein Kuchen aus Kartoffelfäden, den die Stärke zusammenklebt und die Hitze außen verkrustet.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Kartoffeln am Vortag in der Schale kochen und abkühlen lassen",
+      "warum": "Abgekühlte Stärke wird fester. Die Raspel zerfallen nicht und kleben nicht zu Brei.",
+      "prinzip": "retrogradation"
+    },
+    {
+      "schritt": "Grob raffeln und salzen, erst kurz vor dem Braten",
+      "warum": "Salz zieht Wasser. Zu früh gesalzen werden die Raspel nass.",
+      "prinzip": "osmose"
+    },
+    {
+      "schritt": "In heißer Butter oder Bratbutter flach andrücken",
+      "warum": "Kontakt mit der heißen Fläche und Fett: Die Unterseite bräunt gleichmäßig.",
+      "prinzip": "maillard-reaktion"
+    },
+    {
+      "schritt": "Nicht bewegen, bis sich der Rand löst, dann wenden",
+      "warum": "Die Kruste löst sich von selbst, wenn sie fertig ist. Vorher reißt sie.",
+      "prinzip": "knusprig"
+    }
+  ],
+  "links": [
+    "retrogradation",
+    "staerkeverkleisterung",
+    "maillard-reaktion",
+    "bratkartoffeln-kleben",
+    "knusprig"
+  ],
+  "welten": [
+    "w-kartoffeln"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "g-mayonnaise",
+  "typ": "gericht",
+  "titel": "Mayonnaise",
+  "synonyme": [
+    "Mayo",
+    "Aioli"
+  ],
+  "kurz": "Mayonnaise ist eine Emulsion: Ein Eigelb kann eine ganze Schüssel Öl in feinen Tröpfchen halten, wenn das Öl langsam kommt.",
+  "bild_im_kopf": "Wie viele Gäste, die einzeln durch eine Tür kommen, statt alle auf einmal.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Eigelb, Senf, Säure und Salz verrühren",
+      "warum": "Eigelb und Senf bringen die Emulgatoren mit.",
+      "prinzip": "emulsion"
+    },
+    {
+      "schritt": "Öl zuerst tropfenweise einschlagen",
+      "warum": "Am Anfang ist wenig Wasser da, um Tröpfchen aufzunehmen.",
+      "prinzip": "emulgieren"
+    },
+    {
+      "schritt": "Wenn sie dick wird, Öl im dünnen Strahl",
+      "warum": "Die stabile Emulsion nimmt jetzt schneller Öl auf.",
+      "prinzip": "emulsion"
+    },
+    {
+      "schritt": "Zu dick? Ein paar Tropfen Wasser",
+      "warum": "Wasser gibt den Tröpfchen wieder Platz.",
+      "prinzip": "mayo-gerinnt"
+    }
+  ],
+  "links": [
+    "emulsion",
+    "emulgieren",
+    "mayo-gerinnt",
+    "eigelb"
+  ],
+  "welten": [
+    "w-saucen",
+    "w-eier"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

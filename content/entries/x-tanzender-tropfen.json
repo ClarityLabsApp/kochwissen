@@ -1,0 +1,39 @@
+{
+  "id": "x-tanzender-tropfen",
+  "typ": "experiment",
+  "titel": "Der tanzende Wassertropfen",
+  "synonyme": [
+    "Leidenfrost Experiment",
+    "Wassertropfen Pfanne"
+  ],
+  "kurz": "Auf einer sehr heißen Pfanne schwebt ein Wassertropfen und tanzt, statt zu verdampfen.",
+  "material": [
+    "Edelstahl- oder Eisenpfanne",
+    "ein paar Tropfen Wasser"
+  ],
+  "schritte": [
+    "Pfanne leer bei mittlerer Hitze erwärmen und ab und zu ein paar Tropfen Wasser hineinspritzen.",
+    "Beobachten, wie sich die Tropfen verhalten, während die Pfanne heißer wird."
+  ],
+  "beobachtung": "Erst zischen die Tropfen und verdampfen schnell. Ab einer bestimmten Hitze bilden sie Kügelchen, die umhergleiten und länger halten.",
+  "erklaerung": "Unter dem Tropfen bildet sich eine Dampfschicht, auf der er schwebt (Leidenfrost-Effekt). Genau dann ist die Pfanne heiß genug zum Anbraten.",
+  "links": [
+    "leidenfrost",
+    "pfanne-vorheizen"
+  ],
+  "welten": [
+    "w-fleisch"
+  ],
+  "dauer": "5 Minuten",
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "sicherheit": "Heiße Pfanne: nur mit Erwachsenen, keine beschichtete Pfanne leer überhitzen.",
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

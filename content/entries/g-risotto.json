@@ -1,0 +1,52 @@
+{
+  "id": "g-risotto",
+  "typ": "gericht",
+  "titel": "Risotto",
+  "synonyme": [
+    "Risotto alla milanese",
+    "Safranrisotto"
+  ],
+  "kurz": "Risotto wird cremig ohne Sahne: Rühren löst Stärke vom Reiskorn, und am Schluss bindet Butter und Käse alles zu einer Emulsion.",
+  "bild_im_kopf": "Wie Perlen, die ihren eigenen Kleister abgeben.",
+  "schwierigkeit": "fortgeschritten",
+  "schluesselmomente": [
+    {
+      "schritt": "Reis in Fett glasig anschwitzen",
+      "warum": "Die Körner werden außen versiegelt und kochen gleichmäßiger.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Heiße Brühe nach und nach zugeben und rühren",
+      "warum": "Reibung löst Stärke von der Oberfläche, die die Flüssigkeit bindet.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Wenn der Kern noch leicht Biss hat, vom Herd nehmen",
+      "warum": "Der Reis gart in der Hitze weiter.",
+      "prinzip": "zeit"
+    },
+    {
+      "schritt": "Kalte Butter und Parmesan kräftig einrühren (mantecare)",
+      "warum": "Fett, Stärke und Käse verbinden sich zu einer cremigen Emulsion.",
+      "prinzip": "emulsion"
+    }
+  ],
+  "links": [
+    "mantecare",
+    "staerkeverkleisterung",
+    "cremig",
+    "emulsion"
+  ],
+  "welten": [
+    "w-getreide"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "g-zopf",
+  "typ": "gericht",
+  "titel": "Zopf",
+  "synonyme": [
+    "Butterzopf",
+    "Sonntagszopf",
+    "Hefezopf"
+  ],
+  "kurz": "Der Zopf ist ein reicher Hefeteig: Butter und Milch machen ihn zart und goldbraun, bremsen aber die Hefe.",
+  "bild_im_kopf": "Ein Brot im Sonntagsgewand: weicher, süßer, glänzender.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Teig gut kneten, bis er glatt ist",
+      "warum": "Butter schwächt das Netz, darum braucht es Kneten, damit er trotzdem aufgeht.",
+      "prinzip": "glutenbildung"
+    },
+    {
+      "schritt": "Etwas länger gehen lassen als Brot",
+      "warum": "Butter und Zucker bremsen die Hefe.",
+      "prinzip": "hefegaerung"
+    },
+    {
+      "schritt": "Flechten und nochmals kurz gehen lassen",
+      "warum": "Die Stränge entspannen und gehen auf.",
+      "prinzip": "ruhezeit"
+    },
+    {
+      "schritt": "Mit Ei bestreichen und backen",
+      "warum": "Eiweiß und Zucker bräunen und glänzen.",
+      "prinzip": "maillard-reaktion"
+    }
+  ],
+  "links": [
+    "hefegaerung",
+    "glutenbildung",
+    "maillard-reaktion"
+  ],
+  "welten": [
+    "w-brot",
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
  "version": 1,
  "stand": "2026-11-01",
- "anzahl": 197,
+ "anzahl": 224,
  "eintraege": [
   {
    "id": "w-fleisch",
@@ -302,6 +302,11 @@
     "anbraten",
     "brot-kruste-weich",
     "farbe",
+    "g-ofengemuese",
+    "g-pizza",
+    "g-roesti",
+    "g-steak",
+    "g-zopf",
     "gewuerze-roesten",
     "grillen",
     "honig",
@@ -349,6 +354,7 @@
     "vorlage": "zoom3-simulation"
    },
    "verlinkt_von": [
+    "g-creme-brulee",
     "w-kaffee",
     "w-suesses",
     "zucker-karamellisieren",
@@ -414,6 +420,8 @@
     "brot-flach",
     "dehnen-falten",
     "fettgehalt",
+    "g-pizza",
+    "g-zopf",
     "grosse-poren",
     "muerbe",
     "muerbeteig-zaeh",
@@ -424,6 +432,7 @@
     "w-brot",
     "w-gebaeck",
     "w-pasta",
+    "x-gluten-auswaschen",
     "zart",
     "zeit"
    ]
@@ -458,6 +467,8 @@
     "abbinden-staerke",
     "creme-klumpig",
     "cremig",
+    "g-risotto",
+    "g-roesti",
     "gebunden",
     "kaltwasserbad",
     "knusprig",
@@ -474,7 +485,8 @@
     "w-pasta",
     "w-saucen",
     "wasser",
-    "wedges-nicht-knusprig"
+    "wedges-nicht-knusprig",
+    "x-kartoffelwasser"
    ]
   },
   {
@@ -500,6 +512,7 @@
     "vorlage": "zoom3-simulation"
    },
    "verlinkt_von": [
+    "g-roesti",
     "laenger-frisch",
     "w-getreide"
    ]
@@ -528,6 +541,7 @@
    },
    "verlinkt_von": [
     "fisch-zerfaellt",
+    "g-steak",
     "pochieren-proz",
     "saeure-denaturierung",
     "saftig",
@@ -561,6 +575,8 @@
     "vorlage": "zoom3-simulation"
    },
    "verlinkt_von": [
+    "g-creme-brulee",
+    "g-hollandaise",
     "hollandaise-flockt",
     "kaese",
     "legieren",
@@ -652,6 +668,10 @@
     "cremig",
     "eigelb",
     "emulgieren",
+    "g-hollandaise",
+    "g-kaesefondue",
+    "g-mayonnaise",
+    "g-risotto",
     "gebunden",
     "hollandaise-flockt",
     "kaese",
@@ -691,13 +711,16 @@
     "aufschlagen",
     "eiweiss",
     "fluffig",
+    "g-meringue",
     "kuchen-sinkt-ein",
     "luftig",
     "sahne-wird-butter",
     "unterheben",
     "w-eier",
     "w-gebaeck",
-    "w-milch"
+    "w-milch",
+    "x-butter-schuetteln",
+    "x-eischnee-fett"
    ]
   },
   {
@@ -722,7 +745,8 @@
     "vorlage": "zoom3-simulation"
    },
    "verlinkt_von": [
-    "w-suesses"
+    "w-suesses",
+    "x-zuckerkristalle"
    ]
   },
   {
@@ -771,7 +795,8 @@
     "vorlage": "zoom3-simulation"
    },
    "verlinkt_von": [
-    "salzgehalt"
+    "salzgehalt",
+    "x-salz-gurke"
    ]
   },
   {
@@ -853,6 +878,7 @@
    },
    "verlinkt_von": [
     "dampflockerung",
+    "g-wiener-schnitzel",
     "oberflaeche",
     "reduktion",
     "w-frittieren",
@@ -950,7 +976,9 @@
    "visual": {
     "vorlage": "zoom3-simulation"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "x-tanzender-tropfen"
+   ]
   },
   {
    "id": "rauchpunkt",
@@ -1059,11 +1087,13 @@
    "verlinkt_von": [
     "brot-zu-dicht",
     "fluffig",
+    "g-zopf",
     "grosse-poren",
     "kalte-gare",
     "sauerteig",
     "vorteig",
-    "w-brot"
+    "w-brot",
+    "x-hefe-ballon"
    ]
   },
   {
@@ -1118,7 +1148,9 @@
    },
    "verlinkt_von": [
     "fluffig",
-    "w-gebaeck"
+    "g-pancakes",
+    "w-gebaeck",
+    "x-backpulver-kalt-heiss"
    ]
   },
   {
@@ -1163,7 +1195,9 @@
    "visual": {
     "vorlage": "zoom3-simulation"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "x-apfel-braun"
+   ]
   },
   {
    "id": "oxidation-fett",
@@ -1209,7 +1243,9 @@
    "visual": {
     "vorlage": "zoom3-simulation"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-konfituere"
+   ]
   },
   {
    "id": "gelbildung-gelatine",
@@ -1286,7 +1322,8 @@
    },
    "verlinkt_von": [
     "farbe",
-    "w-gemuese"
+    "w-gemuese",
+    "x-bohnen-gruen"
    ]
   },
   {
@@ -1308,7 +1345,9 @@
    "visual": {
     "vorlage": "zoom3-simulation"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "x-rotkohl-indikator"
+   ]
   },
   {
    "id": "aroma-blooming",
@@ -1380,7 +1419,9 @@
    "visual": {
     "vorlage": "punktmatrix"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "x-gluten-auswaschen"
+   ]
   },
   {
    "id": "staerke",
@@ -1406,7 +1447,9 @@
    "verlinkt_von": [
     "bratkartoffeln-kleben",
     "kaltwasserbad",
-    "mantecare"
+    "mantecare",
+    "x-gluten-auswaschen",
+    "x-kartoffelwasser"
    ]
   },
   {
@@ -1430,11 +1473,13 @@
     "vorlage": "punktmatrix"
    },
    "verlinkt_von": [
+    "g-konfituere",
     "gelbildung-pektin",
     "hefegaerung",
     "honig",
     "kekse-breit",
     "kuchen-trocken",
+    "x-zuckerkristalle",
     "zuckergehalt"
    ]
   },
@@ -1479,7 +1524,8 @@
    },
    "verlinkt_von": [
     "diffusion",
-    "salzgehalt"
+    "salzgehalt",
+    "x-salz-gurke"
    ]
   },
   {
@@ -1526,7 +1572,8 @@
     "vorlage": "punktmatrix"
    },
    "verlinkt_von": [
-    "emulgieren"
+    "emulgieren",
+    "g-mayonnaise"
    ]
   },
   {
@@ -1647,7 +1694,9 @@
    "visual": {
     "vorlage": "punktmatrix"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "x-butter-schuetteln"
+   ]
   },
   {
    "id": "milch",
@@ -1705,7 +1754,9 @@
    "visual": {
     "vorlage": "punktmatrix"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-kaesefondue"
+   ]
   },
   {
    "id": "hefe",
@@ -1725,7 +1776,9 @@
    "visual": {
     "vorlage": "punktmatrix"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "x-hefe-ballon"
+   ]
   },
   {
    "id": "sauerteig",
@@ -1762,7 +1815,9 @@
    "visual": {
     "vorlage": "punktmatrix"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "x-backpulver-kalt-heiss"
+   ]
   },
   {
    "id": "natron",
@@ -1789,7 +1844,8 @@
    },
    "verlinkt_von": [
     "pektin-abbau",
-    "vorkochen-aufrauen"
+    "vorkochen-aufrauen",
+    "x-rotkohl-indikator"
    ]
   },
   {
@@ -1816,12 +1872,15 @@
     "chemische-lockerung",
     "chlorophyll-farbe",
     "enzym-braeunung",
+    "g-kaesefondue",
     "gelbildung-pektin",
     "joghurt",
     "marinieren",
     "milchsaeuregaerung",
     "pektin-abbau",
-    "wein"
+    "wein",
+    "x-apfel-braun",
+    "x-rotkohl-indikator"
    ]
   },
   {
@@ -1878,7 +1937,9 @@
    "visual": {
     "vorlage": "punktmatrix"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-konfituere"
+   ]
   },
   {
    "id": "senf",
@@ -2128,7 +2189,8 @@
     "vorlage": "skala"
    },
    "verlinkt_von": [
-    "anthocyan-farbe"
+    "anthocyan-farbe",
+    "x-rotkohl-indikator"
    ]
   },
   {
@@ -2312,6 +2374,10 @@
     "vorlage": "punktmatrix"
    },
    "verlinkt_von": [
+    "g-ofengemuese",
+    "g-pommes",
+    "g-roesti",
+    "g-wiener-schnitzel",
     "kalt-ansetzen",
     "mit-staerke-bestaeuben",
     "oberflaeche",
@@ -2402,7 +2468,9 @@
    "visual": {
     "vorlage": "punktmatrix"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-pancakes"
+   ]
   },
   {
    "id": "luftig",
@@ -2473,7 +2541,9 @@
    "visual": {
     "vorlage": "punktmatrix"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-risotto"
+   ]
   },
   {
    "id": "knackig",
@@ -2740,7 +2810,10 @@
    "visual": {
     "vorlage": "ablauf"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-pommes",
+    "x-kartoffelwasser"
+   ]
   },
   {
    "id": "vorkochen-aufrauen",
@@ -2807,7 +2880,9 @@
    "visual": {
     "vorlage": "ablauf"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-wiener-schnitzel"
+   ]
   },
   {
    "id": "zweimal-frittieren",
@@ -2829,7 +2904,9 @@
    "visual": {
     "vorlage": "ablauf"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-pommes"
+   ]
   },
   {
    "id": "anbraten",
@@ -2850,7 +2927,9 @@
    "visual": {
     "vorlage": "ablauf"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-steak"
+   ]
   },
   {
    "id": "pfanne-vorheizen",
@@ -2875,7 +2954,8 @@
    "verlinkt_von": [
     "anbraten",
     "bratkartoffeln-kleben",
-    "fisch-klebt"
+    "fisch-klebt",
+    "x-tanzender-tropfen"
    ]
   },
   {
@@ -2895,7 +2975,9 @@
    "visual": {
     "vorlage": "ablauf"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-steak"
+   ]
   },
   {
    "id": "sous-vide",
@@ -3000,7 +3082,9 @@
    "visual": {
     "vorlage": "ablauf"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-ofengemuese"
+   ]
   },
   {
    "id": "grillen",
@@ -3168,7 +3252,9 @@
    "visual": {
     "vorlage": "ablauf"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-mayonnaise"
+   ]
   },
   {
    "id": "aufschlagen",
@@ -3188,7 +3274,10 @@
    "visual": {
     "vorlage": "ablauf"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-meringue",
+    "x-eischnee-fett"
+   ]
   },
   {
    "id": "unterheben",
@@ -3269,7 +3358,9 @@
    "visual": {
     "vorlage": "ablauf"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-pizza"
+   ]
   },
   {
    "id": "vorteig",
@@ -3447,7 +3538,9 @@
    "visual": {
     "vorlage": "ablauf"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "x-salz-gurke"
+   ]
   },
   {
    "id": "kalt-ansetzen",
@@ -3505,7 +3598,9 @@
    "visual": {
     "vorlage": "ablauf"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "x-bohnen-gruen"
+   ]
   },
   {
    "id": "wasserbad",
@@ -3528,6 +3623,8 @@
     "vorlage": "ablauf"
    },
    "verlinkt_von": [
+    "g-creme-brulee",
+    "g-hollandaise",
     "hollandaise-flockt"
    ]
   },
@@ -3572,7 +3669,9 @@
    "visual": {
     "vorlage": "ablauf"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-risotto"
+   ]
   },
   {
    "id": "steak-grau",
@@ -3593,6 +3692,7 @@
     "vorlage": "pfannentest"
    },
    "verlinkt_von": [
+    "g-steak",
     "pfannenmaterial"
    ]
   },
@@ -3853,7 +3953,9 @@
    "visual": {
     "vorlage": "pfannentest"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-pizza"
+   ]
   },
   {
    "id": "muerbeteig-zaeh",
@@ -3911,7 +4013,9 @@
    "visual": {
     "vorlage": "pfannentest"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-kaesefondue"
+   ]
   },
   {
    "id": "mayo-gerinnt",
@@ -3930,7 +4034,9 @@
    "visual": {
     "vorlage": "pfannentest"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-mayonnaise"
+   ]
   },
   {
    "id": "hollandaise-flockt",
@@ -3950,7 +4056,9 @@
    "visual": {
     "vorlage": "pfannentest"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-hollandaise"
+   ]
   },
   {
    "id": "sauce-zu-duenn",
@@ -4007,7 +4115,9 @@
     "vorlage": "pfannentest"
    },
    "verlinkt_von": [
-    "eiweiss"
+    "eiweiss",
+    "g-meringue",
+    "x-eischnee-fett"
    ]
   },
   {
@@ -4027,7 +4137,8 @@
     "vorlage": "pfannentest"
    },
    "verlinkt_von": [
-    "sahne"
+    "sahne",
+    "x-butter-schuetteln"
    ]
   },
   {
@@ -4123,7 +4234,9 @@
    "visual": {
     "vorlage": "pfannentest"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "x-bohnen-gruen"
+   ]
   },
   {
    "id": "wedges-nicht-knusprig",
@@ -4165,7 +4278,9 @@
    "visual": {
     "vorlage": "pfannentest"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-roesti"
+   ]
   },
   {
    "id": "reis-matschig",
@@ -4222,7 +4337,9 @@
    "visual": {
     "vorlage": "pfannentest"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-wiener-schnitzel"
+   ]
   },
   {
    "id": "frittiertes-fettig",
@@ -4242,6 +4359,7 @@
     "vorlage": "pfannentest"
    },
    "verlinkt_von": [
+    "g-pommes",
     "oel"
    ]
   },
@@ -4317,7 +4435,9 @@
    "visual": {
     "vorlage": "pfannentest"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-creme-brulee"
+   ]
   },
   {
    "id": "zwiebeln-verbrennen",
@@ -4431,7 +4551,651 @@
    "visual": {
     "vorlage": "pfannentest"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "g-pancakes"
+   ]
+  },
+  {
+   "id": "g-roesti",
+   "typ": "gericht",
+   "titel": "Rösti",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "retrogradation",
+    "staerkeverkleisterung",
+    "maillard-reaktion",
+    "bratkartoffeln-kleben",
+    "knusprig"
+   ],
+   "welten": [
+    "w-kartoffeln"
+   ],
+   "synonyme": [
+    "Röschti",
+    "Kartoffelrösti",
+    "Bratkartoffeln gerieben"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-wiener-schnitzel",
+   "typ": "gericht",
+   "titel": "Wiener Schnitzel",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "panieren",
+    "panade-faellt-ab",
+    "verdampfen",
+    "knusprig"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-frittieren"
+   ],
+   "synonyme": [
+    "Schnitzel",
+    "paniertes Schnitzel",
+    "Kalbsschnitzel"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-risotto",
+   "typ": "gericht",
+   "titel": "Risotto",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "mantecare",
+    "staerkeverkleisterung",
+    "cremig",
+    "emulsion"
+   ],
+   "welten": [
+    "w-getreide"
+   ],
+   "synonyme": [
+    "Risotto alla milanese",
+    "Safranrisotto"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-mayonnaise",
+   "typ": "gericht",
+   "titel": "Mayonnaise",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "emulsion",
+    "emulgieren",
+    "mayo-gerinnt",
+    "eigelb"
+   ],
+   "welten": [
+    "w-saucen",
+    "w-eier"
+   ],
+   "synonyme": [
+    "Mayo",
+    "Aioli"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-steak",
+   "typ": "gericht",
+   "titel": "Steak aus der Pfanne",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "maillard-reaktion",
+    "steak-grau",
+    "eiweiss-denaturierung",
+    "rueckwaerts-garen",
+    "anbraten"
+   ],
+   "welten": [
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "Rindssteak",
+    "Entrecôte",
+    "Ribeye braten"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-pommes",
+   "typ": "gericht",
+   "titel": "Pommes frites",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "zweimal-frittieren",
+    "kaltwasserbad",
+    "knusprig",
+    "frittiertes-fettig"
+   ],
+   "welten": [
+    "w-kartoffeln",
+    "w-frittieren"
+   ],
+   "synonyme": [
+    "Pommes",
+    "Fritten",
+    "French Fries"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-hollandaise",
+   "typ": "gericht",
+   "titel": "Sauce hollandaise",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "emulsion",
+    "eiweiss-gerinnung",
+    "hollandaise-flockt",
+    "wasserbad"
+   ],
+   "welten": [
+    "w-saucen"
+   ],
+   "synonyme": [
+    "Hollandaise",
+    "Béarnaise"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-creme-brulee",
+   "typ": "gericht",
+   "titel": "Crème brûlée",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "eiweiss-gerinnung",
+    "karamellisierung",
+    "wasserbad",
+    "creme-klumpig"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [
+    "Creme brulee",
+    "gebrannte Creme"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-pizza",
+   "typ": "gericht",
+   "titel": "Pizza",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "glutenbildung",
+    "kalte-gare",
+    "teig-schnurrt",
+    "maillard-reaktion"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [
+    "Pizzateig",
+    "Pizza napoletana"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-zopf",
+   "typ": "gericht",
+   "titel": "Zopf",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "hefegaerung",
+    "glutenbildung",
+    "maillard-reaktion"
+   ],
+   "welten": [
+    "w-brot",
+    "w-gebaeck"
+   ],
+   "synonyme": [
+    "Butterzopf",
+    "Sonntagszopf",
+    "Hefezopf"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-kaesefondue",
+   "typ": "gericht",
+   "titel": "Käsefondue",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "kaese",
+    "emulsion",
+    "saeure",
+    "sauce-trennt-sich"
+   ],
+   "welten": [
+    "w-milch"
+   ],
+   "synonyme": [
+    "Fondue",
+    "Moitié-moitié"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-pancakes",
+   "typ": "gericht",
+   "titel": "Pancakes",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "chemische-lockerung",
+    "fluffig",
+    "pfannkuchen-gummig"
+   ],
+   "welten": [
+    "w-gebaeck"
+   ],
+   "synonyme": [
+    "amerikanische Pfannkuchen",
+    "fluffige Pfannkuchen"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-meringue",
+   "typ": "gericht",
+   "titel": "Meringue",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "schaumbildung",
+    "aufschlagen",
+    "eischnee-nicht-steif"
+   ],
+   "welten": [
+    "w-eier",
+    "w-suesses"
+   ],
+   "synonyme": [
+    "Baiser",
+    "Meringues",
+    "Schaumgebäck"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-ofengemuese",
+   "typ": "gericht",
+   "titel": "Ofengemüse",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "roesten-ofen",
+    "maillard-reaktion",
+    "knusprig"
+   ],
+   "welten": [
+    "w-gemuese"
+   ],
+   "synonyme": [
+    "geröstetes Gemüse",
+    "Blechgemüse"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-konfituere",
+   "typ": "gericht",
+   "titel": "Konfitüre",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "gelbildung-pektin",
+    "pektin",
+    "zucker"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [
+    "Marmelade",
+    "Erdbeerkonfitüre",
+    "Aprikosenkonfitüre"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "x-rotkohl-indikator",
+   "typ": "experiment",
+   "titel": "Rotkohl als Farbzauber",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "anthocyan-farbe",
+    "ph-wert",
+    "saeure",
+    "natron"
+   ],
+   "welten": [
+    "w-gemuese"
+   ],
+   "synonyme": [
+    "Rotkohl Experiment",
+    "Säuretest",
+    "pH Experiment Kinder"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "x-backpulver-kalt-heiss",
+   "typ": "experiment",
+   "titel": "Backpulver: kalt gegen heiß",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "chemische-lockerung",
+    "backpulver"
+   ],
+   "welten": [
+    "w-gebaeck"
+   ],
+   "synonyme": [
+    "Backpulver Experiment",
+    "Triebmittel testen"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "x-eischnee-fett",
+   "typ": "experiment",
+   "titel": "Eischnee mit und ohne Fett",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "schaumbildung",
+    "eischnee-nicht-steif",
+    "aufschlagen"
+   ],
+   "welten": [
+    "w-eier"
+   ],
+   "synonyme": [
+    "Eischnee Experiment",
+    "warum wird Eischnee nicht steif"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "x-tanzender-tropfen",
+   "typ": "experiment",
+   "titel": "Der tanzende Wassertropfen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "leidenfrost",
+    "pfanne-vorheizen"
+   ],
+   "welten": [
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "Leidenfrost Experiment",
+    "Wassertropfen Pfanne"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "x-kartoffelwasser",
+   "typ": "experiment",
+   "titel": "Trübes Kartoffelwasser",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "kaltwasserbad",
+    "staerke",
+    "staerkeverkleisterung"
+   ],
+   "welten": [
+    "w-kartoffeln"
+   ],
+   "synonyme": [
+    "Kartoffelstärke sichtbar machen",
+    "Stärke Experiment"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "x-apfel-braun",
+   "typ": "experiment",
+   "titel": "Warum wird der Apfel braun?",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "enzym-braeunung",
+    "saeure"
+   ],
+   "welten": [
+    "w-gemuese"
+   ],
+   "synonyme": [
+    "Apfel braun Experiment",
+    "Zitrone Apfel"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "x-butter-schuetteln",
+   "typ": "experiment",
+   "titel": "Butter selber schütteln",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "sahne-wird-butter",
+    "schaumbildung",
+    "sahne"
+   ],
+   "welten": [
+    "w-milch"
+   ],
+   "synonyme": [
+    "Butter machen Kinder",
+    "Sahne schütteln"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "x-gluten-auswaschen",
+   "typ": "experiment",
+   "titel": "Gluten sichtbar machen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "glutenbildung",
+    "mehl",
+    "staerke"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [
+    "Gluten auswaschen",
+    "Kleber Experiment"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "x-hefe-ballon",
+   "typ": "experiment",
+   "titel": "Hefe bläst einen Ballon auf",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "hefegaerung",
+    "hefe"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [
+    "Hefe Experiment Kinder",
+    "Hefe Ballon Flasche"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "x-salz-gurke",
+   "typ": "experiment",
+   "titel": "Salz zieht Wasser",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "osmose",
+    "salz",
+    "auberginen-salzen"
+   ],
+   "welten": [
+    "w-gemuese"
+   ],
+   "synonyme": [
+    "Osmose Experiment",
+    "Gurke salzen Experiment"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "x-zuckerkristalle",
+   "typ": "experiment",
+   "titel": "Zuckerkristalle züchten",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "zucker-kristallisation",
+    "zucker"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [
+    "Kandiszucker selber machen",
+    "Kristalle Experiment"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "x-bohnen-gruen",
+   "typ": "experiment",
+   "titel": "Grüne Bohnen: grün oder grau?",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "chlorophyll-farbe",
+    "blanchieren",
+    "gemuese-grau"
+   ],
+   "welten": [
+    "w-gemuese"
+   ],
+   "synonyme": [
+    "Chlorophyll Experiment",
+    "Gemüse Farbe Experiment"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
   }
  ]
 }
