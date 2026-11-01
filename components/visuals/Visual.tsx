@@ -3,6 +3,11 @@ import { getEntry, getMasterItem, titleOf, typOf } from "@/lib/content";
 import TempScale, { type Mark } from "./TempScale";
 import PanTest from "./PanTest";
 import DotNet, { type NetNode } from "./DotNet";
+import ParticleSim, { type Preset } from "./ParticleSim";
+
+// Muss hier stehen: Funktionen aus Client-Modulen sind auf dem Server nicht aufrufbar.
+const SIMS = new Set<string>(["emulsion", "osmose", "pektin-abbau", "reduktion"]);
+const hasSim = (id: string): id is Preset => SIMS.has(id);
 
 /** Liest Temperatur-Schwellen aus visual.params, egal in welchem der bekannten Formate. */
 export function marksOf(e: Entry): Mark[] {
@@ -34,6 +39,8 @@ const refsOf = (id: string) => {
 export default function Visual({ e }: { e: Entry }) {
   const p = (e.visual?.params ?? {}) as Record<string, unknown>;
   const blocks: React.ReactNode[] = [];
+
+  if (hasSim(e.id)) blocks.push(<ParticleSim key="sim" preset={e.id} />);
 
   if (e.typ === "symptom" && e.visual?.vorlage === "pfannentest") {
     const v = p.variante === "backblech" || p.variante === "fritteuse" ? p.variante : "pfanne";
