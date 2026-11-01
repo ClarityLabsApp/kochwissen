@@ -1,0 +1,49 @@
+{
+  "id": "emulgieren",
+  "typ": "technik",
+  "titel": "Emulgieren",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "Mayonnaise machen",
+    "Vinaigrette rühren",
+    "aufschlagen mit Öl"
+  ],
+  "kurz": "Fett so langsam und kräftig in eine wässrige Zutat einarbeiten, dass es in winzige Tröpfchen zerfällt und gebunden bleibt.",
+  "bild_im_kopf": "Wie Gäste nacheinander in einen Saal lassen statt alle auf einmal: Jeder findet seinen Platz, niemand drängelt.",
+  "was_passiert": "Am Anfang ist wenig Wasser da, um Fett aufzunehmen. Darum muss das erste Fett tropfenweise kommen. Sobald die Emulsion steht, nimmt sie Fett schneller auf. Der Emulgator braucht Zeit und Bewegung, um jedes neue Tröpfchen zu umhüllen.",
+  "schritte": [
+    "Eigelb oder Senf mit etwas Säure und Salz verrühren.",
+    "Öl zuerst tropfenweise unter kräftigem Schlagen zugeben.",
+    "Wenn die Masse dick wird, Öl im dünnen Strahl.",
+    "Zu dick? Ein paar Tropfen Wasser oder Zitronensaft einrühren.",
+    "Bricht sie, in einer neuen Schüssel mit frischem Eigelb neu beginnen und die getrennte Masse langsam einarbeiten."
+  ],
+  "wirkt_auf": [
+    "gebunden",
+    "cremig"
+  ],
+  "links": [
+    "emulsion",
+    "eigelb",
+    "senf",
+    "mayo-gerinnt",
+    "sauce-trennt-sich"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: How to make mayonnaise",
+      "url": "https://www.americastestkitchen.com/articles/7391-how-to-make-mayonnaise"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf"
+}

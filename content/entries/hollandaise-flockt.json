@@ -1,0 +1,107 @@
+{
+  "id": "hollandaise-flockt",
+  "typ": "symptom",
+  "titel": "Hollandaise flockt aus",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "Hollandaise gerinnt",
+    "Hollandaise grieselig",
+    "Sauce Béarnaise geronnen"
+  ],
+  "kurz": "Das Eigelb ist zu heiß geworden und ist zu Krümeln geronnen, oder die Butter kam zu schnell.",
+  "bild_im_kopf": "Wie ein Rührei, das sich in der Sauce versteckt.",
+  "ursachen": [
+    {
+      "titel": "Zu heiß",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "Über etwa 70 °C gerinnt das Eigelb zu Klümpchen, die Sauce wird grieselig.",
+      "fix": [
+        "Sofort vom Wasserbad nehmen",
+        "Einen Löffel kaltes Wasser oder Sahne einschlagen",
+        "Schüssel kurz in Eiswasser stellen und weiterschlagen"
+      ]
+    },
+    {
+      "titel": "Butter zu schnell zugegeben",
+      "haeufigkeit": 2,
+      "prinzip": "emulsion",
+      "warum": "Die Eigelbcreme kann die Butter nicht schnell genug aufnehmen, die Sauce trennt sich.",
+      "fix": [
+        "In neuer Schüssel mit einem Eigelb und etwas Wasser neu beginnen",
+        "Die getrennte Sauce langsam einschlagen"
+      ]
+    },
+    {
+      "titel": "Eigelbschaum schon geronnen",
+      "haeufigkeit": 1,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "Ist schon die Eigelbbasis vor der Butter krümelig, lässt sie sich nicht mehr retten.",
+      "fix": [
+        "Neu beginnen",
+        "Diesmal öfter vom Wasserbad nehmen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Ist die Sauce körnig wie feines Rührei?",
+      "antworten": [
+        [
+          "Ja",
+          "q2"
+        ],
+        [
+          "Nein, eher fettig und getrennt",
+          "u1"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "War schon die Eigelbmasse vor der Butter körnig?",
+      "antworten": [
+        [
+          "Ja",
+          "u2"
+        ],
+        [
+          "Nein, erst danach",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "eiweiss-gerinnung",
+    "emulsion",
+    "wasserbad",
+    "legieren",
+    "sauce-trennt-sich"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "Rouxbe: Troubleshooting Hollandaise",
+      "url": "https://rouxbe.com/tips-techniques/487-troubleshooting-hollandaise"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf"
+}

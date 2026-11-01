@@ -1,0 +1,42 @@
+{
+  "id": "legieren",
+  "typ": "technik",
+  "titel": "Mit Eigelb legieren",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "Liaison",
+    "mit Eigelb binden",
+    "abziehen mit Eigelb"
+  ],
+  "kurz": "Eine Suppe oder Sauce mit einer Mischung aus Eigelb und Sahne binden, ohne dass das Eigelb gerinnt.",
+  "bild_im_kopf": "Wie kalte Füße langsam ins warme Bad gewöhnen, statt hineinzuspringen.",
+  "was_passiert": "Eigelb dickt beim Erwärmen ein und bindet die Flüssigkeit. Kommt es direkt in heiße Suppe, gerinnt es sofort zu Fäden. Wird es vorher mit etwas heißer Flüssigkeit angeglichen, steigt seine Temperatur langsam und es bindet cremig.",
+  "schritte": [
+    "Eigelb mit Sahne verquirlen.",
+    "Ein paar Löffel heiße Suppe unter Rühren einrühren (temperieren).",
+    "Die Mischung zur Suppe geben, Topf von der Hitze nehmen.",
+    "Rühren, bis es leicht bindet. Nicht mehr kochen lassen."
+  ],
+  "wirkt_auf": [
+    "gebunden",
+    "cremig"
+  ],
+  "links": [
+    "eiweiss-gerinnung",
+    "eigelb",
+    "hollandaise-flockt"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "senf",
+  "typ": "zutat",
+  "titel": "Senf",
+  "synonyme": [
+    "Dijonsenf",
+    "Mostrich"
+  ],
+  "kurz": "Senf würzt und hilft als Emulgator: Ein Löffel hält eine Vinaigrette deutlich länger zusammen.",
+  "bild_im_kopf": "Ein kleiner Helfer, der Öl und Essig an einem Tisch hält.",
+  "rolle": [
+    {
+      "rolle": "hilft Öl und Essig zu verbinden",
+      "prozess": "emulsion"
+    },
+    {
+      "rolle": "gibt Schärfe und Säure",
+      "prozess": "mehr-geschmack"
+    }
+  ],
+  "was_passiert": "Senfkörner enthalten Schleimstoffe und Eiweiße, die sich um Öltröpfchen legen. Dadurch fließen sie langsamer zusammen.",
+  "faustregeln": [
+    "Für Vinaigrette etwa 1 TL Senf auf 3 EL Öl, Richtwert.",
+    "Senf zuerst mit Essig und Salz verrühren, dann das Öl."
+  ],
+  "links": [
+    "emulsion",
+    "emulgieren"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: How to make mayonnaise",
+      "url": "https://www.americastestkitchen.com/articles/7391-how-to-make-mayonnaise"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

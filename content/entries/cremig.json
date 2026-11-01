@@ -1,0 +1,60 @@
+{
+  "id": "cremig",
+  "typ": "ziel",
+  "titel": "Cremig",
+  "synonyme": [
+    "sämig",
+    "samtig",
+    "geschmeidig",
+    "cremiger"
+  ],
+  "kurz": "Cremig heißt: dick, aber glatt, ohne Klümpchen und ohne Fettaugen.",
+  "bild_im_kopf": "Wie ein frisch gemähter Rasen statt ein Acker: viele kleine, gleichmäßige Teilchen statt grober Brocken.",
+  "bedeutung": "Cremig entsteht durch viele sehr kleine, gleichmäßig verteilte Teilchen: feine Fetttröpfchen in einer Emulsion, gelöste Stärke oder Eiweiß, das sanft eingedickt ist, ohne zu klumpen.",
+  "hebel": [
+    "emulsion",
+    "staerkeverkleisterung",
+    "eiweiss-gerinnung",
+    "mechanik",
+    "temperatur"
+  ],
+  "was_passiert": "Klümpchen entstehen, wenn Stärke außen verkleistert, bevor sie sich verteilt, oder wenn Eiweiß zu heiß wird. Fettaugen entstehen, wenn eine Emulsion bricht.",
+  "faustregeln": [
+    "Risotto und Pasta: Stärke durch Rühren und Schwenken lösen.",
+    "Eiercremes nie kochen lassen.",
+    "Mixstab rettet viele leicht klumpige Saucen."
+  ],
+  "praxis": [
+    {
+      "welt": "w-getreide",
+      "text": "Risotto wird durch Rühren cremig, weil sich Stärke vom Reiskorn löst."
+    },
+    {
+      "welt": "w-pasta",
+      "text": "Cacio e pepe: Käse, Nudelwasser und Pfeffer werden durch Schwenken cremig statt klumpig."
+    }
+  ],
+  "links": [
+    "mantecare",
+    "emulgieren",
+    "legieren",
+    "sauce-klumpig",
+    "creme-klumpig"
+  ],
+  "welten": [
+    "w-saucen",
+    "w-getreide",
+    "w-milch"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,108 @@
+{
+  "id": "emulsion",
+  "typ": "prozess",
+  "titel": "Emulsion",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "emulgieren",
+    "Fett und Wasser verbinden",
+    "Mayonnaise",
+    "Vinaigrette",
+    "binden"
+  ],
+  "kurz": "Eine Emulsion sind Fett und Wasser, die eigentlich nicht mischbar sind, aber als winzige Tröpfchen mit einem Vermittler zusammenhalten.",
+  "bild_im_kopf": "Ein [[emulgator|Emulgator]] ist wie ein Dolmetscher, der eine Hand ins Wasser und eine ins Fett hält. Ohne ihn stehen die beiden Gruppen auf verschiedenen Seiten des Raums.",
+  "was_passiert": "Fett und Wasser stoßen sich ab. Schlägt man kräftig, zerfällt das Fett in winzige Tröpfchen im Wasser. Ein Emulgator wie das Lecithin im Eigelb legt sich um jedes Tröpfchen und verhindert, dass sie wieder zusammenfließen. Je mehr Tröpfchen dicht gepackt sind, desto dicker wird die Sauce.",
+  "warum_wichtig": "Mayonnaise, Vinaigrette, Hollandaise, Beurre blanc, Pastasauce mit Nudelwasser: alles Emulsionen, alle mit denselben Fehlerquellen.",
+  "faustregeln": [
+    "Fett am Anfang tropfenweise zugeben, später im dünnen Strahl.",
+    "Zutaten ähnlich temperieren, nichts eiskalt aus dem Kühlschrank.",
+    "Senf, Eigelb oder stärkehaltiges Nudelwasser helfen als Vermittler.",
+    "Getrennt? Mit neuem Eigelb oder einem Löffel Wasser neu anfangen und die getrennte Masse langsam einarbeiten."
+  ],
+  "stellschrauben": [
+    {
+      "id": "mechanik",
+      "wirkung": "kräftiger schlagen → feinere Tröpfchen"
+    },
+    {
+      "id": "temperatur",
+      "wirkung": "zu heiß → Eigelb gerinnt"
+    },
+    {
+      "id": "fettgehalt",
+      "wirkung": "zu viel zu schnell → bricht"
+    }
+  ],
+  "typische_fehler": [
+    "Öl zu schnell zugegeben.",
+    "Hollandaise zu heiß, das Eigelb gerinnt."
+  ],
+  "mythos": {
+    "behauptung": "Mayonnaise gelingt nur mit zimmerwarmen Eiern.",
+    "richtig": "Wichtiger sind langsames Zugeben und kräftiges Schlagen. Ähnliche Temperaturen helfen, sind aber kein Muss."
+  },
+  "praxis": [
+    {
+      "welt": "w-saucen",
+      "text": "Vinaigrette mit einem Löffel Senf hält viel länger zusammen. Mayonnaise im Mixer gelingt fast immer."
+    },
+    {
+      "welt": "w-pasta",
+      "text": "Nudelwasser bringt Stärke mit, die Fett und Wasser in der Pfanne zu einer cremigen Sauce bindet."
+    },
+    {
+      "welt": "w-eier",
+      "text": "Eigelb ist der klassische Emulgator: Ein einziges Eigelb kann eine ganze Schüssel Mayonnaise tragen."
+    }
+  ],
+  "links": [
+    "emulgieren",
+    "eigelb",
+    "senf",
+    "montieren",
+    "sauce-trennt-sich",
+    "mayo-gerinnt",
+    "hollandaise-flockt",
+    "mantecare"
+  ],
+  "welten": [
+    "w-saucen",
+    "w-eier",
+    "w-pasta"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation",
+    "ebenen": [
+      {
+        "name": "Die Schüssel",
+        "massstab": "≈ 15 cm"
+      },
+      {
+        "name": "Die Tröpfchen",
+        "massstab": "≈ 0,05 mm"
+      },
+      {
+        "name": "Der Emulgator",
+        "massstab": "≈ 5 nm"
+      }
+    ],
+    "params": {
+      "regler": [
+        "oelmenge",
+        "schlaggeschwindigkeit"
+      ]
+    }
+  },
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: How to make mayonnaise",
+      "url": "https://www.americastestkitchen.com/articles/7391-how-to-make-mayonnaise"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf"
+}

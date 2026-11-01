@@ -1,0 +1,42 @@
+{
+  "id": "reduzieren",
+  "typ": "technik",
+  "titel": "Reduzieren",
+  "synonyme": [
+    "einkochen lassen",
+    "auf die Hälfte einkochen"
+  ],
+  "kurz": "Eine Flüssigkeit offen kochen, bis ein Teil des Wassers verdampft ist. Sie wird kräftiger und sämiger.",
+  "bild_im_kopf": "Wie einen Text kürzen: Weniger Wörter, dieselbe Aussage, stärkere Wirkung.",
+  "was_passiert": "Offen köchelnd verdampft Wasser. Aromen, Zucker, Salz und Gelatine bleiben zurück. Ein breiter Topf mit viel Oberfläche geht deutlich schneller.",
+  "schritte": [
+    "Flüssigkeit in einem breiten Topf oder der Pfanne zum Kochen bringen.",
+    "Offen kräftig köcheln lassen.",
+    "Füllstand im Blick behalten, z. B. auf die Hälfte oder ein Drittel.",
+    "Erst jetzt abschmecken und salzen."
+  ],
+  "wirkt_auf": [
+    "mehr-geschmack",
+    "gebunden"
+  ],
+  "links": [
+    "reduktion",
+    "verdampfen",
+    "deglacieren",
+    "essen-versalzen"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,111 @@
+{
+  "id": "sauce-trennt-sich",
+  "typ": "symptom",
+  "titel": "Sauce trennt sich",
+  "synonyme": [
+    "Fettaugen",
+    "Sauce bricht",
+    "Butter trennt sich",
+    "Sauce gespalten"
+  ],
+  "kurz": "Die Fetttröpfchen fließen wieder zusammen. Meist war es zu heiß oder das Fett kam zu schnell.",
+  "bild_im_kopf": "Wie eine Party, auf der sich alle wieder in ihre alten Grüppchen zurückziehen: Fett zu Fett, Wasser zu Wasser.",
+  "ursachen": [
+    {
+      "titel": "Zu heiß geworden",
+      "haeufigkeit": 3,
+      "prinzip": "emulsion",
+      "warum": "Hitze lässt Butter-Emulsionen schmelzen und Eigelb gerinnen. Das Fett tritt aus.",
+      "fix": [
+        "Vom Herd nehmen",
+        "Einen Löffel kaltes Wasser oder Sahne kräftig einrühren"
+      ]
+    },
+    {
+      "titel": "Fett zu schnell zugegeben",
+      "haeufigkeit": 3,
+      "prinzip": "emulsion",
+      "warum": "Der Emulgator kommt nicht nach, die Tröpfchen umhüllen.",
+      "fix": [
+        "In neuer Schüssel mit wenig Wasser oder Eigelb neu beginnen",
+        "Die getrennte Sauce tropfenweise einarbeiten"
+      ]
+    },
+    {
+      "titel": "Zu wenig Vermittler",
+      "haeufigkeit": 2,
+      "prinzip": "emulsion",
+      "warum": "Zu viel Fett für zu wenig Eigelb, Senf oder Stärke.",
+      "fix": [
+        "Senf oder etwas Nudelwasser dazu",
+        "Weniger Fett verwenden"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "War die Sauce auf dem Herd, als sie sich trennte?",
+      "antworten": [
+        [
+          "Ja, sie war heiß",
+          "u0"
+        ],
+        [
+          "Nein, beim Aufschlagen",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Hast du das Fett schnell zugegeben?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein, langsam",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "emulsion",
+    "montieren",
+    "emulgieren",
+    "hollandaise-flockt",
+    "mayo-gerinnt"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: How to make mayonnaise",
+      "url": "https://www.americastestkitchen.com/articles/7391-how-to-make-mayonnaise"
+    },
+    {
+      "titel": "Rouxbe: Troubleshooting Hollandaise",
+      "url": "https://rouxbe.com/tips-techniques/487-troubleshooting-hollandaise"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

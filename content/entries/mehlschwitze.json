@@ -1,0 +1,52 @@
+{
+  "id": "mehlschwitze",
+  "typ": "technik",
+  "titel": "Mehlschwitze (Roux)",
+  "synonyme": [
+    "Roux",
+    "Einbrenne",
+    "Béchamel",
+    "helle Mehlschwitze"
+  ],
+  "kurz": "Butter und Mehl zu gleichen Teilen anschwitzen, dann Flüssigkeit nach und nach einrühren. Die Basis für Béchamel und viele helle Saucen.",
+  "bild_im_kopf": "Wie Mehl in Fett vorab „einpacken“: Jedes Körnchen ist von Fett umgeben und kann nicht mit seinen Nachbarn verkleben.",
+  "was_passiert": "Das Fett umhüllt die Mehlkörner und trennt sie voneinander. Kommt Flüssigkeit dazu, quellen sie einzeln, statt Klumpen zu bilden. Je länger die Mehlschwitze röstet, desto nussiger schmeckt sie, aber desto weniger bindet sie.",
+  "schritte": [
+    "Butter schmelzen, gleich viel Mehl einrühren (z. B. 50 g und 50 g).",
+    "Unter Rühren 2–3 Minuten anschwitzen, für dunkle Saucen länger.",
+    "Flüssigkeit nach und nach einrühren, nicht umgekehrt.",
+    "Aufkochen und einige Minuten leise köcheln, bis kein Mehlgeschmack mehr da ist."
+  ],
+  "wirkt_auf": [
+    "gebunden",
+    "cremig"
+  ],
+  "faustregeln": [
+    "Dunkle Mehlschwitze: mehr Geschmack, weniger Bindung.",
+    "50 g Butter und 50 g Mehl binden etwa einen Liter Milch zu einer mittleren Béchamel (Richtwert)."
+  ],
+  "links": [
+    "staerkeverkleisterung",
+    "mehl",
+    "butter",
+    "sauce-klumpig"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "LibreTexts (Kansas State University): Roux and Thickening",
+      "url": "https://med.libretexts.org/Courses/Kansas_State_University/FNDH_313%3A_Science_of_Food/04%3A_Soups_Salads_and_Gelatins/4.02%3A_Roux_and_Thickening"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

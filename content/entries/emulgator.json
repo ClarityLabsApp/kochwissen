@@ -1,0 +1,23 @@
+{
+  "id": "emulgator",
+  "typ": "begriff",
+  "titel": "Emulgator",
+  "synonyme": [
+    "Lecithin",
+    "Vermittler"
+  ],
+  "kurz": "Ein Stoff mit einer wasserliebenden und einer fettliebenden Seite. Er legt sich um Fetttröpfchen und verhindert, dass sie zusammenfließen. Beispiele: Lecithin im Eigelb, Senf.",
+  "links": [
+    "emulsion",
+    "eigelb",
+    "senf"
+  ],
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: How to make mayonnaise",
+      "url": "https://www.americastestkitchen.com/articles/7391-how-to-make-mayonnaise"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

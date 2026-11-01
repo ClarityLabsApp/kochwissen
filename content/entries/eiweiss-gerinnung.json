@@ -1,0 +1,98 @@
+{
+  "id": "eiweiss-gerinnung",
+  "typ": "prozess",
+  "titel": "Eiweiß gerinnt (Koagulation)",
+  "synonyme": [
+    "stocken",
+    "ausflocken",
+    "gerinnen",
+    "Ei wird fest",
+    "verkochen"
+  ],
+  "kurz": "Eiweiß wird bei Hitze erst cremig und dann fest. Ein paar Grad zu viel, und aus cremig wird krümelig.",
+  "bild_im_kopf": "Wie Menschen, die sich bei steigender Musik erst lose an den Händen fassen (cremig) und dann zu festen Knäueln zusammenklumpen (krümelig).",
+  "was_passiert": "Eiweiße sind gefaltete Ketten. Hitze faltet sie auf, sie verhaken sich miteinander und halten Flüssigkeit fest: Die Masse wird dick und cremig. Wird es heißer, ziehen sie sich zusammen, pressen die Flüssigkeit aus und bilden harte Klümpchen. Beim Eigelb liegt dieser Übergang ungefähr zwischen 65 und 75 °C.",
+  "warum_wichtig": "Hollandaise, Crème brûlée, Vanillecreme, Rührei und Quiche hängen alle an diesem schmalen Fenster.",
+  "faustregeln": [
+    "Eiercremes im Wasserbad oder bei kleiner Hitze unter ständigem Rühren.",
+    "Rührei vom Herd nehmen, solange es noch etwas zu feucht aussieht.",
+    "Zucker und Sahne schützen: Sie verschieben die Gerinnung nach oben."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "ein paar Grad zu viel → krümelig"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "länger → fester"
+    },
+    {
+      "id": "zuckergehalt",
+      "wirkung": "mehr → gerinnt später"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-saucen",
+      "text": "Hollandaise im Wasserbad aufschlagen und immer wieder vom Topf nehmen, wenn sie zu schnell dick wird."
+    },
+    {
+      "welt": "w-eier",
+      "text": "Rührei bei kleiner Hitze bleibt cremig, bei starker Hitze wird es trocken und wässrig zugleich."
+    },
+    {
+      "welt": "w-suesses",
+      "text": "Vanillecreme mit Ei darf nicht kochen. Mit Stärke darin verträgt sie mehr Hitze."
+    }
+  ],
+  "links": [
+    "hollandaise-flockt",
+    "ruehrei-waessrig",
+    "creme-klumpig",
+    "legieren",
+    "wasserbad",
+    "eigelb"
+  ],
+  "welten": [
+    "w-eier",
+    "w-saucen",
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "temperaturskala",
+    "params": {
+      "hinweis": "Richtwerte",
+      "skala": [
+        {
+          "c": 62,
+          "name": "Eiklar beginnt zu stocken"
+        },
+        {
+          "c": 65,
+          "name": "Eigelb wird dick und cremig"
+        },
+        {
+          "c": 70,
+          "name": "Eigelb fest, Creme kurz vor dem Kippen"
+        },
+        {
+          "c": 80,
+          "name": "krümelig, Flüssigkeit tritt aus"
+        }
+      ]
+    }
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    },
+    {
+      "titel": "Rouxbe: Troubleshooting Hollandaise",
+      "url": "https://rouxbe.com/tips-techniques/487-troubleshooting-hollandaise"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

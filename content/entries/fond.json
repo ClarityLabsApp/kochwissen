@@ -1,0 +1,53 @@
+{
+  "id": "fond",
+  "typ": "zutat",
+  "titel": "Fond & Brühe",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "Fond",
+    "Brühe",
+    "Bouillon",
+    "Jus",
+    "Kalbsfond"
+  ],
+  "kurz": "Ein Fond ist ausgekochter Geschmack aus Knochen, Fleisch und Gemüse. Die Gelatine darin macht Saucen beim Einkochen sämig.",
+  "bild_im_kopf": "Wie ein Vorrat an Geschmack und Bindung, den man vorher in Flüssigkeit eingelagert hat.",
+  "rolle": [
+    {
+      "rolle": "bindet beim Einkochen durch Gelatine",
+      "prozess": "kollagen-gelatine"
+    },
+    {
+      "rolle": "gibt Tiefe und Umami",
+      "prozess": "mehr-geschmack"
+    },
+    {
+      "rolle": "Grundlage für Reduktionen",
+      "prozess": "reduktion"
+    }
+  ],
+  "was_passiert": "Beim langen Köcheln von Knochen löst sich Kollagen zu Gelatine. Ein guter Fond wird im Kühlschrank fest. Eingekocht konzentriert sich die Gelatine und bindet die Sauce ohne Stärke.",
+  "faustregeln": [
+    "Fond nur leise simmern lassen, dann bleibt er klar.",
+    "Gekaufter Fond hat oft wenig Gelatine: Dann mit Butter oder etwas Stärke nachhelfen."
+  ],
+  "links": [
+    "kollagen-gelatine",
+    "reduktion",
+    "reduzieren",
+    "deglacieren"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf"
+}

@@ -1,0 +1,105 @@
+{
+  "id": "sauce-zu-duenn",
+  "typ": "symptom",
+  "titel": "Sauce ist zu dünn",
+  "synonyme": [
+    "Sauce wässrig",
+    "Sauce bindet nicht",
+    "zu flüssig"
+  ],
+  "kurz": "Es fehlt Bindung: zu wenig Stärke, zu wenig eingekocht oder eine Emulsion, die nie richtig entstanden ist.",
+  "bild_im_kopf": "Wie ein Netz mit zu großen Maschen: Die Flüssigkeit läuft einfach hindurch.",
+  "ursachen": [
+    {
+      "titel": "Zu wenig eingekocht",
+      "haeufigkeit": 3,
+      "prinzip": "reduktion",
+      "warum": "Es ist noch zu viel Wasser darin.",
+      "fix": [
+        "Offen im breiten Topf weiter einkochen",
+        "Erst danach salzen"
+      ]
+    },
+    {
+      "titel": "Stärke nicht aufgekocht",
+      "haeufigkeit": 2,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Maisstärke bindet erst richtig, wenn sie kurz kocht.",
+      "fix": [
+        "Einmal aufkochen lassen"
+      ]
+    },
+    {
+      "titel": "Zu lange gekocht oder gerührt",
+      "haeufigkeit": 1,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Stärke-Bindung wird bei langem Kochen und kräftigem Rühren wieder dünner.",
+      "fix": [
+        "Wenig frisch angerührte Stärke nachgeben",
+        "Danach nur noch kurz kochen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hast du mit Stärke oder Mehl gebunden?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Hat die Sauce nach dem Binden gekocht?",
+      "antworten": [
+        [
+          "Nein",
+          "u1"
+        ],
+        [
+          "Ja, lange",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "reduktion",
+    "reduzieren",
+    "abbinden-staerke",
+    "staerkeverkleisterung",
+    "gebunden"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "LibreTexts (Kansas State University): Roux and Thickening",
+      "url": "https://med.libretexts.org/Courses/Kansas_State_University/FNDH_313%3A_Science_of_Food/04%3A_Soups_Salads_and_Gelatins/4.02%3A_Roux_and_Thickening"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

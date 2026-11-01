@@ -1,0 +1,63 @@
+{
+  "id": "gebunden",
+  "typ": "ziel",
+  "titel": "Gebunden (Saucen)",
+  "synonyme": [
+    "dicker",
+    "sämig",
+    "Sauce binden",
+    "eindicken",
+    "andicken"
+  ],
+  "kurz": "Eine gebundene Sauce ist dick genug, um am Löffel zu haften. Dafür gibt es drei Wege: Stärke, Emulsion oder Reduktion.",
+  "bild_im_kopf": "Drei Wege auf denselben Berg: Kleister (Stärke), Tröpfchen (Emulsion) oder Verdunsten (Reduktion).",
+  "bedeutung": "Dickflüssig wird eine Sauce, wenn sich etwas in den Weg der Flüssigkeit stellt: gequollene Stärkekörner, dicht gepackte Fetttröpfchen oder weniger Wasser mit mehr gelösten Stoffen wie Gelatine.",
+  "hebel": [
+    "staerkeverkleisterung",
+    "emulsion",
+    "reduktion",
+    "temperatur"
+  ],
+  "was_passiert": "Stärke bindet schnell und sicher, macht aber bei zu viel leicht pappig. Emulsionen binden samtig und reich, sind aber empfindlich. Reduktion bindet am feinsten, braucht aber Zeit und einen gelatinehaltigen Fond.",
+  "faustregeln": [
+    "Löffelprobe: Die Sauce soll den Löffelrücken überziehen, ein Fingerstrich bleibt sichtbar.",
+    "Lieber nach und nach binden als einmal zu viel."
+  ],
+  "praxis": [
+    {
+      "welt": "w-saucen",
+      "text": "Jus: reduzieren und am Schluss mit wenig Stärke oder kalter Butter nachhelfen."
+    },
+    {
+      "welt": "w-pasta",
+      "text": "Pastasauce: Nudelwasser und Fett in der Pfanne kräftig schwenken."
+    }
+  ],
+  "links": [
+    "abbinden-staerke",
+    "mehlschwitze",
+    "montieren",
+    "legieren",
+    "reduzieren",
+    "mantecare",
+    "sauce-zu-duenn"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "LibreTexts (Kansas State University): Roux and Thickening",
+      "url": "https://med.libretexts.org/Courses/Kansas_State_University/FNDH_313%3A_Science_of_Food/04%3A_Soups_Salads_and_Gelatins/4.02%3A_Roux_and_Thickening"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "mantecare",
+  "typ": "technik",
+  "titel": "Pasta im Nudelwasser binden",
+  "synonyme": [
+    "Mantecare",
+    "Nudelwasser",
+    "Pasta schwenken",
+    "Cacio e pepe"
+  ],
+  "kurz": "Pasta mit etwas stärkehaltigem Nudelwasser und Fett in der Pfanne kräftig schwenken. So entsteht eine cremige Sauce, die an der Pasta haftet.",
+  "bild_im_kopf": "Nudelwasser ist der unsichtbare Kleber zwischen Sauce und Pasta.",
+  "was_passiert": "Im Nudelwasser schwimmt gelöste Stärke. Sie hilft, Fett und Wasser zu verbinden, und dickt beim Schwenken leicht ein. Die Bewegung verteilt alles zu feinen Tröpfchen. Das Ergebnis ist eine glänzende, gebundene Sauce statt Öl und Wasser getrennt.",
+  "schritte": [
+    "Pasta 1–2 Minuten vor Ende abgießen, eine Tasse Nudelwasser aufheben.",
+    "In die Pfanne zur Sauce oder zum Fett geben.",
+    "Einen Schuss Nudelwasser dazu und kräftig schwenken.",
+    "Käse erst bei mittlerer Hitze einarbeiten, nach Bedarf noch Wasser zugeben."
+  ],
+  "wirkt_auf": [
+    "cremig",
+    "gebunden"
+  ],
+  "faustregeln": [
+    "Pasta in weniger Wasser kochen ergibt stärkehaltigeres Nudelwasser.",
+    "Zu heiß klumpt der Käse."
+  ],
+  "links": [
+    "emulsion",
+    "staerke",
+    "staerkeverkleisterung",
+    "cremig"
+  ],
+  "welten": [
+    "w-pasta",
+    "w-getreide"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

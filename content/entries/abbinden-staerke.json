@@ -1,0 +1,50 @@
+{
+  "id": "abbinden-staerke",
+  "typ": "technik",
+  "titel": "Mit Stärke abbinden",
+  "synonyme": [
+    "Maizena einrühren",
+    "binden mit Stärke",
+    "andicken"
+  ],
+  "kurz": "Stärke in kaltem Wasser anrühren, in die köchelnde Sauce geben und kurz aufkochen. Schnell, sicher und ohne Mehlgeschmack.",
+  "bild_im_kopf": "Wie Wasserperlen, die man vorher einzeln verteilt: In heiße Flüssigkeit geschüttet kleben sie sofort zu Klumpen.",
+  "was_passiert": "In kaltem Wasser verteilen sich die Stärkekörner, ohne zu quellen. In der heißen Sauce quellen sie gleichzeitig überall und binden. Maisstärke braucht dafür einen Moment Kochen, danach ist die Sauce glänzend und dick.",
+  "schritte": [
+    "1 EL Maisstärke in 2–3 EL kaltem Wasser glatt rühren.",
+    "In die köchelnde Sauce rühren.",
+    "Einmal kurz aufkochen lassen.",
+    "Prüfen und bei Bedarf wenig nachlegen."
+  ],
+  "wirkt_auf": [
+    "gebunden"
+  ],
+  "faustregeln": [
+    "Lieber zweimal wenig als einmal zu viel.",
+    "Langes Weiterkochen und kräftiges Rühren machen Stärke-Saucen wieder dünner."
+  ],
+  "links": [
+    "staerkeverkleisterung",
+    "staerke",
+    "sauce-zu-duenn",
+    "sauce-klumpig"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "LibreTexts (Kansas State University): Roux and Thickening",
+      "url": "https://med.libretexts.org/Courses/Kansas_State_University/FNDH_313%3A_Science_of_Food/04%3A_Soups_Salads_and_Gelatins/4.02%3A_Roux_and_Thickening"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

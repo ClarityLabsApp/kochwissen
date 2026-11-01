@@ -1,0 +1,58 @@
+{
+  "id": "eigelb",
+  "typ": "zutat",
+  "titel": "Eigelb",
+  "synonyme": [
+    "Dotter",
+    "Eidotter",
+    "Lecithin"
+  ],
+  "kurz": "Eigelb bindet Saucen auf zwei Arten: als Emulgator für Fett und Wasser, und indem es beim Erwärmen eindickt.",
+  "bild_im_kopf": "Ein Allrounder mit zwei Talenten: Vermittler zwischen Fett und Wasser, und Verdickungsmittel bei Wärme.",
+  "rolle": [
+    {
+      "rolle": "verbindet Fett und Wasser",
+      "prozess": "emulsion"
+    },
+    {
+      "rolle": "dickt beim Erwärmen ein",
+      "prozess": "eiweiss-gerinnung"
+    },
+    {
+      "rolle": "macht Teige reich und mürbe",
+      "prozess": "glutenbildung"
+    }
+  ],
+  "was_passiert": "Das Lecithin im Eigelb hat eine wasserliebende und eine fettliebende Seite und umhüllt Fetttröpfchen. Seine Eiweiße dicken ab etwa 65 °C ein und werden über etwa 70 °C fest.",
+  "faustregeln": [
+    "Eigelb-Saucen nie kochen lassen.",
+    "Ein Eigelb trägt viel mehr Öl, als man denkt: Das Problem ist fast immer das Tempo."
+  ],
+  "links": [
+    "emulsion",
+    "eiweiss-gerinnung",
+    "emulgieren",
+    "legieren",
+    "mayo-gerinnt",
+    "hollandaise-flockt"
+  ],
+  "welten": [
+    "w-saucen",
+    "w-eier"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: How to make mayonnaise",
+      "url": "https://www.americastestkitchen.com/articles/7391-how-to-make-mayonnaise"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

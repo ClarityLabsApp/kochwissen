@@ -1,0 +1,105 @@
+{
+  "id": "mayo-gerinnt",
+  "typ": "symptom",
+  "titel": "Mayonnaise gerinnt",
+  "synonyme": [
+    "Mayo flüssig",
+    "Mayo bricht",
+    "Mayonnaise wird nicht fest"
+  ],
+  "kurz": "Die Öltröpfchen sind zusammengeflossen. Fast immer kam das Öl zu schnell oder wurde zu schwach geschlagen.",
+  "bild_im_kopf": "Wie ein Tetris-Spiel, bei dem die Steine zu schnell fallen: Irgendwann passt nichts mehr.",
+  "ursachen": [
+    {
+      "titel": "Öl zu schnell zugegeben",
+      "haeufigkeit": 3,
+      "prinzip": "emulsion",
+      "warum": "Das Öl kann nicht in genug kleine Tröpfchen zerteilt und umhüllt werden.",
+      "fix": [
+        "Neues Eigelb in eine saubere Schüssel geben",
+        "Die geronnene Masse tropfenweise einschlagen"
+      ]
+    },
+    {
+      "titel": "Zu schwach geschlagen",
+      "haeufigkeit": 2,
+      "prinzip": "emulsion",
+      "warum": "Die Tröpfchen bleiben zu groß und fließen zusammen.",
+      "fix": [
+        "Kräftiger schlagen",
+        "Mixstab oder Küchenmaschine verwenden"
+      ]
+    },
+    {
+      "titel": "Zu viel Öl für ein Eigelb",
+      "haeufigkeit": 1,
+      "prinzip": "emulsion",
+      "warum": "Irgendwann ist zu wenig Wasser da, um weitere Tröpfchen aufzunehmen. Die Mayo wird steif und bricht.",
+      "fix": [
+        "Ein paar Tropfen Wasser oder Zitronensaft einrühren",
+        "Dann erst weiteres Öl"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Wie hast du das Öl zugegeben?",
+      "antworten": [
+        [
+          "Recht schnell",
+          "u0"
+        ],
+        [
+          "Tropfenweise, dann im Strahl",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Mit dem Schneebesen von Hand?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein, Mixer",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "emulsion",
+    "emulgieren",
+    "eigelb",
+    "sauce-trennt-sich"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: How to make mayonnaise",
+      "url": "https://www.americastestkitchen.com/articles/7391-how-to-make-mayonnaise"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

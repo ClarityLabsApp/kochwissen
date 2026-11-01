@@ -1,0 +1,105 @@
+{
+  "id": "sauce-klumpig",
+  "typ": "symptom",
+  "titel": "Sauce ist klumpig oder mehlig",
+  "synonyme": [
+    "Klumpen",
+    "Mehlklumpen",
+    "Béchamel klumpt",
+    "mehliger Geschmack"
+  ],
+  "kurz": "Die Stärke ist an der Oberfläche verkleistert, bevor sie sich verteilen konnte. Mehlig schmeckt es, wenn das Mehl nicht lange genug gekocht hat.",
+  "bild_im_kopf": "Wie Kleister, der außen hart wird und innen trockenes Pulver einschließt.",
+  "ursachen": [
+    {
+      "titel": "Stärke direkt in heiße Flüssigkeit",
+      "haeufigkeit": 3,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Außen quillt sie sofort zu einer Hülle, innen bleibt trockenes Pulver.",
+      "fix": [
+        "Stärke immer in kaltem Wasser anrühren",
+        "Durch ein Sieb passieren oder mixen"
+      ]
+    },
+    {
+      "titel": "Flüssigkeit zu schnell zur Mehlschwitze",
+      "haeufigkeit": 2,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Viel Flüssigkeit auf einmal löst die Mehlschwitze nicht gleichmäßig.",
+      "fix": [
+        "Flüssigkeit nach und nach einrühren",
+        "Schneebesen statt Löffel"
+      ]
+    },
+    {
+      "titel": "Mehl zu kurz gekocht",
+      "haeufigkeit": 2,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Mehl braucht einige Minuten Köcheln, bis der rohe Geschmack weg ist.",
+      "fix": [
+        "5–10 Minuten leise weiterköcheln, dabei rühren"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Sind sichtbare Klümpchen in der Sauce?",
+      "antworten": [
+        [
+          "Ja",
+          "q2"
+        ],
+        [
+          "Nein, aber es schmeckt mehlig",
+          "u2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Hast du mit einer Mehlschwitze gearbeitet?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein, Stärke direkt eingerührt",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "staerkeverkleisterung",
+    "mehlschwitze",
+    "abbinden-staerke",
+    "staerke"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "LibreTexts (Kansas State University): Roux and Thickening",
+      "url": "https://med.libretexts.org/Courses/Kansas_State_University/FNDH_313%3A_Science_of_Food/04%3A_Soups_Salads_and_Gelatins/4.02%3A_Roux_and_Thickening"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

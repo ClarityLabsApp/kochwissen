@@ -1,0 +1,47 @@
+{
+  "id": "deglacieren",
+  "typ": "technik",
+  "titel": "Ablöschen (Deglacieren)",
+  "synonyme": [
+    "Bratensatz lösen",
+    "ablöschen",
+    "Deglacieren"
+  ],
+  "kurz": "Den braunen Bratensatz am Pfannenboden mit Flüssigkeit lösen. Er ist voller Röstaromen und die beste Grundlage für eine Sauce.",
+  "bild_im_kopf": "Wie ein Konzentrat am Boden einer Tasse, das man mit Wasser wieder auflöst.",
+  "was_passiert": "Beim Anbraten bleiben angebräunte Eiweiß- und Zuckerreste am Boden kleben. Sie sind reine Maillard-Aromen. Eine Flüssigkeit wie Wein, Fond oder Wasser löst sie, beim Einkochen wird daraus eine kräftige Sauce.",
+  "schritte": [
+    "Fleisch aus der Pfanne nehmen, überschüssiges Fett abgießen.",
+    "Mit Wein, Fond oder Wasser ablöschen.",
+    "Den Bratensatz mit einem Holzlöffel vom Boden lösen.",
+    "Einkochen und nach Wunsch mit Butter montieren."
+  ],
+  "wirkt_auf": [
+    "mehr-geschmack"
+  ],
+  "typische_fehler": [
+    "Schwarzer Bratensatz: Verbranntes schmeckt bitter und gehört nicht in die Sauce."
+  ],
+  "links": [
+    "maillard-reaktion",
+    "reduzieren",
+    "montieren",
+    "anbraten",
+    "wein"
+  ],
+  "welten": [
+    "w-saucen",
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

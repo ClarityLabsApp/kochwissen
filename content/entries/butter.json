@@ -1,0 +1,56 @@
+{
+  "id": "butter",
+  "typ": "zutat",
+  "titel": "Butter",
+  "synonyme": [
+    "Süßrahmbutter",
+    "Bratbutter",
+    "Butterschmalz"
+  ],
+  "kurz": "Butter ist selbst eine Emulsion aus Fett, Wasser und Milcheiweiß. Darum bindet sie Saucen, verbrennt aber schneller als Öl.",
+  "bild_im_kopf": "Wie ein fertiges Päckchen: Fett, Wasser und Eiweiß schon zusammengeschnürt.",
+  "rolle": [
+    {
+      "rolle": "bindet Saucen beim Montieren",
+      "prozess": "emulsion"
+    },
+    {
+      "rolle": "bräunt nussig (Nussbutter)",
+      "prozess": "maillard-reaktion"
+    },
+    {
+      "rolle": "verbrennt früh wegen Milcheiweiß",
+      "prozess": "rauchpunkt"
+    },
+    {
+      "rolle": "macht Teige mürbe",
+      "prozess": "glutenbildung"
+    }
+  ],
+  "was_passiert": "Butter besteht zu etwa vier Fünfteln aus Fett, der Rest ist Wasser und Milcheiweiß. Das Milcheiweiß bräunt beim Erhitzen nussig und verbrennt dann. Bratbutter ist geklärte Butter ohne Wasser und Eiweiß und verträgt viel mehr Hitze.",
+  "faustregeln": [
+    "Zum scharfen Braten Bratbutter oder Öl, frische Butter erst am Ende.",
+    "Kalte Butter zum Montieren, weiche zum Backen."
+  ],
+  "links": [
+    "montieren",
+    "rauchpunkt",
+    "emulsion",
+    "arosieren"
+  ],
+  "welten": [
+    "w-saucen",
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen, Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}
