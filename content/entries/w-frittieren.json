@@ -1,0 +1,44 @@
+{
+  "typ": "welt",
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a paper cone of golden french fries"
+  },
+  "id": "w-frittieren",
+  "titel": "Frittiertes",
+  "synonyme": [
+    "Frittieren",
+    "Fritteuse",
+    "Pommes",
+    "Tempura",
+    "Schnitzel"
+  ],
+  "kurz": "Frittieren ist Trocknen in heißem Öl: Das Wasser an der Oberfläche verdampft blitzschnell und hinterlässt eine knusprige Kruste.",
+  "bild_im_kopf": "Wie ein Dampfkessel im Kleinformat: Solange es blubbert, drückt Dampf von innen gegen das Öl.",
+  "was_passiert": "Heißes Öl überträgt Hitze schnell. Wasser an der Oberfläche verdampft, die Kruste trocknet und bräunt. Der austretende Dampf hält das Öl zunächst draußen. Ist das Öl zu kalt, bildet sich die Kruste langsam und das Frittiergut saugt Öl.",
+  "warum_wichtig": "Temperatur, Portionsgröße und Abtropfen entscheiden zwischen knusprig und fettig.",
+  "faustregeln": [
+    "Thermometer: meist 160–190 °C.",
+    "Kleine Portionen.",
+    "Auf einem Gitter abtropfen."
+  ],
+  "links": [
+    "verdampfen",
+    "zweimal-frittieren",
+    "frittiertes-fettig",
+    "rauchpunkt",
+    "panieren",
+    "knusprig"
+  ],
+  "quellen": [
+    {
+      "titel": "Fine Dining Lovers: The science of French fries",
+      "url": "https://www.finedininglovers.com/explore/articles/science-french-fries"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

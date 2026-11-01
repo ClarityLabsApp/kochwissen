@@ -1,0 +1,46 @@
+{
+  "typ": "prozess",
+  "id": "oxidation-fett",
+  "titel": "Fett wird ranzig (Oxidation)",
+  "synonyme": [
+    "ranzig",
+    "alt riechendes Öl",
+    "Nüsse ranzig"
+  ],
+  "kurz": "Sauerstoff, Licht und Wärme zerlegen Fette mit der Zeit in unangenehm riechende Stoffe.",
+  "bild_im_kopf": "Wie Rost an Metall, nur bei Fett.",
+  "was_passiert": "Ungesättigte Fette, wie sie in Nüssen, Vollkornmehl und vielen Ölen stecken, reagieren langsam mit Sauerstoff. Licht und Wärme beschleunigen das. Es entstehen Stoffe, die nach Farbe oder Karton riechen.",
+  "warum_wichtig": "Erklärt, warum Nüsse, Vollkornmehl und Leinöl kühl und dunkel gelagert werden sollten.",
+  "faustregeln": [
+    "Öle dunkel und kühl lagern.",
+    "Nüsse und Vollkornmehl in Maßen kaufen oder einfrieren.",
+    "Riechen statt nach Datum gehen."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "kühler → langsamer"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "länger → ranziger"
+    }
+  ],
+  "links": [
+    "oel",
+    "fett"
+  ],
+  "welten": [
+    "w-milch"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

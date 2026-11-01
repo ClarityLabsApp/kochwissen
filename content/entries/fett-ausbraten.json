@@ -1,0 +1,49 @@
+{
+  "typ": "prozess",
+  "id": "fett-ausbraten",
+  "titel": "Fett ausbraten (Auslassen)",
+  "synonyme": [
+    "Fett auslassen",
+    "Speck auslassen",
+    "Entenhaut knusprig",
+    "rendern"
+  ],
+  "kurz": "Bei sanfter Hitze schmilzt Fett aus Haut und Speck heraus. Zurück bleibt eine dünne Schicht, die knusprig wird.",
+  "bild_im_kopf": "Wie Kerzenwachs, das langsam schmilzt und den Docht freilegt.",
+  "was_passiert": "Fett sitzt in Zellen eingeschlossen. Bei langsamer Hitze schmelzen sie und das Fett läuft aus. Ist die Hitze zu stark, schließt sich die Oberfläche zu früh, und unter einer dunklen Kruste bleibt eine dicke, weiche Fettschicht.",
+  "warum_wichtig": "Entenbrust, Speck, Schweinebauch und Pouletkeulen brauchen zuerst Geduld und erst am Ende starke Hitze.",
+  "faustregeln": [
+    "Kalt in die Pfanne legen, dann langsam erhitzen.",
+    "Haut vorher einschneiden, ohne ins Fleisch zu schneiden.",
+    "Ausgelassenes Fett aufheben: ideal für Bratkartoffeln."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "sanft → mehr Fett läuft aus"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "länger → dünnere, knusprigere Haut"
+    }
+  ],
+  "links": [
+    "kalt-ansetzen",
+    "knusprig",
+    "w-gefluegel"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-gefluegel"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "typ": "prozess",
+  "id": "diffusion",
+  "titel": "Diffusion: Geschmack wandert",
+  "synonyme": [
+    "durchziehen",
+    "Marinade zieht ein",
+    "einziehen"
+  ],
+  "kurz": "Gelöste Stoffe wandern von selbst dorthin, wo weniger von ihnen ist. Aber nur langsam, wenige Millimeter in Stunden.",
+  "bild_im_kopf": "Wie ein Tropfen Tinte in Wasser, der sich langsam ausbreitet, nur viel langsamer, weil Fleisch kein Wasser ist.",
+  "was_passiert": "Salz, Zucker und Aromen bewegen sich von der Oberfläche ins Innere. Kleine Moleküle wie Salz schaffen das in Stunden bis Tagen, große Aromen und Öl dringen kaum ein. Darum würzen Marinaden vor allem die Oberfläche.",
+  "warum_wichtig": "Erklärt, warum Salz einzieht, Marinadenaromen aber außen bleiben, und warum Schmorgerichte am nächsten Tag besser schmecken.",
+  "faustregeln": [
+    "Salz braucht Zeit, Aromen bleiben außen.",
+    "Dünnere Stücke ziehen schneller durch.",
+    "Eintopf vom Vortag: Die Aromen hatten Zeit, sich zu verteilen."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zeit",
+      "wirkung": "länger → tiefer"
+    },
+    {
+      "id": "salzgehalt",
+      "wirkung": "mehr → schneller"
+    },
+    {
+      "id": "oberflaeche",
+      "wirkung": "dünner → schneller durch"
+    }
+  ],
+  "links": [
+    "marinieren",
+    "trockensalzen",
+    "osmose"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-kaffee"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

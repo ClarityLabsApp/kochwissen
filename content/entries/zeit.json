@@ -1,0 +1,38 @@
+{
+  "typ": "stellschraube",
+  "id": "zeit",
+  "titel": "Zeit",
+  "synonyme": [
+    "Garzeit",
+    "Dauer",
+    "lange garen",
+    "Geduld"
+  ],
+  "kurz": "Zeit verändert alles: Bindegewebe löst sich, Teig entwickelt Geschmack, Salz zieht ein, Eiweiß wird fester.",
+  "bild_im_kopf": "Die unsichtbare Zutat, die in jedem Rezept steht.",
+  "was_passiert": "Manche Vorgänge brauchen Zeit statt Hitze: Bindegewebe, Gärung, Salzen, Aromen verteilen. Bei anderen ist Zeit der Feind: Eiweiß wird trocken, Grün wird grau, Schaum fällt zusammen.",
+  "faustregeln": [
+    "Zähes Fleisch, Brotteig, Marinaden: mehr Zeit.",
+    "Fisch, grünes Gemüse, Eier: weniger Zeit."
+  ],
+  "links": [
+    "kollagen-gelatine",
+    "hefegaerung",
+    "trockensalzen",
+    "chlorophyll-farbe"
+  ],
+  "visual": {
+    "vorlage": "skala",
+    "params": {
+      "links": "kurz: knackig, saftig, frisch",
+      "rechts": "lang: zart, durchgezogen, entwickelt"
+    }
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

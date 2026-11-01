@@ -1,0 +1,50 @@
+{
+  "id": "mehr-geschmack",
+  "typ": "ziel",
+  "titel": "Mehr Geschmack",
+  "synonyme": [
+    "würziger",
+    "intensiver",
+    "Umami",
+    "schmeckt nach mehr",
+    "Tiefe"
+  ],
+  "kurz": "Mehr Geschmack entsteht durch Röstaromen, Konzentration, Säure und Salz im richtigen Verhältnis, nicht durch mehr Gewürz.",
+  "bild_im_kopf": "Wie ein Mischpult: Salz, Säure, Süße, Bitterkeit und Umami müssen zueinander passen.",
+  "bedeutung": "Geschmack hat mehrere Ebenen: Röstaromen aus der Maillard-Reaktion, Konzentration durch Einkochen, Würze aus Salz, Frische aus Säure und Tiefe aus Umami (Käse, Tomate, Fond, Pilze).",
+  "hebel": [
+    "maillard-reaktion",
+    "reduktion",
+    "salzgehalt",
+    "ph-wert",
+    "zeit"
+  ],
+  "was_passiert": "Ein flaches Gericht braucht oft eher Säure als Salz. Röstaromen entstehen beim Anbraten, nicht beim Kochen. Einkochen konzentriert alles.",
+  "faustregeln": [
+    "Kräftig anbraten und den Bratensatz lösen.",
+    "Zum Schluss mit Säure und Salz abschmecken.",
+    "Gewürze in Fett anschwitzen."
+  ],
+  "links": [
+    "anbraten",
+    "deglacieren",
+    "reduzieren",
+    "abschmecken-saeure",
+    "gewuerze-roesten",
+    "essen-flach"
+  ],
+  "welten": [
+    "w-saucen",
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

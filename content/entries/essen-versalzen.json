@@ -1,0 +1,70 @@
+{
+  "typ": "symptom",
+  "welten": [],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "essen-versalzen",
+  "titel": "Essen ist versalzen",
+  "synonyme": [
+    "zu salzig",
+    "versalzen retten"
+  ],
+  "kurz": "Zu viel Salz lässt sich kaum herausholen, nur verdünnen oder ausgleichen.",
+  "bild_im_kopf": "Wie zu laute Musik: Leiser drehen geht nicht, man kann nur mehr Raum schaffen.",
+  "ursachen": [
+    {
+      "titel": "Früh gesalzen, dann eingekocht",
+      "haeufigkeit": 3,
+      "prinzip": "reduktion",
+      "warum": "Beim Einkochen bleibt das Salz, das Wasser geht.",
+      "fix": [
+        "Mit ungesalzener Flüssigkeit verdünnen",
+        "Nächstes Mal erst am Schluss salzen"
+      ]
+    },
+    {
+      "titel": "Zu viel auf einmal",
+      "haeufigkeit": 2,
+      "prinzip": "salzgehalt",
+      "warum": "Salz löst sich und verteilt sich erst mit der Zeit.",
+      "fix": [
+        "Mehr von den ungesalzenen Zutaten dazugeben",
+        "Säure, Süße oder Sahne dämpfen den Eindruck etwas"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Wurde die Sauce oder Suppe nach dem Salzen lange eingekocht?",
+      "antworten": [
+        [
+          "Ja",
+          "u0"
+        ],
+        [
+          "Nein",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    }
+  },
+  "links": [
+    "salz",
+    "salzgehalt",
+    "reduktion"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

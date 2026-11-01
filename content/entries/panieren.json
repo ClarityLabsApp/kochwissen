@@ -1,0 +1,43 @@
+{
+  "typ": "technik",
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "id": "panieren",
+  "titel": "Panieren",
+  "synonyme": [
+    "Panade",
+    "Schnitzel panieren",
+    "Mehl Ei Paniermehl"
+  ],
+  "kurz": "Mehl, Ei, Paniermehl: drei Schichten, die eine knusprige Hülle bilden und das Fleisch schützen.",
+  "bild_im_kopf": "Wie Grundierung, Kleber und Belag.",
+  "was_passiert": "Mehl trocknet die Oberfläche und gibt dem Ei Halt. Ei ist der Kleber. Paniermehl bildet die Kruste, die im heißen Fett trocknet und bräunt. Für eine leicht abstehende Panade wird das Schnitzel im Fett geschwenkt.",
+  "schritte": [
+    "Fleisch trocken tupfen und würzen.",
+    "In Mehl wenden, überschüssiges abklopfen.",
+    "Durch verquirltes Ei ziehen, abtropfen lassen.",
+    "In Paniermehl wenden, nicht andrücken.",
+    "In reichlich heißem Fett (etwa 170 °C, Richtwert) ausbacken und die Pfanne schwenken."
+  ],
+  "wirkt_auf": [
+    "knusprig"
+  ],
+  "links": [
+    "panade-faellt-ab",
+    "knusprig",
+    "w-frittieren"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-fisch",
+    "w-frittieren"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

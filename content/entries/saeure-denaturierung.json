@@ -1,0 +1,46 @@
+{
+  "typ": "prozess",
+  "id": "saeure-denaturierung",
+  "titel": "Säure gart Eiweiß",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "Ceviche",
+    "Fisch in Limette",
+    "Säure gart"
+  ],
+  "kurz": "Starke Säure verändert Eiweiß ähnlich wie Hitze: Roher Fisch in Limettensaft wird fest und undurchsichtig.",
+  "bild_im_kopf": "Wie Hitze ohne Feuer.",
+  "was_passiert": "Säure entfaltet die Eiweißketten, sie verbinden sich neu und werden fest und weiß. Anders als Hitze tötet Säure aber nicht alle Keime ab, darum braucht Ceviche sehr frischen Fisch.",
+  "warum_wichtig": "Erklärt Ceviche und warum zu lange Säure-Marinaden Fleisch und Fisch mehlig machen.",
+  "faustregeln": [
+    "Ceviche nur mit sehr frischem Fisch.",
+    "Fisch nicht stundenlang in Säure marinieren, sonst wird er mehlig."
+  ],
+  "stellschrauben": [
+    {
+      "id": "ph-wert",
+      "wirkung": "saurer → schneller fest"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "zu lange → mehlig"
+    }
+  ],
+  "links": [
+    "eiweiss-denaturierung",
+    "saeure",
+    "marinieren"
+  ],
+  "welten": [
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

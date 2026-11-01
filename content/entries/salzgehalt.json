@@ -1,0 +1,39 @@
+{
+  "typ": "stellschraube",
+  "id": "salzgehalt",
+  "titel": "Salzmenge",
+  "synonyme": [
+    "salzen",
+    "Salz",
+    "weniger Salz"
+  ],
+  "kurz": "Salz verstärkt Geschmack, zieht Wasser, hält Wasser im Fleisch und strafft Teig. Die richtige Menge hängt vom Zeitpunkt ab.",
+  "bild_im_kopf": "Ein Regler mit schmalem Sweetspot: zu wenig fad, zu viel ungenießbar.",
+  "was_passiert": "Wenig Salz hebt Aromen und dämpft Bitterkeit. Mehr Salz zieht Wasser und würzt durch. Zu viel überdeckt alles. Eingekochte Saucen werden mit der Zeit salziger.",
+  "faustregeln": [
+    "Früh wenig, am Schluss abschmecken.",
+    "Nudelwasser deutlich salzen, Saucen erst am Ende."
+  ],
+  "links": [
+    "salz",
+    "osmose",
+    "wasserbindung-salz",
+    "essen-versalzen",
+    "essen-flach"
+  ],
+  "visual": {
+    "vorlage": "skala",
+    "params": {
+      "links": "zu wenig: fad",
+      "mitte": "richtig: Aromen leuchten",
+      "rechts": "zu viel: salzig, überdeckt alles"
+    }
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

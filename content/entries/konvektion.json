@@ -1,0 +1,48 @@
+{
+  "typ": "prozess",
+  "id": "konvektion",
+  "titel": "Konvektion (Umluft, Kochen)",
+  "synonyme": [
+    "Umluft",
+    "Heißluft",
+    "strömende Hitze"
+  ],
+  "kurz": "Bewegte Luft oder Flüssigkeit trägt Hitze viel schneller heran als stehende. Darum gart Umluft schneller und trocknet stärker.",
+  "bild_im_kopf": "Wie Wind an einem kalten Tag: Bei gleicher Temperatur fühlt es sich viel kälter an, weil die Luft die Wärme wegträgt.",
+  "was_passiert": "Ruhende Luft bildet um das Essen eine isolierende Schicht. Strömende Luft oder sprudelndes Wasser reißen sie weg. Umluft gart darum schneller und trocknet Oberflächen stärker.",
+  "warum_wichtig": "Umluft ist ideal für Knusprigkeit und mehrere Bleche, aber weniger gut für Brot in der Dampfphase und empfindliche Kuchen.",
+  "faustregeln": [
+    "Bei Umluft etwa 20 °C weniger als bei Ober- und Unterhitze (Richtwert).",
+    "Für Knusprigkeit Umluft, für Brot am Anfang ausschalten."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "bei Umluft niedriger einstellen"
+    },
+    {
+      "id": "luftfeuchte-ofen",
+      "wirkung": "Umluft trocknet"
+    }
+  ],
+  "links": [
+    "roesten-ofen",
+    "dampf-im-ofen",
+    "waermeleitung",
+    "daempfen"
+  ],
+  "welten": [
+    "w-gebaeck",
+    "w-kartoffeln"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "typ": "welt",
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a bowl of white rice with a wooden spoon"
+  },
+  "id": "w-getreide",
+  "titel": "Reis & Getreide",
+  "synonyme": [
+    "Reis",
+    "Risotto",
+    "Polenta",
+    "Couscous",
+    "Quinoa"
+  ],
+  "kurz": "Getreide ist vor allem Stärke. Ob Reis locker oder cremig wird, hängt davon ab, wie viel Stärke sich löst.",
+  "bild_im_kopf": "Wie Perlen in Kleister: Bleibt der Kleister an den Perlen, kleben sie, wird er gelöst, wird es cremig.",
+  "was_passiert": "Beim Kochen quillt die Stärke im Korn. Stärke an der Oberfläche löst sich ins Wasser und macht klebrig oder cremig. Langkornreis hat Stärke, die eher locker bleibt, Risottoreis gibt viel Stärke ab.",
+  "warum_wichtig": "Für lockeren Reis spült man Stärke ab, für Risotto rührt man sie bewusst heraus.",
+  "faustregeln": [
+    "Für lockeren Reis waschen, bis das Wasser klar ist.",
+    "Nach dem Kochen zugedeckt ruhen lassen.",
+    "Für Bratreis Reis vom Vortag."
+  ],
+  "links": [
+    "staerkeverkleisterung",
+    "retrogradation",
+    "reis-matschig",
+    "cremig",
+    "mantecare"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

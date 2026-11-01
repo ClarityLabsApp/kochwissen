@@ -1,0 +1,52 @@
+{
+  "typ": "prozess",
+  "id": "waermeleitung",
+  "titel": "Wärmeleitung",
+  "synonyme": [
+    "Hitze wandert",
+    "Hitze nach innen",
+    "durchgaren"
+  ],
+  "kurz": "Hitze wandert langsam von außen nach innen. Darum ist der Rand längst gar, wenn die Mitte noch kalt ist.",
+  "bild_im_kopf": "Wie eine Nachricht, die in einer Menschenkette weitergeflüstert wird: Bis sie in der Mitte ankommt, dauert es.",
+  "was_passiert": "In Lebensmitteln gibt jedes Teilchen die Wärme an seine Nachbarn weiter. Das geht langsam: Doppelt so dicke Stücke brauchen ungefähr viermal so lange, bis die Mitte warm ist. Je heißer außen, desto größer der Unterschied zwischen Rand und Mitte.",
+  "warum_wichtig": "Erklärt graue Ränder bei Steaks, rohe Kerne bei dicken Braten und warum Rückwärtsgaren funktioniert.",
+  "faustregeln": [
+    "Dicke Stücke sanft garen, dünne scharf.",
+    "Dicke halbieren heißt Garzeit ungefähr vierteln (Richtwert)."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "heißer außen → größerer Unterschied"
+    },
+    {
+      "id": "oberflaeche",
+      "wirkung": "dünner → viel schneller"
+    },
+    {
+      "id": "pfannenmaterial",
+      "wirkung": "Gusseisen speichert, Alu leitet schnell"
+    }
+  ],
+  "links": [
+    "gleichmaessig-gar",
+    "rueckwaerts-garen",
+    "pfannenmaterial",
+    "konvektion",
+    "waermestrahlung"
+  ],
+  "welten": [
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "typ": "symptom",
+  "welten": [
+    "w-fleisch",
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "panade-faellt-ab",
+  "titel": "Panade fällt ab",
+  "synonyme": [
+    "Panade löst sich",
+    "Schnitzel Panade ab"
+  ],
+  "kurz": "Feuchtigkeit oder zu wenig Haftung zwischen den Schichten. Manchmal auch zu wenig Fett.",
+  "bild_im_kopf": "Wie Tapete auf einer feuchten Wand.",
+  "ursachen": [
+    {
+      "titel": "Fleisch nass",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Dampf zwischen Fleisch und Panade drückt sie ab.",
+      "fix": [
+        "Trocken tupfen",
+        "Mehl dünn auftragen und abklopfen"
+      ]
+    },
+    {
+      "titel": "Zu wenig Fett, zu kühl",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "Die Panade wird nicht schnell genug fest und saugt sich voll.",
+      "fix": [
+        "Reichlich Fett, gut erhitzt",
+        "Schnitzel schwimmen lassen"
+      ]
+    },
+    {
+      "titel": "Zu oft gewendet oder angestochen",
+      "haeufigkeit": 1,
+      "prinzip": "verdampfen",
+      "warum": "Die Kruste reißt, bevor sie fest ist.",
+      "fix": [
+        "Mit Zange oder Wender, einmal wenden"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hast du das Fleisch vor dem Mehl trocken getupft?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Schwamm das Schnitzel im Fett?",
+      "antworten": [
+        [
+          "Nein, wenig Fett",
+          "u1"
+        ],
+        [
+          "Ja",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "panieren",
+    "trocken-tupfen",
+    "frittiertes-fettig"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "typ": "technik",
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "id": "sous-vide",
+  "titel": "Sous-vide",
+  "schwierigkeit": "fortgeschritten",
+  "synonyme": [
+    "Vakuumgaren",
+    "Niedertemperatur im Wasserbad"
+  ],
+  "kurz": "Vakuumiertes Fleisch oder Fisch im Wasserbad genau auf Zieltemperatur garen. Von Rand zu Rand gleich, dann kurz anbraten.",
+  "bild_im_kopf": "Wie ein Thermostat statt eines Lagerfeuers.",
+  "was_passiert": "Das Wasser ist genau so warm wie die gewünschte Kerntemperatur. Das Essen kann darum nicht übergaren, nur länger werden. Danach braucht es eine sehr heiße Pfanne für die Kruste.",
+  "schritte": [
+    "Fleisch würzen und vakuumieren.",
+    "Wasserbad auf Zieltemperatur bringen, z. B. 55 °C für rosa Rind (Richtwert).",
+    "Je nach Dicke 1–3 Stunden garen.",
+    "Herausnehmen, trocken tupfen.",
+    "In sehr heißer Pfanne 1 Minute pro Seite anbraten."
+  ],
+  "wirkt_auf": [
+    "gleichmaessig-gar",
+    "saftig"
+  ],
+  "links": [
+    "gleichmaessig-gar",
+    "eiweiss-denaturierung",
+    "anbraten",
+    "kerntemperatur"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-fisch"
+  ],
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "typ": "technik",
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "id": "abschmecken-saeure",
+  "titel": "Mit Säure abschmecken",
+  "synonyme": [
+    "Zitrone zum Schluss",
+    "Spritzer Essig",
+    "abschmecken"
+  ],
+  "kurz": "Ein paar Tropfen Zitrone oder Essig ganz am Schluss lassen ein Gericht frischer und kräftiger schmecken.",
+  "bild_im_kopf": "Wie das Licht einschalten in einem dunklen Raum.",
+  "was_passiert": "Säure gleicht Fett, Süße und Schwere aus. Sie macht andere Aromen deutlicher wahrnehmbar, ähnlich wie Salz. Am Ende zugegeben bleibt sie frisch.",
+  "schritte": [
+    "Gericht probieren.",
+    "Wenige Tropfen Zitrone, Essig oder Wein dazugeben.",
+    "Umrühren, erneut probieren.",
+    "Erst danach entscheiden, ob noch Salz fehlt."
+  ],
+  "wirkt_auf": [
+    "mehr-geschmack"
+  ],
+  "links": [
+    "saeure",
+    "essen-flach",
+    "mehr-geschmack"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

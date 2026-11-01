@@ -1,0 +1,41 @@
+{
+  "typ": "prozess",
+  "id": "leidenfrost",
+  "titel": "Leidenfrost-Effekt",
+  "synonyme": [
+    "tanzender Wassertropfen",
+    "Wassertropfen-Test"
+  ],
+  "kurz": "Auf einer sehr heißen Pfanne schwebt ein Wassertropfen auf seinem eigenen Dampfpolster und tanzt umher.",
+  "bild_im_kopf": "Wie ein Airhockey-Puck auf einem Luftkissen.",
+  "was_passiert": "Bei mittlerer Hitze verdampft ein Tropfen zischend. Ist die Pfanne deutlich heißer, verdampft die Unterseite so schnell, dass ein Dampfkissen entsteht, auf dem der Tropfen gleitet. Er lebt dann sogar länger.",
+  "warum_wichtig": "Der einfachste Test, ob eine Edelstahlpfanne heiß genug für Fleisch oder Fisch ist.",
+  "faustregeln": [
+    "Tanzt der Tropfen als Kugel, ist die Pfanne bereit.",
+    "Bei beschichteten Pfannen nicht leer überhitzen."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "erst ab hoher Hitze"
+    }
+  ],
+  "links": [
+    "pfanne-vorheizen",
+    "fisch-klebt",
+    "steak-grau"
+  ],
+  "welten": [
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

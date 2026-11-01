@@ -1,0 +1,39 @@
+{
+  "typ": "welt",
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a roast chicken with crisp golden skin on a platter"
+  },
+  "id": "w-gefluegel",
+  "titel": "Geflügel",
+  "synonyme": [
+    "Poulet",
+    "Huhn",
+    "Hähnchen",
+    "Ente",
+    "Truthahn"
+  ],
+  "kurz": "Geflügel hat zwei Herausforderungen: magere Brust, die schnell austrocknet, und Haut, die knusprig werden soll.",
+  "bild_im_kopf": "Zwei Gäste mit verschiedenen Wünschen am selben Tisch: Die Brust will sanft, die Keule will länger, die Haut will trocken und heiß.",
+  "was_passiert": "Brustfleisch ist mager und wird über etwa 65 °C schnell trocken. Keulen haben mehr Bindegewebe und vertragen mehr Hitze. Die Haut wird erst knusprig, wenn ihr Wasser verdampft und das Fett ausgelassen ist.",
+  "warum_wichtig": "Trockensalzen, unbedeckt antrocknen lassen und ein Thermometer lösen fast alle Geflügelprobleme.",
+  "faustregeln": [
+    "Über Nacht trocken salzen und unbedeckt kühlen.",
+    "Thermometer in den dicksten Teil der Brust.",
+    "Entenhaut kalt in der Pfanne ansetzen."
+  ],
+  "links": [
+    "trockensalzen",
+    "knusprig",
+    "fett-ausbraten",
+    "kalt-ansetzen",
+    "fleisch-trocken"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "typ": "welt",
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a nest of fresh tagliatelle dusted with flour"
+  },
+  "id": "w-pasta",
+  "titel": "Pasta",
+  "synonyme": [
+    "Nudeln",
+    "Spaghetti",
+    "Teigwaren",
+    "frische Pasta"
+  ],
+  "kurz": "Pasta ist Glutennetz mit Stärke. Das Netz gibt Biss, die Stärke im Kochwasser hilft der Sauce zu haften.",
+  "bild_im_kopf": "Wie ein Netz voller Kleister: außen gibt es Stärke ab, innen hält das Netz.",
+  "was_passiert": "Beim Kochen quillt die Stärke, das Glutennetz hält die Form. Ein Teil der Stärke geht ins Wasser, das darum wertvoll für die Sauce ist.",
+  "warum_wichtig": "Biss und eine gebundene Sauce entstehen in den letzten zwei Minuten: in der Pfanne mit Nudelwasser.",
+  "faustregeln": [
+    "Kochwasser salzen, aber nicht versalzen.",
+    "Kurz vor al dente abgießen und in der Sauce fertig garen.",
+    "Eine Tasse Nudelwasser aufheben."
+  ],
+  "links": [
+    "glutenbildung",
+    "mantecare",
+    "pasta-klebt",
+    "staerkeverkleisterung"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "typ": "symptom",
+  "welten": [],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "essen-flach",
+  "titel": "Essen schmeckt flach",
+  "synonyme": [
+    "fad",
+    "langweilig",
+    "es fehlt etwas",
+    "schmeckt nach nichts"
+  ],
+  "kurz": "Meist fehlt Säure, manchmal Salz, manchmal Röstaroma. Selten fehlen Gewürze.",
+  "bild_im_kopf": "Wie ein Foto ohne Kontrast.",
+  "ursachen": [
+    {
+      "titel": "Säure fehlt",
+      "haeufigkeit": 3,
+      "prinzip": "mehr-geschmack",
+      "warum": "Ohne Säure wirken Gerichte schwer und dumpf.",
+      "fix": [
+        "Ein paar Tropfen Zitrone oder Essig",
+        "Ein Schluck Wein beim Kochen"
+      ]
+    },
+    {
+      "titel": "Salz fehlt",
+      "haeufigkeit": 2,
+      "prinzip": "mehr-geschmack",
+      "warum": "Salz hebt alle anderen Aromen hervor.",
+      "fix": [
+        "Prisenweise nachsalzen und probieren"
+      ]
+    },
+    {
+      "titel": "Keine Röstaromen",
+      "haeufigkeit": 2,
+      "prinzip": "maillard-reaktion",
+      "warum": "Nur gekocht statt angebraten fehlt die Tiefe.",
+      "fix": [
+        "Zutaten erst kräftig anbraten",
+        "Bratensatz ablöschen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Wird es besser, wenn du einen Löffel davon mit einem Tropfen Zitrone probierst?",
+      "antworten": [
+        [
+          "Ja",
+          "u0"
+        ],
+        [
+          "Nein",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Und mit einer Prise Salz?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "abschmecken-saeure",
+    "mehr-geschmack",
+    "salzgehalt",
+    "anbraten"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

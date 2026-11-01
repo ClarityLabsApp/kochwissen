@@ -1,0 +1,97 @@
+{
+  "typ": "symptom",
+  "welten": [
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "fisch-klebt",
+  "titel": "Fisch klebt an der Pfanne",
+  "synonyme": [
+    "Fischhaut klebt",
+    "Fisch reißt beim Wenden"
+  ],
+  "kurz": "Die Pfanne war nicht heiß genug oder der Fisch wurde zu früh bewegt. Eiweiß verbindet sich mit dem Metall.",
+  "bild_im_kopf": "Wie ein Pflaster, das man zu früh abreißt.",
+  "ursachen": [
+    {
+      "titel": "Pfanne zu kalt",
+      "haeufigkeit": 3,
+      "prinzip": "leidenfrost",
+      "warum": "In lauwarmer Pfanne verbindet sich Eiweiß mit dem Metall, bevor sich eine Kruste bildet.",
+      "fix": [
+        "Pfanne richtig vorheizen",
+        "Wassertropfen-Test"
+      ]
+    },
+    {
+      "titel": "Zu früh gewendet",
+      "haeufigkeit": 2,
+      "prinzip": "maillard-reaktion",
+      "warum": "Ist die Kruste fertig, löst sich der Fisch von selbst.",
+      "fix": [
+        "Liegen lassen, bis er sich löst"
+      ]
+    },
+    {
+      "titel": "Haut nass",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "Wasser verhindert die Kruste.",
+      "fix": [
+        "Haut gründlich trocken tupfen",
+        "Mit einem Messerrücken abstreifen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hat es beim Einlegen deutlich gezischt?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Hast du in den ersten Minuten versucht zu wenden?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "leidenfrost",
+    "pfanne-vorheizen",
+    "trocken-tupfen"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

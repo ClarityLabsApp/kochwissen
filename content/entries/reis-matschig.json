@@ -1,0 +1,97 @@
+{
+  "typ": "symptom",
+  "welten": [
+    "w-getreide"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "reis-matschig",
+  "titel": "Reis wird matschig",
+  "synonyme": [
+    "Reis klebrig",
+    "Reis breiig",
+    "Reis pappig"
+  ],
+  "kurz": "Zu viel Wasser oder zu viel lose Stärke, manchmal auch zu viel Rühren.",
+  "bild_im_kopf": "Wie Perlen, die in zu viel Kleister schwimmen.",
+  "ursachen": [
+    {
+      "titel": "Zu viel Wasser",
+      "haeufigkeit": 3,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Das Korn quillt über und platzt auf.",
+      "fix": [
+        "Wasser abmessen, z. B. etwa 1,5 Teile Wasser auf 1 Teil Langkornreis (Richtwert)"
+      ]
+    },
+    {
+      "titel": "Nicht gewaschen",
+      "haeufigkeit": 2,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Lose Stärke an der Oberfläche macht klebrig.",
+      "fix": [
+        "Reis waschen, bis das Wasser klar ist"
+      ]
+    },
+    {
+      "titel": "Umgerührt",
+      "haeufigkeit": 1,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Rühren löst Stärke, wie beim Risotto.",
+      "fix": [
+        "Zugedeckt nicht rühren",
+        "Nach dem Kochen ruhen lassen, dann auflockern"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hast du das Wasser abgemessen?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Hast du den Reis vorher gewaschen?",
+      "antworten": [
+        [
+          "Nein",
+          "u1"
+        ],
+        [
+          "Ja",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "staerkeverkleisterung",
+    "w-getreide",
+    "retrogradation"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

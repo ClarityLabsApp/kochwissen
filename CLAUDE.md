@@ -77,7 +77,9 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 
 - [ ] Weitere Simulationen: Glutenbildung als Komponente, Eiweiß-Denaturierung, Schaumbildung, Karamellisierung
 - [ ] Maillard und Gluten-Prototyp als echte React-Komponenten portieren (statt iframe)
-- [ ] Inhalte: Welten Gemüse, Eier, Kuchen & Gebäck, Desserts, Fisch, Frittiertes ergänzen
+- [x] Alle 197 Einträge der Masterliste als Entwurf geschrieben (1. November 2026)
+- [ ] Review durch Phil: Status von `entwurf` auf `geprueft`
+- [ ] Masterliste erweitern (neue Gerichte, Techniken, Begriffe)
 - [ ] Semantische Suche (z. B. Supabase pgvector), aktuelle Wortsuche ersetzen
 - [ ] Aquarell-Illustrationen pro Welt und Zutat per Batch-Skript (Stil-Prompt in `DESIGN.md`)
 - [ ] Prüfung für unmarkierte Fachbegriffe im Validator

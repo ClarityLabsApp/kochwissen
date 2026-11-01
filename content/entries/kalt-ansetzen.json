@@ -1,0 +1,42 @@
+{
+  "typ": "technik",
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "id": "kalt-ansetzen",
+  "titel": "Kalt ansetzen (Entenhaut, Speck)",
+  "synonyme": [
+    "kalte Pfanne",
+    "Ente braten",
+    "Speck braten"
+  ],
+  "kurz": "Fettes Fleisch mit der Haut nach unten in die kalte Pfanne legen und langsam erhitzen. Das Fett läuft aus, die Haut wird dünn und knusprig.",
+  "bild_im_kopf": "Wie Schnee, der langsam schmilzt, statt schlagartig zu verdampfen.",
+  "was_passiert": "Die langsam steigende Hitze schmilzt das Fett unter der Haut, bevor sich außen eine Kruste bildet. Erst am Ende wird die Hitze erhöht.",
+  "schritte": [
+    "Haut rautenförmig einschneiden, ohne ins Fleisch zu schneiden.",
+    "Salzen und mit der Haut nach unten in die kalte Pfanne legen.",
+    "Bei mittlerer bis kleiner Hitze 10–15 Minuten Fett auslassen.",
+    "Fett zwischendurch abgießen.",
+    "Am Ende Hitze erhöhen, bis die Haut knusprig ist, dann kurz auf der Fleischseite garen."
+  ],
+  "wirkt_auf": [
+    "knusprig"
+  ],
+  "links": [
+    "fett-ausbraten",
+    "knusprig",
+    "w-gefluegel"
+  ],
+  "welten": [
+    "w-gefluegel",
+    "w-fleisch"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

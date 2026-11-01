@@ -1,0 +1,44 @@
+{
+  "typ": "technik",
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "id": "grillen",
+  "titel": "Grillen",
+  "synonyme": [
+    "Barbecue",
+    "BBQ",
+    "direkt grillen",
+    "indirekt grillen"
+  ],
+  "kurz": "Starke Strahlungshitze von unten gibt Kruste und Rauchgeschmack. Mit einer heißen und einer kühlen Zone gelingen auch dicke Stücke.",
+  "bild_im_kopf": "Wie Sonne und Schatten auf dem Rost.",
+  "was_passiert": "Über der Glut ist die Hitze sehr stark und bräunt schnell. Daneben ist es sanfter, dort gart das Innere ohne zu verbrennen. Tropfendes Fett verbrennt in der Glut und erzeugt Rauch.",
+  "schritte": [
+    "Glut auf eine Seite schieben: heiße und kühle Zone.",
+    "Rost gut vorheizen und reinigen.",
+    "Dünne Stücke direkt grillen.",
+    "Dicke Stücke erst indirekt auf Temperatur, dann direkt bräunen.",
+    "Mit Thermometer prüfen."
+  ],
+  "wirkt_auf": [
+    "mehr-geschmack",
+    "farbe"
+  ],
+  "links": [
+    "waermestrahlung",
+    "maillard-reaktion",
+    "rueckwaerts-garen"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-gemuese"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

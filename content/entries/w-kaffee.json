@@ -1,0 +1,37 @@
+{
+  "typ": "welt",
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a stovetop espresso pot and a small cup"
+  },
+  "id": "w-kaffee",
+  "titel": "Kaffee & Tee",
+  "synonyme": [
+    "Kaffee",
+    "Espresso",
+    "Tee",
+    "Rösten",
+    "Brühen"
+  ],
+  "kurz": "Kaffee und Tee sind Extraktion: Heißes Wasser löst Aromen aus Bohnen oder Blättern. Röstung, Mahlgrad, Temperatur und Zeit bestimmen, was herauskommt.",
+  "bild_im_kopf": "Wie Teebeutel und Geduld: Zu kurz schmeckt dünn, zu lange bitter.",
+  "was_passiert": "Beim Rösten entstehen durch Maillard-Reaktion und Karamellisierung die Aromen. Beim Brühen lösen sich zuerst Säuren und Fruchtaromen, später Süße, zuletzt Bitterstoffe.",
+  "warum_wichtig": "Saurer Kaffee ist meist zu kurz oder zu grob extrahiert, bitterer zu lange oder zu fein.",
+  "faustregeln": [
+    "Sauer: feiner mahlen oder länger brühen.",
+    "Bitter: gröber mahlen oder kürzer brühen.",
+    "Grüntee mit etwa 70–80 °C, nicht kochend (Richtwert)."
+  ],
+  "links": [
+    "maillard-reaktion",
+    "karamellisierung",
+    "diffusion"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

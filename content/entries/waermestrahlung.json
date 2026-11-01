@@ -1,0 +1,43 @@
+{
+  "typ": "prozess",
+  "id": "waermestrahlung",
+  "titel": "Wärmestrahlung (Grill, Oberhitze)",
+  "synonyme": [
+    "Grill",
+    "Oberhitze",
+    "Salamander",
+    "Infrarot"
+  ],
+  "kurz": "Glut und Heizspiralen strahlen Hitze direkt auf die Oberfläche, wie die Sonne. Das bräunt schnell, gart aber kaum nach innen.",
+  "bild_im_kopf": "Wie Sonne auf der Haut: Die Oberfläche wird heiß, darunter bleibt es kühl.",
+  "was_passiert": "Strahlung braucht keine Luft. Sie trifft die Oberfläche und heizt sie stark auf. Je näher an der Quelle, desto intensiver, im doppelten Abstand nur noch etwa ein Viertel.",
+  "warum_wichtig": "Grill und Oberhitze sind ideal zum Gratinieren und für Kruste, aber dicke Stücke brauchen zusätzlich indirekte Hitze.",
+  "faustregeln": [
+    "Abstand zur Hitzequelle ist der Regler.",
+    "Dicke Stücke: erst indirekt, dann direkt."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "näher → viel heißer"
+    }
+  ],
+  "links": [
+    "grillen",
+    "maillard-reaktion",
+    "waermeleitung"
+  ],
+  "welten": [
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

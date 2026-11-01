@@ -1,0 +1,50 @@
+{
+  "typ": "zutat",
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "id": "wasser",
+  "titel": "Wasser",
+  "synonyme": [
+    "Leitungswasser",
+    "Kochwasser",
+    "Dampf"
+  ],
+  "kurz": "Wasser ist in fast jedem Lebensmittel die Hauptzutat. Es begrenzt die Temperatur auf 100 °C, löst Stoffe und lässt Stärke quellen.",
+  "bild_im_kopf": "Der stille Hauptdarsteller: Wo Wasser ist, wird es nicht heißer als 100 °C.",
+  "rolle": [
+    {
+      "rolle": "begrenzt die Temperatur auf 100 °C",
+      "prozess": "verdampfen"
+    },
+    {
+      "rolle": "lässt Stärke quellen",
+      "prozess": "staerkeverkleisterung"
+    },
+    {
+      "rolle": "bildet mit Mehl das Glutennetz",
+      "prozess": "glutenbildung"
+    }
+  ],
+  "was_passiert": "Solange Wasser da ist, bleibt die Temperatur beim Siedepunkt. Erst wenn es weg ist, kann es bräunen. Es löst Salz, Zucker und Aromen und lässt Stärke und Gluten entstehen.",
+  "faustregeln": [
+    "Für Kruste: Wasser weg. Für Zartheit: Wasser behalten.",
+    "In der Höhe kocht Wasser bei weniger als 100 °C, Garzeiten werden länger."
+  ],
+  "links": [
+    "verdampfen",
+    "staerkeverkleisterung",
+    "glutenbildung",
+    "hydration"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

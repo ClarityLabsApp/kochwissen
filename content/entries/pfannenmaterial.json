@@ -1,0 +1,38 @@
+{
+  "typ": "stellschraube",
+  "id": "pfannenmaterial",
+  "titel": "Pfanne & Wärmespeicher",
+  "synonyme": [
+    "Gusseisen",
+    "Edelstahl",
+    "beschichtete Pfanne",
+    "Eisenpfanne"
+  ],
+  "kurz": "Schwere Pfannen speichern viel Hitze und kühlen beim Einlegen kaum ab. Leichte reagieren schnell, verlieren aber schnell Hitze.",
+  "bild_im_kopf": "Wie ein großer gegen einen kleinen Akku.",
+  "was_passiert": "Gusseisen und dicke Eisenpfannen speichern viel Wärme und sind ideal zum scharfen Anbraten. Edelstahl mit Sandwichboden verteilt Hitze gleichmäßig. Beschichtete Pfannen verzeihen klebrige Speisen, vertragen aber keine sehr hohe Hitze.",
+  "faustregeln": [
+    "Scharf anbraten: Gusseisen oder Eisen.",
+    "Eier und Fisch: beschichtet oder gut vorgeheizter Edelstahl.",
+    "Saucen mit Säure: Edelstahl."
+  ],
+  "links": [
+    "steak-grau",
+    "waermeleitung",
+    "pfanne-vorheizen"
+  ],
+  "visual": {
+    "vorlage": "skala",
+    "params": {
+      "links": "dünn und leicht: reagiert schnell, kühlt stark ab",
+      "rechts": "schwer, Gusseisen: speichert Hitze, ideal zum Anbraten"
+    }
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "typ": "zutat",
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "id": "gewuerze",
+  "titel": "Gewürze",
+  "synonyme": [
+    "Pfeffer",
+    "Kreuzkümmel",
+    "Paprika",
+    "Curry",
+    "Zimt"
+  ],
+  "kurz": "Gewürze sind konzentrierte Duftstoffe. Viele lösen sich in Fett, verflüchtigen sich in Hitze und verbrennen schnell.",
+  "bild_im_kopf": "Wie Parfumflakons: offen verfliegen sie, richtig erwärmt entfalten sie sich.",
+  "rolle": [
+    {
+      "rolle": "entfalten sich in Fett",
+      "prozess": "aroma-blooming"
+    },
+    {
+      "rolle": "rösten und werden tiefer",
+      "prozess": "maillard-reaktion"
+    },
+    {
+      "rolle": "verbrennen schnell",
+      "prozess": "pyrolyse"
+    }
+  ],
+  "was_passiert": "Gemahlene Gewürze verlieren ihr Aroma schneller als ganze, weil ihre Oberfläche größer ist. Hitze setzt Aromen frei, zu viel Hitze zerstört sie.",
+  "faustregeln": [
+    "Ganze Gewürze kaufen und frisch mahlen.",
+    "Kühl, dunkel, luftdicht lagern."
+  ],
+  "links": [
+    "aroma-blooming",
+    "gewuerze-roesten",
+    "pyrolyse"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

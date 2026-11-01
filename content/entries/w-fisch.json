@@ -1,0 +1,43 @@
+{
+  "typ": "welt",
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a whole trout on a wooden board with a lemon wedge"
+  },
+  "id": "w-fisch",
+  "titel": "Fisch & Meeresfrüchte",
+  "synonyme": [
+    "Fisch",
+    "Lachs",
+    "Egli",
+    "Felchen",
+    "Crevetten"
+  ],
+  "kurz": "Fischfleisch ist zarter als Fleisch von Landtieren: kurze Muskelfasern, wenig Bindegewebe, Eiweiß, das schon bei niedrigen Temperaturen gart.",
+  "bild_im_kopf": "Wie ein Buch aus dünnen Seiten, die nur lose zusammenkleben: Bei zu viel Hitze fällt es auseinander.",
+  "was_passiert": "Fisch muss nicht gegen die Schwerkraft arbeiten, darum hat er wenig Bindegewebe. Das Eiweiß gart schon ab etwa 50 °C und wird bei zu viel Hitze schnell trocken und bröselig.",
+  "warum_wichtig": "Fisch verzeiht wenig Übergaren. Sanfte Hitze und eine heiße, trockene Pfanne für die Haut sind die zwei Werkzeuge.",
+  "faustregeln": [
+    "Lieber zu früh als zu spät vom Herd.",
+    "Haut trocken tupfen und auf der Hautseite braten.",
+    "Säure ganz am Schluss."
+  ],
+  "links": [
+    "eiweiss-denaturierung",
+    "fisch-klebt",
+    "fisch-zerfaellt",
+    "pochieren",
+    "saeure-denaturierung"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    },
+    {
+      "titel": "ThermoWorks: How Meat Cooks – Heat’s Effects on Muscle Fibers",
+      "url": "https://blog.thermoworks.com/coming-heat-effects-muscle-fibers-meat/"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

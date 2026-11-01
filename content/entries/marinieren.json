@@ -1,0 +1,46 @@
+{
+  "typ": "technik",
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "id": "marinieren",
+  "titel": "Marinieren",
+  "synonyme": [
+    "Marinade",
+    "einlegen",
+    "Joghurtmarinade"
+  ],
+  "kurz": "Eine Marinade würzt vor allem die Oberfläche. Salz darin zieht tiefer ein, Säure und Öl bleiben außen.",
+  "bild_im_kopf": "Wie Farbe auf Holz: Sie bleibt an der Oberfläche, nur Salz zieht wie eine Beize tiefer.",
+  "was_passiert": "Aromen und Öl dringen kaum ein. Salz wandert langsam ins Innere und macht saftiger. Säure verändert die Oberfläche und kann sie bei zu langer Zeit mehlig machen. Joghurt ist mild und eignet sich gut für längere Marinaden.",
+  "schritte": [
+    "Marinade mit Salz, Aromen, etwas Öl und wenig Säure anrühren.",
+    "Fleisch darin wenden, gekühlt ziehen lassen.",
+    "Säurebetonte Marinaden nur wenige Stunden.",
+    "Vor dem Braten abstreifen und trocken tupfen."
+  ],
+  "wirkt_auf": [
+    "mehr-geschmack",
+    "saftig"
+  ],
+  "typische_fehler": [
+    "Nass aus der Marinade in die Pfanne: kocht statt brät."
+  ],
+  "links": [
+    "diffusion",
+    "saeure",
+    "joghurt",
+    "trocken-tupfen",
+    "steak-grau"
+  ],
+  "welten": [
+    "w-fleisch"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

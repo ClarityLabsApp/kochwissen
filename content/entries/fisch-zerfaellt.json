@@ -1,0 +1,97 @@
+{
+  "typ": "symptom",
+  "welten": [
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "fisch-zerfaellt",
+  "titel": "Fisch zerfällt",
+  "synonyme": [
+    "Fisch bröselig",
+    "Fisch trocken",
+    "Fisch fällt auseinander"
+  ],
+  "kurz": "Zu viel Hitze: Das wenige Bindegewebe hat sich gelöst, und die Fasern sind ausgetrocknet.",
+  "bild_im_kopf": "Wie ein Buch, dessen Bindung sich gelöst hat.",
+  "ursachen": [
+    {
+      "titel": "Übergart",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "Fisch ist schon bei niedrigen Temperaturen gar.",
+      "fix": [
+        "Früher vom Herd nehmen",
+        "Glasiger Kern ist oft perfekt"
+      ]
+    },
+    {
+      "titel": "Sprudelnd gekocht",
+      "haeufigkeit": 2,
+      "prinzip": "pochieren-proz",
+      "warum": "Bewegtes Wasser reißt die zarten Lamellen auseinander.",
+      "fix": [
+        "Nur garziehen lassen, nicht kochen"
+      ]
+    },
+    {
+      "titel": "Zu oft gewendet",
+      "haeufigkeit": 1,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "Gegarter Fisch bricht leicht.",
+      "fix": [
+        "Nur einmal wenden, mit breitem Fischwender"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "War der Fisch gebraten oder in Flüssigkeit gegart?",
+      "antworten": [
+        [
+          "Gebraten",
+          "q2"
+        ],
+        [
+          "In Flüssigkeit",
+          "u1"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Hast du ihn mehrmals gewendet?",
+      "antworten": [
+        [
+          "Ja",
+          "u2"
+        ],
+        [
+          "Nein",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "eiweiss-denaturierung",
+    "pochieren",
+    "w-fisch"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

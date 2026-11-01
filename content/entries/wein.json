@@ -1,0 +1,49 @@
+{
+  "typ": "zutat",
+  "visual": {
+    "vorlage": "punktmatrix"
+  },
+  "id": "wein",
+  "titel": "Wein",
+  "synonyme": [
+    "Weißwein",
+    "Rotwein",
+    "Kochwein"
+  ],
+  "kurz": "Wein bringt Säure, Aromen und etwas Süße in Saucen und Schmorgerichte. Der Alkohol löst Aromen und verdampft größtenteils.",
+  "bild_im_kopf": "Wie ein Gewürz in flüssiger Form.",
+  "rolle": [
+    {
+      "rolle": "löst den Bratensatz",
+      "prozess": "deglacieren"
+    },
+    {
+      "rolle": "gibt Säure",
+      "prozess": "mehr-geschmack"
+    },
+    {
+      "rolle": "wird beim Einkochen konzentriert",
+      "prozess": "reduktion"
+    }
+  ],
+  "was_passiert": "Die Säure im Wein macht Saucen lebendig. Beim Einkochen konzentrieren sich Säure, Aromen und Gerbstoffe. Ein Teil des Alkohols bleibt auch nach längerem Kochen erhalten.",
+  "faustregeln": [
+    "Nur Wein verwenden, den man auch trinken würde.",
+    "Rotwein gut einkochen, sonst schmeckt er roh und herb."
+  ],
+  "links": [
+    "deglacieren",
+    "reduktion",
+    "saeure"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

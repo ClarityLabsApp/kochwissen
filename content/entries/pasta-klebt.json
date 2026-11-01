@@ -1,0 +1,96 @@
+{
+  "typ": "symptom",
+  "welten": [
+    "w-pasta"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "id": "pasta-klebt",
+  "titel": "Pasta klebt zusammen",
+  "synonyme": [
+    "Nudeln kleben",
+    "Spaghetti verklebt"
+  ],
+  "kurz": "Die Stärke an der Oberfläche hat die Nudeln verklebt, meist in den ersten Minuten oder nach dem Abgießen.",
+  "bild_im_kopf": "Wie Briefmarken, die feucht aufeinanderliegen.",
+  "ursachen": [
+    {
+      "titel": "Am Anfang nicht umgerührt",
+      "haeufigkeit": 3,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "In den ersten Minuten ist die Oberfläche am klebrigsten.",
+      "fix": [
+        "In den ersten zwei Minuten mehrmals umrühren"
+      ]
+    },
+    {
+      "titel": "Nach dem Abgießen stehen gelassen",
+      "haeufigkeit": 2,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Abkühlende Stärke klebt.",
+      "fix": [
+        "Sofort mit Sauce mischen",
+        "Etwas Nudelwasser dazugeben"
+      ]
+    },
+    {
+      "titel": "Wasser nicht sprudelnd",
+      "haeufigkeit": 1,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Ohne Bewegung liegen die Nudeln aneinander.",
+      "fix": [
+        "Wasser kräftig kochen lassen, bevor die Pasta hineinkommt"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Klebten die Nudeln schon im Topf?",
+      "antworten": [
+        [
+          "Ja",
+          "q2"
+        ],
+        [
+          "Nein, erst danach",
+          "u1"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Kochte das Wasser sprudelnd, als die Pasta hineinkam?",
+      "antworten": [
+        [
+          "Nein",
+          "u2"
+        ],
+        [
+          "Ja",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "staerkeverkleisterung",
+    "mantecare",
+    "w-pasta"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}
