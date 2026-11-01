@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 const C = { water: "#8fb8c9", waterRim: "#5f8fa3", fat: "#f0d27a", fatRim: "#c9a24a", lab: "#2f6f73", salt: "#ffffff", sepia: "#7a5a3a",
   ink: "#2b2118", roast: "#6b3a1e", nut: "#b8873a", caramel: "#d9822b", meat: "#c97b72", meatRim: "#a9564e", cell: "#c8d9a8", cellRim: "#7f9a5a", sugar: "#e0ad3a" };
 
-export type Preset = "emulsion" | "osmose" | "pektin-abbau" | "reduktion" | "hefegaerung" | "chemische-lockerung" | "waermeleitung" | "schaumbildung" | "diffusion" | "zucker-kristallisation" | "leidenfrost" | "gelbildung-pektin" | "chlorophyll-farbe" | "eiweiss-denaturierung";
+export type Preset = "emulsion" | "osmose" | "pektin-abbau" | "reduktion" | "hefegaerung" | "chemische-lockerung" | "waermeleitung" | "schaumbildung" | "diffusion" | "zucker-kristallisation" | "leidenfrost" | "gelbildung-pektin" | "chlorophyll-farbe" | "eiweiss-denaturierung" | "glutenbildung" | "karamellisierung";
 
 interface Ctl { a: number; b: boolean; ph: number }
 interface Sim {
@@ -540,7 +540,121 @@ const eiweiss: Sim = {
   readouts(_s, c) { const sq = Math.max(0, Math.min(1, (c.a - 64) / 12)); return [["Saft gehalten", `${Math.round(100 - sq * 45)} %`], ["Garstufe", c.a < 50 ? "roh" : c.a < 58 ? "rosa" : c.a < 66 ? "medium" : "durch"]]; },
 };
 
-const PRESETS: Record<Preset, Sim> = { emulsion, osmose, "pektin-abbau": pektin, reduktion, hefegaerung: hefe, "chemische-lockerung": lockerung, waermeleitung: waerme, schaumbildung: schaum, diffusion, "zucker-kristallisation": kristall, leidenfrost: leiden, "gelbildung-pektin": pektinGel, "chlorophyll-farbe": gruen, "eiweiss-denaturierung": eiweiss };
+
+/* ---------------- Glutenbildung: Kneten verknüpft Eiweiße zu einem Netz, das Gas hält ---------------- */
+const gluten: Sim = {
+  title: "Ebene 3 · Eiweiße im Teig", scale: "≈ 0,01 mm",
+  controls: { slider: { label: "Kneten", min: 0, max: 1, step: 0.01, def: 0, fmt: (v) => (v < 0.05 ? "nur verrührt" : v < 0.35 ? "kurz" : v < 0.7 ? "einige Minuten" : "lange geknetet") }, toggle: { label: "Butter im Teig", def: false }, reset: true },
+  init(W, H) {
+    const P = [] as any[];
+    for (let i = 0; i < 64; i++) P.push({ x: rnd(16, W - 16), y: rnd(16, H - 16), vx: 0, vy: 0, k: i % 2 ? "glia" : "glut", n: 0 });
+    return { P, B: [] as [number, number][], bub: 6, held: 0, pops: 0, fat: Array.from({ length: 18 }, () => ({ x: rnd(10, W - 10), y: rnd(10, H - 10) })) };
+  },
+  step(s, dt, c, W, H) {
+    const P = s.P as any[], B = s.B as [number, number][];
+    const strength = c.a * (c.b ? 0.45 : 1);
+    const target = Math.round(strength * 96);
+    if (B.length < target && Math.random() < dt * 30) {
+      // nächstes freies Paar verbinden
+      const i = Math.floor(Math.random() * P.length), a = P[i];
+      if (a.n < 3) {
+        let best = -1, bd = 1e9;
+        for (let j = 0; j < P.length; j++) { if (j === i || P[j].n >= 3 || B.some(([x, y]) => (x === i && y === j) || (x === j && y === i))) continue; const d = (P[j].x - a.x) ** 2 + (P[j].y - a.y) ** 2; if (d < bd) { bd = d; best = j; } }
+        if (best >= 0 && bd < 70 * 70) { B.push([i, best]); a.n++; P[best].n++; }
+      }
+    }
+    while (B.length > target) { const [x, y] = B.pop()!; P[x].n--; P[y].n--; }
+    // Bewegung: zittern, Bindungen ziehen wie Federn, Kneten dehnt in Längsrichtung
+    const cx = W / 2, cy = H / 2;
+    for (const p of P) { p.vx += rnd(-1, 1) * 40 * dt + Math.sin(p.y / 30 + performance.now() / 700) * c.a * 30 * dt; p.vy += rnd(-1, 1) * 40 * dt; }
+    for (const [i, j] of B) { const a = P[i], b = P[j], dx = b.x - a.x, dy = b.y - a.y, d = Math.hypot(dx, dy) || 1, f = (d - 30) * 0.9 * dt; a.vx += (dx / d) * f; a.vy += (dy / d) * f; b.vx -= (dx / d) * f; b.vy -= (dy / d) * f; }
+    // Gasblase in der Mitte drückt die Eiweiße weg
+    for (const p of P) {
+      const dx = p.x - cx, dy = p.y - cy, d = Math.hypot(dx, dy) || 1;
+      if (d < s.bub + 10) { const push = (s.bub + 10 - d) * 3 * dt; p.vx += (dx / d) * push; p.vy += (dy / d) * push; }
+      p.vx *= 0.9; p.vy *= 0.9; p.x = Math.max(8, Math.min(W - 8, p.x + p.vx)); p.y = Math.max(8, Math.min(H - 8, p.y + p.vy));
+    }
+    // Blase wächst; ein schwaches Netz lässt sie entweichen
+    const net = B.length / 96;
+    s.bub += dt * 10;
+    const limit = 18 + net * Math.min(W, H) * 0.42;
+    if (s.bub > limit) { if (net < 0.55) { s.bub = 6; s.pops++; s.held = 0; } else { s.bub = limit; s.held = Math.min(1, s.held + dt); } }
+  },
+  draw(g, s, c, W, H) {
+    if (c.b) for (const f of s.fat) dot(g, f.x, f.y, 5, C.fat, C.fatRim, .8);
+    const P = s.P as any[];
+    g.strokeStyle = C.lab; g.lineWidth = 2;
+    for (const [i, j] of s.B as [number, number][]) { g.beginPath(); g.moveTo(P[i].x, P[i].y); g.lineTo(P[j].x, P[j].y); g.stroke(); }
+    const cx = W / 2, cy = H / 2;
+    g.beginPath(); g.arc(cx, cy, s.bub, 0, Math.PI * 2); g.fillStyle = "rgba(255,255,255,.55)"; g.fill(); g.strokeStyle = "rgba(43,33,24,.35)"; g.lineWidth = 1; g.stroke();
+    g.fillStyle = C.ink; g.font = "10px JetBrains Mono, monospace"; if (s.bub > 22) g.fillText("Gas", cx - 10, cy + 3);
+    for (const p of P) dot(g, p.x, p.y, 4.5, p.k === "glut" ? C.lab : C.nut);
+  },
+  status(s, c) {
+    const net = s.B.length / 96;
+    if (c.a < 0.05) return "Mehl und Wasser sind nur verrührt: Die beiden Eiweiße (Glutenin und Gliadin) liegen lose nebeneinander. Das Gas entweicht.";
+    if (c.b && net < 0.55) return "Butter legt sich zwischen die Eiweiße und verhindert lange Verbindungen. Das Netz bleibt kurz: zart, aber es hält wenig Gas (darum heißt es Mürbeteig).";
+    if (net < 0.55) return "Kneten verbindet die Eiweiße zu ersten Strängen. Das Netz ist noch zu löchrig: Die Gasblase platzt immer wieder.";
+    return "Ein dehnbares Netz aus Gluten: Es gibt nach, wenn die Gasblase wächst, und hält sie fest. So geht ein Brot auf.";
+  },
+  readouts(s) { const net = s.B.length / 96; return [["Verbindungen", String(s.B.length)], ["Netz", net < 0.15 ? "keins" : net < 0.55 ? "locker" : net < 0.8 ? "dehnbar" : "elastisch"], ["Gasblase", net < 0.55 ? "entweicht" : "hält"]]; },
+};
+
+/* ---------------- Karamellisierung: Zucker schmilzt und zerfällt in neue Stoffe ---------------- */
+const karamell: Sim = {
+  title: "Ebene 3 · Zucker in der Pfanne", scale: "≈ 0,1 mm",
+  controls: { slider: { label: "Temperatur", min: 100, max: 210, step: 1, def: 120, fmt: (v) => `${Math.round(v)} °C` }, reset: true },
+  init(W, H) {
+    const X = [] as any[];
+    for (let i = 0; i < 46; i++) X.push({ x: rnd(16, W - 16), y: rnd(H * 0.35, H - 16), vx: 0, vy: 0, ph: rnd(0, 6), a: rnd(0, 1), frag: [] as any[] });
+    return { X, bits: [] as any[] };
+  },
+  step(s, dt, c, W, H) {
+    const T = c.a, melt = Math.max(0, Math.min(1, (T - 150) / 16));
+    for (const x of s.X) {
+      const m = melt;
+      x.vx += rnd(-1, 1) * (8 + m * 60) * dt; x.vy += rnd(-1, 1) * (8 + m * 60) * dt; x.vx *= 0.92; x.vy *= 0.92;
+      x.x = Math.max(10, Math.min(W - 10, x.x + x.vx)); x.y = Math.max(H * 0.3, Math.min(H - 10, x.y + x.vy));
+    }
+    // ab ~165 °C zerfallen Zuckermoleküle in kleinere, farbige und duftende Bruchstücke
+    const rate = T > 165 ? (T - 165) / 30 * 10 : 0;
+    if (Math.random() < rate * dt && s.bits.length < 160) {
+      const x = s.X[Math.floor(Math.random() * s.X.length)];
+      const kind = T > 195 ? "bitter" : T > 182 ? (Math.random() < 0.5 ? "roast" : "caramel") : Math.random() < 0.7 ? "caramel" : "nut";
+      for (let k = 0; k < 2; k++) s.bits.push({ x: x.x, y: x.y, vx: rnd(-30, 30), vy: rnd(-40, 10), kind, up: kind !== "bitter" && Math.random() < 0.35, life: 0 });
+    }
+    for (const b of s.bits) { b.life += dt; b.x += b.vx * dt; b.y += (b.vy - (b.up ? 30 : 0)) * dt; b.vx *= 0.97; b.vy *= 0.97; if (!b.up) b.y = Math.max(H * 0.3, Math.min(H - 6, b.y)); }
+    s.bits = s.bits.filter((b: any) => !(b.up && b.y < -10));
+  },
+  draw(g, s, c, W, H, t) {
+    const T = c.a, melt = Math.max(0, Math.min(1, (T - 150) / 16)), browned = Math.max(0, Math.min(1, (T - 163) / 32));
+    // Schmelze als Fläche, Farbe von klar über gold zu dunkel
+    if (melt > 0) {
+      const col = browned < 0.4 ? `rgba(224,173,58,${0.15 + browned})` : browned < 0.75 ? "rgba(217,130,43,.75)" : "rgba(107,58,30,.85)";
+      g.fillStyle = col; g.fillRect(4, H * 0.3 - 6, W - 8, H * 0.7);
+    }
+    g.fillStyle = "#3a3633"; g.fillRect(0, H - 4, W, 4);
+    for (const x of s.X) {
+      g.save(); g.translate(x.x, x.y); g.rotate(x.a + t * melt * 0.5);
+      const r = 6 - melt * 2.5; g.fillStyle = melt < 1 ? "#fbf3e2" : C.sugar; g.strokeStyle = "rgba(201,162,74,.8)";
+      if (melt < 0.6) { g.fillRect(-r, -r, r * 2, r * 2); g.strokeRect(-r, -r, r * 2, r * 2); } else { g.beginPath(); g.arc(0, 0, r, 0, Math.PI * 2); g.fill(); g.stroke(); }
+      g.restore();
+    }
+    const KC: Record<string, string> = { caramel: C.caramel, nut: C.nut, roast: C.roast, bitter: "#3a3633" };
+    for (const b of s.bits) dot(g, b.x, b.y, b.up ? 3 : 3.5, KC[b.kind]);
+  },
+  status(s, c) {
+    const T = c.a;
+    if (T < 150) return "Unter etwa 150 °C bleiben die Zuckerkristalle fest. Es passiert noch nichts.";
+    if (T < 165) return "Der Zucker schmilzt zu einer klaren Flüssigkeit. Noch keine Farbe, noch kein Karamellaroma.";
+    if (T < 182) return "Die Zuckermoleküle zerbrechen in hunderte neue Stoffe: goldene Farbe und Karamellduft steigen auf.";
+    if (T < 195) return "Bernstein bis dunkel: kräftiges Aroma, die Süße nimmt ab. Jetzt vom Herd nehmen.";
+    return "Zu heiß: Es entstehen bittere, dunkle Stoffe. Der Karamell verbrennt.";
+  },
+  readouts(s, c) { const T = c.a; return [["Zustand", T < 150 ? "Kristalle" : T < 165 ? "flüssig" : "Karamell"], ["Farbe", T < 165 ? "klar" : T < 175 ? "golden" : T < 188 ? "bernstein" : T < 196 ? "dunkel" : "schwarz"], ["Geschmack", T < 165 ? "süß" : T < 188 ? "karamellig" : T < 196 ? "kräftig" : "bitter"]]; },
+};
+
+const PRESETS: Record<Preset, Sim> = { emulsion, osmose, "pektin-abbau": pektin, reduktion, hefegaerung: hefe, "chemische-lockerung": lockerung, waermeleitung: waerme, schaumbildung: schaum, diffusion, "zucker-kristallisation": kristall, leidenfrost: leiden, "gelbildung-pektin": pektinGel, "chlorophyll-farbe": gruen, "eiweiss-denaturierung": eiweiss, glutenbildung: gluten, karamellisierung: karamell };
 
 /** Punkt-Simulation für einen Prozess. Läuft auf Canvas, mit Reglern aus dem Preset. */
 export default function ParticleSim({ preset }: { preset: Preset }) {
@@ -557,10 +671,10 @@ export default function ParticleSim({ preset }: { preset: Preset }) {
 
   // Osmose läuft beim Öffnen einmal von selbst durch
   useEffect(() => {
-    if (!["osmose", "reduktion", "chemische-lockerung", "diffusion", "chlorophyll-farbe", "eiweiss-denaturierung"].includes(preset)) return;
+    if (!["osmose", "reduktion", "chemische-lockerung", "diffusion", "chlorophyll-farbe", "eiweiss-denaturierung", "glutenbildung", "karamellisierung"].includes(preset)) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    let raf = 0; const start = performance.now(); const [from, to] = preset === "osmose" || preset === "diffusion" ? [0, 1] : preset === "reduktion" ? [1, 0.35] : preset === "chlorophyll-farbe" ? [0, 8] : preset === "eiweiss-denaturierung" ? [20, 80] : [20, 180];
-    const dur = preset === "chemische-lockerung" ? 12000 : 9000;
+    let raf = 0; const start = performance.now(); const [from, to] = preset === "osmose" || preset === "diffusion" ? [0, 1] : preset === "reduktion" ? [1, 0.35] : preset === "chlorophyll-farbe" ? [0, 8] : preset === "eiweiss-denaturierung" ? [20, 80] : preset === "glutenbildung" ? [0, 0.85] : preset === "karamellisierung" ? [120, 190] : [20, 180];
+    const dur = preset === "chemische-lockerung" || preset === "karamellisierung" ? 12000 : 9000;
     const run = (now: number) => { const p = Math.min(1, (now - start) / dur); setA(from + (to - from) * p); if (p < 1) raf = requestAnimationFrame(run); };
     raf = requestAnimationFrame(run);
     return () => cancelAnimationFrame(raf);

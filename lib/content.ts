@@ -94,8 +94,6 @@ export function parseText(s: string): TextPart[] {
 
 /** Interaktive Prototypen, bis die Simulationen als Komponenten portiert sind. */
 export const PROTOTYPES: Record<string, string> = {
-  "maillard-reaktion": "/prototypen/maillard.html",
-  glutenbildung: "/prototypen/gluten.html",
   "steak-grau": "/prototypen/steak-grau.html",
 };
 

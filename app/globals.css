@@ -225,3 +225,8 @@ footer.site { border-top: 1px solid var(--rule); padding-top: 14px; display: fle
   .world img { width: 100px; height: 100px; }
 }
 @media (prefers-reduced-motion: reduce) { .world img { transition: none; } }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.vis > .seg { align-self: flex-start; max-width: 100%; }
+@media (max-width: 420px) { .vis > .seg button { padding: 7px 7px; font-size: 11px; } }

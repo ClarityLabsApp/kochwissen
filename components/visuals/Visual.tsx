@@ -5,9 +5,10 @@ import PanTest from "./PanTest";
 import DotNet, { type NetNode } from "./DotNet";
 import ParticleSim, { type Preset } from "./ParticleSim";
 import Spectrum from "./Spectrum";
+import MaillardSim from "./MaillardSim";
 
 // Muss hier stehen: Funktionen aus Client-Modulen sind auf dem Server nicht aufrufbar.
-const SIMS = new Set<string>(["emulsion", "osmose", "pektin-abbau", "reduktion", "hefegaerung", "chemische-lockerung", "waermeleitung", "schaumbildung", "diffusion", "zucker-kristallisation", "leidenfrost", "gelbildung-pektin", "chlorophyll-farbe", "eiweiss-denaturierung"]);
+const SIMS = new Set<string>(["emulsion", "osmose", "pektin-abbau", "reduktion", "hefegaerung", "chemische-lockerung", "waermeleitung", "schaumbildung", "diffusion", "zucker-kristallisation", "leidenfrost", "gelbildung-pektin", "chlorophyll-farbe", "eiweiss-denaturierung", "glutenbildung", "karamellisierung"]);
 const hasSim = (id: string): id is Preset => SIMS.has(id);
 
 /** Liest Temperatur-Schwellen aus visual.params, egal in welchem der bekannten Formate. */
@@ -41,6 +42,7 @@ export default function Visual({ e }: { e: Entry }) {
   const p = (e.visual?.params ?? {}) as Record<string, unknown>;
   const blocks: React.ReactNode[] = [];
 
+  if (e.id === "maillard-reaktion") blocks.push(<MaillardSim key="maillard" />);
   if (hasSim(e.id)) blocks.push(<ParticleSim key="sim" preset={e.id} />);
 
   if (e.typ === "symptom" && e.visual?.vorlage === "pfannentest") {
