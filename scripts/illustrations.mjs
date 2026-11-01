@@ -39,7 +39,7 @@ for (const e of jobs) {
   const res = await fetch("https://api.openai.com/v1/images/generations", {
     method: "POST",
     headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ model, prompt: STYLE + e.visual.illustration, size: "1024x1024", quality, n: 1, output_format: "webp", output_compression: 82 }),
+    body: JSON.stringify({ model, prompt: STYLE + e.visual.illustration, size: "1024x1024", quality, n: 1, output_format: "webp", output_compression: 82, background: "transparent" }),
   });
   if (!res.ok) { console.error(`✗ ${e.id}: ${res.status} ${await res.text()}`); continue; }
   const data = await res.json();

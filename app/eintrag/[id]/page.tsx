@@ -40,22 +40,23 @@ export default function EntryPage({ params }: { params: { id: string } }) {
   const typ = (e?.typ ?? m!.typ) as Typ;
   const proto = PROTOTYPES[params.id];
 
+  const hasIllu = existsSync(join(process.cwd(), "public/illustrationen", `${params.id}.webp`));
   const head = (
-    <>
-      <div className="eyebrow">
-        <span className="tag" style={{ background: `var(--t-${typ})` }}>{TYP_NAME[typ]}</span>
-        {e?.schwierigkeit && <span className="mono">{e.schwierigkeit}</span>}
-        <span className="mono">{e ? e.status : proto ? "Prototyp" : "geplant"}</span>
-      </div>
-      {existsSync(join(process.cwd(), "public/illustrationen", `${params.id}.webp`)) && (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img className="illu" src={`/illustrationen/${params.id}.webp`} alt="" width={1024} height={1024} />
-      )}
-      <div>
+    <div className={`ehead${hasIllu ? " with-illu" : ""}`}>
+      <div className="ehead-text">
+        <div className="eyebrow">
+          <span className="tag" style={{ background: `var(--t-${typ})` }}>{TYP_NAME[typ]}</span>
+          {e?.schwierigkeit && <span className="mono">{e.schwierigkeit}</span>}
+          <span className="mono">{e ? e.status : proto ? "Prototyp" : "geplant"}</span>
+        </div>
         <h1>{e?.titel ?? m!.titel}</h1>
         {(e?.synonyme ?? m?.synonyme)?.length ? <p className="syn">Auch gesucht als: {(e?.synonyme ?? m!.synonyme).join(", ")}</p> : null}
       </div>
-    </>
+      {hasIllu && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img className="illu" src={`/illustrationen/${params.id}.webp`} alt="" width={1024} height={1024} />
+      )}
+    </div>
   );
 
   // Noch nicht ausgeschrieben: Gerüst aus der Masterliste, ggf. mit Prototyp
