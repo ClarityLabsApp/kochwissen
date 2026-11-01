@@ -62,11 +62,21 @@ Neue Einträge, die beim Schreiben auffallen, in `content/master-list.json` erg�
 
 Grafiken kommen **immer aus Vorlagen** (`visual.vorlage` plus `params`), nie als Einzelbild pro Eintrag. Siehe `DESIGN.md`, Abschnitt 6. Die drei Prototypen in `public/prototypen/` sind die Referenz für Prozess-Simulation und Pfannentest.
 
+## Grafik-Vorlagen (Stand)
+
+In `components/visuals/`, ausgewählt in `Visual.tsx`:
+- `TempScale` – Temperaturskala aus `visual.params.skala` / `schwellen_c` / `fette` (`[{c, name}]`)
+- `StepFlow` – Ablauf für alle Einträge mit `schritte`
+- `PanTest` – Symptome mit `vorlage: pfannentest`, `params.variante`: pfanne | backblech | fritteuse
+- `DotNet` – Ziele (Hebel ↔ Techniken) und Zutaten (Rolle ↔ Vorgang)
+- `ParticleSim` – Canvas-Simulationen pro Prozess (emulsion, osmose, pektin-abbau, reduktion). Neue Presets dort anlegen und in `SIMS` in `Visual.tsx` eintragen
+- Prototypen in `public/prototypen/` (Maillard, Gluten, Steak grau) werden per iframe eingebettet
+
 ## Offene Aufgaben
 
-- [ ] Prozess-Simulation (Maillard, Gluten) als React-Vorlage portieren, gesteuert über `visual.params`
-- [ ] Pfannentest als React-Vorlage portieren (Varianten: Pfanne, Backblech, Fritteuse)
-- [ ] Vorlagen `punktmatrix`, `ablauf`, `skala`, `temperaturskala` bauen
+- [ ] Weitere Simulationen: Hefegärung, Glutenbildung als Komponente, Eiweiß-Denaturierung, Schaumbildung, Karamellisierung
+- [ ] Maillard und Gluten-Prototyp als echte React-Komponenten portieren (statt iframe)
+- [ ] Inhalte: Welten Gemüse, Eier, Kuchen & Gebäck, Desserts, Fisch, Frittiertes ergänzen
 - [ ] Semantische Suche (z. B. Supabase pgvector), aktuelle Wortsuche ersetzen
 - [ ] Aquarell-Illustrationen pro Welt und Zutat per Batch-Skript (Stil-Prompt in `DESIGN.md`)
 - [ ] Prüfung für unmarkierte Fachbegriffe im Validator
