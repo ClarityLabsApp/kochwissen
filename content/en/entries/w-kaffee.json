@@ -1,0 +1,20 @@
+{
+  "id": "w-kaffee",
+  "titel": "Coffee and tea",
+  "kurz": "Coffee and tea are extraction: hot water dissolves aromas from beans or leaves. Roast, grind size, temperature and time decide what comes out.",
+  "bild_im_kopf": "Like a teabag and patience: too short tastes thin, too long bitter.",
+  "was_passiert": "During roasting, the aromas form through the [[maillard-reaktion|Maillard reaction]] and [[karamellisierung|caramelisation]]. When brewing, acids and fruity aromas dissolve first, then sweetness, and finally bitter compounds.",
+  "warum_wichtig": "Sour coffee is usually extracted too briefly or too coarsely; bitter coffee too long or too finely.",
+  "synonyme": [
+    "coffee",
+    "espresso",
+    "tea",
+    "roasting",
+    "brewing"
+  ],
+  "faustregeln": [
+    "Sour: grind finer or brew longer.",
+    "Bitter: grind coarser or brew shorter.",
+    "Green tea at about 70–80 °C, not boiling (as a guide)."
+  ]
+}

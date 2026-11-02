@@ -1,0 +1,9 @@
+{
+  "id": "kerntemperatur",
+  "titel": "Core temperature",
+  "kurz": "The temperature at the centre of the thickest part. It shows how done the meat really is and is measured with a meat thermometer.",
+  "synonyme": [
+    "internal temperature",
+    "core temperature"
+  ]
+}

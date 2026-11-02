@@ -1,0 +1,10 @@
+{
+  "id": "hydration",
+  "titel": "Hydration",
+  "kurz": "How much water a dough has relative to the flour, as a percentage of the flour weight. 1000 g flour and 700 g water is 70 % hydration.",
+  "synonyme": [
+    "water content",
+    "baker's percentage",
+    "dough hydration"
+  ]
+}

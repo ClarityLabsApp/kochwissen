@@ -1,0 +1,22 @@
+{
+  "id": "mechanik",
+  "titel": "Mechanical work (kneading, whisking, stirring)",
+  "kurz": "How much and how vigorously you work something decides the network, the air and the [[emulsion|emulsion]].",
+  "bild_im_kopf": "A dial between stroking and kneading through.",
+  "was_passiert": "Kneading strengthens the [[glutenbildung|gluten network]]; whisking brings in air and breaks fat into fine droplets. Too much of it makes cake tough, egg whites grainy and cream turn to butter.",
+  "synonyme": [
+    "kneading",
+    "stirring",
+    "whisking",
+    "mixing"
+  ],
+  "faustregeln": [
+    "Bread: a lot. Cake: little. Egg whites: until glossy and stiff, then stop."
+  ],
+  "visual": {
+    "params": {
+      "links": "little: tender, little network",
+      "rechts": "a lot: strong network, lots of air, risk of overworking"
+    }
+  }
+}

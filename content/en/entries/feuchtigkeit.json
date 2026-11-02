@@ -1,0 +1,24 @@
+{
+  "id": "feuchtigkeit",
+  "titel": "Moisture",
+  "kurz": "How much water is on a surface decides between steaming and browning.",
+  "bild_im_kopf": "A slider between steamer and grill: the drier the surface, the further towards grill.",
+  "was_passiert": "Wet surfaces get stuck at 100 °C: they cook but do not brown. Dry surfaces get hotter, brown and turn crisp. Completely dried out, they turn leathery or burn.",
+  "synonyme": [
+    "wet",
+    "dry",
+    "water on the surface",
+    "moisture"
+  ],
+  "faustregeln": [
+    "Drying before frying is almost always right.",
+    "Steam is welcome when things are meant to be juicy or soft."
+  ],
+  "visual": {
+    "params": {
+      "links": "wet: steams, grey, soft",
+      "mitte": "dry: browns, crisp",
+      "rechts": "dried out: leathery, burns"
+    }
+  }
+}

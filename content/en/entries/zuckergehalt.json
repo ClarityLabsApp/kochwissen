@@ -1,0 +1,22 @@
+{
+  "id": "zuckergehalt",
+  "titel": "Amount of sugar",
+  "kurz": "More sugar does not only mean sweeter: baked goods turn more tender, moister, darker and spread more.",
+  "bild_im_kopf": "A dial between bread and boiled sweet.",
+  "was_passiert": "Sugar binds water, slows [[glutenbildung|gluten]] and protein coagulation, and browns. Less sugar makes baked goods firmer, drier and paler.",
+  "synonyme": [
+    "less sugar",
+    "more sugar",
+    "sweetness"
+  ],
+  "faustregeln": [
+    "Reduce sugar by a quarter at most, otherwise the texture suffers.",
+    "More sugar in custards makes them curdle later."
+  ],
+  "visual": {
+    "params": {
+      "links": "little sugar: firmer, drier, paler",
+      "rechts": "lots of sugar: more tender, moister, darker, spreads more"
+    }
+  }
+}

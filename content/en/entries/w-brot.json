@@ -1,0 +1,20 @@
+{
+  "id": "w-brot",
+  "titel": "Bread",
+  "kurz": "Bread is flour, water, salt and a raising agent. Three processes turn it into a loaf: a [[glutenbildung|gluten]] network, gas from fermentation and a crust from the oven.",
+  "bild_im_kopf": "Like a balloon in a net: the yeast blows, the gluten holds, the oven sets the shape.",
+  "was_passiert": "Kneading or resting forms a stretchy gluten network. Yeast or sourdough makes gas that forms bubbles in the network. In the oven the bubbles expand one last time, the starch [[staerkeverkleisterung|gelatinises]] and sets, and the crust browns on the outside.",
+  "warum_wichtig": "Every bread problem belongs to one of the three processes: network too weak, fermentation off, or oven unfavourable.",
+  "synonyme": [
+    "bread baking",
+    "sourdough bread",
+    "braided loaf",
+    "baguette",
+    "pizza"
+  ],
+  "faustregeln": [
+    "Time is the most important ingredient: a long, cool prove gives flavour and structure.",
+    "Weigh flour, water and salt; do not measure by volume.",
+    "Steam first, then dry heat."
+  ]
+}

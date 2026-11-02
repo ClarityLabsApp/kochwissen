@@ -1,0 +1,20 @@
+{
+  "id": "w-fleisch",
+  "titel": "Meat",
+  "kurz": "Meat is muscle: bundles of protein fibres, full of water, held together by connective tissue. Cooking means deciding how firm the fibres get and what happens to the connective tissue.",
+  "bild_im_kopf": "Like a bundle of wet sponges in a net: squeeze too hard and the water runs out. Dissolve the net slowly and everything falls tenderly apart.",
+  "was_passiert": "When heated, the muscle fibres contract and squeeze out juice: the hotter, the more. Connective tissue is tough but dissolves into gelatine in long, moist heat. On the outside, dry, strong heat creates crust and roasted aromas.",
+  "warum_wichtig": "From this follow the two great paths: cook tender cuts briefly and precisely; braise cuts with lots of connective tissue long and slow.",
+  "synonyme": [
+    "steak",
+    "roast",
+    "beef",
+    "pork",
+    "veal"
+  ],
+  "faustregeln": [
+    "Quick frying for tender cuts with little connective tissue (fillet, entrecôte, rump).",
+    "Braising for cuts with lots of connective tissue (shoulder, shin, cheek, boiling beef).",
+    "A meat thermometer replaces any gut feeling."
+  ]
+}

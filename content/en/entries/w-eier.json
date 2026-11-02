@@ -1,0 +1,20 @@
+{
+  "id": "w-eier",
+  "titel": "Eggs",
+  "kurz": "An egg is water and protein, with fat and an [[emulgator|emulsifier]] in the yolk as well. Heat sets it, whisking makes it airy, yolk binds fat.",
+  "bild_im_kopf": "A toolbox in a shell: binder, raising agent and emulsifier all at once.",
+  "was_passiert": "Egg protein turns creamy in heat at first, then firm. Whisked, it holds air bubbles. Egg yolk combines fat and water and thickens when warmed.",
+  "warum_wichtig": "Almost every baked good and many sauces and desserts rely on one of these properties.",
+  "synonyme": [
+    "egg",
+    "fried egg",
+    "scrambled eggs",
+    "boiled egg",
+    "whisked egg whites"
+  ],
+  "faustregeln": [
+    "Cook eggs gently: a few degrees decide between creamy and rubbery.",
+    "For whisked egg whites: no fat, no yolk.",
+    "Never let egg yolk sauces boil."
+  ]
+}

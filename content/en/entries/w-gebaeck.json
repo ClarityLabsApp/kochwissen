@@ -1,0 +1,22 @@
+{
+  "id": "w-gebaeck",
+  "titel": "Cakes and baking",
+  "kurz": "Baking is a balance: flour and egg give structure, sugar and fat make things tender and moist, air makes them light.",
+  "bild_im_kopf": "Like a house built by two teams: one builds walls (flour, egg), the other makes it cosy (sugar, fat). Too much of one side and it turns tough or collapses.",
+  "was_passiert": "Air gets into the batter through baking powder, baking soda, whisked-in air or steam. In the oven it expands until protein and starch set and hold the shape. Sugar and fat slow the [[glutenbildung|gluten network]], which is why cakes stay tender.",
+  "warum_wichtig": "Baking is less forgiving than cooking, because amounts and order determine the structure. If you know the roles, you can still adapt.",
+  "synonyme": [
+    "cake",
+    "muffins",
+    "cookies",
+    "biscuits",
+    "shortcrust",
+    "sponge",
+    "tart"
+  ],
+  "faustregeln": [
+    "Weigh rather than measure by volume.",
+    "Bring ingredients to room temperature when creaming butter.",
+    "Do not open the oven before the batter has set."
+  ]
+}

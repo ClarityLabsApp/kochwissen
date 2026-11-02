@@ -1,0 +1,20 @@
+{
+  "id": "w-milch",
+  "titel": "Milk and cheese",
+  "kurz": "Milk is water with fat droplets, protein and milk sugar. Depending on what you do with these parts, you get cream, butter, yoghurt or cheese.",
+  "bild_im_kopf": "Like a construction kit with three parts: fat, protein, sugar. Each dairy product uses a different part.",
+  "was_passiert": "Cream is the separated fat and can be whipped. Bacteria sour milk sugar into lactic acid, which thickens the protein: yoghurt. Rennet or acid makes the protein curdle: cheese.",
+  "warum_wichtig": "Explains why cream turns to butter, why milk catches on the bottom of the pan and why some cheeses melt and others do not.",
+  "synonyme": [
+    "dairy",
+    "cream",
+    "yoghurt",
+    "cheese",
+    "butter"
+  ],
+  "faustregeln": [
+    "Do not let milk boil hard; it catches and boils over.",
+    "Whip cream well chilled.",
+    "For melting, grate cheese finely and do not let it get too hot."
+  ]
+}

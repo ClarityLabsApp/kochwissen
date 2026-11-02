@@ -1,0 +1,23 @@
+{
+  "id": "salzgehalt",
+  "titel": "Amount of salt",
+  "kurz": "Salt boosts flavour, draws out water, keeps water in meat and tightens dough. The right amount depends on timing.",
+  "bild_im_kopf": "A dial with a narrow sweet spot: too little is bland, too much is inedible.",
+  "was_passiert": "A little salt lifts aromas and dampens bitterness. More salt draws out water and seasons through. Too much drowns out everything. Reduced sauces get saltier over time.",
+  "synonyme": [
+    "salting",
+    "salt",
+    "less salt"
+  ],
+  "faustregeln": [
+    "A little early, adjust at the end.",
+    "Salt pasta water well, sauces only at the end."
+  ],
+  "visual": {
+    "params": {
+      "links": "too little: bland",
+      "mitte": "just right: aromas shine",
+      "rechts": "too much: salty, drowns everything"
+    }
+  }
+}

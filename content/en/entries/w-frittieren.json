@@ -1,0 +1,21 @@
+{
+  "id": "w-frittieren",
+  "titel": "Deep-fried food",
+  "kurz": "Deep-frying is drying in hot oil: the water on the surface evaporates in a flash and leaves a crisp crust behind.",
+  "bild_im_kopf": "Like a miniature steam boiler: as long as it bubbles, steam pushes against the oil from inside.",
+  "was_passiert": "Hot oil transfers heat quickly. Water on the surface evaporates and the crust dries and browns. The escaping steam keeps the oil out at first. If the oil is too cold, the crust forms slowly and the food soaks up oil.",
+  "warum_wichtig": "Temperature, batch size and draining decide between crisp and greasy.",
+  "synonyme": [
+    "deep-frying",
+    "deep fryer",
+    "chips",
+    "fries",
+    "tempura",
+    "schnitzel"
+  ],
+  "faustregeln": [
+    "Thermometer: usually 160–190 °C.",
+    "Small batches.",
+    "Drain on a rack."
+  ]
+}

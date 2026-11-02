@@ -1,0 +1,23 @@
+{
+  "id": "oberflaeche",
+  "titel": "Surface area and cut size",
+  "kurz": "The more surface relative to size, the more crust and the faster it cooks.",
+  "bild_im_kopf": "Crisps, chips, wedges, a whole baked potato: the same potato, but each time a different ratio of crust to soft inside.",
+  "was_passiert": "Small or thin pieces have a lot of surface and little inside. They dry quickly, turn crisp and cook fast. Large pieces have a lot of soft inside. A roughened surface increases the area further without making the piece smaller.",
+  "synonyme": [
+    "cutting",
+    "cut size",
+    "roughing up",
+    "thickness"
+  ],
+  "faustregeln": [
+    "Pieces of equal size cook evenly.",
+    "Roughing up brings crust without cutting smaller."
+  ],
+  "visual": {
+    "params": {
+      "links": "large and smooth: little crust, soft inside",
+      "rechts": "small or rough: lots of crust, cooks fast"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "luftfeuchte-ofen",
+  "titel": "Humidity in the oven",
+  "kurz": "Moist oven air keeps surfaces soft; dry air lets them brown and turn crisp.",
+  "bild_im_kopf": "A dial between steam bath and sauna.",
+  "was_passiert": "Steam condenses on cold surfaces and keeps them moist and stretchy. Dry air, especially from a fan, draws out water and lets crusts form.",
+  "synonyme": [
+    "steam",
+    "steam injection",
+    "fan oven",
+    "oven humidity"
+  ],
+  "faustregeln": [
+    "Bread: moist first, then dry.",
+    "For crispness, let the steam out at the end, e.g. by opening the oven door briefly."
+  ],
+  "visual": {
+    "params": {
+      "links": "moist: surface stays soft and stretchy",
+      "rechts": "dry: a crust forms and browns"
+    }
+  }
+}

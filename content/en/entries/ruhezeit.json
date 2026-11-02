@@ -1,0 +1,22 @@
+{
+  "id": "ruhezeit",
+  "titel": "Resting time",
+  "kurz": "Time works for you: doughs get stretchier, meat juicier, aromas deeper.",
+  "bild_im_kopf": "Like a conversation that only sorts itself out after a pause.",
+  "was_passiert": "While resting, flour and starch hydrate, tense [[glutenbildung|gluten strands]] relax and [[enzym|enzymes]] work. In meat the juice thickens a little; in dough the tension disappears.",
+  "synonyme": [
+    "resting",
+    "dough rest",
+    "waiting"
+  ],
+  "faustregeln": [
+    "Dough that springs back needs rest, not force.",
+    "Rest pasta dough and shortcrust before rolling out."
+  ],
+  "visual": {
+    "params": {
+      "links": "freshly kneaded: tense, springs back",
+      "rechts": "rested: relaxed, easy to shape"
+    }
+  }
+}

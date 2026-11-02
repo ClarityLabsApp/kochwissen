@@ -1,0 +1,21 @@
+{
+  "id": "fettgehalt",
+  "titel": "Amount of fat",
+  "kurz": "More fat makes things more tender, moister and richer, but also softer and more prone to spreading.",
+  "bild_im_kopf": "A dial between a bread roll and a butter biscuit.",
+  "was_passiert": "Fat coats flour and slows the [[glutenbildung|gluten network]]. It holds moisture and carries aromas. Too much fat makes baked goods spread or turn greasy.",
+  "synonyme": [
+    "less fat",
+    "more butter",
+    "fat content"
+  ],
+  "faustregeln": [
+    "Replacing fat is tricky: apple purée instead of butter makes cake tougher and rubbery."
+  ],
+  "visual": {
+    "params": {
+      "links": "little fat: firmer, tougher, drier",
+      "rechts": "lots of fat: tender, short, rich"
+    }
+  }
+}

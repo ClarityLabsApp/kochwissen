@@ -1,0 +1,24 @@
+{
+  "id": "pfannenmaterial",
+  "titel": "Pan and heat storage",
+  "kurz": "Heavy pans store a lot of heat and barely cool down when food goes in. Light ones react quickly but lose heat quickly.",
+  "bild_im_kopf": "Like a big battery versus a small one.",
+  "was_passiert": "Cast iron and thick iron pans store a lot of heat and are ideal for searing. Stainless steel with a sandwich base spreads heat evenly. Non-stick pans forgive sticky foods but cannot take very high heat.",
+  "synonyme": [
+    "cast iron",
+    "stainless steel",
+    "non-stick pan",
+    "carbon steel pan"
+  ],
+  "faustregeln": [
+    "Searing: cast iron or carbon steel.",
+    "Eggs and fish: non-stick or well-preheated stainless steel.",
+    "Acidic sauces: stainless steel."
+  ],
+  "visual": {
+    "params": {
+      "links": "thin and light: reacts fast, cools a lot",
+      "rechts": "heavy, cast iron: stores heat, ideal for searing"
+    }
+  }
+}
