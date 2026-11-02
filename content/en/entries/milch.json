@@ -1,0 +1,30 @@
+{
+  "id": "milch",
+  "titel": "Milk",
+  "kurz": "Milk brings protein, fat, sugar and water. It browns baked goods, thickens with starch and can catch and curdle.",
+  "bild_im_kopf": "An all-rounder with a tendency to boil over.",
+  "was_passiert": "When heated, milk forms a skin of protein, and protein easily catches on the bottom. Acid makes it curdle.",
+  "synonyme": [
+    "whole milk",
+    "skimmed milk",
+    "milk"
+  ],
+  "faustregeln": [
+    "Warm over medium heat and stir.",
+    "Rinse the pan with cold water first: milk catches less."
+  ],
+  "rolle": [
+    {
+      "rolle": "browns doughs through milk sugar",
+      "prozess": "maillard-reaktion"
+    },
+    {
+      "rolle": "can curdle",
+      "prozess": "eiweiss-gerinnung"
+    },
+    {
+      "rolle": "becomes béchamel with starch",
+      "prozess": "staerkeverkleisterung"
+    }
+  ]
+}

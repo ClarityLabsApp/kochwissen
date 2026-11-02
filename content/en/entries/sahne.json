@@ -1,0 +1,32 @@
+{
+  "id": "sahne",
+  "titel": "Cream",
+  "kurz": "Cream is milk with a lot of fat. With enough fat it can be whipped, boiled without curdling, and makes sauces round.",
+  "bild_im_kopf": "Like milk with an extra helping of fat droplets.",
+  "was_passiert": "When whipped, partly opened fat droplets link into a framework around air bubbles. That needs enough fat (whipping or double cream) and cold. A lot of fat also protects against curdling when boiled.",
+  "synonyme": [
+    "double cream",
+    "whipping cream",
+    "single cream",
+    "heavy cream",
+    "clotted cream"
+  ],
+  "faustregeln": [
+    "For whipping, use full-fat cream, well chilled.",
+    "For cooking, full-fat or double cream: lighter cream can curdle."
+  ],
+  "rolle": [
+    {
+      "rolle": "can be whipped into a foam",
+      "prozess": "schaumbildung"
+    },
+    {
+      "rolle": "thickens and rounds out sauces",
+      "prozess": "emulsion"
+    },
+    {
+      "rolle": "protects egg custards from curdling",
+      "prozess": "eiweiss-gerinnung"
+    }
+  ]
+}

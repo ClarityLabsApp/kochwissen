@@ -1,0 +1,19 @@
+{
+  "id": "panieren",
+  "titel": "Breading",
+  "kurz": "Flour, egg, breadcrumbs: three layers that form a crisp shell and protect the meat.",
+  "bild_im_kopf": "Like primer, glue and topcoat.",
+  "was_passiert": "Flour dries the surface and gives the egg something to grip. Egg is the glue. Breadcrumbs form the crust, which dries and browns in the hot fat. For a slightly puffed-up coating, the schnitzel is swirled in the fat.",
+  "synonyme": [
+    "breadcrumb coating",
+    "breading schnitzel",
+    "flour egg breadcrumbs"
+  ],
+  "schritte": [
+    "Pat the meat dry and season it.",
+    "Turn in flour and tap off the excess.",
+    "Pull through beaten egg and let it drip.",
+    "Turn in breadcrumbs without pressing them on.",
+    "Fry in plenty of hot fat (about 170 °C, as a guide), swirling the pan."
+  ]
+}

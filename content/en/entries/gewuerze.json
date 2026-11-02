@@ -1,0 +1,32 @@
+{
+  "id": "gewuerze",
+  "titel": "Spices",
+  "kurz": "Spices are concentrated scent compounds. Many dissolve in fat, evaporate in heat and burn quickly.",
+  "bild_im_kopf": "Like perfume bottles: left open they fade; warmed properly they open up.",
+  "was_passiert": "Ground spices lose their aroma faster than whole ones because their surface is larger. Heat releases aromas; too much heat destroys them.",
+  "synonyme": [
+    "pepper",
+    "cumin",
+    "paprika",
+    "curry",
+    "cinnamon"
+  ],
+  "faustregeln": [
+    "Buy whole spices and grind them fresh.",
+    "Store cool, dark and airtight."
+  ],
+  "rolle": [
+    {
+      "rolle": "open up in fat",
+      "prozess": "aroma-blooming"
+    },
+    {
+      "rolle": "toast and get deeper",
+      "prozess": "maillard-reaktion"
+    },
+    {
+      "rolle": "burn quickly",
+      "prozess": "pyrolyse"
+    }
+  ]
+}

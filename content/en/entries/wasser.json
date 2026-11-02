@@ -1,0 +1,30 @@
+{
+  "id": "wasser",
+  "titel": "Water",
+  "kurz": "Water is the main ingredient in almost every food. It caps the temperature at 100 °C, dissolves substances and makes starch swell.",
+  "bild_im_kopf": "The quiet lead actor: where there is water, it gets no hotter than 100 °C.",
+  "was_passiert": "As long as water is present, the temperature stays at boiling point. Only once it is gone can things brown. It dissolves salt, sugar and aromas and allows starch and [[glutenbildung|gluten]] to form.",
+  "synonyme": [
+    "tap water",
+    "cooking water",
+    "steam"
+  ],
+  "faustregeln": [
+    "For a crust: get rid of the water. For tenderness: keep it.",
+    "At altitude water boils below 100 °C, and cooking times get longer."
+  ],
+  "rolle": [
+    {
+      "rolle": "caps the temperature at 100 °C",
+      "prozess": "verdampfen"
+    },
+    {
+      "rolle": "makes starch swell",
+      "prozess": "staerkeverkleisterung"
+    },
+    {
+      "rolle": "forms the gluten network with flour",
+      "prozess": "glutenbildung"
+    }
+  ]
+}

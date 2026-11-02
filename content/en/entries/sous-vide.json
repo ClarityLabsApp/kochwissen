@@ -1,0 +1,19 @@
+{
+  "id": "sous-vide",
+  "titel": "Sous vide",
+  "kurz": "Cook vacuum-sealed meat or fish in a water bath precisely to the target temperature. Even from edge to edge, then seared briefly.",
+  "bild_im_kopf": "Like a thermostat instead of a campfire.",
+  "was_passiert": "The water is exactly as warm as the desired [[kerntemperatur|core temperature]]. So the food cannot overcook, only take longer. Afterwards it needs a very hot pan for the crust.",
+  "synonyme": [
+    "sous vide",
+    "vacuum cooking",
+    "low-temperature water bath"
+  ],
+  "schritte": [
+    "Season the meat and vacuum-seal it.",
+    "Bring the water bath to the target temperature, e.g. 55 °C for pink beef (as a guide).",
+    "Cook for 1–3 hours depending on thickness.",
+    "Take it out and pat it dry.",
+    "Sear in a very hot pan for 1 minute per side."
+  ]
+}

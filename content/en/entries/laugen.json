@@ -1,0 +1,24 @@
+{
+  "id": "laugen",
+  "titel": "Pretzels: baked baking soda instead of lye",
+  "kurz": "Pretzels get their colour and flavour from an alkaline bath. At home, baked baking soda does the job more gently.",
+  "bild_im_kopf": "Like a primer before painting: the short dip decides how the colour turns out later.",
+  "synonyme": [
+    "pretzels",
+    "lye rolls",
+    "lye bread",
+    "baked baking soda",
+    "homemade pretzels"
+  ],
+  "faustregeln": [
+    "Baked baking soda is an irritant: keep it away from your face and wash your hands afterwards.",
+    "Do not use an aluminium tray or bowl.",
+    "Real food-grade lye (sodium hydroxide) gives more colour but is caustic: only with gloves and safety goggles."
+  ],
+  "schritte": [
+    "Make baked baking soda (see the lab recipe): 2 hours at 120 °C.",
+    "Dissolve about 150 g of it in just under 500 ml of warm water.",
+    "Dip the shaped pretzels briefly, rinse briefly and let them drain.",
+    "Sprinkle with coarse salt and bake hot."
+  ]
+}

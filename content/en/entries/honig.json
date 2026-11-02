@@ -1,0 +1,32 @@
+{
+  "id": "honig",
+  "titel": "Honey and syrup",
+  "kurz": "Honey and syrup are liquid sugar with a little acid. They brown faster and keep baked goods moister than granulated sugar.",
+  "bild_im_kopf": "Like sugar in a coat of moisture.",
+  "was_passiert": "Honey contains a lot of fructose and a little acid. Fructose browns at a lower temperature and attracts moisture.",
+  "synonyme": [
+    "honey",
+    "maple syrup",
+    "sugar syrup",
+    "molasses",
+    "golden syrup"
+  ],
+  "faustregeln": [
+    "Bake things made with honey a little cooler; they brown faster.",
+    "Gingerbread stays soft for a long time thanks to honey."
+  ],
+  "rolle": [
+    {
+      "rolle": "browns faster",
+      "prozess": "maillard-reaktion"
+    },
+    {
+      "rolle": "keeps baked goods soft",
+      "prozess": "saftig"
+    },
+    {
+      "rolle": "brings acid for baking soda",
+      "prozess": "chemische-lockerung"
+    }
+  ]
+}

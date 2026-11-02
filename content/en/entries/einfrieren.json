@@ -1,0 +1,25 @@
+{
+  "id": "einfrieren",
+  "titel": "Freezing and thawing properly",
+  "kurz": "Freeze fast, flat and airtight; thaw slowly in the fridge. That keeps structure and flavour intact.",
+  "bild_im_kopf": "Like a photo with a short exposure: the faster the moment is captured, the sharper the picture.",
+  "synonyme": [
+    "freezing",
+    "deep-freezing",
+    "thawing",
+    "flash freezing",
+    "freezing for later"
+  ],
+  "faustregeln": [
+    "Flat freezes faster than a block.",
+    "Wrap airtight against freezer burn.",
+    "[[blanchieren|Blanch]] vegetables briefly first; that stops [[enzym|enzymes]]."
+  ],
+  "schritte": [
+    "Let cooked food cool first; do not put it in the freezer warm.",
+    "Fill bags flat, press out the air, label.",
+    "Pre-freeze berries and pieces of dough separately on a tray.",
+    "Thaw in the fridge, meat on a plate.",
+    "Use thawed food quickly and do not refreeze it raw."
+  ]
+}

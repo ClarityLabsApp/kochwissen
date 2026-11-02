@@ -1,0 +1,25 @@
+{
+  "id": "knoblauch",
+  "titel": "Garlic",
+  "kurz": "Garlic only develops its pungency when it is cut. The finer, the stronger, and the faster it burns.",
+  "bild_im_kopf": "A seasoning with a volume knob: a whole clove is quiet, crushed is loud.",
+  "was_passiert": "Only when the cells are destroyed do two separate substances react to form the typical pungent aromas. Heat makes it milder and sweetish; too much heat makes it bitter.",
+  "synonyme": [
+    "garlic clove",
+    "garlic"
+  ],
+  "faustregeln": [
+    "Whole cloves for a mild flavour, crushed for a strong one.",
+    "Add it to the pan late."
+  ],
+  "rolle": [
+    {
+      "rolle": "pungency forms when chopped",
+      "prozess": "mehr-geschmack"
+    },
+    {
+      "rolle": "burns quickly and turns bitter",
+      "prozess": "pyrolyse"
+    }
+  ]
+}

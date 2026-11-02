@@ -1,0 +1,23 @@
+{
+  "id": "ruhen-lassen",
+  "titel": "Resting meat",
+  "kurz": "After cooking, wait a few minutes before cutting. Much less juice runs onto the board.",
+  "bild_im_kopf": "Like fizzy water after shaking: opened straight away it gushes out; wait a moment and it stays in the bottle.",
+  "was_passiert": "Right after cooking the juice is thin and the fibres are under tension. As it cools, the juice gets a little thicker and less runs out when cutting. At the same time the temperature inside rises a little more ([[nachgaren|carry-over cooking]]).",
+  "warum_wichtig": "In one test, a pork roast rested for 10 minutes lost around 60 % less juice than one cut straight away.",
+  "synonyme": [
+    "resting",
+    "resting time",
+    "waiting after cooking"
+  ],
+  "schritte": [
+    "Move the meat from the pan to a board or rack.",
+    "Cover loosely, not tightly, otherwise the crust turns soft.",
+    "Rest steaks for about 5 minutes, roasts for 10–20 minutes.",
+    "Slice across the grain."
+  ],
+  "mythos": {
+    "behauptung": "Without resting, all the juice runs out.",
+    "richtig": "Some always runs out. Resting reduces it a lot; after about 10 minutes, waiting longer brings little more."
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "eigelb",
+  "titel": "Egg yolk",
+  "kurz": "Egg yolk thickens sauces in two ways: as an [[emulgator|emulsifier]] for fat and water, and by thickening when warmed.",
+  "bild_im_kopf": "An all-rounder with two talents: go-between for fat and water, and thickener in the warmth.",
+  "was_passiert": "The lecithin in egg yolk has a water-loving and a fat-loving side and coats fat droplets. Its proteins thicken from about 65 °C and set above about 70 °C.",
+  "synonyme": [
+    "yolk",
+    "egg yolks",
+    "lecithin"
+  ],
+  "faustregeln": [
+    "Never let egg yolk sauces boil.",
+    "One yolk carries far more oil than you think: the problem is almost always speed."
+  ],
+  "rolle": [
+    {
+      "rolle": "combines fat and water",
+      "prozess": "emulsion"
+    },
+    {
+      "rolle": "thickens when warmed",
+      "prozess": "eiweiss-gerinnung"
+    },
+    {
+      "rolle": "makes doughs rich and short",
+      "prozess": "glutenbildung"
+    }
+  ]
+}

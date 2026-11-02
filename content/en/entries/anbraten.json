@@ -1,0 +1,24 @@
+{
+  "id": "anbraten",
+  "titel": "Searing",
+  "kurz": "Hot pan, dry surface, little movement at the start: that is how a brown, aromatic crust forms.",
+  "bild_im_kopf": "Like a rubber stamp: it needs firm, steady contact, or the print smudges.",
+  "was_passiert": "The hot pan evaporates the last water on the surface; after that the temperature rises above 140 °C and browning begins. At first the meat sticks until a crust has formed, then it releases by itself. After that you may turn it more often, which even cooks it more evenly.",
+  "warum_wichtig": "With quick-cooked meat, the crust supplies most of the flavour.",
+  "synonyme": [
+    "searing",
+    "frying steak",
+    "building a crust"
+  ],
+  "faustregeln": [
+    "No sizzle means: the pan is too cold.",
+    "Better to fry in two batches than in one full pan."
+  ],
+  "schritte": [
+    "Pat the meat dry.",
+    "Preheat the pan hard with a little heat-resistant oil.",
+    "Add the meat; it should sizzle loudly.",
+    "Leave it until it releases by itself.",
+    "Turn, cook to the desired [[kerntemperatur|core temperature]], and at the end add butter for [[arosieren|basting]]."
+  ]
+}

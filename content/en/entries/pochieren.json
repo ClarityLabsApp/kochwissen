@@ -1,0 +1,19 @@
+{
+  "id": "pochieren",
+  "titel": "Poaching",
+  "kurz": "Cook gently in hot but not boiling water. Classic for eggs and fish.",
+  "bild_im_kopf": "Like dozing off in a warm bath rather than a jacuzzi.",
+  "was_passiert": "Below boiling point, the protein sets evenly without shredding. A splash of vinegar makes the white set faster; fresh eggs hold together better.",
+  "synonyme": [
+    "poaching eggs",
+    "poached egg",
+    "poaching"
+  ],
+  "schritte": [
+    "Bring water to a simmer, with only single bubbles.",
+    "Add a splash of vinegar.",
+    "Crack the egg into a cup and slide it gently into the water.",
+    "Let it poach for 3–4 minutes.",
+    "Lift it out with a slotted spoon and drain."
+  ]
+}

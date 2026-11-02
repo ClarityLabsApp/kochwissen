@@ -1,0 +1,30 @@
+{
+  "id": "kaltwasserbad",
+  "titel": "Soaking potatoes in cold water",
+  "kurz": "Putting cut potatoes in cold water rinses the loose starch film off the surface. That makes them crispier in the oven or the fryer.",
+  "bild_im_kopf": "Like wiping flour dust off a board before varnishing it: the varnish only holds on a clean surface.",
+  "was_passiert": "Cutting tears cells open, and starch granules and some sugar end up on the cut surface. In the oven this film turns sticky and browns too early, before the surface is dry and firm. The water bath washes it off. It has to be cold: in warm water the starch starts to swell and sticks even more.",
+  "warum_wichtig": "More even browning, less sticking and a crisper surface for wedges, chips and rösti.",
+  "synonyme": [
+    "ice water",
+    "soaking",
+    "rinsing off starch",
+    "soaking chips"
+  ],
+  "faustregeln": [
+    "Cold, yes; ice is not a must.",
+    "Without thorough drying, the soaking is pointless.",
+    "Cloudy water shows there was starch that will now not stick to the tray."
+  ],
+  "schritte": [
+    "Cut the potatoes and put them straight into a bowl of cold water.",
+    "Leave them for at least 30 minutes, or longer in the fridge.",
+    "Pour off the water and rinse with fresh water until it stays clear.",
+    "Dry very thoroughly: a towel, then a few minutes in the air.",
+    "Only now toss with a little oil and bake or fry hot."
+  ],
+  "mythos": {
+    "behauptung": "Soaked potatoes turn watery.",
+    "richtig": "It is only about the surface. If they are dried well afterwards, they turn crispier, not more watery."
+  }
+}

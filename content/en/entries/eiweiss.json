@@ -1,0 +1,26 @@
+{
+  "id": "eiweiss",
+  "titel": "Egg white",
+  "kurz": "Egg white is almost nothing but water and protein. It can be whipped into a foam and sets in the heat.",
+  "bild_im_kopf": "Like liquid building material you can foam up and then let set.",
+  "was_passiert": "The proteins in egg white unfold when whisked and coat air bubbles. In the heat they set earlier than the yolk.",
+  "synonyme": [
+    "egg white",
+    "albumen",
+    "whisked egg whites"
+  ],
+  "faustregeln": [
+    "Separate without a trace of yolk.",
+    "Leftover egg whites freeze well."
+  ],
+  "rolle": [
+    {
+      "rolle": "forms foam",
+      "prozess": "schaumbildung"
+    },
+    {
+      "rolle": "sets in the heat",
+      "prozess": "eiweiss-gerinnung"
+    }
+  ]
+}

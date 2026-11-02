@@ -1,0 +1,21 @@
+{
+  "id": "deglacieren",
+  "titel": "Deglazing",
+  "kurz": "Loosen the browned residue on the bottom of the pan with liquid. It is full of roasted aromas and the best base for a sauce.",
+  "bild_im_kopf": "Like a concentrate at the bottom of a cup that you dissolve again with water.",
+  "was_passiert": "When searing, browned bits of protein and sugar stick to the bottom. They are pure [[maillard-reaktion|Maillard aromas]]. A liquid such as wine, stock or water dissolves them; reduced, they become a rich sauce.",
+  "synonyme": [
+    "loosening the fond",
+    "deglazing",
+    "pan sauce"
+  ],
+  "typische_fehler": [
+    "Black residue: burnt bits taste bitter and do not belong in the sauce."
+  ],
+  "schritte": [
+    "Take the meat out of the pan and pour off excess fat.",
+    "Deglaze with wine, stock or water.",
+    "Loosen the residue from the bottom with a wooden spoon.",
+    "Reduce, and [[montieren|mount]] with butter if you like."
+  ]
+}

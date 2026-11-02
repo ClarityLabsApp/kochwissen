@@ -1,0 +1,19 @@
+{
+  "id": "wasserbad",
+  "titel": "Cooking over a water bath",
+  "kurz": "Warm a bowl over or in hot water. The temperature rises gently and cannot exceed 100 °C.",
+  "bild_im_kopf": "Like a buffer between flame and bowl: the water absorbs the peaks.",
+  "was_passiert": "The water spreads the heat evenly and limits it. That way egg custards, hollandaise or chocolate do not curdle or seize so easily.",
+  "synonyme": [
+    "bain-marie",
+    "water bath",
+    "double boiler",
+    "whisking over steam"
+  ],
+  "schritte": [
+    "Bring a pot with a little water to a simmer.",
+    "Set the bowl on top; it should not touch the water.",
+    "Warm while stirring constantly.",
+    "Lift the bowl off briefly if it is going too fast."
+  ]
+}

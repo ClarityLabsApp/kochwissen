@@ -1,0 +1,32 @@
+{
+  "id": "fond",
+  "titel": "Stock and broth",
+  "kurz": "A stock is flavour simmered out of bones, meat and vegetables. The gelatine in it makes sauces silky when reduced.",
+  "bild_im_kopf": "Like a store of flavour and body laid up in liquid in advance.",
+  "was_passiert": "As bones simmer for a long time, [[kollagen-gelatine|collagen]] dissolves into gelatine. A good stock sets in the fridge. When reduced, the gelatine concentrates and thickens the sauce without starch.",
+  "synonyme": [
+    "stock",
+    "broth",
+    "bouillon",
+    "jus",
+    "veal stock"
+  ],
+  "faustregeln": [
+    "Only let stock simmer gently; then it stays clear.",
+    "Shop-bought stock often has little gelatine: help it along with butter or a little starch."
+  ],
+  "rolle": [
+    {
+      "rolle": "thickens through gelatine when reduced",
+      "prozess": "kollagen-gelatine"
+    },
+    {
+      "rolle": "adds depth and umami",
+      "prozess": "mehr-geschmack"
+    },
+    {
+      "rolle": "base for reductions",
+      "prozess": "reduktion"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "oel",
+  "titel": "Oil",
+  "kurz": "Oil carries heat evenly to every spot on a surface and carries flavour.",
+  "bild_im_kopf": "Like a bridge between pan and food: without oil, only the tip of every bump touches the heat.",
+  "was_passiert": "A surface is never completely smooth. Oil fills the gaps and brings the heat evenly everywhere, so the whole surface browns instead of just a few spots. How much heat an oil can take depends on whether it is refined or cold-pressed.",
+  "synonyme": [
+    "rapeseed oil",
+    "canola oil",
+    "sunflower oil",
+    "olive oil",
+    "frying oil"
+  ],
+  "faustregeln": [
+    "For wedges, about 1 tbsp oil per 500 g is enough.",
+    "Refined oil for high heat, cold-pressed for flavour at the end."
+  ],
+  "rolle": [
+    {
+      "rolle": "carries heat into every hollow",
+      "prozess": "maillard-reaktion"
+    },
+    {
+      "rolle": "frying medium at 160–190 °C",
+      "prozess": "zweimal-frittieren"
+    },
+    {
+      "rolle": "forms emulsions with water",
+      "prozess": "emulsion"
+    }
+  ]
+}

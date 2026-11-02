@@ -1,0 +1,25 @@
+{
+  "id": "senf",
+  "titel": "Mustard",
+  "kurz": "Mustard seasons and helps as an [[emulgator|emulsifier]]: a spoonful keeps a vinaigrette together much longer.",
+  "bild_im_kopf": "A little helper that keeps oil and vinegar at the same table.",
+  "was_passiert": "Mustard seeds contain mucilage and proteins that settle around oil droplets. That makes them run together more slowly.",
+  "synonyme": [
+    "Dijon mustard",
+    "mustard"
+  ],
+  "faustregeln": [
+    "For vinaigrette, about 1 tsp mustard to 3 tbsp oil, as a guide.",
+    "Stir mustard with vinegar and salt first, then add the oil."
+  ],
+  "rolle": [
+    {
+      "rolle": "helps combine oil and vinegar",
+      "prozess": "emulsion"
+    },
+    {
+      "rolle": "adds heat and acidity",
+      "prozess": "mehr-geschmack"
+    }
+  ]
+}

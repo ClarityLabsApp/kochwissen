@@ -1,0 +1,20 @@
+{
+  "id": "pfanne-vorheizen",
+  "titel": "Preheating the pan properly",
+  "kurz": "A pan is hot enough when a drop of water dances across it as a little ball instead of evaporating with a hiss.",
+  "bild_im_kopf": "Like an air hockey puck: above a certain heat, the drop floats on its own cushion of steam.",
+  "was_passiert": "At medium heat a drop evaporates at once with a hiss. If the pan is much hotter, a layer of steam forms under the drop and it glides on it. With stainless steel this is also the moment from which meat and fish stick less.",
+  "warum_wichtig": "The most common cause of grey meat and sticking fish is a pan that is too cold.",
+  "synonyme": [
+    "water droplet test",
+    "is the pan hot enough",
+    "Leidenfrost test",
+    "mercury ball test"
+  ],
+  "schritte": [
+    "Heat the empty pan over medium-high heat for 3–5 minutes.",
+    "Flick in a few drops of water.",
+    "If they dance as little balls, it is ready. Wipe away the water, add oil and wait briefly.",
+    "Do not overheat non-stick pans while empty; preheat those only with oil."
+  ]
+}

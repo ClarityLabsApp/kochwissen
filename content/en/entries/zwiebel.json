@@ -1,0 +1,30 @@
+{
+  "id": "zwiebel",
+  "titel": "Onion",
+  "kurz": "Onions are full of sugar and sulphur compounds. Raw they are sharp; fried slowly they turn sweet and deep brown.",
+  "bild_im_kopf": "Two personalities in one bulb: fiery raw, mild and sweet when fried.",
+  "was_passiert": "Cutting creates sharp sulphur compounds that also sting the eyes. Heat breaks the sharpness down and brings out the sugar. Long, slow frying gives deep brown, sweet onions.",
+  "synonyme": [
+    "onions",
+    "shallot",
+    "fried onions"
+  ],
+  "faustregeln": [
+    "A sharp knife: fewer crushed cells, fewer tears.",
+    "For sweet, brown onions, patience rather than heat."
+  ],
+  "rolle": [
+    {
+      "rolle": "turns sweet and brown when fried",
+      "prozess": "maillard-reaktion"
+    },
+    {
+      "rolle": "sugar caramelises",
+      "prozess": "karamellisierung"
+    },
+    {
+      "rolle": "gives sauces their base flavour",
+      "prozess": "mehr-geschmack"
+    }
+  ]
+}

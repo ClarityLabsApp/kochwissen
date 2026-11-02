@@ -1,0 +1,27 @@
+{
+  "id": "backpulver",
+  "titel": "Baking powder",
+  "kurz": "Baking powder is baking soda with built-in acid and a little starch. It reacts once when mixed and again in the heat of the oven.",
+  "bild_im_kopf": "Like sherbet powder with a time fuse.",
+  "was_passiert": "The starch keeps baking soda and acid dry and apart. With liquid the first reaction starts; the second acid only reacts with heat. Old or damply stored baking powder loses its power.",
+  "synonyme": [
+    "raising agent",
+    "leavening",
+    "cream of tartar baking powder",
+    "double-acting baking powder"
+  ],
+  "faustregeln": [
+    "Test: a teaspoon in hot water must fizz vigorously.",
+    "Store dry and tightly sealed."
+  ],
+  "rolle": [
+    {
+      "rolle": "makes gas when mixed",
+      "prozess": "chemische-lockerung"
+    },
+    {
+      "rolle": "makes more gas in the heat",
+      "prozess": "chemische-lockerung"
+    }
+  ]
+}

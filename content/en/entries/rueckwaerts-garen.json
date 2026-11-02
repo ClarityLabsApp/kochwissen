@@ -1,0 +1,42 @@
+{
+  "id": "rueckwaerts-garen",
+  "titel": "Reverse searing",
+  "kurz": "Bring thick steaks up to temperature gently in the oven first, then sear them very briefly. The result: pink from edge to edge with a strong crust.",
+  "bild_im_kopf": "Like warming a house evenly first and then just painting the facade, instead of burning the edges while the centre is still cold.",
+  "was_passiert": "In a low oven the heat rises almost equally fast inside and out, so the grey band stays thin. The dry oven air dries the surface at the same time. That is why it browns in no time in the hot pan.",
+  "warum_wichtig": "The most reliable method for steaks and roasts from about 3 cm thick.",
+  "synonyme": [
+    "reverse sear",
+    "low and slow",
+    "oven first, then pan"
+  ],
+  "schritte": [
+    "Salt the meat, ideally the day before.",
+    "Put it on a rack in the oven at about 100–120 °C, thermometer in the centre.",
+    "Take it out when the [[kerntemperatur|core temperature]] is about 5 °C below the target.",
+    "Sear in a very hot pan for 1 minute per side.",
+    "Resting is hardly needed here; the meat has already rested."
+  ],
+  "visual": {
+    "params": {
+      "ofen_c": [
+        100,
+        120
+      ],
+      "skala": [
+        {
+          "c": 55,
+          "name": "target pink (core)"
+        },
+        {
+          "c": 110,
+          "name": "oven: gentle pre-cooking"
+        },
+        {
+          "c": 230,
+          "name": "pan: quick sear"
+        }
+      ]
+    }
+  }
+}

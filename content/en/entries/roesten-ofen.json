@@ -1,0 +1,24 @@
+{
+  "id": "roesten-ofen",
+  "titel": "Roasting in the oven",
+  "kurz": "Hot oven, hot tray, space between the pieces: that way vegetables brown instead of steaming in their own vapour.",
+  "bild_im_kopf": "Like hanging out washing: spaced out, every piece dries; in a heap, everything stays damp.",
+  "was_passiert": "The dry oven air takes up the surface water. If the pieces are too close, steam gathers between them and keeps the surface at 100 °C. A preheated tray gives the underside contact heat at once, and that is where the best crust forms.",
+  "warum_wichtig": "Wedges, roast vegetables, Brussels sprouts: the difference between steamed and roasted usually comes down to space and heat.",
+  "synonyme": [
+    "roast vegetables",
+    "sheet pan",
+    "oven roasting"
+  ],
+  "faustregeln": [
+    "Better two trays than one full one.",
+    "What sticks is not done yet: wait until it releases."
+  ],
+  "schritte": [
+    "Preheat the oven with the tray to 220 °C (fan 200 °C).",
+    "Dry the pieces and toss them thinly in oil.",
+    "Spread them out on the hot tray, cut side down.",
+    "Turn after about 20 minutes, once they release.",
+    "When done, put them on a rack rather than stacking them."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "natron",
+  "titel": "Baking soda",
+  "kurz": "Baking soda is alkaline. It raises batter together with acid, speeds up browning and softens plant cells.",
+  "bild_im_kopf": "Like an accelerator pedal for several processes at once: browning, softening, rising. That is why a pinch is always enough.",
+  "was_passiert": "Baking soda raises the [[ph-wert|pH]]. In alkaline conditions, browning and the breakdown of [[pektin|pectin]] run much faster. With acid such as buttermilk or yoghurt it forms gas bubbles that raise batter.",
+  "synonyme": [
+    "bicarbonate of soda",
+    "sodium bicarbonate",
+    "bicarb",
+    "baking soda"
+  ],
+  "faustregeln": [
+    "Pinches, not spoons: too much tastes soapy.",
+    "In potato parboiling water, about ½ tsp per 2 litres.",
+    "Baking soda needs acid to raise; baking powder brings its own."
+  ],
+  "rolle": [
+    {
+      "rolle": "raises batter together with acid",
+      "prozess": "chemische-lockerung"
+    },
+    {
+      "rolle": "speeds up browning",
+      "prozess": "maillard-reaktion"
+    },
+    {
+      "rolle": "softens the edges of vegetables and potatoes",
+      "prozess": "pektin-abbau"
+    }
+  ]
+}

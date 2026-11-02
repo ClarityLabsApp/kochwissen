@@ -1,0 +1,27 @@
+{
+  "id": "hefe",
+  "titel": "Yeast",
+  "kurz": "Yeast is a living fungus that turns sugar into gas and aromas. It makes dough rise.",
+  "bild_im_kopf": "Like a pet with clear preferences: warm but not hot, food, and no salt straight on its head.",
+  "was_passiert": "Fresh yeast and dried yeast are the same yeast, once moist, once dried. About 1 part dried yeast replaces 3 parts fresh yeast (as a guide). Less yeast and more time usually gives the better bread.",
+  "synonyme": [
+    "fresh yeast",
+    "dried yeast",
+    "instant yeast"
+  ],
+  "faustregeln": [
+    "Less yeast, more time.",
+    "Water lukewarm, never hot.",
+    "Do not put salt and yeast directly together."
+  ],
+  "rolle": [
+    {
+      "rolle": "makes the dough rise",
+      "prozess": "hefegaerung"
+    },
+    {
+      "rolle": "creates aromas",
+      "prozess": "mehr-geschmack"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "salz",
+  "titel": "Salt",
+  "kurz": "Salt does more than season. It draws out water, keeps water in meat, tightens bread dough and slows yeast.",
+  "bild_im_kopf": "Like a tool with several blades: depending on timing and amount, it does something different.",
+  "was_passiert": "On the surface, salt first draws water out. Given time, it penetrates, seasons all the way through and helps the meat hold its juice. In bread dough it strengthens the [[glutenbildung|gluten network]]; in large amounts it slows the yeast.",
+  "synonyme": [
+    "table salt",
+    "sea salt",
+    "fleur de sel",
+    "salting"
+  ],
+  "faustregeln": [
+    "Salt meat right before cooking or many hours ahead.",
+    "Coarse salt for pre-salting, fine salt for seasoning.",
+    "Never put salt directly onto yeast."
+  ],
+  "rolle": [
+    {
+      "rolle": "draws water from surfaces",
+      "prozess": "osmose"
+    },
+    {
+      "rolle": "keeps water in meat",
+      "prozess": "wasserbindung-salz"
+    },
+    {
+      "rolle": "tightens the gluten network",
+      "prozess": "glutenbildung"
+    },
+    {
+      "rolle": "boosts flavour",
+      "prozess": "mehr-geschmack"
+    }
+  ]
+}

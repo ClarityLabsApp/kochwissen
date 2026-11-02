@@ -1,0 +1,23 @@
+{
+  "id": "lake",
+  "titel": "Wet brining",
+  "kurz": "Put meat in salt water for a few hours. It takes up salt and water and stays juicier as it cooks.",
+  "bild_im_kopf": "Like a dry sponge in a water bath: it soaks itself full before it gets squeezed.",
+  "was_passiert": "The salt from the brine penetrates the meat and loosens proteins, so it takes up and holds extra water. The meat turns juicier but also more watery in taste, and the skin is harder to crisp.",
+  "warum_wichtig": "An alternative to dry salting for very lean meat such as chicken breast or pork chops.",
+  "synonyme": [
+    "brine",
+    "brining",
+    "salt brine",
+    "wet brine"
+  ],
+  "typische_fehler": [
+    "Too long in the brine: the meat turns spongy and too salty."
+  ],
+  "schritte": [
+    "Mix a brine of about 5–6 % salt (50–60 g per litre), as a guide.",
+    "Submerge the meat completely and keep it cold.",
+    "Chicken breast 1–2 hours, a whole chicken a few hours.",
+    "Take it out, rinse it and pat it very dry."
+  ]
+}

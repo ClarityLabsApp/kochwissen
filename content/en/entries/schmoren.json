@@ -1,0 +1,48 @@
+{
+  "id": "schmoren",
+  "titel": "Braising",
+  "kurz": "Sear the meat, then cook it gently, covered, in a little liquid for hours. The connective tissue turns into gelatine and the meat turns tender.",
+  "bild_im_kopf": "Like a long bath instead of a hot shower: the warmth has time to reach everywhere and loosen everything.",
+  "was_passiert": "Searing brings roasted aromas into the meat and the pan residue. In the gently simmering liquid, the [[kollagen-gelatine|collagen]] dissolves into gelatine over hours. If the liquid boils hard, the muscle fibres squeeze out too much juice and the meat turns dry and stringy.",
+  "warum_wichtig": "Turns cheap, tough cuts into the most tender dishes of all.",
+  "synonyme": [
+    "pot roast",
+    "ragù",
+    "braise",
+    "goulash",
+    "stew"
+  ],
+  "faustregeln": [
+    "Simmer gently, never boil hard.",
+    "Braises often taste better the next day: gelatine and aromas settle."
+  ],
+  "schritte": [
+    "Pat the meat dry and sear it hard in batches.",
+    "Brown the vegetables, deglaze the pan residue with wine or stock.",
+    "Return the meat, liquid to about halfway up.",
+    "Cover and simmer gently over low heat or in the oven at 140–150 °C.",
+    "Check after 2–3 hours: a fork should slide in without resistance."
+  ],
+  "visual": {
+    "params": {
+      "fluessigkeit_c": [
+        85,
+        90
+      ],
+      "skala": [
+        {
+          "c": 70,
+          "name": "connective tissue starts to dissolve"
+        },
+        {
+          "c": 88,
+          "name": "gentle simmer"
+        },
+        {
+          "c": 100,
+          "name": "bubbling: too hot"
+        }
+      ]
+    }
+  }
+}

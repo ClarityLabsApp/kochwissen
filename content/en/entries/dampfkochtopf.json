@@ -1,0 +1,22 @@
+{
+  "id": "dampfkochtopf",
+  "titel": "Cooking in a pressure cooker",
+  "kurz": "A pressure cooker holds the steam in. Under pressure the water gets about 120 °C hot, and everything cooks much faster.",
+  "bild_im_kopf": "Like a shortcut over the mountain: the same route, but much less time.",
+  "synonyme": [
+    "pressure cooker",
+    "instant pot",
+    "pressure cooking"
+  ],
+  "faustregeln": [
+    "About a third of the normal cooking time, as a guide.",
+    "Pulses and grains foam: fill only halfway.",
+    "Never force it open."
+  ],
+  "schritte": [
+    "Add at least the stated amount of liquid; fill no more than two thirds.",
+    "Close the lid and heat on high until it shows pressure.",
+    "Turn the heat down so the pressure just holds; count the cooking time from now.",
+    "Let the pressure drop or release it as instructed, and only then open."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "blanchieren",
+  "titel": "Blanching and refreshing",
+  "kurz": "Cook vegetables briefly in boiling salted water and stop them at once in iced water. They stay crisp and bright green.",
+  "bild_im_kopf": "Like a photo taken at exactly the right moment: the iced water captures the best state.",
+  "was_passiert": "The boiling water cooks the surface quickly, loosens some glue and drives out air, so the green glows. The iced water stops [[nachgaren|carry-over cooking]] immediately, before acids dull the green and the cells get too soft.",
+  "synonyme": [
+    "blanching",
+    "refreshing",
+    "shocking in ice water",
+    "ice bath"
+  ],
+  "schritte": [
+    "Salt plenty of water well and bring it to a rolling boil.",
+    "Have a bowl of iced water ready next to it.",
+    "Cook the vegetables in batches for 1–3 minutes.",
+    "Straight into the iced water until fully cold.",
+    "Drain and pat dry."
+  ]
+}

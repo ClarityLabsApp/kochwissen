@@ -1,0 +1,31 @@
+{
+  "id": "joghurt",
+  "titel": "Yoghurt",
+  "kurz": "Yoghurt is milk soured by lactic acid bacteria. The acid thickens it, adds freshness and activates baking soda.",
+  "bild_im_kopf": "Milk that bacteria have given a new shape.",
+  "was_passiert": "Bacteria turn milk sugar into lactic acid. The acid makes the milk protein thicken into a soft gel.",
+  "synonyme": [
+    "natural yoghurt",
+    "Greek yoghurt",
+    "buttermilk",
+    "yogurt"
+  ],
+  "faustregeln": [
+    "Stir yoghurt into hot sauces only at the end, otherwise it curdles.",
+    "With baking soda in a batter: a lovely rise."
+  ],
+  "rolle": [
+    {
+      "rolle": "sours and thickens",
+      "prozess": "milchsaeuregaerung"
+    },
+    {
+      "rolle": "activates baking soda in batter",
+      "prozess": "chemische-lockerung"
+    },
+    {
+      "rolle": "makes marinades mild",
+      "prozess": "marinieren"
+    }
+  ]
+}

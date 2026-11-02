@@ -1,0 +1,31 @@
+{
+  "id": "sauerteig",
+  "titel": "Sourdough",
+  "kurz": "Sourdough is a culture of wild yeasts and lactic acid bacteria. It makes bread rise and gives it acidity and depth.",
+  "bild_im_kopf": "Like a little garden in a jar that you feed regularly.",
+  "was_passiert": "Flour and water, fed regularly, are colonised by yeasts and bacteria from the flour and the surroundings. An active sourdough bubbles, smells pleasantly sour and grows clearly after feeding.",
+  "synonyme": [
+    "starter",
+    "levain",
+    "sourdough starter",
+    "mother dough"
+  ],
+  "faustregeln": [
+    "Use it when it is at its highest after feeding.",
+    "Keep it in the fridge and refresh it before baking."
+  ],
+  "rolle": [
+    {
+      "rolle": "makes the dough rise",
+      "prozess": "hefegaerung"
+    },
+    {
+      "rolle": "sours and adds flavour",
+      "prozess": "milchsaeuregaerung"
+    },
+    {
+      "rolle": "keeps bread fresh longer",
+      "prozess": "laenger-frisch"
+    }
+  ]
+}

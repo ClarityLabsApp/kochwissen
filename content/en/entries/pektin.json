@@ -1,0 +1,25 @@
+{
+  "id": "pektin",
+  "titel": "Pectin",
+  "kurz": "Pectin is the glue in plant cells. With sugar and acid it forms gels; when vegetables cook, it dissolves.",
+  "bild_im_kopf": "The same mortar that holds vegetables together makes jam set.",
+  "was_passiert": "In fruit and vegetables, pectin binds the cells together. Extracted and boiled with a lot of sugar and acid, it forms a gel.",
+  "synonyme": [
+    "jam sugar",
+    "apple pectin",
+    "pectin"
+  ],
+  "faustregeln": [
+    "Jam sugar already contains pectin and acid."
+  ],
+  "rolle": [
+    {
+      "rolle": "makes jam set",
+      "prozess": "gelbildung-pektin"
+    },
+    {
+      "rolle": "keeps vegetables firm",
+      "prozess": "pektin-abbau"
+    }
+  ]
+}

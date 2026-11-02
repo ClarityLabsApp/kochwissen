@@ -1,0 +1,40 @@
+{
+  "id": "zucker",
+  "titel": "Sugar",
+  "kurz": "Sugar does more than sweeten. It keeps cakes moist, makes doughs tender, browns the crust and stabilises meringue.",
+  "bild_im_kopf": "Like a sponge in the batter: it holds on to water and makes the cake dry out more slowly.",
+  "was_passiert": "Sugar dissolves in the water in a batter and holds on to it. It slips between proteins and starch and so makes baked goods more tender. In the oven it browns the surface.",
+  "synonyme": [
+    "granulated sugar",
+    "icing sugar",
+    "raw sugar",
+    "brown sugar",
+    "caster sugar"
+  ],
+  "faustregeln": [
+    "Cutting the sugar in a recipe too much makes cake dry and tough, not just less sweet.",
+    "Brown sugar holds more moisture: moister, softer cookies."
+  ],
+  "rolle": [
+    {
+      "rolle": "holds water, keeps things moist",
+      "prozess": "saftig"
+    },
+    {
+      "rolle": "slows the gluten network, makes things tender",
+      "prozess": "glutenbildung"
+    },
+    {
+      "rolle": "browns and caramelises",
+      "prozess": "karamellisierung"
+    },
+    {
+      "rolle": "stabilises meringue",
+      "prozess": "schaumbildung"
+    },
+    {
+      "rolle": "makes cookies spread",
+      "prozess": "kekse-breit"
+    }
+  ]
+}

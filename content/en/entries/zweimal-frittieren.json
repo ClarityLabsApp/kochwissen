@@ -1,0 +1,43 @@
+{
+  "id": "zweimal-frittieren",
+  "titel": "Double frying",
+  "kurz": "First cook at medium heat, then fry briefly at high heat until crisp. That way chips are soft inside and firm outside.",
+  "bild_im_kopf": "Like primer and varnish: the first coat prepares, the second makes the hard, shiny layer.",
+  "was_passiert": "In the first bath at about 160 °C, the inside cooks, the starch swells and the surface forms a thin skin. As it cools, this skin firms up. In the second bath at about 190 °C, the last water on the surface evaporates quickly, and the skin hardens and browns before the inside dries out.",
+  "warum_wichtig": "Fried once, hot: dark outside, raw inside. Fried once, gently: cooked through but limp. Only separating the two solves both.",
+  "synonyme": [
+    "double-fried chips",
+    "twice-fried fries",
+    "Belgian fries",
+    "double frying"
+  ],
+  "faustregeln": [
+    "Use a thermometer: the temperature is the whole trick.",
+    "Small batches, otherwise the oil temperature drops a lot."
+  ],
+  "schritte": [
+    "Cut the potatoes, soak them and dry them very thoroughly.",
+    "Fry at about 160 °C for 5–6 minutes until cooked but still pale.",
+    "Let them cool on a rack for at least 15 minutes.",
+    "Fry at about 190 °C for 2–3 minutes until golden brown.",
+    "Drain on a rack and salt straight away."
+  ],
+  "visual": {
+    "params": {
+      "temperaturen": [
+        160,
+        190
+      ],
+      "skala": [
+        {
+          "c": 160,
+          "name": "1st bath: cook the inside"
+        },
+        {
+          "c": 190,
+          "name": "2nd bath: dry and brown the crust"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "ei",
+  "titel": "Egg (whole)",
+  "kurz": "The whole egg binds, lightens, emulsifies and adds colour. That is why it is in so many recipes.",
+  "bild_im_kopf": "The Swiss army knife of the kitchen.",
+  "was_passiert": "Egg white binds and holds air; egg yolk emulsifies and adds richness. Together they give batters and doughs structure, colour and moisture.",
+  "synonyme": [
+    "eggs",
+    "whole egg",
+    "hen's egg"
+  ],
+  "faustregeln": [
+    "Eggs at room temperature combine better with butter.",
+    "For glazing, egg yolk with a little milk: a nice colour."
+  ],
+  "rolle": [
+    {
+      "rolle": "binds when heated",
+      "prozess": "eiweiss-gerinnung"
+    },
+    {
+      "rolle": "lightens as a foam",
+      "prozess": "schaumbildung"
+    },
+    {
+      "rolle": "combines fat and water",
+      "prozess": "emulsion"
+    },
+    {
+      "rolle": "gives shine and colour as a glaze",
+      "prozess": "maillard-reaktion"
+    }
+  ]
+}

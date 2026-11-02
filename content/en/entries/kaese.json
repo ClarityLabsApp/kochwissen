@@ -1,0 +1,29 @@
+{
+  "id": "kaese",
+  "titel": "Cheese",
+  "kurz": "Cheese is curdled milk protein with fat. Whether it melts creamily or turns stringy and greasy depends on age, moisture and acidity.",
+  "bild_im_kopf": "Like a net of protein with fat and water trapped inside.",
+  "was_passiert": "When melting, the protein network loosens. Young, moist cheeses melt creamily. Very old, dry cheeses tend to release fat. Too much heat makes the protein contract: rubbery, with pools of fat.",
+  "synonyme": [
+    "Gruyère",
+    "Emmental",
+    "parmesan",
+    "raclette",
+    "mozzarella"
+  ],
+  "faustregeln": [
+    "Grate finely and melt over medium heat.",
+    "For fondue, white wine and a little starch: acid and starch hold the [[emulsion|emulsion]] together.",
+    "Stir parmesan into pasta only over medium heat."
+  ],
+  "rolle": [
+    {
+      "rolle": "melts into an emulsion",
+      "prozess": "emulsion"
+    },
+    {
+      "rolle": "adds umami and seasoning",
+      "prozess": "mehr-geschmack"
+    }
+  ]
+}

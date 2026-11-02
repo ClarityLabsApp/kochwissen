@@ -1,0 +1,26 @@
+{
+  "id": "gelatine",
+  "titel": "Gelatine",
+  "kurz": "Gelatine is purified [[kollagen-gelatine|collagen]]. It dissolves in warmth and makes liquids set as they cool.",
+  "bild_im_kopf": "Like a net in powder form.",
+  "was_passiert": "Gelatine comes from connective tissue. Soaked and dissolved, it forms a network as it cools that melts again at body temperature.",
+  "synonyme": [
+    "leaf gelatine",
+    "gelatine powder",
+    "gelatin"
+  ],
+  "faustregeln": [
+    "Never boil.",
+    "Agar-agar is a plant-based alternative, but it has to boil and sets firmer."
+  ],
+  "rolle": [
+    {
+      "rolle": "makes liquid set",
+      "prozess": "gelbildung-gelatine"
+    },
+    {
+      "rolle": "makes sauces silky",
+      "prozess": "kollagen-gelatine"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "wein",
+  "titel": "Wine",
+  "kurz": "Wine brings acidity, aromas and a little sweetness to sauces and braises. The alcohol dissolves aromas and mostly evaporates.",
+  "bild_im_kopf": "Like a seasoning in liquid form.",
+  "was_passiert": "The acid in wine makes sauces lively. When reduced, acidity, aromas and tannins concentrate. Some of the alcohol remains even after long cooking.",
+  "synonyme": [
+    "white wine",
+    "red wine",
+    "cooking wine"
+  ],
+  "faustregeln": [
+    "Only use wine you would also drink.",
+    "Reduce red wine well, otherwise it tastes raw and harsh."
+  ],
+  "rolle": [
+    {
+      "rolle": "loosens the pan residue",
+      "prozess": "deglacieren"
+    },
+    {
+      "rolle": "adds acidity",
+      "prozess": "mehr-geschmack"
+    },
+    {
+      "rolle": "concentrates when reduced",
+      "prozess": "reduktion"
+    }
+  ]
+}

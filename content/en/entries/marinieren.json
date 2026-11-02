@@ -1,0 +1,21 @@
+{
+  "id": "marinieren",
+  "titel": "Marinating",
+  "kurz": "A marinade mainly seasons the surface. The salt in it penetrates deeper; acid and oil stay on the outside.",
+  "bild_im_kopf": "Like paint on wood: it stays on the surface; only salt soaks in deeper, like a wood stain.",
+  "was_passiert": "Aromas and oil barely penetrate. Salt moves slowly to the inside and makes the meat juicier. Acid changes the surface and can make it mealy if left too long. Yoghurt is mild and works well for longer marinades.",
+  "synonyme": [
+    "marinade",
+    "marinating",
+    "yoghurt marinade"
+  ],
+  "typische_fehler": [
+    "Wet from the marinade into the pan: it stews instead of frying."
+  ],
+  "schritte": [
+    "Mix a marinade with salt, aromatics, a little oil and a little acid.",
+    "Turn the meat in it and leave it in the fridge.",
+    "Acidic marinades only for a few hours.",
+    "Wipe off and pat dry before frying."
+  ]
+}

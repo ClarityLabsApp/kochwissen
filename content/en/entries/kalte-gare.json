@@ -1,0 +1,19 @@
+{
+  "id": "kalte-gare",
+  "titel": "Cold prove",
+  "kurz": "Let the dough prove overnight in the fridge. It develops more flavour, and you bake when it suits you.",
+  "bild_im_kopf": "Like a braise that sits overnight: slow is flavour.",
+  "was_passiert": "In the fridge the yeast works very slowly, while [[enzym|enzymes]] and bacteria keep working. More aroma compounds and sugars form, which later help the crust brown better. Cold dough is also easier to score.",
+  "synonyme": [
+    "overnight prove",
+    "fridge prove",
+    "cold retard",
+    "retarding"
+  ],
+  "schritte": [
+    "Knead the dough and give it a short first prove at room temperature.",
+    "Shape it and put it in a banneton.",
+    "Cover and refrigerate for 8–48 hours.",
+    "Score and bake straight from the fridge."
+  ]
+}

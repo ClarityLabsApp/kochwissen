@@ -1,0 +1,32 @@
+{
+  "id": "staerke",
+  "titel": "Starch (corn, potato)",
+  "kurz": "Pure starch thickens liquids and makes surfaces crisp. In the wrong place it makes things sticky.",
+  "bild_im_kopf": "Like flour with everything else taken out: just the swelling granules, without protein that could make things tough.",
+  "was_passiert": "Starch powder is nothing but starch granules. In warm water they swell and thicken. As a dry, thin layer in the oven they harden into a brittle crust. Potato starch thickens at a lower temperature and more clearly; cornflour has to boil and turns slightly cloudy.",
+  "synonyme": [
+    "cornflour",
+    "cornstarch",
+    "potato starch",
+    "starch"
+  ],
+  "faustregeln": [
+    "Mix into cold liquid.",
+    "Bring cornflour to the boil once.",
+    "For crisping, use only a dusting."
+  ],
+  "rolle": [
+    {
+      "rolle": "thickens sauces and custards",
+      "prozess": "staerkeverkleisterung"
+    },
+    {
+      "rolle": "forms a crisp shell as a dusting",
+      "prozess": "knusprig"
+    },
+    {
+      "rolle": "as a loose film makes things sticky and brown too early",
+      "prozess": "wedges-nicht-knusprig"
+    }
+  ]
+}

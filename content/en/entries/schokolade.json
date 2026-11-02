@@ -1,0 +1,27 @@
+{
+  "id": "schokolade",
+  "titel": "Chocolate and cocoa",
+  "kurz": "Chocolate is cocoa mass, cocoa butter and sugar. The cocoa butter decides shine and snap; water is its biggest enemy.",
+  "bild_im_kopf": "Like a fine crystal lattice that both heat and water can throw off balance.",
+  "was_passiert": "Cocoa butter melts just below body temperature, which is why chocolate melts in the mouth. A little water makes it seize; a lot of liquid makes a smooth ganache.",
+  "synonyme": [
+    "couverture",
+    "cocoa powder",
+    "dark chocolate",
+    "milk chocolate"
+  ],
+  "faustregeln": [
+    "Either no water at all or enough of it, at least a quarter of the chocolate's weight (as a guide).",
+    "Melt gently, over a water bath or in short microwave bursts."
+  ],
+  "rolle": [
+    {
+      "rolle": "needs tempering for shine",
+      "prozess": "fett-kristallisation"
+    },
+    {
+      "rolle": "seizes with a little water",
+      "prozess": "zucker-kristallisation"
+    }
+  ]
+}

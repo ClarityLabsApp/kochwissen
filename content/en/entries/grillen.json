@@ -1,0 +1,20 @@
+{
+  "id": "grillen",
+  "titel": "Grilling",
+  "kurz": "Strong radiant heat from below gives crust and smoky flavour. With a hot zone and a cool zone, thick pieces work too.",
+  "bild_im_kopf": "Like sun and shade on the grill.",
+  "was_passiert": "Above the embers the heat is very strong and browns quickly. Next to them it is gentler; there the inside cooks without burning. Dripping fat burns in the embers and makes smoke.",
+  "synonyme": [
+    "barbecue",
+    "BBQ",
+    "direct grilling",
+    "indirect grilling"
+  ],
+  "schritte": [
+    "Push the embers to one side: a hot and a cool zone.",
+    "Preheat and clean the grate well.",
+    "Grill thin pieces directly.",
+    "Bring thick pieces up to temperature indirectly first, then brown them directly.",
+    "Check with a thermometer."
+  ]
+}

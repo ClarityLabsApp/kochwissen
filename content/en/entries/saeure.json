@@ -1,0 +1,40 @@
+{
+  "id": "saeure",
+  "titel": "Acid (lemon, vinegar)",
+  "kurz": "Acid makes flavour fresher, keeps vegetables firm, turns red cabbage red and stops apples browning.",
+  "bild_im_kopf": "Like a light switch for flavour: one splash and everything seems brighter.",
+  "was_passiert": "Acid lowers the [[ph-wert|pH]]. That changes pigments, slows [[enzym|enzymes]] and keeps the glue in plant cells firmer. In the mouth it balances fat and sweetness.",
+  "synonyme": [
+    "lemon",
+    "vinegar",
+    "lemon juice",
+    "sour",
+    "acidity"
+  ],
+  "faustregeln": [
+    "If a dish tastes flat, it is often acid that is missing, not salt.",
+    "With green vegetables, add it only at the end."
+  ],
+  "rolle": [
+    {
+      "rolle": "makes flavour fresh and lively",
+      "prozess": "mehr-geschmack"
+    },
+    {
+      "rolle": "keeps vegetables firm longer",
+      "prozess": "pektin-abbau"
+    },
+    {
+      "rolle": "turns red cabbage red",
+      "prozess": "anthocyan-farbe"
+    },
+    {
+      "rolle": "slows browning",
+      "prozess": "enzym-braeunung"
+    },
+    {
+      "rolle": "dulls green vegetables",
+      "prozess": "chlorophyll-farbe"
+    }
+  ]
+}

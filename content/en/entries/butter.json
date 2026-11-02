@@ -1,0 +1,34 @@
+{
+  "id": "butter",
+  "titel": "Butter",
+  "kurz": "Butter is itself an [[emulsion|emulsion]] of fat, water and milk protein. That is why it thickens sauces, but burns sooner than oil.",
+  "bild_im_kopf": "Like a ready-made parcel: fat, water and protein already tied together.",
+  "was_passiert": "Butter is about four fifths fat; the rest is water and milk protein. The milk protein browns nuttily when heated and then burns. Clarified butter has no water or protein and takes much more heat.",
+  "synonyme": [
+    "sweet cream butter",
+    "clarified butter",
+    "ghee"
+  ],
+  "faustregeln": [
+    "For hard frying use clarified butter or oil; fresh butter only at the end.",
+    "Cold butter for [[montieren|mounting]], soft butter for baking."
+  ],
+  "rolle": [
+    {
+      "rolle": "thickens sauces when mounting",
+      "prozess": "emulsion"
+    },
+    {
+      "rolle": "browns nuttily (brown butter)",
+      "prozess": "maillard-reaktion"
+    },
+    {
+      "rolle": "burns early because of milk protein",
+      "prozess": "rauchpunkt"
+    },
+    {
+      "rolle": "makes pastry short",
+      "prozess": "glutenbildung"
+    }
+  ]
+}
