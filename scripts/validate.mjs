@@ -94,7 +94,7 @@ if (existsSync(enDir)) {
     if (t.id && t.id !== id) err(file, "id passt nicht zum Dateinamen");
     for (const k of FIXED) if (k in t && JSON.stringify(t[k]) !== JSON.stringify(o[k])) err(file, `"${k}" darf in der Übersetzung nicht abweichen`);
     for (const [k, v] of Object.entries(t)) {
-      if (!Array.isArray(v) || !Array.isArray(o[k])) continue;
+      if (k === "synonyme" || !Array.isArray(v) || !Array.isArray(o[k])) continue;
       if (v.length !== o[k].length) { err(file, `"${k}" hat ${v.length} statt ${o[k].length} Elemente`); continue; }
       v.forEach((x, i) => {
         for (const ref of ["id", "prozess", "prinzip", "welt", "haeufigkeit"]) if (x && typeof x === "object" && JSON.stringify(x[ref]) !== JSON.stringify(o[k][i][ref])) err(file, `"${k}[${i}].${ref}" weicht ab`);

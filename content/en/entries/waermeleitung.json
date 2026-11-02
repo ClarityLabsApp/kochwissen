@@ -1,0 +1,32 @@
+{
+  "id": "waermeleitung",
+  "titel": "Heat conduction",
+  "kurz": "Heat travels slowly from the outside in. That is why the edge is long done while the centre is still cold.",
+  "bild_im_kopf": "Like a message whispered along a human chain: it takes a while to reach the middle.",
+  "was_passiert": "In food, each particle passes the heat on to its neighbours. That is slow: pieces twice as thick take roughly four times as long for the centre to get warm. The hotter the outside, the bigger the difference between edge and centre.",
+  "warum_wichtig": "Explains grey edges on steaks, raw centres in thick roasts and why reverse searing works.",
+  "synonyme": [
+    "heat travels",
+    "heat moving inwards",
+    "cooking through",
+    "conduction"
+  ],
+  "faustregeln": [
+    "Cook thick pieces gently, thin ones hot and fast.",
+    "Halving the thickness roughly quarters the cooking time (as a guide)."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "hotter outside → bigger difference"
+    },
+    {
+      "id": "oberflaeche",
+      "wirkung": "thinner → much faster"
+    },
+    {
+      "id": "pfannenmaterial",
+      "wirkung": "cast iron stores heat, aluminium conducts it fast"
+    }
+  ]
+}

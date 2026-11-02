@@ -1,0 +1,23 @@
+{
+  "id": "leidenfrost",
+  "titel": "Leidenfrost effect",
+  "kurz": "On a very hot pan, a drop of water floats on its own cushion of steam and dances around.",
+  "bild_im_kopf": "Like an air hockey puck on a cushion of air.",
+  "was_passiert": "At medium heat a drop evaporates with a hiss. If the pan is much hotter, the underside evaporates so fast that a cushion of steam forms and the drop glides on it. It even lasts longer.",
+  "warum_wichtig": "The simplest test of whether a stainless steel pan is hot enough for meat or fish.",
+  "synonyme": [
+    "dancing water droplet",
+    "water droplet test",
+    "mercury ball test"
+  ],
+  "faustregeln": [
+    "If the drop dances as a ball, the pan is ready.",
+    "Do not overheat non-stick pans while empty."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "only from high heat"
+    }
+  ]
+}

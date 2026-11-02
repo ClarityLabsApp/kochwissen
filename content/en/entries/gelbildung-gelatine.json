@@ -1,0 +1,52 @@
+{
+  "id": "gelbildung-gelatine",
+  "titel": "Setting with gelatine",
+  "kurz": "Gelatine dissolves in warm liquid and forms a network as it cools that holds the liquid in place. In the mouth it melts again.",
+  "bild_im_kopf": "Like a fishing net that tightens in the cold and holds the water in its mesh.",
+  "was_passiert": "Gelatine is made of long protein chains. When warm they float freely; as they cool they link into a network. Because it melts again at body temperature, panna cotta melts on the tongue. Boiling weakens the gelatine, and [[enzym|enzymes]] in raw pineapple or kiwi cut the network apart.",
+  "warum_wichtig": "Explains why gelatine must never boil, why desserts need time in the fridge and why pineapple jelly does not set.",
+  "synonyme": [
+    "gelatine",
+    "jelly",
+    "panna cotta",
+    "setting"
+  ],
+  "faustregeln": [
+    "Soak leaf gelatine in cold water, squeeze it out and dissolve it in warm (not boiling) liquid.",
+    "Chill for several hours.",
+    "Heat raw pineapple, kiwi or papaya first, or use tinned."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "warm → dissolves, cold → sets"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "longer in the cold → firmer"
+    }
+  ],
+  "visual": {
+    "params": {
+      "hinweis": "Guide values",
+      "skala": [
+        {
+          "c": 4,
+          "name": "fridge: the network sets fully"
+        },
+        {
+          "c": 35,
+          "name": "melts (that is why it melts in the mouth)"
+        },
+        {
+          "c": 60,
+          "name": "warm: dissolves well"
+        },
+        {
+          "c": 100,
+          "name": "boiling weakens the gelatine"
+        }
+      ]
+    }
+  }
+}

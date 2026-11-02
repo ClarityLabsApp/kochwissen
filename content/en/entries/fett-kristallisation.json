@@ -1,0 +1,47 @@
+{
+  "id": "fett-kristallisation",
+  "titel": "Fat crystallises (tempering)",
+  "kurz": "Cocoa butter can set in several crystal forms. Only one of them gives chocolate its shine and snap.",
+  "bild_im_kopf": "Like soldiers standing in neat rows (shiny, snaps) or in a wild jumble (dull, crumbly).",
+  "was_passiert": "As it cools, different fat crystals form. The desired form (form V) only forms in a narrow temperature window. When [[temperieren|tempering]], you melt all crystals, cool so that stable crystals form, and warm slightly to melt the unstable ones again.",
+  "warum_wichtig": "Explains why chocolate that has melted and set again turns dull and streaky, and why pralines do not shine without tempering.",
+  "synonyme": [
+    "cocoa butter",
+    "tempering chocolate",
+    "crystal form",
+    "shine and snap"
+  ],
+  "faustregeln": [
+    "Dark chocolate: melt to 45–50 °C, cool to about 27 °C, work at 31–32 °C.",
+    "Work milk chocolate at 29–30 °C, white at 28–29 °C.",
+    "Keep water well away."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "one degree too many → crystals melt"
+    }
+  ],
+  "visual": {
+    "params": {
+      "skala": [
+        {
+          "c": 27,
+          "name": "cool: stable crystals form"
+        },
+        {
+          "c": 31,
+          "name": "work (dark 31–32 °C)"
+        },
+        {
+          "c": 34,
+          "name": "above this the good crystals melt"
+        },
+        {
+          "c": 45,
+          "name": "melt: all crystals gone"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "waermestrahlung",
+  "titel": "Radiant heat (grill, top heat)",
+  "kurz": "Embers and heating elements radiate heat straight onto the surface, like the sun. That browns quickly but barely cooks inwards.",
+  "bild_im_kopf": "Like sun on your skin: the surface gets hot, underneath it stays cool.",
+  "was_passiert": "Radiation needs no air. It hits the surface and heats it strongly. The closer to the source, the more intense; at twice the distance, only about a quarter.",
+  "warum_wichtig": "The grill and top heat are ideal for gratinating and for a crust, but thick pieces also need indirect heat.",
+  "synonyme": [
+    "grill",
+    "broiler",
+    "top heat",
+    "salamander",
+    "infrared"
+  ],
+  "faustregeln": [
+    "Distance from the heat source is the dial.",
+    "Thick pieces: indirect first, then direct."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "closer → much hotter"
+    }
+  ]
+}

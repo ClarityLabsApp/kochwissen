@@ -1,0 +1,69 @@
+{
+  "id": "kollagen-gelatine",
+  "titel": "Connective tissue turns into gelatine",
+  "kurz": "Tough connective tissue dissolves into gelatine in long, moist heat. That is why braising cuts turn meltingly tender after hours.",
+  "bild_im_kopf": "Like a tightly knotted rope that slowly swells and loosens in warm water: force does not work, only time.",
+  "was_passiert": "Connective tissue is made of collagen, very tough protein ropes. From about 70 °C they start to dissolve, but only slowly and best in a moist setting. They turn into gelatine, which can bind a lot of water and makes the meat seem juicy. The hotter, the faster, but too much heat squeezes out the muscle fibres.",
+  "warum_wichtig": "Explains why shoulder, shin or cheek are tough when quickly fried and wonderfully tender when braised.",
+  "synonyme": [
+    "collagen",
+    "connective tissue",
+    "braising makes tender",
+    "slow braising"
+  ],
+  "faustregeln": [
+    "Let the braising liquid barely simmer, not boil.",
+    "In a pot at about 85–90 °C, count on 2–3 hours; in a slow cooker, 6–8.",
+    "It is done when a fork slides in without resistance, not when the clock says so."
+  ],
+  "typische_fehler": [
+    "Taking braised meat out of the pot too early: it is then tougher than at the start."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "hotter → faster, but drier"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "longer → more tender"
+    },
+    {
+      "id": "feuchtigkeit",
+      "wirkung": "moist → dissolves better"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-fleisch",
+      "text": "Ragù, pot roast, boiled beef: cuts with lots of connective tissue need hours rather than minutes."
+    },
+    {
+      "welt": "w-saucen",
+      "text": "Simmered bones release gelatine into the stock. Cold it sets; warm it makes sauces silky."
+    }
+  ],
+  "visual": {
+    "params": {
+      "regler": [
+        "temperatur",
+        "zeit"
+      ],
+      "schwelle_c": 70,
+      "skala": [
+        {
+          "c": 70,
+          "name": "connective tissue starts to dissolve"
+        },
+        {
+          "c": 85,
+          "name": "ideal for braising"
+        },
+        {
+          "c": 100,
+          "name": "bubbling: fibres dry out"
+        }
+      ]
+    }
+  }
+}

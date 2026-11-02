@@ -1,0 +1,56 @@
+{
+  "id": "glutenbildung",
+  "titel": "Gluten development",
+  "kurz": "When wheat flour is kneaded with water, two proteins link into an elastic network: gluten.",
+  "bild_im_kopf": "Like a net made of chewing gum: the more you pull and fold it, the tougher and stretchier it gets. A strong net holds gas bubbles like a balloon.",
+  "was_passiert": "Flour contains two proteins, glutenin and gliadin. With water they bond, and through kneading or a long rest they line up into long, stretchy strands. Glutenin gives strength, gliadin makes it stretchy. Fat and sugar slow the network down, salt tightens it.",
+  "warum_wichtig": "Bread needs a lot of gluten for its holes and chew. Cakes, shortcrust and pancakes need little so they stay tender.",
+  "synonyme": [
+    "gluten",
+    "dough structure",
+    "kneading",
+    "gluten network"
+  ],
+  "faustregeln": [
+    "Bread: knead for a long time or rest for a long time. Time replaces kneading.",
+    "Cakes and muffins: only stir until the flour has disappeared.",
+    "Fat and sugar slow the network down. That is why shortcrust is short.",
+    "Dough that springs back needs a rest; then it can be rolled out."
+  ],
+  "stellschrauben": [
+    {
+      "id": "mechanik",
+      "wirkung": "more kneading → stronger"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "longer → stronger"
+    },
+    {
+      "id": "fettgehalt",
+      "wirkung": "more fat → weaker"
+    },
+    {
+      "id": "salzgehalt",
+      "wirkung": "salt → tighter"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-brot",
+      "text": "Strong network wanted: knead until it passes the [[fenstertest|windowpane test]], or use a long cold prove."
+    },
+    {
+      "welt": "w-gebaeck",
+      "text": "Little network wanted: stir briefly, use cold butter and little water."
+    },
+    {
+      "welt": "w-pasta",
+      "text": "Pasta dough needs a firm network for bite: knead it and rest it for half an hour."
+    }
+  ],
+  "mythos": {
+    "behauptung": "Bread dough has to be kneaded long and hard.",
+    "richtig": "It does not. If the dough rests overnight, the proteins line up by themselves. That is how no-knead bread works."
+  }
+}

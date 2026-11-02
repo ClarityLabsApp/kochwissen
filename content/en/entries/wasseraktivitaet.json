@@ -1,0 +1,51 @@
+{
+  "id": "wasseraktivitaet",
+  "titel": "Shelf life: salt and sugar bind water",
+  "kurz": "Germs need free water. Salt, sugar and drying bind it up, which is why honey, jam, salami and dried fruit spoil so slowly.",
+  "bild_im_kopf": "Like an oasis where every drop is already taken: newcomers find nothing left to drink.",
+  "was_passiert": "What counts is not just the water content, but how much water is freely available (water activity). Salt and sugar bind water to themselves; drying removes it. Most dangerous bacteria need a lot of free water; mould and some yeasts manage with less. That is why jam can go mouldy, but honey hardly ever does.",
+  "warum_wichtig": "Explains why jam needs enough sugar, why salami keeps without a fridge and why reduced-sugar jam belongs in the fridge.",
+  "synonyme": [
+    "preserving",
+    "making food keep",
+    "water activity",
+    "why honey does not go mouldy",
+    "salting"
+  ],
+  "faustregeln": [
+    "Keep reduced-sugar jam in the fridge once opened.",
+    "Store dried fruit and nuts dry and sealed.",
+    "Salt, sugar and drying do not replace hygiene; they only slow germs down."
+  ],
+  "stellschrauben": [
+    {
+      "id": "salzgehalt",
+      "wirkung": "binds water"
+    },
+    {
+      "id": "zuckergehalt",
+      "wirkung": "binds water"
+    },
+    {
+      "id": "feuchtigkeit",
+      "wirkung": "drier → keeps longer"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-suesses",
+      "text": "Jam with lots of sugar keeps for a long time unopened, honey almost indefinitely."
+    },
+    {
+      "welt": "w-fleisch",
+      "text": "Cured ham and salami keep thanks to salt and drying."
+    }
+  ],
+  "visual": {
+    "params": {
+      "links": "lots of free water: meat, milk, bread",
+      "mitte": "jam, salami, hard cheese",
+      "rechts": "hardly any free water: honey, dried fruit"
+    }
+  }
+}

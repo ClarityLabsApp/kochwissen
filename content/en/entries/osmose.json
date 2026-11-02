@@ -1,0 +1,38 @@
+{
+  "id": "osmose",
+  "titel": "Osmosis: salt and sugar draw out water",
+  "kurz": "Salt and sugar attract water. On a surface they pull moisture out from the inside.",
+  "bild_im_kopf": "Like dry sand on a beach soaking up every wave: water moves to where there is a lot of salt.",
+  "was_passiert": "Water moves to where there are more dissolved substances. Sprinkle salt on meat or vegetables and after a short time juice seeps out and dissolves the salt. With meat, this salty solution soaks back in over time. With vegetables such as aubergines or cucumbers, you use it to get rid of water.",
+  "warum_wichtig": "Explains why freshly salted meat looks wet and shiny, and why you either fry it straight away or wait a long time.",
+  "synonyme": [
+    "drawing out water",
+    "salt draws water",
+    "drawing out juice",
+    "osmosis"
+  ],
+  "faustregeln": [
+    "After about 10–40 minutes the surface is at its wettest: do not fry then, as a guide.",
+    "Squeeze out or pat dry salted vegetables before frying."
+  ],
+  "stellschrauben": [
+    {
+      "id": "salzgehalt",
+      "wirkung": "more → draws more water"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "out first, back in later"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-fleisch",
+      "text": "Salt right before frying or many hours ahead, not in between."
+    },
+    {
+      "welt": "w-gemuese",
+      "text": "Salt aubergine or courgette slices, pat them dry, then fry: they soak up less oil."
+    }
+  ]
+}

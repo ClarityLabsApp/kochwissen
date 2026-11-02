@@ -1,0 +1,49 @@
+{
+  "id": "chemische-lockerung",
+  "titel": "Chemical leavening",
+  "kurz": "Baking powder and baking soda form gas bubbles with acid and moisture. In the oven they expand until the batter sets.",
+  "bild_im_kopf": "Like a fizzy tablet in water: base and acid meet and bubble.",
+  "was_passiert": "Baking soda is a base. When it meets acid and water, carbon dioxide forms. Baking powder brings its own acid: one part reacts as soon as you mix, a second part only in the heat of the oven. That way the cake rises exactly when it is in the oven. Once the batter sets, the bubbles stay trapped.",
+  "warum_wichtig": "Explains why baking soda needs buttermilk or yoghurt, why batter should not stand around for ages and why too much raising agent makes the cake collapse.",
+  "synonyme": [
+    "baking powder",
+    "baking soda",
+    "bicarbonate of soda",
+    "raising agent",
+    "leavening",
+    "cake rises"
+  ],
+  "faustregeln": [
+    "Use baking soda only with acid in the recipe (buttermilk, yoghurt, lemon, honey).",
+    "Bake a batter with baking powder soon.",
+    "Too much raising agent tastes soapy and makes the cake collapse."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "heat triggers the second reaction"
+    },
+    {
+      "id": "ph-wert",
+      "wirkung": "baking soda needs acid"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "standing long → gas escapes"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-gebaeck",
+      "text": "Muffins, sponge cakes, pancakes: baking powder. Buttermilk scones and gingerbread: often baking soda."
+    },
+    {
+      "welt": "w-brot",
+      "text": "Irish soda bread rises without any yeast, with just baking soda and buttermilk."
+    }
+  ],
+  "mythos": {
+    "behauptung": "More baking powder makes a taller cake.",
+    "richtig": "Only up to a point. Too much gas makes the batter rise faster than it sets, and it collapses."
+  }
+}

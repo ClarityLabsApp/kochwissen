@@ -88,7 +88,7 @@ export default function Visual({ e, lang = "de" }: { e: Entry; lang?: Lang }) {
 
   const marks = marksOf(e);
   if (marks.length) {
-    const title = e.typ === "technik" ? "Die Temperaturen" : e.id === "rauchpunkt" ? "Rauchpunkte im Vergleich" : "Temperatur-Schwellen";
+    const title = e.typ === "technik" ? V.temps : e.id === "rauchpunkt" ? V.smoke : V.thresholds;
     blocks.push(<TempScale key="temp" marks={marks} title={title} note={typeof p.hinweis === "string" ? p.hinweis : undefined} unitMax={e.id === "rauchpunkt" ? 260 : undefined} />);
   }
 

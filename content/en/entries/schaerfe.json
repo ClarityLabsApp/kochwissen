@@ -1,0 +1,37 @@
+{
+  "id": "schaerfe",
+  "titel": "Heat: chilli, pepper and mustard",
+  "kurz": "Spicy heat is not a taste but a heat and pain signal. In chilli it is triggered by [[capsaicin|capsaicin]], which dissolves in fat, not in water.",
+  "bild_im_kopf": "Like a false fire alarm: no fire, but the sensors report heat.",
+  "was_passiert": "Capsaicin from chilli docks onto nerve endings that normally report heat. That is why chilli feels hot. Because capsaicin loves fat, water barely washes it away. Milk helps most: studies show that it is mainly its protein that softens the heat, not only the fat. Pepper, mustard, horseradish and wasabi use other substances, some of which rise into the nose.",
+  "warum_wichtig": "Explains why water does nothing against chilli but yoghurt and milk do, and how to rescue a dish that is too spicy.",
+  "synonyme": [
+    "spicy",
+    "hot",
+    "chilli",
+    "capsaicin",
+    "burning mouth",
+    "toning down heat"
+  ],
+  "faustregeln": [
+    "Too spicy: add yoghurt, cream, coconut milk or milk, not water.",
+    "Most of the heat sits in the pale membranes of the chilli, not in the seeds alone.",
+    "Mustard and horseradish lose heat when cooked; chilli does not."
+  ],
+  "stellschrauben": [
+    {
+      "id": "fettgehalt",
+      "wirkung": "fat and milk protein soften chilli"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "long steeping in oil makes it hotter"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-milch",
+      "text": "Raita or a dollop of yoghurt next to a curry is no accident: milk protein takes up capsaicin."
+    }
+  ]
+}

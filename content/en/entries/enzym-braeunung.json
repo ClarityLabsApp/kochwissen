@@ -1,0 +1,29 @@
+{
+  "id": "enzym-braeunung",
+  "titel": "Enzymatic browning",
+  "kurz": "Cut apples, potatoes or avocados turn brown because an [[enzym|enzyme]] reacts with the oxygen in the air.",
+  "bild_im_kopf": "Like rust on a fresh cut: where the skin is missing, air gets in.",
+  "was_passiert": "Cutting opens up cells. An enzyme and colourless substances from the cell meet oxygen and form brown pigments. Acid slows the enzyme, cold slows it down, heat destroys it and water keeps the air away.",
+  "warum_wichtig": "Explains why lemon juice belongs on the apple and why raw potatoes should sit in water.",
+  "synonyme": [
+    "apple turns brown",
+    "brown avocado",
+    "potato turns brown",
+    "discolouring"
+  ],
+  "faustregeln": [
+    "Drizzle with lemon juice.",
+    "Put cut potatoes in water.",
+    "A quick [[blanchieren|blanch]] stops browning for good."
+  ],
+  "stellschrauben": [
+    {
+      "id": "ph-wert",
+      "wirkung": "acidic → slows it"
+    },
+    {
+      "id": "temperatur",
+      "wirkung": "cold → slower, hot → stops it"
+    }
+  ]
+}

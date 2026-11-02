@@ -1,0 +1,43 @@
+{
+  "id": "reduktion",
+  "titel": "Reducing (reduction)",
+  "kurz": "When reducing, water evaporates. Flavour, salt and gelatine stay behind and become more concentrated.",
+  "bild_im_kopf": "Like a closing-down sale in a shop: the shelves empty (water), but the best pieces (flavour) stay and stand out all the more.",
+  "was_passiert": "If you boil a liquid uncovered, mainly water evaporates. Everything else stays in the pot: aromas, sugar, salt and, in stocks, the gelatine from the bones. That is why a jus turns stronger and silkier as it reduces, without any flour or starch.",
+  "warum_wichtig": "Gives sauces depth and natural body. But salt concentrates too: salt at the start and you end up with an oversalted sauce.",
+  "synonyme": [
+    "reduce",
+    "reduction",
+    "concentrating",
+    "syrupy"
+  ],
+  "faustregeln": [
+    "Salt only at the end.",
+    "Wide pot or pan: more surface, faster reduction.",
+    "A stock with lots of gelatine thickens by itself as it reduces."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zeit",
+      "wirkung": "longer → more concentrated"
+    },
+    {
+      "id": "oberflaeche",
+      "wirkung": "wider pot → faster"
+    },
+    {
+      "id": "temperatur",
+      "wirkung": "boil harder → faster"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-saucen",
+      "text": "Red wine sauce: reduce wine and stock to a third, then [[montieren|mount]] with cold butter."
+    },
+    {
+      "welt": "w-suesses",
+      "text": "Reducing fruit juice to a syrup concentrates sugar and acid."
+    }
+  ]
+}

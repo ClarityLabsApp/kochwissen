@@ -1,0 +1,109 @@
+{
+  "id": "maillard-reaktion",
+  "titel": "Maillard reaction",
+  "kurz": "In strong heat, protein and sugar react with each other. This creates brown colour and hundreds of roasted aromas.",
+  "bild_im_kopf": "Like a campfire with wet wood: first the water has to go, then it burns. As long as the surface is wet, it boils at 100 °C, however hot the pan is.",
+  "was_passiert": "From about 140 °C, building blocks of protein combine with sugar into hundreds of new aroma compounds and brown colour. As long as there is water on the surface, it stays stuck at around 100 °C, because the water has to evaporate first. Only once it is dry does the temperature rise and browning begin. Alkaline conditions speed up the reaction.",
+  "warum_wichtig": "The crust on a steak, bread crust, roasted onions, coffee, roast vegetables: almost everything that tastes savoury and roasted comes from here.",
+  "synonyme": [
+    "browning",
+    "roasted aromas",
+    "crust",
+    "searing"
+  ],
+  "faustregeln": [
+    "Pat the surface dry before it goes into the pan.",
+    "Preheat the pan properly and do not overcrowd it.",
+    "Leave it alone at first until the crust releases by itself.",
+    "A pinch of baking soda speeds up browning, e.g. with onions."
+  ],
+  "typische_fehler": [
+    "Overcrowding the pan: juice runs out and the meat stews grey instead of frying."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "hotter → faster"
+    },
+    {
+      "id": "feuchtigkeit",
+      "wirkung": "drier → faster"
+    },
+    {
+      "id": "ph-wert",
+      "wirkung": "alkaline → faster"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "longer → darker"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-fleisch",
+      "text": "Pat dry, hot pan, a little at a time. A full pan cools down and the meat turns grey.",
+      "aroma": [
+        "fleischig",
+        "roestig",
+        "nussig"
+      ]
+    },
+    {
+      "welt": "w-brot",
+      "text": "Steam at the start keeps the crust soft so the loaf can rise. Then bake dry and it browns. Pretzels get so dark because the lye is alkaline.",
+      "aroma": [
+        "roestig",
+        "nussig",
+        "karamellig"
+      ]
+    },
+    {
+      "welt": "w-gemuese",
+      "text": "Dry vegetables well and do not overload the tray. A pinch of baking soda browns onions faster.",
+      "aroma": [
+        "karamellig",
+        "roestig"
+      ]
+    },
+    {
+      "welt": "w-kaffee",
+      "text": "When roasting, Maillard and [[karamellisierung|caramelisation]] run together. Lightly roasted tastes nutty, dark roasted toasty to bitter.",
+      "aroma": [
+        "roestig",
+        "nussig",
+        "bitter"
+      ]
+    }
+  ],
+  "mythos": {
+    "behauptung": "Searing seals in the juices.",
+    "richtig": "Not true. The crust is not watertight. Searing brings flavour and colour, not juice."
+  },
+  "visual": {
+    "params": {
+      "regler": [
+        "temperatur",
+        "feuchtigkeit"
+      ],
+      "schwellen_c": [
+        100,
+        140,
+        190
+      ],
+      "skala": [
+        {
+          "c": 100,
+          "name": "water evaporates, surface is stuck"
+        },
+        {
+          "c": 140,
+          "name": "browning begins"
+        },
+        {
+          "c": 190,
+          "name": "turns bitter and burns"
+        }
+      ]
+    }
+  }
+}

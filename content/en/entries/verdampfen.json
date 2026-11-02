@@ -1,0 +1,65 @@
+{
+  "id": "verdampfen",
+  "titel": "Evaporation",
+  "kurz": "Before a surface can get hotter than 100 °C, its water has to evaporate. That costs a lot of energy and time.",
+  "bild_im_kopf": "Like a pot of water on the stove: however strong the flame, the water does not get hotter than 100 °C. All the energy goes into evaporating.",
+  "was_passiert": "Water needs a great deal of energy to turn into steam. As long as a surface is wet, it therefore stays stuck at about 100 °C. Only once the water is gone does the temperature rise and browning or crispness begin. The steam needs a way out: if it cannot escape, it steams the neighbouring pieces.",
+  "warum_wichtig": "Explains why drying, leaving space and heat make such a difference. It is the key behind crisp, brown and crust.",
+  "synonyme": [
+    "water evaporates",
+    "steam",
+    "steaming off",
+    "evaporation"
+  ],
+  "faustregeln": [
+    "Wet going in means a long time stuck at 100 °C.",
+    "Steam has to be able to escape: space, no lid, a rack instead of a plate."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "hotter → dry faster"
+    },
+    {
+      "id": "oberflaeche",
+      "wirkung": "more surface → dry faster"
+    },
+    {
+      "id": "feuchtigkeit",
+      "wirkung": "less water → above 100 °C sooner"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-kartoffeln",
+      "text": "Soaked potatoes not dried: the water has to evaporate first, and the crust comes late."
+    },
+    {
+      "welt": "w-frittieren",
+      "text": "The bubbling in the oil is water evaporating. When it calms down, the surface is almost dry."
+    },
+    {
+      "welt": "w-fleisch",
+      "text": "A full pan can no longer evaporate the juice that runs out. The meat stews grey."
+    }
+  ],
+  "visual": {
+    "params": {
+      "regler": [
+        "temperatur",
+        "abstand"
+      ],
+      "plateau_c": 100,
+      "skala": [
+        {
+          "c": 100,
+          "name": "water evaporates, temperature stands still"
+        },
+        {
+          "c": 140,
+          "name": "dry: browning possible"
+        }
+      ]
+    }
+  }
+}

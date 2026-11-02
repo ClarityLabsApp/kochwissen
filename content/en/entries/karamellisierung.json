@@ -1,0 +1,61 @@
+{
+  "id": "karamellisierung",
+  "titel": "Caramelisation",
+  "kurz": "When pure sugar gets very hot, it breaks down into hundreds of new compounds: brown colour, caramel aroma and in the end bitterness.",
+  "bild_im_kopf": "Like a sunset in the pan: from colourless through gold and amber to dark brown. Shortly after, night falls, and it turns bitter.",
+  "was_passiert": "Unlike the [[maillard-reaktion|Maillard reaction]], caramelisation needs no protein, only sugar and high heat. Table sugar starts to caramelise at roughly 160 °C. The darker it gets, the less sweet and the more bitter.",
+  "warum_wichtig": "Gives crème brûlée, caramel sauce, candied almonds and roasted onions their depth. It almost always runs alongside the Maillard reaction.",
+  "synonyme": [
+    "caramel",
+    "browning sugar",
+    "caramelise"
+  ],
+  "faustregeln": [
+    "Use a pan with a light-coloured base so you can see the colour.",
+    "Do not stir; swirl instead, otherwise the sugar crystallises.",
+    "Amber is usually ideal. A splash of cold water or cream stops the browning."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "hotter → darker"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "longer → more bitter"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-suesses",
+      "text": "Caramel sauce: melt sugar to amber, then stir in warm cream and butter."
+    },
+    {
+      "welt": "w-gemuese",
+      "text": "With onions and carrots, caramelisation and Maillard run together."
+    }
+  ],
+  "visual": {
+    "params": {
+      "hinweis": "Guide values for table sugar",
+      "skala": [
+        {
+          "c": 160,
+          "name": "sugar melts and turns golden"
+        },
+        {
+          "c": 170,
+          "name": "amber: caramel aroma"
+        },
+        {
+          "c": 180,
+          "name": "dark: strong, less sweet"
+        },
+        {
+          "c": 200,
+          "name": "burnt and bitter"
+        }
+      ]
+    }
+  }
+}

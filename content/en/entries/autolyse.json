@@ -1,0 +1,19 @@
+{
+  "id": "autolyse",
+  "titel": "Autolyse",
+  "kurz": "Mix flour and water and let them rest for 20–60 minutes before adding salt and yeast. The network forms almost by itself.",
+  "bild_im_kopf": "Like beans soaking overnight: without any work they are ready for the next step in the morning.",
+  "was_passiert": "During the rest the flour takes up water, and the proteins start to link up without kneading. The flour's own [[enzym|enzymes]] make the network stretchier. Afterwards the dough needs much less kneading.",
+  "synonyme": [
+    "autolyse",
+    "dough rest",
+    "letting flour hydrate",
+    "soaking time"
+  ],
+  "schritte": [
+    "Mix flour and water roughly, just until no dry flour is left.",
+    "Cover and rest for 20–60 minutes.",
+    "Add salt and yeast or sourdough.",
+    "Knead briefly, or stretch and fold."
+  ]
+}

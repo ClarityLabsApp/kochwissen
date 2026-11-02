@@ -1,0 +1,27 @@
+{
+  "id": "saeure-denaturierung",
+  "titel": "Acid cooks protein",
+  "kurz": "Strong acid changes protein much like heat does: raw fish in lime juice turns firm and opaque.",
+  "bild_im_kopf": "Like heat without fire.",
+  "was_passiert": "Acid unfolds the protein chains; they link up anew and turn firm and white. Unlike heat, though, acid does not kill all germs, which is why ceviche needs very fresh fish.",
+  "warum_wichtig": "Explains ceviche, and why acid marinades left too long make meat and fish mealy.",
+  "synonyme": [
+    "ceviche",
+    "fish in lime",
+    "acid cooks"
+  ],
+  "faustregeln": [
+    "Make ceviche only with very fresh fish.",
+    "Do not marinate fish in acid for hours, otherwise it turns mealy."
+  ],
+  "stellschrauben": [
+    {
+      "id": "ph-wert",
+      "wirkung": "more acidic → firms faster"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "too long → mealy"
+    }
+  ]
+}

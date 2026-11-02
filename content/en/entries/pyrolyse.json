@@ -1,0 +1,48 @@
+{
+  "id": "pyrolyse",
+  "titel": "Burning (pyrolysis)",
+  "kurz": "If it gets too hot, sugar, protein and fat break down into bitter, black substances. Roasted aroma turns into burnt flavour.",
+  "bild_im_kopf": "Like toast that stayed in the toaster a moment too long.",
+  "was_passiert": "After the [[maillard-reaktion|Maillard reaction]] and [[karamellisierung|caramelisation]] comes decomposition: the molecules break apart, and carbon, smoke and bitter substances form. Small, dry, sugary pieces such as garlic, nuts or spices burn fastest.",
+  "warum_wichtig": "Explains why garlic goes into the pan late and why black pan residue should not go into the sauce.",
+  "synonyme": [
+    "burnt",
+    "charred",
+    "bitter",
+    "black"
+  ],
+  "faustregeln": [
+    "Small pieces late and over medium heat.",
+    "If it smells sharp and acrid, it is too late.",
+    "Cut off what is burnt rather than trying to season it away."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "too hot → bitter"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "too long → bitter"
+    }
+  ],
+  "visual": {
+    "params": {
+      "hinweis": "Guide values",
+      "skala": [
+        {
+          "c": 140,
+          "name": "browning begins"
+        },
+        {
+          "c": 170,
+          "name": "deeply browned"
+        },
+        {
+          "c": 200,
+          "name": "starts to burn"
+        }
+      ]
+    }
+  }
+}

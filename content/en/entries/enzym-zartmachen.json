@@ -1,0 +1,41 @@
+{
+  "id": "enzym-zartmachen",
+  "titel": "Pineapple, kiwi and papaya cut up protein",
+  "kurz": "Raw pineapple, kiwi, papaya and figs contain [[enzym|enzymes]] that cut up protein. They tenderise meat, but also stop gelatine from setting.",
+  "bild_im_kopf": "Like tiny scissors cutting through a net: a few snips make it soft, too many make it fall apart.",
+  "was_passiert": "The enzymes split long protein chains into pieces. On meat this loosens the surface, but it quickly turns mealy and mushy, because the enzymes barely reach the inside. Gelatine is protein too: with raw pineapple it never sets. In quark with kiwi, bitter fragments form. Heat switches the enzymes off, which is why tinned pineapple works.",
+  "warum_wichtig": "Explains why pineapple jelly stays runny, why kiwi quark turns bitter and why pineapple marinades should only work briefly.",
+  "synonyme": [
+    "tenderising meat",
+    "pineapple gelatine",
+    "bromelain",
+    "papain",
+    "kiwi quark bitter",
+    "pineapple marinade"
+  ],
+  "faustregeln": [
+    "For gelatine desserts, bring pineapple, kiwi and papaya briefly to the boil or use tinned.",
+    "Pineapple marinade for half an hour to an hour at most, otherwise the meat turns mealy.",
+    "Stir kiwi into quark or yoghurt only just before serving."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "boiling switches the enzymes off"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "longer → more cut up, quickly too much"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-suesses",
+      "text": "Panna cotta with fresh pineapple stays runny; with tinned pineapple it sets."
+    },
+    {
+      "welt": "w-fleisch",
+      "text": "Asian marinades with pineapple or papaya work on the surface, not in the centre."
+    }
+  ]
+}

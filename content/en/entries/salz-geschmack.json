@@ -1,0 +1,35 @@
+{
+  "id": "salz-geschmack",
+  "titel": "Salt boosts aromas and tames bitterness",
+  "kurz": "Salt does not only taste salty. In small amounts it brings out other aromas and suppresses bitterness.",
+  "bild_im_kopf": "Like the lighting in a museum: set right, you see every picture better; too bright, and it dazzles.",
+  "was_passiert": "Salt acts on taste perception itself. Below the level at which something tastes salty, it makes sweetness and aromas seem fuller. At the same time it dampens the perception of bitterness, for example in coffee, grapefruit, Brussels sprouts or dark chocolate. Too much salt, on the other hand, drowns out everything else.",
+  "warum_wichtig": "Explains the pinch of salt in cake, caramel and chocolate mousse, and why unsalted food tastes flat.",
+  "synonyme": [
+    "enhancing flavour",
+    "salt and bitterness",
+    "pinch of salt",
+    "salt in desserts"
+  ],
+  "faustregeln": [
+    "Every sweet dish gets a pinch of salt.",
+    "Salt bitter vegetables first, before reaching for sugar.",
+    "Salt in small steps and taste in between."
+  ],
+  "stellschrauben": [
+    {
+      "id": "salzgehalt",
+      "wirkung": "a little brings out, a lot drowns out"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-suesses",
+      "text": "Salted caramel and chocolate with fleur de sel: the salt makes the sweetness deeper."
+    },
+    {
+      "welt": "w-gemuese",
+      "text": "Brussels sprouts and chicory taste much less bitter with enough salt."
+    }
+  ]
+}

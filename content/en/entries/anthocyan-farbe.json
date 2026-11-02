@@ -1,0 +1,41 @@
+{
+  "id": "anthocyan-farbe",
+  "titel": "Red cabbage changes colour (anthocyanins)",
+  "kurz": "The red pigments in red cabbage, berries and red onions change colour depending on acidity: red when acidic, purple when neutral, blue when alkaline.",
+  "bild_im_kopf": "Like a natural acid test: red cabbage tells you by its colour how acidic your pot is.",
+  "was_passiert": "Anthocyanins are pigments that change shape with the [[ph-wert|pH]]. In acidic surroundings they are red, neutral purple, and in alkaline surroundings blue to greenish. Hard, chalky water therefore often turns red cabbage bluish; a splash of vinegar or some apple turns it red again.",
+  "warum_wichtig": "That is why some German regions call it red cabbage and others blue cabbage. And it is why apple and vinegar belong in the recipe.",
+  "synonyme": [
+    "red cabbage blue",
+    "blue cabbage",
+    "red cabbage colour",
+    "anthocyanins"
+  ],
+  "faustregeln": [
+    "For a bright red: add vinegar, wine or apple.",
+    "Red berries in batters with baking soda can turn greenish."
+  ],
+  "stellschrauben": [
+    {
+      "id": "ph-wert",
+      "wirkung": "acidic red, alkaline blue"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-gemuese",
+      "text": "Braise red cabbage with apple and vinegar: colour and flavour in one."
+    },
+    {
+      "welt": "w-gebaeck",
+      "text": "Blueberry muffins with a lot of baking soda get greenish spots."
+    }
+  ],
+  "visual": {
+    "params": {
+      "links": "acidic: red",
+      "mitte": "neutral: purple",
+      "rechts": "alkaline: blue to green"
+    }
+  }
+}

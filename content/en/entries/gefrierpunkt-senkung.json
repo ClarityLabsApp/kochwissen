@@ -1,0 +1,58 @@
+{
+  "id": "gefrierpunkt-senkung",
+  "titel": "Sugar, salt and alcohol lower the freezing point",
+  "kurz": "Dissolved sugar, salt or alcohol get in the way of water as it freezes. It only freezes at lower temperatures, and part of it stays liquid.",
+  "bild_im_kopf": "Like a dance floor full of people: the more strangers standing in between, the harder it is for the couples to find each other.",
+  "was_passiert": "Water molecules have to line up in a lattice to freeze. Dissolved particles get in the way, so the solution only freezes below 0 °C. In ice cream, part always stays liquid, so it stays scoopable. The other way round, salt melts ice: ice with salt turns into a brine that can get as cold as about minus 21 °C.",
+  "warum_wichtig": "Explains why low-sugar ice cream turns rock hard, why a splash of alcohol keeps sorbet soft and how to make ice cream in a bag with ice and salt.",
+  "synonyme": [
+    "freezing point",
+    "ice cream stays soft",
+    "salt on ice",
+    "why ice cream does not go hard"
+  ],
+  "faustregeln": [
+    "Ice cream and sorbet need enough sugar, otherwise they turn hard.",
+    "A tablespoon of spirits keeps sorbet softer; too much stops it from freezing.",
+    "Ice with salt chills faster and deeper than ice alone."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zuckergehalt",
+      "wirkung": "more → softer, freezes later"
+    },
+    {
+      "id": "salzgehalt",
+      "wirkung": "salt on ice → ice-cold brine"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-suesses",
+      "text": "Sorbet made from very sweet fruit turns out softer by itself than one made from lemon."
+    }
+  ],
+  "visual": {
+    "params": {
+      "hinweis": "Guide values",
+      "skala": [
+        {
+          "c": -21,
+          "name": "ice with salt: this cold the brine can get"
+        },
+        {
+          "c": -18,
+          "name": "freezer"
+        },
+        {
+          "c": -5,
+          "name": "sweet ice cream stays scoopable"
+        },
+        {
+          "c": 0,
+          "name": "pure water freezes"
+        }
+      ]
+    }
+  }
+}

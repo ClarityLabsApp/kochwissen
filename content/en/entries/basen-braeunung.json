@@ -1,0 +1,36 @@
+{
+  "id": "basen-braeunung",
+  "titel": "Alkalis speed up browning",
+  "kurz": "In alkaline conditions the [[maillard-reaktion|Maillard reaction]] runs much faster. That is why pretzels turn deep brown and onions with a pinch of baking soda darken faster.",
+  "bild_im_kopf": "Like a tailwind on a bike: the route is the same, but you get there much faster.",
+  "was_passiert": "The browning reaction depends on the [[ph-wert|pH]]. Acid slows it down; alkalis such as baking soda or lye speed it up a lot. Pretzels are dipped briefly in a lye bath before baking: the surface then browns deeply, shines and gets its typical taste. A pinch of baking soda makes onions brown and soften faster; too much tastes soapy.",
+  "warum_wichtig": "Explains the colour of pretzels and lye rolls, and why a hint of baking soda saves time when frying.",
+  "synonyme": [
+    "lye",
+    "pretzel",
+    "baking soda browns",
+    "alkaline",
+    "brown pretzel"
+  ],
+  "faustregeln": [
+    "For onions, a pinch of baking soda on the tip of a knife, no more.",
+    "Acid such as lemon or wine slows browning, so add it later.",
+    "Real food-grade lye is caustic: gloves, goggles, nothing made of aluminium."
+  ],
+  "stellschrauben": [
+    {
+      "id": "ph-wert",
+      "wirkung": "alkaline → browns faster, acidic → slower"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-brot",
+      "text": "Pretzel: dipped briefly in lye, then baked. At home, baked baking soda gives a milder version."
+    },
+    {
+      "welt": "w-gemuese",
+      "text": "Onions with baking soda turn golden brown in half the time."
+    }
+  ]
+}

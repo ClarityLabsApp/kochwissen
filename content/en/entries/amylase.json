@@ -1,0 +1,41 @@
+{
+  "id": "amylase",
+  "titel": "Amylase: starch turns into sugar",
+  "kurz": "Amylase is an [[enzym|enzyme]] that breaks starch down into sugar. It feeds the yeast, browns the crust and makes sweet potatoes sweet.",
+  "bild_im_kopf": "Like a baker slicing long loaves: only in small pieces can everyone have some.",
+  "was_passiert": "Starch is made of long chains of sugar units. Amylase cuts them into short pieces. Flour contains a little of it, malt contains a lot. In dough it gives the yeast food and leaves sugar over for a brown crust. Sweet potatoes contain their own amylase: cooked slowly, it works for longer and makes them sweeter.",
+  "warum_wichtig": "Explains why bakers use baking malt, why slow-fermented doughs get a darker crust and why roasted sweet potatoes taste sweeter than boiled ones.",
+  "synonyme": [
+    "amylase",
+    "malt",
+    "baking malt",
+    "breaking down starch",
+    "sweeter dough",
+    "sweet potato sweetness"
+  ],
+  "faustregeln": [
+    "For a deep crust: a long, cool fermentation or a little baking malt.",
+    "Cook sweet potatoes slowly in the oven rather than boiling them fast.",
+    "Chewing starts the amylase in saliva: bread tastes sweetish after long chewing."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zeit",
+      "wirkung": "longer → more sugar"
+    },
+    {
+      "id": "temperatur",
+      "wirkung": "warmth keeps it working, boiling stops it"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-brot",
+      "text": "A cold overnight prove gives the amylase time: more sugar, a browner crust."
+    },
+    {
+      "welt": "w-kartoffeln",
+      "text": "Sweet potatoes roasted for an hour at medium heat turn almost caramel-like."
+    }
+  ]
+}

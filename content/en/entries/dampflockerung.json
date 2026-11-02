@@ -1,0 +1,26 @@
+{
+  "id": "dampflockerung",
+  "titel": "Steam leavening (choux, puff pastry)",
+  "kurz": "Water in the dough turns to steam in a hot oven and puffs up hollow spaces. Puff pastry and cream puffs rise without any baking powder.",
+  "bild_im_kopf": "Like a popcorn kernel: the water inside turns to steam and bursts it open.",
+  "was_passiert": "Water expands enormously as it turns to steam. In puff pastry it sits in thin layers of butter and dough, and the steam pushes the layers apart. In choux pastry a shell forms, which the steam blows up like a balloon.",
+  "warum_wichtig": "Explains why these pastries must be baked very hot and why cream puffs collapse if you open the oven too early.",
+  "synonyme": [
+    "puff pastry",
+    "choux pastry",
+    "cream puffs",
+    "profiteroles",
+    "steam as a raising agent"
+  ],
+  "faustregeln": [
+    "Start very hot, so a lot of steam forms quickly.",
+    "Keep puff pastry cold, so the butter layers stay separate.",
+    "Open the oven only once the pastry is firm and browned."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "hotter → more steam, more volume"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "fett-ausbraten",
+  "titel": "Rendering fat",
+  "kurz": "Over gentle heat, fat melts out of skin and bacon. What remains is a thin layer that turns crisp.",
+  "bild_im_kopf": "Like candle wax melting slowly and exposing the wick.",
+  "was_passiert": "Fat sits locked inside cells. Over slow heat they melt and the fat runs out. If the heat is too high, the surface seals too early, and a thick, soft layer of fat stays under a dark crust.",
+  "warum_wichtig": "Duck breast, bacon, pork belly and chicken legs need patience first and strong heat only at the end.",
+  "synonyme": [
+    "rendering",
+    "rendering bacon",
+    "crispy duck skin",
+    "render fat"
+  ],
+  "faustregeln": [
+    "Put it in a cold pan, then heat slowly.",
+    "Score the skin first without cutting into the meat.",
+    "Keep the rendered fat: ideal for fried potatoes."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "gentle → more fat runs out"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "longer → thinner, crispier skin"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "pochieren-proz",
+  "titel": "Gentle cooking in liquid",
+  "kurz": "Below boiling point, proteins cook gently and evenly. Bubbling water makes them tough and tears them apart.",
+  "bild_im_kopf": "Like a warm bath instead of a jacuzzi.",
+  "was_passiert": "Water between about 70 and 85 °C cooks eggs and fish evenly without overcooking the edges. A rolling boil moves the pieces around, tears delicate protein and squeezes out fish.",
+  "warum_wichtig": "Poached eggs, salmon, chicken breast and boiled beef turn out juicy when the water only shivers and does not boil.",
+  "synonyme": [
+    "poaching",
+    "simmering",
+    "gentle cooking"
+  ],
+  "faustregeln": [
+    "Only single bubbles should rise.",
+    "Use fresh eggs for poached eggs."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "below boiling → more tender"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "longer → firmer"
+    }
+  ],
+  "visual": {
+    "params": {
+      "hinweis": "Guide values",
+      "skala": [
+        {
+          "c": 70,
+          "name": "gentle: poaching fish and eggs"
+        },
+        {
+          "c": 85,
+          "name": "gentle simmer"
+        },
+        {
+          "c": 100,
+          "name": "bubbling: tough, tears apart"
+        }
+      ]
+    }
+  }
+}

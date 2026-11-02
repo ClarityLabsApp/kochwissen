@@ -1,0 +1,71 @@
+{
+  "id": "eiweiss-gerinnung",
+  "titel": "Proteins set (coagulation)",
+  "kurz": "Protein turns creamy in heat at first, then firm. A few degrees too many and creamy becomes grainy.",
+  "bild_im_kopf": "Like people who, as the music gets louder, first loosely hold hands (creamy) and then clump into tight huddles (grainy).",
+  "was_passiert": "Proteins are folded chains. Heat unfolds them, they hook into each other and hold on to liquid: the mixture turns thick and creamy. If it gets hotter, they contract, squeeze out the liquid and form hard little lumps. In egg yolk this transition lies roughly between 65 and 75 °C.",
+  "warum_wichtig": "Hollandaise, crème brûlée, custard, scrambled eggs and quiche all depend on this narrow window.",
+  "synonyme": [
+    "setting",
+    "curdling",
+    "coagulation",
+    "egg sets",
+    "overcooking"
+  ],
+  "faustregeln": [
+    "Cook egg custards in a water bath or over low heat, stirring constantly.",
+    "Take scrambled eggs off the heat while they still look a little too wet.",
+    "Sugar and cream protect: they push coagulation higher."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "a few degrees too many → grainy"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "longer → firmer"
+    },
+    {
+      "id": "zuckergehalt",
+      "wirkung": "more → sets later"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-saucen",
+      "text": "Whisk hollandaise over a water bath and keep lifting it off the pan when it thickens too fast."
+    },
+    {
+      "welt": "w-eier",
+      "text": "Scrambled eggs over low heat stay creamy; over high heat they turn dry and watery at the same time."
+    },
+    {
+      "welt": "w-suesses",
+      "text": "An egg custard must not boil. With starch in it, it can take more heat."
+    }
+  ],
+  "visual": {
+    "params": {
+      "hinweis": "Guide values",
+      "skala": [
+        {
+          "c": 62,
+          "name": "egg white starts to set"
+        },
+        {
+          "c": 65,
+          "name": "yolk turns thick and creamy"
+        },
+        {
+          "c": 70,
+          "name": "yolk firm, custard about to split"
+        },
+        {
+          "c": 80,
+          "name": "grainy, liquid seeps out"
+        }
+      ]
+    }
+  }
+}

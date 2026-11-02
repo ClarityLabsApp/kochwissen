@@ -1,0 +1,57 @@
+{
+  "id": "emulsion",
+  "titel": "Emulsion",
+  "kurz": "An emulsion is fat and water, which do not normally mix, held together as tiny droplets by a go-between.",
+  "bild_im_kopf": "An [[emulgator|emulsifier]] is like an interpreter with one hand in the water and one in the fat. Without it, the two groups stand on opposite sides of the room.",
+  "was_passiert": "Fat and water repel each other. Whisk hard, and the fat breaks into tiny droplets in the water. An emulsifier such as the lecithin in egg yolk wraps around each droplet and stops them from flowing back together. The more densely packed the droplets, the thicker the sauce.",
+  "warum_wichtig": "Mayonnaise, vinaigrette, hollandaise, beurre blanc, pasta sauce with pasta water: all emulsions, all with the same pitfalls.",
+  "synonyme": [
+    "emulsify",
+    "combining fat and water",
+    "mayonnaise",
+    "vinaigrette",
+    "binding a sauce"
+  ],
+  "faustregeln": [
+    "Add the fat drop by drop at first, later in a thin stream.",
+    "Bring ingredients to similar temperatures; nothing ice cold from the fridge.",
+    "Mustard, egg yolk or starchy pasta water help as go-betweens.",
+    "Split? Start again with a fresh yolk or a spoonful of water and slowly work in the split mixture."
+  ],
+  "typische_fehler": [
+    "Oil added too quickly.",
+    "Hollandaise too hot, so the egg yolk sets."
+  ],
+  "stellschrauben": [
+    {
+      "id": "mechanik",
+      "wirkung": "whisk harder → finer droplets"
+    },
+    {
+      "id": "temperatur",
+      "wirkung": "too hot → yolk sets"
+    },
+    {
+      "id": "fettgehalt",
+      "wirkung": "too much too fast → splits"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-saucen",
+      "text": "A vinaigrette with a spoonful of mustard holds together much longer. Mayonnaise in a blender almost always works."
+    },
+    {
+      "welt": "w-pasta",
+      "text": "Pasta water brings starch, which binds fat and water in the pan into a creamy sauce."
+    },
+    {
+      "welt": "w-eier",
+      "text": "Egg yolk is the classic emulsifier: a single yolk can carry a whole bowl of mayonnaise."
+    }
+  ],
+  "mythos": {
+    "behauptung": "Mayonnaise only works with eggs at room temperature.",
+    "richtig": "Adding the oil slowly and whisking hard matter more. Similar temperatures help, but are not a must."
+  }
+}

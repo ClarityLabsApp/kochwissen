@@ -1,0 +1,33 @@
+{
+  "id": "kalzium-pektin",
+  "titel": "Calcium and acid keep vegetables firm",
+  "kurz": "Calcium from hard water and acid strengthen the glue between plant cells. Pulses and vegetables then soften more slowly.",
+  "bild_im_kopf": "Like clips in a folder: with clips the stack holds together, without them it falls apart.",
+  "was_passiert": "Plant cells stick together through [[pektin|pectin]]. Calcium links the pectin chains as well, like clips. In hard water or with tomatoes and wine, vegetables therefore stay firm longer, and pulses sometimes never get properly soft. Baking soda makes the water alkaline and softer: beans and chickpeas cook faster.",
+  "warum_wichtig": "Explains why beans stay hard in tomato sauce, why chickpeas get softer with baking soda and how to keep fried potatoes firm.",
+  "synonyme": [
+    "hard water",
+    "calcium",
+    "limescale",
+    "beans stay hard",
+    "vegetables stay firm",
+    "tomatoes and beans"
+  ],
+  "faustregeln": [
+    "Cook pulses until soft first, then add them to tomato or wine.",
+    "With hard water, add a pinch of baking soda to the soaking water.",
+    "For firm fried potatoes, add a splash of vinegar to the cooking water."
+  ],
+  "stellschrauben": [
+    {
+      "id": "ph-wert",
+      "wirkung": "acidic → stays firm, alkaline → goes soft"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-gemuese",
+      "text": "Chickpeas cooked with a pinch of baking soda make an especially smooth hummus."
+    }
+  ]
+}

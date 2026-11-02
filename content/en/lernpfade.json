@@ -1,0 +1,312 @@
+[
+  {
+    "id": "grundprinzipien",
+    "titel": "The 10 key principles of cooking",
+    "kurz": "Understand these ten processes and you understand most of what happens when you cook and bake.",
+    "fuer": "For anyone who wants to start with the fundamentals",
+    "dauer": "about 1 hour",
+    "schritte": [
+      { "id": "verdampfen", "warum": "Where it all begins: as long as there is water, nothing gets hotter than 100 °C." },
+      { "id": "waermeleitung", "warum": "How heat gets into food at all, and why the outside cooks faster than the inside." },
+      { "id": "maillard-reaktion", "warum": "From 140 °C you get what we love as the smell of roasting and a brown crust." },
+      { "id": "karamellisierung", "warum": "The Maillard reaction's relative: sugar on its own turns brown and aromatic." },
+      { "id": "eiweiss-denaturierung", "warum": "Why meat, fish and eggs cook through, and why they turn dry when cooked too long." },
+      { "id": "kollagen-gelatine", "warum": "The opposite: tough meat needs time until its connective tissue melts." },
+      { "id": "staerkeverkleisterung", "warum": "What thickens sauces, softens potatoes and makes risotto creamy." },
+      { "id": "emulsion", "warum": "How oil and water hold together: mayonnaise, vinaigrette, hollandaise." },
+      { "id": "glutenbildung", "warum": "The network in dough that makes bread rise and can make cake tough." },
+      { "id": "osmose", "warum": "Why salt draws out water, and what that means for when to salt." }
+    ],
+    "quiz": [
+      {
+        "frage": "Why does a wet steak not brown in a hot pan?",
+        "antworten": ["The pan is too hot", "As long as water evaporates, the surface stays at about 100 °C", "Water stops the salt from working"],
+        "richtig": 1,
+        "erklaerung": "Browning only starts at around 140 °C. As long as there is water, the surface cannot get hotter than that.",
+        "eintrag": "verdampfen"
+      },
+      {
+        "frage": "At roughly what temperature does the Maillard reaction really get going?",
+        "antworten": ["100 °C", "140 °C", "200 °C"],
+        "richtig": 1,
+        "erklaerung": "From about 140 °C, protein and sugar building blocks combine into roasted flavours.",
+        "eintrag": "maillard-reaktion"
+      },
+      {
+        "frage": "Why does a tough braising cut turn tender after hours?",
+        "antworten": ["The collagen in the connective tissue turns into gelatine", "The muscle fibres are boiled soft", "The water draws out salt"],
+        "richtig": 0,
+        "erklaerung": "Connective tissue slowly dissolves into gelatine in moist heat. That takes time, not more heat.",
+        "eintrag": "kollagen-gelatine"
+      },
+      {
+        "frage": "What holds a mayonnaise together?",
+        "antworten": ["The flour", "The emulsifier in the egg yolk", "The cold"],
+        "richtig": 1,
+        "erklaerung": "Lecithin and protein from the yolk coat the oil droplets and keep them apart.",
+        "eintrag": "emulsion"
+      },
+      {
+        "frage": "What happens when shortcrust pastry is kneaded for too long?",
+        "antworten": ["It turns tough because gluten forms", "It turns runny", "It gets sweeter"],
+        "richtig": 0,
+        "erklaerung": "Kneading links the proteins into gluten. You want that in bread; in shortcrust it makes the pastry tough.",
+        "eintrag": "glutenbildung"
+      },
+      {
+        "frage": "Why does a sauce with cornflour only thicken once it boils briefly?",
+        "antworten": ["Starch only swells in the heat", "Boiling evaporates the salt", "Starch needs air"],
+        "richtig": 0,
+        "erklaerung": "Starch granules only take up water and swell from about 60–70 °C. Cold, almost nothing happens.",
+        "eintrag": "staerkeverkleisterung"
+      }
+    ]
+  },
+  {
+    "id": "kinderlabor",
+    "titel": "Kitchen lab for kids",
+    "kurz": "Twelve experiments where you see, smell and taste what happens in the kitchen. With adults at the stove and hot water.",
+    "fuer": "For children from about 8, together with adults",
+    "dauer": "a few afternoons",
+    "schritte": [
+      { "id": "x-rotkohl-indikator", "warum": "Colour magic to start with: red cabbage juice shows whether something is acidic." },
+      { "id": "x-apfel-braun", "warum": "Why the apple turns brown, and how to stop it." },
+      { "id": "x-salz-gurke", "warum": "Salt draws out water: you can actually watch it happen." },
+      { "id": "x-backpulver-kalt-heiss", "warum": "What makes the bubbles in a cake." },
+      { "id": "x-hefe-ballon", "warum": "Yeast is alive and breathes: it blows up a balloon." },
+      { "id": "x-eischnee-fett", "warum": "A tiny drop of fat ruins a whole bowl of egg whites." },
+      { "id": "x-butter-schuetteln", "warum": "Cream turns into butter, just by shaking." },
+      { "id": "x-glace-beutel", "warum": "Make ice cream in ten minutes with ice and salt." },
+      { "id": "x-ananas-gelatine", "warum": "Fresh pineapple cuts up the jelly." },
+      { "id": "x-gluten-auswaschen", "warum": "The invisible network in flour becomes visible." },
+      { "id": "x-bohnen-gruen", "warum": "Why vegetables turn grey when they cook too long." },
+      { "id": "x-zuckerkristalle", "warum": "To finish, an experiment over several days: growing crystals." }
+    ],
+    "quiz": [
+      {
+        "frage": "Red cabbage juice turns pink. What did you add?",
+        "antworten": ["Baking soda", "Vinegar", "Water"],
+        "richtig": 1,
+        "erklaerung": "Acid such as vinegar turns the red cabbage pigment pink; baking soda turns it blue to green.",
+        "eintrag": "x-rotkohl-indikator"
+      },
+      {
+        "frage": "Why does an apple slice with lemon juice stay pale?",
+        "antworten": ["The lemon dyes it yellow", "The acid slows down the enzyme that turns the apple brown", "Lemon juice is cold"],
+        "richtig": 1,
+        "erklaerung": "An enzyme in the apple makes brown pigments with air. Acid slows it down.",
+        "eintrag": "x-apfel-braun"
+      },
+      {
+        "frage": "After 15 minutes there are drops of water on salted cucumber slices. Where does the water come from?",
+        "antworten": ["From the air", "From the salt", "From the cucumber itself"],
+        "richtig": 2,
+        "erklaerung": "Salt draws water out of the cucumber's cells. This is called osmosis.",
+        "eintrag": "x-salz-gurke"
+      },
+      {
+        "frage": "What blows up the balloon on the yeast bottle?",
+        "antworten": ["Carbon dioxide made by the yeast", "Warm air from the water", "The sugar evaporates"],
+        "richtig": 0,
+        "erklaerung": "Yeast eats sugar and breathes out carbon dioxide. The same gas makes the holes in bread.",
+        "eintrag": "x-hefe-ballon"
+      },
+      {
+        "frage": "Why won't egg whites with a drop of yolk whip up stiff?",
+        "antworten": ["Yolk is too heavy", "The fat in the yolk makes the air bubbles burst", "Yolk is too cold"],
+        "richtig": 1,
+        "erklaerung": "Fat pushes in between the thin protein skins around the bubbles, and they burst.",
+        "eintrag": "x-eischnee-fett"
+      },
+      {
+        "frage": "Why does milk in a bag turn into ice cream with ice and salt, but not with ice alone?",
+        "antworten": ["Salt makes the ice even colder", "Salt is sweet", "Salt makes the milk thicker"],
+        "richtig": 0,
+        "erklaerung": "Salt makes the ice melt, and the brine gets far colder than 0 °C. That is cold enough to freeze the milk.",
+        "eintrag": "x-glace-beutel"
+      },
+      {
+        "frage": "Why does jelly with fresh pineapple stay runny?",
+        "antworten": ["Pineapple is too acidic", "An enzyme in pineapple cuts up the gelatine", "Pineapple contains too much water"],
+        "richtig": 1,
+        "erklaerung": "Gelatine is a protein. The enzyme in fresh pineapple cuts its network apart. Tinned pineapple has been heated, so its enzyme no longer works.",
+        "eintrag": "x-ananas-gelatine"
+      },
+      {
+        "frage": "What is the rubbery lump left over when you wash out dough?",
+        "antworten": ["Starch", "Gluten", "Sugar"],
+        "richtig": 1,
+        "erklaerung": "The milky stuff in the water is starch. The tough lump is gluten, the network that holds the air in bread.",
+        "eintrag": "x-gluten-auswaschen"
+      }
+    ]
+  },
+  {
+    "id": "brot",
+    "titel": "Understanding bread",
+    "kurz": "From flour to crust: what happens in a loaf, and which levers you can turn.",
+    "fuer": "For anyone who wants to bake their own bread",
+    "dauer": "about 1 hour of reading, then practice",
+    "schritte": [
+      { "id": "mehl", "warum": "What is in flour: starch, protein and a few enzymes." },
+      { "id": "glutenbildung", "warum": "The network that holds the gas bubbles." },
+      { "id": "autolyse", "warum": "Why a little rest can replace kneading." },
+      { "id": "hefegaerung", "warum": "Who supplies the gas, and how temperature slows it down or speeds it up." },
+      { "id": "kalte-gare", "warum": "More time gives more flavour." },
+      { "id": "dehnen-falten", "warum": "Structure without kneading." },
+      { "id": "dampf-im-ofen", "warum": "Why steam in the first minutes makes the loaf bigger." },
+      { "id": "maillard-reaktion", "warum": "The crust." },
+      { "id": "retrogradation", "warum": "Why bread goes stale, and how to refresh it." },
+      { "id": "l-sauerteig", "warum": "The next step: starting your own sourdough." }
+    ],
+    "quiz": [
+      {
+        "frage": "What holds the gas bubbles in bread dough?",
+        "antworten": ["The starch", "The gluten network", "The salt"],
+        "richtig": 1,
+        "erklaerung": "Gluten forms a stretchy network that holds the bubbles like little balloons.",
+        "eintrag": "glutenbildung"
+      },
+      {
+        "frage": "Why does a dough proved cold overnight develop more flavour?",
+        "antworten": ["The yeast dies", "Over time, more flavour compounds and sugars form", "Cold makes the flour finer"],
+        "richtig": 1,
+        "erklaerung": "Slow fermentation and enzymes have more time. That gives flavour and a browner crust.",
+        "eintrag": "kalte-gare"
+      },
+      {
+        "frage": "What is steam good for in the first minutes in the oven?",
+        "antworten": ["The crust stays soft for a while, so the loaf can still rise", "The bread cooks faster", "It kills the yeast"],
+        "richtig": 0,
+        "erklaerung": "A moist surface stays stretchy. That way the loaf can still grow before the crust sets.",
+        "eintrag": "dampf-im-ofen"
+      },
+      {
+        "frage": "Why does bread go stale faster in the fridge?",
+        "antworten": ["It dries out", "The starch reorganises faster in the cold", "The fridge draws out flavour"],
+        "richtig": 1,
+        "erklaerung": "Stale means the starch crystallises again. That happens much faster in the fridge.",
+        "eintrag": "retrogradation"
+      },
+      {
+        "frage": "What does a sourdough do differently from yeast alone?",
+        "antworten": ["It brings lactic acid bacteria for acidity and flavour", "It needs no oven", "It makes the bread sweeter"],
+        "richtig": 0,
+        "erklaerung": "In a sourdough, wild yeasts and lactic acid bacteria work together.",
+        "eintrag": "l-sauerteig"
+      }
+    ]
+  },
+  {
+    "id": "fleisch",
+    "titel": "Cooking meat right",
+    "kurz": "Juicy, tender, with a crust: the principles behind steak, roasts and braises.",
+    "fuer": "For anyone who no longer wants to cook meat by feel",
+    "dauer": "about 45 minutes",
+    "schritte": [
+      { "id": "eiweiss-denaturierung", "warum": "What happens in meat as it cooks, degree by degree." },
+      { "id": "kerntemperatur", "warum": "The most important number, and why a thermometer helps more than any rule of thumb." },
+      { "id": "trockensalzen", "warum": "Salt the day before: juicier and better seasoned." },
+      { "id": "trocken-tupfen", "warum": "No crust without a dry surface." },
+      { "id": "steak-grau", "warum": "What goes wrong when the pan is too full or too cold." },
+      { "id": "ruhen-lassen", "warum": "What resting really does, with measurements." },
+      { "id": "kollagen-gelatine", "warum": "Why tough cuts slowly turn tender." },
+      { "id": "schmoren", "warum": "The technique for it." },
+      { "id": "keimwachstum", "warum": "What to watch out for with poultry and leftovers." },
+      { "id": "g-steak", "warum": "Everything together: a pan-fried steak." }
+    ],
+    "quiz": [
+      {
+        "frage": "From what point do the muscle fibres contract strongly and squeeze out juice?",
+        "antworten": ["From about 45 °C", "From about 66 °C", "From about 90 °C"],
+        "richtig": 1,
+        "erklaerung": "From about 66 °C a second protein contracts strongly. That is why meat dries out quickly above this point.",
+        "eintrag": "eiweiss-denaturierung"
+      },
+      {
+        "frage": "What does salting meat the day before do?",
+        "antworten": ["It turns juicier and the surface dries", "It cooks faster", "It stays redder"],
+        "richtig": 0,
+        "erklaerung": "The salt soaks in and helps the meat hold on to water. The surface dries and browns better.",
+        "eintrag": "trockensalzen"
+      },
+      {
+        "frage": "Why does meat turn grey instead of brown when there is too much in the pan?",
+        "antworten": ["Too much fat", "The pan cools down and the meat stews in its own juices", "The meat was salted too cold"],
+        "richtig": 1,
+        "erklaerung": "A lot of meat releases a lot of juice. The pan loses heat and the surface gets stuck at 100 °C.",
+        "eintrag": "steak-grau"
+      },
+      {
+        "frage": "How hot must poultry get at its core, at the very least?",
+        "antworten": ["55 °C", "63 °C", "70 °C"],
+        "richtig": 2,
+        "erklaerung": "For poultry, food safety authorities recommend at least 70 °C at the core for two minutes.",
+        "eintrag": "keimwachstum"
+      },
+      {
+        "frage": "Why does a braise turn more tender the longer it cooks?",
+        "antworten": ["The collagen dissolves into gelatine", "The meat soaks up sauce", "The fibres get longer"],
+        "richtig": 0,
+        "erklaerung": "Connective tissue needs moist heat and time to turn into gelatine.",
+        "eintrag": "kollagen-gelatine"
+      }
+    ]
+  },
+  {
+    "id": "saucen",
+    "titel": "Sauces without fear",
+    "kurz": "Almost every sauce is an emulsion, thickened with starch, or reduced. Know the three ways and you can rescue any sauce.",
+    "fuer": "For anyone whose sauce has ever split or come out too thin",
+    "dauer": "about 45 minutes",
+    "schritte": [
+      { "id": "w-saucen", "warum": "The overview: three ways to thicken a sauce." },
+      { "id": "emulsion", "warum": "Way 1: fat in water as tiny droplets." },
+      { "id": "g-mayonnaise", "warum": "The emulsion to make yourself." },
+      { "id": "mayo-gerinnt", "warum": "What to do when it splits." },
+      { "id": "staerkeverkleisterung", "warum": "Way 2: starch swells and thickens." },
+      { "id": "mehlschwitze", "warum": "The classic technique for it." },
+      { "id": "reduktion", "warum": "Way 3: reduce until it turns smooth and thick." },
+      { "id": "montieren", "warum": "Cold butter at the end: shine and body." },
+      { "id": "g-hollandaise", "warum": "The master class: a warm emulsion with egg yolk." },
+      { "id": "sauce-trennt-sich", "warum": "For emergencies." }
+    ],
+    "quiz": [
+      {
+        "frage": "What are the three ways to thicken a sauce?",
+        "antworten": ["Salt, sugar, acid", "Emulsion, starch, reduction", "Boiling, frying, baking"],
+        "richtig": 1,
+        "erklaerung": "Almost every sauce is an emulsion, thickened with starch, or reduced.",
+        "eintrag": "w-saucen"
+      },
+      {
+        "frage": "Your mayonnaise splits. What helps?",
+        "antworten": ["More oil all at once", "Take a fresh egg yolk and slowly whisk in the split sauce", "Bring it to the boil"],
+        "richtig": 1,
+        "erklaerung": "The fresh yolk brings new emulsifier. Worked in slowly, the emulsion forms again.",
+        "eintrag": "mayo-gerinnt"
+      },
+      {
+        "frage": "Why does cold butter go into the sauce at the end?",
+        "antworten": ["To give it shine and body", "To cool the sauce down", "To make it saltier"],
+        "richtig": 0,
+        "erklaerung": "Cold butter melts slowly and spreads out in fine droplets: the sauce turns glossy and smooth.",
+        "eintrag": "montieren"
+      },
+      {
+        "frage": "What happens when hollandaise gets too hot?",
+        "antworten": ["It gets thinner", "The egg yolk sets and the sauce turns lumpy", "It gets sweeter"],
+        "richtig": 1,
+        "erklaerung": "Egg yolk starts to set from about 70 °C. That is why hollandaise is made over a water bath and kept warm, not hot.",
+        "eintrag": "g-hollandaise"
+      },
+      {
+        "frage": "Why do you salt a sauce that still needs reducing only at the end?",
+        "antworten": ["Salt evaporates", "Reducing concentrates the salt as well", "Salt stops the reduction"],
+        "richtig": 1,
+        "erklaerung": "The water evaporates, the salt stays. Salt it early and the sauce ends up too salty.",
+        "eintrag": "reduktion"
+      }
+    ]
+  }
+]

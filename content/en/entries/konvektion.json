@@ -1,0 +1,28 @@
+{
+  "id": "konvektion",
+  "titel": "Convection (fan oven, boiling)",
+  "kurz": "Moving air or liquid carries heat in much faster than still air or liquid. That is why a fan oven cooks faster and dries more.",
+  "bild_im_kopf": "Like wind on a cold day: at the same temperature it feels much colder, because the air carries the warmth away.",
+  "was_passiert": "Still air forms an insulating layer around food. Flowing air or bubbling water tears it away. A fan oven therefore cooks faster and dries surfaces more.",
+  "warum_wichtig": "A fan oven is ideal for crispness and several trays at once, but less good for bread in the steam phase and for delicate cakes.",
+  "synonyme": [
+    "fan oven",
+    "convection oven",
+    "hot air",
+    "moving heat"
+  ],
+  "faustregeln": [
+    "With the fan on, set about 20 °C lower than with top and bottom heat (as a guide).",
+    "Use the fan for crispness; switch it off at the start for bread."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "set lower with the fan"
+    },
+    {
+      "id": "luftfeuchte-ofen",
+      "wirkung": "the fan dries"
+    }
+  ]
+}

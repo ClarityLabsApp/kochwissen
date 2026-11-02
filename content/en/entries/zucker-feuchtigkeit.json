@@ -1,0 +1,36 @@
+{
+  "id": "zucker-feuchtigkeit",
+  "titel": "Sugar holds on to moisture",
+  "kurz": "Sugar attracts water and holds on to it. Cakes with enough sugar stay moist longer; biscuits with honey turn soft.",
+  "bild_im_kopf": "Like a storeroom for water: sugar lays in moisture and only gives it back slowly.",
+  "was_passiert": "Sugar binds water (it is hygroscopic). In a batter it holds the water, so less evaporates during baking and the cake dries out more slowly afterwards. It also slows the starch from going stale. Honey and syrup even draw moisture from the air: biscuits made with them turn soft in the tin, while pure sugar biscuits stay crisp.",
+  "warum_wichtig": "Explains why reduced-sugar cakes are drier and why honey gingerbread turns soft over time.",
+  "synonyme": [
+    "moist cake",
+    "sugar binds water",
+    "hygroscopic",
+    "cake stays fresh",
+    "honey in dough"
+  ],
+  "faustregeln": [
+    "Do not reduce sugar by more than a quarter, otherwise the cake turns dry and pale.",
+    "For soft biscuits use a little honey or brown sugar; for crisp ones, white sugar.",
+    "Store crisp and soft biscuits separately."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zuckergehalt",
+      "wirkung": "more → moister, fresh for longer"
+    },
+    {
+      "id": "feuchtigkeit",
+      "wirkung": "honey draws water from the air"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-gebaeck",
+      "text": "Honey gingerbread turns soft and better after a few days in the tin."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "retrogradation",
+  "titel": "Going stale (retrogradation)",
+  "kurz": "Bread does not go hard because it dries out, but because the [[staerkeverkleisterung|gelatinised]] starch reorganises and firms up as it cools.",
+  "bild_im_kopf": "Like books going back on the shelf after a party: in the oven the starch lies in a jumble; as it cools, it tidies itself up.",
+  "was_passiert": "During baking the starch takes up water and turns soft. Afterwards the starch chains slowly reorganise into firm structures. In the fridge this happens much faster than at room temperature. Warming undoes the order again, which is why old bread briefly turns soft again in the oven.",
+  "warum_wichtig": "Explains why bread does not belong in the fridge, why refreshing it in the oven helps and why day-old rice is better for fried rice.",
+  "synonyme": [
+    "stale",
+    "bread goes hard",
+    "drying out",
+    "refreshing bread"
+  ],
+  "faustregeln": [
+    "Never put bread in the fridge; freeze it instead.",
+    "Spray old bread with a little water and refresh it briefly in a hot oven.",
+    "Day-old cooked rice is firmer and sticks less when fried."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "cool (not frozen) → stale faster"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "longer → harder"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-brot",
+      "text": "Freeze in slices and toast straight from frozen."
+    },
+    {
+      "welt": "w-getreide",
+      "text": "Fried rice from day-old rice: the grains are firmer and stick less."
+    }
+  ],
+  "mythos": {
+    "behauptung": "Bread goes stale because it dries out.",
+    "richtig": "Even bread wrapped airtight goes hard. The main reason is the starch reorganising."
+  },
+  "visual": {
+    "params": {
+      "skala": [
+        {
+          "c": 4,
+          "name": "fridge: goes stale much faster"
+        },
+        {
+          "c": 20,
+          "name": "room temperature: slower"
+        },
+        {
+          "c": 60,
+          "name": "refreshing: starch turns soft again"
+        }
+      ]
+    }
+  }
+}

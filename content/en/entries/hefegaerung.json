@@ -1,0 +1,73 @@
+{
+  "id": "hefegaerung",
+  "titel": "Yeast fermentation",
+  "kurz": "Yeast eats sugar from the flour and gives off gas and aromas. The gas puffs up the dough, the aromas make the flavour.",
+  "bild_im_kopf": "Like millions of tiny air pumps that only work when they are warm enough and have something to eat.",
+  "was_passiert": "Yeasts are living fungi. They turn sugar into carbon dioxide and alcohol and form aroma compounds along the way. They are most active between about 27 and 32 °C; in the fridge they work only very slowly. From about 55–60 °C they die, which is why the rise ends in the oven.",
+  "warum_wichtig": "Temperature controls how fast the dough rises. Slow and cool gives more flavour, fast and warm gives more volume in a short time.",
+  "synonyme": [
+    "proving",
+    "proofing",
+    "rising",
+    "dough rises",
+    "fermentation"
+  ],
+  "faustregeln": [
+    "A cool, long prove for flavour; a warm, short one when it has to be quick.",
+    "Never put salt directly onto the yeast.",
+    "Fully proved: a finger dent fills back slowly, not immediately and not at all."
+  ],
+  "typische_fehler": [
+    "Proving too warm for too long: the network tears and the dough collapses."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "warmer → faster"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "longer → more flavour"
+    },
+    {
+      "id": "salzgehalt",
+      "wirkung": "more → slows it"
+    },
+    {
+      "id": "zuckergehalt",
+      "wirkung": "a lot → slows it"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-brot",
+      "text": "Prove overnight in the fridge: more aroma, a better crust, a more flexible schedule."
+    },
+    {
+      "welt": "w-gebaeck",
+      "text": "Braided loaves and enriched yeast cakes rise more slowly, because sugar and butter slow the yeast down."
+    }
+  ],
+  "visual": {
+    "params": {
+      "skala": [
+        {
+          "c": 4,
+          "name": "fridge: works very slowly"
+        },
+        {
+          "c": 24,
+          "name": "room: a relaxed prove"
+        },
+        {
+          "c": 27,
+          "name": "most active (27–32 °C)"
+        },
+        {
+          "c": 55,
+          "name": "yeast starts to die"
+        }
+      ]
+    }
+  }
+}

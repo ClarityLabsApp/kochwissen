@@ -1,0 +1,28 @@
+{
+  "id": "oxidation-fett",
+  "titel": "Fat goes rancid (oxidation)",
+  "kurz": "Oxygen, light and heat break fats down over time into unpleasant-smelling substances.",
+  "bild_im_kopf": "Like rust on metal, only with fat.",
+  "was_passiert": "Unsaturated fats, as found in nuts, wholemeal flour and many oils, react slowly with oxygen. Light and heat speed this up. Substances form that smell of paint or cardboard.",
+  "warum_wichtig": "Explains why nuts, wholemeal flour and linseed oil should be stored somewhere cool and dark.",
+  "synonyme": [
+    "rancid",
+    "stale-smelling oil",
+    "rancid nuts"
+  ],
+  "faustregeln": [
+    "Store oils cool and dark.",
+    "Buy nuts and wholemeal flour in moderation, or freeze them.",
+    "Go by smell rather than by date."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "cooler → slower"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "longer → more rancid"
+    }
+  ]
+}

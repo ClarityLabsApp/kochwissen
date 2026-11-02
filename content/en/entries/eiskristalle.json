@@ -1,0 +1,43 @@
+{
+  "id": "eiskristalle",
+  "titel": "Ice crystals: frozen fast is finer",
+  "kurz": "When water freezes it forms crystals. Fast freezing and stirring keep them small; slow freezing makes them large and coarse.",
+  "bild_im_kopf": "Like snow and hail: lots of small flakes are soft, a few big grains are hard and crunch.",
+  "was_passiert": "When water freezes slowly, a few crystals grow for a long time and get large. When it freezes quickly or is stirred while freezing, many seeds form at once and all stay small. Large crystals make ice cream grainy and pierce cell walls during freezing: the vegetables turn soft and leak juice when thawed. If the freezer temperature swings, small crystals grow together into large ones over time.",
+  "warum_wichtig": "Explains why ice cream turns creamy when stirred, why you freeze things flat and fast and why thawed strawberries are mushy.",
+  "synonyme": [
+    "freezing",
+    "ice crystals",
+    "creamy ice cream",
+    "crystal size"
+  ],
+  "faustregeln": [
+    "Freeze flat, not in a thick block.",
+    "Pre-chill the ice cream base and stir it while it freezes.",
+    "Do not open the freezer often; temperature swings coarsen the crystals."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "colder and faster → smaller crystals"
+    },
+    {
+      "id": "mechanik",
+      "wirkung": "stirring keeps crystals small"
+    },
+    {
+      "id": "zuckergehalt",
+      "wirkung": "more sugar → less ice, softer"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-suesses",
+      "text": "An ice cream maker freezes and stirs at the same time: that is why it is finer than ice cream from the freezer."
+    },
+    {
+      "welt": "w-gemuese",
+      "text": "Pre-freeze berries separately on a tray, and only then bag them."
+    }
+  ]
+}

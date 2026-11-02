@@ -1,0 +1,83 @@
+{
+  "id": "staerkeverkleisterung",
+  "titel": "Starch gelatinisation",
+  "kurz": "In warm water, starch granules soak up water, swell and turn soft and sticky. That is how a potato cooks and a sauce thickens.",
+  "bild_im_kopf": "Like water beads from a toy shop: tiny and hard when dry, in water they swell many times over and turn soft.",
+  "was_passiert": "Starch comes in tiny, densely packed granules. Cold, almost nothing happens. From about 60 °C for potato starch (wheat starch from about 50 °C) the granules start to take up water, swell and release long starch chains. These chains tangle and make liquids thick or cooked food soft and sticky. As the starch cools, it slowly reorganises and firms up.",
+  "warum_wichtig": "Cooked potatoes, thickened sauces, custard, risotto, bread crumb: the same reaction everywhere. On a surface it can get in the way, because it sticks.",
+  "synonyme": [
+    "gelatinisation",
+    "gelatinization",
+    "thickening",
+    "binding",
+    "swelling"
+  ],
+  "faustregeln": [
+    "Always mix starch into cold liquid first, then add it to the hot one. Otherwise you get lumps.",
+    "Cornflour only thickens properly once it has come to the boil.",
+    "Floury potatoes have more starch: fluffy, but they fall apart more easily.",
+    "For a crust, rinse off loose starch; for a craggy crust, roughen it on purpose."
+  ],
+  "typische_fehler": [
+    "Starch powder straight into hot sauce: the outside gelatinises at once, powder stays inside."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "starts from approx. 60 °C (potato), nothing below"
+    },
+    {
+      "id": "feuchtigkeit",
+      "wirkung": "no water, no swelling"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "longer → softer"
+    },
+    {
+      "id": "mechanik",
+      "wirkung": "stirring releases more starch"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-kartoffeln",
+      "text": "Cooked means gelatinised. The starch film on a cut surface can stick, so soak it or roughen it on purpose."
+    },
+    {
+      "welt": "w-saucen",
+      "text": "A spoonful of cornflour mixed with cold water thickens about half a litre of sauce."
+    },
+    {
+      "welt": "w-getreide",
+      "text": "Risotto turns creamy because stirring releases starch from the rice and it gelatinises."
+    },
+    {
+      "welt": "w-suesses",
+      "text": "Custard and pudding only thicken once they briefly come to the boil."
+    }
+  ],
+  "mythos": {
+    "behauptung": "For fried potatoes, the potatoes have to be freshly boiled.",
+    "richtig": "Boiled potatoes from the day before are better. The cooled starch is firmer, the slices do not fall apart and they brown more nicely."
+  },
+  "visual": {
+    "params": {
+      "regler": [
+        "temperatur",
+        "wasser"
+      ],
+      "schwelle_c": 60,
+      "skala": [
+        {
+          "c": 60,
+          "name": "potato starch starts to swell"
+        },
+        {
+          "c": 100,
+          "name": "water boils, starch fully gelatinised"
+        }
+      ]
+    }
+  }
+}

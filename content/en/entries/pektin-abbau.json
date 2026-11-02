@@ -1,0 +1,43 @@
+{
+  "id": "pektin-abbau",
+  "titel": "Vegetables soften (pectin breakdown)",
+  "kurz": "[[pektin|Pectin]] is the glue between plant cells. Heat dissolves it and the vegetables soften. Acid slows this down, baking soda speeds it up.",
+  "bild_im_kopf": "Like mortar between bricks: once the mortar dissolves, the bricks slide apart easily.",
+  "was_passiert": "Plant cells stick together through pectin. When cooking, the pectin slowly breaks down, the cells come apart and the vegetables turn soft. In acidic water this happens much more slowly, in alkaline water much faster. Gentle pre-cooking at about 55–60 °C (as a guide) can even strengthen the glue, because an [[enzym|enzyme]] firms it up.",
+  "warum_wichtig": "Explains why potatoes stay hard in tomato sauce, why baking soda roughens the edges of roast potatoes and why vegetables turn mushy.",
+  "synonyme": [
+    "cooking until soft",
+    "falling apart",
+    "pectin",
+    "mushy vegetables"
+  ],
+  "faustregeln": [
+    "Add acid later if the vegetables are meant to soften.",
+    "A pinch of baking soda in the cooking water makes the edges soft and rough.",
+    "Gently pre-cooked potatoes stay firmer when fried later."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "hotter → softens faster"
+    },
+    {
+      "id": "ph-wert",
+      "wirkung": "acid slows it, alkali speeds it up"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "longer → softer"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-kartoffeln",
+      "text": "Baking soda in the parboiling water loosens the edges, giving a craggy crust. Vinegar in the water keeps potato salad in shape."
+    },
+    {
+      "welt": "w-gemuese",
+      "text": "Beans in tomato sauce stay firm longer. Cook them soft first, then add the acid."
+    }
+  ]
+}

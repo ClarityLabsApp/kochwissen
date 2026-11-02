@@ -1,0 +1,29 @@
+{
+  "id": "zucker-kristallisation",
+  "titel": "Sugar crystallises",
+  "kurz": "Dissolved sugar wants to form crystals again. Even a single grain can set off a chain reaction.",
+  "bild_im_kopf": "Like dominoes: when one falls, they all fall. A sugar crystal on the side of the pan is enough as the first domino.",
+  "was_passiert": "Hot syrup holds far more dissolved sugar than it can hold when cold. As it cools, or when stirred, the sugar molecules attach to any crystal present, and the syrup turns grainy. Acid, honey or glucose syrup disrupt crystal formation and keep caramel smooth.",
+  "warum_wichtig": "Explains why caramel suddenly turns sandy, and why with fudge you control crystallisation on purpose.",
+  "synonyme": [
+    "sugar turns grainy",
+    "crystallising",
+    "fondant",
+    "fudge"
+  ],
+  "faustregeln": [
+    "Do not stir while sugar is boiling. Swirl instead of stirring.",
+    "Wash crystals off the side of the pan with a wet brush.",
+    "A spoonful of glucose syrup or a little lemon juice prevents graininess."
+  ],
+  "stellschrauben": [
+    {
+      "id": "mechanik",
+      "wirkung": "stirring → crystals"
+    },
+    {
+      "id": "temperatur",
+      "wirkung": "cooling → crystallisation"
+    }
+  ]
+}

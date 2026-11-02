@@ -1,0 +1,69 @@
+{
+  "id": "keimwachstum",
+  "titel": "Bacteria and temperature: the danger zone",
+  "kurz": "Bacteria multiply fastest between about 10 and 50 °C. Cold slows them down; thorough heating kills most of them.",
+  "bild_im_kopf": "Like weeds in spring: in mild weather they grow overnight; in frost and in heat they rest.",
+  "was_passiert": "In pleasant warmth, bacteria divide every few minutes to hours. The fridge slows them down a lot but does not kill them. Only enough heat makes meat and leftovers safe: food safety authorities recommend at least 70 °C at the core. Cooked food should pass through the warm range quickly, taking at most about two hours to cool.",
+  "warum_wichtig": "Explains why poultry is cooked through, why leftovers should not sit on the stove for hours and why keeping food warm means keeping it hot.",
+  "synonyme": [
+    "food safety",
+    "danger zone",
+    "bacteria",
+    "keeping food warm",
+    "cooling leftovers",
+    "salmonella"
+  ],
+  "faustregeln": [
+    "Heat poultry, minced meat and leftovers to at least 70 °C at the core.",
+    "Keep food warm at 65 °C or more, otherwise cool it quickly.",
+    "Put leftovers in shallow containers in the fridge within two hours.",
+    "Thaw in the fridge, not on the kitchen counter."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "10–50 °C: bacteria grow fastest"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "the longer in the warm range, the more germs"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-gefluegel",
+      "text": "Always cook chicken through: at least 70 °C at the core for two minutes."
+    },
+    {
+      "welt": "w-getreide",
+      "text": "Do not leave cooked rice standing warm for long; cool it quickly."
+    }
+  ],
+  "visual": {
+    "params": {
+      "hinweis": "Guide values from food safety authorities",
+      "skala": [
+        {
+          "c": 5,
+          "name": "fridge: bacteria strongly slowed"
+        },
+        {
+          "c": 10,
+          "name": "from here: fast growth"
+        },
+        {
+          "c": 50,
+          "name": "up to here: fast growth"
+        },
+        {
+          "c": 65,
+          "name": "keep warm at least"
+        },
+        {
+          "c": 70,
+          "name": "heating: at least at the core"
+        }
+      ]
+    }
+  }
+}

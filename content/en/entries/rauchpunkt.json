@@ -1,0 +1,58 @@
+{
+  "id": "rauchpunkt",
+  "titel": "Smoke point of fat",
+  "kurz": "Above a certain temperature, fat starts to smoke and break down. It then tastes bitter and irritates the eyes and throat.",
+  "bild_im_kopf": "Like an engine revving into the red: it still runs, but it is taking damage.",
+  "was_passiert": "Every fat can only take a certain heat. Above it, its components break down, visible smoke appears and it tastes bitter. Refined oils can take more than cold-pressed ones because suspended particles have been removed. Butter burns early because its milk proteins turn black even at medium heat.",
+  "warum_wichtig": "For hard searing and deep-frying you need a fat that can take the heat. For flavour, butter goes in at the end.",
+  "synonyme": [
+    "oil smoking",
+    "butter burns",
+    "frying temperature",
+    "smoke point"
+  ],
+  "faustregeln": [
+    "For deep-frying, use refined oil, such as frying oil or high-oleic rapeseed oil.",
+    "Add butter only at the end for [[arosieren|basting]], or use clarified butter.",
+    "If it smokes, it is too hot: turn the heat down, and replace the oil if it has smoked a lot."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "above the smoke point → bitter"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-frittieren",
+      "text": "Deep-frying at 160–190 °C calls for an oil that can take a lot more."
+    },
+    {
+      "welt": "w-fleisch",
+      "text": "Sear hard in oil, then add butter and herbs at the end."
+    }
+  ],
+  "visual": {
+    "params": {
+      "hinweis": "Guide values, varying with quality",
+      "fette": [
+        {
+          "name": "butter",
+          "c": 150
+        },
+        {
+          "name": "extra virgin olive oil",
+          "c": 175
+        },
+        {
+          "name": "clarified butter",
+          "c": 200
+        },
+        {
+          "name": "refined rapeseed oil",
+          "c": 220
+        }
+      ]
+    }
+  }
+}

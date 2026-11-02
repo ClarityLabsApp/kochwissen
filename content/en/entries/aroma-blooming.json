@@ -1,0 +1,29 @@
+{
+  "id": "aroma-blooming",
+  "titel": "Spices open up in fat",
+  "kurz": "Many aromas dissolve better in fat than in water. Frying spices briefly in hot fat makes them much more intense.",
+  "bild_im_kopf": "Like putting a key in the right lock: fat unlocks the aromas.",
+  "was_passiert": "The scent compounds in spices are often fat-soluble. In hot oil they dissolve, spread through the whole dish and toast lightly. In water they stay duller.",
+  "warum_wichtig": "Explains why a curry with spices fried first tastes different from one with powder stirred in.",
+  "synonyme": [
+    "blooming",
+    "frying spices",
+    "tadka",
+    "tempering spices"
+  ],
+  "faustregeln": [
+    "Whole spices first, ground ones shortly after.",
+    "Only seconds to a minute, until it smells fragrant.",
+    "If it smokes, it is too late."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "too hot → bitter"
+    },
+    {
+      "id": "fettgehalt",
+      "wirkung": "fat carries the aromas"
+    }
+  ]
+}
