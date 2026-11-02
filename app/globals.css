@@ -458,3 +458,15 @@ article.entry > details.sec + details.sec { margin-top: calc(-1 * var(--egap) - 
 .tends { align-items: baseline; gap: 8px; }
 .tends .hint { color: var(--sepia); opacity: .8; }
 @media (max-width: 700px) { .tiles2 { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; } .tile2 span { font-size: 13px; } }
+/* Bilder in Chips, „Kommt vor bei“, Molekül-Panel, Lernpfade */
+.chip .chip-img { width: 22px; height: 22px; object-fit: contain; margin: -4px 0 -4px -4px; display: block; }
+.seen { display: flex; gap: 10px; overflow-x: auto; scrollbar-width: none; padding: 2px 0 4px; }
+.seen::-webkit-scrollbar { display: none; }
+.seen-item { flex: 0 0 104px; display: flex; flex-direction: column; gap: 4px; text-decoration: none; color: var(--ink); background: var(--paper-2); border: 1px solid var(--rule); padding: 6px 6px 8px; }
+.seen-item img { width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; }
+.seen-item span { font: 500 13px/1.25 var(--f-body); }
+.mol-panel li a img { width: 30px; height: 30px; object-fit: contain; flex: none; margin: -4px 0; }
+.mol-panel li a .t { flex: 1; }
+.mol-panel li a { align-items: center; }
+.pfad-pics { display: flex; gap: 4px; margin: -4px 0 2px; }
+.pfad-pics img { width: 52px; height: 52px; object-fit: contain; }

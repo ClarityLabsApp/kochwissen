@@ -24,7 +24,7 @@ const BONDS: [string, string][] = [["prozess", "zutat"], ["prozess", "technik"],
   ["zutat", "labor"], ["zutat", "gericht"], ["technik", "gericht"], ["technik", "ziel"], ["technik", "symptom"], ["stellschraube", "symptom"], ["stellschraube", "experiment"]];
 const R = [0, 92, 158], CX = 200, CY = 190, W = 400, H = 384;
 
-export default function Molecule({ items, lang = "de", onAll }: { items: LibItem[]; lang?: Lang; onAll: (typ: string) => void }) {
+export default function Molecule({ items, lang = "de", onAll, pics }: { items: LibItem[]; lang?: Lang; onAll: (typ: string) => void; pics?: Set<string> }) {
   const T = t(lang), M = T.mol, ln = (p: string) => href(lang, p);
   const [sel, setSel] = useState("prozess");
   const byId = useMemo(() => new Map(items.map((e) => [e.id, e])), [items]);
@@ -66,7 +66,10 @@ export default function Molecule({ items, lang = "de", onAll }: { items: LibItem
       <section className="mol-panel" style={{ ["--c" as string]: `var(--t-${sel})` }} aria-live="polite">
         <h3>{T.types[sel][0]} <small>{M.entries(count(sel))}</small></h3>
         <p className="q">{T.types[sel][1]}</p>
-        <ul>{examples.map((e) => <li key={e.id}><Link href={ln(`/eintrag/${e.id}`)}>{e.titel}</Link></li>)}</ul>
+        <ul>{examples.map((e) => <li key={e.id}><Link href={ln(`/eintrag/${e.id}`)}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          {pics?.has(e.id) && <img src={`/illustrationen/${e.id}.webp`} alt="" width={30} height={30} loading="lazy" />}
+          <span className="t">{e.titel}</span></Link></li>)}</ul>
         <button type="button" className="mol-all" onClick={() => onAll(sel)}>{M.all(count(sel), T.types[sel][0])}</button>
       </section>
     </div>

@@ -4,7 +4,8 @@
     "w-fisch"
   ],
   "visual": {
-    "vorlage": "entscheidungsbaum"
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a fish fillet with its skin torn and stuck to a pan, flakes left behind on the metal"
   },
   "id": "fisch-klebt",
   "titel": "Fisch klebt an der Pfanne",

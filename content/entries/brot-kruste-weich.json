@@ -87,7 +87,8 @@
     "w-brot"
   ],
   "visual": {
-    "vorlage": "entscheidungsbaum"
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a crusty loaf whose crust has gone soft and wrinkled, slightly sagging"
   },
   "quellen": [
     {

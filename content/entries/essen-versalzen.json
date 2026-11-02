@@ -2,7 +2,8 @@
   "typ": "symptom",
   "welten": [],
   "visual": {
-    "vorlage": "entscheidungsbaum"
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a pot of stew with a salt shaker lying tipped over beside it, salt spilled on the table"
   },
   "id": "essen-versalzen",
   "titel": "Essen ist versalzen",

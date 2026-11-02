@@ -30,7 +30,7 @@ const THEMES: [string, string, string[]][] = [
   ["Geschmack", "Taste", ["umami", "salz-geschmack", "schaerfe"]],
 ];
 const DAILY = new Set(["prozess", "gericht", "experiment", "labor"]);
-export interface PfadCard { id: string; titel: string; n: number; dauer: string; fuer: string }
+export interface PfadCard { id: string; titel: string; n: number; dauer: string; fuer: string; pics?: string[] }
 
 /** Bild für einen Eintrag: das eigene, sonst das seiner Welt. */
 function pictureOf(e: LibItem, has: Set<string>): string | null {
@@ -164,6 +164,10 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
           <div className="pfad-row">
             {pfade.map((p) => (
               <Link key={p.id} href={ln(`/pfad/${p.id}`)} className="pfad-card">
+                {p.pics?.length ? <span className="pfad-pics">{p.pics.map((x) => (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img key={x} src={`/illustrationen/${x}.webp`} alt="" width={52} height={52} loading="lazy" />
+                ))}</span> : null}
                 <span className="mono">{T.steps(p.n)} · {p.dauer}</span>
                 <strong>{p.titel}</strong>
                 <span className="f">{p.fuer}</span>
@@ -190,7 +194,7 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
       <h2 id="bibliothek" className={`libhead${!res && active.size > 0 ? " cat" : ""}`}>{res ? S.allHits : active.size ? T.types[[...active][0]][0] : S.whole}</h2>
       {!res && !active.size && (
         <>
-          <Molecule items={items} lang={lang} onAll={openType} />
+          <Molecule items={items} lang={lang} onAll={openType} pics={has} />
           <div className="mol-terms">
             <button type="button" className="linkbtn" onClick={() => openType("begriff")}>{T.mol.terms} ({items.filter((e) => e.typ === "begriff").length}) →</button>
           </div>

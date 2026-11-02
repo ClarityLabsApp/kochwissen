@@ -138,3 +138,31 @@ export function lernpfade(lang: Lang = "de"): Pfad[] {
 export const getPfad = (id: string, lang: Lang = "de") => lernpfade(lang).find((p) => p.id === id);
 /** Klartext ohne Glossar-Markierungen, für Listen und Popups. */
 export const plainText = (s: string, lang: Lang = "de") => s.replace(/\[\[[a-z0-9-]+\|([^\]]+)\]\]/g, "$1").replace(/\[\[([a-z0-9-]+)\]\]/g, (_, id: string) => titleOf(id, lang));
+
+/* ---------- Bilder ---------- */
+let picSet: Set<string> | null = null;
+/** Hat dieser Eintrag ein eigenes Aquarell in public/illustrationen? */
+export function hasPicture(id: string) {
+  if (!picSet) {
+    try { picSet = new Set(readdirSync(join(root, "public/illustrationen")).filter((f) => f.endsWith(".webp")).map((f) => f.slice(0, -5))); }
+    catch { picSet = new Set(); }
+  }
+  return picSet.has(id);
+}
+const SHOW_TYPES: Typ[] = ["gericht", "labor", "experiment", "zutat"];
+/** Gerichte, Labor-Rezepte, Experimente und Zutaten mit Bild, die mit diesem Eintrag verknüpft sind (in beide Richtungen). */
+export function appearsIn(id: string, max = 8): string[] {
+  const { entries } = load();
+  const self = entries.get(id);
+  const out = new Set<string>();
+  const ok = (x: string) => x !== id && SHOW_TYPES.includes(typOf(x) as Typ) && hasPicture(x);
+  for (const e of entries.values()) {
+    if (!ok(e.id)) continue;
+    const refs = e.links?.includes(id) || e.schluesselmomente?.some((s) => s.prinzip === id) || e.rolle?.some((r) => r.prozess === id) || JSON.stringify(e).includes(`[[${id}`);
+    if (refs) out.add(e.id);
+  }
+  for (const x of self?.links ?? []) if (ok(x)) out.add(x);
+  const mine = new Set(self?.links ?? []);
+  const order = (x: string) => (mine.has(x) ? 0 : 10) + SHOW_TYPES.indexOf(typOf(x) as Typ);
+  return [...out].sort((a, b) => order(a) - order(b)).slice(0, max);
+}

@@ -9,7 +9,7 @@ import Visual, { plain } from "@/components/visuals/Visual";
 import StepFlow from "@/components/visuals/StepFlow";
 import PathNav from "@/components/PathNav";
 import PrintButton from "@/components/PrintButton";
-import { getEntry, getMasterItem, isTranslated, lernpfade, plainText, titleOf, typOf, type Typ } from "@/lib/content";
+import { appearsIn, getEntry, getMasterItem, hasPicture, isTranslated, lernpfade, plainText, titleOf, typOf, type Typ } from "@/lib/content";
 import { href, t, type Lang } from "@/lib/i18n";
 
 /** Seitentitel, Beschreibung und Vorschaubild eines Eintrags. */
@@ -31,7 +31,10 @@ export function entryMetadata(id: string, lang: Lang): Metadata {
 function Chips({ ids, lang, max = 6 }: { ids: string[]; lang: Lang; max?: number }) {
   const chip = (id: string) => (
     <Link key={id} href={href(lang, `/eintrag/${id}`)} className={`chip${getEntry(id) ? "" : " planned"}`}>
-      <i style={{ background: `var(--t-${typOf(id)})` }} />{titleOf(id, lang)}
+      {hasPicture(id)
+        // eslint-disable-next-line @next/next/no-img-element
+        ? <img className="chip-img" src={`/illustrationen/${id}.webp`} alt="" width={22} height={22} loading="lazy" />
+        : <i style={{ background: `var(--t-${typOf(id)})` }} />}{titleOf(id, lang)}
     </Link>
   );
   const rest = ids.slice(max);
@@ -98,6 +101,19 @@ export default function EntryView({ id, lang }: { id: string; lang: Lang }) {
     </details>
   ) : null;
   const untranslated = lang === "en" && !isTranslated(id);
+  // Einträge ohne eigenes Bild zeigen, bei welchen Gerichten, Zutaten und Rezepten man ihnen begegnet.
+  const seen = hasIllu || ["gericht", "labor", "experiment", "zutat", "welt"].includes(typ) ? [] : appearsIn(id);
+  const seenStrip = seen.length >= 2 ? (
+    <div className="block"><span className="mono">{L.seenIn}</span>
+      <div className="seen">{seen.map((x) => (
+        <Link key={x} href={ln(`/eintrag/${x}`)} className="seen-item">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={`/illustrationen/${x}.webp`} alt="" width={96} height={96} loading="lazy" />
+          <span>{titleOf(x, lang)}</span>
+        </Link>
+      ))}</div>
+    </div>
+  ) : null;
 
   return (
     <main className="wrap" lang={untranslated ? "de" : lang}>
@@ -111,6 +127,7 @@ export default function EntryView({ id, lang }: { id: string; lang: Lang }) {
         {e.bedeutung && <div className="block"><h2>{L.means(e.titel)}</h2><div className="prose"><p><R text={e.bedeutung} /></p></div></div>}
         {e.was_passiert && <div className="block"><h2>{L.happens}</h2><div className="prose"><p><R text={e.was_passiert} /></p></div></div>}
         {e.warum_wichtig && <div className="block"><h2>{L.why}</h2><div className="prose"><p><R text={e.warum_wichtig} /></p></div></div>}
+        {seenStrip}
         {(e.typ === "experiment" || e.typ === "labor") && e.material?.length ? (
           <div className="exp"><div className="exp-head"><span className="mono">{L.need}{e.dauer ? ` · ${e.dauer}` : ""}</span><PrintButton label={L.print} /></div>
             <ul className="plain">{e.material.map((x) => <li key={x}>{x}</li>)}</ul>
@@ -180,7 +197,7 @@ export default function EntryView({ id, lang }: { id: string; lang: Lang }) {
         {(() => {
           // Was schon im Text verlinkt ist, steht nicht noch einmal als Chip darunter.
           const inText = new Set([...JSON.stringify(e).matchAll(/\[\[([a-z0-9-]+)/g)].map((m) => m[1]));
-          const rest = (e.links ?? []).filter((id) => !inText.has(id));
+          const rest = (e.links ?? []).filter((id) => !inText.has(id) && !seen.includes(id));
           return rest.length ? <div className="block"><span className="mono">{L.related}</span><Chips ids={rest} lang={lang} /></div> : null;
         })()}
         {e.quellen?.length ? (

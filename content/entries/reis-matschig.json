@@ -4,7 +4,8 @@
     "w-getreide"
   ],
   "visual": {
-    "vorlage": "entscheidungsbaum"
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a bowl of sticky, mushy, overcooked rice clumped together"
   },
   "id": "reis-matschig",
   "titel": "Reis wird matschig",

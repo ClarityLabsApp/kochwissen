@@ -2,7 +2,8 @@
   "typ": "symptom",
   "welten": [],
   "visual": {
-    "vorlage": "entscheidungsbaum"
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a plain bowl of pale vegetable soup next to an untouched lemon half and salt cellar"
   },
   "id": "essen-flach",
   "titel": "Essen schmeckt flach",

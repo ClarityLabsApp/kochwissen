@@ -4,7 +4,8 @@
     "w-gebaeck"
   ],
   "visual": {
-    "vorlage": "entscheidungsbaum"
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a crumbly dry slice of cake falling apart into crumbs on a plate"
   },
   "id": "kuchen-trocken",
   "titel": "Kuchen ist trocken",

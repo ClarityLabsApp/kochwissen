@@ -4,7 +4,8 @@
     "w-fisch"
   ],
   "visual": {
-    "vorlage": "entscheidungsbaum"
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a cooked fish fillet broken into flakes on a spatula, falling apart"
   },
   "id": "fisch-zerfaellt",
   "titel": "Fisch zerfällt",

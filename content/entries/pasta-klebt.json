@@ -4,7 +4,8 @@
     "w-pasta"
   ],
   "visual": {
-    "vorlage": "entscheidungsbaum"
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a clump of spaghetti stuck together in a single tangled mass on a fork"
   },
   "id": "pasta-klebt",
   "titel": "Pasta klebt zusammen",

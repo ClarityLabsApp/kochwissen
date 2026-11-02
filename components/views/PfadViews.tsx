@@ -4,6 +4,7 @@ import PathSteps from "@/components/PathSteps";
 import Quiz from "@/components/Quiz";
 import { getEntry, getPfad, lernpfade, plainText, titleOf, typOf } from "@/lib/content";
 import { href, t, type Lang } from "@/lib/i18n";
+import { pfadPics } from "./HomeView";
 
 export function PfadeView({ lang }: { lang: Lang }) {
   const P = t(lang).path;
@@ -17,6 +18,10 @@ export function PfadeView({ lang }: { lang: Lang }) {
       <div className="pfad-cards">
         {lernpfade(lang).map((p) => (
           <Link key={p.id} href={href(lang, `/pfad/${p.id}`)} className="pfad-card">
+            <span className="pfad-pics">{pfadPics(p.schritte.map((x) => x.id)).map((x) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img key={x} src={`/illustrationen/${x}.webp`} alt="" width={52} height={52} loading="lazy" />
+            ))}</span>
             <span className="mono">{t(lang).steps(p.schritte.length)} · {p.dauer}</span>
             <strong>{p.titel}</strong>
             <span className="k">{p.kurz}</span>

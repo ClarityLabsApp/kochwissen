@@ -40,7 +40,8 @@
     "w-brot"
   ],
   "visual": {
-    "vorlage": "punktmatrix"
+    "vorlage": "punktmatrix",
+    "illustration": "a loaf of bread wrapped in a linen cloth next to a bread box"
   },
   "quellen": [
     {
