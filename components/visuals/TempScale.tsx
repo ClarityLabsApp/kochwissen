@@ -18,7 +18,7 @@ function zoneColor(c: number) {
  * und eine Zeile, die sagt, was bei dieser Temperatur gerade passiert.
  * Läuft beim Öffnen einmal von kalt nach heiß durch.
  */
-export default function TempScale({ marks, title, note, unitMax, lang = "de" }: { marks: Mark[]; title?: string; note?: string; unitMax?: number; lang?: Lang }) {
+export default function TempScale({ marks, title, note, unitMax, smoke = false, lang = "de" }: { marks: Mark[]; title?: string; note?: string; unitMax?: number; smoke?: boolean; lang?: Lang }) {
   const V = ui(lang).vis;
   const sorted = useMemo(() => [...marks].sort((a, b) => a.c - b.c), [marks]);
   const max = unitMax ?? Math.max(120, Math.ceil((sorted[sorted.length - 1]?.c ?? 100) * 1.15 / 10) * 10);
@@ -33,9 +33,9 @@ export default function TempScale({ marks, title, note, unitMax, lang = "de" }: 
   useEffect(() => {
     if (touched || !seen) return;
     if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) { setT(sorted[Math.floor(sorted.length / 2)]?.c ?? max / 2); return; }
-    const stops = [{ v: lo0, hold: readMs(V.below(sorted[0]?.c ?? 0)) },
+    const stops = [{ v: lo0, hold: 700 },
       ...sorted.map((m, i) => ({ v: m.c, hold: readMs(m.name + (sorted[i + 1]?.name ?? "")) }))];
-    return tour(lo0, stops, (v) => setT(Math.round(v)), 1800);
+    return tour(lo0, stops, (v) => setT(Math.round(v)), 1400);
   }, [touched, sorted, max, seen, run]);
 
   const lo = Math.max(0, Math.floor(((sorted[0]?.c ?? 0) * 0.6) / 10) * 10);
@@ -73,8 +73,10 @@ export default function TempScale({ marks, title, note, unitMax, lang = "de" }: 
         ))}
       </ol>
       <p className="vis-status">
-        {current ? <>{V.at(t)} <strong>{current.name}</strong>.</> : <>{V.below(sorted[0]?.c ?? 0)}</>}
-        {next ? <> {V.from(next.c)} {next.name}.</> : null}
+        {smoke
+          ? (reached.length ? <>{V.smokeAt(t)} <strong>{reached.map((m) => m.name).join(", ")}</strong>.</> : <>{V.smokeBelow(sorted[0]?.c ?? 0)}</>)
+          : (current ? <>{V.at(t)} <strong>{current.name}</strong>.</> : <>{V.below(sorted[0]?.c ?? 0)}</>)}
+        {next ? <> {smoke ? (reached.length ? V.smokeFrom(next.c) : V.smokeFirst(next.c)) : V.from(next.c)} {next.name}.</> : null}
       </p>
       <div className="vis-row">{note && <span className="mono">{note}</span>}<button type="button" className="vis-btn" style={{ marginLeft: "auto" }} onClick={() => { setTouched(false); setT(lo); setRun((r) => r + 1); }}>{V.again}</button></div>
     </div>

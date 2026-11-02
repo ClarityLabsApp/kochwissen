@@ -3,8 +3,8 @@
   "titel": "Fat goes rancid (oxidation)",
   "kurz": "Oxygen, light and heat break fats down over time into unpleasant-smelling substances.",
   "bild_im_kopf": "Like rust on metal, only with fat.",
-  "was_passiert": "Unsaturated fats, as found in nuts, wholemeal flour and many oils, react slowly with oxygen. Light and heat speed this up. Substances form that smell of paint or cardboard.",
-  "warum_wichtig": "Explains why nuts, wholemeal flour and linseed oil should be stored somewhere cool and dark.",
+  "was_passiert": "Unsaturated fats react slowly with oxygen. Light and heat speed this up. Substances form that smell of paint or cardboard: the fat turns rancid. Such fats are not only found in oils. Nuts are largely made of oil, and wholemeal flour contains the oily germ of the grain. White flour is milled without the germ and therefore keeps much longer.",
+  "warum_wichtig": "Explains why oils, nuts and wholemeal flour go rancid and should be stored cool and dark, while white flour hardly does.",
   "synonyme": [
     "rancid",
     "stale-smelling oil",
@@ -12,7 +12,7 @@
   ],
   "faustregeln": [
     "Store oils cool and dark.",
-    "Buy nuts and wholemeal flour in moderation, or freeze them.",
+    "Buy nuts and wholemeal flour only in amounts you will use within a few weeks, or freeze them: their fat turns rancid over time.",
     "Go by smell rather than by date."
   ],
   "stellschrauben": [
