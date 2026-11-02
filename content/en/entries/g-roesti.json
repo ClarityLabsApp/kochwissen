@@ -1,0 +1,34 @@
+{
+  "id": "g-roesti",
+  "titel": "Rösti",
+  "kurz": "Rösti turns crisp when the starch plays along: boiled potatoes from the day before, a hot pan, patience.",
+  "bild_im_kopf": "Like a cake of potato strands that the starch glues together and the heat crusts on the outside.",
+  "synonyme": [
+    "rösti",
+    "roesti",
+    "Swiss hash browns",
+    "potato rösti"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Boil potatoes in their skins the day before and let them cool",
+      "warum": "Cooled starch firms up. The shreds do not fall apart or stick into a mash.",
+      "prinzip": "retrogradation"
+    },
+    {
+      "schritt": "Grate coarsely and salt only just before frying",
+      "warum": "Salt draws out water. Salted too early, the shreds turn wet.",
+      "prinzip": "osmose"
+    },
+    {
+      "schritt": "Press flat in hot butter or clarified butter",
+      "warum": "Contact with the hot surface and fat: the underside browns evenly.",
+      "prinzip": "maillard-reaktion"
+    },
+    {
+      "schritt": "Do not move it until the edge releases, then turn",
+      "warum": "The crust releases by itself when it is ready. Before that, it tears.",
+      "prinzip": "knusprig"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "g-hollandaise",
+  "titel": "Hollandaise sauce",
+  "kurz": "Hollandaise is a warm [[emulsion|emulsion]] with egg yolk, balancing between two mistakes: too cold and it splits, too hot and the egg curdles.",
+  "bild_im_kopf": "Like a tightrope walk between scrambled egg and a puddle of butter.",
+  "synonyme": [
+    "hollandaise",
+    "béarnaise"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Whisk egg yolk with a little water and acid over a water bath",
+      "warum": "The yolk thickens gently and traps air.",
+      "prinzip": "eiweiss-gerinnung"
+    },
+    {
+      "schritt": "Keep lifting it off the water bath",
+      "warum": "Above about 70 °C the yolk turns grainy.",
+      "prinzip": "wasserbad"
+    },
+    {
+      "schritt": "Slowly whisk in warm, melted butter",
+      "warum": "The yolk cream emulsifies the butter into fine droplets.",
+      "prinzip": "emulsion"
+    },
+    {
+      "schritt": "Serve warm, not hot",
+      "warum": "Too hot and it curdles; too cold and the butter sets.",
+      "prinzip": "hollandaise-flockt"
+    }
+  ]
+}

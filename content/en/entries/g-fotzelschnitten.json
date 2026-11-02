@@ -1,0 +1,33 @@
+{
+  "id": "g-fotzelschnitten",
+  "titel": "Fotzelschnitten (Swiss French toast)",
+  "kurz": "Fotzelschnitten are stale bread soaked in egg and milk and fried golden brown. It works precisely because the bread is old.",
+  "bild_im_kopf": "Like a dry sponge: only something thirsty soaks itself properly full.",
+  "synonyme": [
+    "French toast",
+    "pain perdu",
+    "eggy bread",
+    "Fotzelschnitten"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Slice stale bread or braided loaf",
+      "warum": "Old bread is firmer because the starch has reorganised. It soaks up the egg mixture without falling apart.",
+      "prinzip": "retrogradation"
+    },
+    {
+      "schritt": "Soak in egg and milk with a little sugar",
+      "warum": "The liquid reaches the centre. The egg sets as it fries and holds everything together.",
+      "prinzip": "eiweiss-gerinnung"
+    },
+    {
+      "schritt": "Fry in butter over medium heat until golden brown",
+      "warum": "Sugar, egg and milk brown quickly. Medium heat gives the inside time to set.",
+      "prinzip": "maillard-reaktion"
+    },
+    {
+      "schritt": "Sprinkle with cinnamon sugar",
+      "warum": "Cinnamon and sugar stick to the warm butter."
+    }
+  ]
+}

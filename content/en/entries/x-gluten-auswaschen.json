@@ -1,0 +1,50 @@
+{
+  "id": "x-gluten-auswaschen",
+  "titel": "Making gluten visible",
+  "kurz": "Wash a ball of dough under water and the [[glutenbildung|gluten network]] is what remains: a tough, rubbery lump.",
+  "bild_im_kopf": "Like panning for gold in a stream: wash away the sand and the valuable part is left.",
+  "beobachtung": "The water turns milky white. What remains is a small, very stretchy, rubbery lump.",
+  "erklaerung": "The milky part is washed-out starch; the lump is pure gluten. Pull it apart: that is how it holds the gas bubbles in bread.",
+  "dauer": "40 minutes",
+  "synonyme": [
+    "washing out gluten",
+    "gluten experiment"
+  ],
+  "schritte": [
+    "Knead flour and water into a dough and rest it for 20 minutes.",
+    "Knead and squeeze the ball of dough in the bowl of water.",
+    "Change the cloudy water until it stays almost clear."
+  ],
+  "material": [
+    "100 g white flour",
+    "60 ml water",
+    "a bowl of water"
+  ],
+  "visual": {
+    "params": {
+      "vorher": "ball of dough in water",
+      "nachher": "washed out",
+      "vergleich": [
+        {
+          "label": "bowl",
+          "gefaess": "schuessel",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#eaf1f4",
+            "fuell": 0.8,
+            "trueb": 0,
+            "klumpen": 1,
+            "klumpenfarbe": "#ecdcb4"
+          },
+          "nachher": {
+            "farbe": "#eaf1f4",
+            "fuell": 0.8,
+            "trueb": 0.8,
+            "klumpen": 0.35,
+            "klumpenfarbe": "#c9b07a"
+          }
+        }
+      ]
+    }
+  }
+}

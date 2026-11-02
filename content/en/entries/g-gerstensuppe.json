@@ -1,0 +1,33 @@
+{
+  "id": "g-gerstensuppe",
+  "titel": "Graubünden barley soup",
+  "kurz": "Graubünden barley soup turns thick and silky because the barley releases starch during long simmering. Bacon and air-dried beef bring the depth.",
+  "bild_im_kopf": "Like a fire slowly turning to embers: only after hours is the full warmth there.",
+  "synonyme": [
+    "barley soup",
+    "Bündner soup",
+    "pearl barley soup"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Sweat bacon and diced vegetables in a little fat",
+      "warum": "The fat from the bacon carries the aromas through the whole dish.",
+      "prinzip": "aroma-loeslichkeit"
+    },
+    {
+      "schritt": "Add barley, top up with water or stock and simmer gently for 1–2 hours",
+      "warum": "The barley grains gradually release starch and thicken the soup.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Cook air-dried or smoked beef in it",
+      "warum": "Aged, dried meat brings a lot of [[umami|umami]] to the broth.",
+      "prinzip": "umami"
+    },
+    {
+      "schritt": "Finish with cream and adjust the seasoning",
+      "warum": "Fat rounds it off. Salt only at the end, because the soup reduces as it cooks.",
+      "prinzip": "reduktion"
+    }
+  ]
+}

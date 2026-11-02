@@ -1,0 +1,33 @@
+{
+  "id": "g-kaesefondue",
+  "titel": "Cheese fondue",
+  "kurz": "Fondue is a cheese [[emulsion|emulsion]]. Wine and starch hold it together; too much heat makes it fall apart into fat and strings.",
+  "bild_im_kopf": "Like a sauce that only holds together in its comfort zone.",
+  "synonyme": [
+    "fondue",
+    "moitié-moitié",
+    "Swiss fondue"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Grate the cheese finely and mix it with a little cornflour",
+      "warum": "Starch coats the protein and prevents lumps.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Heat white wine and stir in the cheese in batches",
+      "warum": "The acid in the wine keeps the cheese protein supple.",
+      "prinzip": "saeure"
+    },
+    {
+      "schritt": "Only simmer gently, stirring constantly (in a figure of eight)",
+      "warum": "Too much heat makes the protein contract and the fat seep out.",
+      "prinzip": "eiweiss-gerinnung"
+    },
+    {
+      "schritt": "If it splits: a splash of lemon and a little starch slurry",
+      "warum": "Acid and starch bring the emulsion back.",
+      "prinzip": "emulsion"
+    }
+  ]
+}

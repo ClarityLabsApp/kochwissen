@@ -1,0 +1,39 @@
+{
+  "id": "g-steak",
+  "titel": "Pan-fried steak",
+  "kurz": "A good steak needs two things at once: a dry, very hot surface for the crust and a gently warmed inside.",
+  "bild_im_kopf": "A grill outside, a bathtub inside.",
+  "synonyme": [
+    "beef steak",
+    "entrecôte",
+    "frying rib-eye",
+    "sirloin"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Salt the day before and chill uncovered",
+      "warum": "Salt soaks in and holds water; the surface dries.",
+      "prinzip": "trockensalzen"
+    },
+    {
+      "schritt": "Pat dry and preheat the pan hard",
+      "warum": "Only a dry surface in a hot pan browns.",
+      "prinzip": "maillard-reaktion"
+    },
+    {
+      "schritt": "Turn as soon as it releases; cook with a thermometer",
+      "warum": "The [[kerntemperatur|core temperature]] decides between juicy and dry.",
+      "prinzip": "eiweiss-denaturierung"
+    },
+    {
+      "schritt": "At the end, butter, garlic and thyme for basting",
+      "warum": "Foaming butter adds aroma and extra browning.",
+      "prinzip": "arosieren"
+    },
+    {
+      "schritt": "Rest briefly and slice across the grain",
+      "warum": "Less juice runs out, and shorter fibres feel more tender.",
+      "prinzip": "ruhen-lassen"
+    }
+  ]
+}

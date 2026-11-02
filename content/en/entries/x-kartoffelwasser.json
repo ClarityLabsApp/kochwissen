@@ -1,0 +1,46 @@
+{
+  "id": "x-kartoffelwasser",
+  "titel": "Cloudy potato water",
+  "kurz": "Cut potatoes release starch into the water, and you can even see it.",
+  "bild_im_kopf": "Like flour dust settling in a glass: what floated invisibly in the water slowly sinks to the bottom.",
+  "beobachtung": "The water is cloudy, and a white layer settles at the bottom of the glass.",
+  "erklaerung": "That is starch that fell out of the cells when cutting. Rinsed off, it no longer sticks to the surface, which is why soaked chips turn crispier.",
+  "dauer": "1½ hours",
+  "synonyme": [
+    "making potato starch visible",
+    "starch experiment"
+  ],
+  "schritte": [
+    "Cut a potato into sticks and put them in water.",
+    "After 30 minutes take the sticks out.",
+    "Pour the water into a glass and leave it for an hour."
+  ],
+  "material": [
+    "a potato",
+    "bowl of cold water",
+    "a glass"
+  ],
+  "visual": {
+    "params": {
+      "vorher": "fresh",
+      "nachher": "after an hour",
+      "vergleich": [
+        {
+          "label": "water from the potato sticks",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#eaf1f4",
+            "trueb": 0,
+            "bodensatz": 0
+          },
+          "nachher": {
+            "farbe": "#eaf1f4",
+            "trueb": 0.55,
+            "bodensatz": 0.9
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "g-zopf",
+  "titel": "Zopf (Swiss braided bread)",
+  "kurz": "Zopf is a rich yeast dough: butter and milk make it tender and golden brown, but slow the yeast.",
+  "bild_im_kopf": "A bread in its Sunday best: softer, sweeter, shinier.",
+  "synonyme": [
+    "Zopf",
+    "braided loaf",
+    "Sunday bread",
+    "butter plait"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Knead the dough well until smooth",
+      "warum": "Butter weakens the network, so it needs kneading in order to rise all the same.",
+      "prinzip": "glutenbildung"
+    },
+    {
+      "schritt": "Let it prove a little longer than bread",
+      "warum": "Butter and sugar slow the yeast down.",
+      "prinzip": "hefegaerung"
+    },
+    {
+      "schritt": "Braid and let it prove briefly again",
+      "warum": "The strands relax and rise.",
+      "prinzip": "ruhezeit"
+    },
+    {
+      "schritt": "Brush with egg and bake",
+      "warum": "Protein and sugar brown and shine.",
+      "prinzip": "maillard-reaktion"
+    }
+  ]
+}

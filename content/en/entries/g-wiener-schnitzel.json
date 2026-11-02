@@ -1,0 +1,33 @@
+{
+  "id": "g-wiener-schnitzel",
+  "titel": "Wiener schnitzel",
+  "kurz": "The puffed-up coating forms because steam from the meat lifts the breadcrumbs while they turn crisp in the hot fat.",
+  "bild_im_kopf": "Like a tent billowing up over the meat.",
+  "synonyme": [
+    "schnitzel",
+    "breaded schnitzel",
+    "veal schnitzel"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Pound thin",
+      "warum": "Thin meat is cooked before the coating burns.",
+      "prinzip": "waermeleitung"
+    },
+    {
+      "schritt": "Flour, egg, breadcrumbs, without pressing them on",
+      "warum": "A loose coating can lift away from the meat and form waves.",
+      "prinzip": "panieren"
+    },
+    {
+      "schritt": "Fry floating in plenty of hot fat, swirling the pan",
+      "warum": "Hot fat runs over the top. Steam from the meat puffs up the coating.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "Drain briefly on kitchen paper or a rack",
+      "warum": "Draining stops the coating from drawing in more fat.",
+      "prinzip": "frittiertes-fettig"
+    }
+  ]
+}

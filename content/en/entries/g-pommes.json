@@ -1,0 +1,34 @@
+{
+  "id": "g-pommes",
+  "titel": "Chips (French fries)",
+  "kurz": "Crisp chips come from two baths: first cook, then dry and brown.",
+  "bild_im_kopf": "First primer, then varnish.",
+  "synonyme": [
+    "chips",
+    "fries",
+    "French fries",
+    "frites"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Cut and soak in cold water",
+      "warum": "Rinses off the loose starch film that sticks and browns too early.",
+      "prinzip": "kaltwasserbad"
+    },
+    {
+      "schritt": "Dry very well",
+      "warum": "Water on the surface costs heat and spits.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "Pre-fry pale at about 160 °C and let cool",
+      "warum": "The inside cooks and a thin skin forms.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Fry at about 190 °C until golden brown",
+      "warum": "The skin dries out quickly and turns crisp.",
+      "prinzip": "zweimal-frittieren"
+    }
+  ]
+}

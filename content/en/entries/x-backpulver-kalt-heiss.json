@@ -1,0 +1,61 @@
+{
+  "id": "x-backpulver-kalt-heiss",
+  "titel": "Baking powder: cold versus hot",
+  "kurz": "Baking powder fizzes twice: once when it gets wet, and again in the heat.",
+  "bild_im_kopf": "Like an alarm clock with a snooze button: it rings briefly when mixed, and then properly in the hot oven.",
+  "beobachtung": "In the cold glass it fizzes a little; in the hot one, much more.",
+  "erklaerung": "Baking powder contains two acids: one reacts with water straight away, the other only with heat. That way the cake rises properly exactly when it is in the oven.",
+  "dauer": "5 minutes",
+  "sicherheit": "Hot water: adults do the pouring.",
+  "synonyme": [
+    "baking powder experiment",
+    "testing raising agents"
+  ],
+  "schritte": [
+    "Put a teaspoon of baking powder in each glass.",
+    "Pour cold water into the first and hot water into the second.",
+    "Watch where it fizzes more."
+  ],
+  "material": [
+    "baking powder",
+    "two glasses",
+    "cold water",
+    "hot water"
+  ],
+  "visual": {
+    "params": {
+      "vorher": "baking powder in",
+      "nachher": "after 1 minute",
+      "vergleich": [
+        {
+          "label": "cold water",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#eaf1f4",
+            "blasen": 0
+          },
+          "nachher": {
+            "farbe": "#eaf1f4",
+            "blasen": 0.3,
+            "schaum": 0.1
+          }
+        },
+        {
+          "label": "hot water",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#eaf1f4",
+            "blasen": 0
+          },
+          "nachher": {
+            "farbe": "#eaf1f4",
+            "blasen": 1,
+            "schaum": 0.7
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "x-butter-schuetteln",
+  "titel": "Shake your own butter",
+  "kurz": "Cream turns into butter if you shake it long enough.",
+  "bild_im_kopf": "Like dance couples finally finding each other after a long crush: at first each fat droplet floats alone, then everything sticks together.",
+  "beobachtung": "First the cream turns foamy, then firm, then it suddenly separates into a yellow lump and white buttermilk.",
+  "erklaerung": "Shaking tears open the shells of the fat droplets, and they stick together into ever larger lumps. That is exactly what happens when whipped cream is whipped too long.",
+  "dauer": "20 minutes",
+  "synonyme": [
+    "making butter with kids",
+    "shaking cream"
+  ],
+  "schritte": [
+    "Pour the cream into the jar and close it tightly.",
+    "Shake hard for about 10–15 minutes, taking turns.",
+    "When a lump and liquid separate, pour off the liquid.",
+    "Rinse the butter with cold water and salt it."
+  ],
+  "material": [
+    "200 ml cold double cream",
+    "a screw-top jar",
+    "a pinch of salt"
+  ],
+  "visual": {
+    "params": {
+      "vorher": "cream",
+      "nachher": "after 15 minutes",
+      "vergleich": [
+        {
+          "label": "screw-top jar",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#fbf7ec",
+            "fuell": 0.55,
+            "klumpen": 0,
+            "klumpenfarbe": "#f2d36b"
+          },
+          "nachher": {
+            "farbe": "#f3f0e6",
+            "fuell": 0.35,
+            "klumpen": 1,
+            "klumpenfarbe": "#f2d36b"
+          }
+        }
+      ]
+    }
+  }
+}

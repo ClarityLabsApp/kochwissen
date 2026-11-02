@@ -1,0 +1,34 @@
+{
+  "id": "g-aelplermagronen",
+  "titel": "Älplermagronen (Alpine macaroni)",
+  "kurz": "Älplermagronen turn creamy because pasta and potatoes cook in the same water and their starch binds the sauce.",
+  "bild_im_kopf": "Like a stew that cooks its own sauce: what the ingredients give off holds everything together in the end.",
+  "synonyme": [
+    "Alpine macaroni",
+    "Swiss mac and cheese",
+    "Älplermagronen",
+    "herdsman's macaroni"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Cook diced potatoes and macaroni in the same pot",
+      "warum": "Both release starch into the water. Some of this water later binds the cream and cheese.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Fry onion rings slowly in butter until golden brown",
+      "warum": "Slowly, the onion's sugar [[karamellisierung|caramelises]]; fast, it burns on the outside.",
+      "prinzip": "karamellisierung"
+    },
+    {
+      "schritt": "Drain, keep some cooking water, mix with cream and grated cheese",
+      "warum": "Starch from the cooking water holds cheese fat and cream together, so the sauce stays creamy rather than greasy.",
+      "prinzip": "emulsion"
+    },
+    {
+      "schritt": "Serve with apple purée",
+      "warum": "The apple's acidity cuts through fat and cheese and makes the heavy dish fresher.",
+      "prinzip": "abschmecken-saeure"
+    }
+  ]
+}

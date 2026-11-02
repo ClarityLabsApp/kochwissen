@@ -1,0 +1,33 @@
+{
+  "id": "g-ofengemuese",
+  "titel": "Roast vegetables",
+  "kurz": "Roast vegetables turn sweet and browned rather than steamed when they go into the oven dry, spaced out and hot.",
+  "bild_im_kopf": "Hanging out washing rather than drying it in a heap.",
+  "synonyme": [
+    "roasted vegetables",
+    "tray-baked vegetables",
+    "sheet pan vegetables"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Cut into pieces of equal size",
+      "warum": "Everything is done at the same time.",
+      "prinzip": "oberflaeche"
+    },
+    {
+      "schritt": "Dry and toss thinly in oil",
+      "warum": "Oil carries heat into every corner; water would slow things down.",
+      "prinzip": "oel"
+    },
+    {
+      "schritt": "Spread out on the preheated tray",
+      "warum": "Steam can escape and the underside browns at once.",
+      "prinzip": "roesten-ofen"
+    },
+    {
+      "schritt": "Roast at 220 °C, turning once",
+      "warum": "[[maillard-reaktion|Maillard]] and [[karamellisierung|caramelisation]] make the vegetables sweet and aromatic.",
+      "prinzip": "maillard-reaktion"
+    }
+  ]
+}

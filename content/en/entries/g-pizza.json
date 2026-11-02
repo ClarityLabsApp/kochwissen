@@ -1,0 +1,32 @@
+{
+  "id": "g-pizza",
+  "titel": "Pizza",
+  "kurz": "A good pizza needs a stretchy, flavourful dough and an oven as hot as possible.",
+  "bild_im_kopf": "A balloon that puffs up and sets in seconds.",
+  "synonyme": [
+    "pizza dough",
+    "Neapolitan pizza"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Prove the dough long and cool",
+      "warum": "More aroma, a stretchier network.",
+      "prinzip": "kalte-gare"
+    },
+    {
+      "schritt": "Let it come to temperature and rest before stretching",
+      "warum": "Relaxed [[glutenbildung|gluten]] does not spring back.",
+      "prinzip": "teig-schnurrt"
+    },
+    {
+      "schritt": "Stretch by hand, do not flatten the rim",
+      "warum": "The gas bubbles in the rim make the airy cornicione.",
+      "prinzip": "grosse-poren"
+    },
+    {
+      "schritt": "Bake as hot as possible on a preheated stone or steel",
+      "warum": "Strong heat from below gives [[ofentrieb|oven spring]] and crust before the topping dries out.",
+      "prinzip": "waermeleitung"
+    }
+  ]
+}

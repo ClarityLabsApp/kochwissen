@@ -1,0 +1,67 @@
+{
+  "id": "x-bohnen-gruen",
+  "titel": "Green beans: green or grey?",
+  "kurz": "The same beans turn bright green or olive grey, depending on cooking time and acid.",
+  "bild_im_kopf": "Like a spotlight that flares up and then fades: cooked briefly the green shines, cooked long it fades away.",
+  "beobachtung": "After 2 minutes the beans glow. After 10 minutes they are duller, and in the acidic pot clearly olive green.",
+  "erklaerung": "Brief cooking drives air out of the tissue and the green glows. Longer cooking and acid turn the [[chlorophyll-farbe|chlorophyll]] into an olive-brown pigment.",
+  "dauer": "20 minutes",
+  "sicherheit": "Boiling water: only with adults.",
+  "synonyme": [
+    "chlorophyll experiment",
+    "vegetable colour experiment"
+  ],
+  "schritte": [
+    "Bring both pots to the boil; add a splash of lemon juice to one.",
+    "Divide the beans between both pots.",
+    "After 2 minutes put a few beans from each into the iced water; cook the rest for 10 minutes more.",
+    "Compare them all."
+  ],
+  "material": [
+    "a handful of green beans",
+    "two pots of water",
+    "lemon juice",
+    "a bowl of iced water"
+  ],
+  "visual": {
+    "params": {
+      "vorher": "raw",
+      "nachher": "cooked",
+      "vergleich": [
+        {
+          "label": "2 minutes",
+          "gefaess": "teller",
+          "inhalt": "bohnen",
+          "vorher": {
+            "farbe": "#68964a"
+          },
+          "nachher": {
+            "farbe": "#34a846"
+          }
+        },
+        {
+          "label": "10 minutes",
+          "gefaess": "teller",
+          "inhalt": "bohnen",
+          "vorher": {
+            "farbe": "#68964a"
+          },
+          "nachher": {
+            "farbe": "#6f8a44"
+          }
+        },
+        {
+          "label": "10 min with acid",
+          "gefaess": "teller",
+          "inhalt": "bohnen",
+          "vorher": {
+            "farbe": "#68964a"
+          },
+          "nachher": {
+            "farbe": "#8a8642"
+          }
+        }
+      ]
+    }
+  }
+}

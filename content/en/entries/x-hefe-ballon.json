@@ -1,0 +1,68 @@
+{
+  "id": "x-hefe-ballon",
+  "titel": "Yeast blows up a balloon",
+  "kurz": "Yeast makes so much gas that it can blow up a balloon.",
+  "bild_im_kopf": "Like a tiny bellows made of billions of yeast cells: each one breathes a little, and together it is enough for a balloon.",
+  "beobachtung": "After 20–40 minutes it foams in the bottle, and the balloon stands up and inflates.",
+  "erklaerung": "The yeast eats the sugar and gives off carbon dioxide. The same gas blows up the holes in bread dough. With cold water it takes much longer.",
+  "dauer": "45 minutes",
+  "synonyme": [
+    "yeast experiment for kids",
+    "yeast balloon bottle"
+  ],
+  "schritte": [
+    "Put yeast and sugar in the bottle and add about a third of lukewarm water.",
+    "Swirl, then pull the balloon over the neck of the bottle.",
+    "Put it somewhere warm and wait."
+  ],
+  "material": [
+    "a packet of dried yeast",
+    "2 tsp sugar",
+    "lukewarm water",
+    "a small bottle",
+    "a balloon"
+  ],
+  "visual": {
+    "params": {
+      "vorher": "start",
+      "nachher": "after 40 minutes",
+      "vergleich": [
+        {
+          "label": "lukewarm water",
+          "gefaess": "flasche",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#efe2c4",
+            "fuell": 0.35,
+            "ballon": 0,
+            "blasen": 0
+          },
+          "nachher": {
+            "farbe": "#efe2c4",
+            "fuell": 0.35,
+            "ballon": 1,
+            "blasen": 0.8,
+            "schaum": 0.3
+          }
+        },
+        {
+          "label": "cold water",
+          "gefaess": "flasche",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#efe2c4",
+            "fuell": 0.35,
+            "ballon": 0,
+            "blasen": 0
+          },
+          "nachher": {
+            "farbe": "#efe2c4",
+            "fuell": 0.35,
+            "ballon": 0.2,
+            "blasen": 0.2
+          }
+        }
+      ]
+    }
+  }
+}

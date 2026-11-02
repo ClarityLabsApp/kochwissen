@@ -1,0 +1,63 @@
+{
+  "id": "x-eischnee-fett",
+  "titel": "Egg whites with and without fat",
+  "kurz": "A tiny drop of egg yolk stops egg whites from whipping stiff.",
+  "bild_im_kopf": "Like blowing soap bubbles with greasy fingers: a little fat, and no bubble holds.",
+  "beobachtung": "Without fat you get stiff, glossy whites. With the drop of fat it stays runny or soft and foamy.",
+  "erklaerung": "The proteins form a skin around the air bubbles. Fat pushes in between, and the bubbles burst.",
+  "dauer": "10 minutes",
+  "synonyme": [
+    "egg white experiment",
+    "why won't egg whites stiffen"
+  ],
+  "schritte": [
+    "Put one egg white in each bowl.",
+    "Add a tiny drop of egg yolk or oil to one bowl.",
+    "Whisk both for the same length of time.",
+    "Compare."
+  ],
+  "material": [
+    "2 egg whites",
+    "a drop of egg yolk or oil",
+    "two clean bowls",
+    "whisk or hand mixer"
+  ],
+  "visual": {
+    "params": {
+      "vorher": "egg white",
+      "nachher": "after whisking",
+      "vergleich": [
+        {
+          "label": "no fat",
+          "gefaess": "schuessel",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#f3efd9",
+            "fuell": 0.4,
+            "schaum": 0
+          },
+          "nachher": {
+            "farbe": "#f3efd9",
+            "fuell": 0.4,
+            "schaum": 1
+          }
+        },
+        {
+          "label": "a drop of yolk",
+          "gefaess": "schuessel",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#f3efd9",
+            "fuell": 0.4,
+            "schaum": 0
+          },
+          "nachher": {
+            "farbe": "#f3efd9",
+            "fuell": 0.4,
+            "schaum": 0.22
+          }
+        }
+      ]
+    }
+  }
+}

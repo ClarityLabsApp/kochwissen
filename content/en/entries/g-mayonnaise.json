@@ -1,0 +1,32 @@
+{
+  "id": "g-mayonnaise",
+  "titel": "Mayonnaise",
+  "kurz": "Mayonnaise is an [[emulsion|emulsion]]: one egg yolk can hold a whole bowl of oil in fine droplets, as long as the oil goes in slowly.",
+  "bild_im_kopf": "Like lots of guests coming through a door one at a time instead of all at once.",
+  "synonyme": [
+    "mayo",
+    "aioli"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Stir egg yolk, mustard, acid and salt together",
+      "warum": "Egg yolk and mustard bring the [[emulgator|emulsifiers]].",
+      "prinzip": "emulsion"
+    },
+    {
+      "schritt": "Whisk in the oil drop by drop at first",
+      "warum": "At the start there is little water to take up droplets.",
+      "prinzip": "emulgieren"
+    },
+    {
+      "schritt": "Once it thickens, add oil in a thin stream",
+      "warum": "The stable emulsion now takes up oil faster.",
+      "prinzip": "emulsion"
+    },
+    {
+      "schritt": "Too thick? A few drops of water",
+      "warum": "Water gives the droplets room again.",
+      "prinzip": "mayo-gerinnt"
+    }
+  ]
+}

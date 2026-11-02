@@ -1,0 +1,33 @@
+{
+  "id": "g-zuercher-geschnetzeltes",
+  "titel": "Zürcher Geschnetzeltes (Zurich-style veal)",
+  "kurz": "Zürcher Geschnetzeltes works when the meat is seared only briefly and goes back into the sauce right at the end.",
+  "bild_im_kopf": "Like a guest who only turns up for dessert: if the meat goes into the sauce too early, it turns tough.",
+  "synonyme": [
+    "Zurich-style veal",
+    "sliced veal in cream sauce",
+    "Geschnetzeltes"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Pat the meat dry and sear it in batches in a very hot pan",
+      "warum": "Too much meat at once cools the pan; it stews in its own juice and turns grey.",
+      "prinzip": "steak-grau"
+    },
+    {
+      "schritt": "Take the meat out and sweat onions and mushrooms in the pan residue",
+      "warum": "The brown roasted bits on the bottom of the pan are the base of the sauce.",
+      "prinzip": "maillard-reaktion"
+    },
+    {
+      "schritt": "Deglaze with white wine and reduce, then add cream",
+      "warum": "Wine dissolves the residue; reducing concentrates the flavour.",
+      "prinzip": "deglacieren"
+    },
+    {
+      "schritt": "Reduce the sauce until silky, then just warm the meat through in it",
+      "warum": "Thin strips of meat cook through quickly. If they boil in the sauce, the fibres contract and turn dry.",
+      "prinzip": "eiweiss-denaturierung"
+    }
+  ]
+}

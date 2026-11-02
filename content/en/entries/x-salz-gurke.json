@@ -1,0 +1,57 @@
+{
+  "id": "x-salz-gurke",
+  "titel": "Salt draws out water",
+  "kurz": "Salt draws water out of vegetables, and you can watch it happen.",
+  "bild_im_kopf": "Like a magnet for water: wherever the salt is, water is drawn to it.",
+  "beobachtung": "Drops of water appear on the salted slices, liquid collects on the plate and the slices turn bendy.",
+  "erklaerung": "Water moves to where there is more salt ([[osmose|osmosis]]). That is why freshly salted meat is wet, and why you should fry it either straight away or much later.",
+  "dauer": "15 minutes",
+  "synonyme": [
+    "osmosis experiment",
+    "salting cucumber experiment"
+  ],
+  "schritte": [
+    "Cut the vegetable into slices of equal thickness and divide them between two plates.",
+    "Salt one plate but not the other.",
+    "Wait 15 minutes."
+  ],
+  "material": [
+    "a cucumber or courgette",
+    "salt",
+    "two plates"
+  ],
+  "visual": {
+    "params": {
+      "vorher": "fresh",
+      "nachher": "after 15 minutes",
+      "vergleich": [
+        {
+          "label": "salted",
+          "gefaess": "teller",
+          "inhalt": "scheiben",
+          "vorher": {
+            "farbe": "#cfe0a8",
+            "tropfen": 0
+          },
+          "nachher": {
+            "farbe": "#bfd396",
+            "tropfen": 1
+          }
+        },
+        {
+          "label": "unsalted",
+          "gefaess": "teller",
+          "inhalt": "scheiben",
+          "vorher": {
+            "farbe": "#cfe0a8",
+            "tropfen": 0
+          },
+          "nachher": {
+            "farbe": "#cfe0a8",
+            "tropfen": 0
+          }
+        }
+      ]
+    }
+  }
+}

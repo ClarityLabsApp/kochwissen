@@ -1,0 +1,33 @@
+{
+  "id": "g-meringue",
+  "titel": "Meringue",
+  "kurz": "Meringue is dried whisked egg white: sugar stabilises the foam, and low heat dries it without browning it.",
+  "bild_im_kopf": "Like frozen clouds of sugar and air.",
+  "synonyme": [
+    "meringues",
+    "pavlova",
+    "meringue kisses"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Whisk egg whites in a grease-free bowl",
+      "warum": "Fat prevents a stable foam.",
+      "prinzip": "schaumbildung"
+    },
+    {
+      "schritt": "Sprinkle in the sugar bit by bit",
+      "warum": "Dissolved sugar makes the bubble walls stable and glossy.",
+      "prinzip": "schaumbildung"
+    },
+    {
+      "schritt": "Dry for a long time at about 100 °C (as a guide)",
+      "warum": "The water evaporates slowly and the foam sets without browning.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "Let them cool in the oven",
+      "warum": "A quick change in temperature makes them crack or turn sticky.",
+      "prinzip": "zeit"
+    }
+  ]
+}

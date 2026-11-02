@@ -1,0 +1,34 @@
+{
+  "id": "g-konfituere",
+  "titel": "Jam",
+  "kurz": "Jam sets when [[pektin|pectin]], sugar and acid come together and enough water has boiled off.",
+  "bild_im_kopf": "Three keys for one lock.",
+  "synonyme": [
+    "jam",
+    "strawberry jam",
+    "apricot jam",
+    "preserves"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Mix the fruit with sugar and let it sit",
+      "warum": "The sugar draws juice out of the fruit.",
+      "prinzip": "osmose"
+    },
+    {
+      "schritt": "Add lemon juice",
+      "warum": "Acid helps the pectin set and keeps the colour fresh.",
+      "prinzip": "gelbildung-pektin"
+    },
+    {
+      "schritt": "Boil hard until the setting test works",
+      "warum": "Water evaporates, and sugar and pectin concentrate.",
+      "prinzip": "reduktion"
+    },
+    {
+      "schritt": "Fill into jars hot",
+      "warum": "Filled hot and sealed, it keeps longer.",
+      "prinzip": "gelbildung-pektin"
+    }
+  ]
+}

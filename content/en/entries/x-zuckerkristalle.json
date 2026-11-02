@@ -1,0 +1,50 @@
+{
+  "id": "x-zuckerkristalle",
+  "titel": "Growing sugar crystals",
+  "kurz": "Over several days, sugar crystals grow on a string from a hot sugar solution.",
+  "bild_im_kopf": "Like icicles growing drop by drop: a little more builds up each day.",
+  "beobachtung": "Sparkling crystals grow on the skewer, a little bigger every day.",
+  "erklaerung": "Hot water can dissolve far more sugar than cold water. As it cools, the sugar wants to turn solid again and builds up on the skewer. That is exactly what makes caramel grainy.",
+  "dauer": "a few days",
+  "sicherheit": "Hot sugar syrup: only adults boil and pour.",
+  "synonyme": [
+    "making rock candy",
+    "crystal experiment",
+    "sugar crystals"
+  ],
+  "schritte": [
+    "Bring the water to the boil and dissolve the sugar in it completely.",
+    "Let it cool a little and pour it into the glass.",
+    "Dip in the skewer or string without touching the bottom.",
+    "Leave it undisturbed for a few days."
+  ],
+  "material": [
+    "250 g sugar",
+    "100 ml water",
+    "a clean glass",
+    "a wooden skewer or cotton string"
+  ],
+  "visual": {
+    "params": {
+      "vorher": "day one",
+      "nachher": "after a few days",
+      "vergleich": [
+        {
+          "label": "sugar solution",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "spiess": true,
+          "vorher": {
+            "farbe": "#f6eccd",
+            "kristalle": 0
+          },
+          "nachher": {
+            "farbe": "#f6eccd",
+            "fuell": 0.6,
+            "kristalle": 1
+          }
+        }
+      ]
+    }
+  }
+}

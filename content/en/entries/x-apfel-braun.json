@@ -1,0 +1,65 @@
+{
+  "id": "x-apfel-braun",
+  "titel": "Why does the apple turn brown?",
+  "kurz": "Apple slices turn brown in the air, unless you protect them.",
+  "bild_im_kopf": "Like a bike rusting in the open air: oxygen discolours the exposed surface, and a protective film prevents it.",
+  "beobachtung": "The untreated slice is brown; the other two stay pale.",
+  "erklaerung": "An [[enzym|enzyme]] in the apple reacts with the oxygen in the air and forms brown pigments. Acid slows the enzyme down; water keeps the air away.",
+  "dauer": "30 minutes",
+  "synonyme": [
+    "brown apple experiment",
+    "lemon and apple"
+  ],
+  "schritte": [
+    "Cut an apple into slices.",
+    "Drizzle one slice with lemon juice, put one in water and leave one as it is.",
+    "Compare after 30 minutes."
+  ],
+  "material": [
+    "an apple",
+    "lemon juice",
+    "a glass of water",
+    "three plates"
+  ],
+  "visual": {
+    "params": {
+      "vorher": "freshly cut",
+      "nachher": "after 30 minutes",
+      "vergleich": [
+        {
+          "label": "in the air",
+          "gefaess": "teller",
+          "inhalt": "apfel",
+          "vorher": {
+            "farbe": "#f6efc9"
+          },
+          "nachher": {
+            "farbe": "#b88a4f"
+          }
+        },
+        {
+          "label": "with lemon",
+          "gefaess": "teller",
+          "inhalt": "apfel",
+          "vorher": {
+            "farbe": "#f6efc9"
+          },
+          "nachher": {
+            "farbe": "#f1e7bb"
+          }
+        },
+        {
+          "label": "in water",
+          "gefaess": "teller",
+          "inhalt": "apfel",
+          "vorher": {
+            "farbe": "#f6efc9"
+          },
+          "nachher": {
+            "farbe": "#efe6bf"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "g-raclette",
+  "titel": "Raclette",
+  "kurz": "Raclette is melted cheese on potatoes. It turns creamy when it is just melting, and greasy when it gets too hot.",
+  "bild_im_kopf": "Like chocolate in your hand: a little warmth makes it soft, too much makes it run apart.",
+  "synonyme": [
+    "raclette",
+    "raclette cheese",
+    "jacket potatoes with cheese"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Boil potatoes in their skins",
+      "warum": "The skin protects: the potato does not soak up water and stays floury but firm.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Heat the cheese only until it bubbles",
+      "warum": "First the fat melts, then the protein softens. Heated too long, the proteins contract and squeeze out fat.",
+      "prinzip": "eiweiss-gerinnung"
+    },
+    {
+      "schritt": "Eat with pickled gherkins and silverskin onions",
+      "warum": "Acid counters the feeling of heaviness and makes every bite fresh again.",
+      "prinzip": "abschmecken-saeure"
+    }
+  ]
+}

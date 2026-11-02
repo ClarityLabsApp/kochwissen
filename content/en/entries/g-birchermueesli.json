@@ -1,0 +1,28 @@
+{
+  "id": "g-birchermueesli",
+  "titel": "Bircher muesli",
+  "kurz": "In Bircher muesli, oat flakes swell overnight in milk or yoghurt. Lemon keeps the grated apple pale.",
+  "bild_im_kopf": "Like a seed swelling overnight in water: by morning it is soft and plump.",
+  "synonyme": [
+    "Bircher muesli",
+    "Birchermüesli",
+    "overnight oats",
+    "Swiss muesli"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Mix oat flakes with milk or yoghurt and chill overnight",
+      "warum": "The flakes take up liquid, and their starch swells a little even when cold: the muesli turns creamy.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Grate the apple just before eating and mix it straight away with lemon juice",
+      "warum": "In the air an [[enzym|enzyme]] browns the apple. Acid slows it down.",
+      "prinzip": "enzym-braeunung"
+    },
+    {
+      "schritt": "Scatter the nuts over only at the end",
+      "warum": "That way they stay crunchy instead of soaking up moisture."
+    }
+  ]
+}

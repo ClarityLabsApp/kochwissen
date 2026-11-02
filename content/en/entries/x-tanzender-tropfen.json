@@ -1,0 +1,41 @@
+{
+  "id": "x-tanzender-tropfen",
+  "titel": "The dancing water droplet",
+  "kurz": "On a very hot pan, a drop of water floats and dances instead of evaporating.",
+  "bild_im_kopf": "Like a hovercraft: the drop floats on its own steam.",
+  "beobachtung": "At first the drops hiss and evaporate quickly. Above a certain heat they form little balls that glide around and last longer.",
+  "erklaerung": "A layer of steam forms under the drop and it floats on it (the [[leidenfrost|Leidenfrost effect]]). That is exactly when the pan is hot enough for searing.",
+  "dauer": "5 minutes",
+  "sicherheit": "Hot pan: only with adults; do not overheat a non-stick pan while empty.",
+  "synonyme": [
+    "Leidenfrost experiment",
+    "water droplet in a pan"
+  ],
+  "schritte": [
+    "Heat the empty pan over medium heat and now and then flick in a few drops of water.",
+    "Watch how the drops behave as the pan gets hotter."
+  ],
+  "material": [
+    "stainless steel or iron pan",
+    "a few drops of water"
+  ],
+  "visual": {
+    "params": {
+      "vorher": "pan warm",
+      "nachher": "pan very hot",
+      "vergleich": [
+        {
+          "label": "water droplets",
+          "gefaess": "pfanne",
+          "inhalt": "keins",
+          "vorher": {
+            "tanzen": 0
+          },
+          "nachher": {
+            "tanzen": 1
+          }
+        }
+      ]
+    }
+  }
+}

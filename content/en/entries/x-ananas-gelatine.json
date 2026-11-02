@@ -1,0 +1,79 @@
+{
+  "id": "x-ananas-gelatine",
+  "titel": "Why pineapple stops jelly from setting",
+  "kurz": "With fresh pineapple, gelatine stays runny; with cooked pineapple, it sets.",
+  "bild_im_kopf": "Like mice nibbling through a net: before it can set, it has already been cut to pieces.",
+  "beobachtung": "Without pineapple and with tinned pineapple, the jelly sets. With fresh pineapple it stays runny, or only softens around the pieces.",
+  "erklaerung": "Fresh pineapple contains an [[enzym|enzyme]] that cuts up protein. Gelatine is protein, so its network is taken apart before it can set. When pineapple is tinned, the fruit is heated, which switches the enzyme off.",
+  "dauer": "a few hours",
+  "sicherheit": "Hot water for the jelly: adults do the heating.",
+  "synonyme": [
+    "pineapple gelatine experiment",
+    "runny jelly",
+    "pineapple jello"
+  ],
+  "schritte": [
+    "Make the jelly as the packet says and divide it between three glasses.",
+    "Add pieces of fresh pineapple to the first glass, tinned pineapple to the second, and leave the third plain.",
+    "Put everything in the fridge for a few hours.",
+    "Tip the glasses and compare."
+  ],
+  "material": [
+    "1 packet of jelly, or gelatine with juice",
+    "fresh pineapple",
+    "tinned pineapple",
+    "three glasses"
+  ],
+  "visual": {
+    "params": {
+      "vorher": "just poured",
+      "nachher": "after a few hours",
+      "vergleich": [
+        {
+          "label": "fresh pineapple",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#e9b13c",
+            "fuell": 0.6
+          },
+          "nachher": {
+            "farbe": "#e9b13c",
+            "fuell": 0.6,
+            "blasen": 0.15
+          }
+        },
+        {
+          "label": "tinned pineapple",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#e9b13c",
+            "fuell": 0.6
+          },
+          "nachher": {
+            "farbe": "#d99a24",
+            "fuell": 0.6,
+            "klumpen": 1,
+            "klumpenfarbe": "#d99a24"
+          }
+        },
+        {
+          "label": "no pineapple",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#e9b13c",
+            "fuell": 0.6
+          },
+          "nachher": {
+            "farbe": "#d99a24",
+            "fuell": 0.6,
+            "klumpen": 1,
+            "klumpenfarbe": "#d99a24"
+          }
+        }
+      ]
+    }
+  }
+}

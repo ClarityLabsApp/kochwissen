@@ -1,0 +1,32 @@
+{
+  "id": "g-risotto",
+  "titel": "Risotto",
+  "kurz": "Risotto turns creamy without cream: stirring releases starch from the rice grain, and at the end butter and cheese bind everything into an [[emulsion|emulsion]].",
+  "bild_im_kopf": "Like pearls that release their own paste.",
+  "synonyme": [
+    "risotto alla milanese",
+    "saffron risotto"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Sweat the rice in fat until translucent",
+      "warum": "The grains are sealed on the outside and cook more evenly.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Add hot stock bit by bit and stir",
+      "warum": "Friction releases starch from the surface, which thickens the liquid.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Take it off the heat while the core still has a little bite",
+      "warum": "The rice keeps cooking in the heat.",
+      "prinzip": "zeit"
+    },
+    {
+      "schritt": "Vigorously stir in cold butter and parmesan (mantecare)",
+      "warum": "Fat, starch and cheese combine into a creamy emulsion.",
+      "prinzip": "emulsion"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "g-pancakes",
+  "titel": "Pancakes",
+  "kurz": "Pancakes turn fluffy thanks to baking powder and a barely mixed batter.",
+  "bild_im_kopf": "Little cakes that rise in the pan.",
+  "synonyme": [
+    "American pancakes",
+    "fluffy pancakes",
+    "hotcakes"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Prepare dry and wet ingredients separately",
+      "warum": "That way you only need to mix briefly at the end.",
+      "prinzip": "glutenbildung"
+    },
+    {
+      "schritt": "Stir together only briefly, leaving lumps",
+      "warum": "Little [[glutenbildung|gluten]], a tender pancake.",
+      "prinzip": "pfannkuchen-gummig"
+    },
+    {
+      "schritt": "Let the batter stand for a few minutes",
+      "warum": "The baking powder starts working and the flour hydrates.",
+      "prinzip": "chemische-lockerung"
+    },
+    {
+      "schritt": "Cook over medium heat, turn when bubbles burst",
+      "warum": "The heat drives out the gas and the underside browns.",
+      "prinzip": "maillard-reaktion"
+    }
+  ]
+}

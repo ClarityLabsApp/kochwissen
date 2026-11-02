@@ -1,0 +1,32 @@
+{
+  "id": "g-creme-brulee",
+  "titel": "Crème brûlée",
+  "kurz": "Crème brûlée combines two principles: an egg custard that may only set gently, and a sugar layer that [[karamellisierung|caramelises]] in a flash.",
+  "bild_im_kopf": "Soft and crunchy in one dish: pudding below, glass on top.",
+  "synonyme": [
+    "creme brulee",
+    "burnt cream"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Stir cream, egg yolk and sugar together; do not whisk until foamy",
+      "warum": "Air bubbles would stay visible in the custard.",
+      "prinzip": "eiweiss-gerinnung"
+    },
+    {
+      "schritt": "Let it set in a water bath at a low oven temperature",
+      "warum": "The water keeps the temperature gentle and even.",
+      "prinzip": "wasserbad"
+    },
+    {
+      "schritt": "Chill thoroughly",
+      "warum": "The custard firms up and the surface dries.",
+      "prinzip": "eiweiss-gerinnung"
+    },
+    {
+      "schritt": "Sprinkle thinly with sugar and torch it",
+      "warum": "The sugar caramelises in seconds while the custard underneath stays cold.",
+      "prinzip": "karamellisierung"
+    }
+  ]
+}
