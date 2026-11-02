@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { t as ui, type Lang } from "@/lib/i18n";
 import { simTr } from "@/lib/simText";
+import { useInView } from "./useInView";
 
 /* Punkt-Sprache laut DESIGN.md */
 const C = { water: "#8fb8c9", waterRim: "#5f8fa3", fat: "#f0d27a", fatRim: "#c9a24a", lab: "#2f6f73", salt: "#ffffff", sepia: "#7a5a3a",
@@ -1494,17 +1495,19 @@ export default function ParticleSim({ preset, lang = "de" }: { preset: Preset; l
   const ctl = useRef<Ctl>({ a, b, ph });
   ctl.current = { a, b, ph };
   const stateRef = useRef<any>(null);
+  const root = useRef<HTMLDivElement>(null);
+  const seen = useInView(root);
 
   // Osmose läuft beim Öffnen einmal von selbst durch
   useEffect(() => {
-    if (!AUTO.includes(preset)) return;
+    if (!AUTO.includes(preset) || !seen) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     let raf = 0; const start = performance.now(); const [from, to] = preset === "osmose" || preset === "diffusion" ? [0, 1] : preset === "reduktion" ? [1, 0.35] : preset === "chlorophyll-farbe" ? [0, 8] : preset === "eiweiss-denaturierung" ? [20, 80] : preset === "glutenbildung" ? [0, 0.85] : preset === "karamellisierung" ? [120, 190] : preset === "enzym-zartmachen" || preset === "dampflockerung" ? [0, 1] : preset === "staerkeverkleisterung" ? [20, 95] : preset === "kollagen-gelatine" ? [0, 3.5] : ({ "enzym-braeunung": [0, 45], fleischreifung: [0, 30], "oxidation-fett": [0, 8], "eiweiss-gerinnung": [55, 70], "saeure-denaturierung": [0, 22], "wasserbindung-salz": [0, 12], "gelbildung-gelatine": [50, 4], "kalzium-pektin": [0, 45], retrogradation: [0, 3], poekeln: [20, 75], pyrolyse: [130, 230] } as Record<string, [number, number]>)[preset] ?? [20, 180];
-    const dur = preset === "chemische-lockerung" || preset === "karamellisierung" ? 12000 : 9000;
+    const dur = preset === "chemische-lockerung" || preset === "karamellisierung" ? 18000 : 14000;
     const run = (now: number) => { const p = Math.min(1, (now - start) / dur); setA(from + (to - from) * p); if (p < 1) raf = requestAnimationFrame(run); };
     raf = requestAnimationFrame(run);
     return () => cancelAnimationFrame(raf);
-  }, [preset, reset]);
+  }, [preset, reset, seen]);
 
   useEffect(() => {
     const cv = ref.current!; const g = cv.getContext("2d")!;
@@ -1533,7 +1536,7 @@ export default function ParticleSim({ preset, lang = "de" }: { preset: Preset; l
   const sl = sim.controls.slider;
   void tick;
   return (
-    <div className="vis">
+    <div className="vis" ref={root}>
       <div className="vis-head"><span className="mono">{T(sim.title)}</span><span className="mono">{T(sim.scale)}</span></div>
       <canvas ref={ref} className="sim-canvas" aria-label={T(sim.title)} />
       <p className="vis-status">{s ? T(sim.status(s, ctl.current)) : " "}</p>

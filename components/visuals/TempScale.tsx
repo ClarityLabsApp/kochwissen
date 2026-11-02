@@ -1,6 +1,7 @@
 "use client";
 import { t as ui, type Lang } from "@/lib/i18n";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { useInView } from "./useInView";
 
 export interface Mark { c: number; name: string }
 
@@ -24,20 +25,23 @@ export default function TempScale({ marks, title, note, unitMax, lang = "de" }: 
     const lo0 = Math.max(0, Math.floor(((sorted[0]?.c ?? 0) * 0.6) / 10) * 10);
   const [t, setT] = useState(lo0);
   const [touched, setTouched] = useState(false);
+  const [run, setRun] = useState(0);
+  const root = useRef<HTMLDivElement>(null);
+  const seen = useInView(root);
 
   // Einmaliger Durchlauf beim Laden, danach steuert der Regler.
   useEffect(() => {
-    if (touched) return;
+    if (touched || !seen) return;
     if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) { setT(sorted[Math.floor(sorted.length / 2)]?.c ?? max / 2); return; }
     let raf = 0; const start = performance.now(); const target = sorted[sorted.length - 1]?.c ?? max * 0.8;
     const step = (now: number) => {
-      const p = Math.min(1, (now - start) / 3200);
+      const p = Math.min(1, (now - start) / 7000);
       setT(Math.round(lo0 + (target - lo0) * (1 - Math.pow(1 - p, 3))));
       if (p < 1) raf = requestAnimationFrame(step);
     };
     raf = requestAnimationFrame(step);
     return () => cancelAnimationFrame(raf);
-  }, [touched, sorted, max]);
+  }, [touched, sorted, max, seen, run]);
 
   const lo = Math.max(0, Math.floor(((sorted[0]?.c ?? 0) * 0.6) / 10) * 10);
   const span = Math.max(1, max - lo);
@@ -48,7 +52,7 @@ export default function TempScale({ marks, title, note, unitMax, lang = "de" }: 
   const bands = [lo, 100, 140, 190, max].filter((v, i, a) => v >= lo && v <= max && (i === 0 || v > a[i - 1]));
 
   return (
-    <div className="vis">
+    <div className="vis" ref={root}>
       <div className="vis-head"><span className="mono">{title ?? V.thresholds}</span><span className="vis-val">{t} °C</span></div>
       <div className="tbar" role="img" aria-label={lang === "en" ? `Temperature scale from ${lo} to ${max} °C` : `Temperaturskala von ${lo} bis ${max} °C`}>
         {bands.slice(0, -1).map((b, i) => (
@@ -72,10 +76,10 @@ export default function TempScale({ marks, title, note, unitMax, lang = "de" }: 
         ))}
       </ol>
       <p className="vis-status">
-        {current ? <>Bei {t} °C: <strong>{current.name}</strong>.</> : <>Unter {sorted[0]?.c} °C passiert noch nichts davon.</>}
-        {next ? <> Ab {next.c} °C: {next.name}.</> : null}
+        {current ? <>{V.at(t)} <strong>{current.name}</strong>.</> : <>{V.below(sorted[0]?.c ?? 0)}</>}
+        {next ? <> {V.from(next.c)} {next.name}.</> : null}
       </p>
-      {note && <span className="mono">{note}</span>}
+      <div className="vis-row">{note && <span className="mono">{note}</span>}<button type="button" className="vis-btn" style={{ marginLeft: "auto" }} onClick={() => { setTouched(false); setT(lo); setRun((r) => r + 1); }}>{V.again}</button></div>
     </div>
   );
 }
