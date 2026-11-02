@@ -324,3 +324,35 @@ footer.site { border-top: 1px solid var(--rule); padding-top: 14px; display: fle
 .langs a[aria-current="true"] { background: var(--ink); color: var(--paper-2); }
 .untranslated { margin: 0; padding: 8px 12px; border-left: 4px solid var(--t-labor); background: var(--paper-2); font: italic 15px var(--f-body); color: var(--sepia); }
 @media (max-width: 420px) { .topnav { gap: 10px; } .topnav a { font-size: 11px; } }
+
+/* Bibliothek als Molekül */
+.mol { border: 1px solid var(--rule); background: var(--paper-2); max-width: 560px; width: 100%; margin: 0 auto; }
+.mol-head { display: flex; justify-content: flex-end; padding: 12px 14px 0; gap: 10px; }
+.mol svg { display: block; width: 100%; height: auto; touch-action: manipulation; }
+.mol .bond { stroke: #b89a6a; stroke-width: 3; stroke-linecap: round; transition: opacity .3s, stroke .3s; }
+.mol .bond.hi { stroke: var(--ink); }
+.mol .bond.lo { opacity: .25; }
+.mol .atom { cursor: pointer; transition: opacity .3s; outline: none; }
+.mol .atom.lo { opacity: .35; }
+.mol .atom .core { stroke: var(--ink); stroke-width: 1.5; }
+.mol .atom .halo { fill: none; stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 3 4; opacity: 0; transition: opacity .3s; transform-box: fill-box; transform-origin: center; }
+.mol .atom.sel .halo { opacity: 1; animation: mol-spin 14s linear infinite; }
+.mol .atom:focus-visible .halo { opacity: 1; }
+.mol .atom .n { font: 600 12px var(--f-mono); fill: #fff8ea; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.mol .atom .lbl { font: 500 13px var(--f-body); fill: var(--ink); text-anchor: middle; pointer-events: none; paint-order: stroke; stroke: var(--paper-2); stroke-width: 4px; stroke-linejoin: round; }
+.mol .float { animation: mol-bob 6s ease-in-out infinite; transform-box: fill-box; }
+@keyframes mol-bob { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(0, -3px); } }
+@keyframes mol-spin { to { transform: rotate(360deg); } }
+.mol-legend { display: flex; gap: 14px; flex-wrap: wrap; padding: 0 14px 12px; }
+.mol-panel { max-width: 560px; width: 100%; margin: 0 auto; border: 1px solid var(--rule); background: var(--paper-2); padding: 16px; display: flex; flex-direction: column; gap: 10px; border-top: 5px solid var(--c); }
+.mol-panel h3 { font: 600 24px var(--f-display); margin: 0; display: flex; align-items: baseline; gap: 10px; }
+.mol-panel h3 small { font: 12px var(--f-mono); color: var(--sepia); font-weight: 400; }
+.mol-panel .q { margin: 0; color: var(--sepia); font-style: italic; }
+.mol-panel ul { list-style: none; padding: 0; margin: 0; }
+.mol-panel li { border-bottom: 1px solid var(--rule); }
+.mol-panel li a { display: flex; justify-content: space-between; gap: 10px; padding: 9px 0; text-decoration: none; color: var(--ink); }
+.mol-panel li a::after { content: "→"; color: var(--sepia); font-family: var(--f-mono); }
+.mol-all { align-self: flex-start; font: 600 12px var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--paper-2); background: var(--c); border: 0; padding: 10px 12px; cursor: pointer; }
+.mol-terms { display: flex; flex-direction: column; gap: 8px; max-width: 560px; width: 100%; margin: 0 auto; }
+.mol-back { align-self: flex-start; font: 600 12px var(--f-mono); letter-spacing: .06em; text-transform: uppercase; background: none; border: 1px solid var(--rule); color: var(--ink); padding: 8px 12px; cursor: pointer; }
+@media (prefers-reduced-motion: reduce) { .mol .float, .mol .atom.sel .halo { animation: none; } }

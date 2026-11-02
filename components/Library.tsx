@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { search } from "@/lib/search";
 import { href, t, type Lang } from "@/lib/i18n";
+import Molecule from "./Molecule";
 
 export interface LibItem {
   id: string; typ: string; titel: string; status: string; pilot: boolean;
@@ -135,7 +136,22 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
           </div>
         </nav>
       )}
-      <h2 id="bibliothek" className="libhead">{res ? S.allHits : S.whole}</h2>
+      <h2 id="bibliothek" className="libhead">{res ? S.allHits : active.size ? T.types[[...active][0]][0] : S.whole}</h2>
+      {!res && !active.size && (
+        <>
+          <Molecule items={items} lang={lang} onAll={openType} />
+          <div className="mol-terms">
+            <span className="mono">{T.mol.terms}</span>
+            <div className="chips">
+              {items.filter((e) => e.typ === "begriff" && isWritten(e)).map((e) => (
+                <Link key={e.id} href={ln(`/eintrag/${e.id}`)} className="chip"><i style={{ background: "var(--t-begriff)" }} />{e.titel}</Link>
+              ))}
+            </div>
+          </div>
+        </>
+      )}
+      {!res && active.size > 0 && <button type="button" className="mol-back" onClick={() => setActive(new Set())}>{T.mol.back}</button>}
+      {(res || active.size > 0) && <>
       <div className="typechips" role="group" aria-label={lang === "en" ? "Entry type" : "Eintragstyp"}>
         {TYPES.map(([t, name]) => {
           const n = items.filter((e) => e.typ === t).length;
@@ -173,6 +189,7 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
         })}
         {!list.length && <p className="count">{S.none}</p>}
       </div>
+      </>}
     </>
   );
 }

@@ -41,7 +41,7 @@ const de = {
   types: {
     ziel: ["Ziele", "Was will ich erreichen?", "Ziel"], gericht: ["Gerichte", "Warum funktioniert dieses Rezept?", "Gericht"],
     experiment: ["Experimente", "Zum Ausprobieren in der Küche", "Experiment"], labor: ["Labor", "Grundzutaten selber herstellen", "Labor-Rezept"],
-    symptom: ["Symptome", "Was ist schiefgelaufen?", "Symptom"], prozess: ["Prozesse", "Was passiert beim Kochen?", "Prozess"],
+    symptom: ["Probleme", "Was ist schiefgelaufen?", "Problem"], prozess: ["Prozesse", "Was passiert beim Kochen?", "Prozess"],
     technik: ["Techniken", "Welcher Handgriff hilft?", "Technik"], zutat: ["Zutaten", "Was tut eine Zutat?", "Zutat"],
     stellschraube: ["Stellschrauben", "Woran kann ich drehen?", "Stellschraube"], welt: ["Lebensmittel-Welten", "Wo begegnet mir das?", "Welt"],
     begriff: ["Begriffe", "Was heißt das Wort?", "Begriff"],
@@ -69,6 +69,7 @@ const de = {
     score: (a: number, n: number) => `${a} von ${n} richtig`, all: "Alles richtig. Du hast verstanden, worum es geht.", good: "Gut gemacht. Bei den anderen lohnt ein zweiter Blick in den Eintrag.",
     low: "Ein guter Anfang. Lies die Schritte noch einmal und versuch es dann wieder.", again: "Nochmal versuchen", right: "Richtig.", wrong: "Nicht ganz.", more: "Mehr dazu", nextQ: "Nächste Frage", show: "Ergebnis zeigen", answers: "Antworten",
   },
+  mol: { label: "Die Bibliothek als Molekül", head: (n: number) => `Die Bibliothek · ${n} Einträge`, tap: "Antippen", core: "Kern: Was passiert", inner: "Innen: Womit", outer: "Außen: Wofür", entries: (n: number) => `${n} Einträge`, all: (n: number, name: string) => `Alle ${n} ${name} →`, back: "← Zurück zum Molekül", terms: "Begriffe" },
   vis: { model: "Modell vereinfacht", restart: "Neu starten", schematic: "Schematisch", again: "Nochmal", beforeAfter: "Vorher · Nachher", before: "Vorher", after: "Nachher", pause: "Pause", play: "Abspielen", flow: "Ablauf", step: (i: number, n: number) => `Schritt ${i} von ${n}`, pickTemp: "Temperatur wählen", netGoal: (t: string) => `Hebel und Techniken für „${t}“`, levers: "Hebel", techs: "Techniken", netIng: (t: string) => `Was ${t} tut`, role: "Rolle", proc: "Vorgang", stepsIn: (n: number) => `Ablauf in ${n} Schritten`, temps: "Die Temperaturen", at: (t: number) => `Bei ${t} °C:`, below: (c: number) => `Unter ${c} °C passiert noch nichts davon.`, from: (c: number) => `Ab ${c} °C:`, smoke: "Rauchpunkte im Vergleich", thresholds: "Temperatur-Schwellen" },
 };
 
@@ -127,6 +128,7 @@ const en: Dict = {
     score: (a, n) => `${a} of ${n} correct`, all: "All correct. You have understood what it is about.", good: "Well done. For the others, it is worth another look at the entry.",
     low: "A good start. Read the steps again and then try once more.", again: "Try again", right: "Correct.", wrong: "Not quite.", more: "More on this", nextQ: "Next question", show: "Show result", answers: "Answers",
   },
+  mol: { label: "The library as a molecule", head: (n) => `The library · ${n} entries`, tap: "Tap an atom", core: "Core: what happens", inner: "Inner: with what", outer: "Outer: what for", entries: (n) => `${n} entries`, all: (n, name) => `All ${n} ${name.toLowerCase()} →`, back: "← Back to the molecule", terms: "Terms" },
   vis: { model: "Simplified model", restart: "Restart", schematic: "Schematic", again: "Again", beforeAfter: "Before · After", before: "Before", after: "After", pause: "Pause", play: "Play", flow: "Sequence", step: (i, n) => `Step ${i} of ${n}`, pickTemp: "Choose temperature", netGoal: (t) => `Levers and techniques for “${t}”`, levers: "Levers", techs: "Techniques", netIng: (t) => `What ${t} does`, role: "Role", proc: "Process", stepsIn: (n) => `Sequence in ${n} steps`, temps: "The temperatures", at: (t) => `At ${t} °C:`, below: (c) => `Below ${c} °C none of this happens yet.`, from: (c) => `From ${c} °C:`, smoke: "Smoke points compared", thresholds: "Temperature thresholds" },
 };
 
