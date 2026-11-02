@@ -17,6 +17,18 @@ const DOORS: { typ: "symptom" | "ziel" | "prozess"; ids: string[]; pfad?: string
   { typ: "ziel", ids: ["knusprig", "saftig", "zart", "luftig", "cremig", "knackig"] },
   { typ: "prozess", ids: ["maillard-reaktion", "emulsion", "glutenbildung", "staerkeverkleisterung", "eiweiss-denaturierung"], pfad: "grundprinzipien" },
 ];
+/** Wie jede Kategorie als Liste erscheint: kurze Namen als Chips, mit Bild als Kacheln, sonst kompakte Zeilen in Gruppen. */
+const AS_CHIPS = new Set(["ziel", "zutat", "stellschraube", "begriff"]);
+const AS_TILES = new Set(["gericht", "experiment", "labor", "welt"]);
+const THEMES: [string, string, string[]][] = [
+  ["Hitze und Bräunung", "Heat and browning", ["maillard-reaktion", "karamellisierung", "basen-braeunung", "pyrolyse", "waermeleitung", "waermestrahlung", "konvektion", "verdampfen", "leidenfrost", "siedepunkt-druck", "rauchpunkt", "pochieren-proz", "dampflockerung"]],
+  ["Wasser, Salz und Zucker", "Water, salt and sugar", ["osmose", "diffusion", "wasserbindung-salz", "poekeln", "wasseraktivitaet", "zucker-feuchtigkeit", "reduktion", "zucker-kristallisation", "eiskristalle", "gefrierpunkt-senkung"]],
+  ["Eiweiß", "Protein", ["eiweiss-denaturierung", "eiweiss-gerinnung", "saeure-denaturierung", "kollagen-gelatine", "gelbildung-gelatine", "glutenbildung", "schaumbildung", "fleischreifung", "enzym-zartmachen"]],
+  ["Stärke und Pflanzen", "Starch and plants", ["staerkeverkleisterung", "retrogradation", "amylase", "pektin-abbau", "kalzium-pektin", "gelbildung-pektin", "chlorophyll-farbe", "anthocyan-farbe", "enzym-braeunung"]],
+  ["Fett und Aroma", "Fat and aroma", ["emulsion", "fett-ausbraten", "fett-kristallisation", "oxidation-fett", "aroma-loeslichkeit", "aroma-blooming"]],
+  ["Gärung und Lockerung", "Fermentation and raising", ["hefegaerung", "milchsaeuregaerung", "chemische-lockerung", "keimwachstum"]],
+  ["Geschmack", "Taste", ["umami", "salz-geschmack", "schaerfe"]],
+];
 const DAILY = new Set(["prozess", "gericht", "experiment", "labor"]);
 export interface PfadCard { id: string; titel: string; n: number; dauer: string; fuer: string }
 
@@ -35,7 +47,6 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
   const worlds = items.filter((e) => e.typ === "welt" && has.has(e.id));
   const [q, setQ] = useState("");
   const [active, setActive] = useState<Set<string>>(new Set());
-  const [onlyWritten, setOnlyWritten] = useState(false);
   const found = useMemo(() => (q.trim() ? search(items, q) : null), [items, q]);
   const res = found?.scores ?? null;
   const best = (found?.best ?? null) as LibItem | null;
@@ -54,7 +65,20 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
   };
   const plain = (s: string) => s.replace(/\[\[[a-z0-9-]+\|([^\]]+)\]\]/g, "$1").replace(/\[\[([a-z0-9-]+)\]\]/g, (_, id) => byId.get(id)?.titel ?? id);
 
-  let list = items.filter((e) => (!active.size || active.has(e.typ)) && (!onlyWritten || isWritten(e)) && (!res || res.has(e.id)));
+  const subgroups = (typ: string, g: LibItem[]): [string, LibItem[]][] => {
+    if (typ === "prozess") {
+      const out: [string, LibItem[]][] = THEMES.map(([de, en, ids]) => [lang === "en" ? en : de, ids.map((id) => g.find((e) => e.id === id)).filter(Boolean) as LibItem[]]);
+      const seen = new Set(THEMES.flatMap((x) => x[2]));
+      const rest = g.filter((e) => !seen.has(e.id));
+      if (rest.length) out.push([lang === "en" ? "Other" : "Weitere", rest]);
+      return out.filter(([, r]) => r.length);
+    }
+    const m = new Map<string, LibItem[]>();
+    for (const e of g) { const w = e.welten?.[0] ?? ""; m.set(w, [...(m.get(w) ?? []), e]); }
+    return [...m.entries()].sort((a, b) => (a[0] ? 0 : 1) - (b[0] ? 0 : 1) || b[1].length - a[1].length)
+      .map(([w, r]) => [w ? (byId.get(w)?.titel ?? w) : (lang === "en" ? "Other" : "Weitere"), r]);
+  };
+  let list = items.filter((e) => (!active.size || active.has(e.typ)) && (!res || res.has(e.id)));
   if (res) list = [...list].sort((a, b) => res.get(b.id)! - res.get(a.id)!);
   const groups = res ? [["treffer", S.hits, S.byFit] as [string, string, string]] : TYPES;
 
@@ -152,7 +176,7 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
       )}
       {!res && active.size > 0 && <button type="button" className="mol-back" onClick={() => setActive(new Set())}>{T.mol.back}</button>}
       {(res || active.size > 0) && <>
-      <div className="typechips" role="group" aria-label={lang === "en" ? "Entry type" : "Eintragstyp"}>
+      {res && <div className="typechips" role="group" aria-label={lang === "en" ? "Entry type" : "Eintragstyp"}>
         {TYPES.map(([t, name]) => {
           const n = items.filter((e) => e.typ === t).length;
           if (!n) return null;
@@ -163,27 +187,59 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
             </button>
           );
         })}
-      </div>
-      <label className="count" style={{ display: "flex", gap: 8, alignItems: "center" }}>
-        <input type="checkbox" checked={onlyWritten} onChange={(e) => setOnlyWritten(e.target.checked)} />
-        {S.onlyWritten(list.length, items.length)}
-      </label>
+      </div>}
+
       <div className="groups">
         {groups.map(([t, name, sub]) => {
           const g = res ? list : list.filter((e) => e.typ === t);
           if (!g.length) return null;
           return (
             // Geschlossen beim Start; offen bei Suche oder gewähltem Typ. Der key setzt den Zustand bei Filterwechsel zurück.
-            <details className="group" key={`${t}-${res ? "s" : ""}-${active.has(t) ? "a" : ""}`} open={!!res || active.has(t)}>
+            <details className={`group${!res ? " solo" : ""}`} key={`${t}-${res ? "s" : ""}-${active.has(t) ? "a" : ""}`} open={!!res || active.has(t)}>
               <summary><h3>{name} <small>{g.length} · {sub}</small></h3></summary>
-              <div className="grid">
-                {g.map((e) => (
-                  <Link key={e.id} href={ln(`/eintrag/${e.id}`)} className={`cell${isWritten(e) ? "" : " dim"}`}>
-                    <span className="t">{e.titel}</span>
-                    <span className="m"><i style={{ background: `var(--t-${e.typ})` }} />{SING[e.typ]}{isWritten(e) ? ` · ${T.status[e.status] ?? e.status}` : ` · ${T.status.geplant}`}</span>
-                  </Link>
-                ))}
-              </div>
+              {res ? (
+                <div className="grid">
+                  {g.map((e) => (
+                    <Link key={e.id} href={ln(`/eintrag/${e.id}`)} className={`cell${isWritten(e) ? "" : " dim"}`}>
+                      <span className="t">{e.titel}</span>
+                      <span className="m"><i style={{ background: `var(--t-${e.typ})` }} />{SING[e.typ]}{e.status === "geprueft" ? " · ✓" : ""}</span>
+                    </Link>
+                  ))}
+                </div>
+              ) : AS_CHIPS.has(t) ? (
+                <div className="chips list-chips">
+                  {g.map((e) => <Link key={e.id} href={ln(`/eintrag/${e.id}`)} className="chip"><i style={{ background: `var(--t-${e.typ})` }} />{e.titel}{e.status === "geprueft" ? " ✓" : ""}</Link>)}
+                </div>
+              ) : AS_TILES.has(t) ? (
+                <div className="tiles2">
+                  {g.map((e) => {
+                    const pic = pictureOf(e, has);
+                    return (
+                      <Link key={e.id} href={ln(`/eintrag/${e.id}`)} className="tile2">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        {pic ? <img src={`/illustrationen/${pic}.webp`} alt="" width={160} height={160} loading="lazy" /> : <span className="tile2-ph" style={{ background: `var(--t-${e.typ})` }} />}
+                        <span>{e.titel}{e.status === "geprueft" ? " ✓" : ""}</span>
+                      </Link>
+                    );
+                  })}
+                </div>
+              ) : (
+                <div className="rowgroups">
+                  {subgroups(t, g).map(([name, rows]) => (
+                    <div key={name} className="rowgroup">
+                      <span className="mono">{name}</span>
+                      <ul className="rows">
+                        {rows.map((e) => (
+                          <li key={e.id}><Link href={ln(`/eintrag/${e.id}`)}>
+                            <strong>{e.titel}{e.status === "geprueft" ? " ✓" : ""}</strong>
+                            {e.kurz && <span>{plain(e.kurz)}</span>}
+                          </Link></li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              )}
             </details>
           );
         })}
