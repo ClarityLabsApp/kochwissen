@@ -47,6 +47,8 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
   const worlds = items.filter((e) => e.typ === "welt" && has.has(e.id));
   const [q, setQ] = useState("");
   const [active, setActive] = useState<Set<string>>(new Set());
+  const [sub, setSub] = useState<string | null>(null);
+  const [door, setDoor] = useState(0);
   const found = useMemo(() => (q.trim() ? search(items, q) : null), [items, q]);
   const res = found?.scores ?? null;
   const best = (found?.best ?? null) as LibItem | null;
@@ -60,7 +62,7 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
     setDaily(pool.length ? pool[(day * 7919) % pool.length] : null);
   }, [items]);
   const openType = (t: string) => {
-    setActive(new Set([t]));
+    setActive(new Set([t])); setSub(null);
     setTimeout(() => document.getElementById("bibliothek")?.scrollIntoView({ behavior: "smooth", block: "start" }), 50);
   };
   const plain = (s: string) => s.replace(/\[\[[a-z0-9-]+\|([^\]]+)\]\]/g, "$1").replace(/\[\[([a-z0-9-]+)\]\]/g, (_, id) => byId.get(id)?.titel ?? id);
@@ -103,8 +105,13 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
       )}
       {!res && (
         <section className="doors" aria-label={lang === "en" ? "Ways in" : "Einstiege"}>
-          {DOORS.map((d) => (
-            <div key={d.typ} className="door" style={{ borderTopColor: `var(--t-${d.typ})` }}>
+          <div className="door-tabs" role="tablist">
+            {DOORS.map((d, i) => (
+              <button key={d.typ} type="button" role="tab" aria-selected={door === i} onClick={() => setDoor(i)} style={{ ["--c" as string]: `var(--t-${d.typ})` }}>{T.doors.tab[i]}</button>
+            ))}
+          </div>
+          {DOORS.map((d, i) => (
+            <div key={d.typ} className={`door${door === i ? "" : " door-off"}`} style={{ borderTopColor: `var(--t-${d.typ})` }}>
               <h2>{T.doors[d.typ][0]}</h2>
               <p>{T.doors[d.typ][1]}</p>
               <div className="chips">
@@ -165,12 +172,7 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
         <>
           <Molecule items={items} lang={lang} onAll={openType} />
           <div className="mol-terms">
-            <span className="mono">{T.mol.terms}</span>
-            <div className="chips">
-              {items.filter((e) => e.typ === "begriff" && isWritten(e)).map((e) => (
-                <Link key={e.id} href={ln(`/eintrag/${e.id}`)} className="chip"><i style={{ background: "var(--t-begriff)" }} />{e.titel}</Link>
-              ))}
-            </div>
+            <button type="button" className="linkbtn" onClick={() => openType("begriff")}>{T.mol.terms} ({items.filter((e) => e.typ === "begriff").length}) →</button>
           </div>
         </>
       )}
@@ -224,21 +226,23 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
                   })}
                 </div>
               ) : (
-                <div className="rowgroups">
-                  {subgroups(t, g).map(([name, rows]) => (
-                    <div key={name} className="rowgroup">
-                      <span className="mono">{name}</span>
+                (() => {
+                  const sg = subgroups(t, g), cur = sg.find(([n]) => n === sub) ?? sg[0];
+                  return (
+                    <div className="rowgroups">
+                      <div className="typechips subchips" role="group">
+                        {sg.map(([n, r]) => (
+                          <button key={n} type="button" className="typechip" aria-pressed={cur[0] === n} onClick={() => setSub(n)}>{n}<span>{r.length}</span></button>
+                        ))}
+                      </div>
                       <ul className="rows">
-                        {rows.map((e) => (
-                          <li key={e.id}><Link href={ln(`/eintrag/${e.id}`)}>
-                            <strong>{e.titel}{e.status === "geprueft" ? " ✓" : ""}</strong>
-                            {e.kurz && <span>{plain(e.kurz)}</span>}
-                          </Link></li>
+                        {cur[1].map((e) => (
+                          <li key={e.id}><Link href={ln(`/eintrag/${e.id}`)}><strong>{e.titel}{e.status === "geprueft" ? " ✓" : ""}</strong></Link></li>
                         ))}
                       </ul>
                     </div>
-                  ))}
-                </div>
+                  );
+                })()
               )}
             </details>
           );

@@ -28,14 +28,19 @@ export function entryMetadata(id: string, lang: Lang): Metadata {
   };
 }
 
-function Chips({ ids, lang }: { ids: string[]; lang: Lang }) {
+function Chips({ ids, lang, max = 6 }: { ids: string[]; lang: Lang; max?: number }) {
+  const chip = (id: string) => (
+    <Link key={id} href={href(lang, `/eintrag/${id}`)} className={`chip${getEntry(id) ? "" : " planned"}`}>
+      <i style={{ background: `var(--t-${typOf(id)})` }} />{titleOf(id, lang)}
+    </Link>
+  );
+  const rest = ids.slice(max);
   return (
     <div className="chips">
-      {ids.map((id) => (
-        <Link key={id} href={href(lang, `/eintrag/${id}`)} className={`chip${getEntry(id) ? "" : " planned"}`}>
-          <i style={{ background: `var(--t-${typOf(id)})` }} />{titleOf(id, lang)}
-        </Link>
-      ))}
+      {ids.slice(0, max).map(chip)}
+      {rest.length > 0 && (
+        <details className="chips-more"><summary className="chip">+ {rest.length}</summary><div className="chips">{rest.map(chip)}</div></details>
+      )}
     </div>
   );
 }
@@ -88,9 +93,9 @@ export default function EntryView({ id, lang }: { id: string; lang: Lang }) {
     <div className="block"><h2>{L.rules}</h2><ol className="rules">{e.faustregeln.map((r) => <li key={r}><R text={r} /></li>)}</ol></div>
   ) : null;
   const knobs = e.stellschrauben?.length ? (
-    <div className="block"><h2>{L.knobs}</h2>
+    <details className="sec"><summary><h2>{L.knobs}</h2><small>{e.stellschrauben.length}</small></summary>
       <div className="knobs">{e.stellschrauben.map((s) => <div key={s.id}><Link href={ln(`/eintrag/${s.id}`)}>{titleOf(s.id, lang)}</Link><span>{s.wirkung}</span></div>)}</div>
-    </div>
+    </details>
   ) : null;
   const untranslated = lang === "en" && !isTranslated(id);
 
@@ -139,10 +144,10 @@ export default function EntryView({ id, lang }: { id: string; lang: Lang }) {
             </details>
           </div>
         ) : null}
-        {rules && knobs ? <div className="cols">{rules}{knobs}</div> : (rules ?? knobs)}
-        {e.typische_fehler?.length ? <div className="block"><h2>{L.mistakes}</h2><ul className="plain">{e.typische_fehler.map((f) => <li key={f}><R text={f} /></li>)}</ul></div> : null}
+        {rules}{knobs}
+        {e.typische_fehler?.length ? <details className="sec"><summary><h2>{L.mistakes}</h2><small>{e.typische_fehler.length}</small></summary><ul className="plain">{e.typische_fehler.map((f) => <li key={f}><R text={f} /></li>)}</ul></details> : null}
         {causesSorted.length > 0 && (
-          <div className="block"><h2>{L.causes}</h2>
+          <details className="sec"><summary><h2>{L.causes}</h2><small>{causesSorted.length}</small></summary>
             <ul className="causes">{causesSorted.map((u) => (
               <li key={u.titel}>
                 <div className="head"><strong>{u.titel}</strong><span className="freq">{[1, 2, 3].map((n) => <i key={n} className={n <= (u.haeufigkeit ?? 0) ? "f" : ""} />)}</span></div>
@@ -150,7 +155,7 @@ export default function EntryView({ id, lang }: { id: string; lang: Lang }) {
                 <p className="fix">{L.nextTime}: {u.fix.join(" · ")}</p>
               </li>
             ))}</ul>
-          </div>
+          </details>
         )}
         {e.beobachtung && <div className="block"><h2>{L.see}</h2><div className="prose"><p><R text={e.beobachtung} /></p></div></div>}
         {e.erklaerung && <div className="box"><span className="mono">{L.whyHappens}</span><p><R text={e.erklaerung} /></p></div>}
@@ -163,23 +168,22 @@ export default function EntryView({ id, lang }: { id: string; lang: Lang }) {
         {e.verwendung?.length ? <div className="block"><h2>{L.use}</h2><ul className="plain">{e.verwendung.map((v) => <li key={v}><R text={v} /></li>)}</ul></div> : null}
         {e.mythos && <div className="myth"><span className="stamp">{L.myth}</span><p>{lang === "en" ? "“" : "„"}{e.mythos.behauptung}{lang === "en" ? "”" : "“"} <R text={e.mythos.richtig} /></p></div>}
         {e.praxis?.length ? (
-          <div className="block"><h2>{L.practice}</h2>
+          <details className="sec"><summary><h2>{L.practice}</h2><small>{e.praxis.length}</small></summary>
             <div className="tiles">{e.praxis.map((p) => (
               <div className="tile" key={p.welt}>
                 <h3>{titleOf(p.welt, lang)}{p.aroma && <span className="dots">{p.aroma.map((a) => <i key={a} style={{ background: `var(--a-${a})` }} />)}</span>}</h3>
                 <p><R text={p.text} /></p>
               </div>
             ))}</div>
-          </div>
+          </details>
         ) : null}
         {e.links?.length ? <div className="block"><span className="mono">{L.related}</span><Chips ids={e.links} lang={lang} /></div> : null}
         {e.quellen?.length ? (
-          <div className="block"><span className="mono">{L.sources}</span>
+          <details className="sec small"><summary><span className="mono">{L.sources} · {e.quellen.length}</span></summary>
             <ul className="sources">{e.quellen.map((q) => <li key={q.titel}>{q.url ? <a href={q.url} target="_blank" rel="noopener noreferrer">{q.titel}</a> : q.titel}{q.stelle ? `, ${q.stelle}` : ""}</li>)}</ul>
-          </div>
+          </details>
         ) : null}
         <PathNav entry={e.id} paths={paths} lang={lang} />
-        <div className="meta"><span>id · {e.id}</span><span>{L.template} · {e.visual?.vorlage ?? "–"}</span></div>
       </article>
     </main>
   );

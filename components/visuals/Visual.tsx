@@ -89,7 +89,9 @@ export default function Visual({ e, lang = "de" }: { e: Entry; lang?: Lang }) {
   const marks = marksOf(e);
   if (marks.length) {
     const title = e.typ === "technik" ? V.temps : e.id === "rauchpunkt" ? V.smoke : V.thresholds;
-    blocks.push(<TempScale key="temp" marks={marks} title={title} note={typeof p.hinweis === "string" ? p.hinweis : undefined} unitMax={e.id === "rauchpunkt" ? 260 : undefined} lang={lang} />);
+    const scale = <TempScale key="temp" marks={marks} title={title} note={typeof p.hinweis === "string" ? p.hinweis : undefined} unitMax={e.id === "rauchpunkt" ? 260 : undefined} lang={lang} />;
+    // Gibt es schon eine Animation, ist die Temperaturskala eine Zugabe zum Aufklappen.
+    blocks.push(blocks.length ? <details key="temp" className="sec"><summary><h2>{title}</h2><small>{marks.length}</small></summary>{scale}</details> : scale);
   }
 
   return blocks.length ? <>{blocks}</> : null;
