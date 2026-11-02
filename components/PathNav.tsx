@@ -22,7 +22,7 @@ export default function PathNav({ entry, paths }: { entry: string; paths: PathIn
       <Link href={`/pfad/${pfad.id}`} className="mono">Lernpfad · {pfad.titel} · Schritt {i + 1} von {pfad.schritte.length}</Link>
       <div className="row">
         {prev ? <Link href={`/eintrag/${prev.id}?pfad=${pfad.id}`}>← {prev.titel}</Link> : <span />}
-        {next ? <Link href={`/eintrag/${next.id}?pfad=${pfad.id}`} className="next">{next.titel} →</Link> : <Link href={`/pfad/${pfad.id}`} className="next">Geschafft. Zurück zum Lernpfad →</Link>}
+        {next ? <Link href={`/eintrag/${next.id}?pfad=${pfad.id}`} className="next">{next.titel} →</Link> : <Link href={`/pfad/${pfad.id}#quiz`} className="next">Geschafft. Jetzt zum Quiz →</Link>}
       </div>
     </nav>
   );

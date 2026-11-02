@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import PathSteps from "@/components/PathSteps";
+import Quiz from "@/components/Quiz";
 import { getEntry, getPfad, lernpfade, plainText, titleOf, typOf } from "@/lib/content";
 
 type Params = { params: Promise<{ id: string }> };
@@ -21,6 +22,12 @@ export default async function PfadPage({ params }: Params) {
         <p className="kurz">{p.kurz}</p>
         <p className="syn">{p.fuer}</p>
         <PathSteps pfad={p.id} steps={steps} />
+        {p.quiz?.length ? (
+          <section className="block" id="quiz">
+            <h2>Teste dich</h2>
+            <Quiz pfad={p.id} fragen={p.quiz.map((q) => ({ ...q, eintragTitel: titleOf(q.eintrag) }))} />
+          </section>
+        ) : null}
       </article>
     </main>
   );

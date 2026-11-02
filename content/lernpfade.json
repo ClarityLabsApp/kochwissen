@@ -6,16 +6,114 @@
     "fuer": "Für alle, die beim Grundsätzlichen anfangen wollen",
     "dauer": "etwa 1 Stunde",
     "schritte": [
-      { "id": "verdampfen", "warum": "Der Anfang von allem: Solange Wasser da ist, wird nichts heißer als 100 °C." },
-      { "id": "waermeleitung", "warum": "Wie die Hitze überhaupt ins Essen kommt, und warum außen schneller gar ist als innen." },
-      { "id": "maillard-reaktion", "warum": "Ab 140 °C entsteht das, was wir als Bratenduft und braune Kruste lieben." },
-      { "id": "karamellisierung", "warum": "Der Verwandte der Maillard-Reaktion: Zucker allein wird braun und aromatisch." },
-      { "id": "eiweiss-denaturierung", "warum": "Warum Fleisch, Fisch und Eier gar werden, und warum sie zu lange gegart trocken werden." },
-      { "id": "kollagen-gelatine", "warum": "Das Gegenteil: Zähes Fleisch braucht Zeit, bis sein Bindegewebe schmilzt." },
-      { "id": "staerkeverkleisterung", "warum": "Was Saucen bindet, Kartoffeln weich macht und Risotto cremig." },
-      { "id": "emulsion", "warum": "Wie Öl und Wasser zusammenhalten: Mayonnaise, Vinaigrette, Hollandaise." },
-      { "id": "glutenbildung", "warum": "Das Netz im Teig, das Brot aufgehen lässt und Kuchen zäh machen kann." },
-      { "id": "osmose", "warum": "Warum Salz Wasser zieht, und wann man darum salzen soll." }
+      {
+        "id": "verdampfen",
+        "warum": "Der Anfang von allem: Solange Wasser da ist, wird nichts heißer als 100 °C."
+      },
+      {
+        "id": "waermeleitung",
+        "warum": "Wie die Hitze überhaupt ins Essen kommt, und warum außen schneller gar ist als innen."
+      },
+      {
+        "id": "maillard-reaktion",
+        "warum": "Ab 140 °C entsteht das, was wir als Bratenduft und braune Kruste lieben."
+      },
+      {
+        "id": "karamellisierung",
+        "warum": "Der Verwandte der Maillard-Reaktion: Zucker allein wird braun und aromatisch."
+      },
+      {
+        "id": "eiweiss-denaturierung",
+        "warum": "Warum Fleisch, Fisch und Eier gar werden, und warum sie zu lange gegart trocken werden."
+      },
+      {
+        "id": "kollagen-gelatine",
+        "warum": "Das Gegenteil: Zähes Fleisch braucht Zeit, bis sein Bindegewebe schmilzt."
+      },
+      {
+        "id": "staerkeverkleisterung",
+        "warum": "Was Saucen bindet, Kartoffeln weich macht und Risotto cremig."
+      },
+      {
+        "id": "emulsion",
+        "warum": "Wie Öl und Wasser zusammenhalten: Mayonnaise, Vinaigrette, Hollandaise."
+      },
+      {
+        "id": "glutenbildung",
+        "warum": "Das Netz im Teig, das Brot aufgehen lässt und Kuchen zäh machen kann."
+      },
+      {
+        "id": "osmose",
+        "warum": "Warum Salz Wasser zieht, und wann man darum salzen soll."
+      }
+    ],
+    "quiz": [
+      {
+        "frage": "Warum bräunt ein nasses Steak in der heißen Pfanne nicht?",
+        "antworten": [
+          "Die Pfanne ist zu heiß",
+          "Solange Wasser verdampft, bleibt die Oberfläche bei etwa 100 °C",
+          "Wasser verhindert, dass Salz wirkt"
+        ],
+        "richtig": 1,
+        "erklaerung": "Bräunung beginnt erst um 140 °C. Solange Wasser da ist, kommt die Oberfläche nicht darüber.",
+        "eintrag": "verdampfen"
+      },
+      {
+        "frage": "Ab etwa welcher Temperatur beginnt die Maillard-Reaktion richtig?",
+        "antworten": [
+          "100 °C",
+          "140 °C",
+          "200 °C"
+        ],
+        "richtig": 1,
+        "erklaerung": "Ab etwa 140 °C verbinden sich Eiweiß- und Zuckerbausteine zu Röstaromen.",
+        "eintrag": "maillard-reaktion"
+      },
+      {
+        "frage": "Warum wird ein zähes Schmorstück nach Stunden zart?",
+        "antworten": [
+          "Das Kollagen im Bindegewebe wird zu Gelatine",
+          "Die Muskelfasern werden weich gekocht",
+          "Das Wasser zieht Salz heraus"
+        ],
+        "richtig": 0,
+        "erklaerung": "Bindegewebe löst sich bei feuchter Hitze langsam zu Gelatine. Das braucht Zeit, nicht mehr Hitze.",
+        "eintrag": "kollagen-gelatine"
+      },
+      {
+        "frage": "Was hält eine Mayonnaise zusammen?",
+        "antworten": [
+          "Das Mehl",
+          "Der Emulgator im Eigelb",
+          "Die Kälte"
+        ],
+        "richtig": 1,
+        "erklaerung": "Lecithin und Eiweiß aus dem Eigelb umhüllen die Öltröpfchen und halten sie getrennt.",
+        "eintrag": "emulsion"
+      },
+      {
+        "frage": "Was passiert, wenn Mürbeteig zu lange geknetet wird?",
+        "antworten": [
+          "Er wird zäh, weil sich Gluten bildet",
+          "Er wird flüssig",
+          "Er wird süßer"
+        ],
+        "richtig": 0,
+        "erklaerung": "Kneten verknüpft die Eiweiße zu Gluten. Das will man im Brot, im Mürbeteig macht es ihn zäh.",
+        "eintrag": "glutenbildung"
+      },
+      {
+        "frage": "Warum wird eine Sauce mit Maisstärke erst dick, wenn sie kurz kocht?",
+        "antworten": [
+          "Stärke quillt erst in der Hitze",
+          "Kochen verdampft das Salz",
+          "Stärke braucht Luft"
+        ],
+        "richtig": 0,
+        "erklaerung": "Stärkekörner nehmen erst ab etwa 60–70 °C Wasser auf und quellen. Kalt passiert fast nichts.",
+        "eintrag": "staerkeverkleisterung"
+      }
     ]
   },
   {
@@ -25,18 +123,144 @@
     "fuer": "Für Kinder ab etwa 8 Jahren, zusammen mit Erwachsenen",
     "dauer": "ein paar Nachmittage",
     "schritte": [
-      { "id": "x-rotkohl-indikator", "warum": "Der Farbzauber zum Einstieg: Rotkohlsaft zeigt, ob etwas sauer ist." },
-      { "id": "x-apfel-braun", "warum": "Warum der Apfel braun wird, und wie man es verhindert." },
-      { "id": "x-salz-gurke", "warum": "Salz zieht Wasser: Man kann richtig zusehen." },
-      { "id": "x-backpulver-kalt-heiss", "warum": "Was im Kuchen die Bläschen macht." },
-      { "id": "x-hefe-ballon", "warum": "Hefe lebt und atmet: Sie bläst einen Ballon auf." },
-      { "id": "x-eischnee-fett", "warum": "Ein winziger Tropfen Fett verdirbt den ganzen Eischnee." },
-      { "id": "x-butter-schuetteln", "warum": "Aus Rahm wird Butter, nur durch Schütteln." },
-      { "id": "x-glace-beutel", "warum": "Mit Eis und Salz in zehn Minuten Glace machen." },
-      { "id": "x-ananas-gelatine", "warum": "Frische Ananas zerschneidet die Götterspeise." },
-      { "id": "x-gluten-auswaschen", "warum": "Das unsichtbare Netz im Mehl wird sichtbar." },
-      { "id": "x-bohnen-gruen", "warum": "Warum Gemüse grau wird, wenn es zu lange kocht." },
-      { "id": "x-zuckerkristalle", "warum": "Zum Schluss ein Versuch über mehrere Tage: Kristalle wachsen lassen." }
+      {
+        "id": "x-rotkohl-indikator",
+        "warum": "Der Farbzauber zum Einstieg: Rotkohlsaft zeigt, ob etwas sauer ist."
+      },
+      {
+        "id": "x-apfel-braun",
+        "warum": "Warum der Apfel braun wird, und wie man es verhindert."
+      },
+      {
+        "id": "x-salz-gurke",
+        "warum": "Salz zieht Wasser: Man kann richtig zusehen."
+      },
+      {
+        "id": "x-backpulver-kalt-heiss",
+        "warum": "Was im Kuchen die Bläschen macht."
+      },
+      {
+        "id": "x-hefe-ballon",
+        "warum": "Hefe lebt und atmet: Sie bläst einen Ballon auf."
+      },
+      {
+        "id": "x-eischnee-fett",
+        "warum": "Ein winziger Tropfen Fett verdirbt den ganzen Eischnee."
+      },
+      {
+        "id": "x-butter-schuetteln",
+        "warum": "Aus Rahm wird Butter, nur durch Schütteln."
+      },
+      {
+        "id": "x-glace-beutel",
+        "warum": "Mit Eis und Salz in zehn Minuten Glace machen."
+      },
+      {
+        "id": "x-ananas-gelatine",
+        "warum": "Frische Ananas zerschneidet die Götterspeise."
+      },
+      {
+        "id": "x-gluten-auswaschen",
+        "warum": "Das unsichtbare Netz im Mehl wird sichtbar."
+      },
+      {
+        "id": "x-bohnen-gruen",
+        "warum": "Warum Gemüse grau wird, wenn es zu lange kocht."
+      },
+      {
+        "id": "x-zuckerkristalle",
+        "warum": "Zum Schluss ein Versuch über mehrere Tage: Kristalle wachsen lassen."
+      }
+    ],
+    "quiz": [
+      {
+        "frage": "Rotkohlsaft wird pink. Was hast du hineingegeben?",
+        "antworten": [
+          "Natron",
+          "Essig",
+          "Wasser"
+        ],
+        "richtig": 1,
+        "erklaerung": "Säure wie Essig macht den Rotkohl-Farbstoff pink, Natron macht ihn blau bis grün.",
+        "eintrag": "x-rotkohl-indikator"
+      },
+      {
+        "frage": "Warum bleibt ein Apfelschnitz mit Zitronensaft hell?",
+        "antworten": [
+          "Die Zitrone färbt ihn gelb",
+          "Die Säure bremst das Enzym, das den Apfel braun macht",
+          "Zitronensaft ist kalt"
+        ],
+        "richtig": 1,
+        "erklaerung": "Ein Enzym im Apfel bildet mit Luft braune Farbstoffe. Säure bremst es.",
+        "eintrag": "x-apfel-braun"
+      },
+      {
+        "frage": "Auf gesalzenen Gurkenscheiben stehen nach 15 Minuten Wassertropfen. Woher kommt das Wasser?",
+        "antworten": [
+          "Aus der Luft",
+          "Aus dem Salz",
+          "Aus der Gurke selbst"
+        ],
+        "richtig": 2,
+        "erklaerung": "Salz zieht Wasser aus den Zellen der Gurke heraus. Das nennt man Osmose.",
+        "eintrag": "x-salz-gurke"
+      },
+      {
+        "frage": "Was bläst den Luftballon auf der Hefeflasche auf?",
+        "antworten": [
+          "Kohlendioxid, das die Hefe macht",
+          "Warme Luft aus dem Wasser",
+          "Der Zucker verdampft"
+        ],
+        "richtig": 0,
+        "erklaerung": "Hefe frisst Zucker und atmet Kohlendioxid aus. Dasselbe Gas macht die Löcher im Brot.",
+        "eintrag": "x-hefe-ballon"
+      },
+      {
+        "frage": "Warum wird Eischnee mit einem Tropfen Eigelb nicht steif?",
+        "antworten": [
+          "Eigelb ist zu schwer",
+          "Das Fett im Eigelb lässt die Luftbläschen platzen",
+          "Eigelb ist zu kalt"
+        ],
+        "richtig": 1,
+        "erklaerung": "Fett schiebt sich zwischen die Eiweiß-Häutchen um die Bläschen, und sie platzen.",
+        "eintrag": "x-eischnee-fett"
+      },
+      {
+        "frage": "Wieso wird Milch im Beutel mit Eis und Salz zu Glace, mit Eis allein aber nicht?",
+        "antworten": [
+          "Salz macht das Eis noch kälter",
+          "Salz ist süß",
+          "Salz macht die Milch dicker"
+        ],
+        "richtig": 0,
+        "erklaerung": "Salz lässt das Eis schmelzen und die Lake wird weit unter 0 °C kalt. Das reicht, um die Milch zu gefrieren.",
+        "eintrag": "x-glace-beutel"
+      },
+      {
+        "frage": "Warum bleibt Götterspeise mit frischer Ananas flüssig?",
+        "antworten": [
+          "Ananas ist zu sauer",
+          "Ein Enzym der Ananas zerschneidet die Gelatine",
+          "Ananas enthält zu viel Wasser"
+        ],
+        "richtig": 1,
+        "erklaerung": "Gelatine ist Eiweiß. Das Enzym der frischen Ananas schneidet ihr Netz kaputt. Dosen-Ananas wurde erhitzt, ihr Enzym ist aus.",
+        "eintrag": "x-ananas-gelatine"
+      },
+      {
+        "frage": "Was ist der gummiartige Klumpen, der beim Auswaschen von Teig übrig bleibt?",
+        "antworten": [
+          "Stärke",
+          "Gluten",
+          "Zucker"
+        ],
+        "richtig": 1,
+        "erklaerung": "Das Milchige im Wasser ist Stärke. Der zähe Klumpen ist Gluten, das Netz, das im Brot die Luft festhält.",
+        "eintrag": "x-gluten-auswaschen"
+      }
     ]
   },
   {
@@ -46,16 +270,103 @@
     "fuer": "Für alle, die ihr eigenes Brot backen wollen",
     "dauer": "etwa 1 Stunde Lesen, dann Üben",
     "schritte": [
-      { "id": "mehl", "warum": "Was im Mehl steckt: Stärke, Eiweiß und ein paar Enzyme." },
-      { "id": "glutenbildung", "warum": "Das Netz, das die Gasblasen hält." },
-      { "id": "autolyse", "warum": "Warum ein bisschen Ruhe das Kneten ersetzt." },
-      { "id": "hefegaerung", "warum": "Wer das Gas liefert, und wie die Temperatur ihn bremst oder antreibt." },
-      { "id": "kalte-gare", "warum": "Mehr Zeit gibt mehr Aroma." },
-      { "id": "dehnen-falten", "warum": "Struktur ohne Kneten." },
-      { "id": "dampf-im-ofen", "warum": "Warum Dampf in den ersten Minuten das Brot größer macht." },
-      { "id": "maillard-reaktion", "warum": "Die Kruste." },
-      { "id": "retrogradation", "warum": "Warum Brot altbacken wird, und wie man es aufbackt." },
-      { "id": "l-sauerteig", "warum": "Der nächste Schritt: einen eigenen Sauerteig ansetzen." }
+      {
+        "id": "mehl",
+        "warum": "Was im Mehl steckt: Stärke, Eiweiß und ein paar Enzyme."
+      },
+      {
+        "id": "glutenbildung",
+        "warum": "Das Netz, das die Gasblasen hält."
+      },
+      {
+        "id": "autolyse",
+        "warum": "Warum ein bisschen Ruhe das Kneten ersetzt."
+      },
+      {
+        "id": "hefegaerung",
+        "warum": "Wer das Gas liefert, und wie die Temperatur ihn bremst oder antreibt."
+      },
+      {
+        "id": "kalte-gare",
+        "warum": "Mehr Zeit gibt mehr Aroma."
+      },
+      {
+        "id": "dehnen-falten",
+        "warum": "Struktur ohne Kneten."
+      },
+      {
+        "id": "dampf-im-ofen",
+        "warum": "Warum Dampf in den ersten Minuten das Brot größer macht."
+      },
+      {
+        "id": "maillard-reaktion",
+        "warum": "Die Kruste."
+      },
+      {
+        "id": "retrogradation",
+        "warum": "Warum Brot altbacken wird, und wie man es aufbackt."
+      },
+      {
+        "id": "l-sauerteig",
+        "warum": "Der nächste Schritt: einen eigenen Sauerteig ansetzen."
+      }
+    ],
+    "quiz": [
+      {
+        "frage": "Was hält die Gasbläschen im Brotteig fest?",
+        "antworten": [
+          "Die Stärke",
+          "Das Glutennetz",
+          "Das Salz"
+        ],
+        "richtig": 1,
+        "erklaerung": "Gluten bildet ein dehnbares Netz, das die Bläschen wie kleine Ballone hält.",
+        "eintrag": "glutenbildung"
+      },
+      {
+        "frage": "Warum bekommt ein Teig mit kalter Gare über Nacht mehr Aroma?",
+        "antworten": [
+          "Die Hefe stirbt",
+          "Es entstehen mit der Zeit mehr Aromastoffe und Zucker",
+          "Kälte macht das Mehl feiner"
+        ],
+        "richtig": 1,
+        "erklaerung": "Langsame Gärung und Enzyme haben mehr Zeit. Das gibt Geschmack und eine braunere Kruste.",
+        "eintrag": "kalte-gare"
+      },
+      {
+        "frage": "Wofür ist Dampf in den ersten Minuten im Ofen gut?",
+        "antworten": [
+          "Die Kruste bleibt kurz weich, das Brot kann noch aufgehen",
+          "Das Brot wird schneller gar",
+          "Er tötet die Hefe"
+        ],
+        "richtig": 0,
+        "erklaerung": "Eine feuchte Oberfläche bleibt dehnbar. So kann das Brot noch wachsen, bevor die Kruste fest wird.",
+        "eintrag": "dampf-im-ofen"
+      },
+      {
+        "frage": "Warum wird Brot im Kühlschrank schneller altbacken?",
+        "antworten": [
+          "Es trocknet aus",
+          "Die Stärke ordnet sich in der Kälte schneller",
+          "Der Kühlschrank zieht Geschmack"
+        ],
+        "richtig": 1,
+        "erklaerung": "Altbacken heißt: Die Stärke kristallisiert wieder. Das geht im Kühlschrank deutlich schneller.",
+        "eintrag": "retrogradation"
+      },
+      {
+        "frage": "Was macht ein Sauerteig anders als Hefe allein?",
+        "antworten": [
+          "Er bringt Milchsäurebakterien für Säure und Aroma mit",
+          "Er braucht keinen Ofen",
+          "Er macht das Brot süßer"
+        ],
+        "richtig": 0,
+        "erklaerung": "Im Sauerteig arbeiten wilde Hefen und Milchsäurebakterien zusammen.",
+        "eintrag": "l-sauerteig"
+      }
     ]
   },
   {
@@ -65,16 +376,103 @@
     "fuer": "Für alle, die Fleisch nicht mehr nach Gefühl braten wollen",
     "dauer": "etwa 45 Minuten",
     "schritte": [
-      { "id": "eiweiss-denaturierung", "warum": "Was im Fleisch beim Garen passiert, Grad für Grad." },
-      { "id": "kerntemperatur", "warum": "Die wichtigste Zahl, und warum ein Thermometer mehr hilft als jede Daumenregel." },
-      { "id": "trockensalzen", "warum": "Salz am Vortag: saftiger und besser gewürzt." },
-      { "id": "trocken-tupfen", "warum": "Ohne Wasser an der Oberfläche keine Kruste." },
-      { "id": "steak-grau", "warum": "Was schiefgeht, wenn die Pfanne zu voll oder zu kalt ist." },
-      { "id": "ruhen-lassen", "warum": "Was das Ruhen wirklich bringt, mit Messwerten." },
-      { "id": "kollagen-gelatine", "warum": "Warum zähe Stücke langsam zart werden." },
-      { "id": "schmoren", "warum": "Die Technik dazu." },
-      { "id": "keimwachstum", "warum": "Was beim Geflügel und bei Resten zu beachten ist." },
-      { "id": "g-steak", "warum": "Alles zusammen: ein Steak aus der Pfanne." }
+      {
+        "id": "eiweiss-denaturierung",
+        "warum": "Was im Fleisch beim Garen passiert, Grad für Grad."
+      },
+      {
+        "id": "kerntemperatur",
+        "warum": "Die wichtigste Zahl, und warum ein Thermometer mehr hilft als jede Daumenregel."
+      },
+      {
+        "id": "trockensalzen",
+        "warum": "Salz am Vortag: saftiger und besser gewürzt."
+      },
+      {
+        "id": "trocken-tupfen",
+        "warum": "Ohne Wasser an der Oberfläche keine Kruste."
+      },
+      {
+        "id": "steak-grau",
+        "warum": "Was schiefgeht, wenn die Pfanne zu voll oder zu kalt ist."
+      },
+      {
+        "id": "ruhen-lassen",
+        "warum": "Was das Ruhen wirklich bringt, mit Messwerten."
+      },
+      {
+        "id": "kollagen-gelatine",
+        "warum": "Warum zähe Stücke langsam zart werden."
+      },
+      {
+        "id": "schmoren",
+        "warum": "Die Technik dazu."
+      },
+      {
+        "id": "keimwachstum",
+        "warum": "Was beim Geflügel und bei Resten zu beachten ist."
+      },
+      {
+        "id": "g-steak",
+        "warum": "Alles zusammen: ein Steak aus der Pfanne."
+      }
+    ],
+    "quiz": [
+      {
+        "frage": "Ab wann ziehen sich die Muskelfasern stark zusammen und pressen Saft aus?",
+        "antworten": [
+          "Ab etwa 45 °C",
+          "Ab etwa 66 °C",
+          "Ab etwa 90 °C"
+        ],
+        "richtig": 1,
+        "erklaerung": "Ab etwa 66 °C zieht sich ein zweites Eiweiß stark zusammen. Darum wird Fleisch über diesem Punkt schnell trocken.",
+        "eintrag": "eiweiss-denaturierung"
+      },
+      {
+        "frage": "Was bringt es, Fleisch schon am Vortag zu salzen?",
+        "antworten": [
+          "Es wird saftiger und die Oberfläche trocknet",
+          "Es wird schneller gar",
+          "Es bleibt röter"
+        ],
+        "richtig": 0,
+        "erklaerung": "Das Salz zieht ein und hilft dem Fleisch, Wasser zu halten. Die Oberfläche trocknet ab und bräunt besser.",
+        "eintrag": "trockensalzen"
+      },
+      {
+        "frage": "Warum wird Fleisch grau statt braun, wenn zu viel in der Pfanne liegt?",
+        "antworten": [
+          "Zu viel Fett",
+          "Die Pfanne kühlt ab und das Fleisch kocht im eigenen Saft",
+          "Das Fleisch ist zu kalt gesalzen"
+        ],
+        "richtig": 1,
+        "erklaerung": "Viel Fleisch gibt viel Saft ab. Die Pfanne verliert Hitze, die Oberfläche bleibt bei 100 °C hängen.",
+        "eintrag": "steak-grau"
+      },
+      {
+        "frage": "Wie heiß muss Geflügel im Kern mindestens werden?",
+        "antworten": [
+          "55 °C",
+          "63 °C",
+          "70 °C"
+        ],
+        "richtig": 2,
+        "erklaerung": "Für Geflügel empfehlen die Behörden mindestens 70 °C im Kern, zwei Minuten lang.",
+        "eintrag": "keimwachstum"
+      },
+      {
+        "frage": "Warum wird ein Schmorbraten zarter, je länger er schmort?",
+        "antworten": [
+          "Das Kollagen löst sich zu Gelatine",
+          "Das Fleisch nimmt Sauce auf",
+          "Die Fasern werden länger"
+        ],
+        "richtig": 0,
+        "erklaerung": "Bindegewebe braucht feuchte Hitze und Zeit, um zu Gelatine zu werden.",
+        "eintrag": "kollagen-gelatine"
+      }
     ]
   },
   {
@@ -84,16 +482,103 @@
     "fuer": "Für alle, denen Saucen schon einmal geronnen oder zu dünn geraten sind",
     "dauer": "etwa 45 Minuten",
     "schritte": [
-      { "id": "w-saucen", "warum": "Der Überblick: drei Wege, eine Sauce zu binden." },
-      { "id": "emulsion", "warum": "Weg 1: Fett in Wasser in winzigen Tröpfchen." },
-      { "id": "g-mayonnaise", "warum": "Die Emulsion zum Selbermachen." },
-      { "id": "mayo-gerinnt", "warum": "Was tun, wenn sie sich trennt." },
-      { "id": "staerkeverkleisterung", "warum": "Weg 2: Stärke quillt und bindet." },
-      { "id": "mehlschwitze", "warum": "Die klassische Technik dazu." },
-      { "id": "reduktion", "warum": "Weg 3: einkochen, bis es sämig wird." },
-      { "id": "montieren", "warum": "Kalte Butter zum Schluss: Glanz und Bindung." },
-      { "id": "g-hollandaise", "warum": "Die Königsdisziplin: warme Emulsion mit Eigelb." },
-      { "id": "sauce-trennt-sich", "warum": "Für den Notfall." }
+      {
+        "id": "w-saucen",
+        "warum": "Der Überblick: drei Wege, eine Sauce zu binden."
+      },
+      {
+        "id": "emulsion",
+        "warum": "Weg 1: Fett in Wasser in winzigen Tröpfchen."
+      },
+      {
+        "id": "g-mayonnaise",
+        "warum": "Die Emulsion zum Selbermachen."
+      },
+      {
+        "id": "mayo-gerinnt",
+        "warum": "Was tun, wenn sie sich trennt."
+      },
+      {
+        "id": "staerkeverkleisterung",
+        "warum": "Weg 2: Stärke quillt und bindet."
+      },
+      {
+        "id": "mehlschwitze",
+        "warum": "Die klassische Technik dazu."
+      },
+      {
+        "id": "reduktion",
+        "warum": "Weg 3: einkochen, bis es sämig wird."
+      },
+      {
+        "id": "montieren",
+        "warum": "Kalte Butter zum Schluss: Glanz und Bindung."
+      },
+      {
+        "id": "g-hollandaise",
+        "warum": "Die Königsdisziplin: warme Emulsion mit Eigelb."
+      },
+      {
+        "id": "sauce-trennt-sich",
+        "warum": "Für den Notfall."
+      }
+    ],
+    "quiz": [
+      {
+        "frage": "Was sind die drei Wege, eine Sauce zu binden?",
+        "antworten": [
+          "Salz, Zucker, Säure",
+          "Emulsion, Stärke, Einkochen",
+          "Kochen, Braten, Backen"
+        ],
+        "richtig": 1,
+        "erklaerung": "Fast jede Sauce ist eine Emulsion, mit Stärke gebunden oder eingekocht.",
+        "eintrag": "w-saucen"
+      },
+      {
+        "frage": "Deine Mayonnaise trennt sich. Was hilft?",
+        "antworten": [
+          "Mehr Öl auf einmal",
+          "Ein frisches Eigelb nehmen und die getrennte Sauce langsam einschlagen",
+          "Sie aufkochen"
+        ],
+        "richtig": 1,
+        "erklaerung": "Das frische Eigelb bringt neuen Emulgator. Langsam eingearbeitet, bildet sich die Emulsion neu.",
+        "eintrag": "mayo-gerinnt"
+      },
+      {
+        "frage": "Warum kommt kalte Butter zum Schluss in die Sauce?",
+        "antworten": [
+          "Damit sie Glanz bekommt und bindet",
+          "Damit die Sauce abkühlt",
+          "Damit sie salziger wird"
+        ],
+        "richtig": 0,
+        "erklaerung": "Kalte Butter schmilzt langsam und verteilt sich in feinen Tröpfchen: Die Sauce wird glänzend und sämig.",
+        "eintrag": "montieren"
+      },
+      {
+        "frage": "Was passiert, wenn Hollandaise zu heiß wird?",
+        "antworten": [
+          "Sie wird dünner",
+          "Das Eigelb gerinnt und die Sauce flockt",
+          "Sie wird süßer"
+        ],
+        "richtig": 1,
+        "erklaerung": "Ab etwa 70 °C beginnt Eigelb zu gerinnen. Darum Hollandaise nur über dem Wasserbad und warm, nicht heiß.",
+        "eintrag": "g-hollandaise"
+      },
+      {
+        "frage": "Warum salzt man eine Sauce, die noch einkochen soll, erst am Schluss?",
+        "antworten": [
+          "Salz verdampft",
+          "Beim Einkochen wird auch das Salz konzentriert",
+          "Salz verhindert das Einkochen"
+        ],
+        "richtig": 1,
+        "erklaerung": "Das Wasser verdampft, das Salz bleibt. Früh gesalzen wird die Sauce am Ende zu salzig.",
+        "eintrag": "reduktion"
+      }
     ]
   }
 ]

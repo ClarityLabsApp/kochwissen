@@ -73,7 +73,13 @@ for (const { data: e } of entries) {
   }
 }
 const pfade = read("content/lernpfade.json");
-for (const p of pfade) for (const s of p.schritte) if (!known.has(s.id)) errors.push(`lernpfade.json: ${p.id} verweist auf unbekannte id "${s.id}"`);
+for (const p of pfade) {
+  for (const s of p.schritte) if (!known.has(s.id)) errors.push(`lernpfade.json: ${p.id} verweist auf unbekannte id "${s.id}"`);
+  for (const q of p.quiz || []) {
+    if (!known.has(q.eintrag)) errors.push(`lernpfade.json: Quiz in ${p.id} verweist auf unbekannte id "${q.eintrag}"`);
+    if (!(q.richtig >= 0 && q.richtig < q.antworten.length)) errors.push(`lernpfade.json: Quiz in ${p.id}: richtige Antwort fehlt bei „${q.frage}“`);
+  }
+}
 for (const w of warn) console.warn("Hinweis:", w);
 if (errors.length) {
   console.error(`\n${errors.length} Fehler:\n` + errors.map((x) => "  - " + x).join("\n"));

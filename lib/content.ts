@@ -103,7 +103,7 @@ export const TYP_NAME: Record<Typ, string> = {
 };
 
 /* ---------- Lernpfade ---------- */
-export interface Pfad { id: string; titel: string; kurz: string; fuer: string; dauer: string; schritte: { id: string; warum: string }[] }
+export interface Pfad { id: string; titel: string; kurz: string; fuer: string; dauer: string; schritte: { id: string; warum: string }[]; quiz?: { frage: string; antworten: string[]; richtig: number; erklaerung: string; eintrag: string }[] }
 let pfadCache: Pfad[] | null = null;
 export function lernpfade(): Pfad[] {
   if (!pfadCache) pfadCache = JSON.parse(readFileSync(join(root, "content/lernpfade.json"), "utf8")) as Pfad[];
