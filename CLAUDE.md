@@ -91,7 +91,7 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - [x] Labor II: Mascarpone, Vanilleextrakt, Puderzucker, Buttermilch-Ersatz, Senf, Sauerkraut, brauner Zucker, Dulce de leche, Apfelpektin, Labneh (`scripts/batches/gen_batch_labor2.py`)
 - [ ] Weitere Labor-Rezepte (z. B. Essig-Mutter, Ricotta aus Molke, Kräutersalz, Kimchi). Keine Rezepte mit Botulismus-Risiko (Knoblauch- oder Kräuteröl ungekühlt, Einkochen säurearmer Lebensmittel)
 - [x] Startseite mit drei Einstiegen (Problem, Ziel, Verstehen), Eintrag des Tages, 5 Lernpfade, 6 Schweizer Gerichte (`gen_batch_schweiz.py`)
-- [ ] Bilder für 53 Gerichte, Experimente und Labor-Rezepte erzeugen: Motive stehen in `visual.illustration`, `npm run illustrationen` erzeugt nur fehlende
+- [ ] Bilder für 53 Gerichte, Experimente und Labor-Rezepte erzeugen: Motive stehen in `visual.illustration`, `npm run illustrationen` erzeugt fehlende als PNG. Danach freistellen (Papierfarbe aus den Rändern transparent), auf das Motiv beschneiden, max. 800 px, als WebP speichern, PNG löschen
 - [x] Seitenbeschreibungen, Vorschaubilder (Open Graph), Sitemap, robots.txt; Druckansicht mit Knopf bei Experimenten und Labor; Sprunglink zum Inhalt
 - [x] Quiz am Ende jedes Lernpfads (29 Fragen), 6 neue Simulationen (Verdampfen, Stärke, Kollagen, Konvektion, Blätterteig, Milchsäuregärung)
 - [x] Alle 54 Prozesse haben eine Animation (2. November 2026)

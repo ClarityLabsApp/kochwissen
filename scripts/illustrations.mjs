@@ -1,5 +1,6 @@
 // Erzeugt die Aquarell-Illustrationen für Welten und Zutaten über eine Bild-API.
-// Jeder Eintrag mit visual.illustration bekommt ein Bild unter public/illustrationen/<id>.webp (klein genug fürs Web).
+// Jeder Eintrag mit visual.illustration bekommt ein Bild unter public/illustrationen/<id>.png.
+// Danach freistellen, beschneiden und als WebP speichern (siehe CLAUDE.md, Illustrationen); die Seite zeigt nur .webp.
 // Bereits vorhandene Bilder werden übersprungen (zum Neu-Erzeugen Datei löschen).
 //
 // Aufruf:
@@ -31,7 +32,7 @@ let jobs = readdirSync(dir).filter((f) => f.endsWith(".json"))
   .map((f) => JSON.parse(readFileSync(join(dir, f), "utf8")))
   .filter((e) => e.visual?.illustration)
   .filter((e) => !only || only.includes(e.id))
-  .filter((e) => !existsSync(join(outDir, `${e.id}.webp`)));
+  .filter((e) => !existsSync(join(outDir, `${e.id}.webp`)) && !existsSync(join(outDir, `${e.id}.png`)));
 if (test) jobs = jobs.filter((e) => ["w-brot", "mehl", "zwiebel", "schokolade"].includes(e.id)).slice(0, 4);
 
 console.log(`${jobs.length} Illustration(en) zu erzeugen mit ${model} (${quality}).`);
@@ -39,12 +40,12 @@ for (const e of jobs) {
   const res = await fetch("https://api.openai.com/v1/images/generations", {
     method: "POST",
     headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ model, prompt: STYLE + e.visual.illustration, size: "1024x1024", quality, n: 1, output_format: "webp", output_compression: 82, background: "transparent" }),
+    body: JSON.stringify({ model, prompt: STYLE + e.visual.illustration, size: "1024x1024", quality, n: 1 }),
   });
   if (!res.ok) { console.error(`✗ ${e.id}: ${res.status} ${await res.text()}`); continue; }
   const data = await res.json();
   const b64 = data.data?.[0]?.b64_json;
   if (!b64) { console.error(`✗ ${e.id}: keine Bilddaten in der Antwort`); continue; }
-  writeFileSync(join(outDir, `${e.id}.webp`), Buffer.from(b64, "base64"));
+  writeFileSync(join(outDir, `${e.id}.png`), Buffer.from(b64, "base64"));
   console.log(`✓ ${e.id}`);
 }
