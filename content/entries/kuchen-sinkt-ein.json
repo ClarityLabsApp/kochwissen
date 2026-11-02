@@ -14,7 +14,7 @@
     "Kuchen eingefallen"
   ],
   "kurz": "Der Kuchen ist schneller gestiegen, als er fest werden konnte, oder er kam zu früh aus dem Ofen.",
-  "bild_im_kopf": "Wie ein Zelt, das man aufbaut, bevor die Stangen eingerastet sind.",
+  "bild_im_kopf": "Wie ein Kartenhaus, das man zu früh loslässt: Bevor alles verkeilt ist, fällt es in sich zusammen.",
   "ursachen": [
     {
       "titel": "Nicht durchgebacken",
@@ -113,7 +113,8 @@
     "chemische-lockerung",
     "backpulver",
     "eiweiss-gerinnung",
-    "unterheben"
+    "unterheben",
+    "kuchen-klitschig"
   ],
   "quellen": [
     {

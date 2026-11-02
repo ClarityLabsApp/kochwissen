@@ -58,6 +58,20 @@ for (const { file, data: e } of entries) {
 
 const unmarked = findUnmarked(entries.map((x) => x.data), known);
 if (unmarked.length) warn.push(`${unmarked.length} Fachwörter ohne Glossar-Link (Liste: npm run glossar, verlinken: npm run glossar -- --fix)`);
+// Schreibleitfaden: jede Analogie nur einmal, Sätze unter 25 Wörtern, kein Werbeton
+const plainT = (s) => s.replace(/\[\[[a-z0-9-]+\|([^\]]+)\]\]/g, "$1").replace(/\[\[([a-z0-9-]+)\]\]/g, "$1");
+const bik = new Map();
+for (const { data: e } of entries) {
+  if (e.bild_im_kopf) {
+    const key = plainT(e.bild_im_kopf).toLowerCase().split(/[:,]/)[0].trim().slice(0, 40);
+    if (bik.has(key)) warn.push(`${e.id}: Analogie „${key}“ schon in ${bik.get(key)}`); else bik.set(key, e.id);
+  } else if (e.typ !== "begriff") warn.push(`${e.id}: kein bild_im_kopf`);
+  for (const t of [...textFields(e), e.titel]) {
+    const s = plainT(t);
+    if (/!|ganz einfach|Geheimtipp|perfekt|ultimativ|kinderleicht/i.test(s)) warn.push(`${e.id}: Werbeton in „${s.slice(0, 60)}…“`);
+    for (const satz of s.split(/(?<=[.?!])\s+/)) if (satz.split(/\s+/).length > 25) warn.push(`${e.id}: Satz mit ${satz.split(/\s+/).length} Wörtern: „${satz.slice(0, 60)}…“`);
+  }
+}
 const pfade = read("content/lernpfade.json");
 for (const p of pfade) for (const s of p.schritte) if (!known.has(s.id)) errors.push(`lernpfade.json: ${p.id} verweist auf unbekannte id "${s.id}"`);
 for (const w of warn) console.warn("Hinweis:", w);

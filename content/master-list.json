@@ -68,7 +68,8 @@
    "links": [
     "eiweiss-gerinnung",
     "schaumbildung",
-    "emulsion"
+    "emulsion",
+    "ei"
    ],
    "welten": [],
    "synonyme": [],
@@ -87,7 +88,8 @@
     "pektin-abbau",
     "chlorophyll-farbe",
     "maillard-reaktion",
-    "l-sauerkraut"
+    "l-sauerkraut",
+    "g-ofengemuese"
    ],
    "welten": [],
    "synonyme": [],
@@ -166,7 +168,8 @@
     "amylase",
     "laugen",
     "l-sauerteig",
-    "l-gebackenes-natron"
+    "l-gebackenes-natron",
+    "g-pizza"
    ],
    "welten": [],
    "synonyme": [],
@@ -184,7 +187,9 @@
    "links": [
     "chemische-lockerung",
     "glutenbildung",
-    "schaumbildung"
+    "schaumbildung",
+    "dampflockerung",
+    "kuchen-klitschig"
    ],
    "welten": [],
    "synonyme": [],
@@ -287,7 +292,8 @@
    "links": [
     "verdampfen",
     "knusprig",
-    "rauchpunkt"
+    "rauchpunkt",
+    "g-pommes"
    ],
    "welten": [],
    "synonyme": [],
@@ -372,7 +378,9 @@
     "maillard-reaktion",
     "zucker",
     "temperatur",
-    "karamell-kristallisiert"
+    "karamell-kristallisiert",
+    "zwiebel",
+    "g-creme-brulee"
    ],
    "welten": [
     "w-suesses",
@@ -386,13 +394,11 @@
     "vorlage": "zoom3-simulation"
    },
    "verlinkt_von": [
-    "g-creme-brulee",
     "l-dulce-de-leche",
     "w-kaffee",
     "w-suesses",
     "zucker-karamellisieren",
-    "zuckergehalt",
-    "zwiebel"
+    "zuckergehalt"
    ]
   },
   {
@@ -602,7 +608,8 @@
     "ei",
     "temperatur",
     "ruehrei-waessrig",
-    "creme-klumpig"
+    "creme-klumpig",
+    "g-creme-brulee"
    ],
    "welten": [
     "w-eier",
@@ -616,7 +623,6 @@
     "vorlage": "zoom3-simulation"
    },
    "verlinkt_von": [
-    "g-creme-brulee",
     "g-fotzelschnitten",
     "g-hollandaise",
     "g-raclette",
@@ -745,7 +751,8 @@
     "ei",
     "sahne",
     "mechanik",
-    "eischnee-nicht-steif"
+    "eischnee-nicht-steif",
+    "g-meringue"
    ],
    "welten": [
     "w-eier",
@@ -763,7 +770,6 @@
     "aufschlagen",
     "eiweiss",
     "fluffig",
-    "g-meringue",
     "kuchen-sinkt-ein",
     "luftig",
     "sahne-wird-butter",
@@ -1023,7 +1029,8 @@
    "links": [
     "temperatur",
     "pfanne-vorheizen",
-    "fisch-klebt"
+    "fisch-klebt",
+    "x-tanzender-tropfen"
    ],
    "welten": [
     "w-fleisch"
@@ -1034,9 +1041,7 @@
    "visual": {
     "vorlage": "zoom3-simulation"
    },
-   "verlinkt_von": [
-    "x-tanzender-tropfen"
-   ]
+   "verlinkt_von": []
   },
   {
    "id": "rauchpunkt",
@@ -1049,7 +1054,8 @@
     "butter",
     "temperatur",
     "frittiertes-fettig",
-    "l-bratbutter"
+    "l-bratbutter",
+    "oxidation-fett"
    ],
    "welten": [
     "w-frittieren",
@@ -1135,7 +1141,8 @@
     "zeit",
     "temperatur",
     "zucker",
-    "brot-flach"
+    "brot-flach",
+    "luftig"
    ],
    "welten": [
     "w-brot",
@@ -1207,7 +1214,8 @@
     "saeure",
     "kuchen-sinkt-ein",
     "l-backpulver",
-    "l-buttermilch-ersatz"
+    "l-buttermilch-ersatz",
+    "luftig"
    ],
    "welten": [
     "w-gebaeck"
@@ -1248,7 +1256,11 @@
    "visual": {
     "vorlage": "zoom3-simulation"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "dampf-im-ofen",
+    "luftig",
+    "w-gebaeck"
+   ]
   },
   {
    "id": "enzym-braeunung",
@@ -1296,7 +1308,8 @@
    },
    "verlinkt_von": [
     "enzym-braeunung",
-    "laenger-frisch"
+    "laenger-frisch",
+    "rauchpunkt"
    ]
   },
   {
@@ -1516,7 +1529,8 @@
    "links": [
     "staerkeverkleisterung",
     "mit-staerke-bestaeuben",
-    "abbinden-staerke"
+    "abbinden-staerke",
+    "x-kartoffelwasser"
    ],
    "welten": [
     "w-saucen",
@@ -1532,8 +1546,7 @@
     "bratkartoffeln-kleben",
     "kaltwasserbad",
     "mantecare",
-    "x-gluten-auswaschen",
-    "x-kartoffelwasser"
+    "x-gluten-auswaschen"
    ]
   },
   {
@@ -1645,7 +1658,11 @@
    "visual": {
     "vorlage": "punktmatrix"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "eigelb",
+    "eiweiss",
+    "w-eier"
+   ]
   },
   {
    "id": "eigelb",
@@ -1656,7 +1673,8 @@
    "links": [
     "emulsion",
     "legieren",
-    "mayo-gerinnt"
+    "mayo-gerinnt",
+    "ei"
    ],
    "welten": [
     "w-saucen",
@@ -1681,7 +1699,8 @@
    "pilot": false,
    "links": [
     "schaumbildung",
-    "eischnee-nicht-steif"
+    "eischnee-nicht-steif",
+    "ei"
    ],
    "welten": [
     "w-eier",
@@ -1728,7 +1747,8 @@
    "links": [
     "rauchpunkt",
     "emulsion",
-    "frittiertes-fettig"
+    "frittiertes-fettig",
+    "oxidation-fett"
    ],
    "welten": [
     "w-frittieren"
@@ -1737,9 +1757,7 @@
    "visual": {
     "vorlage": "punktmatrix"
    },
-   "verlinkt_von": [
-    "oxidation-fett"
-   ]
+   "verlinkt_von": []
   },
   {
    "id": "fett",
@@ -1750,7 +1768,8 @@
    "links": [
     "glutenbildung",
     "emulsion",
-    "zart"
+    "zart",
+    "oxidation-fett"
    ],
    "welten": [
     "w-gebaeck",
@@ -1769,8 +1788,7 @@
     "kekse-breit",
     "kuchen-trocken",
     "muerbe",
-    "muerbeteig-zaeh",
-    "oxidation-fett"
+    "muerbeteig-zaeh"
    ]
   },
   {
@@ -2159,7 +2177,9 @@
    "visual": {
     "vorlage": "punktmatrix"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "natron-zwiebeln"
+   ]
   },
   {
    "id": "knoblauch",
@@ -2604,7 +2624,8 @@
     "chemische-lockerung",
     "schaumbildung",
     "hefegaerung",
-    "unterheben"
+    "unterheben",
+    "luftig"
    ],
    "welten": [
     "w-gebaeck",
@@ -2630,7 +2651,8 @@
    "pilot": false,
    "links": [
     "schaumbildung",
-    "aufschlagen"
+    "aufschlagen",
+    "dampflockerung"
    ],
    "welten": [
     "w-gebaeck",
@@ -2643,7 +2665,11 @@
    "visual": {
     "vorlage": "punktmatrix"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "chemische-lockerung",
+    "fluffig",
+    "hefegaerung"
+   ]
   },
   {
    "id": "muerbe",
@@ -2957,7 +2983,8 @@
     "staerke",
     "staerkeverkleisterung",
     "knusprig",
-    "wedges-nicht-knusprig"
+    "wedges-nicht-knusprig",
+    "x-kartoffelwasser"
    ],
    "welten": [
     "w-kartoffeln",
@@ -2972,8 +2999,7 @@
     "vorlage": "ablauf"
    },
    "verlinkt_von": [
-    "g-pommes",
-    "x-kartoffelwasser"
+    "g-pommes"
    ]
   },
   {
@@ -3053,7 +3079,8 @@
    "pilot": true,
    "links": [
     "verdampfen",
-    "knusprig"
+    "knusprig",
+    "g-pommes"
    ],
    "welten": [
     "w-frittieren",
@@ -3065,9 +3092,7 @@
    "visual": {
     "vorlage": "ablauf"
    },
-   "verlinkt_von": [
-    "g-pommes"
-   ]
+   "verlinkt_von": []
   },
   {
    "id": "anbraten",
@@ -3102,7 +3127,8 @@
    "links": [
     "leidenfrost",
     "temperatur",
-    "steak-grau"
+    "steak-grau",
+    "x-tanzender-tropfen"
    ],
    "welten": [
     "w-fleisch"
@@ -3116,8 +3142,7 @@
    "verlinkt_von": [
     "anbraten",
     "bratkartoffeln-kleben",
-    "fisch-klebt",
-    "x-tanzender-tropfen"
+    "fisch-klebt"
    ]
   },
   {
@@ -3236,7 +3261,8 @@
    "pilot": true,
    "links": [
     "maillard-reaktion",
-    "konvektion"
+    "konvektion",
+    "g-ofengemuese"
    ],
    "welten": [
     "w-gemuese",
@@ -3246,9 +3272,7 @@
    "visual": {
     "vorlage": "ablauf"
    },
-   "verlinkt_von": [
-    "g-ofengemuese"
-   ]
+   "verlinkt_von": []
   },
   {
    "id": "grillen",
@@ -3430,7 +3454,8 @@
    "pilot": false,
    "links": [
     "schaumbildung",
-    "luftig"
+    "luftig",
+    "g-meringue"
    ],
    "welten": [
     "w-eier",
@@ -3441,7 +3466,6 @@
     "vorlage": "ablauf"
    },
    "verlinkt_von": [
-    "g-meringue",
     "x-eischnee-fett"
    ]
   },
@@ -3514,7 +3538,8 @@
     "hefegaerung",
     "zeit",
     "grosse-poren",
-    "amylase"
+    "amylase",
+    "g-pizza"
    ],
    "welten": [
     "w-brot"
@@ -3525,9 +3550,7 @@
    "visual": {
     "vorlage": "ablauf"
    },
-   "verlinkt_von": [
-    "g-pizza"
-   ]
+   "verlinkt_von": []
   },
   {
    "id": "vorteig",
@@ -3558,7 +3581,8 @@
    "pilot": false,
    "links": [
     "luftfeuchte-ofen",
-    "brot-kruste-weich"
+    "brot-kruste-weich",
+    "dampflockerung"
    ],
    "welten": [
     "w-brot"
@@ -3743,7 +3767,8 @@
    "links": [
     "natron",
     "maillard-reaktion",
-    "basen-braeunung"
+    "basen-braeunung",
+    "zwiebel"
    ],
    "welten": [
     "w-gemuese"
@@ -3947,7 +3972,8 @@
    "pilot": false,
    "links": [
     "chemische-lockerung",
-    "schaumbildung"
+    "schaumbildung",
+    "kuchen-klitschig"
    ],
    "welten": [
     "w-gebaeck"
@@ -3997,7 +4023,10 @@
    "visual": {
     "vorlage": "pfannentest"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "kuchen-sinkt-ein",
+    "w-gebaeck"
+   ]
   },
   {
    "id": "muffins-tunnel",
@@ -4125,7 +4154,8 @@
    "pilot": false,
    "links": [
     "glutenbildung",
-    "ruhen-lassen"
+    "ruhen-lassen",
+    "g-pizza"
    ],
    "welten": [
     "w-brot",
@@ -4135,9 +4165,7 @@
    "visual": {
     "vorlage": "pfannentest"
    },
-   "verlinkt_von": [
-    "g-pizza"
-   ]
+   "verlinkt_von": []
   },
   {
    "id": "muerbeteig-zaeh",
@@ -4289,7 +4317,8 @@
    "status": "geplant",
    "pilot": false,
    "links": [
-    "schaumbildung"
+    "schaumbildung",
+    "g-meringue"
    ],
    "welten": [
     "w-eier"
@@ -4300,7 +4329,6 @@
    },
    "verlinkt_von": [
     "eiweiss",
-    "g-meringue",
     "x-eischnee-fett"
    ]
   },
@@ -4433,7 +4461,8 @@
    "links": [
     "knusprig",
     "kaltwasserbad",
-    "staerkeverkleisterung"
+    "staerkeverkleisterung",
+    "g-pommes"
    ],
    "welten": [
     "w-kartoffeln",
@@ -4612,7 +4641,8 @@
    "pilot": false,
    "links": [
     "eiweiss-gerinnung",
-    "staerkeverkleisterung"
+    "staerkeverkleisterung",
+    "g-creme-brulee"
    ],
    "welten": [
     "w-suesses"
@@ -4621,9 +4651,7 @@
    "visual": {
     "vorlage": "pfannentest"
    },
-   "verlinkt_von": [
-    "g-creme-brulee"
-   ]
+   "verlinkt_von": []
   },
   {
    "id": "zwiebeln-verbrennen",
@@ -4633,7 +4661,8 @@
    "pilot": false,
    "links": [
     "maillard-reaktion",
-    "pyrolyse"
+    "pyrolyse",
+    "zwiebel"
    ],
    "welten": [
     "w-gemuese"
@@ -4643,8 +4672,7 @@
     "vorlage": "pfannentest"
    },
    "verlinkt_von": [
-    "g-aelplermagronen",
-    "zwiebel"
+    "g-aelplermagronen"
    ]
   },
   {
@@ -4905,7 +4933,10 @@
     "Fritten",
     "French Fries"
    ],
-   "verlinkt_von": [],
+   "verlinkt_von": [
+    "w-frittieren",
+    "wedges-nicht-knusprig"
+   ],
    "visual": {
     "vorlage": "ablauf"
    }
@@ -4977,7 +5008,9 @@
     "Pizzateig",
     "Pizza napoletana"
    ],
-   "verlinkt_von": [],
+   "verlinkt_von": [
+    "w-brot"
+   ],
    "visual": {
     "vorlage": "ablauf"
    }
@@ -5103,7 +5136,9 @@
     "geröstetes Gemüse",
     "Blechgemüse"
    ],
-   "verlinkt_von": [],
+   "verlinkt_von": [
+    "w-gemuese"
+   ],
    "visual": {
     "vorlage": "ablauf"
    }
