@@ -136,7 +136,10 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
               <p>{T.doors[d.typ][1]}</p>
                 <ul className="rows">
                   {d.ids.filter((id) => byId.has(id)).map((id) => (
-                    <li key={id}><Link href={ln(`/eintrag/${id}`)}><strong>{byId.get(id)!.titel}</strong></Link></li>
+                    <li key={id}><Link href={ln(`/eintrag/${id}`)} className={has.has(id) ? "with-pic" : ""}>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      {has.has(id) && <img src={`/illustrationen/${id}.webp`} alt="" width={36} height={36} loading="lazy" />}
+                      <strong>{byId.get(id)!.titel}</strong></Link></li>
                   ))}
                 </ul>
               <div className="door-foot">
