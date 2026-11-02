@@ -1,0 +1,19 @@
+{
+  "id": "solanin",
+  "typ": "begriff",
+  "titel": "Solanin",
+  "synonyme": [],
+  "kurz": "Ein giftiger Abwehrstoff der Kartoffel. Er sammelt sich in grünen Stellen, Keimen und der Schale, darum schneidet man diese großzügig weg.",
+  "links": [
+    "schaelen",
+    "w-kartoffeln"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse: Kartoffeln"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

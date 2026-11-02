@@ -1,0 +1,19 @@
+{
+  "id": "ganache",
+  "typ": "begriff",
+  "titel": "Ganache",
+  "synonyme": [],
+  "kurz": "Eine Creme aus Schokolade und heißer Sahne. Je nach Verhältnis dient sie zum Glasieren, Füllen oder für Pralinen.",
+  "links": [
+    "schokolade",
+    "emulsion"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Schokolade"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

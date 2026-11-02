@@ -1,7 +1,7 @@
 {
   "id": "mehl",
   "titel": "Flour",
-  "kurz": "Flour provides starch for the crumb and protein for the [[glutenbildung|gluten network]]. How much protein it has decides what it is good for.",
+  "kurz": "Flour provides starch for the [[krume|crumb]] and protein for the [[glutenbildung|gluten network]]. How much protein it has decides what it is good for.",
   "bild_im_kopf": "Like building material in two kinds: starch is the filling, protein is the frame.",
   "was_passiert": "Wheat flour with a lot of protein (Manitoba, bread flour) gives a strong network for bread and pizza. Lower-protein flour suits cakes. Darker flours contain more bran, take up more water and taste stronger. Rye forms hardly any gluten and needs acid.",
   "synonyme": [

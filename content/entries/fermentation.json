@@ -1,0 +1,23 @@
+{
+  "id": "fermentation",
+  "typ": "begriff",
+  "titel": "Fermentation",
+  "synonyme": [
+    "fermentieren",
+    "vergären"
+  ],
+  "kurz": "Mikroorganismen wie Hefen oder [[milchsaeuregaerung|Milchsäurebakterien]] verwandeln Zucker in Säure, Alkohol oder Gas. So entstehen Brot, Joghurt, Sauerkraut, Wein und Essig.",
+  "links": [
+    "hefegaerung",
+    "milchsaeuregaerung",
+    "l-sauerkraut"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse: Fermentation"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

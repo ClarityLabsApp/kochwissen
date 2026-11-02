@@ -11,7 +11,7 @@
     "griechischer Joghurt",
     "Buttermilch"
   ],
-  "kurz": "Joghurt ist von Milchsäurebakterien gesäuerte Milch. Die Säure dickt ein, macht frisch und aktiviert Natron.",
+  "kurz": "Joghurt ist von [[milchsaeuregaerung|Milchsäurebakterien]] gesäuerte Milch. Die Säure dickt ein, macht frisch und aktiviert Natron.",
   "bild_im_kopf": "Milch, der Bakterien eine neue Form gegeben haben.",
   "rolle": [
     {
@@ -27,7 +27,7 @@
       "prozess": "marinieren"
     }
   ],
-  "was_passiert": "Bakterien wandeln Milchzucker in Milchsäure um. Die Säure lässt das Milcheiweiß zu einem zarten Gel eindicken.",
+  "was_passiert": "Bakterien wandeln [[milchzucker|Milchzucker]] in Milchsäure um. Die Säure lässt das Milcheiweiß zu einem zarten Gel eindicken.",
   "faustregeln": [
     "Joghurt in heiße Saucen erst am Schluss einrühren, sonst flockt er aus.",
     "Im Teig mit Natron: Die Säure des Joghurts lässt das Natron aufschäumen und lockert."

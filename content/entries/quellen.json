@@ -1,0 +1,23 @@
+{
+  "id": "quellen",
+  "typ": "begriff",
+  "titel": "Quellen",
+  "synonyme": [
+    "aufquellen",
+    "quillt"
+  ],
+  "kurz": "Stärke, Gelatine, Getreide oder Hülsenfrüchte nehmen Wasser auf und werden dabei größer und weicher.",
+  "links": [
+    "staerkeverkleisterung",
+    "gelatine",
+    "bohnen-nicht-weich"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Getreide, Stärke"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

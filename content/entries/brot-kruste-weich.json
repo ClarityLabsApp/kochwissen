@@ -33,7 +33,7 @@
       "titel": "Falsch abgekühlt oder gelagert",
       "haeufigkeit": 2,
       "prinzip": "verdampfen",
-      "warum": "Dampf aus der Krume kondensiert in der Kruste, in Plastik bleibt er drin.",
+      "warum": "Dampf aus der [[krume|Krume]] kondensiert in der Kruste, in Plastik bleibt er drin.",
       "fix": [
         "Auf einem Gitter auskühlen lassen",
         "In Papier oder einem Tuch lagern"

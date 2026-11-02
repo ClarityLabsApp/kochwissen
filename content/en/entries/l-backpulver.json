@@ -1,7 +1,7 @@
 {
   "id": "l-backpulver",
   "titel": "Mixing your own baking powder",
-  "kurz": "Baking powder is a mix of a base, an acid and a little starch. You can mix it yourself from baking soda and cream of tartar in a minute.",
+  "kurz": "Baking powder is a mix of a base, an acid and a little starch. You can mix it yourself from baking soda and [[weinstein|cream of tartar]] in a minute.",
   "bild_im_kopf": "Like fireworks with the fuse packed separately: only once water is added does it go off.",
   "dauer": "5 minutes",
   "ergebnis": "About 4 tsp of baking powder, as much as one sachet. 1 tsp replaces 1 tsp of shop-bought baking powder.",
@@ -34,7 +34,7 @@
     },
     {
       "schritt": "Stir into the batter with the liquid and bake straight away",
-      "warum": "With water, acid and base react and form carbon dioxide. This mix gets going at once, so do not wait.",
+      "warum": "With water, acid and base react and form [[kohlendioxid|carbon dioxide]]. This mix gets going at once, so do not wait.",
       "prinzip": "chemische-lockerung"
     },
     {

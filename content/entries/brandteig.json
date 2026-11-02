@@ -1,0 +1,23 @@
+{
+  "id": "brandteig",
+  "typ": "begriff",
+  "titel": "Brandteig",
+  "synonyme": [
+    "Windbeutel",
+    "Éclair",
+    "Pâte à choux"
+  ],
+  "kurz": "Ein Teig, der im Topf abgebrannt wird: Mehl kommt in kochendes Wasser mit Butter, danach werden Eier eingerührt. Im Ofen bläht Dampf ihn hohl auf, etwa bei Windbeuteln.",
+  "links": [
+    "dampflockerung",
+    "w-gebaeck"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Teige: Brandteig"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

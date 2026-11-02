@@ -1,0 +1,23 @@
+{
+  "id": "kasein",
+  "typ": "begriff",
+  "titel": "Kasein",
+  "synonyme": [
+    "Casein",
+    "Milcheiweiß"
+  ],
+  "kurz": "Das Haupteiweiß der Milch. Säure oder Lab lassen es gerinnen: So entstehen Käse, Quark und Joghurt.",
+  "links": [
+    "milch",
+    "kaese",
+    "l-frischkaese"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Milch und Milchprodukte"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

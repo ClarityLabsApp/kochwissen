@@ -12,7 +12,7 @@
     "yoghurt"
   ],
   "faustregeln": [
-    "Warmer ferments milder, cooler more sour (as a guide).",
+    "Warmer [[fermentation|ferments]] milder, cooler more sour (as a guide).",
     "An active sourdough doubles within a few hours after feeding."
   ],
   "stellschrauben": [
@@ -28,7 +28,7 @@
   "praxis": [
     {
       "welt": "w-brot",
-      "text": "Rye bread needs acid so the dough can be baked and the crumb does not turn sticky."
+      "text": "Rye bread needs acid so the dough can be baked and the [[krume|crumb]] does not turn sticky."
     },
     {
       "welt": "w-milch",

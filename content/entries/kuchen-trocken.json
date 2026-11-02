@@ -21,7 +21,7 @@
       "titel": "Zu lange oder zu heiß gebacken",
       "haeufigkeit": 3,
       "prinzip": "verdampfen",
-      "warum": "Jede Minute zu viel verdampft Wasser aus der Krume.",
+      "warum": "Jede Minute zu viel verdampft Wasser aus der [[krume|Krume]].",
       "fix": [
         "Früher prüfen",
         "Stäbchen darf feuchte Krümel haben, keinen nassen Teig"

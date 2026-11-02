@@ -1,0 +1,23 @@
+{
+  "id": "triebmittel",
+  "typ": "begriff",
+  "titel": "Triebmittel",
+  "synonyme": [
+    "Backtriebmittel",
+    "Lockerungsmittel"
+  ],
+  "kurz": "Alles, was einen Teig mit Gas lockert: Hefe und Sauerteig durch Gärung, Backpulver und Natron chemisch, Dampf und eingeschlagene Luft physikalisch.",
+  "links": [
+    "chemische-lockerung",
+    "hefegaerung",
+    "dampflockerung"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot und Backtriebmittel"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

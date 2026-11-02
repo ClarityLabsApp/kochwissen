@@ -1,0 +1,23 @@
+{
+  "id": "glukosesirup",
+  "typ": "begriff",
+  "titel": "Glukosesirup",
+  "synonyme": [
+    "Glucosesirup",
+    "Stärkesirup"
+  ],
+  "kurz": "Ein dicker Sirup, der aus Stärke gewonnen wird und vor allem aus Traubenzucker besteht. Er verhindert, dass Zucker kristallisiert: Glace bleibt cremig, Karamell klar.",
+  "links": [
+    "zucker-kristallisation",
+    "karamell-kristallisiert",
+    "eiskristalle"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

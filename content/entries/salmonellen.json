@@ -1,0 +1,22 @@
+{
+  "id": "salmonellen",
+  "typ": "begriff",
+  "titel": "Salmonellen",
+  "synonyme": [
+    "Salmonella"
+  ],
+  "kurz": "Bakterien, die Lebensmittelvergiftungen auslösen, vor allem über rohes Geflügel und rohe Eier. Erhitzen auf mindestens 70 °C im Kern tötet sie ab.",
+  "links": [
+    "keimwachstum",
+    "w-gefluegel",
+    "kerntemperatur"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Lebensmittelsicherheit"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

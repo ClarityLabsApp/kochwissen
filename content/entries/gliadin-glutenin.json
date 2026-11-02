@@ -1,0 +1,22 @@
+{
+  "id": "gliadin-glutenin",
+  "typ": "begriff",
+  "titel": "Gliadin und Glutenin",
+  "synonyme": [
+    "Klebereiweiß",
+    "Kleber"
+  ],
+  "kurz": "Die zwei Eiweiße im Weizenmehl, die mit Wasser [[glutenbildung|Gluten]] bilden: Glutenin macht den Teig elastisch, Gliadin macht ihn dehnbar.",
+  "links": [
+    "glutenbildung",
+    "mehl"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot: Gluten"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

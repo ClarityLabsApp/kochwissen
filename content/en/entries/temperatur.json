@@ -3,7 +3,7 @@
   "titel": "Temperature",
   "kurz": "The most important lever in the kitchen. A few degrees decide which process runs and which does not.",
   "bild_im_kopf": "Like a staircase: on each step a different door opens.",
-  "was_passiert": "Every process has its threshold. Protein cooks from about 50 °C; starch swells from about 50–65 °C depending on the kind. Connective tissue dissolves from about 70 °C, water evaporates at 100 °C, browning starts from about 140 °C. For meat, the difference between surface and [[kerntemperatur|core temperature]] also matters.",
+  "was_passiert": "Every process has its threshold. Protein cooks from about 50 °C; starch [[quellen|swells]] from about 50–65 °C depending on the kind. Connective tissue dissolves from about 70 °C, water evaporates at 100 °C, browning starts from about 140 °C. For meat, the difference between surface and [[kerntemperatur|core temperature]] also matters.",
   "synonyme": [
     "heat",
     "degrees",

@@ -1,0 +1,23 @@
+{
+  "id": "krume",
+  "typ": "begriff",
+  "titel": "Krume",
+  "synonyme": [
+    "Brotkrume",
+    "Porung"
+  ],
+  "kurz": "Das weiche Innere eines Brots oder Kuchens, im Gegensatz zur Kruste. Ihre Poren zeigen, wie der Teig gegangen ist.",
+  "links": [
+    "grosse-poren",
+    "brot-zu-dicht",
+    "w-brot"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

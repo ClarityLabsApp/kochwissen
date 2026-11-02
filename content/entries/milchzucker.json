@@ -1,0 +1,22 @@
+{
+  "id": "milchzucker",
+  "typ": "begriff",
+  "titel": "Milchzucker (Laktose)",
+  "synonyme": [
+    "Laktose"
+  ],
+  "kurz": "Der natürliche Zucker der Milch. [[milchsaeuregaerung|Milchsäurebakterien]] vergären ihn zu Milchsäure, und beim Backen bräunt er mit.",
+  "links": [
+    "milchsaeuregaerung",
+    "milch",
+    "maillard-reaktion"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Milch und Milchprodukte"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

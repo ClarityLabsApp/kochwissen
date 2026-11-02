@@ -1,0 +1,21 @@
+{
+  "id": "al-dente",
+  "typ": "begriff",
+  "titel": "Al dente",
+  "synonyme": [
+    "bissfest"
+  ],
+  "kurz": "Italienisch für «auf den Zahn»: Pasta oder Gemüse ist gar, hat aber im Kern noch leichten Biss.",
+  "links": [
+    "w-pasta",
+    "staerkeverkleisterung"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Getreide: Pasta"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -7,7 +7,7 @@
     "Backpulver Ersatz",
     "Natron Weinstein"
   ],
-  "kurz": "Backpulver ist eine Mischung aus einer Base, einer Säure und etwas Stärke. Aus Natron und Weinstein lässt es sich in einer Minute selbst mischen.",
+  "kurz": "Backpulver ist eine Mischung aus einer Base, einer Säure und etwas Stärke. Aus Natron und [[weinstein|Weinstein]] lässt es sich in einer Minute selbst mischen.",
   "bild_im_kopf": "Wie ein Feuerwerk mit getrennt verpackter Zündschnur: Erst wenn Wasser dazukommt, geht es los.",
   "material": [
     "1 TL Natron",
@@ -29,7 +29,7 @@
     },
     {
       "schritt": "Im Teig mit Flüssigkeit verrühren und gleich backen",
-      "warum": "Mit Wasser reagieren Säure und Base und bilden Kohlendioxid. Diese Mischung legt sofort los, darum nicht warten.",
+      "warum": "Mit Wasser reagieren Säure und Base und bilden [[kohlendioxid|Kohlendioxid]]. Diese Mischung legt sofort los, darum nicht warten.",
       "prinzip": "chemische-lockerung"
     },
     {

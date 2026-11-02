@@ -1,0 +1,23 @@
+{
+  "id": "natriumcarbonat",
+  "typ": "begriff",
+  "titel": "Natriumcarbonat (Soda)",
+  "synonyme": [
+    "Soda",
+    "Waschsoda"
+  ],
+  "kurz": "Eine stärkere Base als Natron. Gebackenes Natron wird zu Natriumcarbonat und gibt Laugengebäck Farbe und Geschmack.",
+  "links": [
+    "l-gebackenes-natron",
+    "laugen",
+    "basen-braeunung"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot: Laugengebäck"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "abschrecken",
+  "typ": "begriff",
+  "titel": "Abschrecken",
+  "synonyme": [
+    "in Eiswasser",
+    "kalt abschrecken"
+  ],
+  "kurz": "Heißes Gargut sofort in Eiswasser oder kaltes Wasser geben, damit es nicht [[nachgaren|nachgart]] und grünes Gemüse seine Farbe behält.",
+  "links": [
+    "blanchieren",
+    "chlorophyll-farbe",
+    "nachgaren"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

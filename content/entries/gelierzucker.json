@@ -1,0 +1,20 @@
+{
+  "id": "gelierzucker",
+  "typ": "begriff",
+  "titel": "Gelierzucker",
+  "synonyme": [],
+  "kurz": "Zucker, dem [[pektin|Pektin]] und Säure beigemischt sind, damit Konfitüre sicher fest wird. Die Angabe 1:1 oder 2:1 nennt das Verhältnis von Frucht zu Zucker.",
+  "links": [
+    "gelbildung-pektin",
+    "pektin",
+    "g-konfituere"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Früchte: Konfitüren"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

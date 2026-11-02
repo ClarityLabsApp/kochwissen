@@ -1,0 +1,21 @@
+{
+  "id": "senfoele",
+  "typ": "begriff",
+  "titel": "Senföle",
+  "synonyme": [
+    "Senföl"
+  ],
+  "kurz": "Die scharfen Stoffe in Senf, Meerrettich, Rettich und Kresse. Sie entstehen erst, wenn die Zellen verletzt werden, und verfliegen beim Kochen.",
+  "links": [
+    "schaerfe",
+    "senf"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gewürze: Senf"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

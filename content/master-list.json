@@ -1,7 +1,7 @@
 {
   "version": 1,
   "stand": "2026-11-02",
-  "anzahl": 277,
+  "anzahl": 309,
   "eintraege": [
     {
       "id": "w-fleisch",
@@ -7000,6 +7000,644 @@
       ],
       "visual": {
         "vorlage": "skala"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "quellen",
+      "typ": "begriff",
+      "titel": "Quellen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "staerkeverkleisterung",
+        "gelatine",
+        "bohnen-nicht-weich"
+      ],
+      "welten": [],
+      "synonyme": [
+        "aufquellen",
+        "quillt"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "molke",
+      "typ": "begriff",
+      "titel": "Molke",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "l-frischkaese",
+        "l-joghurt",
+        "milch"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Sirte"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "abschrecken",
+      "typ": "begriff",
+      "titel": "Abschrecken",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "blanchieren",
+        "chlorophyll-farbe",
+        "nachgaren"
+      ],
+      "welten": [],
+      "synonyme": [
+        "in Eiswasser",
+        "kalt abschrecken"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "weinstein",
+      "typ": "begriff",
+      "titel": "Weinstein",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "backpulver",
+        "schaumbildung",
+        "chemische-lockerung"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Weinsteinpulver",
+        "Weinsteinbackpulver"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "triebmittel",
+      "typ": "begriff",
+      "titel": "Triebmittel",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "chemische-lockerung",
+        "hefegaerung",
+        "dampflockerung"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Backtriebmittel",
+        "Lockerungsmittel"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "milchzucker",
+      "typ": "begriff",
+      "titel": "Milchzucker (Laktose)",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "milchsaeuregaerung",
+        "milch",
+        "maillard-reaktion"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Laktose"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "krume",
+      "typ": "begriff",
+      "titel": "Krume",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "grosse-poren",
+        "brot-zu-dicht",
+        "w-brot"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Brotkrume",
+        "Porung"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "kohlendioxid",
+      "typ": "begriff",
+      "titel": "Kohlendioxid (CO₂)",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "hefegaerung",
+        "chemische-lockerung",
+        "triebmittel"
+      ],
+      "welten": [],
+      "synonyme": [
+        "CO2",
+        "Kohlensäure"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "kakaobutter",
+      "typ": "begriff",
+      "titel": "Kakaobutter",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "fett-kristallisation",
+        "schokolade",
+        "schokolade-grau"
+      ],
+      "welten": [],
+      "synonyme": [],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "molekuel",
+      "typ": "begriff",
+      "titel": "Molekül",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "maillard-reaktion",
+        "diffusion",
+        "emulsion"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Moleküle",
+        "Teilchen"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "glukosesirup",
+      "typ": "begriff",
+      "titel": "Glukosesirup",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "zucker-kristallisation",
+        "karamell-kristallisiert",
+        "eiskristalle"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Glucosesirup",
+        "Stärkesirup"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "gelierzucker",
+      "typ": "begriff",
+      "titel": "Gelierzucker",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "gelbildung-pektin",
+        "pektin",
+        "g-konfituere"
+      ],
+      "welten": [],
+      "synonyme": [],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "fermentation",
+      "typ": "begriff",
+      "titel": "Fermentation",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "hefegaerung",
+        "milchsaeuregaerung",
+        "l-sauerkraut"
+      ],
+      "welten": [],
+      "synonyme": [
+        "fermentieren",
+        "vergären"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "brandteig",
+      "typ": "begriff",
+      "titel": "Brandteig",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "dampflockerung",
+        "w-gebaeck"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Windbeutel",
+        "Éclair",
+        "Pâte à choux"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "beurre-blanc",
+      "typ": "begriff",
+      "titel": "Beurre blanc",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "montieren",
+        "emulsion",
+        "w-saucen"
+      ],
+      "welten": [],
+      "synonyme": [
+        "weiße Buttersauce"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "hygroskopisch",
+      "typ": "begriff",
+      "titel": "Hygroskopisch",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "zucker-feuchtigkeit",
+        "honig",
+        "salz"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Wasser anziehend"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "al-dente",
+      "typ": "begriff",
+      "titel": "Al dente",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "w-pasta",
+        "staerkeverkleisterung"
+      ],
+      "welten": [],
+      "synonyme": [
+        "bissfest"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "salmonellen",
+      "typ": "begriff",
+      "titel": "Salmonellen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "keimwachstum",
+        "w-gefluegel",
+        "kerntemperatur"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Salmonella"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "polyphenole",
+      "typ": "begriff",
+      "titel": "Polyphenole",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "enzym-braeunung",
+        "schaelen",
+        "anthocyan-farbe"
+      ],
+      "welten": [],
+      "synonyme": [
+        "sekundäre Pflanzenstoffe"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "natriumcarbonat",
+      "typ": "begriff",
+      "titel": "Natriumcarbonat (Soda)",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "l-gebackenes-natron",
+        "laugen",
+        "basen-braeunung"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Soda",
+        "Waschsoda"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "malz",
+      "typ": "begriff",
+      "titel": "Malz",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "amylase",
+        "hefegaerung",
+        "w-brot"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Backmalz",
+        "Malzmehl"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "gliadin-glutenin",
+      "typ": "begriff",
+      "titel": "Gliadin und Glutenin",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "glutenbildung",
+        "mehl"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Klebereiweiß",
+        "Kleber"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "carotin",
+      "typ": "begriff",
+      "titel": "Carotin",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "schaelen",
+        "w-gemuese",
+        "aroma-loeslichkeit"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Beta-Carotin",
+        "Karotin"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "agar-agar",
+      "typ": "begriff",
+      "titel": "Agar-Agar",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "gelatine",
+        "gelbildung-gelatine"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Agar"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "solanin",
+      "typ": "begriff",
+      "titel": "Solanin",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "schaelen",
+        "w-kartoffeln"
+      ],
+      "welten": [],
+      "synonyme": [],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "kasein",
+      "typ": "begriff",
+      "titel": "Kasein",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "milch",
+        "kaese",
+        "l-frischkaese"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Casein",
+        "Milcheiweiß"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "myoglobin",
+      "typ": "begriff",
+      "titel": "Myoglobin",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "eiweiss-denaturierung",
+        "w-fleisch",
+        "poekeln"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Muskelfarbstoff"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "senfoele",
+      "typ": "begriff",
+      "titel": "Senföle",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "schaerfe",
+        "senf"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Senföl"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "kahmhefe",
+      "typ": "begriff",
+      "titel": "Kahmhefe",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "l-sauerkraut",
+        "milchsaeuregaerung",
+        "sauerteig"
+      ],
+      "welten": [],
+      "synonyme": [],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "gerbstoffe",
+      "typ": "begriff",
+      "titel": "Gerbstoffe (Tannine)",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "wein",
+        "polyphenole"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Tannine"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "ganache",
+      "typ": "begriff",
+      "titel": "Ganache",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "schokolade",
+        "emulsion"
+      ],
+      "welten": [],
+      "synonyme": [],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "indikator",
+      "typ": "begriff",
+      "titel": "Indikator",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "anthocyan-farbe",
+        "x-rotkohl-indikator",
+        "ph-wert"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Farbanzeiger"
+      ],
+      "visual": {
+        "vorlage": "keine"
       },
       "verlinkt_von": []
     }

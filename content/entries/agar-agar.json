@@ -1,0 +1,21 @@
+{
+  "id": "agar-agar",
+  "typ": "begriff",
+  "titel": "Agar-Agar",
+  "synonyme": [
+    "Agar"
+  ],
+  "kurz": "Ein Geliermittel aus Rotalgen, die pflanzliche Alternative zu Gelatine. Es muss aufkochen und wird fester und brüchiger als Gelatine.",
+  "links": [
+    "gelatine",
+    "gelbildung-gelatine"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gele"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

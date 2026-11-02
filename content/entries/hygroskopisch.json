@@ -1,0 +1,22 @@
+{
+  "id": "hygroskopisch",
+  "typ": "begriff",
+  "titel": "Hygroskopisch",
+  "synonyme": [
+    "Wasser anziehend"
+  ],
+  "kurz": "Wasser anziehend: Ein hygroskopischer Stoff wie Zucker, Salz oder Honig zieht Feuchtigkeit aus der Luft an.",
+  "links": [
+    "zucker-feuchtigkeit",
+    "honig",
+    "salz"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

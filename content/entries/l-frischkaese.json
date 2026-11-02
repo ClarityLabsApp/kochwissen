@@ -21,7 +21,7 @@
   "schluesselmomente": [
     {
       "schritt": "Milch unter Rühren aufkochen",
-      "warum": "Hitze lockert das Milcheiweiß (Kasein), damit es gleich vollständig ausflockt.",
+      "warum": "Hitze lockert das Milcheiweiß ([[kasein|Kasein]]), damit es gleich vollständig ausflockt.",
       "prinzip": "eiweiss-denaturierung"
     },
     {
@@ -40,7 +40,7 @@
     },
     {
       "schritt": "Einschlagen und 30–40 Minuten pressen",
-      "warum": "Pressen drückt Molke heraus: kurz gepresst bleibt er weich wie Ricotta, lange gepresst wird er schnittfest."
+      "warum": "Pressen drückt [[molke|Molke]] heraus: kurz gepresst bleibt er weich wie Ricotta, lange gepresst wird er schnittfest."
     }
   ],
   "ergebnis": "Aus 1 l Vollmilch etwa 200 g Frischkäse.",

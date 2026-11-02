@@ -1,0 +1,22 @@
+{
+  "id": "polyphenole",
+  "typ": "begriff",
+  "titel": "Polyphenole",
+  "synonyme": [
+    "sekundäre Pflanzenstoffe"
+  ],
+  "kurz": "Pflanzenstoffe, die Farbe, Herbheit und Bitterkeit geben, etwa in Tee, Wein, Äpfeln und Schalen. An der Luft werden sie in angeschnittenem Obst braun.",
+  "links": [
+    "enzym-braeunung",
+    "schaelen",
+    "anthocyan-farbe"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Früchte und Gemüse"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "malz",
+  "typ": "begriff",
+  "titel": "Malz",
+  "synonyme": [
+    "Backmalz",
+    "Malzmehl"
+  ],
+  "kurz": "Gekeimtes und getrocknetes Getreide, meist Gerste. Beim Keimen entstehen [[enzym|Enzyme]], die Stärke zu Zucker abbauen: Backmalz füttert die Hefe und macht die Kruste brauner.",
+  "links": [
+    "amylase",
+    "hefegaerung",
+    "w-brot"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Getreide: Malz"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

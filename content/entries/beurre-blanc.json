@@ -1,0 +1,22 @@
+{
+  "id": "beurre-blanc",
+  "typ": "begriff",
+  "titel": "Beurre blanc",
+  "synonyme": [
+    "weiße Buttersauce"
+  ],
+  "kurz": "Eine warme Buttersauce: Kalte Butter wird stückweise in eine eingekochte Mischung aus Weißwein, Essig und Schalotten geschlagen.",
+  "links": [
+    "montieren",
+    "emulsion",
+    "w-saucen"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen: Buttersaucen"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -12,7 +12,7 @@
     "dunkle Schokolade",
     "Milchschokolade"
   ],
-  "kurz": "Schokolade ist Kakaomasse, Kakaobutter und Zucker. Die Kakaobutter bestimmt Glanz und Knack, Wasser ist ihr größter Feind.",
+  "kurz": "Schokolade ist Kakaomasse, [[kakaobutter|Kakaobutter]] und Zucker. Die Kakaobutter bestimmt Glanz und Knack, Wasser ist ihr größter Feind.",
   "bild_im_kopf": "Wie ein feines Kristallgitter, das sowohl Hitze als auch Wasser aus der Fassung bringt.",
   "rolle": [
     {
@@ -24,7 +24,7 @@
       "prozess": "zucker-kristallisation"
     }
   ],
-  "was_passiert": "Kakaobutter schmilzt knapp unter Körpertemperatur, darum zergeht Schokolade im Mund. Etwas Wasser lässt sie klumpen, viel Flüssigkeit macht eine glatte Ganache.",
+  "was_passiert": "Kakaobutter schmilzt knapp unter Körpertemperatur, darum zergeht Schokolade im Mund. Etwas Wasser lässt sie klumpen, viel Flüssigkeit macht eine glatte [[ganache|Ganache]].",
   "faustregeln": [
     "Beim Schmelzen: entweder gar kein Wasser oder genug, mindestens ein Viertel des Schokoladengewichts (Richtwert). Ein paar Tropfen lassen sie verklumpen.",
     "Sanft schmelzen, Wasserbad oder kurze Mikrowellenstöße."

@@ -1,0 +1,22 @@
+{
+  "id": "myoglobin",
+  "typ": "begriff",
+  "titel": "Myoglobin",
+  "synonyme": [
+    "Muskelfarbstoff"
+  ],
+  "kurz": "Der rote Farbstoff im Muskelfleisch. Beim Erhitzen wird er graubraun, darum zeigt die Farbe, wie weit Fleisch gegart ist.",
+  "links": [
+    "eiweiss-denaturierung",
+    "w-fleisch",
+    "poekeln"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch: Farbe"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

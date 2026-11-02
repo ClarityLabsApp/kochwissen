@@ -1,0 +1,20 @@
+{
+  "id": "kakaobutter",
+  "typ": "begriff",
+  "titel": "Kakaobutter",
+  "synonyme": [],
+  "kurz": "Das Fett der Kakaobohne. Es schmilzt knapp unter Körpertemperatur und kann in mehreren Kristallformen fest werden, darum [[temperieren|temperiert]] man Schokolade.",
+  "links": [
+    "fett-kristallisation",
+    "schokolade",
+    "schokolade-grau"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Schokolade"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

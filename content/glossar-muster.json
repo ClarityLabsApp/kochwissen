@@ -1,0 +1,277 @@
+{
+  "de": {
+    "quellen": [
+      "aufquell",
+      "quillt",
+      "quellt"
+    ],
+    "molke": [
+      "Molke"
+    ],
+    "abschrecken": [
+      "abschreck"
+    ],
+    "weinstein": [
+      "Weinstein"
+    ],
+    "triebmittel": [
+      "Triebmittel",
+      "Backtriebmittel"
+    ],
+    "milchzucker": [
+      "Milchzucker",
+      "Laktose"
+    ],
+    "krume": [
+      "Krume"
+    ],
+    "kohlendioxid": [
+      "Kohlendioxid"
+    ],
+    "kakaobutter": [
+      "Kakaobutter"
+    ],
+    "molekuel": [
+      "Molekül"
+    ],
+    "glukosesirup": [
+      "Glukosesirup",
+      "Glucosesirup"
+    ],
+    "gelierzucker": [
+      "Gelierzucker"
+    ],
+    "fermentation": [
+      "Fermentation",
+      "fermentier"
+    ],
+    "brandteig": [
+      "Brandteig"
+    ],
+    "beurre-blanc": [
+      "Beurre blanc"
+    ],
+    "hygroskopisch": [
+      "hygroskop"
+    ],
+    "al-dente": [
+      "al dente"
+    ],
+    "salmonellen": [
+      "Salmonell"
+    ],
+    "polyphenole": [
+      "Polyphenol"
+    ],
+    "natriumcarbonat": [
+      "Natriumcarbonat"
+    ],
+    "malz": [
+      "Malz",
+      "Backmalz"
+    ],
+    "gliadin-glutenin": [
+      "Gliadin",
+      "Glutenin",
+      "Klebereiweiß"
+    ],
+    "carotin": [
+      "Carotin",
+      "Karotin",
+      "Beta-Carotin"
+    ],
+    "agar-agar": [
+      "Agar"
+    ],
+    "solanin": [
+      "Solanin"
+    ],
+    "kasein": [
+      "Kasein",
+      "Casein"
+    ],
+    "myoglobin": [
+      "Myoglobin",
+      "Muskelfarbstoff"
+    ],
+    "senfoele": [
+      "Senföl"
+    ],
+    "kahmhefe": [
+      "Kahmhefe"
+    ],
+    "gerbstoffe": [
+      "Gerbstoff",
+      "Tannin"
+    ],
+    "ganache": [
+      "Ganache"
+    ],
+    "indikator": [
+      "Indikator"
+    ],
+    "kollagen-gelatine": [
+      "Bindegewebe"
+    ],
+    "milchsaeuregaerung": [
+      "Milchsäurebakterien",
+      "Milchsäuregärung"
+    ],
+    "oxidation-fett": [
+      "ranzig"
+    ],
+    "poekeln": [
+      "Pökelsalz",
+      "Nitrit"
+    ],
+    "fleischreifung": [
+      "Dry Aging",
+      "Dry-Aging"
+    ],
+    "eiweiss-gerinnung": [
+      "Koagulation"
+    ],
+    "enzym-zartmachen": [
+      "Bromelain",
+      "Papain",
+      "Actinidin"
+    ],
+    "rauchpunkt": [
+      "Rauchpunkt"
+    ],
+    "autolyse": [
+      "Autolyse"
+    ],
+    "vorteig": [
+      "Vorteig",
+      "Poolish",
+      "Biga"
+    ],
+    "konvektion": [
+      "Konvektion"
+    ],
+    "waermestrahlung": [
+      "Wärmestrahlung"
+    ],
+    "schokolade-grau": [
+      "Fettreif",
+      "Zuckerreif"
+    ],
+    "pochieren": [
+      "pochier"
+    ],
+    "siedepunkt-druck": [
+      "Siedepunkt"
+    ],
+    "gefrierpunkt-senkung": [
+      "Gefrierpunkt"
+    ]
+  },
+  "en": {
+    "quellen": [
+      "swell"
+    ],
+    "molke": [
+      "whey"
+    ],
+    "abschrecken": [
+      "ice bath",
+      "refresh in cold",
+      "refresh in iced"
+    ],
+    "weinstein": [
+      "cream of tartar"
+    ],
+    "triebmittel": [
+      "raising agent",
+      "leaven"
+    ],
+    "milchzucker": [
+      "lactose",
+      "milk sugar"
+    ],
+    "krume": [
+      "crumb ",
+      "crumb,",
+      "crumb.",
+      "the crumb"
+    ],
+    "kohlendioxid": [
+      "carbon dioxide"
+    ],
+    "kakaobutter": [
+      "cocoa butter"
+    ],
+    "molekuel": [
+      "molecule"
+    ],
+    "glukosesirup": [
+      "glucose syrup",
+      "liquid glucose"
+    ],
+    "gelierzucker": [
+      "jam sugar"
+    ],
+    "fermentation": [
+      "ferment"
+    ],
+    "brandteig": [
+      "choux"
+    ],
+    "beurre-blanc": [
+      "beurre blanc"
+    ],
+    "hygroskopisch": [
+      "hygroscop"
+    ],
+    "al-dente": [
+      "al dente"
+    ],
+    "salmonellen": [
+      "salmonella"
+    ],
+    "polyphenole": [
+      "polyphenol"
+    ],
+    "natriumcarbonat": [
+      "sodium carbonate"
+    ],
+    "malz": [
+      "malt"
+    ],
+    "gliadin-glutenin": [
+      "gliadin",
+      "glutenin"
+    ],
+    "carotin": [
+      "carotene"
+    ],
+    "agar-agar": [
+      "agar"
+    ],
+    "solanin": [
+      "solanine"
+    ],
+    "kasein": [
+      "casein"
+    ],
+    "myoglobin": [
+      "myoglobin"
+    ],
+    "senfoele": [
+      "mustard oil"
+    ],
+    "kahmhefe": [
+      "kahm"
+    ],
+    "gerbstoffe": [
+      "tannin"
+    ],
+    "ganache": [
+      "ganache"
+    ],
+    "indikator": [
+      "indicator"
+    ]
+  }
+}

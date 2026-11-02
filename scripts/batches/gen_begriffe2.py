@@ -1,0 +1,125 @@
+"""Glossar II: 32 neue Begriffe (DE + EN) und Fachwort-Muster für die automatische Verlinkung."""
+import json, os
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+MC = lambda stelle: [{"titel": "Harold McGee: On Food and Cooking (2004)", "stelle": stelle}]
+# id: (titel DE, syn DE, kurz DE, titel EN, syn EN, kurz EN, links, stems DE, stems EN, McGee-Kapitel)
+B = {
+ "quellen": ("Quellen", ["aufquellen", "quillt"], "Stärke, Gelatine, Getreide oder Hülsenfrüchte nehmen Wasser auf und werden dabei größer und weicher.",
+   "Swelling", ["to swell", "hydrate"], "Starch, gelatine, grains or pulses take up water and become larger and softer.",
+   ["staerkeverkleisterung", "gelatine", "bohnen-nicht-weich"], ["aufquell", "quillt", "quellt"], ["swell"], "Kapitel Getreide, Stärke"),
+ "molke": ("Molke", ["Sirte"], "Die gelbliche Flüssigkeit, die übrig bleibt, wenn Milch zu Käse, Quark oder Joghurt gerinnt. Sie enthält Milchzucker und einige Eiweiße.",
+   "Whey", ["acid whey"], "The yellowish liquid left over when milk curdles into cheese, quark or yoghurt. It contains lactose and some proteins.",
+   ["l-frischkaese", "l-joghurt", "milch"], ["Molke"], ["whey"], "Kapitel Milch und Milchprodukte"),
+ "abschrecken": ("Abschrecken", ["in Eiswasser", "kalt abschrecken"], "Heißes Gargut sofort in Eiswasser oder kaltes Wasser geben, damit es nicht nachgart und grünes Gemüse seine Farbe behält.",
+   "Refreshing (shocking)", ["ice bath", "shocking"], "Plunging hot food straight into iced or cold water so it stops cooking and green vegetables keep their colour.",
+   ["blanchieren", "chlorophyll-farbe", "nachgaren"], ["abschreck"], ["refresh", "ice bath"], "Kapitel Gemüse"),
+ "weinstein": ("Weinstein", ["Weinsteinpulver", "Weinsteinbackpulver"], "Ein Salz der Weinsäure, das sich bei der Weinherstellung absetzt. In der Küche dient es als Säure im Backpulver und macht Eischnee stabiler.",
+   "Cream of tartar", ["tartaric acid salt"], "A salt of tartaric acid that settles out during winemaking. In the kitchen it acts as the acid in baking powder and steadies whisked egg whites.",
+   ["backpulver", "schaumbildung", "chemische-lockerung"], ["Weinstein"], ["cream of tartar"], "Kapitel Eier; Kapitel Brot und Backtriebmittel"),
+ "triebmittel": ("Triebmittel", ["Backtriebmittel", "Lockerungsmittel"], "Alles, was einen Teig mit Gas lockert: Hefe und Sauerteig durch Gärung, Backpulver und Natron chemisch, Dampf und eingeschlagene Luft physikalisch.",
+   "Raising agent", ["leavening", "leavener"], "Anything that lightens a dough with gas: yeast and sourdough by fermentation, baking powder and soda chemically, steam and beaten-in air physically.",
+   ["chemische-lockerung", "hefegaerung", "dampflockerung"], ["Triebmittel", "Backtriebmittel"], ["raising agent", "leaven"], "Kapitel Brot und Backtriebmittel"),
+ "milchzucker": ("Milchzucker (Laktose)", ["Laktose"], "Der natürliche Zucker der Milch. Milchsäurebakterien vergären ihn zu Milchsäure, und beim Backen bräunt er mit.",
+   "Lactose", ["milk sugar"], "The natural sugar in milk. Lactic acid bacteria ferment it into lactic acid, and in baking it helps with browning.",
+   ["milchsaeuregaerung", "milch", "maillard-reaktion"], ["Milchzucker", "Laktose"], ["lactose", "milk sugar"], "Kapitel Milch und Milchprodukte"),
+ "krume": ("Krume", ["Brotkrume", "Porung"], "Das weiche Innere eines Brots oder Kuchens, im Gegensatz zur Kruste. Ihre Poren zeigen, wie der Teig gegangen ist.",
+   "Crumb", ["bread crumb"], "The soft inside of a bread or cake, as opposed to the crust. Its holes show how the dough has risen.",
+   ["grosse-poren", "brot-zu-dicht", "w-brot"], ["Krume"], ["crumb"], "Kapitel Brot"),
+ "kohlendioxid": ("Kohlendioxid (CO₂)", ["CO2", "Kohlensäure"], "Ein farbloses Gas. Hefe, Sauerteig, Backpulver und Natron bilden es, und seine Bläschen lockern den Teig.",
+   "Carbon dioxide (CO₂)", ["CO2"], "A colourless gas. Yeast, sourdough, baking powder and baking soda produce it, and its bubbles lighten the dough.",
+   ["hefegaerung", "chemische-lockerung", "triebmittel"], ["Kohlendioxid"], ["carbon dioxide"], "Kapitel Brot und Backtriebmittel"),
+ "kakaobutter": ("Kakaobutter", [], "Das Fett der Kakaobohne. Es schmilzt knapp unter Körpertemperatur und kann in mehreren Kristallformen fest werden, darum temperiert man Schokolade.",
+   "Cocoa butter", [], "The fat of the cocoa bean. It melts just below body temperature and can set in several crystal forms, which is why chocolate is tempered.",
+   ["fett-kristallisation", "schokolade", "schokolade-grau"], ["Kakaobutter"], ["cocoa butter"], "Kapitel Schokolade"),
+ "molekuel": ("Molekül", ["Moleküle", "Teilchen"], "Das kleinste Teilchen eines Stoffs, das noch dessen Eigenschaften hat, etwa ein Zucker- oder Wassermolekül. Moleküle bestehen aus Atomen.",
+   "Molecule", ["molecules"], "The smallest particle of a substance that still has its properties, such as a sugar or water molecule. Molecules are made of atoms.",
+   ["maillard-reaktion", "diffusion", "emulsion"], ["Molekül"], ["molecule"], "Anhang Chemie"),
+ "glukosesirup": ("Glukosesirup", ["Glucosesirup", "Stärkesirup"], "Ein dicker Sirup, der aus Stärke gewonnen wird und vor allem aus Traubenzucker besteht. Er verhindert, dass Zucker kristallisiert: Glace bleibt cremig, Karamell klar.",
+   "Glucose syrup", ["liquid glucose", "corn syrup"], "A thick syrup made from starch, mainly glucose. It stops sugar from crystallising: ice cream stays creamy, caramel clear.",
+   ["zucker-kristallisation", "karamell-kristallisiert", "eiskristalle"], ["Glukosesirup", "Glucosesirup"], ["glucose syrup", "liquid glucose"], "Kapitel Zucker"),
+ "gelierzucker": ("Gelierzucker", [], "Zucker, dem Pektin und Säure beigemischt sind, damit Konfitüre sicher fest wird. Die Angabe 1:1 oder 2:1 nennt das Verhältnis von Frucht zu Zucker.",
+   "Jam sugar", ["preserving sugar with pectin"], "Sugar mixed with pectin and acid so that jam sets reliably. The label 1:1 or 2:1 gives the ratio of fruit to sugar.",
+   ["gelbildung-pektin", "pektin", "g-konfituere"], ["Gelierzucker"], ["jam sugar"], "Kapitel Früchte: Konfitüren"),
+ "fermentation": ("Fermentation", ["fermentieren", "vergären"], "Mikroorganismen wie Hefen oder Milchsäurebakterien verwandeln Zucker in Säure, Alkohol oder Gas. So entstehen Brot, Joghurt, Sauerkraut, Wein und Essig.",
+   "Fermentation", ["to ferment"], "Microorganisms such as yeasts or lactic acid bacteria turn sugar into acid, alcohol or gas. That is how bread, yoghurt, sauerkraut, wine and vinegar come about.",
+   ["hefegaerung", "milchsaeuregaerung", "l-sauerkraut"], ["Fermentation", "fermentier"], ["ferment"], "Kapitel Gemüse: Fermentation"),
+ "brandteig": ("Brandteig", ["Windbeutel", "Éclair", "Pâte à choux"], "Ein Teig, der im Topf abgebrannt wird: Mehl kommt in kochendes Wasser mit Butter, danach werden Eier eingerührt. Im Ofen bläht Dampf ihn hohl auf, etwa bei Windbeuteln.",
+   "Choux pastry", ["profiteroles", "éclairs"], "A dough cooked in the pan: flour goes into boiling water and butter, then eggs are beaten in. In the oven, steam puffs it up hollow, as in profiteroles.",
+   ["dampflockerung", "w-gebaeck"], ["Brandteig"], ["choux"], "Kapitel Teige: Brandteig"),
+ "beurre-blanc": ("Beurre blanc", ["weiße Buttersauce"], "Eine warme Buttersauce: Kalte Butter wird stückweise in eine eingekochte Mischung aus Weißwein, Essig und Schalotten geschlagen.",
+   "Beurre blanc", ["white butter sauce"], "A warm butter sauce: cold butter is whisked piece by piece into a reduction of white wine, vinegar and shallots.",
+   ["montieren", "emulsion", "w-saucen"], ["Beurre blanc"], ["beurre blanc"], "Kapitel Saucen: Buttersaucen"),
+ "hygroskopisch": ("Hygroskopisch", ["Wasser anziehend"], "Wasser anziehend: Ein hygroskopischer Stoff wie Zucker, Salz oder Honig zieht Feuchtigkeit aus der Luft an.",
+   "Hygroscopic", ["water-attracting"], "Water-attracting: a hygroscopic substance such as sugar, salt or honey pulls moisture from the air.",
+   ["zucker-feuchtigkeit", "honig", "salz"], ["hygroskop"], ["hygroscop"], "Kapitel Zucker"),
+ "al-dente": ("Al dente", ["bissfest"], "Italienisch für «auf den Zahn»: Pasta oder Gemüse ist gar, hat aber im Kern noch leichten Biss.",
+   "Al dente", ["firm to the bite"], "Italian for 'to the tooth': pasta or vegetables are cooked but still have a slight bite at the centre.",
+   ["w-pasta", "staerkeverkleisterung"], ["al dente"], ["al dente"], "Kapitel Getreide: Pasta"),
+ "salmonellen": ("Salmonellen", ["Salmonella"], "Bakterien, die Lebensmittelvergiftungen auslösen, vor allem über rohes Geflügel und rohe Eier. Erhitzen auf mindestens 70 °C im Kern tötet sie ab.",
+   "Salmonella", [], "Bacteria that cause food poisoning, mainly via raw poultry and raw eggs. Heating to at least 70 °C at the core kills them.",
+   ["keimwachstum", "w-gefluegel", "kerntemperatur"], ["Salmonell"], ["salmonella"], "Kapitel Lebensmittelsicherheit"),
+ "polyphenole": ("Polyphenole", ["sekundäre Pflanzenstoffe"], "Pflanzenstoffe, die Farbe, Herbheit und Bitterkeit geben, etwa in Tee, Wein, Äpfeln und Schalen. An der Luft werden sie in angeschnittenem Obst braun.",
+   "Polyphenols", ["plant compounds"], "Plant compounds that give colour, astringency and bitterness, for example in tea, wine, apples and skins. In cut fruit they turn brown in the air.",
+   ["enzym-braeunung", "schaelen", "anthocyan-farbe"], ["Polyphenol"], ["polyphenol"], "Kapitel Früchte und Gemüse"),
+ "natriumcarbonat": ("Natriumcarbonat (Soda)", ["Soda", "Waschsoda"], "Eine stärkere Base als Natron. Gebackenes Natron wird zu Natriumcarbonat und gibt Laugengebäck Farbe und Geschmack.",
+   "Sodium carbonate (washing soda)", ["soda ash"], "A stronger base than baking soda. Baked baking soda turns into sodium carbonate and gives pretzels their colour and flavour.",
+   ["l-gebackenes-natron", "laugen", "basen-braeunung"], ["Natriumcarbonat"], ["sodium carbonate"], "Kapitel Brot: Laugengebäck"),
+ "malz": ("Malz", ["Backmalz", "Malzmehl"], "Gekeimtes und getrocknetes Getreide, meist Gerste. Beim Keimen entstehen Enzyme, die Stärke zu Zucker abbauen: Backmalz füttert die Hefe und macht die Kruste brauner.",
+   "Malt", ["diastatic malt", "malt flour"], "Sprouted and dried grain, usually barley. Sprouting creates enzymes that break starch down into sugar: baking malt feeds the yeast and browns the crust.",
+   ["amylase", "hefegaerung", "w-brot"], ["Malz", "Backmalz"], ["malt"], "Kapitel Getreide: Malz"),
+ "gliadin-glutenin": ("Gliadin und Glutenin", ["Klebereiweiß", "Kleber"], "Die zwei Eiweiße im Weizenmehl, die mit Wasser Gluten bilden: Glutenin macht den Teig elastisch, Gliadin macht ihn dehnbar.",
+   "Gliadin and glutenin", ["gluten proteins"], "The two proteins in wheat flour that form gluten with water: glutenin makes the dough elastic, gliadin makes it extensible.",
+   ["glutenbildung", "mehl"], ["Gliadin", "Glutenin", "Klebereiweiß"], ["gliadin", "glutenin"], "Kapitel Brot: Gluten"),
+ "carotin": ("Carotin", ["Beta-Carotin", "Karotin"], "Der orange Farbstoff in Karotten, Kürbis und Süßkartoffeln. Der Körper macht daraus Vitamin A. Es löst sich in Fett, nicht in Wasser.",
+   "Carotene", ["beta-carotene"], "The orange pigment in carrots, pumpkin and sweet potatoes. The body turns it into vitamin A. It dissolves in fat, not in water.",
+   ["schaelen", "w-gemuese", "aroma-loeslichkeit"], ["Carotin", "Karotin", "Beta-Carotin"], ["carotene"], "Kapitel Gemüse: Farbstoffe"),
+ "agar-agar": ("Agar-Agar", ["Agar"], "Ein Geliermittel aus Rotalgen, die pflanzliche Alternative zu Gelatine. Es muss aufkochen und wird fester und brüchiger als Gelatine.",
+   "Agar", ["agar-agar"], "A setting agent made from red algae, the plant-based alternative to gelatine. It must be boiled and sets firmer and more brittle than gelatine.",
+   ["gelatine", "gelbildung-gelatine"], ["Agar"], ["agar"], "Kapitel Gele"),
+ "solanin": ("Solanin", [], "Ein giftiger Abwehrstoff der Kartoffel. Er sammelt sich in grünen Stellen, Keimen und der Schale, darum schneidet man diese großzügig weg.",
+   "Solanine", [], "A toxic defence compound in potatoes. It collects in green patches, sprouts and the skin, so cut these away generously.",
+   ["schaelen", "w-kartoffeln"], ["Solanin"], ["solanine"], "Kapitel Gemüse: Kartoffeln"),
+ "kasein": ("Kasein", ["Casein", "Milcheiweiß"], "Das Haupteiweiß der Milch. Säure oder Lab lassen es gerinnen: So entstehen Käse, Quark und Joghurt.",
+   "Casein", ["milk protein"], "The main protein in milk. Acid or rennet makes it curdle: that is how cheese, quark and yoghurt come about.",
+   ["milch", "kaese", "l-frischkaese"], ["Kasein", "Casein"], ["casein"], "Kapitel Milch und Milchprodukte"),
+ "myoglobin": ("Myoglobin", ["Muskelfarbstoff"], "Der rote Farbstoff im Muskelfleisch. Beim Erhitzen wird er graubraun, darum zeigt die Farbe, wie weit Fleisch gegart ist.",
+   "Myoglobin", ["muscle pigment"], "The red pigment in muscle meat. When heated it turns grey-brown, which is why the colour shows how far meat is cooked.",
+   ["eiweiss-denaturierung", "w-fleisch", "poekeln"], ["Myoglobin", "Muskelfarbstoff"], ["myoglobin"], "Kapitel Fleisch: Farbe"),
+ "senfoele": ("Senföle", ["Senföl"], "Die scharfen Stoffe in Senf, Meerrettich, Rettich und Kresse. Sie entstehen erst, wenn die Zellen verletzt werden, und verfliegen beim Kochen.",
+   "Mustard oils", [], "The pungent compounds in mustard, horseradish, radish and cress. They only form when the cells are damaged, and they fade with cooking.",
+   ["schaerfe", "senf"], ["Senföl"], ["mustard oil"], "Kapitel Gewürze: Senf"),
+ "kahmhefe": ("Kahmhefe", [], "Ein weißer, harmloser Film auf Gärgemüse oder Sauerteig, gebildet von Hefen an der Luft. Abschöpfen genügt, pelziger oder farbiger Schimmel dagegen heißt wegwerfen.",
+   "Kahm yeast", ["surface yeast"], "A white, harmless film on fermenting vegetables or sourdough, formed by yeasts in contact with air. Skimming it off is enough; furry or coloured mould means throw it away.",
+   ["l-sauerkraut", "milchsaeuregaerung", "sauerteig"], ["Kahmhefe"], ["kahm"], "Kapitel Gemüse: Fermentation"),
+ "gerbstoffe": ("Gerbstoffe (Tannine)", ["Tannine"], "Herbe Pflanzenstoffe, etwa in Rotwein, schwarzem Tee und unreifen Früchten. Sie lassen den Mund trocken und pelzig wirken.",
+   "Tannins", [], "Astringent plant compounds, for example in red wine, black tea and unripe fruit. They make the mouth feel dry and furry.",
+   ["wein", "polyphenole"], ["Gerbstoff", "Tannin"], ["tannin"], "Kapitel Wein, Tee"),
+ "ganache": ("Ganache", [], "Eine Creme aus Schokolade und heißer Sahne. Je nach Verhältnis dient sie zum Glasieren, Füllen oder für Pralinen.",
+   "Ganache", [], "A cream made of chocolate and hot cream. Depending on the ratio it is used for glazing, filling or truffles.",
+   ["schokolade", "emulsion"], ["Ganache"], ["ganache"], "Kapitel Schokolade"),
+ "indikator": ("Indikator", ["Farbanzeiger"], "Ein Stoff, der seine Farbe je nach Säure oder Base ändert. Rotkohlsaft zum Beispiel wird im Sauren rot und im Basischen blau bis grün.",
+   "Indicator", ["pH indicator"], "A substance that changes colour depending on acid or base. Red cabbage juice, for example, turns red in acid and blue to green in alkali.",
+   ["anthocyan-farbe", "x-rotkohl-indikator", "ph-wert"], ["Indikator"], ["indicator"], "Kapitel Gemüse: Farbstoffe"),
+}
+# Zusätzliche Muster für bestehende Einträge
+MAP_DE = {"kollagen-gelatine": ["Bindegewebe"], "milchsaeuregaerung": ["Milchsäurebakterien", "Milchsäuregärung"], "oxidation-fett": ["ranzig"],
+  "poekeln": ["Pökelsalz", "Nitrit"], "fleischreifung": ["Dry Aging", "Dry-Aging"], "eiweiss-gerinnung": ["Koagulation"],
+  "enzym-zartmachen": ["Bromelain", "Papain", "Actinidin"], "rauchpunkt": ["Rauchpunkt"], "autolyse": ["Autolyse"],
+  "vorteig": ["Vorteig", "Poolish", "Biga"], "konvektion": ["Konvektion"], "waermestrahlung": ["Wärmestrahlung"],
+  "schokolade-grau": ["Fettreif", "Zuckerreif"], "pochieren": ["pochier"], "siedepunkt-druck": ["Siedepunkt"], "gefrierpunkt-senkung": ["Gefrierpunkt"]}
+
+ents, ens, ml = {}, {}, json.load(open(f"{ROOT}/content/master-list.json"))
+have = {m["id"] for m in ml["eintraege"]}
+known = {f[:-5] for f in os.listdir(f"{ROOT}/content/entries")}
+for id, (t, syn, k, te, sye, ke, links, sde, sen, kap) in B.items():
+    links = [l for l in links if l in known or l in B]
+    e = {"id": id, "typ": "begriff", "titel": t, "synonyme": syn, "kurz": k, "links": links, "quellen": MC(kap), "status": "entwurf", "schwierigkeit": "einsteiger"}
+    json.dump(e, open(f"{ROOT}/content/entries/{id}.json", "w"), ensure_ascii=False, indent=2)
+    json.dump({"id": id, "titel": te, "kurz": ke, "synonyme": sye}, open(f"{ROOT}/content/en/entries/{id}.json", "w"), ensure_ascii=False, indent=2)
+    if id not in have:
+        ml["eintraege"].append({"id": id, "typ": "begriff", "titel": t, "status": "entwurf", "pilot": False, "links": links, "welten": [], "synonyme": syn, "visual": {"vorlage": "keine"}, "verlinkt_von": []})
+ml["anzahl"] = len(ml["eintraege"])
+json.dump(ml, open(f"{ROOT}/content/master-list.json", "w"), ensure_ascii=False, indent=2)
+json.dump({"de": {**{id: v[7] for id, v in B.items()}, **MAP_DE}, "en": {id: v[8] for id, v in B.items()}},
+          open(f"{ROOT}/content/glossar-muster.json", "w"), ensure_ascii=False, indent=2)
+print(len(B), "Begriffe geschrieben")

@@ -1,0 +1,20 @@
+{
+  "id": "kahmhefe",
+  "typ": "begriff",
+  "titel": "Kahmhefe",
+  "synonyme": [],
+  "kurz": "Ein weißer, harmloser Film auf Gärgemüse oder Sauerteig, gebildet von Hefen an der Luft. Abschöpfen genügt, pelziger oder farbiger Schimmel dagegen heißt wegwerfen.",
+  "links": [
+    "l-sauerkraut",
+    "milchsaeuregaerung",
+    "sauerteig"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse: Fermentation"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

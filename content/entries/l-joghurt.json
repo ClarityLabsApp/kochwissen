@@ -8,7 +8,7 @@
     "Joghurt im Ofen",
     "Joghurt ohne Maschine"
   ],
-  "kurz": "Milchsäurebakterien verwandeln warme Milch über Nacht in Joghurt. Ein paar Löffel gekaufter Joghurt reichen als Starter.",
+  "kurz": "[[milchsaeuregaerung|Milchsäurebakterien]] verwandeln warme Milch über Nacht in Joghurt. Ein paar Löffel gekaufter Joghurt reichen als Starter.",
   "bild_im_kopf": "Wie Hefe im Teig, nur für Milch: Ein paar Arbeiter genügen, über Nacht werden es Milliarden.",
   "material": [
     "1 l Milch",
@@ -21,7 +21,7 @@
   "schluesselmomente": [
     {
       "schritt": "Milch auf 85–90 °C erhitzen und etwa 10 Minuten halten",
-      "warum": "Die Hitze verändert das Molkeneiweiß. Es bindet später mehr Wasser, der [[joghurt|Joghurt]] wird dicker.",
+      "warum": "Die Hitze verändert das [[molke|Molkeneiweiß]]. Es bindet später mehr Wasser, der [[joghurt|Joghurt]] wird dicker.",
       "prinzip": "eiweiss-denaturierung"
     },
     {
@@ -34,7 +34,7 @@
     },
     {
       "schritt": "Abgefüllt 4–12 Stunden warm halten, nicht bewegen",
-      "warum": "Die Bakterien machen aus Milchzucker Milchsäure. Die Säure lässt das Milcheiweiß zu einem Gel stocken.",
+      "warum": "Die Bakterien machen aus [[milchzucker|Milchzucker]] Milchsäure. Die Säure lässt das Milcheiweiß zu einem Gel stocken.",
       "prinzip": "milchsaeuregaerung"
     },
     {

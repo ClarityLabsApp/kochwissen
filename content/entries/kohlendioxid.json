@@ -1,0 +1,23 @@
+{
+  "id": "kohlendioxid",
+  "typ": "begriff",
+  "titel": "Kohlendioxid (CO₂)",
+  "synonyme": [
+    "CO2",
+    "Kohlensäure"
+  ],
+  "kurz": "Ein farbloses Gas. Hefe, Sauerteig, Backpulver und Natron bilden es, und seine Bläschen lockern den Teig.",
+  "links": [
+    "hefegaerung",
+    "chemische-lockerung",
+    "triebmittel"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot und Backtriebmittel"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

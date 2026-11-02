@@ -1,0 +1,22 @@
+{
+  "id": "molke",
+  "typ": "begriff",
+  "titel": "Molke",
+  "synonyme": [
+    "Sirte"
+  ],
+  "kurz": "Die gelbliche Flüssigkeit, die übrig bleibt, wenn Milch zu Käse, Quark oder Joghurt gerinnt. Sie enthält [[milchzucker|Milchzucker]] und einige Eiweiße.",
+  "links": [
+    "l-frischkaese",
+    "l-joghurt",
+    "milch"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Milch und Milchprodukte"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

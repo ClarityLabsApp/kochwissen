@@ -1,0 +1,22 @@
+{
+  "id": "indikator",
+  "typ": "begriff",
+  "titel": "Indikator",
+  "synonyme": [
+    "Farbanzeiger"
+  ],
+  "kurz": "Ein Stoff, der seine Farbe je nach Säure oder Base ändert. Rotkohlsaft zum Beispiel wird im Sauren rot und im Basischen blau bis grün.",
+  "links": [
+    "anthocyan-farbe",
+    "x-rotkohl-indikator",
+    "ph-wert"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse: Farbstoffe"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "gerbstoffe",
+  "typ": "begriff",
+  "titel": "Gerbstoffe (Tannine)",
+  "synonyme": [
+    "Tannine"
+  ],
+  "kurz": "Herbe Pflanzenstoffe, etwa in Rotwein, schwarzem Tee und unreifen Früchten. Sie lassen den Mund trocken und pelzig wirken.",
+  "links": [
+    "wein",
+    "polyphenole"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Wein, Tee"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

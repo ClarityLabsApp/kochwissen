@@ -28,7 +28,7 @@
   "schluesselmomente": [
     {
       "schritt": "Bring the milk to the boil, stirring",
-      "warum": "Heat loosens the [[milch|milk]] protein (casein) so that it flocculates completely in a moment.",
+      "warum": "Heat loosens the [[milch|milk]] protein ([[kasein|casein]]) so that it flocculates completely in a moment.",
       "prinzip": "eiweiss-denaturierung"
     },
     {
@@ -47,7 +47,7 @@
     },
     {
       "schritt": "Wrap it up and press for 30–40 minutes",
-      "warum": "Pressing squeezes out whey: pressed briefly it stays soft like ricotta; pressed long it becomes firm enough to slice."
+      "warum": "Pressing squeezes out [[molke|whey]]: pressed briefly it stays soft like ricotta; pressed long it becomes firm enough to slice."
     }
   ],
   "visual": {

@@ -1,0 +1,23 @@
+{
+  "id": "molekuel",
+  "typ": "begriff",
+  "titel": "Molekül",
+  "synonyme": [
+    "Moleküle",
+    "Teilchen"
+  ],
+  "kurz": "Das kleinste Teilchen eines Stoffs, das noch dessen Eigenschaften hat, etwa ein Zucker- oder Wassermolekül. Moleküle bestehen aus Atomen.",
+  "links": [
+    "maillard-reaktion",
+    "diffusion",
+    "emulsion"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Anhang Chemie"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

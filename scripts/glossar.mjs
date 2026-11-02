@@ -48,6 +48,12 @@ export const FACHWOERTER = {
   wasseraktivitaet: ["Wasseraktivität"],
 };
 
+// Weitere Muster (Glossar II) und englische Muster: content/glossar-muster.json
+const extra = JSON.parse(readFileSync(join(root, "content/glossar-muster.json"), "utf8"));
+for (const [id, stems] of Object.entries(extra.de)) FACHWOERTER[id] = [...(FACHWOERTER[id] ?? []), ...stems];
+/** Englische Muster: nur für die Übersetzungen in content/en/entries (npm run glossar -- --en). */
+export const FACHWOERTER_EN = extra.en;
+
 /** Stellen, an denen ein Wort etwas anderes meint: Fachwort-id → Einträge, die übersprungen werden. */
 export const AUSNAHMEN = {
   temperieren: ["emulsion", "legieren"], // dort: Zutaten angleichen, nicht Schokolade
@@ -73,12 +79,12 @@ const patternFor = (stems) => new RegExp(`(?<![\\p{L}\\[|])(?:${stems.map(esc).j
 /** Entfernt bestehende Markierungen, damit Wörter darin nicht doppelt zählen. */
 const masked = (s) => s.replace(/\[\[[^\]]+\]\]/g, (m) => " ".repeat(m.length));
 
-export function findUnmarked(entries, known) {
+export function findUnmarked(entries, known, dict = FACHWOERTER) {
   const hits = [];
   for (const e of entries) {
     const fs = fields(e);
     const all = fs.map((f) => f.get()).join("\n");
-    for (const [id, stems] of Object.entries(FACHWOERTER)) {
+    for (const [id, stems] of Object.entries(dict)) {
       if (id === e.id || !known.has(id) || AUSNAHMEN[id]?.includes(e.id)) continue;
       if (all.includes(`[[${id}`)) continue; // schon irgendwo verlinkt
       for (const f of fs) {
@@ -92,11 +98,12 @@ export function findUnmarked(entries, known) {
 
 const isMain = process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1];
 if (isMain) {
-  const dir = join(root, "content/entries");
+  const en = process.argv.includes("--en");
+  const deDir = join(root, "content/entries"), dir = en ? join(root, "content/en/entries") : deDir;
   const files = readdirSync(dir).filter((f) => f.endsWith(".json"));
   const entries = files.map((f) => JSON.parse(readFileSync(join(dir, f), "utf8")));
-  const known = new Set(entries.map((e) => e.id));
-  const hits = findUnmarked(entries, known);
+  const known = new Set(readdirSync(deDir).filter((f) => f.endsWith(".json")).map((f) => f.slice(0, -5)));
+  const hits = findUnmarked(entries, known, en ? FACHWOERTER_EN : FACHWOERTER);
   const fix = process.argv.includes("--fix");
   if (fix) {
     // Pro Feld von hinten nach vorne ersetzen, damit die Positionen stimmen.

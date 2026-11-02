@@ -1,0 +1,23 @@
+{
+  "id": "carotin",
+  "typ": "begriff",
+  "titel": "Carotin",
+  "synonyme": [
+    "Beta-Carotin",
+    "Karotin"
+  ],
+  "kurz": "Der orange Farbstoff in Karotten, Kürbis und Süßkartoffeln. Der Körper macht daraus Vitamin A. Es löst sich in Fett, nicht in Wasser.",
+  "links": [
+    "schaelen",
+    "w-gemuese",
+    "aroma-loeslichkeit"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse: Farbstoffe"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

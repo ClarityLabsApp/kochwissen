@@ -1,0 +1,23 @@
+{
+  "id": "weinstein",
+  "typ": "begriff",
+  "titel": "Weinstein",
+  "synonyme": [
+    "Weinsteinpulver",
+    "Weinsteinbackpulver"
+  ],
+  "kurz": "Ein Salz der Weinsäure, das sich bei der Weinherstellung absetzt. In der Küche dient es als Säure im Backpulver und macht Eischnee stabiler.",
+  "links": [
+    "backpulver",
+    "schaumbildung",
+    "chemische-lockerung"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Eier; Kapitel Brot und Backtriebmittel"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}
