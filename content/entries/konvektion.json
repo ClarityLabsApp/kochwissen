@@ -29,7 +29,8 @@
     "roesten-ofen",
     "dampf-im-ofen",
     "waermeleitung",
-    "daempfen"
+    "daempfen",
+    "umluft-ober-unterhitze"
   ],
   "welten": [
     "w-gebaeck",

@@ -1,0 +1,32 @@
+{
+  "id": "schaelen",
+  "titel": "To peel or not to peel",
+  "kurz": "Many plant compounds sit in and just under the skin, so peel only when it is tough, bitter, dirty or green.",
+  "bild_im_kopf": "Like the bark of a tree: it protects the plant, so that is where it stores its defences.",
+  "was_passiert": "The skin is the plant's protective layer. In it and just beneath it, colour and defence compounds (polyphenols) and fibre collect. In carrots a large share of the polyphenols sits in the outer layer, even though it makes up little of the weight. Vitamins and carotene, by contrast, are spread through the whole root. When boiling, water-soluble vitamins (C and B) move into the water; carotene hardly does, because it dissolves in fat.",
+  "warum_wichtig": "Scrubbing instead of peeling keeps more plant compounds and fibre. Boiling whole and peeling afterwards loses less to the cooking water, because the skin holds everything together. Pesticide residues sit mainly on the outside: washing and scrubbing remove some, peeling more.",
+  "synonyme": [
+    "peeling carrots",
+    "potatoes with skin",
+    "peeling apples",
+    "eating the skin",
+    "nutrients in the peel"
+  ],
+  "faustregeln": [
+    "For more nutrients: scrub instead of peeling where the skin is tender.",
+    "If you peel, peel thinly: a vegetable peeler takes off less than a knife.",
+    "Boil whole, peel afterwards: the skin keeps flavour and vitamins in the vegetable.",
+    "Always remove green potato skin, even if you usually eat the skin."
+  ],
+  "schritte": [
+    "Young carrots, new potatoes, apples and cucumbers: just wash them well and scrub with a brush.",
+    "Always cut away green patches and sprouts on potatoes generously: that is where the toxic solanine sits.",
+    "Peel old, thick or bitter skins thinly with a vegetable peeler.",
+    "For salad or mash, boil potatoes and carrots whole and peel them afterwards.",
+    "Reuse vegetable cooking water for soup or sauce: it holds the vitamins that leached out."
+  ],
+  "mythos": {
+    "behauptung": "Most of the vitamins are in the skin.",
+    "richtig": "Only partly. The skin holds mainly plant compounds and fibre; most vitamins are spread through the whole flesh."
+  }
+}

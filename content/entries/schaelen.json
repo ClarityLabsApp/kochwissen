@@ -1,0 +1,63 @@
+{
+  "id": "schaelen",
+  "typ": "technik",
+  "titel": "Schälen oder nicht",
+  "schwierigkeit": "einsteiger",
+  "synonyme": [
+    "Karotten schälen",
+    "Kartoffeln mit Schale",
+    "Apfel schälen",
+    "Schale mitessen",
+    "Nährstoffe in der Schale"
+  ],
+  "kurz": "Viele Pflanzenstoffe sitzen in und direkt unter der Schale, darum schält man nur, wenn sie zäh, bitter, schmutzig oder grün ist.",
+  "bild_im_kopf": "Wie die Rinde eines Baums: Sie schützt die Pflanze, darum sammelt sie dort ihre Abwehrstoffe.",
+  "was_passiert": "Die Schale ist die Schutzschicht der Pflanze. In ihr und direkt darunter sammeln sich Farb- und Abwehrstoffe (Polyphenole) sowie Ballaststoffe. Bei Karotten steckt ein großer Teil der Polyphenole in der äußeren Schicht, obwohl sie nur wenig vom Gewicht ausmacht. Vitamine und Carotin verteilen sich dagegen über die ganze Rübe. Beim Kochen wandern wasserlösliche Vitamine (C und B) ins Wasser, Carotin kaum, denn es löst sich in Fett.",
+  "warum_wichtig": "Wer bürstet statt schält, behält mehr Pflanzenstoffe und Ballaststoffe. Wer ganz kocht und erst danach schält, verliert weniger ans Kochwasser, denn die Schale hält alles zusammen. Rückstände von Pflanzenschutzmitteln sitzen vor allem außen: Waschen und Bürsten entfernt einen Teil, Schälen mehr.",
+  "schritte": [
+    "Junge Karotten, neue Kartoffeln, Äpfel und Gurken nur gründlich waschen und mit einer Bürste abreiben.",
+    "Grüne Stellen und Keime bei Kartoffeln immer großzügig wegschneiden: Dort sitzt das giftige Solanin.",
+    "Alte, dicke oder bittere Schalen dünn mit dem Sparschäler abziehen.",
+    "Für Salat oder Püree Kartoffeln und Karotten ganz kochen und erst danach schälen.",
+    "Gemüsekochwasser für Suppe oder Sauce weiterverwenden: Darin stecken die ausgelaugten Vitamine."
+  ],
+  "faustregeln": [
+    "Für mehr Nährstoffe: bürsten statt schälen, wo die Schale zart ist.",
+    "Wenn du schälst, dann dünn: Ein Sparschäler nimmt weniger weg als ein Messer.",
+    "Ganz kochen, danach schälen: Die Schale hält Geschmack und Vitamine im [[w-gemuese|Gemüse]].",
+    "Grüne Kartoffelschale immer weg, auch wenn du sonst mit Schale isst."
+  ],
+  "mythos": {
+    "behauptung": "Die meisten Vitamine stecken in der Schale.",
+    "richtig": "Nur zum Teil. In der Schale sitzen vor allem Pflanzenstoffe und Ballaststoffe, die meisten Vitamine verteilen sich über das ganze Fruchtfleisch."
+  },
+  "links": [
+    "w-gemuese",
+    "w-kartoffeln",
+    "fond",
+    "blanchieren",
+    "enzym-braeunung",
+    "pektin-abbau"
+  ],
+  "welten": [
+    "w-gemuese",
+    "w-kartoffeln"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "three carrots on a wooden board, one scrubbed with a brush, one thinly peeled with a vegetable peeler, peel curls beside them"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse und Früchte"
+    },
+    {
+      "titel": "Zhang, Hamauzu (2004): Phenolic compounds and their antioxidant properties in different tissues of carrots. Journal of Food, Agriculture & Environment 2(1)"
+    },
+    {
+      "titel": "Newcastle University (2009): Studie zu ganz gekochten Karotten (Brandt et al.)"
+    }
+  ],
+  "status": "entwurf"
+}

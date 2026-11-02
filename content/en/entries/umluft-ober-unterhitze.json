@@ -1,0 +1,28 @@
+{
+  "id": "umluft-ober-unterhitze",
+  "titel": "Fan oven or conventional heat",
+  "kurz": "A fan oven blows hot air over the food and cooks faster and drier; top and bottom heat is gentler and moister.",
+  "bild_im_kopf": "Like blowing on hot soup: moving air exchanges heat much faster than still air. In the oven it brings the heat to the food faster.",
+  "was_passiert": "With top and bottom heat, two elements heat from above and below. The air is almost still, and a layer of cooler, moist air forms around the food. With the fan, hot air is blown over it constantly and strips this layer away. So more heat arrives, and the surface dries faster ([[konvektion|convection]]).",
+  "warum_wichtig": "Fast and dry means crisp and brown. Gentle and moist means doughs can rise before a firm crust forms.",
+  "synonyme": [
+    "fan oven",
+    "convection",
+    "top and bottom heat",
+    "conventional oven",
+    "which oven setting"
+  ],
+  "faustregeln": [
+    "Fan oven: about 20 °C lower than a recipe written for conventional heat (as a guide).",
+    "Several trays at once: use the fan, otherwise each tray bakes differently.",
+    "Butter cakes, sponge, soufflé and cheesecake: conventional heat. The fan forms a crust too early, so the cake cracks or domes.",
+    "For a crisp base on pizza or a tart: bake low in the oven and favour bottom heat.",
+    "For browning a gratin at the end: top heat or the grill."
+  ],
+  "visual": {
+    "params": {
+      "links": "Conventional heat: gentle and moist. For cakes, sponge, soufflé, cheesecake and bread in the first minutes.",
+      "rechts": "Fan oven: fast and dry. For roast vegetables, chips, crisp poultry skin and several trays at once."
+    }
+  }
+}

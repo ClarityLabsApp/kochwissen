@@ -218,13 +218,13 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
       </div>}
 
       <div className={`groups${res ? "" : " solo"}`}>
-        {groups.map(([t, name, sub]) => {
+        {groups.map(([t, name, subline]) => {
           const g = res ? list : list.filter((e) => e.typ === t);
           if (!g.length) return null;
           return (
             // Geschlossen beim Start; offen bei Suche oder gewähltem Typ. Der key setzt den Zustand bei Filterwechsel zurück.
             <details className={`group${!res ? " solo" : ""}`} key={`${t}-${res ? "s" : ""}-${active.has(t) ? "a" : ""}`} open={!!res || active.has(t)}>
-              <summary><h3>{res && <>{name} </>}<small>{g.length} · {sub}</small></h3></summary>
+              <summary><h3>{res && <>{name} </>}<small>{g.length} · {subline}</small></h3></summary>
               {res ? (
                 <div className="grid">
                   {g.map((e) => (

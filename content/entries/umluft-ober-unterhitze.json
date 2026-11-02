@@ -1,0 +1,56 @@
+{
+  "id": "umluft-ober-unterhitze",
+  "typ": "technik",
+  "titel": "Umluft oder Ober- und Unterhitze",
+  "schwierigkeit": "einsteiger",
+  "synonyme": [
+    "Umluft",
+    "Heißluft",
+    "Ober- und Unterhitze",
+    "Backofen Einstellung",
+    "welche Ofenstufe"
+  ],
+  "kurz": "Umluft bläst heiße Luft über das Essen und gart schneller und trockener, Ober- und Unterhitze heizt sanfter und feuchter.",
+  "bild_im_kopf": "Wie Pusten auf heiße Suppe: Bewegte Luft tauscht Wärme viel schneller aus als stille. Im Ofen bringt sie die Hitze schneller ans Essen.",
+  "was_passiert": "Bei Ober- und Unterhitze heizen zwei Heizstäbe oben und unten. Die Luft steht fast still, um das Essen bildet sich eine Hülle aus kühlerer, feuchter Luft. Bei Umluft bläst ein Ventilator die heiße Luft ständig darüber und reißt diese Hülle weg. Darum kommt mehr Wärme an, und die Oberfläche trocknet schneller ([[konvektion|Konvektion]]).",
+  "warum_wichtig": "Schnell und trocken heißt: [[knusprig|knusprig]] und braun. Sanft und feucht heißt: Teige können aufgehen, bevor sich eine feste Kruste bildet.",
+  "faustregeln": [
+    "Umluft: etwa 20 °C weniger als im Rezept für Ober- und Unterhitze (Richtwert).",
+    "Mehrere Bleche gleichzeitig: Umluft, sonst backt jedes Blech anders.",
+    "Rührkuchen, Biskuit, Soufflé und Käsekuchen: Ober- und Unterhitze. Umluft bildet zu früh eine Kruste, der Kuchen reißt oder wölbt sich.",
+    "Für einen knusprigen Boden bei Pizza oder Wähe: unten im Ofen backen, Unterhitze betonen.",
+    "Zum Überbacken am Schluss: Oberhitze oder Grill."
+  ],
+  "links": [
+    "konvektion",
+    "waermestrahlung",
+    "knusprig",
+    "luftfeuchte-ofen",
+    "boden-durchgeweicht",
+    "w-gebaeck",
+    "w-brot"
+  ],
+  "welten": [
+    "w-gebaeck",
+    "w-brot",
+    "w-gemuese"
+  ],
+  "visual": {
+    "vorlage": "skala",
+    "params": {
+      "links": "Ober- und Unterhitze: sanft und feucht. Für Kuchen, Biskuit, Soufflé, Käsekuchen und Brot in den ersten Minuten.",
+      "rechts": "Umluft: schnell und trocken. Für Ofengemüse, Pommes, knusprige Geflügelhaut und mehrere Bleche gleichzeitig."
+    },
+    "illustration": "an old enamel kitchen oven with its door open, a sponge cake on the lower rack and a tray of roast vegetables on the upper rack"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Garmethoden: Ofen und Wärmeübertragung"
+    },
+    {
+      "titel": "Serious Eats: Convection vs. conventional ovens"
+    }
+  ],
+  "status": "entwurf"
+}
