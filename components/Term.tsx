@@ -1,11 +1,12 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { href, t, type Lang } from "@/lib/i18n";
 
 export interface TermData { id: string; titel: string; kurz: string | null; ausgeschrieben: boolean }
 
 /** Fachbegriff im Text: Antippen zeigt die Kurzerklärung, der Link führt zum Eintrag. */
-export default function Term({ label, info }: { label: string; info: TermData }) {
+export default function Term({ label, info, lang = "de" }: { label: string; info: TermData; lang?: Lang }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLSpanElement>(null);
   useEffect(() => {
@@ -22,8 +23,8 @@ export default function Term({ label, info }: { label: string; info: TermData })
       {open && (
         <span className="pop" role="dialog" aria-label={info.titel}>
           <span className="mono">{info.titel}</span>
-          <span>{info.kurz ?? "Erklärung folgt."}</span>
-          <Link href={`/eintrag/${info.id}`}>Zum Eintrag →</Link>
+          <span>{info.kurz ?? t(lang).term.soon}</span>
+          <Link href={href(lang, `/eintrag/${info.id}`)}>{t(lang).term.go}</Link>
         </span>
       )}
     </span>

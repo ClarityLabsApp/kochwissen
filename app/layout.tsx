@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import "./globals.css";
 import PrintHelper from "@/components/PrintHelper";
+import SiteNav from "@/components/SiteNav";
 
 const site = process.env.NEXT_PUBLIC_SITE_URL ?? (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000");
 
@@ -25,13 +25,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
-        <a href="#inhalt" className="skip">Zum Inhalt springen</a>
+        <a href="#inhalt" className="skip">Zum Inhalt springen · Skip to content</a>
         <PrintHelper />
         <div className="wrap wide" style={{ paddingBottom: 0, gap: 0 }}>
-          <div className="sitebar">
-            <Link href="/" className="brand">Koch<em>wissen</em></Link>
-            <nav className="topnav"><Link href="/">Bibliothek</Link><Link href="/pfad">Lernpfade</Link></nav>
-          </div>
+          <SiteNav />
         </div>
         <div id="inhalt">{children}</div>
       </body>

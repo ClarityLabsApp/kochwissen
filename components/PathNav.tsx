@@ -2,11 +2,13 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { readDone, writeDone } from "./PathSteps";
+import { href, t, type Lang } from "@/lib/i18n";
 
 export interface PathInfo { id: string; titel: string; schritte: { id: string; titel: string }[] }
 
 /** Zeigt auf einer Eintragsseite, wo man im Lernpfad steht, und führt zum nächsten Schritt. Aktiv nur mit ?pfad=… */
-export default function PathNav({ entry, paths }: { entry: string; paths: PathInfo[] }) {
+export default function PathNav({ entry, paths, lang = "de" }: { entry: string; paths: PathInfo[]; lang?: Lang }) {
+  const P = t(lang).path, ln = (p: string) => href(lang, p);
   const [pfad, setPfad] = useState<PathInfo | null>(null);
   useEffect(() => {
     const id = new URLSearchParams(window.location.search).get("pfad");
@@ -19,10 +21,10 @@ export default function PathNav({ entry, paths }: { entry: string; paths: PathIn
   const prev = pfad.schritte[i - 1], next = pfad.schritte[i + 1];
   return (
     <nav className="pathnav" aria-label="Lernpfad">
-      <Link href={`/pfad/${pfad.id}`} className="mono">Lernpfad · {pfad.titel} · Schritt {i + 1} von {pfad.schritte.length}</Link>
+      <Link href={ln(`/pfad/${pfad.id}`)} className="mono">{P.nav(pfad.titel, i + 1, pfad.schritte.length)}</Link>
       <div className="row">
-        {prev ? <Link href={`/eintrag/${prev.id}?pfad=${pfad.id}`}>← {prev.titel}</Link> : <span />}
-        {next ? <Link href={`/eintrag/${next.id}?pfad=${pfad.id}`} className="next">{next.titel} →</Link> : <Link href={`/pfad/${pfad.id}#quiz`} className="next">Geschafft. Jetzt zum Quiz →</Link>}
+        {prev ? <Link href={ln(`/eintrag/${prev.id}?pfad=${pfad.id}`)}>← {prev.titel}</Link> : <span />}
+        {next ? <Link href={ln(`/eintrag/${next.id}?pfad=${pfad.id}`)} className="next">{next.titel} →</Link> : <Link href={ln(`/pfad/${pfad.id}#quiz`)} className="next">{P.finished}</Link>}
       </div>
     </nav>
   );

@@ -1,12 +1,14 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { href, t, type Lang } from "@/lib/i18n";
 
 export interface QuizFrage { frage: string; antworten: string[]; richtig: number; erklaerung: string; eintrag: string; eintragTitel: string }
 const KEY = (p: string) => `kochwissen:quiz:${p}`;
 
 /** Kleines Quiz am Ende eines Lernpfads: eine Frage nach der anderen, mit Auflösung und Erklärung. */
-export default function Quiz({ pfad, fragen }: { pfad: string; fragen: QuizFrage[] }) {
+export default function Quiz({ pfad, fragen, lang = "de" }: { pfad: string; fragen: QuizFrage[]; lang?: Lang }) {
+  const Q = t(lang).quiz;
   const [i, setI] = useState(0);
   const [wahl, setWahl] = useState<number | null>(null);
   const [punkte, setPunkte] = useState(0);
@@ -25,22 +27,22 @@ export default function Quiz({ pfad, fragen }: { pfad: string; fragen: QuizFrage
 
   if (fertig) {
     const anteil = punkte / fragen.length;
-    const satz = anteil === 1 ? "Alles richtig. Du hast verstanden, worum es geht." : anteil >= 0.6 ? "Gut gemacht. Bei den anderen lohnt ein zweiter Blick in den Eintrag." : "Ein guter Anfang. Lies die Schritte noch einmal und versuch es dann wieder.";
+    const satz = anteil === 1 ? Q.all : anteil >= 0.6 ? Q.good : Q.low;
     return (
       <div className="quiz">
-        <span className="mono">Quiz · Ergebnis</span>
-        <strong className="quiz-score">{punkte} von {fragen.length} richtig</strong>
+        <span className="mono">{Q.result}</span>
+        <strong className="quiz-score">{Q.score(punkte, fragen.length)}</strong>
         <p>{satz}</p>
-        <button type="button" className="vis-btn" onClick={neu}>Nochmal versuchen</button>
+        <button type="button" className="vis-btn" onClick={neu}>{Q.again}</button>
       </div>
     );
   }
 
   return (
     <div className="quiz">
-      <div className="quiz-head"><span className="mono">Quiz · Frage {i + 1} von {fragen.length}</span>{best !== null && <span className="mono">Bestes Ergebnis: {best} von {fragen.length}</span>}</div>
+      <div className="quiz-head"><span className="mono">{Q.q(i + 1, fragen.length)}</span>{best !== null && <span className="mono">{Q.best(best, fragen.length)}</span>}</div>
       <p className="quiz-frage">{f.frage}</p>
-      <div className="quiz-antworten" role="group" aria-label="Antworten">
+      <div className="quiz-antworten" role="group" aria-label={Q.answers}>
         {f.antworten.map((a, n) => {
           const state = wahl === null ? "" : n === f.richtig ? " richtig" : n === wahl ? " falsch" : " aus";
           return <button key={a} type="button" className={`quiz-a${state}`} onClick={() => antworten(n)} disabled={wahl !== null} aria-pressed={wahl === n}>{a}</button>;
@@ -48,10 +50,10 @@ export default function Quiz({ pfad, fragen }: { pfad: string; fragen: QuizFrage
       </div>
       {wahl !== null && (
         <div className={`quiz-aufloesung${wahl === f.richtig ? " ok" : ""}`} aria-live="polite">
-          <strong>{wahl === f.richtig ? "Richtig." : "Nicht ganz."}</strong> {f.erklaerung}
+          <strong>{wahl === f.richtig ? Q.right : Q.wrong}</strong> {f.erklaerung}
           <div className="quiz-foot">
-            <Link href={`/eintrag/${f.eintrag}?pfad=${pfad}`} className="linkbtn">Mehr dazu: {f.eintragTitel} →</Link>
-            <button type="button" className="vis-btn" onClick={weiter}>{i + 1 < fragen.length ? "Nächste Frage" : "Ergebnis zeigen"}</button>
+            <Link href={href(lang, `/eintrag/${f.eintrag}?pfad=${pfad}`)} className="linkbtn">{Q.more}: {f.eintragTitel} →</Link>
+            <button type="button" className="vis-btn" onClick={weiter}>{i + 1 < fragen.length ? Q.nextQ : Q.show}</button>
           </div>
         </div>
       )}

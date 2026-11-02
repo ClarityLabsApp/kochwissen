@@ -2,32 +2,19 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { search } from "@/lib/search";
+import { href, t, type Lang } from "@/lib/i18n";
 
 export interface LibItem {
   id: string; typ: string; titel: string; status: string; pilot: boolean;
   links: string[]; verlinkt_von: string[]; synonyme: string[]; kurz: string | null; welten?: string[];
 }
 
-const TYPES: [string, string, string][] = [
-  ["ziel", "Ziele", "Was will ich erreichen?"],
-  ["gericht", "Gerichte", "Warum funktioniert dieses Rezept?"],
-  ["experiment", "Experimente", "Zum Ausprobieren in der Küche"],
-  ["labor", "Labor", "Grundzutaten selber herstellen"],
-  ["symptom", "Symptome", "Was ist schiefgelaufen?"],
-  ["prozess", "Prozesse", "Was passiert beim Kochen?"],
-  ["technik", "Techniken", "Welcher Handgriff hilft?"],
-  ["zutat", "Zutaten", "Was tut eine Zutat?"],
-  ["stellschraube", "Stellschrauben", "Woran kann ich drehen?"],
-  ["welt", "Lebensmittel-Welten", "Wo begegnet mir das?"],
-  ["begriff", "Begriffe", "Was heißt das Wort?"],
-];
-const SING: Record<string, string> = { prozess: "Prozess", ziel: "Ziel", technik: "Technik", symptom: "Symptom", zutat: "Zutat", stellschraube: "Stellschraube", welt: "Welt", begriff: "Begriff", gericht: "Gericht", experiment: "Experiment", labor: "Labor-Rezept" };
-const EXAMPLES = ["Wie werden meine Wedges knuspriger?", "Fleisch wird trocken", "Sauce zu dünn", "Rösti", "Experiment für Kinder", "Mayo gerinnt"];
+const TYPE_ORDER = ["ziel", "gericht", "experiment", "labor", "symptom", "prozess", "technik", "zutat", "stellschraube", "welt", "begriff"];
 /** Die drei Einstiege: vom Problem, vom Ziel, vom Prinzip. */
-const DOORS: { typ: string; titel: string; frage: string; ids: string[]; alle: string; pfad?: [string, string] }[] = [
-  { typ: "symptom", titel: "Etwas ist schiefgegangen", frage: "Finde heraus, warum, und wie es nächstes Mal klappt.", ids: ["steak-grau", "wedges-nicht-knusprig", "sauce-zu-duenn", "mayo-gerinnt", "kuchen-sinkt-ein", "fleisch-trocken"], alle: "Alle Probleme" },
-  { typ: "ziel", titel: "Ich will, dass es … wird", frage: "Knuspriger, saftiger, luftiger: die Hebel dafür.", ids: ["knusprig", "saftig", "zart", "luftig", "cremig", "knackig"], alle: "Alle Ziele" },
-  { typ: "prozess", titel: "Ich will verstehen", frage: "Was in Pfanne, Ofen und Teig wirklich passiert.", ids: ["maillard-reaktion", "emulsion", "glutenbildung", "staerkeverkleisterung", "eiweiss-denaturierung"], alle: "Alle Prozesse", pfad: ["grundprinzipien", "Lernpfad: Die 10 wichtigsten Prinzipien"] },
+const DOORS: { typ: "symptom" | "ziel" | "prozess"; ids: string[]; pfad?: string }[] = [
+  { typ: "symptom", ids: ["steak-grau", "wedges-nicht-knusprig", "sauce-zu-duenn", "mayo-gerinnt", "kuchen-sinkt-ein", "fleisch-trocken"] },
+  { typ: "ziel", ids: ["knusprig", "saftig", "zart", "luftig", "cremig", "knackig"] },
+  { typ: "prozess", ids: ["maillard-reaktion", "emulsion", "glutenbildung", "staerkeverkleisterung", "eiweiss-denaturierung"], pfad: "grundprinzipien" },
 ];
 const DAILY = new Set(["prozess", "gericht", "experiment", "labor"]);
 export interface PfadCard { id: string; titel: string; n: number; dauer: string; fuer: string }
@@ -38,7 +25,11 @@ function pictureOf(e: LibItem, has: Set<string>): string | null {
   return (e.welten ?? []).find((w) => has.has(w)) ?? null;
 }
 
-export default function Library({ items, illus = [], pfade = [] }: { items: LibItem[]; illus?: string[]; pfade?: PfadCard[] }) {
+export default function Library({ items, illus = [], pfade = [], lang = "de" }: { items: LibItem[]; illus?: string[]; pfade?: PfadCard[]; lang?: Lang }) {
+  const T = t(lang), S = T.search, ln = (p: string) => href(lang, p);
+  const TYPES: [string, string, string][] = TYPE_ORDER.map((k) => [k, T.types[k][0], T.types[k][1]]);
+  const SING: Record<string, string> = Object.fromEntries(TYPE_ORDER.map((k) => [k, T.types[k][2]]));
+  const EXAMPLES = S.examples;
   const has = useMemo(() => new Set(illus), [illus]);
   const worlds = items.filter((e) => e.typ === "welt" && has.has(e.id));
   const [q, setQ] = useState("");
@@ -64,65 +55,65 @@ export default function Library({ items, illus = [], pfade = [] }: { items: LibI
 
   let list = items.filter((e) => (!active.size || active.has(e.typ)) && (!onlyWritten || isWritten(e)) && (!res || res.has(e.id)));
   if (res) list = [...list].sort((a, b) => res.get(b.id)! - res.get(a.id)!);
-  const groups = res ? [["treffer", "Treffer", "sortiert nach Passung"] as [string, string, string]] : TYPES;
+  const groups = res ? [["treffer", S.hits, S.byFit] as [string, string, string]] : TYPES;
 
   return (
     <>
       <div className="search">
-        <label className="mono" htmlFor="q">Suche · Alltagssprache funktioniert</label>
-        <input id="q" type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="z. B. Wie werden meine Wedges knuspriger?" autoComplete="off" />
+        <label className="mono" htmlFor="q">{S.label}</label>
+        <input id="q" type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder={S.placeholder} autoComplete="off" />
         <div className="examples">{EXAMPLES.map((x) => <button key={x} type="button" onClick={() => setQ(x)}>{x}</button>)}</div>
       </div>
       {best && (
-        <Link href={`/eintrag/${best.id}`} className={`bestcard${pictureOf(best, has) ? " pic" : ""}`}>
+        <Link href={ln(`/eintrag/${best.id}`)} className={`bestcard${pictureOf(best, has) ? " pic" : ""}`}>
           {pictureOf(best, has) && (
             // eslint-disable-next-line @next/next/no-img-element
             <img src={`/illustrationen/${pictureOf(best, has)}.webp`} alt="" width={160} height={160} />
           )}
-          <span className="mono"><i style={{ background: `var(--t-${best.typ})` }} />Beste Antwort · {SING[best.typ]}</span>
+          <span className="mono"><i style={{ background: `var(--t-${best.typ})` }} />{S.best} · {SING[best.typ]}</span>
           <strong>{best.titel}</strong>
           {best.kurz && <span className="k">{plain(best.kurz)}</span>}
-          <span className="go">Eintrag öffnen →</span>
+          <span className="go">{S.open}</span>
         </Link>
       )}
       {!res && (
         <section className="doors" aria-label="Einstiege">
           {DOORS.map((d) => (
             <div key={d.typ} className="door" style={{ borderTopColor: `var(--t-${d.typ})` }}>
-              <h2>{d.titel}</h2>
-              <p>{d.frage}</p>
+              <h2>{T.doors[d.typ][0]}</h2>
+              <p>{T.doors[d.typ][1]}</p>
               <div className="chips">
                 {d.ids.filter((id) => byId.has(id)).map((id) => (
-                  <Link key={id} href={`/eintrag/${id}`} className="chip"><i style={{ background: `var(--t-${d.typ})` }} />{byId.get(id)!.titel}</Link>
+                  <Link key={id} href={ln(`/eintrag/${id}`)} className="chip"><i style={{ background: `var(--t-${d.typ})` }} />{byId.get(id)!.titel}</Link>
                 ))}
               </div>
               <div className="door-foot">
-                <button type="button" className="linkbtn" onClick={() => openType(d.typ)}>{d.alle} ({items.filter((e) => e.typ === d.typ).length}) →</button>
-                {d.pfad && <Link href={`/pfad/${d.pfad[0]}`} className="linkbtn">{d.pfad[1]} →</Link>}
+                <button type="button" className="linkbtn" onClick={() => openType(d.typ)}>{T.doors[d.typ][2]} ({items.filter((e) => e.typ === d.typ).length}) →</button>
+                {d.pfad && <Link href={ln(`/pfad/${d.pfad}`)} className="linkbtn">{T.doors.pathLink} →</Link>}
               </div>
             </div>
           ))}
         </section>
       )}
       {!res && daily && (
-        <Link href={`/eintrag/${daily.id}`} className={`bestcard daily${pictureOf(daily, has) ? " pic" : ""}`}>
+        <Link href={ln(`/eintrag/${daily.id}`)} className={`bestcard daily${pictureOf(daily, has) ? " pic" : ""}`}>
           {pictureOf(daily, has) && (
             // eslint-disable-next-line @next/next/no-img-element
             <img src={`/illustrationen/${pictureOf(daily, has)}.webp`} alt="" width={160} height={160} />
           )}
-          <span className="mono"><i style={{ background: `var(--t-${daily.typ})` }} />Eintrag des Tages · {SING[daily.typ]}</span>
+          <span className="mono"><i style={{ background: `var(--t-${daily.typ})` }} />{T.daily} · {SING[daily.typ]}</span>
           <strong>{daily.titel}</strong>
           {daily.kurz && <span className="k">{plain(daily.kurz)}</span>}
-          <span className="go">Lesen →</span>
+          <span className="go">{T.read}</span>
         </Link>
       )}
       {!res && pfade.length > 0 && (
         <section className="block" aria-label="Lernpfade">
-          <span className="mono">Lernpfade · der Reihe nach verstehen</span>
+          <span className="mono">{T.pathsRow}</span>
           <div className="pfad-row">
             {pfade.map((p) => (
-              <Link key={p.id} href={`/pfad/${p.id}`} className="pfad-card">
-                <span className="mono">{p.n} Schritte · {p.dauer}</span>
+              <Link key={p.id} href={ln(`/pfad/${p.id}`)} className="pfad-card">
+                <span className="mono">{T.steps(p.n)} · {p.dauer}</span>
                 <strong>{p.titel}</strong>
                 <span className="f">{p.fuer}</span>
               </Link>
@@ -132,10 +123,10 @@ export default function Library({ items, illus = [], pfade = [] }: { items: LibI
       )}
       {!res && worlds.length > 0 && (
         <nav className="worlds" aria-label="Lebensmittel-Welten">
-          <span className="mono">Stöbern nach Welt</span>
+          <span className="mono">{T.worlds}</span>
           <div className="worlds-row">
             {worlds.map((w) => (
-              <Link key={w.id} href={`/eintrag/${w.id}`} className="world">
+              <Link key={w.id} href={ln(`/eintrag/${w.id}`)} className="world">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={`/illustrationen/${w.id}.webp`} alt="" width={120} height={120} loading="lazy" />
                 <span>{w.titel}</span>
@@ -144,7 +135,7 @@ export default function Library({ items, illus = [], pfade = [] }: { items: LibI
           </div>
         </nav>
       )}
-      <h2 id="bibliothek" className="libhead">{res ? "Alle Treffer" : "Die ganze Bibliothek"}</h2>
+      <h2 id="bibliothek" className="libhead">{res ? S.allHits : S.whole}</h2>
       <div className="typechips" role="group" aria-label="Eintragstyp">
         {TYPES.map(([t, name]) => {
           const n = items.filter((e) => e.typ === t).length;
@@ -159,7 +150,7 @@ export default function Library({ items, illus = [], pfade = [] }: { items: LibI
       </div>
       <label className="count" style={{ display: "flex", gap: 8, alignItems: "center" }}>
         <input type="checkbox" checked={onlyWritten} onChange={(e) => setOnlyWritten(e.target.checked)} />
-        Nur ausgeschriebene Einträge · {list.length} von {items.length}
+        {S.onlyWritten(list.length, items.length)}
       </label>
       <div className="groups">
         {groups.map(([t, name, sub]) => {
@@ -171,16 +162,16 @@ export default function Library({ items, illus = [], pfade = [] }: { items: LibI
               <summary><h3>{name} <small>{g.length} · {sub}</small></h3></summary>
               <div className="grid">
                 {g.map((e) => (
-                  <Link key={e.id} href={`/eintrag/${e.id}`} className={`cell${isWritten(e) ? "" : " dim"}`}>
+                  <Link key={e.id} href={ln(`/eintrag/${e.id}`)} className={`cell${isWritten(e) ? "" : " dim"}`}>
                     <span className="t">{e.titel}</span>
-                    <span className="m"><i style={{ background: `var(--t-${e.typ})` }} />{SING[e.typ]}{isWritten(e) ? ` · ${e.status}` : " · geplant"}</span>
+                    <span className="m"><i style={{ background: `var(--t-${e.typ})` }} />{SING[e.typ]}{isWritten(e) ? ` · ${T.status[e.status] ?? e.status}` : ` · ${T.status.geplant}`}</span>
                   </Link>
                 ))}
               </div>
             </details>
           );
         })}
-        {!list.length && <p className="count">Nichts gefunden. Versuche ein anderes Wort, z. B. „saftig“, „Sauce“ oder „Experiment“.</p>}
+        {!list.length && <p className="count">{S.none}</p>}
       </div>
     </>
   );

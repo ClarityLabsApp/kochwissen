@@ -7,6 +7,7 @@ import ParticleSim, { type Preset } from "./ParticleSim";
 import Spectrum from "./Spectrum";
 import MaillardSim from "./MaillardSim";
 import ExperimentCompare, { type Feld } from "./ExperimentCompare";
+import { href, t, type Lang } from "@/lib/i18n";
 
 // Muss hier stehen: Funktionen aus Client-Modulen sind auf dem Server nicht aufrufbar.
 const SIMS = new Set<string>(["emulsion", "osmose", "pektin-abbau", "reduktion", "hefegaerung", "chemische-lockerung", "waermeleitung", "schaumbildung", "diffusion", "zucker-kristallisation", "leidenfrost", "gelbildung-pektin", "chlorophyll-farbe", "eiweiss-denaturierung", "glutenbildung", "karamellisierung", "eiskristalle", "siedepunkt-druck", "enzym-zartmachen", "verdampfen", "staerkeverkleisterung", "kollagen-gelatine", "konvektion", "dampflockerung", "milchsaeuregaerung", "umami", "salz-geschmack", "aroma-loeslichkeit", "aroma-blooming", "schaerfe", "amylase", "enzym-braeunung", "fleischreifung", "basen-braeunung", "pyrolyse", "oxidation-fett", "fett-ausbraten", "rauchpunkt", "fett-kristallisation", "eiweiss-gerinnung", "saeure-denaturierung", "wasserbindung-salz", "poekeln", "gelbildung-gelatine", "kalzium-pektin", "anthocyan-farbe", "retrogradation", "pochieren-proz", "waermestrahlung", "zucker-feuchtigkeit", "wasseraktivitaet", "keimwachstum", "gefrierpunkt-senkung"]);
@@ -31,7 +32,7 @@ const short = (s: string, n = 20) => {
   const t = s.replace(/\s*\(.*?\)\s*/g, " ").replace(/:.*$/, "").trim();
   return t.length > n ? t.slice(0, n - 1).trimEnd() + "…" : t;
 };
-const node = (id: string, label?: string): NetNode => ({ id, label: short(label ?? titleOf(id)), full: label ?? titleOf(id), color: TYPE_COLOR[typOf(id) ?? "begriff"], href: `/eintrag/${id}` });
+const nodeL = (lang: Lang) => (id: string, label?: string): NetNode => ({ id, label: short(label ?? titleOf(id, lang)), full: label ?? titleOf(id, lang), color: TYPE_COLOR[typOf(id) ?? "begriff"], href: href(lang, `/eintrag/${id}`) });
 /** Alle Verweise eines Eintrags, ausgeschrieben oder aus der Masterliste. */
 const refsOf = (id: string) => {
   const e = getEntry(id), m = getMasterItem(id);
@@ -39,7 +40,8 @@ const refsOf = (id: string) => {
 };
 
 /** Wählt die Grafik-Vorlage für einen Eintrag (außer Prototypen, die die Seite selbst einbettet). */
-export default function Visual({ e }: { e: Entry }) {
+export default function Visual({ e, lang = "de" }: { e: Entry; lang?: Lang }) {
+  const node = nodeL(lang), V = t(lang).vis;
   const p = (e.visual?.params ?? {}) as Record<string, unknown>;
   const blocks: React.ReactNode[] = [];
 
@@ -66,7 +68,7 @@ export default function Visual({ e }: { e: Entry }) {
       return [...rt].some((mid) => typOf(mid) === "prozess" && refsOf(mid).has(h));
     };
     for (const t of techs) for (const h of e.hebel) if (linked(t, h)) edges.push([h, t]);
-    if (right.length) blocks.push(<DotNet key="net" title={`Hebel und Techniken für „${e.titel}“`} leftTitle="Hebel" rightTitle="Techniken" left={left} right={right} edges={edges} />);
+    if (right.length) blocks.push(<DotNet key="net" title={V.netGoal(e.titel)} leftTitle={V.levers} rightTitle={V.techs} left={left} right={right} edges={edges} />);
   }
 
   if (e.typ === "zutat" && e.rolle?.length) {
@@ -74,7 +76,7 @@ export default function Visual({ e }: { e: Entry }) {
     const procs = [...new Set(e.rolle.map((r) => r.prozess))];
     const right = procs.map((id) => node(id));
     const edges = e.rolle.map((r, i) => [`r${i}`, r.prozess] as [string, string]);
-    blocks.push(<DotNet key="net" title={`Was ${e.titel.split(" ")[0]} tut`} leftTitle="Rolle" rightTitle="Vorgang" left={left} right={right} edges={edges} />);
+    blocks.push(<DotNet key="net" title={V.netIng(lang === "en" ? e.titel : e.titel.split(" ")[0])} leftTitle={V.role} rightTitle={V.proc} left={left} right={right} edges={edges} />);
   }
 
   if (e.visual?.vorlage === "skala" && typeof p.links === "string" && typeof p.rechts === "string") {

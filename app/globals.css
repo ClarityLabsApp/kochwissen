@@ -319,3 +319,8 @@ footer.site { border-top: 1px solid var(--rule); padding-top: 14px; display: fle
 .quiz-score { font: 600 30px var(--f-display); }
 .quiz p { margin: 0; }
 @media print { .quiz { display: none; } }
+.langs { display: inline-flex; border: 1px solid var(--rule); border-radius: 2px; overflow: hidden; }
+.langs a { padding: 2px 7px; }
+.langs a[aria-current="true"] { background: var(--ink); color: var(--paper-2); }
+.untranslated { margin: 0; padding: 8px 12px; border-left: 4px solid var(--t-labor); background: var(--paper-2); font: italic 15px var(--f-body); color: var(--sepia); }
+@media (max-width: 420px) { .topnav { gap: 10px; } .topnav a { font-size: 11px; } }

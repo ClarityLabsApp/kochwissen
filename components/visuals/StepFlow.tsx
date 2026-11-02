@@ -1,11 +1,13 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { t, type Lang } from "@/lib/i18n";
 
 /**
  * Ablauf-Vorlage für Techniken: die Schritte als Punktlinie,
  * die sich von selbst Schritt für Schritt füllt. Antippen springt, Pause hält an.
  */
-export default function StepFlow({ steps, chips }: { steps: string[]; chips?: string[] }) {
+export default function StepFlow({ steps, chips, lang = "de" }: { steps: string[]; chips?: string[]; lang?: Lang }) {
+  const V = t(lang).vis;
   const [i, setI] = useState(0);
   const [play, setPlay] = useState(true);
   const [progress, setProgress] = useState(0);
@@ -37,11 +39,11 @@ export default function StepFlow({ steps, chips }: { steps: string[]; chips?: st
   return (
     <div className="vis" ref={ref}>
       <div className="vis-head">
-        <span className="mono">Ablauf · Schritt {i + 1} von {n}</span>
-        <button type="button" className="vis-btn" onClick={() => setPlay((p) => !p)}>{play ? "Pause" : "Abspielen"}</button>
+        <span className="mono">{V.flow} · {V.step(i + 1, n)}</span>
+        <button type="button" className="vis-btn" onClick={() => setPlay((p) => !p)}>{play ? V.pause : V.play}</button>
       </div>
       <div className="vis-scroll">
-        <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Ablauf in ${n} Schritten`}>
+        <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={V.stepsIn(n)}>
           <line x1={x(0)} x2={x(n - 1)} y1={30} y2={30} stroke="#d5c3a1" strokeWidth={3} />
           <line x1={x(0)} x2={fillTo} y1={30} y2={30} stroke="#b4542a" strokeWidth={3} />
           {steps.map((_, k) => (
