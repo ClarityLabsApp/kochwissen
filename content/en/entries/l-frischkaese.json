@@ -28,12 +28,12 @@
   "schluesselmomente": [
     {
       "schritt": "Bring the milk to the boil, stirring",
-      "warum": "Heat loosens the milk protein (casein) so that it flocculates completely in a moment.",
+      "warum": "Heat loosens the [[milch|milk]] protein (casein) so that it flocculates completely in a moment.",
       "prinzip": "eiweiss-denaturierung"
     },
     {
       "schritt": "Heat off; stir in lemon juice a spoonful at a time",
-      "warum": "The acid takes away the protein particles' charge. They stop repelling each other and clump together.",
+      "warum": "The [[saeure|acid]] takes away the protein particles' charge. They stop repelling each other and clump together.",
       "prinzip": "saeure-denaturierung"
     },
     {

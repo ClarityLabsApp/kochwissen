@@ -22,7 +22,7 @@
   "schluesselmomente": [
     {
       "schritt": "Put lemon juice in a measuring jug and top up with milk to 250 ml",
-      "warum": "The acid lowers the [[ph-wert|pH]] of the milk.",
+      "warum": "The [[saeure|acid]] lowers the [[ph-wert|pH]] of the [[milch|milk]].",
       "prinzip": "ph-wert"
     },
     {
@@ -32,7 +32,7 @@
     },
     {
       "schritt": "Use in the batter together with baking soda",
-      "warum": "The acid reacts with baking soda to make carbon dioxide: pancakes and scones rise.",
+      "warum": "The acid reacts with [[natron|baking soda]] to make carbon dioxide: [[g-pancakes|pancakes]] and scones rise.",
       "prinzip": "chemische-lockerung"
     }
   ]

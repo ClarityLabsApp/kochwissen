@@ -177,7 +177,12 @@ export default function EntryView({ id, lang }: { id: string; lang: Lang }) {
             ))}</div>
           </details>
         ) : null}
-        {e.links?.length ? <div className="block"><span className="mono">{L.related}</span><Chips ids={e.links} lang={lang} /></div> : null}
+        {(() => {
+          // Was schon im Text verlinkt ist, steht nicht noch einmal als Chip darunter.
+          const inText = new Set([...JSON.stringify(e).matchAll(/\[\[([a-z0-9-]+)/g)].map((m) => m[1]));
+          const rest = (e.links ?? []).filter((id) => !inText.has(id));
+          return rest.length ? <div className="block"><span className="mono">{L.related}</span><Chips ids={rest} lang={lang} /></div> : null;
+        })()}
         {e.quellen?.length ? (
           <details className="sec small"><summary><span className="mono">{L.sources} · {e.quellen.length}</span></summary>
             <ul className="sources">{e.quellen.map((q) => <li key={q.titel}>{q.url ? <a href={q.url} target="_blank" rel="noopener noreferrer">{q.titel}</a> : q.titel}{q.stelle ? `, ${q.stelle}` : ""}</li>)}</ul>

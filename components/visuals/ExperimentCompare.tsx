@@ -103,8 +103,8 @@ export default function ExperimentCompare({ felder, vorher: v0, nachher: n0, lan
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) { setT(1); return; }
     let raf = 0, started = 0;
-    const go = () => { const s = performance.now(); const step = (now: number) => { const p = Math.min(1, (now - s) / 3500); setT(p); if (p < 1) raf = requestAnimationFrame(step); }; raf = requestAnimationFrame(step); };
-    const io = new IntersectionObserver(([e]) => { if (e.isIntersecting && !started) { started = 1; setTimeout(go, 400); } }, { threshold: 0.4 });
+    const go = () => { const s = performance.now(); const step = (now: number) => { const p = Math.min(1, (now - s) / 6000); setT(p); if (p < 1) raf = requestAnimationFrame(step); }; raf = requestAnimationFrame(step); };
+    const io = new IntersectionObserver(([e]) => { if (e.isIntersecting && !started) { started = 1; setTimeout(go, 600); } }, { threshold: 0.4 });
     if (root.current) io.observe(root.current);
     return () => { io.disconnect(); cancelAnimationFrame(raf); };
   }, [run]);

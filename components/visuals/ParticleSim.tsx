@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { t as ui, type Lang } from "@/lib/i18n";
 import { simTr } from "@/lib/simText";
-import { useInView } from "./useInView";
+import { useInView, readMs } from "./useInView";
 
 /* Punkt-Sprache laut DESIGN.md */
 const C = { water: "#8fb8c9", waterRim: "#5f8fa3", fat: "#f0d27a", fatRim: "#c9a24a", lab: "#2f6f73", salt: "#ffffff", sepia: "#7a5a3a",
@@ -550,7 +550,7 @@ const gluten: Sim = {
   controls: { slider: { label: "Kneten", min: 0, max: 1, step: 0.01, def: 0, fmt: (v) => (v < 0.05 ? "nur verrührt" : v < 0.35 ? "kurz" : v < 0.7 ? "einige Minuten" : "lange geknetet") }, toggle: { label: "Butter im Teig", def: false }, reset: true },
   init(W, H) {
     const P = [] as any[];
-    for (let i = 0; i < 64; i++) P.push({ x: rnd(16, W - 16), y: rnd(16, H - 16), vx: 0, vy: 0, k: i % 2 ? "glia" : "glut", n: 0 });
+    for (let i = 0; i < 64; i++) { const x = rnd(16, W - 16), y = rnd(16, H - 16); P.push({ x, y, hx: x, hy: y, vx: 0, vy: 0, k: i % 2 ? "glia" : "glut", n: 0 }); }
     return { P, B: [] as [number, number][], bub: 6, held: 0, pops: 0, fat: Array.from({ length: 18 }, () => ({ x: rnd(10, W - 10), y: rnd(10, H - 10) })) };
   },
   step(s, dt, c, W, H) {
@@ -571,6 +571,18 @@ const gluten: Sim = {
     const cx = W / 2, cy = H / 2;
     for (const p of P) { p.vx += rnd(-1, 1) * 40 * dt + Math.sin(p.y / 30 + performance.now() / 700) * c.a * 30 * dt; p.vy += rnd(-1, 1) * 40 * dt; }
     for (const [i, j] of B) { const a = P[i], b = P[j], dx = b.x - a.x, dy = b.y - a.y, d = Math.hypot(dx, dy) || 1, f = (d - 30) * 0.9 * dt; a.vx += (dx / d) * f; a.vy += (dy / d) * f; b.vx -= (dx / d) * f; b.vy -= (dy / d) * f; }
+    // Starkes Netz legt sich als Haut um die Gasblase (drei dünne Lagen), schwaches bleibt lose verteilt
+    const net0 = B.length / 96, wrap = s.bub > 20 ? Math.max(0, Math.min(1, (net0 - 0.35) / 0.4)) : 0;
+    P.forEach((p, i) => {
+      // Jedes Eiweiß hat seinen Platz auf der Haut: in der Richtung, in der es ursprünglich lag
+      const th = Math.atan2(p.hy - cy, p.hx - cx), R = s.bub + 12 + (i % 3) * 9;
+      const tx = wrap > 0 ? cx + Math.cos(th) * R : p.hx, ty = wrap > 0 ? cy + Math.sin(th) * R : p.hy;
+      const k = wrap > 0 ? 1.6 * wrap + 0.5 * (1 - wrap) : 0.5;
+      const gx = wrap > 0 ? p.hx + (tx - p.hx) * wrap : p.hx, gy = wrap > 0 ? p.hy + (ty - p.hy) * wrap : p.hy;
+      p.vx += (gx - p.x) * k * dt; p.vy += (gy - p.y) * k * dt;
+    });
+    // Überdehnte Verbindungen reißen, damit sich auf der Haut neue zwischen Nachbarn bilden
+    for (let k = B.length - 1; k >= 0; k--) { const [i, j] = B[k]; if (Math.hypot(P[i].x - P[j].x, P[i].y - P[j].y) > 90) { B.splice(k, 1); P[i].n--; P[j].n--; } }
     // Gasblase in der Mitte drückt die Eiweiße weg
     for (const p of P) {
       const dx = p.x - cx, dy = p.y - cy, d = Math.hypot(dx, dy) || 1;
@@ -580,7 +592,7 @@ const gluten: Sim = {
     // Blase wächst; ein schwaches Netz lässt sie entweichen
     const net = B.length / 96;
     s.bub += dt * 10;
-    const limit = 18 + net * Math.min(W, H) * 0.42;
+    const limit = 18 + net * Math.min(W, H) * 0.24;
     if (s.bub > limit) { if (net < 0.55) { s.bub = 6; s.pops++; s.held = 0; } else { s.bub = limit; s.held = Math.min(1, s.held + dt); } }
   },
   draw(g, s, c, W, H) {
@@ -598,7 +610,7 @@ const gluten: Sim = {
     if (c.a < 0.05) return "Mehl und Wasser sind nur verrührt: Die beiden Eiweiße (Glutenin und Gliadin) liegen lose nebeneinander. Das Gas entweicht.";
     if (c.b && net < 0.55) return "Butter legt sich zwischen die Eiweiße und verhindert lange Verbindungen. Das Netz bleibt kurz: zart, aber es hält wenig Gas (darum heißt es Mürbeteig).";
     if (net < 0.55) return "Kneten verbindet die Eiweiße zu ersten Strängen. Das Netz ist noch zu löchrig: Die Gasblase platzt immer wieder.";
-    return "Ein dehnbares Netz aus Gluten: Es gibt nach, wenn die Gasblase wächst, und hält sie fest. So geht ein Brot auf.";
+    return "Das Glutennetz legt sich wie eine Ballonhaut um die Gasblase: Es dehnt sich mit, wenn sie wächst, und hält das Gas fest. So geht ein Brot auf.";
   },
   readouts(s) { const net = s.B.length / 96; return [["Verbindungen", String(s.B.length)], ["Netz", net < 0.15 ? "keins" : net < 0.55 ? "locker" : net < 0.8 ? "dehnbar" : "elastisch"], ["Gasblase", net < 0.55 ? "entweicht" : "hält"]]; },
 };
@@ -1498,13 +1510,24 @@ export default function ParticleSim({ preset, lang = "de" }: { preset: Preset; l
   const root = useRef<HTMLDivElement>(null);
   const seen = useInView(root);
 
-  // Osmose läuft beim Öffnen einmal von selbst durch
+  // Automatischer Durchlauf beim Sichtbarwerden. Jeder neue Text bleibt so lange stehen, wie man zum Lesen braucht.
+  const touched = useRef(false);
   useEffect(() => {
     if (!AUTO.includes(preset) || !seen) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    let raf = 0; const start = performance.now(); const [from, to] = preset === "osmose" || preset === "diffusion" ? [0, 1] : preset === "reduktion" ? [1, 0.35] : preset === "chlorophyll-farbe" ? [0, 8] : preset === "eiweiss-denaturierung" ? [20, 80] : preset === "glutenbildung" ? [0, 0.85] : preset === "karamellisierung" ? [120, 190] : preset === "enzym-zartmachen" || preset === "dampflockerung" ? [0, 1] : preset === "staerkeverkleisterung" ? [20, 95] : preset === "kollagen-gelatine" ? [0, 3.5] : ({ "enzym-braeunung": [0, 45], fleischreifung: [0, 30], "oxidation-fett": [0, 8], "eiweiss-gerinnung": [55, 70], "saeure-denaturierung": [0, 22], "wasserbindung-salz": [0, 12], "gelbildung-gelatine": [50, 4], "kalzium-pektin": [0, 45], retrogradation: [0, 3], poekeln: [20, 75], pyrolyse: [130, 230] } as Record<string, [number, number]>)[preset] ?? [20, 180];
-    const dur = preset === "chemische-lockerung" || preset === "karamellisierung" ? 18000 : 14000;
-    const run = (now: number) => { const p = Math.min(1, (now - start) / dur); setA(from + (to - from) * p); if (p < 1) raf = requestAnimationFrame(run); };
+    touched.current = false;
+    const [from, to] = preset === "osmose" || preset === "diffusion" ? [0, 1] : preset === "reduktion" ? [1, 0.35] : preset === "chlorophyll-farbe" ? [0, 8] : preset === "eiweiss-denaturierung" ? [20, 80] : preset === "glutenbildung" ? [0, 0.85] : preset === "karamellisierung" ? [120, 190] : preset === "enzym-zartmachen" || preset === "dampflockerung" ? [0, 1] : preset === "staerkeverkleisterung" ? [20, 95] : preset === "kollagen-gelatine" ? [0, 3.5] : ({ "enzym-braeunung": [0, 45], fleischreifung: [0, 30], "oxidation-fett": [0, 8], "eiweiss-gerinnung": [55, 70], "saeure-denaturierung": [0, 22], "wasserbindung-salz": [0, 12], "gelbildung-gelatine": [50, 4], "kalzium-pektin": [0, 45], retrogradation: [0, 3], poekeln: [20, 75], pyrolyse: [130, 230] } as Record<string, [number, number]>)[preset] ?? [20, 180];
+    const MOVE = 9000, seenTxt = new Set<string>();
+    let raf = 0, last = performance.now(), p = 0, hold = 0;
+    const run = (now: number) => {
+      const dt = now - last; last = now;
+      if (touched.current) return;
+      const st = stateRef.current, txt = st ? String(sim.status(st, ctl.current)) : "";
+      if (txt && !seenTxt.has(txt)) { seenTxt.add(txt); hold = Math.max(hold, readMs(txt)); }
+      if (hold > 0) hold -= dt; else p = Math.min(1, p + dt / MOVE);
+      setA(from + (to - from) * p);
+      if (p < 1 || hold > 0) raf = requestAnimationFrame(run);
+    };
     raf = requestAnimationFrame(run);
     return () => cancelAnimationFrame(raf);
   }, [preset, reset, seen]);
@@ -1544,11 +1567,11 @@ export default function ParticleSim({ preset, lang = "de" }: { preset: Preset; l
       <div className="vis-row">
         {sl && <label style={{ flex: "1 1 220px", flexDirection: "column", alignItems: "stretch" }}>
           <span className="mono">{T(sl.label)} · {T(sl.fmt(a))}</span>
-          <input type="range" min={sl.min} max={sl.max} step={sl.step} value={a} onChange={(e) => setA(+e.target.value)} />
+          <input type="range" min={sl.min} max={sl.max} step={sl.step} value={a} onChange={(e) => { touched.current = true; setA(+e.target.value); }} />
         </label>}
         {sim.controls.toggle && <label><input type="checkbox" checked={b} onChange={(e) => setB(e.target.checked)} />{T(sim.controls.toggle.label)}</label>}
         {(sim.controls.ph || sim.controls.seg) && <div className="seg" role="group" aria-label={T(sim.controls.seg?.label ?? "pH-Wert")}>
-          {(sim.controls.seg?.options ?? ["sauer", "neutral", "basisch"]).map((l, i) => <button key={l} type="button" aria-pressed={ph === i} onClick={() => setPh(i)}>{T(l)}</button>)}
+          {(sim.controls.seg?.options ?? ["sauer", "neutral", "basisch"]).map((l, i) => <button key={l} type="button" aria-pressed={ph === i} onClick={() => { touched.current = true; setPh(i); }}>{T(l)}</button>)}
         </div>}
         {(sim.controls.reset || AUTO.includes(preset)) && <button type="button" className="vis-btn" onClick={() => setReset((r) => r + 1)}>{V.restart}</button>}
       </div>

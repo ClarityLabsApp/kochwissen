@@ -17,7 +17,7 @@
   "schluesselmomente": [
     {
       "schritt": "Zitronensaft in ein Messglas geben, mit Milch auf 250 ml auffüllen",
-      "warum": "Die Säure senkt den [[ph-wert|pH-Wert]] der Milch.",
+      "warum": "Die [[saeure|Säure]] senkt den [[ph-wert|pH-Wert]] der [[milch|Milch]].",
       "prinzip": "ph-wert"
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "schritt": "Im Teig zusammen mit Natron verwenden",
-      "warum": "Die Säure reagiert mit Natron zu Kohlendioxid: Pancakes und Scones gehen auf.",
+      "warum": "Die Säure reagiert mit [[natron|Natron]] zu Kohlendioxid: [[g-pancakes|Pancakes]] und Scones gehen auf.",
       "prinzip": "chemische-lockerung"
     }
   ],

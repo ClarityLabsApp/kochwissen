@@ -424,3 +424,36 @@ details.sec.small > summary { padding: 10px 0; }
 
 article.entry > details.sec + details.sec { margin-top: calc(-1 * var(--egap) - 1px); }
 @media (max-width: 700px) { article.entry { --egap: 20px; } }
+
+/* Runde 3: Molekül flach mit Raster, Kategorie-Kopf, geordnete Einstiege */
+.mol-wrap { display: grid; grid-template-columns: 1fr; gap: 12px; }
+@media (min-width: 860px) { .mol-wrap { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: start; gap: 16px; } }
+.mol, .mol-panel { max-width: none; margin: 0; }
+.mol { background-image: linear-gradient(var(--rule) 1px, transparent 1px), linear-gradient(90deg, var(--rule) 1px, transparent 1px); background-size: 40px 40px; background-position: -1px -1px; }
+.mol .bond { stroke: var(--sepia); stroke-width: 2.5; }
+.mol .bond.lo { opacity: .28; }
+.mol .atom .core { stroke-width: 1.75; }
+.mol .atom:hover .core { stroke-width: 2.5; }
+.mol-terms { max-width: none; margin: 0; }
+.groups.solo { border-top: 0; }
+.group.solo > summary { padding: 0 0 12px; }
+.mol-back { border: 0; padding: 0; margin-top: 26px; font-weight: 500; color: var(--sepia); letter-spacing: .04em; }
+.mol-back:hover { color: var(--ink); text-decoration: underline; }
+.libhead.cat { margin-top: 6px; }
+.door .rows { border-top: 1px solid var(--rule); }
+.door .rows a { padding: 8px 0; }
+.door .rows strong { font-size: 15.5px; }
+.door-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+.door-grid .chip { justify-content: flex-start; padding: 7px 9px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.door-grid .chip i { flex: none; }
+@media (max-width: 700px) { .door-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 701px) { .examples { flex-wrap: nowrap; overflow: hidden; } .examples button { white-space: nowrap; } }
+/* Ein Balken zum Ziehen statt Balken plus Regler */
+.trk { position: relative; }
+.trk-input { position: absolute; left: 0; right: 0; top: -14px; bottom: -14px; width: 100%; height: calc(100% + 28px); margin: 0; opacity: 0; cursor: grab; touch-action: pan-y; }
+.trk-input:active { cursor: grabbing; }
+.trk:has(.trk-input:focus-visible) { outline: 2px solid var(--crust); outline-offset: 6px; }
+.tknob { position: absolute; top: 50%; width: 20px; height: 20px; margin: -10px 0 0 -10px; border-radius: 50%; background: var(--paper-2); border: 2px solid var(--ink); box-shadow: 0 1px 2px rgba(43,33,24,.25); pointer-events: none; }
+.spec-knob { pointer-events: none; }
+.tends { align-items: baseline; gap: 8px; }
+.tends .hint { color: var(--sepia); opacity: .8; }

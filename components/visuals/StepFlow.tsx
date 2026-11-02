@@ -1,10 +1,11 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { t, type Lang } from "@/lib/i18n";
+import { useInView, readMs } from "./useInView";
 
 /**
  * Ablauf-Vorlage für Techniken: die Schritte als Punktlinie,
- * die sich von selbst Schritt für Schritt füllt. Antippen springt, Pause hält an.
+ * die sich von selbst Schritt für Schritt füllt (jeder Schritt so lange, wie sein Text zum Lesen braucht). Antippen springt, Pause hält an.
  */
 export default function StepFlow({ steps, chips, lang = "de" }: { steps: string[]; chips?: string[]; lang?: Lang }) {
   const V = t(lang).vis;
@@ -12,14 +13,15 @@ export default function StepFlow({ steps, chips, lang = "de" }: { steps: string[
   const [play, setPlay] = useState(true);
   const [progress, setProgress] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
-  const DUR = 3800;
+  const seen = useInView(ref);
+  const DUR = readMs(steps[i] ?? "");
 
   useEffect(() => {
     if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) setPlay(false);
   }, []);
 
   useEffect(() => {
-    if (!play) return;
+    if (!play || !seen) return;
     let raf = 0; const start = performance.now() - progress * DUR;
     const tick = (now: number) => {
       const p = (now - start) / DUR;
@@ -29,7 +31,7 @@ export default function StepFlow({ steps, chips, lang = "de" }: { steps: string[
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [play, i, steps.length]);
+  }, [play, i, steps.length, seen]);
 
   const n = steps.length;
   const W = Math.max(240, n * 72), H = 64, L = 22, R = 22;

@@ -3,7 +3,7 @@
   "titel": "Keeping greens green (chlorophyll)",
   "kurz": "The green in vegetables is chlorophyll. Heat and acid turn it into an olive-brown pigment. Short cooking keeps it bright.",
   "bild_im_kopf": "Like a light bulb on a timer: in the first minutes the green even glows brighter, then it gets duller with every minute.",
-  "was_passiert": "In the first minutes in hot water, green vegetables even turn brighter, because air escapes from the tissue. As cooking goes on, acids leak out of the cells and turn chlorophyll into an olive-brown pigment. Baking soda in the water neutralises the acid and keeps the green, but destroys vitamins and makes the vegetables mushy.",
+  "was_passiert": "In the first minutes in hot water, green vegetables even turn brighter, because air escapes from the tissue. As cooking goes on, [[saeure|acids]] leak out of the cells and turn chlorophyll into an olive-brown pigment. [[natron|Baking soda]] in the water neutralises the acid and keeps the green, but destroys vitamins and makes the vegetables mushy.",
   "warum_wichtig": "Explains why beans in a stew turn grey and why restaurants [[blanchieren|blanch]] vegetables and plunge them into iced water.",
   "synonyme": [
     "colour of green vegetables",
@@ -15,7 +15,7 @@
     "Cook briefly in plenty of rapidly boiling salted water.",
     "Plunge into iced water straight away so it does not [[nachgaren|carry on cooking]].",
     "Add lemon or vinegar only just before serving.",
-    "No baking soda: the green stays, but vitamins and bite are lost."
+    "No baking soda in the cooking water: it keeps the green, but makes the vegetables mushy and destroys vitamins."
   ],
   "stellschrauben": [
     {

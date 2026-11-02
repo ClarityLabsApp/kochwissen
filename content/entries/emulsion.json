@@ -12,12 +12,12 @@
   ],
   "kurz": "Eine Emulsion sind Fett und Wasser, die eigentlich nicht mischbar sind, aber als winzige Tröpfchen mit einem Vermittler zusammenhalten.",
   "bild_im_kopf": "Ein [[emulgator|Emulgator]] ist wie ein Dolmetscher, der eine Hand ins Wasser und eine ins Fett hält. Ohne ihn stehen die beiden Gruppen auf verschiedenen Seiten des Raums.",
-  "was_passiert": "Fett und Wasser stoßen sich ab. Schlägt man kräftig, zerfällt das Fett in winzige Tröpfchen im Wasser. Ein Emulgator wie das Lecithin im Eigelb legt sich um jedes Tröpfchen und verhindert, dass sie wieder zusammenfließen. Je mehr Tröpfchen dicht gepackt sind, desto dicker wird die Sauce.",
+  "was_passiert": "Fett und Wasser stoßen sich ab. Schlägt man kräftig, zerfällt das Fett in winzige Tröpfchen im Wasser. Ein Emulgator wie das Lecithin im [[eigelb|Eigelb]] legt sich um jedes Tröpfchen und verhindert, dass sie wieder zusammenfließen. Je mehr Tröpfchen dicht gepackt sind, desto dicker wird die Sauce.",
   "warum_wichtig": "Mayonnaise, Vinaigrette, Hollandaise, Beurre blanc, Pastasauce mit Nudelwasser: alles Emulsionen, alle mit denselben Fehlerquellen.",
   "faustregeln": [
     "Fett am Anfang tropfenweise zugeben, später im dünnen Strahl.",
     "Zutaten ähnlich temperieren, nichts eiskalt aus dem Kühlschrank.",
-    "Senf, Eigelb oder stärkehaltiges Nudelwasser helfen als Vermittler.",
+    "[[senf|Senf]], Eigelb oder stärkehaltiges Nudelwasser helfen als Vermittler.",
     "Getrennt? Mit neuem Eigelb oder einem Löffel Wasser neu anfangen und die getrennte Masse langsam einarbeiten."
   ],
   "stellschrauben": [

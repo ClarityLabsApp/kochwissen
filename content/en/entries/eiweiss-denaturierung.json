@@ -3,7 +3,7 @@
   "titel": "Proteins change (denaturation)",
   "kurz": "Heat makes the protein strands in meat curl up. Up to about 60 °C it stays juicy; above that the fibres squeeze out more and more juice.",
   "bild_im_kopf": "Like wringing out a wet towel: twisted lightly it stays damp, twisted hard everything drips out.",
-  "was_passiert": "Muscle fibres are made of long protein strands. From about 50 °C the first protein changes; the meat goes from raw to cooked but stays tender. Between about 66 and 73 °C a second protein contracts strongly, the fibres firm up and squeeze out a lot of juice. That is why the juicy window for quick-cooked cuts lies roughly between 50 and 60 °C [[kerntemperatur|core temperature]].",
+  "was_passiert": "Muscle fibres are made of long protein strands. From about 50 °C the first protein changes; the meat goes from raw to cooked but stays tender. Between about 66 and 73 °C a second protein contracts strongly, the fibres firm up and squeeze out a lot of juice. That is why the [[saftig|juicy]] window for quick-cooked cuts lies roughly between 50 and 60 °C [[kerntemperatur|core temperature]].",
   "warum_wichtig": "Explains why a few degrees make the difference between juicy and dry, and why a thermometer helps so much.",
   "synonyme": [
     "cooking protein",
@@ -12,7 +12,7 @@
     "meat turns firm"
   ],
   "faustregeln": [
-    "Quick-cooked beef: pink at about 54–57 °C core temperature, as a guide.",
+    "Quick-cooked beef: pink at about 54–57 °C core [[temperatur|temperature]], as a guide.",
     "Take it off before it reaches the target: [[nachgaren|carry-over cooking]] adds a few more degrees.",
     "Lean meat is less forgiving than fatty meat."
   ],

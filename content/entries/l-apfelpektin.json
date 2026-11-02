@@ -34,7 +34,7 @@
     },
     {
       "schritt": "Tellerprobe: einen Löffel mit etwas Zucker und Zitrone auf einem kalten Teller abkühlen lassen",
-      "warum": "Wird er fest und runzelt beim Schieben, ist genug Pektin da. Sonst weiter einkochen.",
+      "warum": "Wird er fest und runzelt beim Schieben, ist genug Pektin da. Sonst weiter [[reduktion|einkochen]].",
       "prinzip": "gelbildung-pektin"
     }
   ],

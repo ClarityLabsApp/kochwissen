@@ -9,11 +9,9 @@ export default function HomeView({ lang }: { lang: Lang }) {
   const items = libraryData(lang);
   let illus: string[] = [];
   try { illus = readdirSync(join(process.cwd(), "public/illustrationen")).filter((f) => f.endsWith(".webp")).map((f) => f.slice(0, -5)); } catch { /* noch keine Bilder */ }
-  const written = items.filter((e) => e.status !== "geplant").length;
   return (
     <main className="wrap wide" lang={lang}>
       <header style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-        <span className="mono">{T.home.eyebrow(written, items.length)}</span>
         <h1>{T.home.h1a}<em>{T.home.h1b}</em></h1>
         <p className="lede">{T.home.lede}</p>
       </header>

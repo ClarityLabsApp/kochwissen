@@ -11,11 +11,11 @@
   ],
   "kurz": "Kalk aus hartem Wasser und Säure festigen den Kitt zwischen Pflanzenzellen. Hülsenfrüchte und Gemüse werden dann langsamer weich.",
   "bild_im_kopf": "Wie Klammern in einem Ordner: Mit Klammern hält der Stapel zusammen, ohne fällt er auseinander.",
-  "was_passiert": "Pflanzenzellen kleben über [[pektin|Pektin]] aneinander. Kalzium verbindet die Pektinketten zusätzlich wie Klammern. In hartem Wasser oder mit Tomaten und Wein bleibt Gemüse darum länger fest, Hülsenfrüchte werden manchmal gar nicht richtig weich. Natron macht das Wasser basisch und weicher: Bohnen und Kichererbsen garen schneller.",
+  "was_passiert": "Pflanzenzellen kleben über [[pektin|Pektin]] aneinander. Kalzium verbindet die Pektinketten zusätzlich wie Klammern. In hartem Wasser oder mit Tomaten und Wein bleibt Gemüse darum länger fest, Hülsenfrüchte werden manchmal gar nicht richtig weich. [[natron|Natron]] macht das Wasser basisch und weicher: Bohnen und Kichererbsen garen schneller.",
   "warum_wichtig": "Erklärt, warum Bohnen im Tomatensugo hart bleiben, warum Kichererbsen mit Natron weicher werden und wie man Bratkartoffeln fest hält.",
   "faustregeln": [
-    "Hülsenfrüchte erst weich kochen, dann zu Tomate oder Wein geben.",
-    "Bei hartem Wasser eine Prise Natron ins Einweichwasser.",
+    "Hülsenfrüchte erst weich kochen, dann zu Tomate oder Wein geben: [[saeure|Säure]] hält sie sonst hart.",
+    "Hülsenfrüchte werden in hartem Wasser schlecht weich: Eine Prise Natron ins Einweichwasser hilft.",
     "Für feste Bratkartoffeln einen Schuss Essig ins Kochwasser."
   ],
   "stellschrauben": [

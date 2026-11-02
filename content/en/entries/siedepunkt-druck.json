@@ -3,7 +3,7 @@
   "titel": "Boiling point: pressure and altitude",
   "kurz": "Water only boils at 100 °C at sea level. In the mountains it boils sooner; in a pressure cooker only at about 120 °C.",
   "bild_im_kopf": "Like a lid on a packed hall: if it presses down hard, nobody gets out until it gets really hot.",
-  "was_passiert": "Water boils when its vapour pushes as hard as the air above it. Lower air pressure at altitude means it boils at a lower temperature, about 1 °C less for every 300 metres. At 3000 m water boils at around 90 °C. A pressure cooker does the opposite: it holds the steam back, the pressure rises, and water gets about 120 °C hot. Higher temperature means shorter cooking time.",
+  "was_passiert": "[[wasser|Water]] boils when its vapour pushes as hard as the air above it. Lower air pressure at altitude means it boils at a lower [[temperatur|temperature]], about 1 °C less for every 300 metres. At 3000 m water boils at around 90 °C. A pressure cooker does the opposite: it holds the steam back, the pressure rises, and water gets about 120 °C hot. Higher temperature means shorter cooking time.",
   "warum_wichtig": "Explains why pasta and eggs take longer in a mountain hut, and why a pressure cooker cooks beans and braising meat in a fraction of the time.",
   "synonyme": [
     "boiling point",
@@ -13,7 +13,7 @@
     "instant pot"
   ],
   "faustregeln": [
-    "In the mountains, extend cooking times; turning up the heat does not help.",
+    "In the mountains, extend cooking times. More heat does not help: water there gets no hotter than its boiling point.",
     "Pressure cooker for pulses, stock and braises: about a third of the time.",
     "Open a pressure cooker only once the pressure has fully dropped."
   ],

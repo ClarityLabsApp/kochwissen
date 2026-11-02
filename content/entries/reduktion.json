@@ -13,9 +13,9 @@
   "was_passiert": "Kocht man eine Flüssigkeit offen, verdampft vor allem Wasser. Alles andere bleibt im Topf: Aromen, Zucker, Salz und bei Fonds die Gelatine aus den Knochen. Darum wird ein Jus beim Einkochen kräftiger und sämiger, ganz ohne Mehl oder Stärke.",
   "warum_wichtig": "Gibt Saucen Tiefe und natürliche Bindung. Aber auch Salz konzentriert sich: Wer am Anfang salzt, hat am Ende eine versalzene Sauce.",
   "faustregeln": [
-    "Erst am Schluss salzen.",
+    "Erst am Schluss salzen: Beim Einkochen wird auch das Salz konzentriert.",
     "Breiter Topf oder Pfanne: mehr Oberfläche, schnelleres Einkochen.",
-    "Ein Fond mit viel Gelatine bindet beim Reduzieren von selbst."
+    "Ein Fond mit viel Gelatine bindet beim [[reduzieren|Reduzieren]] von selbst."
   ],
   "stellschrauben": [
     {

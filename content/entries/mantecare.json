@@ -10,7 +10,7 @@
   ],
   "kurz": "Pasta mit etwas stärkehaltigem Nudelwasser und Fett in der Pfanne kräftig schwenken. So entsteht eine cremige Sauce, die an der Pasta haftet.",
   "bild_im_kopf": "Nudelwasser ist der unsichtbare Kleber zwischen Sauce und Pasta.",
-  "was_passiert": "Im Nudelwasser schwimmt gelöste Stärke. Sie hilft, Fett und Wasser zu verbinden, und dickt beim Schwenken leicht ein. Die Bewegung verteilt alles zu feinen Tröpfchen. Das Ergebnis ist eine glänzende, gebundene Sauce statt Öl und Wasser getrennt.",
+  "was_passiert": "Im Nudelwasser schwimmt gelöste [[staerke|Stärke]]. Sie hilft, Fett und Wasser zu verbinden, und dickt beim Schwenken leicht ein. Die Bewegung verteilt alles zu feinen Tröpfchen. Das Ergebnis ist eine glänzende, gebundene Sauce statt Öl und Wasser getrennt.",
   "schritte": [
     "Pasta 1–2 Minuten vor Ende abgießen, eine Tasse Nudelwasser aufheben.",
     "In die Pfanne zur Sauce oder zum Fett geben.",
@@ -22,8 +22,8 @@
     "gebunden"
   ],
   "faustregeln": [
-    "Pasta in weniger Wasser kochen ergibt stärkehaltigeres Nudelwasser.",
-    "Zu heiß klumpt der Käse."
+    "Für [[cremig|cremige]] Käse- und Buttersaucen: Pasta in weniger Wasser kochen. Das Nudelwasser wird stärkehaltiger und bindet die Sauce besser. In den ersten zwei Minuten umrühren, dann klebt nichts.",
+    "Käse neben dem Herd einrühren: Ist die Pfanne zu heiß, klumpt er."
   ],
   "links": [
     "emulsion",

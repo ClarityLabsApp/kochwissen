@@ -3,7 +3,7 @@
   "titel": "Curing: salt and nitrite",
   "kurz": "When curing, salt preserves the meat. Nitrite in curing salt also keeps it pink and protects against dangerous germs.",
   "bild_im_kopf": "Like a museum conservator: they keep the painting fresh and the colours bright, but they change how it looks.",
-  "was_passiert": "Salt draws out water and slows down germs. Curing salt also contains a little nitrite. It binds to the red muscle pigment, which then stays pink even when cooked: that is why ham is pink but a roast is grey. Nitrite also inhibits dangerous bacteria and gives the typical ham flavour.",
+  "was_passiert": "[[salz|Salt]] draws out water and slows down germs. Curing salt also contains a little nitrite. It binds to the red muscle pigment, which then stays pink even when cooked: that is why ham is pink but a roast is grey. Nitrite also inhibits dangerous bacteria and gives the typical ham flavour.",
   "warum_wichtig": "Explains why ham and frankfurters are pink but roasts are not, and why curing salt is not used like table salt.",
   "synonyme": [
     "curing",
@@ -15,7 +15,7 @@
   ],
   "faustregeln": [
     "Dose curing salt only as the recipe says; do not use it in place of table salt.",
-    "Do not sear or grill cured meat hard; at very high heat unwanted substances can form.",
+    "Do not sear or grill cured [[w-fleisch|meat]] hard; at very high heat unwanted substances can form.",
     "Pink colour in cured meat does not mean raw."
   ],
   "stellschrauben": [

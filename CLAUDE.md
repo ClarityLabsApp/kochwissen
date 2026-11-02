@@ -77,6 +77,13 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - `ExperimentCompare` – Vorher-Nachher für Experimente: `vorlage: vergleich`, `params.vergleich` = Felder mit `gefaess` (glas, flasche, schuessel, teller, pfanne), `inhalt`, `vorher`/`nachher` (farbe, fuell, trueb, schaum, blasen, ballon, kristalle, tropfen, klumpen, bodensatz, tanzen)
 - Kein Prototyp mehr per iframe: `PROTOTYPES` in `lib/content.ts` ist leer, „Steak grau“ nutzt `PanTest`
 
+## Verlinkung und Tempo
+
+- Verwandte Einträge werden direkt im Text verlinkt: `python3 scripts/inline-links.py` setzt beim ersten Vorkommen eines Titels `[[id|Wort]]` (Deutsch und Englisch). Was im Text verlinkt ist, erscheint nicht mehr in „Verwandte Einträge“. Nach neuen Einträgen erneut laufen lassen.
+- Animationen richten ihr Tempo nach dem Text: `readMs(text)` und `tour()` in `components/visuals/useInView.ts`. Jeder neue Text bleibt so lange stehen, wie man zum Lesen braucht.
+- Skalen (Temperatur, Stellschrauben) haben nur einen Balken, den man direkt zieht, plus „Nochmal“.
+- Faustregeln nennen das Ziel und den Grund („Für X: tu Y, weil Z“), besonders wenn sie gängigem Küchenwissen widersprechen.
+
 ## Name und Adresse
 
 - Die Seite heisst **Garum** (Wortspiel mit „warum“ und „gar“), Adresse **garum.guide**. Untertitel: „Verstehen, warum Kochen funktioniert“ / „Understand why cooking works“.

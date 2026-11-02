@@ -22,7 +22,7 @@ const ATOMS: Atom[] = [
 ];
 const BONDS: [string, string][] = [["prozess", "zutat"], ["prozess", "technik"], ["prozess", "stellschraube"], ["prozess", "experiment"],
   ["zutat", "labor"], ["zutat", "gericht"], ["technik", "gericht"], ["technik", "ziel"], ["technik", "symptom"], ["stellschraube", "symptom"], ["stellschraube", "experiment"]];
-const R = [0, 84, 140], CX = 180, CY = 172;
+const R = [0, 92, 158], CX = 200, CY = 190, W = 400, H = 384;
 
 export default function Molecule({ items, lang = "de", onAll }: { items: LibItem[]; lang?: Lang; onAll: (typ: string) => void }) {
   const T = t(lang), M = T.mol, ln = (p: string) => href(lang, p);
@@ -33,31 +33,29 @@ export default function Molecule({ items, lang = "de", onAll }: { items: LibItem
     const rad = (a.ang * Math.PI) / 180, n = items.filter((e) => e.typ === a.typ).length;
     return [a.typ, { x: CX + Math.cos(rad) * R[a.ring], y: CY + Math.sin(rad) * R[a.ring], r: 6 + 3.1 * Math.sqrt(Math.max(1, n)), n }];
   })), [items]);
-  const near = new Set([sel, ...BONDS.filter(([a, b]) => a === sel || b === sel).flat()]);
   const atom = ATOMS.find((a) => a.typ === sel)!;
   const examples = atom.ex.map((id) => byId.get(id)).filter(Boolean) as LibItem[];
 
   return (
-    <>
+    <div className="mol-wrap">
       <section className="mol" aria-label={M.label}>
         <div className="mol-head"><span className="mono">{M.tap}</span></div>
-        <svg viewBox="0 0 360 360" role="group" aria-label={M.label}>
+        <svg viewBox={`0 0 ${W} ${H}`} role="group" aria-label={M.label}>
           {BONDS.map(([a, b]) => {
             const on = a === sel || b === sel;
             return <line key={a + b} className={`bond${on ? " hi" : " lo"}`} x1={pos[a].x} y1={pos[a].y} x2={pos[b].x} y2={pos[b].y} />;
           })}
           {ATOMS.map((a, i) => {
-            const p = pos[a.typ], below = p.y + p.r + 15 < 352;
+            const p = pos[a.typ], below = p.y + p.r + 20 < H - 6;
             return (
-              <g key={a.typ} className={`atom${a.typ === sel ? " sel" : ""}${near.has(a.typ) ? "" : " lo"}`} tabIndex={0} role="button"
+              <g key={a.typ} className={`atom${a.typ === sel ? " sel" : ""}`} tabIndex={0} role="button"
                 aria-pressed={a.typ === sel} aria-label={`${T.types[a.typ][0]}, ${M.entries(p.n)}`}
                 onClick={() => setSel(a.typ)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSel(a.typ); } }}>
                 <g className="float" style={{ animationDelay: `${-i * 0.7}s` }}>
                   <circle className="halo" cx={p.x} cy={p.y} r={p.r + 6} />
                   <circle className="core" cx={p.x} cy={p.y} r={p.r} style={{ fill: `var(--t-${a.typ})` }} />
-                  <circle cx={p.x - p.r * 0.35} cy={p.y - p.r * 0.35} r={p.r * 0.28} fill="rgba(255,248,234,.28)" />
                   <text className="n" x={p.x} y={p.y}>{p.n}</text>
-                  <text className="lbl" x={p.x} y={below ? p.y + p.r + 15 : p.y - p.r - 7}>{T.types[a.typ][0]}</text>
+                  <text className="lbl" x={p.x} y={below ? p.y + p.r + 19 : p.y - p.r - 9}>{T.types[a.typ][0]}</text>
                 </g>
               </g>
             );
@@ -71,6 +69,6 @@ export default function Molecule({ items, lang = "de", onAll }: { items: LibItem
         <ul>{examples.map((e) => <li key={e.id}><Link href={ln(`/eintrag/${e.id}`)}>{e.titel}</Link></li>)}</ul>
         <button type="button" className="mol-all" onClick={() => onAll(sel)}>{M.all(count(sel), T.types[sel][0])}</button>
       </section>
-    </>
+    </div>
   );
 }

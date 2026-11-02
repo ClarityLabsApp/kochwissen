@@ -3,7 +3,7 @@
   "titel": "Calcium and acid keep vegetables firm",
   "kurz": "Calcium from hard water and acid strengthen the glue between plant cells. Pulses and vegetables then soften more slowly.",
   "bild_im_kopf": "Like clips in a folder: with clips the stack holds together, without them it falls apart.",
-  "was_passiert": "Plant cells stick together through [[pektin|pectin]]. Calcium links the pectin chains as well, like clips. In hard water or with tomatoes and wine, vegetables therefore stay firm longer, and pulses sometimes never get properly soft. Baking soda makes the water alkaline and softer: beans and chickpeas cook faster.",
+  "was_passiert": "Plant cells stick together through [[pektin|pectin]]. Calcium links the pectin chains as well, like clips. In hard water or with tomatoes and wine, vegetables therefore stay firm longer, and pulses sometimes never get properly soft. [[natron|Baking soda]] makes the water alkaline and softer: beans and chickpeas cook faster.",
   "warum_wichtig": "Explains why beans stay hard in tomato sauce, why chickpeas get softer with baking soda and how to keep fried potatoes firm.",
   "synonyme": [
     "hard water",
@@ -14,8 +14,8 @@
     "tomatoes and beans"
   ],
   "faustregeln": [
-    "Cook pulses until soft first, then add them to tomato or wine.",
-    "With hard water, add a pinch of baking soda to the soaking water.",
+    "Cook pulses until soft before adding tomato or wine: otherwise the [[saeure|acid]] keeps them hard.",
+    "Pulses soften poorly in hard water: a pinch of baking soda in the soaking water helps.",
     "For firm fried potatoes, add a splash of vinegar to the cooking water."
   ],
   "stellschrauben": [

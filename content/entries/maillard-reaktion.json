@@ -10,13 +10,13 @@
   ],
   "kurz": "Bei starker Hitze reagieren Eiweiß und Zucker miteinander. Dabei entstehen braune Farbe und hunderte Röstaromen.",
   "bild_im_kopf": "Wie ein Lagerfeuer mit nassem Holz: Erst muss das Wasser raus, dann brennt es. Solange die Oberfläche nass ist, kocht sie bei 100 °C, egal wie heiß die Pfanne ist.",
-  "was_passiert": "Ab etwa 140 °C verbinden sich Bausteine von Eiweiß mit Zucker zu hunderten neuen Aromastoffen und brauner Farbe. Solange Wasser auf der Oberfläche ist, bleibt sie bei rund 100 °C hängen, weil das Wasser erst verdampfen muss. Erst wenn sie trocken ist, steigt die Temperatur und die Bräunung beginnt. Eine basische Umgebung beschleunigt die Reaktion.",
+  "was_passiert": "Ab etwa 140 °C verbinden sich Bausteine von Eiweiß mit Zucker zu hunderten neuen Aromastoffen und brauner Farbe. Solange Wasser auf der Oberfläche ist, bleibt sie bei rund 100 °C hängen, weil das Wasser erst [[verdampfen|verdampfen]] muss. Erst wenn sie trocken ist, steigt die Temperatur und die Bräunung beginnt. Eine basische Umgebung beschleunigt die Reaktion.",
   "warum_wichtig": "Kruste beim Steak, Brotkruste, geröstete Zwiebeln, Kaffee, Röstgemüse: Fast alles, was herzhaft geröstet schmeckt, kommt von hier.",
   "faustregeln": [
-    "Oberfläche trocken tupfen, bevor sie in die Pfanne kommt.",
+    "Oberfläche [[trocken-tupfen|trocken tupfen]], bevor sie in die Pfanne kommt.",
     "Pfanne richtig vorheizen und nicht überladen.",
     "Am Anfang liegen lassen, bis sich die Kruste von selbst löst.",
-    "Eine Prise Natron beschleunigt die Bräunung, z. B. bei Zwiebeln."
+    "Eine Prise [[natron|Natron]] beschleunigt die Bräunung, z. B. bei Zwiebeln."
   ],
   "stellschrauben": [
     {

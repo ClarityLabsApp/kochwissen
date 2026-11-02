@@ -83,7 +83,7 @@ export default function Visual({ e, lang = "de" }: { e: Entry; lang?: Lang }) {
     const colors = e.id === "anthocyan-farbe" ? ["#b8325a", "#7a3e8c", "#3f5fa8", "#3f8a7a"]
       : e.id === "feuchtigkeit" || e.id === "luftfeuchte-ofen" ? ["#8fb8c9", "#e0ad3a", "#b4542a"]
       : ["#e6d3ae", "#b8873a", "#6b3a1e"];
-    blocks.push(<Spectrum key="spec" title={e.titel} left={p.links} mid={typeof p.mitte === "string" ? p.mitte : undefined} right={p.rechts} colors={colors} />);
+    blocks.push(<Spectrum key="spec" title={e.titel} left={p.links} mid={typeof p.mitte === "string" ? p.mitte : undefined} right={p.rechts} colors={colors} lang={lang} />);
   }
 
   const marks = marksOf(e);

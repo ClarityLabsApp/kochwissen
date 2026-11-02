@@ -1,7 +1,7 @@
 "use client";
 import { t as ui, type Lang } from "@/lib/i18n";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { useInView } from "./useInView";
+import { useInView, readMs, tour } from "./useInView";
 
 export interface Mark { c: number; name: string }
 
@@ -29,18 +29,13 @@ export default function TempScale({ marks, title, note, unitMax, lang = "de" }: 
   const root = useRef<HTMLDivElement>(null);
   const seen = useInView(root);
 
-  // Einmaliger Durchlauf beim Laden, danach steuert der Regler.
+  // Einmaliger Durchlauf beim Sichtbarwerden: an jeder Schwelle so lange halten, wie der Text zum Lesen braucht.
   useEffect(() => {
     if (touched || !seen) return;
     if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) { setT(sorted[Math.floor(sorted.length / 2)]?.c ?? max / 2); return; }
-    let raf = 0; const start = performance.now(); const target = sorted[sorted.length - 1]?.c ?? max * 0.8;
-    const step = (now: number) => {
-      const p = Math.min(1, (now - start) / 7000);
-      setT(Math.round(lo0 + (target - lo0) * (1 - Math.pow(1 - p, 3))));
-      if (p < 1) raf = requestAnimationFrame(step);
-    };
-    raf = requestAnimationFrame(step);
-    return () => cancelAnimationFrame(raf);
+    const stops = [{ v: lo0, hold: readMs(V.below(sorted[0]?.c ?? 0)) },
+      ...sorted.map((m, i) => ({ v: m.c, hold: readMs(m.name + (sorted[i + 1]?.name ?? "")) }))];
+    return tour(lo0, stops, (v) => setT(Math.round(v)), 1800);
   }, [touched, sorted, max, seen, run]);
 
   const lo = Math.max(0, Math.floor(((sorted[0]?.c ?? 0) * 0.6) / 10) * 10);
@@ -54,6 +49,7 @@ export default function TempScale({ marks, title, note, unitMax, lang = "de" }: 
   return (
     <div className="vis" ref={root}>
       <div className="vis-head"><span className="mono">{title ?? V.thresholds}</span><span className="vis-val">{t} °C</span></div>
+      <div className="trk">
       <div className="tbar" role="img" aria-label={lang === "en" ? `Temperature scale from ${lo} to ${max} °C` : `Temperaturskala von ${lo} bis ${max} °C`}>
         {bands.slice(0, -1).map((b, i) => (
           <span key={b} className="tband" style={{ left: pct(b), width: `calc(${pct(bands[i + 1])} - ${pct(b)})`, background: zoneColor(b) }} />
@@ -62,11 +58,12 @@ export default function TempScale({ marks, title, note, unitMax, lang = "de" }: 
         {sorted.map((m) => (
           <span key={m.name + m.c} className={`ttick${m.c <= t ? " on" : ""}`} style={{ left: pct(m.c), background: m.c <= t ? zoneColor(m.c) : undefined }} />
         ))}
-        <span className="tnow" style={{ left: pct(t) }} />
+        <span className="tknob" style={{ left: pct(t) }} />
       </div>
-      <div className="tends"><span className="mono">{lo} °C</span><span className="mono">{max} °C</span></div>
-      <input type="range" min={lo} max={max} value={Math.max(lo, t)} aria-label={V.pickTemp}
+      <input type="range" className="trk-input" min={lo} max={max} value={Math.max(lo, t)} aria-label={V.pickTemp}
         onChange={(e) => { setTouched(true); setT(+e.target.value); }} />
+      </div>
+      <div className="tends"><span className="mono">{lo} °C</span><span className="mono hint">{V.drag}</span><span className="mono">{max} °C</span></div>
       <ol className="tlist">
         {sorted.map((m) => (
           <li key={m.name + m.c} className={m.c <= t ? "on" : ""}>

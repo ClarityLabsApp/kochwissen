@@ -12,10 +12,10 @@ export interface LibItem {
 
 const TYPE_ORDER = ["ziel", "gericht", "experiment", "labor", "symptom", "prozess", "technik", "zutat", "stellschraube", "welt", "begriff"];
 /** Die drei Einstiege: vom Problem, vom Ziel, vom Prinzip. */
-const DOORS: { typ: "symptom" | "ziel" | "prozess"; ids: string[]; pfad?: string }[] = [
-  { typ: "symptom", ids: ["steak-grau", "wedges-nicht-knusprig", "sauce-zu-duenn", "mayo-gerinnt", "kuchen-sinkt-ein", "fleisch-trocken"] },
-  { typ: "ziel", ids: ["knusprig", "saftig", "zart", "luftig", "cremig", "knackig"] },
-  { typ: "prozess", ids: ["maillard-reaktion", "emulsion", "glutenbildung", "staerkeverkleisterung", "eiweiss-denaturierung"], pfad: "grundprinzipien" },
+const DOORS: { typ: "symptom" | "ziel" | "prozess"; ids: string[] }[] = [
+  { typ: "symptom", ids: ["steak-grau", "sauce-zu-duenn", "mayo-gerinnt", "kuchen-sinkt-ein"] },
+  { typ: "ziel", ids: ["knusprig", "saftig", "luftig", "cremig"] },
+  { typ: "prozess", ids: ["maillard-reaktion", "emulsion", "glutenbildung", "staerkeverkleisterung"] },
 ];
 /** Wie jede Kategorie als Liste erscheint: kurze Namen als Chips, mit Bild als Kacheln, sonst kompakte Zeilen in Gruppen. */
 const AS_CHIPS = new Set(["ziel", "zutat", "stellschraube", "begriff"]);
@@ -89,7 +89,7 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
       <div className="search">
         <label className="mono" htmlFor="q">{S.label}</label>
         <input id="q" type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder={S.placeholder} autoComplete="off" />
-        <div className="examples">{EXAMPLES.map((x) => <button key={x} type="button" onClick={() => setQ(x)}>{x}</button>)}</div>
+        <div className="examples">{EXAMPLES.slice(0, 4).map((x) => <button key={x} type="button" onClick={() => setQ(x)}>{x}</button>)}</div>
       </div>
       {best && (
         <Link href={ln(`/eintrag/${best.id}`)} className={`bestcard${pictureOf(best, has) ? " pic" : ""}`}>
@@ -114,14 +114,13 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
             <div key={d.typ} className={`door${door === i ? "" : " door-off"}`} style={{ borderTopColor: `var(--t-${d.typ})` }}>
               <h2>{T.doors[d.typ][0]}</h2>
               <p>{T.doors[d.typ][1]}</p>
-              <div className="chips">
-                {d.ids.filter((id) => byId.has(id)).map((id) => (
-                  <Link key={id} href={ln(`/eintrag/${id}`)} className="chip"><i style={{ background: `var(--t-${d.typ})` }} />{byId.get(id)!.titel}</Link>
-                ))}
-              </div>
+                <ul className="rows">
+                  {d.ids.filter((id) => byId.has(id)).map((id) => (
+                    <li key={id}><Link href={ln(`/eintrag/${id}`)}><strong>{byId.get(id)!.titel}</strong></Link></li>
+                  ))}
+                </ul>
               <div className="door-foot">
                 <button type="button" className="linkbtn" onClick={() => openType(d.typ)}>{T.doors[d.typ][2]} ({items.filter((e) => e.typ === d.typ).length}) →</button>
-                {d.pfad && <Link href={ln(`/pfad/${d.pfad}`)} className="linkbtn">{T.doors.pathLink} →</Link>}
               </div>
             </div>
           ))}
@@ -167,7 +166,8 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
           </div>
         </nav>
       )}
-      <h2 id="bibliothek" className="libhead">{res ? S.allHits : active.size ? T.types[[...active][0]][0] : S.whole}</h2>
+      {!res && active.size > 0 && <button type="button" className="mol-back" onClick={() => setActive(new Set())}>{T.mol.back}</button>}
+      <h2 id="bibliothek" className={`libhead${!res && active.size > 0 ? " cat" : ""}`}>{res ? S.allHits : active.size ? T.types[[...active][0]][0] : S.whole}</h2>
       {!res && !active.size && (
         <>
           <Molecule items={items} lang={lang} onAll={openType} />
@@ -176,7 +176,6 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
           </div>
         </>
       )}
-      {!res && active.size > 0 && <button type="button" className="mol-back" onClick={() => setActive(new Set())}>{T.mol.back}</button>}
       {(res || active.size > 0) && <>
       {res && <div className="typechips" role="group" aria-label={lang === "en" ? "Entry type" : "Eintragstyp"}>
         {TYPES.map(([t, name]) => {
@@ -191,14 +190,14 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
         })}
       </div>}
 
-      <div className="groups">
+      <div className={`groups${res ? "" : " solo"}`}>
         {groups.map(([t, name, sub]) => {
           const g = res ? list : list.filter((e) => e.typ === t);
           if (!g.length) return null;
           return (
             // Geschlossen beim Start; offen bei Suche oder gewähltem Typ. Der key setzt den Zustand bei Filterwechsel zurück.
             <details className={`group${!res ? " solo" : ""}`} key={`${t}-${res ? "s" : ""}-${active.has(t) ? "a" : ""}`} open={!!res || active.has(t)}>
-              <summary><h3>{name} <small>{g.length} · {sub}</small></h3></summary>
+              <summary><h3>{res && <>{name} </>}<small>{g.length} · {sub}</small></h3></summary>
               {res ? (
                 <div className="grid">
                   {g.map((e) => (

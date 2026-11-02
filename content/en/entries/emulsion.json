@@ -3,7 +3,7 @@
   "titel": "Emulsion",
   "kurz": "An emulsion is fat and water, which do not normally mix, held together as tiny droplets by a go-between.",
   "bild_im_kopf": "An [[emulgator|emulsifier]] is like an interpreter with one hand in the water and one in the fat. Without it, the two groups stand on opposite sides of the room.",
-  "was_passiert": "Fat and water repel each other. Whisk hard, and the fat breaks into tiny droplets in the water. An emulsifier such as the lecithin in egg yolk wraps around each droplet and stops them from flowing back together. The more densely packed the droplets, the thicker the sauce.",
+  "was_passiert": "Fat and water repel each other. Whisk hard, and the fat breaks into tiny droplets in the water. An emulsifier such as the lecithin in [[eigelb|egg yolk]] wraps around each droplet and stops them from flowing back together. The more densely packed the droplets, the thicker the sauce.",
   "warum_wichtig": "Mayonnaise, vinaigrette, hollandaise, beurre blanc, pasta sauce with pasta water: all emulsions, all with the same pitfalls.",
   "synonyme": [
     "emulsify",
@@ -15,7 +15,7 @@
   "faustregeln": [
     "Add the fat drop by drop at first, later in a thin stream.",
     "Bring ingredients to similar temperatures; nothing ice cold from the fridge.",
-    "Mustard, egg yolk or starchy pasta water help as go-betweens.",
+    "[[senf|Mustard]], egg yolk or starchy pasta water help as go-betweens.",
     "Split? Start again with a fresh yolk or a spoonful of water and slowly work in the split mixture."
   ],
   "typische_fehler": [
