@@ -42,6 +42,7 @@ const THESAURUS: Record<string, string[]> = {
   herzhaft: ["umami", "wuerzig", "tiefe", "glutamat"],
   bohne: ["kichererbse", "linse", "huelsenfrucht", "hart"],
   einsinken: ["sinkt", "eingefallen", "zusammenfallen", "faellt", "zusammengefallen", "zusammen", "einfallen"],
+  selbermachen: ["selber", "selbst", "herstellen", "hausgemacht", "diy", "machen"],
   rezept: ["gericht", "kochen", "zubereiten"],
   salz: ["salzen", "gesalzen", "versalzen"],
   zucker: ["suess", "karamell"],
@@ -101,7 +102,7 @@ function index(items: SearchItem[]) {
   return ix;
 }
 
-const TYPE_BONUS: Record<string, number> = { ziel: 0.4, symptom: 0.35, gericht: 0.3, experiment: 0.25, technik: 0.2, prozess: 0.15 };
+const TYPE_BONUS: Record<string, number> = { ziel: 0.4, symptom: 0.35, gericht: 0.3, experiment: 0.25, labor: 0.3, technik: 0.2, prozess: 0.15 };
 
 export interface SearchResult { scores: Map<string, number>; best: SearchItem | null; terms: string[] }
 
@@ -110,6 +111,7 @@ export function search(items: SearchItem[], q: string): SearchResult | null {
   if (!raw.length) return null;
   const terms = raw.map(stem);
   const wantsExperiment = terms.some((t) => ["experiment", "versuch", "ausprobier", "kinder", "kind"].some((k) => t.startsWith(k)));
+  const wantsLab = terms.some((t) => ["selb", "hausgemacht", "herstell"].some((k) => t.startsWith(k)));
   const hits: [SearchItem, number][] = [];
 
   for (const { e, fields } of index(items)) {
@@ -128,6 +130,7 @@ export function search(items: SearchItem[], q: string): SearchResult | null {
     s *= 0.5 + 0.5 * (matched / terms.length);
     s += TYPE_BONUS[e.typ] ?? 0;
     if (wantsExperiment && e.typ === "experiment") s += 1.5;
+    if (wantsLab && e.typ === "labor") s += 1.5;
     hits.push([e, s]);
   }
   hits.sort((a, b) => b[1] - a[1]);

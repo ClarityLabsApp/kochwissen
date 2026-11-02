@@ -1,0 +1,72 @@
+{
+  "id": "l-gebackenes-natron",
+  "typ": "labor",
+  "titel": "Gebackenes Natron für Laugengebäck",
+  "synonyme": [
+    "Natron backen",
+    "Laugenersatz",
+    "Brezel ohne Lauge",
+    "Natriumcarbonat",
+    "Waschsoda Küche"
+  ],
+  "kurz": "Im Ofen gebackenes Natron wird zu Soda, einer stärkeren Base. Damit werden Brezeln fast so braun wie mit echter Lauge, ohne deren Gefahr.",
+  "bild_im_kopf": "Wie Kaffee, der beim Rösten kräftiger wird: Dieselbe Bohne, aber eine Stufe stärker.",
+  "material": [
+    "etwa 200 g Natron",
+    "Backblech mit Backpapier (kein Aluminium)",
+    "Schraubglas",
+    "Handschuhe für das Tauchbad"
+  ],
+  "dauer": "2 Stunden",
+  "schluesselmomente": [
+    {
+      "schritt": "Natron auf dem Blech verteilen, 2 Stunden bei 120 °C backen",
+      "warum": "Hitze treibt Wasser und Kohlendioxid aus. Aus Natron wird Soda (Natriumcarbonat), die Base wird stärker: [[ph-wert|pH etwa]] 11 statt 8.",
+      "prinzip": "basen-braeunung"
+    },
+    {
+      "schritt": "Abkühlen lassen und trocken in ein Glas füllen, beschriften",
+      "warum": "Soda sieht aus wie Natron, ist aber reizender. Darum beschriften."
+    },
+    {
+      "schritt": "Zum Tauchen etwa 150 g in knapp 500 ml warmem Wasser lösen",
+      "warum": "Die Lauge muss kräftig sein, damit die Oberfläche genug Base aufnimmt (Menge nach America’s Test Kitchen)."
+    },
+    {
+      "schritt": "Brezeln kurz eintauchen, abspülen, salzen und heiß backen",
+      "warum": "Die basische Oberfläche bräunt schnell und glänzt.",
+      "prinzip": "maillard-reaktion"
+    }
+  ],
+  "ergebnis": "Rund 130 g Soda aus 200 g Natron, denn beim Backen geht Gewicht als Wasser und Kohlendioxid verloren (Richtwert).",
+  "haltbarkeit": "Trocken und verschlossen fast unbegrenzt.",
+  "verwendung": [
+    "Laugenbrezeln, Laugenbrötchen, Laugenzopf.",
+    "Eine Prise im Kochwasser für chinesische Nudeln mit Biss."
+  ],
+  "links": [
+    "laugen",
+    "basen-braeunung",
+    "natron",
+    "maillard-reaktion",
+    "w-brot"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: Professional-quality soft pretzels at home",
+      "url": "https://www.americastestkitchen.com/how_tos/6399-professional-quality-soft-pretzels-at-home"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "fortgeschritten",
+  "visual": {
+    "vorlage": "keine"
+  },
+  "sicherheit": "Soda reizt Haut und Augen: Handschuhe tragen, nicht ins Gesicht bringen, außer Reichweite von Kindern aufbewahren."
+}

@@ -1,0 +1,94 @@
+{
+  "id": "l-butter",
+  "typ": "labor",
+  "titel": "Butter selber machen",
+  "synonyme": [
+    "Butter herstellen",
+    "Butter aus Rahm",
+    "Buttermilch selber"
+  ],
+  "kurz": "Butter entsteht, wenn man Rahm so lange schlägt, bis die Fetttröpfchen zusammenkleben. Übrig bleibt Buttermilch.",
+  "bild_im_kopf": "Wie eine Menschenmenge, die sich nach dem Konzert zu Grüppchen sammelt: Aus vielen Einzelnen werden wenige große Klumpen.",
+  "material": [
+    "500 ml Vollrahm, kalt",
+    "Mixer oder Handrührgerät",
+    "Sieb, Schüssel mit Eiswasser",
+    "Prise Salz nach Wunsch"
+  ],
+  "dauer": "20 Minuten",
+  "schluesselmomente": [
+    {
+      "schritt": "Kalten Rahm schlagen, über Schlagrahm hinaus",
+      "warum": "Erst schließt das Schlagen Luft ein. Dann reißen die Hüllen der Fetttröpfchen, und das Fett beginnt zu verkleben.",
+      "prinzip": "schaumbildung"
+    },
+    {
+      "schritt": "Weiterschlagen, bis es plötzlich spritzt",
+      "warum": "Die [[emulsion|Emulsion]] kippt: Aus Fett in Wasser wird ein Fettklumpen, Buttermilch trennt sich ab.",
+      "prinzip": "emulsion"
+    },
+    {
+      "schritt": "Buttermilch abgießen und aufheben",
+      "warum": "Sie ist die wässrige Phase mit Milcheiweiß und Milchzucker."
+    },
+    {
+      "schritt": "Butter in Eiswasser kneten, bis das Wasser klar bleibt",
+      "warum": "Reste von Buttermilch würden schnell sauer werden und die Butter verderben.",
+      "prinzip": "keimwachstum"
+    },
+    {
+      "schritt": "Nach Wunsch salzen und formen",
+      "warum": "Salz würzt und macht die Butter haltbarer.",
+      "prinzip": "wasseraktivitaet"
+    }
+  ],
+  "ergebnis": "Aus 500 ml Rahm etwa 200 g Butter und gut 250 ml Buttermilch (Richtwert).",
+  "haltbarkeit": "Gut gewaschen und gekühlt etwa eine Woche, gesalzen länger. Eingefroren einige Monate.",
+  "verwendung": [
+    "Aufs Brot, zum Backen, zum [[arosieren|Arosieren]].",
+    "Die Buttermilch für Pancakes oder Zopf."
+  ],
+  "links": [
+    "sahne-wird-butter",
+    "x-butter-schuetteln",
+    "butter",
+    "emulsion",
+    "l-bratbutter"
+  ],
+  "welten": [
+    "w-milch"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "Rahm",
+      "nachher": "geschlagen",
+      "vergleich": [
+        {
+          "label": "Rührschüssel",
+          "gefaess": "schuessel",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#fbf7ec",
+            "fuell": 0.7,
+            "klumpen": 0,
+            "klumpenfarbe": "#f2d36b"
+          },
+          "nachher": {
+            "farbe": "#f4f1e6",
+            "fuell": 0.35,
+            "klumpen": 1,
+            "klumpenfarbe": "#f2d36b"
+          }
+        }
+      ]
+    }
+  }
+}

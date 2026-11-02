@@ -1,0 +1,101 @@
+{
+  "id": "l-frischkaese",
+  "typ": "labor",
+  "titel": "Frischkäse mit Zitrone (Paneer)",
+  "synonyme": [
+    "Paneer",
+    "Frischkäse selber machen",
+    "Ricotta selber machen",
+    "Käse aus Milch und Zitrone",
+    "Hüttenkäse"
+  ],
+  "kurz": "Heiße Milch mit etwas Zitronensaft gerinnt in Sekunden zu Flocken. Abgetropft und gepresst wird daraus ein fester Frischkäse.",
+  "bild_im_kopf": "Wie ein Fischernetz, das man durch den Teich zieht: Das Feste bleibt hängen, das Wasser läuft durch.",
+  "material": [
+    "1 l Vollmilch",
+    "2–4 TL Zitronensaft oder Essig",
+    "Sieb, Gazetuch oder sauberes Küchentuch",
+    "Teller und etwas Schweres zum Pressen"
+  ],
+  "dauer": "1 Stunde",
+  "schluesselmomente": [
+    {
+      "schritt": "Milch unter Rühren aufkochen",
+      "warum": "Hitze lockert das Milcheiweiß (Kasein), damit es gleich vollständig ausflockt.",
+      "prinzip": "eiweiss-denaturierung"
+    },
+    {
+      "schritt": "Hitze aus, Zitronensaft löffelweise einrühren",
+      "warum": "Die Säure nimmt den Eiweißteilchen ihre Ladung. Sie stoßen sich nicht mehr ab und verklumpen.",
+      "prinzip": "saeure-denaturierung"
+    },
+    {
+      "schritt": "Warten, bis die Molke klar und grünlich ist",
+      "warum": "Dann ist alles Eiweiß ausgeflockt. Ist sie milchig, noch etwas Säure dazu.",
+      "prinzip": "eiweiss-gerinnung"
+    },
+    {
+      "schritt": "In das Tuch abgießen und kurz mit Wasser spülen",
+      "warum": "Spülen entfernt den Zitronengeschmack."
+    },
+    {
+      "schritt": "Einschlagen und 30–40 Minuten pressen",
+      "warum": "Pressen drückt Molke heraus: kurz gepresst bleibt er weich wie Ricotta, lange gepresst wird er schnittfest."
+    }
+  ],
+  "ergebnis": "Aus 1 l Vollmilch etwa 200 g Frischkäse.",
+  "haltbarkeit": "Gekühlt und abgedeckt 2–3 Tage.",
+  "verwendung": [
+    "Paneer in Würfeln für Currys: Er schmilzt nicht, weil er mit Säure statt mit Lab gemacht ist.",
+    "Weich gepresst als Ricotta-Ersatz für Pasta und Kuchen.",
+    "Die Molke zum Brotbacken."
+  ],
+  "links": [
+    "saeure-denaturierung",
+    "eiweiss-gerinnung",
+    "milch",
+    "kaese",
+    "saeure"
+  ],
+  "welten": [
+    "w-milch"
+  ],
+  "quellen": [
+    {
+      "titel": "Dassana’s Veg Recipes: How to make paneer",
+      "url": "https://www.vegrecipesofindia.com/how-to-make-paneer-homemade-paneer/"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "heiße Milch",
+      "nachher": "mit Zitrone",
+      "vergleich": [
+        {
+          "label": "Topf",
+          "gefaess": "schuessel",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#fbf9f2",
+            "fuell": 0.8,
+            "klumpen": 0,
+            "klumpenfarbe": "#fffaf0"
+          },
+          "nachher": {
+            "farbe": "#e4ead0",
+            "fuell": 0.8,
+            "klumpen": 1,
+            "klumpenfarbe": "#fffaf0"
+          }
+        }
+      ]
+    }
+  },
+  "sicherheit": "Kochende Milch kocht leicht über: Erwachsene übernehmen das Erhitzen."
+}

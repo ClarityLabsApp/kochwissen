@@ -29,7 +29,7 @@ const textFields = (e) => [
   e.mythos?.behauptung, e.mythos?.richtig,
   ...(e.praxis || []).map((p) => p.text),
   ...(e.ursachen || []).flatMap((u) => [u.warum, ...(u.fix || [])]),
-  ...(e.schluesselmomente || []).map((m) => m.warum), e.beobachtung, e.erklaerung,
+  ...(e.schluesselmomente || []).map((m) => m.warum), e.beobachtung, e.erklaerung, e.haltbarkeit, e.ergebnis, ...(e.verwendung || []),
 ].filter(Boolean);
 
 for (const { file, data: e } of entries) {

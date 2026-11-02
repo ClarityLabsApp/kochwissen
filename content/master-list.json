@@ -1,7 +1,7 @@
 {
  "version": 1,
  "stand": "2026-11-02",
- "anzahl": 251,
+ "anzahl": 259,
  "eintraege": [
   {
    "id": "w-fleisch",
@@ -160,7 +160,9 @@
     "maillard-reaktion",
     "staerkeverkleisterung",
     "amylase",
-    "laugen"
+    "laugen",
+    "l-sauerteig",
+    "l-gebackenes-natron"
    ],
    "welten": [],
    "synonyme": [],
@@ -203,7 +205,9 @@
    "visual": {
     "vorlage": "keine"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "l-creme-fraiche"
+   ]
   },
   {
    "id": "w-suesses",
@@ -253,7 +257,11 @@
    "links": [
     "milchsaeuregaerung",
     "eiweiss-gerinnung",
-    "schaumbildung"
+    "schaumbildung",
+    "l-butter",
+    "l-frischkaese",
+    "l-joghurt",
+    "l-creme-fraiche"
    ],
    "welten": [],
    "synonyme": [],
@@ -322,6 +330,7 @@
     "gewuerze-roesten",
     "grillen",
     "honig",
+    "l-gebackenes-natron",
     "laugen",
     "mehr-geschmack",
     "milch",
@@ -557,6 +566,7 @@
    "verlinkt_von": [
     "fisch-zerfaellt",
     "g-steak",
+    "l-joghurt",
     "pochieren-proz",
     "saeure-denaturierung",
     "saftig",
@@ -594,6 +604,7 @@
     "g-hollandaise",
     "hollandaise-flockt",
     "kaese",
+    "l-frischkaese",
     "legieren",
     "milch",
     "w-eier",
@@ -639,7 +650,8 @@
    "pilot": false,
    "links": [
     "saeure",
-    "eiweiss-denaturierung"
+    "eiweiss-denaturierung",
+    "l-frischkaese"
    ],
    "welten": [
     "w-fisch"
@@ -693,6 +705,7 @@
     "gebunden",
     "hollandaise-flockt",
     "kaese",
+    "l-butter",
     "mantecare",
     "montieren",
     "oel",
@@ -1012,7 +1025,8 @@
     "oel",
     "butter",
     "temperatur",
-    "frittiertes-fettig"
+    "frittiertes-fettig",
+    "l-bratbutter"
    ],
    "welten": [
     "w-frittieren",
@@ -1114,6 +1128,7 @@
     "g-zopf",
     "grosse-poren",
     "kalte-gare",
+    "l-sauerteig",
     "sauerteig",
     "vorteig",
     "w-brot",
@@ -1130,7 +1145,10 @@
     "sauerteig",
     "joghurt",
     "saeure",
-    "laenger-haltbar"
+    "laenger-haltbar",
+    "l-joghurt",
+    "l-sauerteig",
+    "l-creme-fraiche"
    ],
    "welten": [
     "w-brot",
@@ -1158,7 +1176,8 @@
     "backpulver",
     "natron",
     "saeure",
-    "kuchen-sinkt-ein"
+    "kuchen-sinkt-ein",
+    "l-backpulver"
    ],
    "welten": [
     "w-gebaeck"
@@ -1399,7 +1418,9 @@
    "visual": {
     "vorlage": "zoom3-simulation"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "l-bratbutter"
+   ]
   },
   {
    "id": "pochieren-proz",
@@ -1648,7 +1669,9 @@
     "emulsion",
     "fett",
     "montieren",
-    "rauchpunkt"
+    "rauchpunkt",
+    "l-butter",
+    "l-bratbutter"
    ],
    "welten": [
     "w-saucen",
@@ -1723,7 +1746,8 @@
    "links": [
     "schaumbildung",
     "emulsion",
-    "sahne-wird-butter"
+    "sahne-wird-butter",
+    "l-creme-fraiche"
    ],
    "welten": [
     "w-milch",
@@ -1748,7 +1772,9 @@
    "links": [
     "eiweiss-gerinnung",
     "maillard-reaktion",
-    "schaerfe"
+    "schaerfe",
+    "l-frischkaese",
+    "l-joghurt"
    ],
    "welten": [
     "w-milch"
@@ -1769,7 +1795,8 @@
     "milchsaeuregaerung",
     "saeure",
     "marinieren",
-    "schaerfe"
+    "schaerfe",
+    "l-joghurt"
    ],
    "welten": [
     "w-milch"
@@ -1791,7 +1818,8 @@
    "links": [
     "eiweiss-gerinnung",
     "emulsion",
-    "umami"
+    "umami",
+    "l-frischkaese"
    ],
    "welten": [
     "w-milch"
@@ -1834,7 +1862,8 @@
    "pilot": false,
    "links": [
     "milchsaeuregaerung",
-    "hefegaerung"
+    "hefegaerung",
+    "l-sauerteig"
    ],
    "welten": [
     "w-brot"
@@ -1852,7 +1881,8 @@
    "status": "geplant",
    "pilot": false,
    "links": [
-    "chemische-lockerung"
+    "chemische-lockerung",
+    "l-backpulver"
    ],
    "welten": [
     "w-gebaeck"
@@ -1878,7 +1908,9 @@
     "natron-zwiebeln",
     "basen-braeunung",
     "kalzium-pektin",
-    "laugen"
+    "laugen",
+    "l-gebackenes-natron",
+    "l-backpulver"
    ],
    "welten": [
     "w-gebaeck",
@@ -1926,6 +1958,7 @@
     "g-kaesefondue",
     "gelbildung-pektin",
     "joghurt",
+    "l-frischkaese",
     "marinieren",
     "milchsaeuregaerung",
     "pektin-abbau",
@@ -3458,7 +3491,9 @@
    "visual": {
     "vorlage": "ablauf"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "l-sauerteig"
+   ]
   },
   {
    "id": "dampf-im-ofen",
@@ -4102,7 +4137,8 @@
     "vorlage": "pfannentest"
    },
    "verlinkt_von": [
-    "g-kaesefondue"
+    "g-kaesefondue",
+    "l-creme-fraiche"
    ]
   },
   {
@@ -4215,7 +4251,8 @@
    "status": "geplant",
    "pilot": false,
    "links": [
-    "schaumbildung"
+    "schaumbildung",
+    "l-butter"
    ],
    "welten": [
     "w-milch"
@@ -4669,7 +4706,9 @@
     "Kartoffelrösti",
     "Bratkartoffeln gerieben"
    ],
-   "verlinkt_von": [],
+   "verlinkt_von": [
+    "l-bratbutter"
+   ],
    "visual": {
     "vorlage": "ablauf"
    }
@@ -4695,7 +4734,9 @@
     "paniertes Schnitzel",
     "Kalbsschnitzel"
    ],
-   "verlinkt_von": [],
+   "verlinkt_von": [
+    "l-bratbutter"
+   ],
    "visual": {
     "vorlage": "ablauf"
    }
@@ -4940,7 +4981,9 @@
     "amerikanische Pfannkuchen",
     "fluffige Pfannkuchen"
    ],
-   "verlinkt_von": [],
+   "verlinkt_von": [
+    "l-backpulver"
+   ],
    "visual": {
     "vorlage": "ablauf"
    }
@@ -5062,7 +5105,9 @@
     "Backpulver Experiment",
     "Triebmittel testen"
    ],
-   "verlinkt_von": [],
+   "verlinkt_von": [
+    "l-backpulver"
+   ],
    "visual": {
     "vorlage": "ablauf"
    }
@@ -5166,7 +5211,8 @@
    "links": [
     "sahne-wird-butter",
     "schaumbildung",
-    "sahne"
+    "sahne",
+    "l-butter"
    ],
    "welten": [
     "w-milch"
@@ -5411,7 +5457,9 @@
     "brennt im Mund",
     "Schärfe mildern"
    ],
-   "verlinkt_von": [],
+   "verlinkt_von": [
+    "l-joghurt"
+   ],
    "visual": {
     "vorlage": "keine"
    }
@@ -5714,7 +5762,8 @@
     "ph-wert",
     "natron",
     "natron-zwiebeln",
-    "laugen"
+    "laugen",
+    "l-gebackenes-natron"
    ],
    "welten": [
     "w-brot",
@@ -6028,7 +6077,8 @@
     "basen-braeunung",
     "natron",
     "maillard-reaktion",
-    "w-brot"
+    "w-brot",
+    "l-gebackenes-natron"
    ],
    "welten": [
     "w-brot"
@@ -6094,6 +6144,232 @@
    "verlinkt_von": [],
    "visual": {
     "vorlage": "vergleich"
+   }
+  },
+  {
+   "id": "l-backpulver",
+   "typ": "labor",
+   "titel": "Backpulver selber mischen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "chemische-lockerung",
+    "backpulver",
+    "natron",
+    "x-backpulver-kalt-heiss",
+    "g-pancakes"
+   ],
+   "welten": [
+    "w-gebaeck"
+   ],
+   "synonyme": [
+    "Backpulver selber machen",
+    "Backpulver Ersatz",
+    "Natron Weinstein"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "vergleich"
+   }
+  },
+  {
+   "id": "l-butter",
+   "typ": "labor",
+   "titel": "Butter selber machen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "sahne-wird-butter",
+    "x-butter-schuetteln",
+    "butter",
+    "emulsion",
+    "l-bratbutter"
+   ],
+   "welten": [
+    "w-milch"
+   ],
+   "synonyme": [
+    "Butter herstellen",
+    "Butter aus Rahm",
+    "Buttermilch selber"
+   ],
+   "verlinkt_von": [
+    "w-milch"
+   ],
+   "visual": {
+    "vorlage": "vergleich"
+   }
+  },
+  {
+   "id": "l-bratbutter",
+   "typ": "labor",
+   "titel": "Bratbutter und Ghee selber machen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "rauchpunkt",
+    "butter",
+    "g-roesti",
+    "g-wiener-schnitzel",
+    "aroma-blooming",
+    "l-butter"
+   ],
+   "welten": [
+    "w-milch",
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "Bratbutter",
+    "Butterschmalz",
+    "Ghee",
+    "geklärte Butter",
+    "Butter klären"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "vergleich"
+   }
+  },
+  {
+   "id": "l-frischkaese",
+   "typ": "labor",
+   "titel": "Frischkäse mit Zitrone (Paneer)",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "saeure-denaturierung",
+    "eiweiss-gerinnung",
+    "milch",
+    "kaese",
+    "saeure"
+   ],
+   "welten": [
+    "w-milch"
+   ],
+   "synonyme": [
+    "Paneer",
+    "Frischkäse selber machen",
+    "Ricotta selber machen",
+    "Käse aus Milch und Zitrone",
+    "Hüttenkäse"
+   ],
+   "verlinkt_von": [
+    "w-milch"
+   ],
+   "visual": {
+    "vorlage": "vergleich"
+   }
+  },
+  {
+   "id": "l-joghurt",
+   "typ": "labor",
+   "titel": "Joghurt selber machen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "milchsaeuregaerung",
+    "joghurt",
+    "milch",
+    "schaerfe",
+    "eiweiss-denaturierung"
+   ],
+   "welten": [
+    "w-milch"
+   ],
+   "synonyme": [
+    "Joghurt herstellen",
+    "Naturjoghurt",
+    "Joghurt im Ofen",
+    "Joghurt ohne Maschine"
+   ],
+   "verlinkt_von": [
+    "w-milch"
+   ],
+   "visual": {
+    "vorlage": "vergleich"
+   }
+  },
+  {
+   "id": "l-sauerteig",
+   "typ": "labor",
+   "titel": "Sauerteig ansetzen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "sauerteig",
+    "milchsaeuregaerung",
+    "hefegaerung",
+    "w-brot",
+    "vorteig"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [
+    "Sauerteig selber machen",
+    "Sauerteig-Starter",
+    "Anstellgut",
+    "Levain"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "vergleich"
+   }
+  },
+  {
+   "id": "l-creme-fraiche",
+   "typ": "labor",
+   "titel": "Crème fraîche selber machen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "milchsaeuregaerung",
+    "sahne",
+    "sauce-trennt-sich",
+    "w-saucen"
+   ],
+   "welten": [
+    "w-milch",
+    "w-saucen"
+   ],
+   "synonyme": [
+    "Crème fraîche",
+    "Sauerrahm selber",
+    "Creme fraiche herstellen"
+   ],
+   "verlinkt_von": [
+    "w-milch"
+   ],
+   "visual": {
+    "vorlage": "keine"
+   }
+  },
+  {
+   "id": "l-gebackenes-natron",
+   "typ": "labor",
+   "titel": "Gebackenes Natron für Laugengebäck",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "laugen",
+    "basen-braeunung",
+    "natron",
+    "maillard-reaktion",
+    "w-brot"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [
+    "Natron backen",
+    "Laugenersatz",
+    "Brezel ohne Lauge",
+    "Natriumcarbonat",
+    "Waschsoda Küche"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "keine"
    }
   }
  ]

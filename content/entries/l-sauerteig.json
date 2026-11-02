@@ -1,0 +1,94 @@
+{
+  "id": "l-sauerteig",
+  "typ": "labor",
+  "titel": "Sauerteig ansetzen",
+  "synonyme": [
+    "Sauerteig selber machen",
+    "Sauerteig-Starter",
+    "Anstellgut",
+    "Levain"
+  ],
+  "kurz": "Aus Mehl und Wasser entsteht in rund einer Woche ein Sauerteig: Wilde Hefen und Milchsäurebakterien aus dem Mehl vermehren sich, wenn man sie regelmäßig füttert.",
+  "bild_im_kopf": "Wie ein Garten aus Samen, die schon in der Erde liegen: Man sät nichts, man gießt nur und jätet.",
+  "material": [
+    "Vollkorn-Weizen- oder Roggenmehl für den Start",
+    "Weißmehl zum Füttern",
+    "Wasser",
+    "Glas mit lockerem Deckel",
+    "Waage"
+  ],
+  "dauer": "5–7 Tage",
+  "schluesselmomente": [
+    {
+      "schritt": "Tag 1: 50 g Vollkornmehl und 50 g Wasser mischen, 24 Stunden stehen lassen",
+      "warum": "Im Mehl leben wilde Hefen und Milchsäurebakterien. Vollkorn bringt besonders viele mit.",
+      "prinzip": "milchsaeuregaerung"
+    },
+    {
+      "schritt": "Tag 2: alles bis auf 50 g wegwerfen, mit 50 g Mehl und 50 g Wasser füttern",
+      "warum": "Wegwerfen hält die Menge klein, frisches Mehl liefert neues Futter."
+    },
+    {
+      "schritt": "Ab Tag 3 zweimal täglich so füttern, warm bei etwa 21–26 °C",
+      "warum": "Die Säure der Bakterien verdrängt unerwünschte Keime, die Hefen werden stärker.",
+      "prinzip": "milchsaeuregaerung"
+    },
+    {
+      "schritt": "Bereit, wenn er sich 6–8 Stunden nach dem Füttern verdoppelt",
+      "warum": "Dann sind genug Hefen da, um ein Brot zu heben.",
+      "prinzip": "hefegaerung"
+    }
+  ],
+  "ergebnis": "Ein aktiver Sauerteig, der angenehm säuerlich riecht und voller Blasen ist.",
+  "haltbarkeit": "Im Kühlschrank aufbewahren und etwa einmal pro Woche füttern. Grauer Wasserfilm oben ist Hunger, kein Verderb: abgießen und füttern.",
+  "verwendung": [
+    "Für Sauerteigbrot, Pizza und Zopf mit Sauerteig.",
+    "Die Reste beim Füttern für Pancakes oder Cracker."
+  ],
+  "links": [
+    "sauerteig",
+    "milchsaeuregaerung",
+    "hefegaerung",
+    "w-brot",
+    "vorteig"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "quellen": [
+    {
+      "titel": "King Arthur Baking: Sourdough starter",
+      "url": "https://www.kingarthurbaking.com/recipes/sourdough-starter-recipe"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "frisch gefüttert",
+      "nachher": "nach 6–8 Stunden",
+      "vergleich": [
+        {
+          "label": "Anstellgut",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#e9dcc0",
+            "fuell": 0.3,
+            "blasen": 0.1
+          },
+          "nachher": {
+            "farbe": "#e9dcc0",
+            "fuell": 0.68,
+            "blasen": 0.9
+          }
+        }
+      ]
+    }
+  },
+  "sicherheit": "Riecht er faulig, ist er rosa, orange oder hat er pelzigen Schimmel: neu beginnen."
+}

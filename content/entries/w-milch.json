@@ -23,7 +23,11 @@
     "schaumbildung",
     "milchsaeuregaerung",
     "eiweiss-gerinnung",
-    "emulsion"
+    "emulsion",
+    "l-butter",
+    "l-frischkaese",
+    "l-joghurt",
+    "l-creme-fraiche"
   ],
   "visual": {
     "vorlage": "keine",

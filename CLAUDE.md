@@ -22,7 +22,7 @@ Befehle: `npm run dev` · `npm run validate` · `npm run build`
 
 ## Eintragstypen
 
-`prozess` (was passiert) · `ziel` (was will ich erreichen) · `technik` (welcher Handgriff) · `symptom` (was ist schiefgelaufen) · `zutat` (was tut eine Zutat) · `stellschraube` (woran drehe ich) · `welt` (Lebensmittel-Welt) · `begriff` (Glossar) · `gericht` (warum funktioniert ein Rezept: `schluesselmomente` mit `schritt`, `warum`, `prinzip`) · `experiment` (zum Ausprobieren, auch mit Kindern: `material`, `schritte`, `beobachtung`, `erklaerung`, `dauer`, `sicherheit`). IDs: Gerichte `g-…`, Experimente `x-…`.
+`prozess` (was passiert) · `ziel` (was will ich erreichen) · `technik` (welcher Handgriff) · `symptom` (was ist schiefgelaufen) · `zutat` (was tut eine Zutat) · `stellschraube` (woran drehe ich) · `welt` (Lebensmittel-Welt) · `begriff` (Glossar) · `gericht` (warum funktioniert ein Rezept: `schluesselmomente` mit `schritt`, `warum`, `prinzip`) · `experiment` (zum Ausprobieren, auch mit Kindern: `material`, `schritte`, `beobachtung`, `erklaerung`, `dauer`, `sicherheit`). `labor` (Grundzutat selber herstellen: `material`, `dauer`, `sicherheit`, `schluesselmomente` als Schritte mit Prinzip, `ergebnis`, `haltbarkeit`, `verwendung`). IDs: Gerichte `g-…`, Experimente `x-…`, Labor `l-…`.
 
 Drei Einstiege müssen immer funktionieren: vom Problem (Symptom), vom Ziel („Wie werden Wedges knuspriger?“) und vom Prinzip (Prozess). Darum: **jeder Eintrag verlinkt in alle Richtungen**, die Sinn ergeben.
 
@@ -86,7 +86,8 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - [ ] Review durch Phil: Status von `entwurf` auf `geprueft`
 - [x] 15 Gerichte und 12 Experimente ergänzt (Generator `scripts/batches/gen_batch_gerichte_experimente.py`)
 - [x] Batch Grundlagen-Chemie II: Geschmack, Kälte, Haltbarkeit, Enzyme, Druck, Basen, Zucker (30 Einträge, `scripts/batches/gen_batch_chemie2.py`)
-- [ ] Sektion „Labor-Rezepte“ (Backpulver, Butter, Bratbutter, Frischkäse, Joghurt, Sauerteig, Laugengebäck): mit Phil abstimmen
+- [x] Kategorie „Labor“ mit 8 Rezepten (Backpulver, Butter, Bratbutter/Ghee, Frischkäse, Joghurt, Sauerteig, Crème fraîche, gebackenes Natron), `scripts/batches/gen_batch_labor.py`
+- [ ] Weitere Labor-Rezepte (z. B. Mascarpone, Vanilleextrakt, Puderzucker, Buttermilch-Ersatz, Senf, Essig-Mutter)
 - [ ] Weitere Gerichte und Experimente (Vorher-Nachher-Grafik steht, neue Experimente brauchen `params.vergleich`)
 - [ ] Semantische Suche (z. B. pgvector) als Ergänzung; bis dahin fehlende Alltagswörter in `THESAURUS` nachtragen
 - [x] 45 Aquarell-Illustrationen (Welten und Zutaten) in `public/illustrationen/<id>.webp`, Anzeige im Seitenkopf. Neue Motive: `visual.illustration` setzen, `npm run illustrationen -- --only id1,id2` (schreibt WebP mit transparentem Hintergrund; ältere Bilder wurden per Skript freigestellt und beschnitten)

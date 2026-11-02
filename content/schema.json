@@ -29,7 +29,8 @@
         "welt",
         "begriff",
         "gericht",
-        "experiment"
+        "experiment",
+        "labor"
       ]
     },
     "titel": {
@@ -372,6 +373,21 @@
     "sicherheit": {
       "description": "Nur Typ experiment: Hinweis für Kinder oder heiße Pfannen",
       "type": "string"
+    },
+    "haltbarkeit": {
+      "type": "string",
+      "description": "Nur Typ labor: wie lange und wie aufbewahren"
+    },
+    "verwendung": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Nur Typ labor: wofür man das Ergebnis braucht"
+    },
+    "ergebnis": {
+      "type": "string",
+      "description": "Nur Typ labor: was und wie viel herauskommt"
     }
   }
 }

@@ -12,6 +12,7 @@ const TYPES: [string, string, string][] = [
   ["ziel", "Ziele", "Was will ich erreichen?"],
   ["gericht", "Gerichte", "Warum funktioniert dieses Rezept?"],
   ["experiment", "Experimente", "Zum Ausprobieren in der Küche"],
+  ["labor", "Labor", "Grundzutaten selber herstellen"],
   ["symptom", "Symptome", "Was ist schiefgelaufen?"],
   ["prozess", "Prozesse", "Was passiert beim Kochen?"],
   ["technik", "Techniken", "Welcher Handgriff hilft?"],
@@ -20,7 +21,7 @@ const TYPES: [string, string, string][] = [
   ["welt", "Lebensmittel-Welten", "Wo begegnet mir das?"],
   ["begriff", "Begriffe", "Was heißt das Wort?"],
 ];
-const SING: Record<string, string> = { prozess: "Prozess", ziel: "Ziel", technik: "Technik", symptom: "Symptom", zutat: "Zutat", stellschraube: "Stellschraube", welt: "Welt", begriff: "Begriff", gericht: "Gericht", experiment: "Experiment" };
+const SING: Record<string, string> = { prozess: "Prozess", ziel: "Ziel", technik: "Technik", symptom: "Symptom", zutat: "Zutat", stellschraube: "Stellschraube", welt: "Welt", begriff: "Begriff", gericht: "Gericht", experiment: "Experiment", labor: "Labor-Rezept" };
 const EXAMPLES = ["Wie werden meine Wedges knuspriger?", "Fleisch wird trocken", "Sauce zu dünn", "Rösti", "Experiment für Kinder", "Mayo gerinnt"];
 /** Bild für einen Eintrag: das eigene, sonst das seiner Welt. */
 function pictureOf(e: LibItem, has: Set<string>): string | null {

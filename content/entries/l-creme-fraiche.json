@@ -1,0 +1,63 @@
+{
+  "id": "l-creme-fraiche",
+  "typ": "labor",
+  "titel": "Crème fraîche selber machen",
+  "synonyme": [
+    "Crème fraîche",
+    "Sauerrahm selber",
+    "Creme fraiche herstellen"
+  ],
+  "kurz": "Rahm mit einem Schuss Buttermilch wird bei Raumtemperatur über Nacht dick und mild säuerlich.",
+  "bild_im_kopf": "Wie ein Gast, der seine Freunde mitbringt: Ein Löffel Buttermilch bringt die Bakterien, die den ganzen Rahm verwandeln.",
+  "material": [
+    "250 ml Vollrahm",
+    "2 EL Buttermilch mit lebenden Kulturen",
+    "sauberes Glas"
+  ],
+  "dauer": "12–24 Stunden",
+  "schluesselmomente": [
+    {
+      "schritt": "Rahm und Buttermilch im Glas verrühren",
+      "warum": "Die Buttermilch bringt Milchsäurebakterien mit."
+    },
+    {
+      "schritt": "Abgedeckt bei Raumtemperatur 12–24 Stunden stehen lassen",
+      "warum": "Die Bakterien bilden Milchsäure, die das Eiweiß im Rahm eindickt, und typische buttrige Aromen.",
+      "prinzip": "milchsaeuregaerung"
+    },
+    {
+      "schritt": "Wenn sie dick ist, kalt stellen",
+      "warum": "Kälte bremst die Bakterien und macht sie noch fester."
+    }
+  ],
+  "ergebnis": "Etwa 250 ml Crème fraîche.",
+  "haltbarkeit": "Gekühlt bis etwa einen Monat.",
+  "verwendung": [
+    "Für Saucen: Sie gerinnt beim Kochen nicht, weil sie so viel Fett hat.",
+    "Auf Flammkuchen, zu Suppen, zu Desserts."
+  ],
+  "links": [
+    "milchsaeuregaerung",
+    "sahne",
+    "sauce-trennt-sich",
+    "w-saucen"
+  ],
+  "welten": [
+    "w-milch",
+    "w-saucen"
+  ],
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: Crème fraîche",
+      "url": "https://www.americastestkitchen.com/recipes/8069-creme-fraiche"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "keine"
+  }
+}

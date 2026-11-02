@@ -1,0 +1,104 @@
+{
+  "id": "l-bratbutter",
+  "typ": "labor",
+  "titel": "Bratbutter und Ghee selber machen",
+  "synonyme": [
+    "Bratbutter",
+    "Butterschmalz",
+    "Ghee",
+    "geklärte Butter",
+    "Butter klären"
+  ],
+  "kurz": "Bratbutter ist Butter ohne Wasser und Milcheiweiß. Ohne die Teile, die verbrennen, verträgt sie viel mehr Hitze.",
+  "bild_im_kopf": "Wie Goldwaschen: Man spült alles weg, was nicht glänzt, und behält das Reine.",
+  "material": [
+    "250 g Butter",
+    "kleiner Topf",
+    "Löffel oder Schaumkelle",
+    "Sieb mit Küchenpapier oder feinem Tuch",
+    "sauberes Glas"
+  ],
+  "dauer": "30 Minuten",
+  "schluesselmomente": [
+    {
+      "schritt": "Butter bei kleiner Hitze schmelzen und leise köcheln lassen",
+      "warum": "Das Wasser in der Butter verdampft. Es knistert, solange noch Wasser da ist.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "Schaum von der Oberfläche abschöpfen",
+      "warum": "Der Schaum ist Milcheiweiß, das aufsteigt."
+    },
+    {
+      "schritt": "Warten, bis es still wird und sich am Boden helle Flocken absetzen",
+      "warum": "Ist kein Wasser mehr da, hört das Knistern auf. Das restliche Eiweiß sinkt zu Boden.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "Für Ghee weiter erhitzen, bis die Flocken goldbraun sind",
+      "warum": "Das Milcheiweiß bräunt und gibt ein nussiges Aroma ab.",
+      "prinzip": "maillard-reaktion"
+    },
+    {
+      "schritt": "Durch das Tuch in ein sauberes Glas abgießen",
+      "warum": "Ohne Wasser und Eiweiß raucht das Fett erst bei etwa 200 °C, Butter schon bei etwa 150 °C.",
+      "prinzip": "rauchpunkt"
+    }
+  ],
+  "ergebnis": "Aus 250 g Butter etwa 200 g Bratbutter, denn Butter besteht zu rund vier Fünfteln aus Fett (Richtwert).",
+  "haltbarkeit": "Kühl und dunkel mehrere Monate. Ohne Wasser finden Keime kaum etwas zum Leben.",
+  "verwendung": [
+    "Schnitzel, Rösti und Bratkartoffeln bei hoher Hitze.",
+    "Ghee für Currys und zum Anrösten von Gewürzen."
+  ],
+  "links": [
+    "rauchpunkt",
+    "butter",
+    "g-roesti",
+    "g-wiener-schnitzel",
+    "aroma-blooming",
+    "l-butter"
+  ],
+  "welten": [
+    "w-milch",
+    "w-fleisch"
+  ],
+  "quellen": [
+    {
+      "titel": "Verbraucherzentrale Südtirol: Welches Öl zum Braten?",
+      "url": "https://www.consumer.bz.it/de/print/pdf/node/16745"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "Butter geschmolzen",
+      "nachher": "geklärt",
+      "vergleich": [
+        {
+          "label": "Topfinhalt",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#f2d36b",
+            "fuell": 0.6,
+            "trueb": 0.6,
+            "schaum": 0.5
+          },
+          "nachher": {
+            "farbe": "#e8b93a",
+            "fuell": 0.5,
+            "trueb": 0,
+            "bodensatz": 0.6
+          }
+        }
+      ]
+    }
+  },
+  "sicherheit": "Heißes Fett: Kinder nur zuschauen lassen, kein Wasser in die Nähe."
+}

@@ -1,0 +1,90 @@
+{
+  "id": "l-backpulver",
+  "typ": "labor",
+  "titel": "Backpulver selber mischen",
+  "synonyme": [
+    "Backpulver selber machen",
+    "Backpulver Ersatz",
+    "Natron Weinstein"
+  ],
+  "kurz": "Backpulver ist eine Mischung aus einer Base, einer Säure und etwas Stärke. Aus Natron und Weinstein lässt es sich in einer Minute selbst mischen.",
+  "bild_im_kopf": "Wie ein Feuerwerk mit getrennt verpackter Zündschnur: Erst wenn Wasser dazukommt, geht es los.",
+  "material": [
+    "1 TL Natron",
+    "2 TL Weinsteinpulver (Weinsteinsäure oder Weinsteinbackpulver-Säure)",
+    "1 TL Maisstärke",
+    "ein trockenes Schraubglas"
+  ],
+  "dauer": "5 Minuten",
+  "schluesselmomente": [
+    {
+      "schritt": "Natron, Weinstein und Stärke trocken mischen",
+      "warum": "Natron ist die Base, Weinstein die Säure. Trocken reagieren sie nicht miteinander.",
+      "prinzip": "chemische-lockerung"
+    },
+    {
+      "schritt": "Stärke nicht weglassen",
+      "warum": "Sie nimmt Luftfeuchtigkeit auf, bevor Säure und Base es tun, und hält die Mischung rieselfähig.",
+      "prinzip": "staerke"
+    },
+    {
+      "schritt": "Im Teig mit Flüssigkeit verrühren und gleich backen",
+      "warum": "Mit Wasser reagieren Säure und Base und bilden Kohlendioxid. Diese Mischung legt sofort los, darum nicht warten.",
+      "prinzip": "chemische-lockerung"
+    },
+    {
+      "schritt": "Frische testen: ein wenig in heißes Wasser streuen",
+      "warum": "Schäumt es kräftig, ist es noch aktiv."
+    }
+  ],
+  "ergebnis": "Etwa 4 TL Backpulver, so viel wie ein Päckchen. 1 TL ersetzt 1 TL gekauftes Backpulver.",
+  "haltbarkeit": "Trocken und luftdicht einige Wochen. Feuchtigkeit startet die Reaktion zu früh.",
+  "verwendung": [
+    "Kuchen, Muffins und Pancakes, wenn das Päckchen fehlt.",
+    "Für Leute, die phosphatfreies Backpulver wollen."
+  ],
+  "links": [
+    "chemische-lockerung",
+    "backpulver",
+    "natron",
+    "x-backpulver-kalt-heiss",
+    "g-pancakes"
+  ],
+  "welten": [
+    "w-gebaeck"
+  ],
+  "quellen": [
+    {
+      "titel": "Smitten Kitchen: Make your own baking powder",
+      "url": "https://smittenkitchen.com/2009/08/make-your-own-baking-powder/"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "trocken",
+      "nachher": "mit Wasser",
+      "vergleich": [
+        {
+          "label": "Mischung im Wasser",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#eaf1f4",
+            "blasen": 0
+          },
+          "nachher": {
+            "farbe": "#eaf1f4",
+            "blasen": 1,
+            "schaum": 0.5
+          }
+        }
+      ]
+    }
+  }
+}

@@ -28,7 +28,9 @@
     "brot-flach",
     "brot-kruste-weich",
     "amylase",
-    "laugen"
+    "laugen",
+    "l-sauerteig",
+    "l-gebackenes-natron"
   ],
   "visual": {
     "vorlage": "keine",
