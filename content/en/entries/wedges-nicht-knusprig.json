@@ -1,0 +1,134 @@
+{
+  "id": "wedges-nicht-knusprig",
+  "titel": "Wedges and chips won't crisp up",
+  "kurz": "The surface does not get dry enough to harden. Usually too much water or steam is involved.",
+  "bild_im_kopf": "Like an overloaded clothes horse: everything is warm, but nothing gets dry.",
+  "synonyme": [
+    "soggy roast potatoes",
+    "soft wedges",
+    "limp fries",
+    "crispier wedges",
+    "soggy chips"
+  ],
+  "ursachen": [
+    {
+      "titel": "Tray too full",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "If the pieces lie close together, the steam cannot escape. It keeps the surfaces at 100 °C.",
+      "fix": [
+        "Leave space between the pieces",
+        "Better to use two trays"
+      ]
+    },
+    {
+      "titel": "Too wet going into the oven",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Water on the surface has to evaporate first. By then half the baking time is over.",
+      "fix": [
+        "Dry very thoroughly after soaking",
+        "Let them sit in the air briefly"
+      ]
+    },
+    {
+      "titel": "Starch film on the cut surface",
+      "haeufigkeit": 2,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Loose starch and sugar from cutting turn sticky and brown too early. The wedges go dark but not firm.",
+      "fix": [
+        "Soak in cold water for 30 minutes",
+        "Rinse until the water stays clear"
+      ]
+    },
+    {
+      "titel": "Oven not hot enough",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "In a lukewarm oven the water evaporates slowly, and the pieces cook soft before the surface dries.",
+      "fix": [
+        "Preheat the oven and tray to 220 °C",
+        "Put them in only once it is really hot"
+      ]
+    },
+    {
+      "titel": "Went soft after baking",
+      "haeufigkeit": 1,
+      "prinzip": "verdampfen",
+      "warum": "Stacked or covered, steam from the inside condenses on the crust.",
+      "fix": [
+        "Put them on a rack",
+        "Do not cover; serve straight away"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Were the wedges close together or on top of each other on the tray?",
+      "antworten": [
+        [
+          "Yes",
+          "u0"
+        ],
+        [
+          "No, spaced out",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did you dry them thoroughly before baking?",
+      "antworten": [
+        [
+          "No",
+          "u1"
+        ],
+        [
+          "Yes",
+          "q3"
+        ]
+      ]
+    },
+    "q3": {
+      "frage": "Did they go dark before they were crisp?",
+      "antworten": [
+        [
+          "Yes",
+          "u2"
+        ],
+        [
+          "No",
+          "q4"
+        ]
+      ]
+    },
+    "q4": {
+      "frage": "Was the oven already properly hot when they went in?",
+      "antworten": [
+        [
+          "No, or not sure",
+          "u3"
+        ],
+        [
+          "Yes",
+          "u4"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    },
+    "u3": {
+      "ursache": 3
+    },
+    "u4": {
+      "ursache": 4
+    }
+  }
+}

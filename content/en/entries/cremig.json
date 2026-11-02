@@ -1,0 +1,29 @@
+{
+  "id": "cremig",
+  "titel": "Creamy",
+  "kurz": "Creamy means: thick but smooth, with no lumps and no pools of fat.",
+  "bild_im_kopf": "Like a freshly mown lawn instead of a ploughed field: lots of small, even particles instead of coarse clods.",
+  "bedeutung": "Creaminess comes from lots of very small, evenly spread particles: fine fat droplets in an [[emulsion|emulsion]], dissolved starch, or protein that has thickened gently without clumping.",
+  "was_passiert": "Lumps form when starch [[staerkeverkleisterung|gelatinises]] on the outside before it spreads out, or when protein gets too hot. Pools of fat form when an emulsion splits.",
+  "synonyme": [
+    "smooth",
+    "velvety",
+    "silky",
+    "creamier"
+  ],
+  "faustregeln": [
+    "Risotto and pasta: release starch by stirring and tossing.",
+    "Never let egg custards boil.",
+    "A stick blender rescues many slightly lumpy sauces."
+  ],
+  "praxis": [
+    {
+      "welt": "w-getreide",
+      "text": "Risotto turns creamy through stirring, because starch comes off the rice grains."
+    },
+    {
+      "welt": "w-pasta",
+      "text": "Cacio e pepe: cheese, pasta water and pepper turn creamy rather than lumpy through tossing."
+    }
+  ]
+}

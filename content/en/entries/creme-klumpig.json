@@ -1,0 +1,79 @@
+{
+  "id": "creme-klumpig",
+  "titel": "Custard or pudding turns lumpy",
+  "kurz": "Either the egg has curdled or the starch has formed lumps.",
+  "bild_im_kopf": "Like scrambled egg in the custard.",
+  "synonyme": [
+    "curdled custard",
+    "lumpy pudding",
+    "grainy crème brûlée"
+  ],
+  "ursachen": [
+    {
+      "titel": "Too hot, egg curdled",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "Above about 80 °C the egg yolk curdles into crumbs.",
+      "fix": [
+        "Pour straight through a sieve into a cold bowl and smooth with a stick blender",
+        "Next time use a water bath and stir constantly"
+      ]
+    },
+    {
+      "titel": "Starch not dispersed",
+      "haeufigkeit": 2,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Starch added straight to hot milk forms lumps.",
+      "fix": [
+        "Mix the starch with a little cold milk first",
+        "Whisk it in"
+      ]
+    },
+    {
+      "titel": "Not stirred",
+      "haeufigkeit": 1,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "At the bottom of the pan it gets hotter and curdles first.",
+      "fix": [
+        "Stir constantly, across the bottom too"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Is there starch or custard powder in the recipe?",
+      "antworten": [
+        [
+          "Yes",
+          "q2"
+        ],
+        [
+          "No, only eggs",
+          "u0"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Are they soft little grains or dry floury lumps?",
+      "antworten": [
+        [
+          "Soft grains",
+          "u2"
+        ],
+        [
+          "Dry lumps",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

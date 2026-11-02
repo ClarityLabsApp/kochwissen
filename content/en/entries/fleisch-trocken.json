@@ -1,0 +1,107 @@
+{
+  "id": "fleisch-trocken",
+  "titel": "Meat is dry",
+  "kurz": "The meat got too hot inside. The fibres have squeezed out their juice.",
+  "bild_im_kopf": "Like a wrung-out towel: the water has not vanished, it has been squeezed out.",
+  "synonyme": [
+    "dry",
+    "dry chicken breast",
+    "dry roast",
+    "stringy"
+  ],
+  "ursachen": [
+    {
+      "titel": "Core temperature too high",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "Above about 66 °C the fibres contract strongly and lose a lot of juice.",
+      "fix": [
+        "Cook with a thermometer",
+        "Take it off a few degrees before the target; it carries on cooking",
+        "Exception, poultry: always at least 70 °C at the core; salt or brine keeps it juicy"
+      ]
+    },
+    {
+      "titel": "Lean cut without preparation",
+      "haeufigkeit": 2,
+      "prinzip": "wasserbindung-salz",
+      "warum": "Chicken breast and pork fillet have hardly any fat or connective tissue to make them seem juicy.",
+      "fix": [
+        "Dry-salt overnight",
+        "Or put it in a brine for 1–2 hours"
+      ]
+    },
+    {
+      "titel": "Too hot and too long in the oven",
+      "haeufigkeit": 2,
+      "prinzip": "waermeleitung",
+      "warum": "At a high oven temperature the edge overcooks while the centre catches up.",
+      "fix": [
+        "Lower oven temperature",
+        "Reverse sear thick pieces"
+      ]
+    },
+    {
+      "titel": "Cut straight away",
+      "haeufigkeit": 1,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "Right after cooking more juice runs out, and the meat seems drier on the plate.",
+      "fix": [
+        "Rest for 5–10 minutes"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did you cook with a thermometer?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Was it a lean cut such as chicken breast or pork fillet?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "q3"
+        ]
+      ]
+    },
+    "q3": {
+      "frage": "Did you cut it straight after cooking?",
+      "antworten": [
+        [
+          "Yes",
+          "u3"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    },
+    "u3": {
+      "ursache": 3
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "id": "bratkartoffeln-kleben",
+  "titel": "Fried potatoes stick",
+  "kurz": "Starch on the surface bonds to the pan before a firm crust can form.",
+  "bild_im_kopf": "Like wallpaper paste: wet it sticks fast, only once dry does it let go.",
+  "synonyme": [
+    "rösti sticks",
+    "potatoes stick to the pan",
+    "fried potatoes fall apart"
+  ],
+  "ursachen": [
+    {
+      "titel": "Pan not hot enough",
+      "haeufigkeit": 3,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "In a lukewarm pan the starch [[staerkeverkleisterung|gelatinises]] into a sticky layer before it dries out.",
+      "fix": [
+        "Preheat the pan well with fat",
+        "Add the potatoes only once the fat shimmers"
+      ]
+    },
+    {
+      "titel": "Turned too early",
+      "haeufigkeit": 3,
+      "prinzip": "maillard-reaktion",
+      "warum": "A firm crust releases by itself. Before that, you tear it off.",
+      "fix": [
+        "Leave them until they release",
+        "Shake the pan lightly to test"
+      ]
+    },
+    {
+      "titel": "Raw potatoes with a starch film",
+      "haeufigkeit": 2,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Freshly cut raw potatoes bring a lot of loose starch.",
+      "fix": [
+        "Use boiled potatoes from the day before",
+        "Soak and dry raw slices"
+      ]
+    },
+    {
+      "titel": "Too little fat",
+      "haeufigkeit": 1,
+      "prinzip": "maillard-reaktion",
+      "warum": "Without a film of fat, the pieces sit directly on the metal.",
+      "fix": [
+        "Cover the base thinly but completely"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did the fat sizzle when the potatoes went in?",
+      "antworten": [
+        [
+          "No, fairly quiet",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did you turn them within the first few minutes?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "q3"
+        ]
+      ]
+    },
+    "q3": {
+      "frage": "Were the potatoes cut raw?",
+      "antworten": [
+        [
+          "Yes",
+          "u2"
+        ],
+        [
+          "No, pre-boiled",
+          "u3"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    },
+    "u3": {
+      "ursache": 3
+    }
+  }
+}

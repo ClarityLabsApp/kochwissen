@@ -1,0 +1,53 @@
+{
+  "id": "muffins-tunnel",
+  "titel": "Muffins have tunnels",
+  "kurz": "The batter was mixed too long. The [[glutenbildung|gluten network]] is too strong, and gas collects in long channels.",
+  "bild_im_kopf": "Like mole tunnels under a lawn.",
+  "synonyme": [
+    "holes in muffins",
+    "tough muffins",
+    "peaked muffins"
+  ],
+  "ursachen": [
+    {
+      "titel": "Mixed too long",
+      "haeufigkeit": 3,
+      "prinzip": "glutenbildung",
+      "warum": "Long mixing builds a tough network that channels gas into tunnels.",
+      "fix": [
+        "Mix only until the flour has disappeared",
+        "Lumps are fine"
+      ]
+    },
+    {
+      "titel": "Oven too hot",
+      "haeufigkeit": 1,
+      "prinzip": "chemische-lockerung",
+      "warum": "Set on the outside before the gas has spread inside: a pointed dome and cracks.",
+      "fix": [
+        "Check the temperature"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did you mix the batter smooth?",
+      "antworten": [
+        [
+          "Yes",
+          "u0"
+        ],
+        [
+          "No, only briefly",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    }
+  }
+}

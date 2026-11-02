@@ -1,0 +1,53 @@
+{
+  "id": "knoblauch-bitter",
+  "titel": "Garlic turns bitter",
+  "kurz": "Garlic burns very quickly. Even golden brown it can taste bitter.",
+  "bild_im_kopf": "Like paper next to a flame: a moment too long and it is black.",
+  "synonyme": [
+    "burnt garlic",
+    "brown garlic",
+    "bitter garlic"
+  ],
+  "ursachen": [
+    {
+      "titel": "Into the hot pan too early",
+      "haeufigkeit": 3,
+      "prinzip": "pyrolyse",
+      "warum": "Finely chopped garlic has a lot of surface and little water; it burns in seconds.",
+      "fix": [
+        "Add it only towards the end",
+        "Fry only briefly over medium heat"
+      ]
+    },
+    {
+      "titel": "Chopped too finely or crushed",
+      "haeufigkeit": 2,
+      "prinzip": "pyrolyse",
+      "warum": "The finer it is, the faster it browns and burns.",
+      "fix": [
+        "Slice it if it will stay in the pan longer"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did the garlic go into the pan right at the start?",
+      "antworten": [
+        [
+          "Yes",
+          "u0"
+        ],
+        [
+          "No, later",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    }
+  }
+}

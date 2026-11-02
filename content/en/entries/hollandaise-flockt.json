@@ -1,0 +1,81 @@
+{
+  "id": "hollandaise-flockt",
+  "titel": "Hollandaise curdles",
+  "kurz": "The egg yolk got too hot and curdled into crumbs, or the butter went in too fast.",
+  "bild_im_kopf": "Like scrambled egg hiding in the sauce.",
+  "synonyme": [
+    "hollandaise splits",
+    "grainy hollandaise",
+    "curdled béarnaise"
+  ],
+  "ursachen": [
+    {
+      "titel": "Too hot",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "Above about 70 °C the egg yolk curdles into little lumps and the sauce turns grainy.",
+      "fix": [
+        "Take it off the water bath immediately",
+        "Whisk in a spoonful of cold water or cream",
+        "Set the bowl in iced water briefly and keep whisking"
+      ]
+    },
+    {
+      "titel": "Butter added too fast",
+      "haeufigkeit": 2,
+      "prinzip": "emulsion",
+      "warum": "The yolk cream cannot take up the butter quickly enough, and the sauce splits.",
+      "fix": [
+        "Start again in a new bowl with a yolk and a little water",
+        "Slowly whisk in the split sauce"
+      ]
+    },
+    {
+      "titel": "Yolk foam already curdled",
+      "haeufigkeit": 1,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "If the yolk base is already grainy before the butter goes in, it cannot be rescued.",
+      "fix": [
+        "Start again",
+        "This time take it off the water bath more often"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Is the sauce grainy like fine scrambled egg?",
+      "antworten": [
+        [
+          "Yes",
+          "q2"
+        ],
+        [
+          "No, more greasy and separated",
+          "u1"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Was the yolk mixture already grainy before the butter?",
+      "antworten": [
+        [
+          "Yes",
+          "u2"
+        ],
+        [
+          "No, only afterwards",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

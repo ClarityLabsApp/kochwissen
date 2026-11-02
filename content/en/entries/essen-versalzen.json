@@ -1,0 +1,54 @@
+{
+  "id": "essen-versalzen",
+  "titel": "Food is too salty",
+  "kurz": "Too much salt can hardly be taken out, only diluted or balanced.",
+  "bild_im_kopf": "Like music that is too loud: you cannot turn it down, you can only make more room.",
+  "synonyme": [
+    "too salty",
+    "rescuing oversalted food",
+    "oversalted"
+  ],
+  "ursachen": [
+    {
+      "titel": "Salted early, then reduced",
+      "haeufigkeit": 3,
+      "prinzip": "reduktion",
+      "warum": "When reducing, the salt stays and the water goes.",
+      "fix": [
+        "Dilute with unsalted liquid",
+        "Next time salt only at the end"
+      ]
+    },
+    {
+      "titel": "Too much at once",
+      "haeufigkeit": 2,
+      "prinzip": "salzgehalt",
+      "warum": "Salt only dissolves and spreads out over time.",
+      "fix": [
+        "Add more of the unsalted ingredients",
+        "Acid, sweetness or cream soften the impression a little"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Was the sauce or soup reduced for a long time after salting?",
+      "antworten": [
+        [
+          "Yes",
+          "u0"
+        ],
+        [
+          "No",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    }
+  }
+}

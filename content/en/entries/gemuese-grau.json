@@ -1,0 +1,79 @@
+{
+  "id": "gemuese-grau",
+  "titel": "Green vegetables turn grey",
+  "kurz": "Acid and time have turned the [[chlorophyll-farbe|chlorophyll]] into an olive-brown pigment.",
+  "bild_im_kopf": "Like a freshly painted garden fence weathering: heat and acid turn green into olive grey in minutes.",
+  "synonyme": [
+    "olive-green broccoli",
+    "grey beans",
+    "grey peas",
+    "dark spinach"
+  ],
+  "ursachen": [
+    {
+      "titel": "Cooked too long",
+      "haeufigkeit": 3,
+      "prinzip": "chlorophyll-farbe",
+      "warum": "The longer it cooks, the more acid leaks out and dulls the green.",
+      "fix": [
+        "Cook briefly, 1–3 minutes",
+        "Refresh in cold water straight away"
+      ]
+    },
+    {
+      "titel": "Acid too early",
+      "haeufigkeit": 2,
+      "prinzip": "chlorophyll-farbe",
+      "warum": "Lemon, vinegar or tomatoes in the pot speed up the colour change.",
+      "fix": [
+        "Add acid only when serving"
+      ]
+    },
+    {
+      "titel": "Kept warm in the sauce",
+      "haeufigkeit": 2,
+      "prinzip": "chlorophyll-farbe",
+      "warum": "Even after cooking, warmth keeps changing the green.",
+      "fix": [
+        "Cook the vegetables separately and mix just before serving"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "How long did the vegetables cook?",
+      "antworten": [
+        [
+          "More than 5 minutes",
+          "u0"
+        ],
+        [
+          "Only briefly",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Was there acid in the pot, or did they sit in a sauce for long?",
+      "antworten": [
+        [
+          "Acid in the pot",
+          "u1"
+        ],
+        [
+          "Long in sauce",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

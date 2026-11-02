@@ -1,0 +1,79 @@
+{
+  "id": "sauce-zu-duenn",
+  "titel": "Sauce is too thin",
+  "kurz": "It lacks body: too little starch, not reduced enough, or an [[emulsion|emulsion]] that never properly formed.",
+  "bild_im_kopf": "Like a net with meshes that are too large: the liquid simply runs through.",
+  "synonyme": [
+    "watery sauce",
+    "sauce won't thicken",
+    "too runny"
+  ],
+  "ursachen": [
+    {
+      "titel": "Not reduced enough",
+      "haeufigkeit": 3,
+      "prinzip": "reduktion",
+      "warum": "There is still too much water in it.",
+      "fix": [
+        "Keep reducing uncovered in a wide pan",
+        "Salt only afterwards"
+      ]
+    },
+    {
+      "titel": "Starch not boiled",
+      "haeufigkeit": 2,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Cornflour only thickens properly once it boils briefly.",
+      "fix": [
+        "Bring it to the boil once"
+      ]
+    },
+    {
+      "titel": "Boiled or stirred too long",
+      "haeufigkeit": 1,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "A starch-thickened sauce thins out again with long boiling and vigorous stirring.",
+      "fix": [
+        "Add a little freshly mixed starch",
+        "Then boil only briefly"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did you thicken it with starch or flour?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did the sauce boil after thickening?",
+      "antworten": [
+        [
+          "No",
+          "u1"
+        ],
+        [
+          "Yes, for a long time",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

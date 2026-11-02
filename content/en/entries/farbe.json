@@ -1,0 +1,19 @@
+{
+  "id": "farbe",
+  "titel": "Good colour",
+  "kurz": "Good colour means something different depending on the food: a golden-brown crust, a bright green or a deep red.",
+  "bild_im_kopf": "Three paint boxes: brown comes from heat and dryness, green from short cooking, red from acid.",
+  "bedeutung": "Brown comes from the [[maillard-reaktion|Maillard reaction]] and [[karamellisierung|caramelisation]] in dry heat. Green survives a short cooking time. Red pigments need acid.",
+  "was_passiert": "Colour is a good clue to flavour: golden brown means roasted aromas, bright green means fresh and crisp.",
+  "synonyme": [
+    "golden brown",
+    "bright green",
+    "colour",
+    "appetising"
+  ],
+  "faustregeln": [
+    "For brown: dry and hot.",
+    "For green: short, then refresh in cold water.",
+    "For red: a little acid."
+  ]
+}

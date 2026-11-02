@@ -1,0 +1,78 @@
+{
+  "id": "fisch-klebt",
+  "titel": "Fish sticks to the pan",
+  "kurz": "The pan was not hot enough or the fish was moved too early. Protein bonds to the metal.",
+  "bild_im_kopf": "Like a plaster pulled off too early.",
+  "synonyme": [
+    "fish skin sticks",
+    "fish tears when turning"
+  ],
+  "ursachen": [
+    {
+      "titel": "Pan too cold",
+      "haeufigkeit": 3,
+      "prinzip": "leidenfrost",
+      "warum": "In a lukewarm pan, protein bonds to the metal before a crust forms.",
+      "fix": [
+        "Preheat the pan properly",
+        "Water droplet test"
+      ]
+    },
+    {
+      "titel": "Turned too early",
+      "haeufigkeit": 2,
+      "prinzip": "maillard-reaktion",
+      "warum": "Once the crust is ready, the fish releases by itself.",
+      "fix": [
+        "Leave it until it releases"
+      ]
+    },
+    {
+      "titel": "Wet skin",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "Water prevents the crust.",
+      "fix": [
+        "Pat the skin thoroughly dry",
+        "Scrape it with the back of a knife"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did it sizzle clearly when you put it in?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did you try to turn it in the first few minutes?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

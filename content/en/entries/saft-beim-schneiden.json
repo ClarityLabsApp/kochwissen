@@ -1,0 +1,78 @@
+{
+  "id": "saft-beim-schneiden",
+  "titel": "Lots of juice when cutting",
+  "kurz": "The meat was cut too early or was very hot inside. The juice is then thin and runs out.",
+  "bild_im_kopf": "Like a freshly shaken bottle opened straight away.",
+  "synonyme": [
+    "juice runs out",
+    "board full of juice",
+    "meat bleeds"
+  ],
+  "ursachen": [
+    {
+      "titel": "Cut straight away",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "Right after cooking the juice is thin and the fibres are under tension.",
+      "fix": [
+        "Rest steaks for 5 minutes, roasts for 10–20 minutes"
+      ]
+    },
+    {
+      "titel": "Strong heat until the end",
+      "haeufigkeit": 2,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "The bigger the temperature difference between edge and centre, the more tension and juice.",
+      "fix": [
+        "Cook more gently, e.g. reverse sear",
+        "Rest briefly at the end"
+      ]
+    },
+    {
+      "titel": "Cut along the grain",
+      "haeufigkeit": 1,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "Long, open fibres let juice run out more easily.",
+      "fix": [
+        "Cut across the grain"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "How long did you wait after cooking?",
+      "antworten": [
+        [
+          "Not at all",
+          "u0"
+        ],
+        [
+          "A few minutes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did you cook with strong heat until the end?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

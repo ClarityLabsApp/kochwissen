@@ -1,0 +1,80 @@
+{
+  "id": "schokolade-grau",
+  "titel": "Chocolate turns grey and streaky",
+  "kurz": "The fat crystals have arranged themselves wrongly (fat bloom), or moisture has drawn sugar to the surface (sugar bloom).",
+  "bild_im_kopf": "Like frost on a window: something travels to the surface and crystallises there.",
+  "synonyme": [
+    "fat bloom",
+    "sugar bloom",
+    "white chocolate film",
+    "bloom"
+  ],
+  "ursachen": [
+    {
+      "titel": "Not tempered",
+      "haeufigkeit": 3,
+      "prinzip": "fett-kristallisation",
+      "warum": "Without [[temperieren|tempering]], melted chocolate sets in unstable crystals.",
+      "fix": [
+        "Temper it",
+        "For sauces and cakes it does not matter"
+      ]
+    },
+    {
+      "titel": "Stored too warm",
+      "haeufigkeit": 2,
+      "prinzip": "fett-kristallisation",
+      "warum": "Warmth melts cocoa butter, which recrystallises on the surface.",
+      "fix": [
+        "Store cool and dry, not in the fridge"
+      ]
+    },
+    {
+      "titel": "Moisture",
+      "haeufigkeit": 1,
+      "prinzip": "zucker-kristallisation",
+      "warum": "Condensation dissolves sugar, which crystallises white as it dries.",
+      "fix": [
+        "Do not take it straight from the fridge into a warm kitchen",
+        "Wrap it well"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did you melt the chocolate yourself and let it set?",
+      "antworten": [
+        [
+          "Yes",
+          "u0"
+        ],
+        [
+          "No, a shop-bought bar",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Does the coating feel greasy or rather rough and dry?",
+      "antworten": [
+        [
+          "Greasy",
+          "u1"
+        ],
+        [
+          "Rough",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

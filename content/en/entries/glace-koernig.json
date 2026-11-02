@@ -1,0 +1,81 @@
+{
+  "id": "glace-koernig",
+  "titel": "Ice cream turns grainy or rock hard",
+  "kurz": "Large ice crystals make ice cream grainy; too little sugar makes it hard.",
+  "bild_im_kopf": "Like a gravel path instead of a sandy beach: it is the same stone, but you feel every grain underfoot.",
+  "synonyme": [
+    "hard ice cream",
+    "grainy ice cream",
+    "hard sorbet",
+    "icy ice cream"
+  ],
+  "ursachen": [
+    {
+      "titel": "Frozen too slowly, not stirred",
+      "haeufigkeit": 3,
+      "prinzip": "eiskristalle",
+      "warum": "Without stirring, a few large crystals grow.",
+      "fix": [
+        "Pre-chill the base well",
+        "Stir vigorously every 30 minutes in the freezer, or use an ice cream maker"
+      ]
+    },
+    {
+      "titel": "Too little sugar",
+      "haeufigkeit": 2,
+      "prinzip": "gefrierpunkt-senkung",
+      "warum": "Sugar keeps part of it liquid. Without it, everything freezes solid.",
+      "fix": [
+        "Do not cut the sugar much",
+        "A tablespoon of spirits or a little glucose syrup keeps it softer"
+      ]
+    },
+    {
+      "titel": "Partly thawed and refrozen",
+      "haeufigkeit": 2,
+      "prinzip": "eiskristalle",
+      "warum": "When thawing, small crystals melt; when freezing again, the large ones keep growing.",
+      "fix": [
+        "Do not leave ice cream out for long",
+        "Lay cling film directly on the surface"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Is it more grainy or more rock hard?",
+      "antworten": [
+        [
+          "Grainy, crunches",
+          "q2"
+        ],
+        [
+          "Rock hard",
+          "u1"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Has it ever partly thawed?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

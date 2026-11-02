@@ -1,0 +1,79 @@
+{
+  "id": "zwiebeln-verbrennen",
+  "titel": "Onions burn instead of browning",
+  "kurz": "The heat was too high for the time. The sugar burns on the outside before the onion is soft and evenly brown.",
+  "bild_im_kopf": "Like starting a marathon at a sprint.",
+  "synonyme": [
+    "black onions",
+    "bitter onions",
+    "caramelising onions"
+  ],
+  "ursachen": [
+    {
+      "titel": "Heat too high",
+      "haeufigkeit": 3,
+      "prinzip": "maillard-reaktion",
+      "warum": "Onions contain a lot of sugar, which burns quickly in strong heat.",
+      "fix": [
+        "Medium to low heat",
+        "For deep brown onions allow 30–45 minutes"
+      ]
+    },
+    {
+      "titel": "Too few onions in the pan",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "A few onions in a big pan dry out at once and burn at the edges.",
+      "fix": [
+        "A pan of the right size",
+        "Add a splash of water if it goes too fast"
+      ]
+    },
+    {
+      "titel": "Cut unevenly",
+      "haeufigkeit": 1,
+      "prinzip": "maillard-reaktion",
+      "warum": "Thin pieces burn while thick ones are still raw.",
+      "fix": [
+        "Cut to an even thickness"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "What heat did you cook at?",
+      "antworten": [
+        [
+          "High",
+          "u0"
+        ],
+        [
+          "Medium or low",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Were the onions spread thinly in a big pan?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

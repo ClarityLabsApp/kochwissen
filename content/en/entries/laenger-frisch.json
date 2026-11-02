@@ -1,0 +1,24 @@
+{
+  "id": "laenger-frisch",
+  "titel": "Fresh for longer",
+  "kurz": "Bread stays fresh longer when the starch firms up more slowly and the bread does not go mouldy.",
+  "bild_im_kopf": "Like a clock you can slow down: acid, water and the right storage put the brakes on.",
+  "bedeutung": "Stale means the starch has reorganised. More water in the dough, acid from sourdough, fat and proper storage slow this down.",
+  "was_passiert": "Sourdough breads and breads with a lot of water stay fresh noticeably longer. In the fridge the starch firms up faster; in the freezer it holds still.",
+  "synonyme": [
+    "keeping fresh",
+    "preventing staleness",
+    "keeping bread fresh"
+  ],
+  "faustregeln": [
+    "Bread bin or cloth rather than the fridge.",
+    "Whatever will not be eaten within two days: slice and freeze it.",
+    "Store bread cut side down."
+  ],
+  "praxis": [
+    {
+      "welt": "w-brot",
+      "text": "A scald or cooked flour paste (tangzhong) in the dough binds extra water and keeps the crumb soft for longer."
+    }
+  ]
+}

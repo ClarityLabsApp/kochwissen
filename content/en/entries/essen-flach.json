@@ -1,0 +1,80 @@
+{
+  "id": "essen-flach",
+  "titel": "Food tastes flat",
+  "kurz": "Usually acid is missing, sometimes salt, sometimes roasted flavour. Rarely is it spices.",
+  "bild_im_kopf": "Like a photo without contrast.",
+  "synonyme": [
+    "bland",
+    "boring",
+    "something is missing",
+    "tastes of nothing"
+  ],
+  "ursachen": [
+    {
+      "titel": "Missing acid",
+      "haeufigkeit": 3,
+      "prinzip": "mehr-geschmack",
+      "warum": "Without acid, dishes seem heavy and dull.",
+      "fix": [
+        "A few drops of lemon or vinegar",
+        "A splash of wine while cooking"
+      ]
+    },
+    {
+      "titel": "Missing salt",
+      "haeufigkeit": 2,
+      "prinzip": "mehr-geschmack",
+      "warum": "Salt brings out all the other aromas.",
+      "fix": [
+        "Add salt a pinch at a time and taste"
+      ]
+    },
+    {
+      "titel": "No roasted flavours",
+      "haeufigkeit": 2,
+      "prinzip": "maillard-reaktion",
+      "warum": "Only boiled instead of fried first, so depth is missing.",
+      "fix": [
+        "Fry the ingredients hard first",
+        "Deglaze the browned bits"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Does it get better if you taste a spoonful with a drop of lemon?",
+      "antworten": [
+        [
+          "Yes",
+          "u0"
+        ],
+        [
+          "No",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "And with a pinch of salt?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

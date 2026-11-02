@@ -1,0 +1,81 @@
+{
+  "id": "brot-flach",
+  "titel": "Bread spreads out flat",
+  "kurz": "The dough lacks tension: too little network, too much water or proved too long.",
+  "bild_im_kopf": "Like a tent without taut guy ropes: it won't stand.",
+  "synonyme": [
+    "flat bread",
+    "loaf spreads",
+    "no structure",
+    "flat loaf"
+  ],
+  "ursachen": [
+    {
+      "titel": "Over-proved",
+      "haeufigkeit": 3,
+      "prinzip": "hefegaerung",
+      "warum": "Proved too long: the network is overstretched and tears, and the dough slumps.",
+      "fix": [
+        "Prove for less time or cooler",
+        "Finger test: the dent should fill back slowly"
+      ]
+    },
+    {
+      "titel": "Too little tension when shaping",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "Without a taut surface, the loaf has no support.",
+      "fix": [
+        "Pull the surface taut when shaping",
+        "Prove in a banneton"
+      ]
+    },
+    {
+      "titel": "Too much water for the flour",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "Very soft doughs need a strong network and practice.",
+      "fix": [
+        "A little less water",
+        "Flour with more protein"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did the dough already go flat while proving?",
+      "antworten": [
+        [
+          "Yes",
+          "q2"
+        ],
+        [
+          "No, only in the oven",
+          "u1"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "How long and how warm did it prove?",
+      "antworten": [
+        [
+          "Long or very warm",
+          "u0"
+        ],
+        [
+          "Normal",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

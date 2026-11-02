@@ -1,0 +1,80 @@
+{
+  "id": "kekse-breit",
+  "titel": "Cookies spread",
+  "kurz": "The butter melted before the edges set.",
+  "bild_im_kopf": "Like a snowman in the sun: if it melts faster than it freezes, it goes flat.",
+  "synonyme": [
+    "biscuits spread",
+    "flat cookies",
+    "cookies too thin"
+  ],
+  "ursachen": [
+    {
+      "titel": "Dough too warm",
+      "haeufigkeit": 3,
+      "prinzip": "fettgehalt",
+      "warum": "Butter melts at about 35 °C. Warm dough spreads straight away.",
+      "fix": [
+        "Chill the dough before baking",
+        "Let the tray cool between batches"
+      ]
+    },
+    {
+      "titel": "Lots of sugar or too little flour",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "Sugar liquefies in the oven; flour gives support.",
+      "fix": [
+        "Weigh the flour",
+        "A little less sugar or a little more flour"
+      ]
+    },
+    {
+      "titel": "Oven too cool",
+      "haeufigkeit": 1,
+      "prinzip": "waermeleitung",
+      "warum": "The edges take too long to set.",
+      "fix": [
+        "Preheat the oven fully",
+        "Check the temperature with a thermometer"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did the dough come straight from the fridge?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Was the oven fully preheated?",
+      "antworten": [
+        [
+          "Not sure",
+          "u2"
+        ],
+        [
+          "Yes",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

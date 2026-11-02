@@ -1,0 +1,80 @@
+{
+  "id": "bohnen-nicht-weich",
+  "titel": "Beans and chickpeas won't soften",
+  "kurz": "Pulses stay hard when they are old, cook in hard water or get acid too early.",
+  "bild_im_kopf": "Like an old sponge that won't take up water any more.",
+  "synonyme": [
+    "hard pulses",
+    "hard chickpeas",
+    "lentils stay hard",
+    "beans stay hard"
+  ],
+  "ursachen": [
+    {
+      "titel": "Acid added too early",
+      "haeufigkeit": 3,
+      "prinzip": "kalzium-pektin",
+      "warum": "Tomato, wine or vinegar strengthen the glue between the cells.",
+      "fix": [
+        "Cook until soft first, then add acid"
+      ]
+    },
+    {
+      "titel": "Hard water",
+      "haeufigkeit": 2,
+      "prinzip": "kalzium-pektin",
+      "warum": "Calcium clamps the [[pektin|pectin]] together.",
+      "fix": [
+        "A pinch of baking soda in the soaking and cooking water",
+        "Or cook in a pressure cooker"
+      ]
+    },
+    {
+      "titel": "Old, very dry pulses",
+      "haeufigkeit": 2,
+      "prinzip": "pektin-abbau",
+      "warum": "Beans stored for a long time barely take up water any more.",
+      "fix": [
+        "Soak overnight",
+        "Buy fresh stock, cook longer"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Was tomato, wine or vinegar in the pot from the start?",
+      "antworten": [
+        [
+          "Yes",
+          "u0"
+        ],
+        [
+          "No",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Do you have hard, chalky water?",
+      "antworten": [
+        [
+          "Yes, or don't know",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

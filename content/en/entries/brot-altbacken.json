@@ -1,0 +1,80 @@
+{
+  "id": "brot-altbacken",
+  "titel": "Bread goes stale quickly",
+  "kurz": "After baking the starch reorganises and firms up. The fridge and low-water doughs speed this up.",
+  "bild_im_kopf": "Like pudding setting in the fridge: cold puts things in order, warmth loosens them again.",
+  "synonyme": [
+    "hard bread",
+    "old bread",
+    "dry bread",
+    "stale bread"
+  ],
+  "ursachen": [
+    {
+      "titel": "Stored in the fridge",
+      "haeufigkeit": 3,
+      "prinzip": "retrogradation",
+      "warum": "At fridge temperature, bread goes stale about six times faster.",
+      "fix": [
+        "Store at room temperature in a cloth",
+        "Freeze leftovers"
+      ]
+    },
+    {
+      "titel": "Dough with little water",
+      "haeufigkeit": 2,
+      "prinzip": "retrogradation",
+      "warum": "Stiff doughs have less water to keep the starch soft.",
+      "fix": [
+        "A little more water in the dough",
+        "Work in a scald or cooked flour paste"
+      ]
+    },
+    {
+      "titel": "No sourdough or fat",
+      "haeufigkeit": 1,
+      "prinzip": "milchsaeuregaerung",
+      "warum": "Acid and fat slow staling down.",
+      "fix": [
+        "Use sourdough or a little fat"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Where did you keep the bread?",
+      "antworten": [
+        [
+          "In the fridge",
+          "u0"
+        ],
+        [
+          "At room temperature",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Was the dough on the stiff side?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No, soft",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

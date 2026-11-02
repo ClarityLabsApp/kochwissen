@@ -1,0 +1,105 @@
+{
+  "id": "kuchen-sinkt-ein",
+  "titel": "Cake sinks",
+  "kurz": "The cake rose faster than it could set, or it came out of the oven too early.",
+  "bild_im_kopf": "Like a house of cards you let go of too soon: before everything is wedged in place, it collapses.",
+  "synonyme": [
+    "cake collapses",
+    "dip in the middle",
+    "sunken cake"
+  ],
+  "ursachen": [
+    {
+      "titel": "Not baked through",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "The centre was still liquid and could not hold the gas.",
+      "fix": [
+        "Skewer test in the centre",
+        "Check the oven temperature with a thermometer"
+      ]
+    },
+    {
+      "titel": "Oven opened too early",
+      "haeufigkeit": 2,
+      "prinzip": "chemische-lockerung",
+      "warum": "Cold air makes the gas shrink before the batter has set.",
+      "fix": [
+        "Open only after two thirds of the baking time",
+        "Close the door gently"
+      ]
+    },
+    {
+      "titel": "Too much raising agent",
+      "haeufigkeit": 2,
+      "prinzip": "chemische-lockerung",
+      "warum": "Too much gas makes the batter rise too fast, and then it collapses.",
+      "fix": [
+        "Weigh baking powder precisely",
+        "Do not add extra by feel"
+      ]
+    },
+    {
+      "titel": "Beaten too much",
+      "haeufigkeit": 1,
+      "prinzip": "schaumbildung",
+      "warum": "Too much air without enough structure.",
+      "fix": [
+        "After adding the flour, mix only briefly"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Is the sunken spot gummy or raw inside?",
+      "antworten": [
+        [
+          "Yes",
+          "u0"
+        ],
+        [
+          "No, baked through",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did you open the oven in the first half of the baking time?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "q3"
+        ]
+      ]
+    },
+    "q3": {
+      "frage": "Did you weigh the baking powder precisely?",
+      "antworten": [
+        [
+          "Not precisely",
+          "u2"
+        ],
+        [
+          "Yes",
+          "u3"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    },
+    "u3": {
+      "ursache": 3
+    }
+  }
+}

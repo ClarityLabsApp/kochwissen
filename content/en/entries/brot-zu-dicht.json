@@ -1,0 +1,109 @@
+{
+  "id": "brot-zu-dicht",
+  "titel": "Bread is too dense",
+  "kurz": "The network could not hold the gas, or there was too little gas.",
+  "bild_im_kopf": "Like a balloon with a hole, or one that was never properly blown up.",
+  "synonyme": [
+    "compact",
+    "no holes",
+    "heavy bread",
+    "brick",
+    "gummy bread",
+    "dense crumb"
+  ],
+  "ursachen": [
+    {
+      "titel": "Proved too briefly",
+      "haeufigkeit": 3,
+      "prinzip": "hefegaerung",
+      "warum": "The yeast did not have enough time to make gas.",
+      "fix": [
+        "Prove for longer",
+        "Finger test: the dent fills back slowly"
+      ]
+    },
+    {
+      "titel": "Network too weak",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "Kneaded or folded too little, so the gas escapes.",
+      "fix": [
+        "Knead for longer, or stretch and fold",
+        "Do the windowpane test"
+      ]
+    },
+    {
+      "titel": "Too little water",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "A stiff dough does not let the bubbles grow.",
+      "fix": [
+        "Use a little more water",
+        "More water with wholemeal or dark flour"
+      ]
+    },
+    {
+      "titel": "Oven too cold or no steam",
+      "haeufigkeit": 1,
+      "prinzip": "verdampfen",
+      "warum": "Without [[ofentrieb|oven spring]] the bread stays small and dense.",
+      "fix": [
+        "Preheat the oven well",
+        "Bake with steam for the first 20 minutes"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Had the dough grown clearly in volume before baking?",
+      "antworten": [
+        [
+          "No, barely",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Was the dough on the stiff, dry side?",
+      "antworten": [
+        [
+          "Yes",
+          "u2"
+        ],
+        [
+          "No, soft",
+          "q3"
+        ]
+      ]
+    },
+    "q3": {
+      "frage": "Did the bread still rise in the oven?",
+      "antworten": [
+        [
+          "Barely",
+          "u3"
+        ],
+        [
+          "Yes, but then collapsed",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    },
+    "u3": {
+      "ursache": 3
+    }
+  }
+}

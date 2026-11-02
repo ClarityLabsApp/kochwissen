@@ -1,0 +1,104 @@
+{
+  "id": "frittiertes-fettig",
+  "titel": "Fried food is greasy",
+  "kurz": "The oil was too cold, or the food sat in its own fat afterwards.",
+  "bild_im_kopf": "Like a house under pressure: as long as steam pushes out from inside, no oil gets in. Once the pressure stops, it pours through every crack.",
+  "synonyme": [
+    "greasy chips",
+    "oily",
+    "dripping with oil"
+  ],
+  "ursachen": [
+    {
+      "titel": "Oil too cold",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Below about 160 °C the crust forms slowly, and the food sits in the oil for a long time and soaks it up.",
+      "fix": [
+        "Fry with a thermometer",
+        "Reheat the oil between batches"
+      ]
+    },
+    {
+      "titel": "Too much at once",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "A lot of cold food cools the oil down a lot.",
+      "fix": [
+        "Fry in small batches"
+      ]
+    },
+    {
+      "titel": "Poorly drained",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "As it cools, the surface draws in clinging oil.",
+      "fix": [
+        "Shake off straight away and put on a rack",
+        "Do not stack on a plate"
+      ]
+    },
+    {
+      "titel": "Old oil",
+      "haeufigkeit": 1,
+      "prinzip": "rauchpunkt",
+      "warum": "Much-used oil has broken down, foams and clings more.",
+      "fix": [
+        "Filter the oil and replace it regularly"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did you measure the oil temperature?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes, above 160 °C",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "How full was the pot?",
+      "antworten": [
+        [
+          "Quite full",
+          "u1"
+        ],
+        [
+          "Small batch",
+          "q3"
+        ]
+      ]
+    },
+    "q3": {
+      "frage": "Where did the fried food go afterwards?",
+      "antworten": [
+        [
+          "Stacked on a plate or paper",
+          "u2"
+        ],
+        [
+          "On a rack",
+          "u3"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    },
+    "u3": {
+      "ursache": 3
+    }
+  }
+}

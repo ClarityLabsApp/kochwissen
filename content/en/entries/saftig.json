@@ -1,0 +1,38 @@
+{
+  "id": "saftig",
+  "titel": "Juicy",
+  "kurz": "Juicy means: as little water as possible has been squeezed out of the fibres during cooking.",
+  "bild_im_kopf": "Like a sponge you only press gently: it stays full as long as you do not squeeze too hard.",
+  "bedeutung": "Meat is about three quarters water. The hotter it gets inside, the more the fibres contract and squeeze out juice. What stays juicy is meat kept in the right temperature window, salted beforehand, or rich in gelatine and fat.",
+  "was_passiert": "The [[kerntemperatur|core temperature]] is the biggest lever. Add to that salt, which binds water, and resting, so less runs out when you cut it. In braises, gelatine takes over the role of the juice.",
+  "synonyme": [
+    "not dry",
+    "juicier",
+    "moist",
+    "succulent"
+  ],
+  "faustregeln": [
+    "Use a thermometer and take it off early.",
+    "Salt overnight.",
+    "Rest briefly, then cut.",
+    "Never cook lean meat beyond the target temperature."
+  ],
+  "praxis": [
+    {
+      "welt": "w-fleisch",
+      "text": "Reverse searing keeps the inside evenly in the juicy range."
+    },
+    {
+      "welt": "w-gefluegel",
+      "text": "Breast is lean and dries out quickly: salt it and cook it precisely to temperature."
+    },
+    {
+      "welt": "w-gebaeck",
+      "text": "In cakes, sugar and fat make things moist, because they bind water and slow drying out."
+    }
+  ],
+  "mythos": {
+    "behauptung": "Searing hard closes the pores.",
+    "richtig": "Meat has no pores that close. The right core temperature is what keeps it juicy."
+  }
+}

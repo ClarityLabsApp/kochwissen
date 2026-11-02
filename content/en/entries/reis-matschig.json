@@ -1,0 +1,79 @@
+{
+  "id": "reis-matschig",
+  "titel": "Rice turns mushy",
+  "kurz": "Too much water or too much loose starch, sometimes also too much stirring.",
+  "bild_im_kopf": "Like marbles that have fallen into glue: instead of rolling separately, they all stick together.",
+  "synonyme": [
+    "sticky rice",
+    "mushy rice",
+    "gluey rice",
+    "stodgy rice"
+  ],
+  "ursachen": [
+    {
+      "titel": "Too much water",
+      "haeufigkeit": 3,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "The grain swells too far and bursts open.",
+      "fix": [
+        "Measure the water, e.g. about 1.5 parts water to 1 part long-grain rice (as a guide)"
+      ]
+    },
+    {
+      "titel": "Not rinsed",
+      "haeufigkeit": 2,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Loose starch on the surface makes it sticky.",
+      "fix": [
+        "Rinse the rice until the water runs clear"
+      ]
+    },
+    {
+      "titel": "Stirred",
+      "haeufigkeit": 1,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Stirring releases starch, as with risotto.",
+      "fix": [
+        "Do not stir while covered",
+        "Rest after cooking, then fluff up"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did you measure the water?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did you rinse the rice first?",
+      "antworten": [
+        [
+          "No",
+          "u1"
+        ],
+        [
+          "Yes",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "knackig",
+  "titel": "Crisp (vegetables)",
+  "kurz": "Crisp means: the cells still stick together and are plump with water.",
+  "bild_im_kopf": "Like a fresh apple compared with an old one: the cells are plump and hold together.",
+  "bedeutung": "Bite comes from the glue between the cells and the water pressure inside them. Heat dissolves the glue; lying around for a long time lets the water escape.",
+  "was_passiert": "Short, hot cooking dissolves only a little glue. Acid in the cooking water slows the softening further; baking soda speeds it up. Limp vegetables firm up again in cold water.",
+  "synonyme": [
+    "crunchy",
+    "al dente",
+    "not mushy",
+    "crisper",
+    "tender-crisp"
+  ],
+  "faustregeln": [
+    "Cook briefly and refresh in cold water.",
+    "Put limp lettuce or carrots in cold water for 15 minutes."
+  ],
+  "praxis": [
+    {
+      "welt": "w-gemuese",
+      "text": "Stir-fried vegetables: small pieces, very hot, a few minutes."
+    }
+  ]
+}

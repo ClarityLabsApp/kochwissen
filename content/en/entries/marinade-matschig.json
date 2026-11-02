@@ -1,0 +1,55 @@
+{
+  "id": "marinade-matschig",
+  "titel": "Marinated meat turns mealy or mushy",
+  "kurz": "[[enzym|Enzymes]] from pineapple, kiwi or papaya and strong acid attack the surface. Marinated too long, it turns mealy.",
+  "bild_im_kopf": "Like a jumper washed too hot: the surface is never quite the same afterwards.",
+  "synonyme": [
+    "mushy marinade",
+    "mealy meat",
+    "pineapple marinade too long",
+    "meat falls apart in marinade"
+  ],
+  "ursachen": [
+    {
+      "titel": "Raw pineapple, kiwi or papaya in the marinade",
+      "haeufigkeit": 3,
+      "prinzip": "enzym-zartmachen",
+      "warum": "The enzymes keep cutting up protein on the surface.",
+      "fix": [
+        "Marinate for half an hour to an hour at most",
+        "Or briefly boil the fruit first"
+      ]
+    },
+    {
+      "titel": "Too much acid for too long",
+      "haeufigkeit": 2,
+      "prinzip": "saeure-denaturierung",
+      "warum": "Acid cooks the surface chemically; it turns white and crumbly.",
+      "fix": [
+        "Use acid sparingly; keep the marinade oily and spicy",
+        "Add acid only shortly before cooking"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Was there pineapple, kiwi or papaya in the marinade?",
+      "antworten": [
+        [
+          "Yes",
+          "u0"
+        ],
+        [
+          "No",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    }
+  }
+}

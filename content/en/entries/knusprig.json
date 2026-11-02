@@ -1,0 +1,63 @@
+{
+  "id": "knusprig",
+  "titel": "Crispy",
+  "kurz": "Crispy is a dry, firm surface that breaks when you bite instead of bending.",
+  "bild_im_kopf": "Like crackers and bread: almost the same ingredients, but the cracker has no water. That is why it breaks.",
+  "bedeutung": "Crispiness forms when a thin outer layer of starch or protein loses its water and hardens. If water stays in or steam comes back, the layer turns bendy and soft again.",
+  "was_passiert": "First the water on the surface has to evaporate. Only then does the temperature rise above 100 °C, and the layer dries out and browns. A rough surface has more area that can turn crisp. A thin film of fat carries heat evenly to every spot.",
+  "warum_wichtig": "Wedges, chips, rösti, poultry skin, breadcrumb coatings and bread crust: the same goal with the same levers.",
+  "synonyme": [
+    "crisp",
+    "crunchy",
+    "crispier",
+    "not soggy",
+    "not limp"
+  ],
+  "faustregeln": [
+    "Water is the enemy: pat dry, leave space, do not cover.",
+    "A rough surface beats a smooth one.",
+    "Start hot enough that the water is gone quickly.",
+    "After cooking, put it on a rack rather than stacking it: steam from below makes it soft."
+  ],
+  "typische_fehler": [
+    "Overloading the tray or pan: the pieces steam each other.",
+    "Covering freshly baked food to keep it warm."
+  ],
+  "praxis": [
+    {
+      "welt": "w-kartoffeln",
+      "text": "Soak, dry well, spread out on a hot tray. Or parboil and roughen.",
+      "aroma": [
+        "roestig",
+        "nussig"
+      ]
+    },
+    {
+      "welt": "w-gefluegel",
+      "text": "Leave the skin uncovered in the fridge overnight to dry, then roast or fry it hot.",
+      "aroma": [
+        "roestig",
+        "fleischig"
+      ]
+    },
+    {
+      "welt": "w-frittieren",
+      "text": "Fry twice: first to cook, then at high heat to dry the crust.",
+      "aroma": [
+        "roestig"
+      ]
+    },
+    {
+      "welt": "w-brot",
+      "text": "Steam first for [[ofentrieb|oven spring]], then let the steam out and finish baking dry.",
+      "aroma": [
+        "roestig",
+        "karamellig"
+      ]
+    }
+  ],
+  "mythos": {
+    "behauptung": "More oil makes things crispier.",
+    "richtig": "A thin film is enough for the heat to reach everywhere. Too much oil makes it greasy, not crispier."
+  }
+}

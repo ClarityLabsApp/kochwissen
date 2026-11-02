@@ -1,0 +1,24 @@
+{
+  "id": "gleichmaessig-gar",
+  "titel": "Evenly cooked",
+  "kurz": "Evenly cooked means: the meat has the same doneness from edge to edge, without a wide grey ring under the crust.",
+  "bild_im_kopf": "Like a house in winter: with the heating on full, it only gets hot near the stove; with gentle warmth over a long time, it gets equally warm everywhere.",
+  "bedeutung": "Heat travels slowly from the outside in. With very strong heat, the edge is long overcooked by the time the centre is finally warm. The gentler and longer the heat, the smaller the difference between outside and inside.",
+  "was_passiert": "Cooking gently first and searing hard only at the end separates the two jobs: even cooking inside and a crust outside.",
+  "synonyme": [
+    "pink throughout",
+    "no grey band",
+    "edge-to-edge pink",
+    "doneness"
+  ],
+  "faustregeln": [
+    "Cook thick pieces gently first, then sear hard and briefly.",
+    "Do not put thick meat into the pan ice cold."
+  ],
+  "praxis": [
+    {
+      "welt": "w-fleisch",
+      "text": "Reverse searing or [[sous-vide|sous vide]] for pieces from about 3 cm thick."
+    }
+  ]
+}

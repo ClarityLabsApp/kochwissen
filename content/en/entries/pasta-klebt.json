@@ -1,0 +1,78 @@
+{
+  "id": "pasta-klebt",
+  "titel": "Pasta sticks together",
+  "kurz": "Starch on the surface has glued the pasta together, usually in the first few minutes or after draining.",
+  "bild_im_kopf": "Like stamps lying damp on top of each other.",
+  "synonyme": [
+    "sticky noodles",
+    "spaghetti stuck together",
+    "pasta clumps"
+  ],
+  "ursachen": [
+    {
+      "titel": "Not stirred at the start",
+      "haeufigkeit": 3,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "In the first few minutes the surface is at its stickiest.",
+      "fix": [
+        "Stir several times in the first two minutes"
+      ]
+    },
+    {
+      "titel": "Left standing after draining",
+      "haeufigkeit": 2,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Cooling starch sticks.",
+      "fix": [
+        "Mix with sauce straight away",
+        "Add a little pasta water"
+      ]
+    },
+    {
+      "titel": "Water not at a rolling boil",
+      "haeufigkeit": 1,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Without movement the pasta lies against itself.",
+      "fix": [
+        "Bring the water to a rolling boil before the pasta goes in"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Was the pasta already sticking in the pot?",
+      "antworten": [
+        [
+          "Yes",
+          "q2"
+        ],
+        [
+          "No, only afterwards",
+          "u1"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Was the water at a rolling boil when the pasta went in?",
+      "antworten": [
+        [
+          "No",
+          "u2"
+        ],
+        [
+          "Yes",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

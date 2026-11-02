@@ -1,0 +1,77 @@
+{
+  "id": "muerbeteig-zaeh",
+  "titel": "Shortcrust turns tough",
+  "kurz": "Too much water, butter that was too warm or too much kneading have built up a [[glutenbildung|gluten network]].",
+  "bild_im_kopf": "Like tufts of wool being knitted into a jumper: too much kneading weaves together what should stay loose.",
+  "synonyme": [
+    "hard shortcrust",
+    "pastry shrinks",
+    "tough tart base"
+  ],
+  "ursachen": [
+    {
+      "titel": "Kneaded too much",
+      "haeufigkeit": 3,
+      "prinzip": "glutenbildung",
+      "warum": "Kneading links the proteins.",
+      "fix": [
+        "Just press together briefly"
+      ]
+    },
+    {
+      "titel": "Too much water",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "With more water, more network forms.",
+      "fix": [
+        "Add water a spoonful at a time, just until the pastry holds"
+      ]
+    },
+    {
+      "titel": "Butter too warm",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "Soft butter blends in instead of coating the flour in little pieces.",
+      "fix": [
+        "Cold butter, cold hands, chill the pastry in between"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did you knead the pastry properly?",
+      "antworten": [
+        [
+          "Yes",
+          "u0"
+        ],
+        [
+          "No, only briefly",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Was the butter soft or the pastry very moist?",
+      "antworten": [
+        [
+          "Butter soft",
+          "u2"
+        ],
+        [
+          "Pastry moist",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

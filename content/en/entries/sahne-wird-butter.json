@@ -1,0 +1,53 @@
+{
+  "id": "sahne-wird-butter",
+  "titel": "Cream turns to butter",
+  "kurz": "Whipped too long: the fat droplets have stuck together and separated from the liquid.",
+  "bild_im_kopf": "Like a snowball rolled too long until it has become one lump.",
+  "synonyme": [
+    "cream turns to butter",
+    "grainy whipped cream",
+    "over-whipped cream"
+  ],
+  "ursachen": [
+    {
+      "titel": "Whipped too long",
+      "haeufigkeit": 3,
+      "prinzip": "schaumbildung",
+      "warum": "The fat shells tear and the droplets clump into butter grains.",
+      "fix": [
+        "Gently fold in a few spoonfuls of liquid cream",
+        "Or whip all the way to butter and use it"
+      ]
+    },
+    {
+      "titel": "Cream too warm",
+      "haeufigkeit": 2,
+      "prinzip": "schaumbildung",
+      "warum": "Warm fat is soft and clumps together faster.",
+      "fix": [
+        "Chill the cream, bowl and whisk"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did the cream come straight from the fridge?",
+      "antworten": [
+        [
+          "No",
+          "u1"
+        ],
+        [
+          "Yes",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "teig-klebt",
+  "titel": "Dough is sticky",
+  "kurz": "Usually the network has not developed yet. More flour is rarely the best answer.",
+  "bild_im_kopf": "Like freshly mixed paste that turns into a smooth dough after a while.",
+  "synonyme": [
+    "dough too wet",
+    "sticky dough",
+    "tacky dough"
+  ],
+  "ursachen": [
+    {
+      "titel": "Network not yet developed",
+      "haeufigkeit": 3,
+      "prinzip": "glutenbildung",
+      "warum": "Freshly mixed dough sticks until the [[glutenbildung|gluten network]] has formed.",
+      "fix": [
+        "Keep kneading, or stretch and fold",
+        "Take rest breaks",
+        "Wet your hands instead of flouring them"
+      ]
+    },
+    {
+      "titel": "Too much water for the flour",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "White flour takes up less water than wholemeal or dark flour.",
+      "fix": [
+        "Next time hold back some water and add it by feel"
+      ]
+    },
+    {
+      "titel": "Rye content",
+      "haeufigkeit": 1,
+      "prinzip": "milchsaeuregaerung",
+      "warum": "Rye doughs always stick; they form hardly any gluten.",
+      "fix": [
+        "Work with wet hands or a dough scraper",
+        "Do not knead, only mix"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Is it still very sticky after 10 minutes of kneading or a few rounds of folding?",
+      "antworten": [
+        [
+          "No, it gets better",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Is there rye flour in the dough?",
+      "antworten": [
+        [
+          "Yes",
+          "u2"
+        ],
+        [
+          "No",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

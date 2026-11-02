@@ -1,0 +1,81 @@
+{
+  "id": "mayo-gerinnt",
+  "titel": "Mayonnaise splits",
+  "kurz": "The oil droplets have run together. Almost always the oil went in too fast or was whisked too weakly.",
+  "bild_im_kopf": "Like a game of Tetris where the blocks fall too fast: at some point nothing fits.",
+  "synonyme": [
+    "runny mayo",
+    "mayo splits",
+    "mayonnaise won't thicken",
+    "broken mayonnaise"
+  ],
+  "ursachen": [
+    {
+      "titel": "Oil added too fast",
+      "haeufigkeit": 3,
+      "prinzip": "emulsion",
+      "warum": "The oil cannot be broken into enough small droplets and coated.",
+      "fix": [
+        "Put a fresh yolk in a clean bowl",
+        "Whisk in the split mixture drop by drop"
+      ]
+    },
+    {
+      "titel": "Whisked too weakly",
+      "haeufigkeit": 2,
+      "prinzip": "emulsion",
+      "warum": "The droplets stay too big and run together.",
+      "fix": [
+        "Whisk harder",
+        "Use a stick blender or food processor"
+      ]
+    },
+    {
+      "titel": "Too much oil for one yolk",
+      "haeufigkeit": 1,
+      "prinzip": "emulsion",
+      "warum": "At some point there is too little water to take up more droplets. The mayo turns stiff and splits.",
+      "fix": [
+        "Stir in a few drops of water or lemon juice",
+        "Only then add more oil"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "How did you add the oil?",
+      "antworten": [
+        [
+          "Fairly quickly",
+          "u0"
+        ],
+        [
+          "Drop by drop, then in a stream",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "With a whisk by hand?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No, blender",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

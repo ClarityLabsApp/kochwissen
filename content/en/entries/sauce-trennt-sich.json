@@ -1,0 +1,81 @@
+{
+  "id": "sauce-trennt-sich",
+  "titel": "Sauce splits",
+  "kurz": "The fat droplets run back together. Usually it was too hot or the fat went in too fast.",
+  "bild_im_kopf": "Like a party where everyone retreats to their old cliques: fat to fat, water to water.",
+  "synonyme": [
+    "pools of fat",
+    "sauce breaks",
+    "butter separates",
+    "split sauce"
+  ],
+  "ursachen": [
+    {
+      "titel": "Got too hot",
+      "haeufigkeit": 3,
+      "prinzip": "emulsion",
+      "warum": "Heat makes butter [[emulsion|emulsions]] melt and egg yolk curdle. The fat seeps out.",
+      "fix": [
+        "Take off the heat",
+        "Vigorously stir in a spoonful of cold water or cream"
+      ]
+    },
+    {
+      "titel": "Fat added too fast",
+      "haeufigkeit": 3,
+      "prinzip": "emulsion",
+      "warum": "The [[emulgator|emulsifier]] cannot keep up with coating the droplets.",
+      "fix": [
+        "Start again in a new bowl with a little water or egg yolk",
+        "Work in the split sauce drop by drop"
+      ]
+    },
+    {
+      "titel": "Too little go-between",
+      "haeufigkeit": 2,
+      "prinzip": "emulsion",
+      "warum": "Too much fat for too little egg yolk, mustard or starch.",
+      "fix": [
+        "Add mustard or a little pasta water",
+        "Use less fat"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Was the sauce on the heat when it split?",
+      "antworten": [
+        [
+          "Yes, it was hot",
+          "u0"
+        ],
+        [
+          "No, while whisking",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did you add the fat quickly?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No, slowly",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

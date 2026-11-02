@@ -1,0 +1,79 @@
+{
+  "id": "fisch-zerfaellt",
+  "titel": "Fish falls apart",
+  "kurz": "Too much heat: the little connective tissue has dissolved and the fibres have dried out.",
+  "bild_im_kopf": "Like a book whose binding has come loose.",
+  "synonyme": [
+    "crumbly fish",
+    "dry fish",
+    "fish falls apart",
+    "flaky fish"
+  ],
+  "ursachen": [
+    {
+      "titel": "Overcooked",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "Fish is done at low temperatures.",
+      "fix": [
+        "Take it off the heat earlier",
+        "A slightly translucent centre is often just right"
+      ]
+    },
+    {
+      "titel": "Boiled rapidly",
+      "haeufigkeit": 2,
+      "prinzip": "pochieren-proz",
+      "warum": "Moving water tears the delicate flakes apart.",
+      "fix": [
+        "Just poach it, do not boil"
+      ]
+    },
+    {
+      "titel": "Turned too often",
+      "haeufigkeit": 1,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "Cooked fish breaks easily.",
+      "fix": [
+        "Turn only once, with a wide fish slice"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Was the fish fried or cooked in liquid?",
+      "antworten": [
+        [
+          "Fried",
+          "q2"
+        ],
+        [
+          "In liquid",
+          "u1"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did you turn it several times?",
+      "antworten": [
+        [
+          "Yes",
+          "u2"
+        ],
+        [
+          "No",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "boden-durchgeweicht",
+  "titel": "Soggy bottom",
+  "kurz": "The wet filling soaked the raw pastry before it had a chance to bake.",
+  "bild_im_kopf": "Like a paper plate under wet soup.",
+  "synonyme": [
+    "wet tart base",
+    "soggy pastry",
+    "soggy bottom"
+  ],
+  "ursachen": [
+    {
+      "titel": "Not blind-baked",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Raw pastry under a moist filling never dries out properly.",
+      "fix": [
+        "Blind-bake the base"
+      ]
+    },
+    {
+      "titel": "Too little heat from below",
+      "haeufigkeit": 2,
+      "prinzip": "waermeleitung",
+      "warum": "In the middle of the oven, the base gets too little heat.",
+      "fix": [
+        "Lowest shelf",
+        "Bake on a preheated tray"
+      ]
+    },
+    {
+      "titel": "Very runny filling",
+      "haeufigkeit": 1,
+      "prinzip": "verdampfen",
+      "warum": "A lot of juice softens any base.",
+      "fix": [
+        "Bind fruit with a little starch or ground nuts",
+        "Brush the base with egg and bake it briefly"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did you blind-bake the base?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Which shelf did you bake on?",
+      "antworten": [
+        [
+          "Middle or top",
+          "u1"
+        ],
+        [
+          "Bottom",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

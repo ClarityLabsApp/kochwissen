@@ -1,0 +1,55 @@
+{
+  "id": "zu-scharf",
+  "titel": "The food is too spicy",
+  "kurz": "Too much chilli cannot be cooked out, but it can be softened: with dairy, fat, acid and more bulk.",
+  "bild_im_kopf": "Like an instrument that is too loud in an orchestra: you cannot make it quieter, but you can make the others louder.",
+  "synonyme": [
+    "too spicy",
+    "too much chilli",
+    "curry too hot",
+    "rescuing a spicy dish"
+  ],
+  "ursachen": [
+    {
+      "titel": "Too much chilli, or chillies with their membranes",
+      "haeufigkeit": 3,
+      "prinzip": "schaerfe",
+      "warum": "[[capsaicin|Capsaicin]] does not dissolve in water, so diluting with water barely helps.",
+      "fix": [
+        "Stir in yoghurt, cream, coconut milk or milk",
+        "Add more of the other ingredients",
+        "A little sugar and acid balance it out"
+      ]
+    },
+    {
+      "titel": "Chilli steeped in oil too long",
+      "haeufigkeit": 1,
+      "prinzip": "aroma-loeslichkeit",
+      "warum": "A lot of capsaicin dissolves in fat.",
+      "fix": [
+        "Fry chilli more briefly or add it later"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did you fry the chilli in oil for a long time at the start?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    }
+  }
+}

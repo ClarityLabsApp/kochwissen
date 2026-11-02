@@ -1,0 +1,79 @@
+{
+  "id": "kuchen-trocken",
+  "titel": "Cake is dry",
+  "kurz": "Usually baked too long. Sometimes it lacks sugar or fat, which hold on to moisture.",
+  "bild_im_kopf": "Like a loaf left out uncovered overnight: the moisture is gone, leaving a crumbly shell.",
+  "synonyme": [
+    "crumbly cake",
+    "dry cake",
+    "cake too dry"
+  ],
+  "ursachen": [
+    {
+      "titel": "Baked too long or too hot",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Every extra minute evaporates water from the crumb.",
+      "fix": [
+        "Check earlier",
+        "The skewer may have moist crumbs, but no wet batter"
+      ]
+    },
+    {
+      "titel": "Too much flour",
+      "haeufigkeit": 2,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Measured cups often hold much more flour than you think.",
+      "fix": [
+        "Weigh the flour"
+      ]
+    },
+    {
+      "titel": "Sugar or fat reduced",
+      "haeufigkeit": 1,
+      "prinzip": "saftig",
+      "warum": "Both hold water in the cake.",
+      "fix": [
+        "At most a quarter less sugar",
+        "A little yoghurt or oil in the batter"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did you stick exactly to the baking time?",
+      "antworten": [
+        [
+          "Rather longer",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did you weigh the flour?",
+      "antworten": [
+        [
+          "No, measured by volume",
+          "u1"
+        ],
+        [
+          "Yes",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

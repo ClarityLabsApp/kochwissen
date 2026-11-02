@@ -1,0 +1,79 @@
+{
+  "id": "ruehrei-waessrig",
+  "titel": "Scrambled eggs turn watery",
+  "kurz": "Too much heat: the proteins contract and squeeze out water. The scrambled egg is then dry and watery at the same time.",
+  "bild_im_kopf": "Like an orange in a press: the harder you squeeze, the more juice ends up next to the egg on the plate.",
+  "synonyme": [
+    "dry scrambled eggs",
+    "rubbery scrambled eggs",
+    "water in scrambled eggs"
+  ],
+  "ursachen": [
+    {
+      "titel": "Cooked too hot",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "Above about 80 °C the proteins contract strongly and squeeze out liquid.",
+      "fix": [
+        "Low heat, stir constantly",
+        "Take off the heat while it still looks too wet"
+      ]
+    },
+    {
+      "titel": "Too long in the pan",
+      "haeufigkeit": 2,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "The egg keeps cooking in the hot pan.",
+      "fix": [
+        "Put it on the plate straight away"
+      ]
+    },
+    {
+      "titel": "Watery ingredients",
+      "haeufigkeit": 1,
+      "prinzip": "osmose",
+      "warum": "Tomatoes, mushrooms or salt added early draw out water.",
+      "fix": [
+        "Fry vegetables first",
+        "Salt just before the end"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "What heat did you cook at?",
+      "antworten": [
+        [
+          "Medium to high",
+          "u0"
+        ],
+        [
+          "Low",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Were there vegetables such as tomatoes or mushrooms in it?",
+      "antworten": [
+        [
+          "Yes",
+          "u2"
+        ],
+        [
+          "No",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

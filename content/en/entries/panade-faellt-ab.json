@@ -1,0 +1,79 @@
+{
+  "id": "panade-faellt-ab",
+  "titel": "Breadcrumb coating falls off",
+  "kurz": "Moisture or too little grip between the layers. Sometimes too little fat as well.",
+  "bild_im_kopf": "Like wallpaper on a damp wall.",
+  "synonyme": [
+    "coating comes off",
+    "schnitzel coating falls off",
+    "breading falls off"
+  ],
+  "ursachen": [
+    {
+      "titel": "Wet meat",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Steam between meat and coating pushes it off.",
+      "fix": [
+        "Pat dry",
+        "Coat thinly in flour and tap off the excess"
+      ]
+    },
+    {
+      "titel": "Too little fat, too cool",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "The coating does not set fast enough and soaks up fat.",
+      "fix": [
+        "Plenty of fat, well heated",
+        "Let the schnitzel float"
+      ]
+    },
+    {
+      "titel": "Turned too often or pierced",
+      "haeufigkeit": 1,
+      "prinzip": "verdampfen",
+      "warum": "The crust tears before it has set.",
+      "fix": [
+        "Use tongs or a slice, and turn once"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did you pat the meat dry before flouring?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did the schnitzel float in the fat?",
+      "antworten": [
+        [
+          "No, little fat",
+          "u1"
+        ],
+        [
+          "Yes",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

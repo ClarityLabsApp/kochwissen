@@ -1,0 +1,79 @@
+{
+  "id": "teig-schnurrt",
+  "titel": "Dough springs back",
+  "kurz": "The [[glutenbildung|gluten network]] is tense. It needs rest, not more force.",
+  "bild_im_kopf": "Like a rubber band you have just stretched: leave it for a moment and it relaxes again.",
+  "synonyme": [
+    "dough shrinks back",
+    "pizza dough springs back",
+    "dough won't roll out"
+  ],
+  "ursachen": [
+    {
+      "titel": "Right after kneading or shaping",
+      "haeufigkeit": 3,
+      "prinzip": "glutenbildung",
+      "warum": "Freshly kneaded gluten strands are tense and pull back.",
+      "fix": [
+        "Rest covered for 10–20 minutes",
+        "Then roll or stretch again"
+      ]
+    },
+    {
+      "titel": "Dough too cold",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "Cold dough is stiffer and less stretchy.",
+      "fix": [
+        "Take it out of the fridge and let it warm up a little"
+      ]
+    },
+    {
+      "titel": "Flour with a lot of protein",
+      "haeufigkeit": 1,
+      "prinzip": "glutenbildung",
+      "warum": "Very strong flour gives a particularly elastic network.",
+      "fix": [
+        "Longer rest",
+        "A little more water"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Have you only just kneaded or shaped it?",
+      "antworten": [
+        [
+          "Yes",
+          "u0"
+        ],
+        [
+          "No, it has rested",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did the dough come straight from the fridge?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

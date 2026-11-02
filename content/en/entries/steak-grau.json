@@ -1,0 +1,137 @@
+{
+  "id": "steak-grau",
+  "titel": "Steak turns grey instead of brown",
+  "kurz": "The meat stews in its own juice instead of frying. The surface never gets hot enough for a crust.",
+  "bild_im_kopf": "Like an overfilled fryer basket: the oil cools down and the chips turn limp instead of crisp. The pan only has as much heat as it has stored.",
+  "synonyme": [
+    "no crust",
+    "meat stews in its juice",
+    "steak not browning",
+    "grey steak"
+  ],
+  "ursachen": [
+    {
+      "titel": "Pan not hot enough",
+      "haeufigkeit": 3,
+      "prinzip": "maillard-reaktion",
+      "warum": "Without a sizzle, the water evaporates too slowly. The surface never reaches the 140 °C at which browning starts.",
+      "fix": [
+        "Preheat the pan for 3–5 minutes",
+        "Test: a drop of water dances as a little ball",
+        "Only then add oil and meat"
+      ]
+    },
+    {
+      "titel": "Pan overcrowded",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Each piece draws heat from the pan. It cools so much that the juice that runs out stays put and the meat stews in it.",
+      "fix": [
+        "Fry in batches",
+        "Leave space between the pieces",
+        "Keep finished pieces warm in the oven at 80 °C"
+      ]
+    },
+    {
+      "titel": "Meat was wet",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "Water on the surface has to evaporate first. As long as it is there, the surface stays stuck at 100 °C.",
+      "fix": [
+        "Pat thoroughly dry",
+        "Wipe off marinade",
+        "Ideal: leave uncovered in the fridge overnight to dry"
+      ]
+    },
+    {
+      "titel": "Moved too early",
+      "haeufigkeit": 1,
+      "prinzip": "maillard-reaktion",
+      "warum": "At the start the crust needs undisturbed contact. Push and turn before it releases and you tear it off and cool the pan.",
+      "fix": [
+        "Leave it until it releases by itself",
+        "Only then turn"
+      ]
+    },
+    {
+      "titel": "The pan stores too little heat",
+      "haeufigkeit": 1,
+      "prinzip": "waermeleitung",
+      "warum": "A thin base cools down a lot when the meat goes in and heats back up only slowly.",
+      "fix": [
+        "Use cast iron or a thick steel base",
+        "Preheat longer",
+        "Fewer pieces at once"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did it sizzle loudly when the meat went into the pan?",
+      "antworten": [
+        [
+          "Yes",
+          "q2"
+        ],
+        [
+          "No, fairly quiet",
+          "u0"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Was there liquid in the pan after a minute?",
+      "antworten": [
+        [
+          "Yes",
+          "q3"
+        ],
+        [
+          "No",
+          "q4"
+        ]
+      ]
+    },
+    "q3": {
+      "frage": "How full was the pan?",
+      "antworten": [
+        [
+          "Quite full",
+          "u1"
+        ],
+        [
+          "Only one or two pieces",
+          "u2"
+        ]
+      ]
+    },
+    "q4": {
+      "frage": "Did you turn the meat early or push it around?",
+      "antworten": [
+        [
+          "Yes",
+          "u3"
+        ],
+        [
+          "No",
+          "u4"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    },
+    "u3": {
+      "ursache": 3
+    },
+    "u4": {
+      "ursache": 4
+    }
+  }
+}

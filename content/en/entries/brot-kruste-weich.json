@@ -1,0 +1,80 @@
+{
+  "id": "brot-kruste-weich",
+  "titel": "Bread crust goes soft",
+  "kurz": "The crust could not dry out enough, or moisture from the inside softened it afterwards.",
+  "bild_im_kopf": "Like a biscuit lying next to a cup of tea: the moisture finds it.",
+  "synonyme": [
+    "crust not crisp",
+    "leathery crust",
+    "crust goes soft",
+    "soft crust"
+  ],
+  "ursachen": [
+    {
+      "titel": "Steam in the oven too long",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Without a dry phase at the end, the crust does not dry out.",
+      "fix": [
+        "Let the steam out after 20 minutes",
+        "Open the oven door briefly at the end"
+      ]
+    },
+    {
+      "titel": "Baked too short or too pale",
+      "haeufigkeit": 2,
+      "prinzip": "maillard-reaktion",
+      "warum": "A pale crust still holds a lot of water.",
+      "fix": [
+        "Bake longer, until the crust is deep golden brown"
+      ]
+    },
+    {
+      "titel": "Cooled or stored the wrong way",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "Steam from the crumb condenses in the crust, and in plastic it stays trapped.",
+      "fix": [
+        "Cool on a rack",
+        "Store in paper or a cloth"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Was the crust crisp straight after baking?",
+      "antworten": [
+        [
+          "Yes, it only went soft later",
+          "u2"
+        ],
+        [
+          "No",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "How dark was the crust?",
+      "antworten": [
+        [
+          "Fairly pale",
+          "u1"
+        ],
+        [
+          "Golden brown",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

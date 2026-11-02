@@ -1,0 +1,81 @@
+{
+  "id": "gemuese-matschig",
+  "titel": "Vegetables turn mushy",
+  "kurz": "The glue between the cells has dissolved too far. Usually they cooked too long, sometimes the water was alkaline.",
+  "bild_im_kopf": "Like a wall whose mortar has been washed away.",
+  "synonyme": [
+    "overcooked",
+    "vegetables too soft",
+    "mushy",
+    "soggy vegetables"
+  ],
+  "ursachen": [
+    {
+      "titel": "Cooked too long",
+      "haeufigkeit": 3,
+      "prinzip": "pektin-abbau",
+      "warum": "Every minute dissolves more glue.",
+      "fix": [
+        "Check earlier",
+        "Smaller pieces of even size"
+      ]
+    },
+    {
+      "titel": "Carry-over cooking",
+      "haeufigkeit": 2,
+      "prinzip": "pektin-abbau",
+      "warum": "Hot vegetables keep cooking after draining.",
+      "fix": [
+        "Refresh in iced water",
+        "Spread out on a tray instead of leaving them in the pot"
+      ]
+    },
+    {
+      "titel": "Alkaline water or baking soda",
+      "haeufigkeit": 1,
+      "prinzip": "pektin-abbau",
+      "warum": "In alkaline conditions the glue breaks down especially fast.",
+      "fix": [
+        "No baking soda in the cooking water",
+        "A splash of acid keeps them firmer"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Were the vegetables still firm right after cooking?",
+      "antworten": [
+        [
+          "Yes, they softened later",
+          "u1"
+        ],
+        [
+          "No",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Was there baking soda in the water?",
+      "antworten": [
+        [
+          "Yes",
+          "u2"
+        ],
+        [
+          "No",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

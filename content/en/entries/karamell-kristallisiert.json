@@ -1,0 +1,80 @@
+{
+  "id": "karamell-kristallisiert",
+  "titel": "Caramel turns grainy",
+  "kurz": "A sugar crystal set off a chain reaction. The syrup turns to sand.",
+  "bild_im_kopf": "Like a domino knocked over.",
+  "synonyme": [
+    "sandy caramel",
+    "sugar crystallises",
+    "crumbly caramel",
+    "seized caramel"
+  ],
+  "ursachen": [
+    {
+      "titel": "Stirred",
+      "haeufigkeit": 3,
+      "prinzip": "zucker-kristallisation",
+      "warum": "Stirring sets crystals in motion and creates starting points.",
+      "fix": [
+        "Only swirl",
+        "Dissolve again with a little water and cook more carefully"
+      ]
+    },
+    {
+      "titel": "Crystals on the side of the pan",
+      "haeufigkeit": 2,
+      "prinzip": "zucker-kristallisation",
+      "warum": "An undissolved grain falls back in and starts crystallisation.",
+      "fix": [
+        "Wash down the sides with a wet brush",
+        "Put the lid on briefly so steam dissolves the crystals"
+      ]
+    },
+    {
+      "titel": "No interfering sugar",
+      "haeufigkeit": 1,
+      "prinzip": "zucker-kristallisation",
+      "warum": "Pure sugar crystallises more easily.",
+      "fix": [
+        "A spoonful of glucose syrup or a few drops of lemon juice"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did you stir while the sugar was boiling?",
+      "antworten": [
+        [
+          "Yes",
+          "u0"
+        ],
+        [
+          "No",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Were there sugar crystals on the side of the pan?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

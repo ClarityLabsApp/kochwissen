@@ -1,0 +1,132 @@
+{
+  "id": "fleisch-zaeh",
+  "titel": "Meat is tough",
+  "kurz": "Either the fibres contracted too much, or the connective tissue did not have enough time to dissolve.",
+  "bild_im_kopf": "Two different knots: one pulled too tight, one not yet undone. Both feel the same in the mouth.",
+  "synonyme": [
+    "tough",
+    "chewy",
+    "stringy",
+    "tough goulash"
+  ],
+  "ursachen": [
+    {
+      "titel": "Braising cut cooked too briefly",
+      "haeufigkeit": 3,
+      "prinzip": "kollagen-gelatine",
+      "warum": "Connective tissue needs hours to turn into gelatine. After an hour it is often tougher than at the start.",
+      "fix": [
+        "Keep braising until a fork slides in without resistance",
+        "Check by feel, not by the clock"
+      ]
+    },
+    {
+      "titel": "Wrong cut for the method",
+      "haeufigkeit": 2,
+      "prinzip": "kollagen-gelatine",
+      "warum": "Cuts with lots of connective tissue are always tough when fried quickly.",
+      "fix": [
+        "Braise shoulder, shin, cheek",
+        "For quick frying choose fillet, entrecôte or rump"
+      ]
+    },
+    {
+      "titel": "Quick-cooked meat overcooked",
+      "haeufigkeit": 2,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "Above about 66 °C the fibres contract strongly and turn firm.",
+      "fix": [
+        "Fry with a thermometer",
+        "Take it off earlier"
+      ]
+    },
+    {
+      "titel": "Braising liquid boiled hard",
+      "haeufigkeit": 1,
+      "prinzip": "kollagen-gelatine",
+      "warum": "Too much heat squeezes out the fibres before the connective tissue softens. The meat turns dry and stringy.",
+      "fix": [
+        "Let it simmer gently only",
+        "Braise in the oven at 140–150 °C"
+      ]
+    },
+    {
+      "titel": "Cut along the grain",
+      "haeufigkeit": 1,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "Long fibres in the mouth feel tough, even when the meat is cooked right.",
+      "fix": [
+        "Slice across the grain"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Was it braised or fried quickly?",
+      "antworten": [
+        [
+          "Braised",
+          "q2"
+        ],
+        [
+          "Fried quickly",
+          "q3"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did the liquid boil hard?",
+      "antworten": [
+        [
+          "Yes",
+          "u3"
+        ],
+        [
+          "No, gently",
+          "u0"
+        ]
+      ]
+    },
+    "q3": {
+      "frage": "Which cut was it?",
+      "antworten": [
+        [
+          "Shoulder, shin, neck or similar",
+          "u1"
+        ],
+        [
+          "Fillet, entrecôte, rump",
+          "q4"
+        ]
+      ]
+    },
+    "q4": {
+      "frage": "Was it still pink inside?",
+      "antworten": [
+        [
+          "No, cooked through",
+          "u2"
+        ],
+        [
+          "Yes",
+          "u4"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    },
+    "u3": {
+      "ursache": 3
+    },
+    "u4": {
+      "ursache": 4
+    }
+  }
+}

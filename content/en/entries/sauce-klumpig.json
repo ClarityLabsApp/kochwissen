@@ -1,0 +1,80 @@
+{
+  "id": "sauce-klumpig",
+  "titel": "Sauce is lumpy or floury",
+  "kurz": "The starch [[staerkeverkleisterung|gelatinised]] on the surface before it could spread out. It tastes floury when the flour has not cooked long enough.",
+  "bild_im_kopf": "Like paste that hardens outside and traps dry powder inside.",
+  "synonyme": [
+    "lumps",
+    "flour lumps",
+    "lumpy béchamel",
+    "floury taste"
+  ],
+  "ursachen": [
+    {
+      "titel": "Starch straight into hot liquid",
+      "haeufigkeit": 3,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "The outside swells into a shell at once, and dry powder stays inside.",
+      "fix": [
+        "Always mix starch with cold water first",
+        "Pass through a sieve or blend"
+      ]
+    },
+    {
+      "titel": "Liquid added to the roux too fast",
+      "haeufigkeit": 2,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "A lot of liquid at once does not dissolve the roux evenly.",
+      "fix": [
+        "Stir in the liquid bit by bit",
+        "A whisk instead of a spoon"
+      ]
+    },
+    {
+      "titel": "Flour cooked too briefly",
+      "haeufigkeit": 2,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Flour needs a few minutes of simmering until the raw taste is gone.",
+      "fix": [
+        "Simmer gently for another 5–10 minutes, stirring"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Are there visible lumps in the sauce?",
+      "antworten": [
+        [
+          "Yes",
+          "q2"
+        ],
+        [
+          "No, but it tastes floury",
+          "u2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did you use a roux?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No, stirred starch straight in",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

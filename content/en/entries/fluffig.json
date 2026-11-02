@@ -1,0 +1,29 @@
+{
+  "id": "fluffig",
+  "titel": "Fluffy",
+  "kurz": "Fluffy means: lots of small gas bubbles that are held in place in the oven, and a batter tender enough not to be tough.",
+  "bild_im_kopf": "Like a sponge with a thousand little holes instead of a brick.",
+  "bedeutung": "Gas comes from baking powder, yeast, whisked egg whites or steam. It turns fluffy when the gas forms at the right moment and the batter sets before it escapes. Little [[glutenbildung|gluten network]] keeps the result tender.",
+  "was_passiert": "Too much mixing makes it tough and drives the air back out. Too little raising agent or standing too long leaves the batter flat.",
+  "synonyme": [
+    "light",
+    "airy",
+    "fluffier",
+    "fluffy pancakes"
+  ],
+  "faustregeln": [
+    "Combine dry and wet ingredients only briefly.",
+    "Fold in whisked egg whites gently.",
+    "Do not leave a batter with baking powder standing for long."
+  ],
+  "praxis": [
+    {
+      "welt": "w-gebaeck",
+      "text": "Pancakes: lumps in the batter are fine. Stirred smooth, they turn rubbery."
+    },
+    {
+      "welt": "w-eier",
+      "text": "Soufflés and soufflé omelettes live entirely on whisked egg whites."
+    }
+  ]
+}

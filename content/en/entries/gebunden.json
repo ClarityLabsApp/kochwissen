@@ -1,0 +1,28 @@
+{
+  "id": "gebunden",
+  "titel": "Thickened (sauces)",
+  "kurz": "A thickened sauce is thick enough to cling to a spoon. There are three ways to get there: starch, [[emulsion|emulsion]] or reduction.",
+  "bild_im_kopf": "Three paths up the same mountain: paste (starch), droplets (emulsion) or evaporation (reduction).",
+  "bedeutung": "A sauce turns thick when something gets in the way of the liquid. That can be swollen starch granules, densely packed fat droplets, or less water with more dissolved substances such as gelatine.",
+  "was_passiert": "Starch thickens quickly and reliably, but too much easily turns gluey. Emulsions thicken in a velvety, rich way, but are delicate. Reduction thickens most finely, but takes time and a stock with gelatine.",
+  "synonyme": [
+    "thicker",
+    "thickening a sauce",
+    "binding",
+    "nappe"
+  ],
+  "faustregeln": [
+    "Spoon test: the sauce should coat the back of the spoon, and a line drawn with a finger should stay visible.",
+    "Better to thicken bit by bit than too much at once."
+  ],
+  "praxis": [
+    {
+      "welt": "w-saucen",
+      "text": "Jus: reduce, and help it at the end with a little starch or cold butter."
+    },
+    {
+      "welt": "w-pasta",
+      "text": "Pasta sauce: toss pasta water and fat vigorously in the pan."
+    }
+  ]
+}

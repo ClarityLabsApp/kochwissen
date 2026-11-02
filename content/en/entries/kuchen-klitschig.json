@@ -1,0 +1,80 @@
+{
+  "id": "kuchen-klitschig",
+  "titel": "Cake is gummy",
+  "kurz": "Part of the batter has not baked through or has collapsed again. The starch has not [[staerkeverkleisterung|gelatinised]] properly.",
+  "bild_im_kopf": "Like pudding in a cake coat.",
+  "synonyme": [
+    "gummy",
+    "underbaked",
+    "sticky layer",
+    "raw cake",
+    "sad streak"
+  ],
+  "ursachen": [
+    {
+      "titel": "Baked too briefly",
+      "haeufigkeit": 3,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "The centre does not reach the temperature at which starch sets.",
+      "fix": [
+        "Bake longer; cover with foil if the top gets too dark"
+      ]
+    },
+    {
+      "titel": "Too much liquid or fruit",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "Juicy fruit releases water and makes the batter underneath wet.",
+      "fix": [
+        "Pat fruit dry and toss it in a little flour",
+        "Bake a little longer"
+      ]
+    },
+    {
+      "titel": "Oven too hot",
+      "haeufigkeit": 1,
+      "prinzip": "waermeleitung",
+      "warum": "Done outside, still raw inside.",
+      "fix": [
+        "10–20 °C lower, and longer"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Was there fruit or a lot of liquid in the batter?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Was the top already dark when you took it out?",
+      "antworten": [
+        [
+          "Yes",
+          "u2"
+        ],
+        [
+          "No",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

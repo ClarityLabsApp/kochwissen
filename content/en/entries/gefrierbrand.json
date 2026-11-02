@@ -1,0 +1,55 @@
+{
+  "id": "gefrierbrand",
+  "titel": "Freezer burn: grey, dry patches",
+  "kurz": "Freezer burn is dried-out patches: ice has evaporated straight out of the food.",
+  "bild_im_kopf": "Like washing drying outside while frozen in winter: the ice disappears without melting.",
+  "synonyme": [
+    "freezer burn",
+    "frozen meat turns grey",
+    "ice in the bag",
+    "dry frozen patches"
+  ],
+  "ursachen": [
+    {
+      "titel": "Air in the bag",
+      "haeufigkeit": 3,
+      "prinzip": "eiskristalle",
+      "warum": "Ice evaporates into the air and settles as frost in the bag ([[sublimation|sublimation]]).",
+      "fix": [
+        "Press the air out of the bag or vacuum-seal it",
+        "Seal well"
+      ]
+    },
+    {
+      "titel": "Stored too long or temperature swings",
+      "haeufigkeit": 2,
+      "prinzip": "eiskristalle",
+      "warum": "Every swing drives out more moisture.",
+      "fix": [
+        "Note the date, use within a few months",
+        "Open the freezer rarely"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Was there a lot of air in the bag or container?",
+      "antworten": [
+        [
+          "Yes",
+          "u0"
+        ],
+        [
+          "No",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    }
+  }
+}

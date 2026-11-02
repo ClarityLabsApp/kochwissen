@@ -1,0 +1,80 @@
+{
+  "id": "eischnee-nicht-steif",
+  "titel": "Egg whites won't whip stiff",
+  "kurz": "Usually fat is involved: a trace of yolk or a bowl that is not quite clean.",
+  "bild_im_kopf": "Like soap bubbles with oily fingers: they burst straight away.",
+  "synonyme": [
+    "egg whites won't whip",
+    "runny egg whites",
+    "egg whites collapse",
+    "meringue won't stiffen"
+  ],
+  "ursachen": [
+    {
+      "titel": "Fat or yolk in the whites",
+      "haeufigkeit": 3,
+      "prinzip": "schaumbildung",
+      "warum": "Even traces of fat stop a stable skin from forming around the air bubbles.",
+      "fix": [
+        "Separate the eggs carefully",
+        "Wipe the bowl and whisk with a little lemon"
+      ]
+    },
+    {
+      "titel": "Sugar too early",
+      "haeufigkeit": 2,
+      "prinzip": "schaumbildung",
+      "warum": "Sugar at the start makes whipping much slower.",
+      "fix": [
+        "Sprinkle in the sugar only once soft peaks have formed"
+      ]
+    },
+    {
+      "titel": "Whipped too long",
+      "haeufigkeit": 1,
+      "prinzip": "schaumbildung",
+      "warum": "Over-whipped whites turn grainy, weep water and collapse.",
+      "fix": [
+        "Stop when stiff and glossy",
+        "Whisking in a fresh egg white can rescue it"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Does the foam not firm up at all?",
+      "antworten": [
+        [
+          "Yes, it stays runny",
+          "q2"
+        ],
+        [
+          "It was stiff, then turned grainy",
+          "u2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did you add the sugar right at the start?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

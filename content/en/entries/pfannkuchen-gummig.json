@@ -1,0 +1,77 @@
+{
+  "id": "pfannkuchen-gummig",
+  "titel": "Pancakes turn rubbery",
+  "kurz": "The batter was mixed too long and not rested. The [[glutenbildung|gluten network]] is too strong.",
+  "bild_im_kopf": "Like an eraser instead of a pillow.",
+  "synonyme": [
+    "tough pancakes",
+    "rubbery crêpes",
+    "chewy pancakes"
+  ],
+  "ursachen": [
+    {
+      "titel": "Mixed too long",
+      "haeufigkeit": 3,
+      "prinzip": "glutenbildung",
+      "warum": "Mixing builds a tough network.",
+      "fix": [
+        "Mix only briefly; lumps are fine"
+      ]
+    },
+    {
+      "titel": "Not rested",
+      "haeufigkeit": 2,
+      "prinzip": "glutenbildung",
+      "warum": "Freshly mixed batter is tense.",
+      "fix": [
+        "Rest crêpe batter for 30 minutes"
+      ]
+    },
+    {
+      "titel": "Too little heat",
+      "haeufigkeit": 1,
+      "prinzip": "chemische-lockerung",
+      "warum": "In a lukewarm pan the gas escapes before the batter sets.",
+      "fix": [
+        "Preheat the pan to medium"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Was the batter mixed completely smooth?",
+      "antworten": [
+        [
+          "Yes",
+          "u0"
+        ],
+        [
+          "No",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did the batter rest?",
+      "antworten": [
+        [
+          "No",
+          "u1"
+        ],
+        [
+          "Yes",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

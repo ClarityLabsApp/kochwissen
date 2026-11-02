@@ -1,0 +1,54 @@
+{
+  "id": "schokolade-klumpt",
+  "titel": "Chocolate seizes when melting",
+  "kurz": "A few drops of water have turned the sugar into syrup that glues the cocoa particles together.",
+  "bild_im_kopf": "Like icing sugar hit by a drop of water: suddenly the powder becomes a stiff lump.",
+  "synonyme": [
+    "chocolate goes stiff",
+    "grainy chocolate",
+    "seized chocolate"
+  ],
+  "ursachen": [
+    {
+      "titel": "A little water or steam",
+      "haeufigkeit": 3,
+      "prinzip": "zucker-kristallisation",
+      "warum": "Even one drop makes the sugar sticky and the cocoa particles clump.",
+      "fix": [
+        "Stir in boiling water a spoonful at a time until smooth",
+        "Then use it for a sauce or hot chocolate"
+      ]
+    },
+    {
+      "titel": "Too hot",
+      "haeufigkeit": 2,
+      "prinzip": "pyrolyse",
+      "warum": "Overheated chocolate turns thick and crumbly.",
+      "fix": [
+        "Melt gently over a water bath",
+        "Microwave only in short bursts"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Could water or steam have got to the chocolate?",
+      "antworten": [
+        [
+          "Yes",
+          "u0"
+        ],
+        [
+          "No",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    }
+  }
+}
