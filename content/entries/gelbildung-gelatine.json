@@ -41,16 +41,16 @@
       "hinweis": "Richtwerte",
       "skala": [
         {
-          "c": 10,
-          "name": "Kühlschrank: Netz wird fest"
+          "c": 4,
+          "name": "Kühlschrank: Netz wird ganz fest"
         },
         {
-          "c": 30,
-          "name": "beginnt zu gelieren / schmilzt im Mund"
+          "c": 35,
+          "name": "schmilzt (darum zergeht sie im Mund)"
         },
         {
-          "c": 43,
-          "name": "vollständig gelöst"
+          "c": 60,
+          "name": "warm: löst sich gut auf"
         },
         {
           "c": 100,
@@ -67,6 +67,10 @@
     {
       "titel": "Harold McGee: On Food and Cooking (2004)",
       "stelle": "Kapitel Milch, Zucker, Schokolade"
+    },
+    {
+      "titel": "Great British Chefs: How to use gelatine leaf",
+      "url": "https://www.greatbritishchefs.com/how-to-cook/how-to-use-gelatine-leaf"
     }
   ],
   "status": "entwurf",

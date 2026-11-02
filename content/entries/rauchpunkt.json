@@ -55,15 +55,15 @@
         },
         {
           "name": "Olivenöl nativ extra",
-          "c": 190
+          "c": 175
+        },
+        {
+          "name": "Bratbutter",
+          "c": 200
         },
         {
           "name": "Rapsöl raffiniert",
           "c": 220
-        },
-        {
-          "name": "Bratbutter",
-          "c": 230
         }
       ]
     }
@@ -72,6 +72,10 @@
     {
       "titel": "Harold McGee: On Food and Cooking (2004)",
       "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
+    },
+    {
+      "titel": "Verbraucherzentrale Südtirol: Welches Öl zum Braten?",
+      "url": "https://www.consumer.bz.it/de/print/pdf/node/16745"
     }
   ],
   "status": "entwurf"

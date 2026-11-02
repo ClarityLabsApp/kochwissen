@@ -18,7 +18,8 @@
       "warum": "Über etwa 66 °C ziehen sich die Fasern stark zusammen und verlieren viel Saft.",
       "fix": [
         "Mit Thermometer garen",
-        "Einige Grad vor dem Ziel herausnehmen, es gart nach"
+        "Einige Grad vor dem Ziel herausnehmen, es gart nach",
+        "Ausnahme Geflügel: immer mindestens 70 °C im Kern, saftig hält es Salz oder Lake"
       ]
     },
     {
@@ -131,6 +132,10 @@
     {
       "titel": "America’s Test Kitchen: Resting meat is worth it",
       "url": "https://www.americastestkitchen.com/articles/5710-resting-meat-is-worth-it-and-we-ve-got-the-data-to-prove-it"
+    },
+    {
+      "titel": "BfR: Hygieneregeln helfen, Geflügel sicher zuzubereiten",
+      "url": "https://www.bfr.bund.de/presseinformation/mehr-salmonellen-infektionen-in-europa-hygieneregeln-helfen-gefluegel-sicher-zuzubereiten/"
     }
   ],
   "status": "entwurf",

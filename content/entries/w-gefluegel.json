@@ -15,11 +15,11 @@
   ],
   "kurz": "Geflügel hat zwei Herausforderungen: magere Brust, die schnell austrocknet, und Haut, die knusprig werden soll.",
   "bild_im_kopf": "Zwei Gäste mit verschiedenen Wünschen am selben Tisch: Die Brust will sanft, die Keule will länger, die Haut will trocken und heiß.",
-  "was_passiert": "Brustfleisch ist mager und wird über etwa 65 °C schnell trocken. Keulen haben mehr Bindegewebe und vertragen mehr Hitze. Die Haut wird erst knusprig, wenn ihr Wasser verdampft und das Fett ausgelassen ist.",
+  "was_passiert": "Brustfleisch ist mager und wird schnell trocken. Trotzdem muss Geflügel durchgaren: Empfohlen sind mindestens 70 °C im Kern, zwei Minuten lang, wegen Salmonellen und Campylobacter. Keulen haben mehr Bindegewebe und vertragen mehr Hitze. Die Haut wird erst knusprig, wenn ihr Wasser verdampft und das Fett ausgelassen ist.",
   "warum_wichtig": "Trockensalzen, unbedeckt antrocknen lassen und ein Thermometer lösen fast alle Geflügelprobleme.",
   "faustregeln": [
     "Über Nacht trocken salzen und unbedeckt kühlen.",
-    "Thermometer in den dicksten Teil der Brust.",
+    "Thermometer in den dicksten Teil der Brust: mindestens 70 °C, dann sofort vom Herd. Trockensalzen oder eine Lake hält das Fleisch dabei saftig.",
     "Entenhaut kalt in der Pfanne ansetzen."
   ],
   "links": [
@@ -34,6 +34,10 @@
   "quellen": [
     {
       "titel": "Harold McGee: On Food and Cooking (2004)"
+    },
+    {
+      "titel": "BfR: Hygieneregeln helfen, Geflügel sicher zuzubereiten",
+      "url": "https://www.bfr.bund.de/presseinformation/mehr-salmonellen-infektionen-in-europa-hygieneregeln-helfen-gefluegel-sicher-zuzubereiten/"
     }
   ]
 }

@@ -12,9 +12,9 @@
   "bild_im_kopf": "Wie einer Gruppe das Aufstellen beibringen: erst alle auflösen, dann die richtigen Vorbilder hinzufügen.",
   "was_passiert": "Die einfachste Methode ist das Impfen: Zwei Drittel schmelzen, ein Drittel fein gehackte, temperierte Schokolade einrühren. Die festen Stücke bringen die richtigen Kristalle mit, an denen sich die geschmolzene Schokolade ausrichtet.",
   "schritte": [
-    "Zwei Drittel der Schokolade im Wasserbad auf etwa 45 °C schmelzen.",
+    "Zwei Drittel der Schokolade im Wasserbad auf 45–50 °C schmelzen.",
     "Ein Drittel fein gehackt einrühren, bis es geschmolzen ist.",
-    "Auf Arbeitstemperatur bringen (dunkel ca. 31,5 °C, Milch ca. 30,5 °C, weiß ca. 30 °C).",
+    "Auf Arbeitstemperatur bringen (dunkel 31–32 °C, Milch 29–30 °C, weiß 28–29 °C).",
     "Test: Ein Messer eintauchen, nach wenigen Minuten soll die Schokolade glänzend und fest sein.",
     "Bei Arbeitstemperatur halten und zügig verarbeiten."
   ],
@@ -37,6 +37,10 @@
     {
       "titel": "Thermapen: The ultimate guide to tempering chocolate",
       "url": "https://thermapen.co.uk/blogs/inspiration/tempering-chocolate-guide"
+    },
+    {
+      "titel": "Callebaut: Guide to different tempering methods",
+      "url": "https://www.callebaut.com/en/guide-different-tempering-methods"
     }
   ],
   "status": "entwurf"
