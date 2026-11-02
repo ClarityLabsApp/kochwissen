@@ -1,0 +1,59 @@
+{
+  "id": "zucker-feuchtigkeit",
+  "typ": "prozess",
+  "titel": "Zucker hält Feuchtigkeit fest",
+  "synonyme": [
+    "Kuchen saftig",
+    "Zucker bindet Wasser",
+    "hygroskopisch",
+    "Kuchen bleibt frisch",
+    "Honig im Teig"
+  ],
+  "kurz": "Zucker zieht Wasser an und hält es fest. Kuchen mit genug Zucker bleiben länger saftig, Kekse mit Honig werden weich.",
+  "bild_im_kopf": "Wie ein Schwamm im Teig: Er saugt Feuchtigkeit auf und gibt sie nur langsam wieder ab.",
+  "was_passiert": "Zucker bindet Wasser (er ist hygroskopisch). Im Teig hält er es fest, sodass beim Backen weniger verdunstet und der Kuchen danach langsamer austrocknet. Er bremst auch das Altbackenwerden der Stärke. Honig und Sirup ziehen sogar Feuchtigkeit aus der Luft: Kekse damit werden in der Dose weich, reine Zuckerkekse bleiben knusprig.",
+  "warum_wichtig": "Erklärt, warum zuckerreduzierte Kuchen trockener sind und warum Honiglebkuchen mit der Zeit weich werden.",
+  "faustregeln": [
+    "Zucker nicht mehr als um ein Viertel reduzieren, sonst wird der Kuchen trocken und blass.",
+    "Für weiche Kekse etwas Honig oder braunen Zucker verwenden, für knusprige weißen Zucker.",
+    "Knusprige und weiche Kekse getrennt aufbewahren."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zuckergehalt",
+      "wirkung": "mehr → saftiger, länger frisch"
+    },
+    {
+      "id": "feuchtigkeit",
+      "wirkung": "Honig zieht Wasser aus der Luft"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-gebaeck",
+      "text": "Lebkuchen mit Honig werden nach ein paar Tagen in der Dose weich und besser."
+    }
+  ],
+  "links": [
+    "zucker",
+    "honig",
+    "kuchen-trocken",
+    "laenger-frisch",
+    "retrogradation",
+    "wasseraktivitaet"
+  ],
+  "welten": [
+    "w-gebaeck",
+    "w-suesses"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "keine"
+  }
+}

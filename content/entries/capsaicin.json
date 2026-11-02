@@ -1,0 +1,22 @@
+{
+  "id": "capsaicin",
+  "typ": "begriff",
+  "titel": "Capsaicin",
+  "synonyme": [
+    "Capsaicinoide"
+  ],
+  "kurz": "Der Stoff in Chili, der Schärfe auslöst. Er reizt Nerven, die sonst Hitze melden, und löst sich in Fett, nicht in Wasser.",
+  "links": [
+    "schaerfe"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "keine"
+  }
+}

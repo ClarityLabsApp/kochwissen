@@ -1,0 +1,62 @@
+{
+  "id": "schaerfe",
+  "typ": "prozess",
+  "titel": "Schärfe: Chili, Pfeffer und Senf",
+  "synonyme": [
+    "scharf",
+    "Chili",
+    "Capsaicin",
+    "brennt im Mund",
+    "Schärfe mildern"
+  ],
+  "kurz": "Schärfe ist kein Geschmack, sondern ein Hitze- und Schmerzreiz. Bei Chili löst ihn [[capsaicin|Capsaicin]] aus, das sich in Fett, nicht in Wasser löst.",
+  "bild_im_kopf": "Wie ein falscher Feueralarm: Kein Feuer, aber die Sensoren melden Hitze.",
+  "was_passiert": "Capsaicin aus Chili dockt an Nervenenden an, die normalerweise Hitze melden. Darum fühlt sich Chili heiß an. Weil Capsaicin fettliebend ist, spült Wasser es kaum weg. Milch hilft am besten: Studien zeigen, dass vor allem ihr Eiweiß die Schärfe mildert, nicht nur das Fett. Pfeffer, Senf, Meerrettich und Wasabi nutzen andere Stoffe, die teils in die Nase steigen.",
+  "warum_wichtig": "Erklärt, warum Wasser gegen Chili nichts bringt, Joghurt und Milch aber schon, und wie man ein zu scharfes Gericht rettet.",
+  "faustregeln": [
+    "Zu scharf: Joghurt, Sahne, Kokosmilch oder Milch dazu, nicht Wasser.",
+    "Die meiste Schärfe sitzt in den hellen Scheidewänden der Chili, nicht in den Kernen allein.",
+    "Senf und Meerrettich verlieren beim Kochen an Schärfe, Chili nicht."
+  ],
+  "stellschrauben": [
+    {
+      "id": "fettgehalt",
+      "wirkung": "Fett und Milcheiweiß mildern Chili"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "langes Ziehen in Öl macht es schärfer"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-milch",
+      "text": "Raita oder ein Klecks Joghurt neben dem Curry ist kein Zufall: Milcheiweiß nimmt Capsaicin auf."
+    }
+  ],
+  "links": [
+    "zu-scharf",
+    "gewuerze",
+    "aroma-loeslichkeit",
+    "joghurt",
+    "milch"
+  ],
+  "welten": [
+    "w-gemuese",
+    "w-milch"
+  ],
+  "quellen": [
+    {
+      "titel": "Penn State: Proteins in dairy and plant milks reduce oral burn from capsaicin",
+      "url": "https://pure.psu.edu/en/publications/more-than-fat-proteins-in-dairy-and-plant-milks-contribute-to-the/"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "keine"
+  }
+}

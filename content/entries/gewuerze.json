@@ -37,7 +37,9 @@
   "links": [
     "aroma-blooming",
     "gewuerze-roesten",
-    "pyrolyse"
+    "pyrolyse",
+    "schaerfe",
+    "aroma-loeslichkeit"
   ],
   "welten": [
     "w-saucen"

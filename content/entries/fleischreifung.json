@@ -1,0 +1,57 @@
+{
+  "id": "fleischreifung",
+  "typ": "prozess",
+  "titel": "Fleischreifung: warum gereiftes Fleisch zarter ist",
+  "synonyme": [
+    "Dry Aging",
+    "abhängen",
+    "gereiftes Fleisch",
+    "Fleisch reifen lassen",
+    "Wet Aging"
+  ],
+  "kurz": "Nach dem Schlachten bauen fleischeigene [[enzym|Enzyme]] die Fasern langsam ab. Das Fleisch wird zarter und, beim Trockenreifen, auch würziger.",
+  "bild_im_kopf": "Wie ein neues Paar Lederschuhe, das mit der Zeit weich wird: Am Anfang steif, nach Wochen bequem.",
+  "was_passiert": "Direkt nach dem Schlachten ist Muskelfleisch steif. In den folgenden Tagen und Wochen lockern Enzyme im Fleisch selbst die Fasern. Beim Trockenreifen am Knochen verdunstet zusätzlich Wasser, der Geschmack konzentriert sich, und es entstehen nussige, käsige Aromen. Die äußere, ausgetrocknete Schicht wird weggeschnitten.",
+  "warum_wichtig": "Erklärt, warum gereiftes Rindfleisch teurer und zarter ist und warum frisches Fleisch vom Bauernhof manchmal zäh ausfällt.",
+  "faustregeln": [
+    "Für Kurzgebratenes vom Rind gereiftes Fleisch wählen.",
+    "Dry Aging zu Hause nur mit eigenem Kühlschrank und großen Stücken, nicht mit Steaks.",
+    "Im Vakuum gereiftes Fleisch wird zarter, aber nicht würziger."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zeit",
+      "wirkung": "länger → zarter, würziger, mehr Verlust"
+    },
+    {
+      "id": "feuchtigkeit",
+      "wirkung": "trocken gereift → konzentrierter Geschmack"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-fleisch",
+      "text": "Ein Entrecôte mit drei bis vier Wochen Reifung ist spürbar zarter als ein frisches."
+    }
+  ],
+  "links": [
+    "enzym",
+    "fleisch-zaeh",
+    "zart",
+    "umami",
+    "w-fleisch"
+  ],
+  "welten": [
+    "w-fleisch"
+  ],
+  "schwierigkeit": "fortgeschritten",
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "keine"
+  }
+}

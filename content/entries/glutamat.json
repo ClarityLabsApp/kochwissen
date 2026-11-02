@@ -1,0 +1,24 @@
+{
+  "id": "glutamat",
+  "typ": "begriff",
+  "titel": "Glutamat",
+  "synonyme": [
+    "Glutaminsäure",
+    "MSG",
+    "Mononatriumglutamat"
+  ],
+  "kurz": "Ein Baustein von Eiweiß, der den herzhaften [[umami|Umami-Geschmack]] auslöst. Frei kommt er in Parmesan, Tomaten, Pilzen und Sojasauce vor.",
+  "links": [
+    "umami"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "keine"
+  }
+}

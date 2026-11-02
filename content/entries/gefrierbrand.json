@@ -1,0 +1,75 @@
+{
+  "id": "gefrierbrand",
+  "typ": "symptom",
+  "titel": "Gefrierbrand: graue, trockene Stellen",
+  "synonyme": [
+    "Gefrierbrand",
+    "Fleisch tiefgekühlt grau",
+    "Eis im Beutel",
+    "trockene Stellen gefroren"
+  ],
+  "kurz": "Gefrierbrand sind ausgetrocknete Stellen: Eis ist direkt aus dem Lebensmittel verdunstet.",
+  "bild_im_kopf": "Wie Wäsche, die im Winter draußen gefroren trocknet: Das Eis verschwindet, ohne zu schmelzen.",
+  "ursachen": [
+    {
+      "titel": "Luft im Beutel",
+      "haeufigkeit": 3,
+      "prinzip": "eiskristalle",
+      "warum": "Eis verdunstet in die Luft und setzt sich als Reif im Beutel ab ([[sublimation|Sublimation]]).",
+      "fix": [
+        "Luft aus dem Beutel drücken oder vakuumieren",
+        "Gut verschließen"
+      ]
+    },
+    {
+      "titel": "Zu lange gelagert oder Temperaturschwankungen",
+      "haeufigkeit": 2,
+      "prinzip": "eiskristalle",
+      "warum": "Jeder Wechsel treibt mehr Feuchtigkeit aus.",
+      "fix": [
+        "Datum notieren, innerhalb einiger Monate aufbrauchen",
+        "Tiefkühler selten öffnen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "War viel Luft im Beutel oder Behälter?",
+      "antworten": [
+        [
+          "Ja",
+          "u0"
+        ],
+        [
+          "Nein",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    }
+  },
+  "links": [
+    "eiskristalle",
+    "einfrieren",
+    "sublimation"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

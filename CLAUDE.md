@@ -71,7 +71,7 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - `PanTest` – Symptome mit `vorlage: pfannentest`, `params.variante`: pfanne | backblech | fritteuse
 - `DotNet` – Ziele (Hebel ↔ Techniken) und Zutaten (Rolle ↔ Vorgang)
 - `Spectrum` – Skala für Stellschrauben und Anthocyane (`params.links`, `mitte`, `rechts`)
-- `ParticleSim` – Canvas-Simulationen pro Prozess (emulsion, osmose, pektin-abbau, reduktion, hefegaerung, chemische-lockerung, waermeleitung, schaumbildung, diffusion, zucker-kristallisation, leidenfrost, gelbildung-pektin, chlorophyll-farbe, eiweiss-denaturierung, glutenbildung, karamellisierung). Neue Presets dort anlegen und in `SIMS` in `Visual.tsx` eintragen
+- `ParticleSim` – Canvas-Simulationen pro Prozess (emulsion, osmose, pektin-abbau, reduktion, hefegaerung, chemische-lockerung, waermeleitung, schaumbildung, diffusion, zucker-kristallisation, leidenfrost, gelbildung-pektin, chlorophyll-farbe, eiweiss-denaturierung, glutenbildung, karamellisierung, eiskristalle, siedepunkt-druck, enzym-zartmachen). Neue Presets dort anlegen und in `SIMS` in `Visual.tsx` eintragen
 - `MaillardSim` – Maillard-Reaktion in drei Zoomstufen (Gericht, Oberfläche, Moleküle), ersetzt den alten Prototyp
 - `ExperimentCompare` – Vorher-Nachher für Experimente: `vorlage: vergleich`, `params.vergleich` = Felder mit `gefaess` (glas, flasche, schuessel, teller, pfanne), `inhalt`, `vorher`/`nachher` (farbe, fuell, trueb, schaum, blasen, ballon, kristalle, tropfen, klumpen, bodensatz, tanzen)
 - Kein Prototyp mehr per iframe: `PROTOTYPES` in `lib/content.ts` ist leer, „Steak grau“ nutzt `PanTest`
@@ -85,6 +85,8 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - [x] Sicherheitsupdate auf Next.js 16 / React 19, `npm audit` sauber. Seitenparameter sind asynchron (`await params`)
 - [ ] Review durch Phil: Status von `entwurf` auf `geprueft`
 - [x] 15 Gerichte und 12 Experimente ergänzt (Generator `scripts/batches/gen_batch_gerichte_experimente.py`)
+- [x] Batch Grundlagen-Chemie II: Geschmack, Kälte, Haltbarkeit, Enzyme, Druck, Basen, Zucker (30 Einträge, `scripts/batches/gen_batch_chemie2.py`)
+- [ ] Sektion „Labor-Rezepte“ (Backpulver, Butter, Bratbutter, Frischkäse, Joghurt, Sauerteig, Laugengebäck): mit Phil abstimmen
 - [ ] Weitere Gerichte und Experimente (Vorher-Nachher-Grafik steht, neue Experimente brauchen `params.vergleich`)
 - [ ] Semantische Suche (z. B. pgvector) als Ergänzung; bis dahin fehlende Alltagswörter in `THESAURUS` nachtragen
 - [x] 45 Aquarell-Illustrationen (Welten und Zutaten) in `public/illustrationen/<id>.webp`, Anzeige im Seitenkopf. Neue Motive: `visual.illustration` setzen, `npm run illustrationen -- --only id1,id2` (schreibt WebP mit transparentem Hintergrund; ältere Bilder wurden per Skript freigestellt und beschnitten)

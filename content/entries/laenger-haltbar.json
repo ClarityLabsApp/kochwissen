@@ -1,0 +1,54 @@
+{
+  "id": "laenger-haltbar",
+  "typ": "ziel",
+  "titel": "Länger haltbar machen",
+  "synonyme": [
+    "haltbar",
+    "konservieren",
+    "Vorrat",
+    "länger aufbewahren",
+    "Reste aufbewahren"
+  ],
+  "kurz": "Lebensmittel halten länger, wenn Keime kein freies Wasser, keine Wärme oder keine Zeit bekommen.",
+  "bild_im_kopf": "Wie ein Haus gegen Einbrecher: Abschließen, Licht an, Wachhund. Jede Maßnahme allein hilft, zusammen am besten.",
+  "hebel": [
+    "temperatur",
+    "salzgehalt",
+    "zuckergehalt",
+    "feuchtigkeit",
+    "ph-wert"
+  ],
+  "faustregeln": [
+    "Reste rasch abkühlen und in den Kühlschrank.",
+    "Flach einfrieren und luftdicht verpacken.",
+    "Salz, Zucker, Säure und Trocknen machen haltbar, ersetzen aber keine Hygiene."
+  ],
+  "links": [
+    "keimwachstum",
+    "wasseraktivitaet",
+    "einfrieren",
+    "poekeln",
+    "milchsaeuregaerung",
+    "g-konfituere",
+    "lake"
+  ],
+  "welten": [
+    "w-suesses",
+    "w-fleisch",
+    "w-gemuese"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix",
+    "params": {
+      "zeilen": "hebel",
+      "spalten": "techniken"
+    }
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

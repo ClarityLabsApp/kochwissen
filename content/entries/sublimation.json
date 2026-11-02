@@ -1,0 +1,23 @@
+{
+  "id": "sublimation",
+  "typ": "begriff",
+  "titel": "Sublimation",
+  "synonyme": [
+    "sublimieren"
+  ],
+  "kurz": "Wenn Eis direkt zu Dampf wird, ohne vorher zu schmelzen. So trocknet Gefriergut aus und Wäsche im Winterfrost.",
+  "links": [
+    "gefrierbrand",
+    "eiskristalle"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "keine"
+  }
+}

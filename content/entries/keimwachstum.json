@@ -1,0 +1,95 @@
+{
+  "id": "keimwachstum",
+  "typ": "prozess",
+  "titel": "Bakterien und Temperatur: die Gefahrenzone",
+  "synonyme": [
+    "Lebensmittelsicherheit",
+    "Gefahrenzone",
+    "Bakterien",
+    "Essen warm halten",
+    "Reste abkühlen",
+    "Salmonellen"
+  ],
+  "kurz": "Bakterien vermehren sich am schnellsten zwischen etwa 10 und 50 °C. Kälte bremst sie, gründliches Erhitzen tötet die meisten ab.",
+  "bild_im_kopf": "Wie Unkraut im Frühling: Bei mildem Wetter wächst es über Nacht, im Frost und in der Hitze ruht es.",
+  "was_passiert": "Bakterien teilen sich bei angenehmer Wärme alle paar Minuten bis Stunden. Der Kühlschrank bremst sie stark, tötet sie aber nicht. Erst ausreichende Hitze macht Fleisch und Reste sicher: Behörden empfehlen mindestens 70 °C im Kern. Gekochtes soll den warmen Bereich schnell durchlaufen, beim Abkühlen höchstens etwa zwei Stunden.",
+  "warum_wichtig": "Erklärt, warum Geflügel durchgegart wird, warum Reste nicht stundenlang auf dem Herd stehen sollen und warum Warmhalten heiß sein muss.",
+  "faustregeln": [
+    "Geflügel, Hackfleisch und Reste auf mindestens 70 °C im Kern erhitzen.",
+    "Warmhalten bei mindestens 65 °C, sonst rasch abkühlen.",
+    "Reste in flachen Gefäßen innerhalb von zwei Stunden in den Kühlschrank.",
+    "Im Kühlschrank auftauen, nicht auf der Küchenablage."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "10–50 °C: Bakterien wachsen am schnellsten"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "je länger im warmen Bereich, desto mehr Keime"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-gefluegel",
+      "text": "Poulet immer durchgaren: mindestens 70 °C im Kern, zwei Minuten lang."
+    },
+    {
+      "welt": "w-getreide",
+      "text": "Gekochten Reis nicht lange warm stehen lassen, sondern schnell kühlen."
+    }
+  ],
+  "links": [
+    "kerntemperatur",
+    "w-gefluegel",
+    "wasseraktivitaet",
+    "einfrieren",
+    "sous-vide"
+  ],
+  "welten": [
+    "w-gefluegel",
+    "w-fleisch",
+    "w-getreide"
+  ],
+  "quellen": [
+    {
+      "titel": "Kantonales Laboratorium Basel-Stadt: Merkblatt Erhitzen, Warmhalten, Abkühlen, Auftauen (2026)",
+      "url": "https://media.bs.ch/original_file/3149e56eb6c16426bc56ce1407d0c9b45657e304/260521-merkblatt-erhitzen-warmhalten-abkuehlen-auftauen.pdf"
+    },
+    {
+      "titel": "BfR: Hygieneregeln helfen, Geflügel sicher zuzubereiten",
+      "url": "https://www.bfr.bund.de/presseinformation/mehr-salmonellen-infektionen-in-europa-hygieneregeln-helfen-gefluegel-sicher-zuzubereiten/"
+    }
+  ],
+  "visual": {
+    "vorlage": "temperaturskala",
+    "params": {
+      "hinweis": "Richtwerte der Lebensmittelkontrolle",
+      "skala": [
+        {
+          "c": 5,
+          "name": "Kühlschrank: Bakterien stark gebremst"
+        },
+        {
+          "c": 10,
+          "name": "ab hier: schnelles Wachstum"
+        },
+        {
+          "c": 50,
+          "name": "bis hier: schnelles Wachstum"
+        },
+        {
+          "c": 65,
+          "name": "Warmhalten mindestens"
+        },
+        {
+          "c": 70,
+          "name": "Erhitzen: mindestens im Kern"
+        }
+      ]
+    }
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

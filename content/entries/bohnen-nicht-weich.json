@@ -1,0 +1,100 @@
+{
+  "id": "bohnen-nicht-weich",
+  "typ": "symptom",
+  "titel": "Bohnen und Kichererbsen werden nicht weich",
+  "synonyme": [
+    "Hülsenfrüchte hart",
+    "Kichererbsen hart",
+    "Linsen bleiben hart",
+    "Bohnen bleiben hart"
+  ],
+  "kurz": "Hülsenfrüchte bleiben hart, wenn sie alt sind, in hartem Wasser kochen oder zu früh Säure bekommen.",
+  "bild_im_kopf": "Wie ein alter Schwamm, der kein Wasser mehr aufnehmen will.",
+  "ursachen": [
+    {
+      "titel": "Säure zu früh zugegeben",
+      "haeufigkeit": 3,
+      "prinzip": "kalzium-pektin",
+      "warum": "Tomate, Wein oder Essig festigen den Kitt zwischen den Zellen.",
+      "fix": [
+        "Erst weich kochen, dann Säure zugeben"
+      ]
+    },
+    {
+      "titel": "Hartes Wasser",
+      "haeufigkeit": 2,
+      "prinzip": "kalzium-pektin",
+      "warum": "Kalk verklammert das [[pektin|Pektin]].",
+      "fix": [
+        "Eine Prise Natron ins Einweich- und Kochwasser",
+        "Oder im Dampfkochtopf garen"
+      ]
+    },
+    {
+      "titel": "Alte, sehr trockene Hülsenfrüchte",
+      "haeufigkeit": 2,
+      "prinzip": "pektin-abbau",
+      "warum": "Lang gelagerte Bohnen nehmen kaum noch Wasser auf.",
+      "fix": [
+        "Über Nacht einweichen",
+        "Frische Ware kaufen, länger kochen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "War Tomate, Wein oder Essig von Anfang an im Topf?",
+      "antworten": [
+        [
+          "Ja",
+          "u0"
+        ],
+        [
+          "Nein",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Hast du kalkhaltiges Wasser?",
+      "antworten": [
+        [
+          "Ja oder weiß nicht",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "kalzium-pektin",
+    "siedepunkt-druck",
+    "natron",
+    "dampfkochtopf"
+  ],
+  "welten": [
+    "w-gemuese"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

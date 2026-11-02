@@ -1,0 +1,74 @@
+{
+  "id": "marinade-matschig",
+  "typ": "symptom",
+  "titel": "Fleisch aus der Marinade ist mehlig oder matschig",
+  "synonyme": [
+    "Marinade matschig",
+    "Fleisch mehlig",
+    "Ananas Marinade zu lange",
+    "Fleisch zerfällt Marinade"
+  ],
+  "kurz": "[[enzym|Enzyme]] aus Ananas, Kiwi oder Papaya und starke Säure greifen die Oberfläche an. Zu lange mariniert, wird sie mehlig.",
+  "bild_im_kopf": "Wie ein Pullover, der zu heiß gewaschen wurde: Die Oberfläche ist danach nicht mehr dieselbe.",
+  "ursachen": [
+    {
+      "titel": "Ananas, Kiwi oder Papaya roh in der Marinade",
+      "haeufigkeit": 3,
+      "prinzip": "enzym-zartmachen",
+      "warum": "Die Enzyme zerschneiden Eiweiß an der Oberfläche immer weiter.",
+      "fix": [
+        "Höchstens eine halbe bis eine Stunde marinieren",
+        "Oder die Frucht vorher kurz aufkochen"
+      ]
+    },
+    {
+      "titel": "Zu viel Säure zu lange",
+      "haeufigkeit": 2,
+      "prinzip": "saeure-denaturierung",
+      "warum": "Säure gart die Oberfläche chemisch, sie wird weiß und krümelig.",
+      "fix": [
+        "Säure sparsam, Marinade eher ölig und würzig",
+        "Säure erst kurz vor dem Braten"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "War Ananas, Kiwi oder Papaya in der Marinade?",
+      "antworten": [
+        [
+          "Ja",
+          "u0"
+        ],
+        [
+          "Nein",
+          "u1"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    }
+  },
+  "links": [
+    "enzym-zartmachen",
+    "saeure-denaturierung",
+    "marinieren"
+  ],
+  "welten": [
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

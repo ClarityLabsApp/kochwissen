@@ -1,0 +1,52 @@
+{
+  "id": "einfrieren",
+  "typ": "technik",
+  "titel": "Richtig einfrieren und auftauen",
+  "synonyme": [
+    "einfrieren",
+    "tiefkühlen",
+    "auftauen",
+    "Schockfrosten",
+    "Vorrat einfrieren"
+  ],
+  "kurz": "Schnell, flach und luftdicht einfrieren, langsam im Kühlschrank auftauen: So bleiben Struktur und Geschmack erhalten.",
+  "bild_im_kopf": "Wie ein Foto mit kurzer Belichtung: Je schneller der Moment festgehalten wird, desto schärfer bleibt das Bild.",
+  "schritte": [
+    "Gekochtes zuerst abkühlen lassen, nicht warm in den Tiefkühler.",
+    "Flach in Beutel füllen, Luft herausdrücken, beschriften.",
+    "Beeren und Teigstücke einzeln auf einem Blech vorfrieren.",
+    "Im Kühlschrank auftauen, Fleisch auf einem Teller.",
+    "Aufgetautes rasch verwenden und nicht wieder roh einfrieren."
+  ],
+  "faustregeln": [
+    "Flach friert schneller als ein Block.",
+    "Luftdicht verpacken gegen Gefrierbrand.",
+    "Gemüse vorher kurz [[blanchieren|blanchieren]], das stoppt [[enzym|Enzyme]]."
+  ],
+  "links": [
+    "eiskristalle",
+    "gefrierbrand",
+    "keimwachstum",
+    "blanchieren",
+    "laenger-haltbar"
+  ],
+  "welten": [
+    "w-gemuese",
+    "w-fleisch",
+    "w-suesses"
+  ],
+  "quellen": [
+    {
+      "titel": "Kantonales Laboratorium Basel-Stadt: Merkblatt Erhitzen, Warmhalten, Abkühlen, Auftauen (2026)",
+      "url": "https://media.bs.ch/original_file/3149e56eb6c16426bc56ce1407d0c9b45657e304/260521-merkblatt-erhitzen-warmhalten-abkuehlen-auftauen.pdf"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "keine"
+  }
+}

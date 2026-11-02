@@ -40,6 +40,12 @@ export const FACHWOERTER = {
   fenstertest: ["Fenstertest"],
   ofentrieb: ["Ofentrieb"],
   hydration: ["Hydration", "Teigausbeute"],
+  glutamat: ["Glutamat"],
+  capsaicin: ["Capsaicin"],
+  sublimation: ["Sublimation", "sublimier"],
+  umami: ["Umami"],
+  amylase: ["Amylase"],
+  wasseraktivitaet: ["Wasseraktivität"],
 };
 
 /** Stellen, an denen ein Wort etwas anderes meint: Fachwort-id → Einträge, die übersprungen werden. */

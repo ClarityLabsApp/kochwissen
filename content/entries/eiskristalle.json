@@ -1,0 +1,66 @@
+{
+  "id": "eiskristalle",
+  "typ": "prozess",
+  "titel": "Eiskristalle: schnell gefroren ist feiner",
+  "synonyme": [
+    "Gefrieren",
+    "Einfrieren",
+    "Eiskristalle",
+    "Glace cremig",
+    "Kristallgröße"
+  ],
+  "kurz": "Beim Gefrieren wird Wasser zu Kristallen. Schnelles Gefrieren und Rühren machen sie klein, langsames Gefrieren macht sie groß und grob.",
+  "bild_im_kopf": "Wie Schnee und Hagel: Viele kleine Flocken sind weich, wenige große Körner sind hart und knirschen.",
+  "was_passiert": "Gefriert Wasser langsam, wachsen wenige Kristalle lange und werden groß. Gefriert es schnell oder wird dabei gerührt, entstehen viele Keime gleichzeitig, und alle bleiben klein. Große Kristalle machen Glace körnig und stechen beim Einfrieren durch Zellwände: Das Gemüse wird beim Auftauen weich und lässt Saft. Schwankt die Temperatur im Tiefkühler, wachsen kleine Kristalle mit der Zeit zu großen zusammen.",
+  "warum_wichtig": "Erklärt, warum Glace beim Rühren cremig wird, warum man flach und schnell einfriert und warum aufgetaute Erdbeeren matschig sind.",
+  "faustregeln": [
+    "Flach einfrieren, nicht im dicken Block.",
+    "Glace-Masse vorkühlen und beim Gefrieren rühren.",
+    "Tiefkühler nicht oft öffnen, Temperaturschwankungen vergröbern die Kristalle."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "kälter und schneller → kleinere Kristalle"
+    },
+    {
+      "id": "mechanik",
+      "wirkung": "Rühren hält Kristalle klein"
+    },
+    {
+      "id": "zuckergehalt",
+      "wirkung": "mehr Zucker → weniger Eis, weicher"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-suesses",
+      "text": "Eine Glacemaschine friert und rührt gleichzeitig: Darum wird sie feiner als Glace aus dem Tiefkühler."
+    },
+    {
+      "welt": "w-gemuese",
+      "text": "Beeren einzeln auf einem Blech vorfrieren, dann erst in den Beutel."
+    }
+  ],
+  "links": [
+    "gefrierpunkt-senkung",
+    "glace-koernig",
+    "gefrierbrand",
+    "einfrieren",
+    "zucker-kristallisation"
+  ],
+  "welten": [
+    "w-suesses",
+    "w-gemuese"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

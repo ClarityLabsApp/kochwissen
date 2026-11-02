@@ -1,0 +1,54 @@
+{
+  "id": "kalzium-pektin",
+  "typ": "prozess",
+  "titel": "Kalk und Säure halten Gemüse fest",
+  "synonyme": [
+    "hartes Wasser",
+    "Kalk",
+    "Bohnen bleiben hart",
+    "Gemüse bleibt fest",
+    "Tomaten Bohnen"
+  ],
+  "kurz": "Kalk aus hartem Wasser und Säure festigen den Kitt zwischen Pflanzenzellen. Hülsenfrüchte und Gemüse werden dann langsamer weich.",
+  "bild_im_kopf": "Wie Klammern in einem Ordner: Mit Klammern hält der Stapel zusammen, ohne fällt er auseinander.",
+  "was_passiert": "Pflanzenzellen kleben über [[pektin|Pektin]] aneinander. Kalzium verbindet die Pektinketten zusätzlich wie Klammern. In hartem Wasser oder mit Tomaten und Wein bleibt Gemüse darum länger fest, Hülsenfrüchte werden manchmal gar nicht richtig weich. Natron macht das Wasser basisch und weicher: Bohnen und Kichererbsen garen schneller.",
+  "warum_wichtig": "Erklärt, warum Bohnen im Tomatensugo hart bleiben, warum Kichererbsen mit Natron weicher werden und wie man Bratkartoffeln fest hält.",
+  "faustregeln": [
+    "Hülsenfrüchte erst weich kochen, dann zu Tomate oder Wein geben.",
+    "Bei hartem Wasser eine Prise Natron ins Einweichwasser.",
+    "Für feste Bratkartoffeln einen Schuss Essig ins Kochwasser."
+  ],
+  "stellschrauben": [
+    {
+      "id": "ph-wert",
+      "wirkung": "sauer → bleibt fest, basisch → wird weich"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-gemuese",
+      "text": "Kichererbsen mit einer Prise Natron gekocht werden für Hummus besonders glatt."
+    }
+  ],
+  "links": [
+    "pektin-abbau",
+    "pektin",
+    "natron",
+    "saeure",
+    "bohnen-nicht-weich",
+    "gemuese-matschig"
+  ],
+  "welten": [
+    "w-gemuese"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "keine"
+  }
+}

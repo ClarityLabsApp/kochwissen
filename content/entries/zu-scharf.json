@@ -1,0 +1,79 @@
+{
+  "id": "zu-scharf",
+  "typ": "symptom",
+  "titel": "Das Essen ist zu scharf",
+  "synonyme": [
+    "zu scharf",
+    "Chili zu viel",
+    "Curry zu scharf",
+    "Schärfe retten"
+  ],
+  "kurz": "Zu viel Chili lässt sich nicht herauskochen, aber mildern: mit Milchprodukten, Fett, Säure und mehr Masse.",
+  "bild_im_kopf": "Wie ein zu lautes Instrument im Orchester: Man kann es nicht leiser machen, aber die anderen lauter.",
+  "ursachen": [
+    {
+      "titel": "Zu viel Chili oder Chilischoten mit Scheidewänden",
+      "haeufigkeit": 3,
+      "prinzip": "schaerfe",
+      "warum": "[[capsaicin|Capsaicin]] löst sich nicht in Wasser, Verdünnen mit Wasser hilft kaum.",
+      "fix": [
+        "Joghurt, Sahne, Kokosmilch oder Milch einrühren",
+        "Mehr von den anderen Zutaten dazugeben",
+        "Etwas Zucker und Säure gleichen aus"
+      ]
+    },
+    {
+      "titel": "Chili zu lange in Öl gezogen",
+      "haeufigkeit": 1,
+      "prinzip": "aroma-loeslichkeit",
+      "warum": "Im Fett löst sich besonders viel Capsaicin.",
+      "fix": [
+        "Chili kürzer anbraten oder erst später zugeben"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hast du die Chili am Anfang lange in Öl angebraten?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u0"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    }
+  },
+  "links": [
+    "schaerfe",
+    "aroma-loeslichkeit",
+    "joghurt"
+  ],
+  "welten": [
+    "w-gemuese",
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "quellen": [
+    {
+      "titel": "Penn State: Proteins in dairy and plant milks reduce oral burn from capsaicin",
+      "url": "https://pure.psu.edu/en/publications/more-than-fat-proteins-in-dairy-and-plant-milks-contribute-to-the/"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,7 +1,7 @@
 {
  "version": 1,
- "stand": "2026-11-01",
- "anzahl": 224,
+ "stand": "2026-11-02",
+ "anzahl": 251,
  "eintraege": [
   {
    "id": "w-fleisch",
@@ -12,7 +12,10 @@
    "links": [
     "maillard-reaktion",
     "kollagen-gelatine",
-    "eiweiss-denaturierung"
+    "eiweiss-denaturierung",
+    "fleischreifung",
+    "poekeln",
+    "keimwachstum"
    ],
    "welten": [],
    "synonyme": [],
@@ -29,7 +32,8 @@
    "pilot": false,
    "links": [
     "maillard-reaktion",
-    "trockensalzen"
+    "trockensalzen",
+    "keimwachstum"
    ],
    "welten": [],
    "synonyme": [],
@@ -117,7 +121,8 @@
    "pilot": false,
    "links": [
     "staerkeverkleisterung",
-    "retrogradation"
+    "retrogradation",
+    "amylase"
    ],
    "welten": [],
    "synonyme": [],
@@ -153,7 +158,9 @@
     "glutenbildung",
     "hefegaerung",
     "maillard-reaktion",
-    "staerkeverkleisterung"
+    "staerkeverkleisterung",
+    "amylase",
+    "laugen"
    ],
    "welten": [],
    "synonyme": [],
@@ -207,7 +214,10 @@
    "links": [
     "zucker-kristallisation",
     "karamellisierung",
-    "gelbildung-gelatine"
+    "gelbildung-gelatine",
+    "eiskristalle",
+    "gefrierpunkt-senkung",
+    "x-glace-beutel"
    ],
    "welten": [],
    "synonyme": [],
@@ -281,7 +291,8 @@
     "temperatur",
     "feuchtigkeit",
     "ph-wert",
-    "steak-grau"
+    "steak-grau",
+    "basen-braeunung"
    ],
    "welten": [
     "w-fleisch",
@@ -299,6 +310,7 @@
     "vorlage": "zoom3-simulation"
    },
    "verlinkt_von": [
+    "amylase",
     "anbraten",
     "brot-kruste-weich",
     "farbe",
@@ -310,6 +322,7 @@
     "gewuerze-roesten",
     "grillen",
     "honig",
+    "laugen",
     "mehr-geschmack",
     "milch",
     "natron",
@@ -465,6 +478,7 @@
    },
    "verlinkt_von": [
     "abbinden-staerke",
+    "amylase",
     "creme-klumpig",
     "cremig",
     "g-risotto",
@@ -514,7 +528,8 @@
    "verlinkt_von": [
     "g-roesti",
     "laenger-frisch",
-    "w-getreide"
+    "w-getreide",
+    "zucker-feuchtigkeit"
    ]
   },
   {
@@ -596,7 +611,8 @@
     "temperatur",
     "zeit",
     "schmoren",
-    "fleisch-zaeh"
+    "fleisch-zaeh",
+    "dampfkochtopf"
    ],
    "welten": [
     "w-fleisch",
@@ -610,6 +626,7 @@
    },
    "verlinkt_von": [
     "fond",
+    "siedepunkt-druck",
     "w-fleisch",
     "zart"
    ]
@@ -634,6 +651,7 @@
     "vorlage": "zoom3-simulation"
    },
    "verlinkt_von": [
+    "marinade-matschig",
     "w-fisch"
    ]
   },
@@ -732,7 +750,8 @@
    "links": [
     "zucker",
     "temperatur",
-    "karamell-kristallisiert"
+    "karamell-kristallisiert",
+    "eiskristalle"
    ],
    "welten": [
     "w-suesses"
@@ -782,7 +801,8 @@
     "salz",
     "zucker",
     "trockensalzen",
-    "auberginen-salzen"
+    "auberginen-salzen",
+    "wasseraktivitaet"
    ],
    "welten": [
     "w-fleisch",
@@ -795,6 +815,7 @@
     "vorlage": "zoom3-simulation"
    },
    "verlinkt_von": [
+    "poekeln",
     "salzgehalt",
     "x-salz-gurke"
    ]
@@ -863,7 +884,8 @@
     "feuchtigkeit",
     "temperatur",
     "maillard-reaktion",
-    "knusprig"
+    "knusprig",
+    "siedepunkt-druck"
    ],
    "welten": [
     "w-fleisch",
@@ -1056,6 +1078,7 @@
     "deglacieren",
     "fond",
     "mehr-geschmack",
+    "umami",
     "w-saucen",
     "wein"
    ]
@@ -1085,6 +1108,7 @@
     "vorlage": "zoom3-simulation"
    },
    "verlinkt_von": [
+    "amylase",
     "brot-zu-dicht",
     "fluffig",
     "g-zopf",
@@ -1105,7 +1129,8 @@
    "links": [
     "sauerteig",
     "joghurt",
-    "saeure"
+    "saeure",
+    "laenger-haltbar"
    ],
    "welten": [
     "w-brot",
@@ -1255,7 +1280,9 @@
    "pilot": false,
    "links": [
     "gelatine",
-    "temperatur"
+    "temperatur",
+    "enzym-zartmachen",
+    "x-ananas-gelatine"
    ],
    "welten": [
     "w-suesses"
@@ -1281,7 +1308,8 @@
     "temperatur",
     "saeure",
     "natron",
-    "gemuese-matschig"
+    "gemuese-matschig",
+    "kalzium-pektin"
    ],
    "welten": [
     "w-gemuese",
@@ -1358,7 +1386,8 @@
    "links": [
     "fett",
     "gewuerze",
-    "gewuerze-roesten"
+    "gewuerze-roesten",
+    "aroma-loeslichkeit"
    ],
    "welten": [
     "w-saucen"
@@ -1404,7 +1433,8 @@
    "links": [
     "glutenbildung",
     "staerkeverkleisterung",
-    "mehlschwitze"
+    "mehlschwitze",
+    "amylase"
    ],
    "welten": [
     "w-brot",
@@ -1462,7 +1492,10 @@
     "karamellisierung",
     "zucker-kristallisation",
     "osmose",
-    "maillard-reaktion"
+    "maillard-reaktion",
+    "zucker-feuchtigkeit",
+    "gefrierpunkt-senkung",
+    "wasseraktivitaet"
    ],
    "welten": [
     "w-gebaeck",
@@ -1491,7 +1524,9 @@
    "pilot": false,
    "links": [
     "zucker",
-    "maillard-reaktion"
+    "maillard-reaktion",
+    "zucker-feuchtigkeit",
+    "wasseraktivitaet"
    ],
    "welten": [
     "w-gebaeck"
@@ -1512,7 +1547,10 @@
     "osmose",
     "wasserbindung-salz",
     "glutenbildung",
-    "essen-versalzen"
+    "essen-versalzen",
+    "salz-geschmack",
+    "wasseraktivitaet",
+    "gefrierpunkt-senkung"
    ],
    "welten": [
     "w-fleisch",
@@ -1524,7 +1562,9 @@
    },
    "verlinkt_von": [
     "diffusion",
+    "poekeln",
     "salzgehalt",
+    "x-glace-beutel",
     "x-salz-gurke"
    ]
   },
@@ -1663,6 +1703,7 @@
    },
    "verlinkt_von": [
     "aroma-blooming",
+    "aroma-loeslichkeit",
     "butter",
     "fett-ausbraten",
     "fettgehalt",
@@ -1706,7 +1747,8 @@
    "pilot": false,
    "links": [
     "eiweiss-gerinnung",
-    "maillard-reaktion"
+    "maillard-reaktion",
+    "schaerfe"
    ],
    "welten": [
     "w-milch"
@@ -1726,7 +1768,8 @@
    "links": [
     "milchsaeuregaerung",
     "saeure",
-    "marinieren"
+    "marinieren",
+    "schaerfe"
    ],
    "welten": [
     "w-milch"
@@ -1735,7 +1778,9 @@
    "visual": {
     "vorlage": "punktmatrix"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "zu-scharf"
+   ]
   },
   {
    "id": "kaese",
@@ -1745,7 +1790,8 @@
    "pilot": false,
    "links": [
     "eiweiss-gerinnung",
-    "emulsion"
+    "emulsion",
+    "umami"
    ],
    "welten": [
     "w-milch"
@@ -1829,7 +1875,10 @@
     "chemische-lockerung",
     "ph-wert",
     "maillard-reaktion",
-    "natron-zwiebeln"
+    "natron-zwiebeln",
+    "basen-braeunung",
+    "kalzium-pektin",
+    "laugen"
    ],
    "welten": [
     "w-gebaeck",
@@ -1843,6 +1892,7 @@
     "vorlage": "punktmatrix"
    },
    "verlinkt_von": [
+    "bohnen-nicht-weich",
     "pektin-abbau",
     "vorkochen-aufrauen",
     "x-rotkohl-indikator"
@@ -1857,7 +1907,8 @@
    "links": [
     "ph-wert",
     "saeure-denaturierung",
-    "abschmecken-saeure"
+    "abschmecken-saeure",
+    "kalzium-pektin"
    ],
    "welten": [
     "w-saucen",
@@ -1910,7 +1961,8 @@
    "status": "geplant",
    "pilot": false,
    "links": [
-    "gelbildung-gelatine"
+    "gelbildung-gelatine",
+    "enzym-zartmachen"
    ],
    "welten": [
     "w-suesses"
@@ -1919,7 +1971,9 @@
    "visual": {
     "vorlage": "punktmatrix"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "x-ananas-gelatine"
+   ]
   },
   {
    "id": "pektin",
@@ -1938,7 +1992,8 @@
     "vorlage": "punktmatrix"
    },
    "verlinkt_von": [
-    "g-konfituere"
+    "g-konfituere",
+    "kalzium-pektin"
    ]
   },
   {
@@ -1969,7 +2024,8 @@
    "pilot": false,
    "links": [
     "verdampfen",
-    "staerkeverkleisterung"
+    "staerkeverkleisterung",
+    "siedepunkt-druck"
    ],
    "welten": [
     "w-brot"
@@ -2052,7 +2108,9 @@
    "pilot": false,
    "links": [
     "aroma-blooming",
-    "gewuerze-roesten"
+    "gewuerze-roesten",
+    "schaerfe",
+    "aroma-loeslichkeit"
    ],
    "welten": [
     "w-saucen"
@@ -2080,7 +2138,10 @@
    "visual": {
     "vorlage": "punktmatrix"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "dampfkochtopf",
+    "umami"
+   ]
   },
   {
    "id": "temperatur",
@@ -2090,7 +2151,9 @@
    "pilot": false,
    "links": [
     "maillard-reaktion",
-    "eiweiss-denaturierung"
+    "eiweiss-denaturierung",
+    "siedepunkt-druck",
+    "keimwachstum"
    ],
    "welten": [],
    "synonyme": [],
@@ -2177,7 +2240,9 @@
    "links": [
     "maillard-reaktion",
     "natron",
-    "saeure"
+    "saeure",
+    "basen-braeunung",
+    "kalzium-pektin"
    ],
    "welten": [],
    "synonyme": [
@@ -2427,7 +2492,9 @@
     "kollagen-gelatine",
     "glutenbildung",
     "schmoren",
-    "fleisch-zaeh"
+    "fleisch-zaeh",
+    "fleischreifung",
+    "enzym-zartmachen"
    ],
    "welten": [
     "w-fleisch",
@@ -2527,7 +2594,8 @@
    "links": [
     "emulsion",
     "staerkeverkleisterung",
-    "mantecare"
+    "mantecare",
+    "glace-koernig"
    ],
    "welten": [
     "w-saucen",
@@ -2604,7 +2672,10 @@
     "maillard-reaktion",
     "reduktion",
     "abschmecken-saeure",
-    "essen-flach"
+    "essen-flach",
+    "umami",
+    "salz-geschmack",
+    "aroma-loeslichkeit"
    ],
    "welten": [],
    "synonyme": [
@@ -2675,7 +2746,9 @@
    "pilot": false,
    "links": [
     "retrogradation",
-    "oxidation-fett"
+    "oxidation-fett",
+    "zucker-feuchtigkeit",
+    "laenger-haltbar"
    ],
    "welten": [
     "w-brot"
@@ -2771,7 +2844,8 @@
    "links": [
     "wasserbindung-salz",
     "diffusion",
-    "saftig"
+    "saftig",
+    "poekeln"
    ],
    "welten": [
     "w-gefluegel",
@@ -2784,7 +2858,9 @@
    "visual": {
     "vorlage": "ablauf"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "laenger-haltbar"
+   ]
   },
   {
    "id": "kaltwasserbad",
@@ -2987,7 +3063,8 @@
    "pilot": false,
    "links": [
     "eiweiss-denaturierung",
-    "gleichmaessig-gar"
+    "gleichmaessig-gar",
+    "keimwachstum"
    ],
    "welten": [
     "w-fleisch",
@@ -3009,7 +3086,8 @@
    "pilot": false,
    "links": [
     "kollagen-gelatine",
-    "zart"
+    "zart",
+    "dampfkochtopf"
    ],
    "welten": [
     "w-fleisch"
@@ -3347,7 +3425,8 @@
    "links": [
     "hefegaerung",
     "zeit",
-    "grosse-poren"
+    "grosse-poren",
+    "amylase"
    ],
    "welten": [
     "w-brot"
@@ -3498,6 +3577,7 @@
     "vorlage": "ablauf"
    },
    "verlinkt_von": [
+    "aroma-loeslichkeit",
     "gewuerze"
    ]
   },
@@ -3509,7 +3589,9 @@
    "pilot": false,
    "links": [
     "diffusion",
-    "saeure"
+    "saeure",
+    "enzym-zartmachen",
+    "marinade-matschig"
    ],
    "welten": [
     "w-fleisch"
@@ -3570,7 +3652,8 @@
    "pilot": false,
    "links": [
     "natron",
-    "maillard-reaktion"
+    "maillard-reaktion",
+    "basen-braeunung"
    ],
    "welten": [
     "w-gemuese"
@@ -3589,7 +3672,8 @@
    "pilot": false,
    "links": [
     "chlorophyll-farbe",
-    "knackig"
+    "knackig",
+    "einfrieren"
    ],
    "welten": [
     "w-gemuese"
@@ -3646,7 +3730,9 @@
    "visual": {
     "vorlage": "ablauf"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "salz-geschmack"
+   ]
   },
   {
    "id": "mantecare",
@@ -3704,7 +3790,8 @@
    "pilot": false,
    "links": [
     "kollagen-gelatine",
-    "schmoren"
+    "schmoren",
+    "fleischreifung"
    ],
    "welten": [
     "w-fleisch"
@@ -3786,7 +3873,8 @@
    "pilot": false,
    "links": [
     "zucker",
-    "fett"
+    "fett",
+    "zucker-feuchtigkeit"
    ],
    "welten": [
     "w-gebaeck"
@@ -4205,7 +4293,8 @@
    "status": "geplant",
    "pilot": false,
    "links": [
-    "pektin-abbau"
+    "pektin-abbau",
+    "kalzium-pektin"
    ],
    "welten": [
     "w-gemuese"
@@ -4494,7 +4583,9 @@
    "visual": {
     "vorlage": "pfannentest"
    },
-   "verlinkt_von": []
+   "verlinkt_von": [
+    "salz-geschmack"
+   ]
   },
   {
    "id": "essen-flach",
@@ -4504,7 +4595,9 @@
    "pilot": false,
    "links": [
     "abschmecken-saeure",
-    "mehr-geschmack"
+    "mehr-geschmack",
+    "umami",
+    "salz-geschmack"
    ],
    "welten": [],
    "synonyme": [
@@ -4909,7 +5002,8 @@
    "links": [
     "gelbildung-pektin",
     "pektin",
-    "zucker"
+    "zucker",
+    "wasseraktivitaet"
    ],
    "welten": [
     "w-suesses"
@@ -4919,7 +5013,9 @@
     "Erdbeerkonfitüre",
     "Aprikosenkonfitüre"
    ],
-   "verlinkt_von": [],
+   "verlinkt_von": [
+    "laenger-haltbar"
+   ],
    "visual": {
     "vorlage": "ablauf"
    }
@@ -5195,6 +5291,809 @@
    "verlinkt_von": [],
    "visual": {
     "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "umami",
+   "typ": "prozess",
+   "titel": "Umami: der herzhafte Geschmack",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "mehr-geschmack",
+    "essen-flach",
+    "kaese",
+    "salz-geschmack",
+    "fond",
+    "reduktion"
+   ],
+   "welten": [
+    "w-saucen",
+    "w-fleisch",
+    "w-milch"
+   ],
+   "synonyme": [
+    "Umami",
+    "herzhaft",
+    "würzig",
+    "Glutamat",
+    "fünfter Geschmack",
+    "Tiefe im Geschmack"
+   ],
+   "verlinkt_von": [
+    "fleischreifung"
+   ],
+   "visual": {
+    "vorlage": "keine"
+   }
+  },
+  {
+   "id": "salz-geschmack",
+   "typ": "prozess",
+   "titel": "Salz verstärkt Aromen und dämpft Bitterkeit",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "salz",
+    "mehr-geschmack",
+    "essen-flach",
+    "essen-versalzen",
+    "umami",
+    "abschmecken-saeure"
+   ],
+   "welten": [
+    "w-suesses",
+    "w-gemuese"
+   ],
+   "synonyme": [
+    "Geschmack verstärken",
+    "Salz und Bitterkeit",
+    "Prise Salz",
+    "Salz im Dessert"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "keine"
+   }
+  },
+  {
+   "id": "aroma-loeslichkeit",
+   "typ": "prozess",
+   "titel": "Aromen lösen sich in Fett, Wasser oder Alkohol",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "aroma-blooming",
+    "gewuerze-roesten",
+    "fett",
+    "mehr-geschmack",
+    "schaerfe"
+   ],
+   "welten": [
+    "w-saucen",
+    "w-gemuese"
+   ],
+   "synonyme": [
+    "fettlöslich",
+    "Aroma lösen",
+    "Aroma in Öl",
+    "warum Fett Geschmack trägt"
+   ],
+   "verlinkt_von": [
+    "gewuerze",
+    "zu-scharf"
+   ],
+   "visual": {
+    "vorlage": "keine"
+   }
+  },
+  {
+   "id": "schaerfe",
+   "typ": "prozess",
+   "titel": "Schärfe: Chili, Pfeffer und Senf",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "zu-scharf",
+    "gewuerze",
+    "aroma-loeslichkeit",
+    "joghurt",
+    "milch"
+   ],
+   "welten": [
+    "w-gemuese",
+    "w-milch"
+   ],
+   "synonyme": [
+    "scharf",
+    "Chili",
+    "Capsaicin",
+    "brennt im Mund",
+    "Schärfe mildern"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "keine"
+   }
+  },
+  {
+   "id": "eiskristalle",
+   "typ": "prozess",
+   "titel": "Eiskristalle: schnell gefroren ist feiner",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "gefrierpunkt-senkung",
+    "glace-koernig",
+    "gefrierbrand",
+    "einfrieren",
+    "zucker-kristallisation"
+   ],
+   "welten": [
+    "w-suesses",
+    "w-gemuese"
+   ],
+   "synonyme": [
+    "Gefrieren",
+    "Einfrieren",
+    "Eiskristalle",
+    "Glace cremig",
+    "Kristallgröße"
+   ],
+   "verlinkt_von": [
+    "w-suesses",
+    "x-glace-beutel"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   }
+  },
+  {
+   "id": "gefrierpunkt-senkung",
+   "typ": "prozess",
+   "titel": "Zucker, Salz und Alkohol senken den Gefrierpunkt",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "eiskristalle",
+    "glace-koernig",
+    "zucker",
+    "salz",
+    "x-glace-beutel"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [
+    "Gefrierpunkt",
+    "Glace bleibt weich",
+    "Salz auf Eis",
+    "warum Glace nicht hart wird"
+   ],
+   "verlinkt_von": [
+    "w-suesses"
+   ],
+   "visual": {
+    "vorlage": "temperaturskala"
+   }
+  },
+  {
+   "id": "wasseraktivitaet",
+   "typ": "prozess",
+   "titel": "Haltbarkeit: Salz und Zucker binden das Wasser",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "keimwachstum",
+    "osmose",
+    "zucker",
+    "salz",
+    "laenger-haltbar",
+    "g-konfituere"
+   ],
+   "welten": [
+    "w-suesses",
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "Konservieren",
+    "haltbar machen",
+    "Wasseraktivität",
+    "warum Honig nicht schimmelt",
+    "Einsalzen"
+   ],
+   "verlinkt_von": [
+    "honig",
+    "poekeln",
+    "zucker-feuchtigkeit"
+   ],
+   "visual": {
+    "vorlage": "skala"
+   }
+  },
+  {
+   "id": "keimwachstum",
+   "typ": "prozess",
+   "titel": "Bakterien und Temperatur: die Gefahrenzone",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "kerntemperatur",
+    "w-gefluegel",
+    "wasseraktivitaet",
+    "einfrieren",
+    "sous-vide"
+   ],
+   "welten": [
+    "w-gefluegel",
+    "w-fleisch",
+    "w-getreide"
+   ],
+   "synonyme": [
+    "Lebensmittelsicherheit",
+    "Gefahrenzone",
+    "Bakterien",
+    "Essen warm halten",
+    "Reste abkühlen",
+    "Salmonellen"
+   ],
+   "verlinkt_von": [
+    "laenger-haltbar",
+    "temperatur",
+    "w-fleisch"
+   ],
+   "visual": {
+    "vorlage": "temperaturskala"
+   }
+  },
+  {
+   "id": "poekeln",
+   "typ": "prozess",
+   "titel": "Pökeln: Salz und Nitrit",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "wasseraktivitaet",
+    "osmose",
+    "lake",
+    "salz",
+    "w-fleisch"
+   ],
+   "welten": [
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "Pökeln",
+    "Schinken rosa",
+    "Nitritpökelsalz",
+    "Rohschinken",
+    "Speck"
+   ],
+   "verlinkt_von": [
+    "laenger-haltbar"
+   ],
+   "visual": {
+    "vorlage": "keine"
+   }
+  },
+  {
+   "id": "enzym-zartmachen",
+   "typ": "prozess",
+   "titel": "Ananas, Kiwi und Papaya zerschneiden Eiweiß",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "enzym",
+    "gelbildung-gelatine",
+    "gelatine",
+    "marinieren",
+    "marinade-matschig",
+    "x-ananas-gelatine"
+   ],
+   "welten": [
+    "w-suesses",
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "Fleisch zart machen",
+    "Ananas Gelatine",
+    "Bromelain",
+    "Papain",
+    "Kiwi Quark bitter",
+    "Marinade Ananas"
+   ],
+   "verlinkt_von": [
+    "zart"
+   ],
+   "visual": {
+    "vorlage": "zoom3-simulation"
+   }
+  },
+  {
+   "id": "fleischreifung",
+   "typ": "prozess",
+   "titel": "Fleischreifung: warum gereiftes Fleisch zarter ist",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "enzym",
+    "fleisch-zaeh",
+    "zart",
+    "umami",
+    "w-fleisch"
+   ],
+   "welten": [
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "Dry Aging",
+    "abhängen",
+    "gereiftes Fleisch",
+    "Fleisch reifen lassen",
+    "Wet Aging"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "keine"
+   }
+  },
+  {
+   "id": "amylase",
+   "typ": "prozess",
+   "titel": "Amylase: Stärke wird zu Zucker",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "enzym",
+    "staerkeverkleisterung",
+    "hefegaerung",
+    "maillard-reaktion",
+    "kalte-gare",
+    "mehl"
+   ],
+   "welten": [
+    "w-brot",
+    "w-kartoffeln",
+    "w-getreide"
+   ],
+   "synonyme": [
+    "Amylase",
+    "Malz",
+    "Backmalz",
+    "Stärke abbauen",
+    "Teig süßer",
+    "Süßkartoffel süß"
+   ],
+   "verlinkt_von": [
+    "w-brot",
+    "w-getreide"
+   ],
+   "visual": {
+    "vorlage": "keine"
+   }
+  },
+  {
+   "id": "siedepunkt-druck",
+   "typ": "prozess",
+   "titel": "Siedepunkt: Druck und Höhe",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "dampfkochtopf",
+    "verdampfen",
+    "wasser",
+    "kollagen-gelatine",
+    "bohnen-nicht-weich",
+    "temperatur"
+   ],
+   "welten": [
+    "w-eier",
+    "w-fleisch",
+    "w-getreide"
+   ],
+   "synonyme": [
+    "Siedepunkt",
+    "Dampfkochtopf",
+    "Kochen in den Bergen",
+    "Wasser kocht bei 90 Grad",
+    "Schnellkochtopf"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "temperaturskala"
+   }
+  },
+  {
+   "id": "basen-braeunung",
+   "typ": "prozess",
+   "titel": "Basen beschleunigen die Bräunung",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "maillard-reaktion",
+    "ph-wert",
+    "natron",
+    "natron-zwiebeln",
+    "laugen"
+   ],
+   "welten": [
+    "w-brot",
+    "w-gemuese"
+   ],
+   "synonyme": [
+    "Lauge",
+    "Laugenbrezel",
+    "Natron bräunt",
+    "basisch",
+    "Brezel braun"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "keine"
+   }
+  },
+  {
+   "id": "zucker-feuchtigkeit",
+   "typ": "prozess",
+   "titel": "Zucker hält Feuchtigkeit fest",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "zucker",
+    "honig",
+    "kuchen-trocken",
+    "laenger-frisch",
+    "retrogradation",
+    "wasseraktivitaet"
+   ],
+   "welten": [
+    "w-gebaeck",
+    "w-suesses"
+   ],
+   "synonyme": [
+    "Kuchen saftig",
+    "Zucker bindet Wasser",
+    "hygroskopisch",
+    "Kuchen bleibt frisch",
+    "Honig im Teig"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "keine"
+   }
+  },
+  {
+   "id": "kalzium-pektin",
+   "typ": "prozess",
+   "titel": "Kalk und Säure halten Gemüse fest",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "pektin-abbau",
+    "pektin",
+    "natron",
+    "saeure",
+    "bohnen-nicht-weich",
+    "gemuese-matschig"
+   ],
+   "welten": [
+    "w-gemuese"
+   ],
+   "synonyme": [
+    "hartes Wasser",
+    "Kalk",
+    "Bohnen bleiben hart",
+    "Gemüse bleibt fest",
+    "Tomaten Bohnen"
+   ],
+   "verlinkt_von": [
+    "ph-wert"
+   ],
+   "visual": {
+    "vorlage": "keine"
+   }
+  },
+  {
+   "id": "glace-koernig",
+   "typ": "symptom",
+   "titel": "Glace wird körnig oder steinhart",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "eiskristalle",
+    "gefrierpunkt-senkung",
+    "einfrieren",
+    "cremig"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [
+    "Glace hart",
+    "Eis körnig",
+    "Sorbet hart",
+    "Glace eisig"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "entscheidungsbaum"
+   }
+  },
+  {
+   "id": "bohnen-nicht-weich",
+   "typ": "symptom",
+   "titel": "Bohnen und Kichererbsen werden nicht weich",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "kalzium-pektin",
+    "siedepunkt-druck",
+    "natron",
+    "dampfkochtopf"
+   ],
+   "welten": [
+    "w-gemuese"
+   ],
+   "synonyme": [
+    "Hülsenfrüchte hart",
+    "Kichererbsen hart",
+    "Linsen bleiben hart",
+    "Bohnen bleiben hart"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "entscheidungsbaum"
+   }
+  },
+  {
+   "id": "gefrierbrand",
+   "typ": "symptom",
+   "titel": "Gefrierbrand: graue, trockene Stellen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "eiskristalle",
+    "einfrieren",
+    "sublimation"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-fisch"
+   ],
+   "synonyme": [
+    "Gefrierbrand",
+    "Fleisch tiefgekühlt grau",
+    "Eis im Beutel",
+    "trockene Stellen gefroren"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "entscheidungsbaum"
+   }
+  },
+  {
+   "id": "zu-scharf",
+   "typ": "symptom",
+   "titel": "Das Essen ist zu scharf",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "schaerfe",
+    "aroma-loeslichkeit",
+    "joghurt"
+   ],
+   "welten": [
+    "w-gemuese",
+    "w-saucen"
+   ],
+   "synonyme": [
+    "zu scharf",
+    "Chili zu viel",
+    "Curry zu scharf",
+    "Schärfe retten"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "entscheidungsbaum"
+   }
+  },
+  {
+   "id": "marinade-matschig",
+   "typ": "symptom",
+   "titel": "Fleisch aus der Marinade ist mehlig oder matschig",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "enzym-zartmachen",
+    "saeure-denaturierung",
+    "marinieren"
+   ],
+   "welten": [
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "Marinade matschig",
+    "Fleisch mehlig",
+    "Ananas Marinade zu lange",
+    "Fleisch zerfällt Marinade"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "entscheidungsbaum"
+   }
+  },
+  {
+   "id": "laenger-haltbar",
+   "typ": "ziel",
+   "titel": "Länger haltbar machen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "keimwachstum",
+    "wasseraktivitaet",
+    "einfrieren",
+    "poekeln",
+    "milchsaeuregaerung",
+    "g-konfituere",
+    "lake"
+   ],
+   "welten": [
+    "w-suesses",
+    "w-fleisch",
+    "w-gemuese"
+   ],
+   "synonyme": [
+    "haltbar",
+    "konservieren",
+    "Vorrat",
+    "länger aufbewahren",
+    "Reste aufbewahren"
+   ],
+   "verlinkt_von": [
+    "laenger-frisch"
+   ],
+   "visual": {
+    "vorlage": "punktmatrix"
+   }
+  },
+  {
+   "id": "einfrieren",
+   "typ": "technik",
+   "titel": "Richtig einfrieren und auftauen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "eiskristalle",
+    "gefrierbrand",
+    "keimwachstum",
+    "blanchieren",
+    "laenger-haltbar"
+   ],
+   "welten": [
+    "w-gemuese",
+    "w-fleisch",
+    "w-suesses"
+   ],
+   "synonyme": [
+    "einfrieren",
+    "tiefkühlen",
+    "auftauen",
+    "Schockfrosten",
+    "Vorrat einfrieren"
+   ],
+   "verlinkt_von": [
+    "glace-koernig"
+   ],
+   "visual": {
+    "vorlage": "keine"
+   }
+  },
+  {
+   "id": "dampfkochtopf",
+   "typ": "technik",
+   "titel": "Mit dem Dampfkochtopf garen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "siedepunkt-druck",
+    "schmoren",
+    "bohnen-nicht-weich",
+    "kollagen-gelatine",
+    "fond"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-gemuese",
+    "w-getreide"
+   ],
+   "synonyme": [
+    "Dampfkochtopf",
+    "Schnellkochtopf",
+    "Druckkochtopf",
+    "Kukident",
+    "Duromatic"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "keine"
+   }
+  },
+  {
+   "id": "laugen",
+   "typ": "technik",
+   "titel": "Laugengebäck: mit Natron statt Lauge",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "basen-braeunung",
+    "natron",
+    "maillard-reaktion",
+    "w-brot"
+   ],
+   "welten": [
+    "w-brot"
+   ],
+   "synonyme": [
+    "Laugenbrezel",
+    "Laugenbrötchen",
+    "Laugengebäck",
+    "gebackenes Natron",
+    "Brezel selber machen"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "keine"
+   }
+  },
+  {
+   "id": "x-glace-beutel",
+   "typ": "experiment",
+   "titel": "Glace im Beutel schütteln",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "gefrierpunkt-senkung",
+    "eiskristalle",
+    "salz"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [
+    "Eis selber machen Kinder",
+    "Glace ohne Maschine",
+    "Salz Eis Experiment"
+   ],
+   "verlinkt_von": [
+    "w-suesses"
+   ],
+   "visual": {
+    "vorlage": "vergleich"
+   }
+  },
+  {
+   "id": "x-ananas-gelatine",
+   "typ": "experiment",
+   "titel": "Warum Ananas die Götterspeise verhindert",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "enzym-zartmachen",
+    "gelbildung-gelatine",
+    "gelatine",
+    "enzym"
+   ],
+   "welten": [
+    "w-suesses"
+   ],
+   "synonyme": [
+    "Ananas Gelatine Experiment",
+    "Götterspeise flüssig",
+    "Wackelpudding Ananas"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "vergleich"
    }
   }
  ]

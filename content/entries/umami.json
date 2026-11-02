@@ -1,0 +1,72 @@
+{
+  "id": "umami",
+  "typ": "prozess",
+  "titel": "Umami: der herzhafte Geschmack",
+  "synonyme": [
+    "Umami",
+    "herzhaft",
+    "würzig",
+    "Glutamat",
+    "fünfter Geschmack",
+    "Tiefe im Geschmack"
+  ],
+  "kurz": "Umami ist der fünfte Grundgeschmack: herzhaft und rund. Er entsteht durch [[glutamat|Glutamat]] und wird stark, wenn zwei Partner zusammenkommen.",
+  "bild_im_kopf": "Wie ein Duett: Glutamat singt allein ordentlich, mit seinem Partner zusammen füllt es den ganzen Saal.",
+  "was_passiert": "Die Zunge hat eigene Sensoren für Glutamat, einen Baustein von Eiweiß. Frei wird es, wenn Eiweiß reift, gärt oder lange kocht: in Parmesan, Tomaten, Pilzen, Sojasauce. Ein zweiter Stoff aus Fleisch, Fisch oder getrockneten Pilzen verändert den Sensor so, dass er viel stärker anspricht. Kommen beide zusammen, schmeckt es um ein Vielfaches herzhafter.",
+  "warum_wichtig": "Erklärt, warum Parmesan auf Tomatensauce, Sardellen im Schmorgericht oder Pilze in der Brühe so viel Tiefe geben, ohne nach sich selbst zu schmecken.",
+  "faustregeln": [
+    "Fehlt einem Gericht Tiefe statt Salz: etwas Parmesan, Tomatenmark, Sojasauce oder Sardelle.",
+    "Zwei Umami-Quellen kombinieren, etwa Tomate mit Fleisch oder Pilze mit Käse.",
+    "Tomatenmark kurz anrösten, das verstärkt sein Aroma."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zeit",
+      "wirkung": "Reifen, Gären und langes Kochen setzen mehr Glutamat frei"
+    },
+    {
+      "id": "salzgehalt",
+      "wirkung": "Salz und Umami verstärken sich gegenseitig"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-saucen",
+      "text": "Ein Teelöffel Sojasauce oder etwas Parmesanrinde in der Sauce macht sie runder.",
+      "aroma": [
+        "umami"
+      ]
+    },
+    {
+      "welt": "w-fleisch",
+      "text": "Fleisch bringt den Partnerstoff mit: Darum passt Tomate so gut zu Hackfleisch."
+    }
+  ],
+  "links": [
+    "mehr-geschmack",
+    "essen-flach",
+    "kaese",
+    "salz-geschmack",
+    "fond",
+    "reduktion"
+  ],
+  "welten": [
+    "w-saucen",
+    "w-fleisch",
+    "w-milch"
+  ],
+  "quellen": [
+    {
+      "titel": "America’s Test Kitchen: The science of umami",
+      "url": "https://www.americastestkitchen.com/articles/5545-the-science-of-umami"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "keine"
+  }
+}

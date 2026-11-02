@@ -1,0 +1,44 @@
+{
+  "id": "laugen",
+  "typ": "technik",
+  "titel": "Laugengebäck: mit Natron statt Lauge",
+  "synonyme": [
+    "Laugenbrezel",
+    "Laugenbrötchen",
+    "Laugengebäck",
+    "gebackenes Natron",
+    "Brezel selber machen"
+  ],
+  "kurz": "Laugengebäck bekommt Farbe und Geschmack durch ein basisches Bad. Zu Hause gelingt das milder mit gebackenem Natron.",
+  "bild_im_kopf": "Wie eine Grundierung vor dem Malen: Der kurze Tauchgang entscheidet, wie die Farbe später wird.",
+  "schritte": [
+    "Natron auf einem Blech etwa eine Stunde bei 120–150 °C backen, das macht es stärker basisch (Richtwert).",
+    "Etwa 2 Esslöffel davon in einem Liter heißem Wasser lösen.",
+    "Geformte Brezeln 20–30 Sekunden eintauchen, abtropfen lassen.",
+    "Mit grobem Salz bestreuen und heiß backen."
+  ],
+  "faustregeln": [
+    "Gebackenes Natron ist reizend: nicht ins Gesicht, Hände danach waschen.",
+    "Kein Aluminiumblech und keine Aluminiumschüssel verwenden.",
+    "Echte Backlauge (Natronlauge) gibt mehr Farbe, ist aber ätzend: nur mit Handschuhen und Schutzbrille."
+  ],
+  "links": [
+    "basen-braeunung",
+    "natron",
+    "maillard-reaktion",
+    "w-brot"
+  ],
+  "welten": [
+    "w-brot"
+  ],
+  "schwierigkeit": "fortgeschritten",
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "keine"
+  }
+}

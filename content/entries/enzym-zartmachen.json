@@ -1,0 +1,64 @@
+{
+  "id": "enzym-zartmachen",
+  "typ": "prozess",
+  "titel": "Ananas, Kiwi und Papaya zerschneiden Eiweiß",
+  "synonyme": [
+    "Fleisch zart machen",
+    "Ananas Gelatine",
+    "Bromelain",
+    "Papain",
+    "Kiwi Quark bitter",
+    "Marinade Ananas"
+  ],
+  "kurz": "Rohe Ananas, Kiwi, Papaya und Feigen enthalten [[enzym|Enzyme]], die Eiweiß zerschneiden. Sie machen Fleisch mürbe, verhindern aber auch, dass Gelatine fest wird.",
+  "bild_im_kopf": "Wie winzige Scheren, die durch ein Netz schneiden: Ein paar Schnitte machen es weich, zu viele lassen es zerfallen.",
+  "was_passiert": "Die Enzyme spalten lange Eiweißketten in Stücke. Auf Fleisch lockert das die Oberfläche, wird aber schnell mehlig und matschig, weil die Enzyme kaum ins Innere gelangen. Gelatine ist ebenfalls Eiweiß: Mit roher Ananas wird sie nie fest. In Quark mit Kiwi entstehen bittere Bruchstücke. Hitze schaltet die Enzyme ab, darum funktioniert Ananas aus der Dose.",
+  "warum_wichtig": "Erklärt, warum Ananas-Götterspeise flüssig bleibt, warum Kiwi-Quark bitter wird und warum Ananas-Marinaden nur kurz wirken sollen.",
+  "faustregeln": [
+    "Für Gelatine-Desserts Ananas, Kiwi und Papaya kurz aufkochen oder aus der Dose nehmen.",
+    "Ananas-Marinade höchstens eine halbe bis eine Stunde, sonst wird das Fleisch mehlig.",
+    "Kiwi erst kurz vor dem Servieren unter Quark oder Joghurt mischen."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "Kochen schaltet die Enzyme ab"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "länger → mehr zerschnitten, schnell zu viel"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-suesses",
+      "text": "Panna cotta mit frischer Ananas bleibt flüssig, mit Dosen-Ananas wird sie fest."
+    },
+    {
+      "welt": "w-fleisch",
+      "text": "Asiatische Marinaden mit Ananas oder Papaya wirken an der Oberfläche, nicht im Kern."
+    }
+  ],
+  "links": [
+    "enzym",
+    "gelbildung-gelatine",
+    "gelatine",
+    "marinieren",
+    "marinade-matschig",
+    "x-ananas-gelatine"
+  ],
+  "welten": [
+    "w-suesses",
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "zoom3-simulation"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

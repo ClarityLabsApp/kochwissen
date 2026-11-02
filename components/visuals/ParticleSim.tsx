@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 const C = { water: "#8fb8c9", waterRim: "#5f8fa3", fat: "#f0d27a", fatRim: "#c9a24a", lab: "#2f6f73", salt: "#ffffff", sepia: "#7a5a3a",
   ink: "#2b2118", roast: "#6b3a1e", nut: "#b8873a", caramel: "#d9822b", meat: "#c97b72", meatRim: "#a9564e", cell: "#c8d9a8", cellRim: "#7f9a5a", sugar: "#e0ad3a" };
 
-export type Preset = "emulsion" | "osmose" | "pektin-abbau" | "reduktion" | "hefegaerung" | "chemische-lockerung" | "waermeleitung" | "schaumbildung" | "diffusion" | "zucker-kristallisation" | "leidenfrost" | "gelbildung-pektin" | "chlorophyll-farbe" | "eiweiss-denaturierung" | "glutenbildung" | "karamellisierung";
+export type Preset = "emulsion" | "osmose" | "pektin-abbau" | "reduktion" | "hefegaerung" | "chemische-lockerung" | "waermeleitung" | "schaumbildung" | "diffusion" | "zucker-kristallisation" | "leidenfrost" | "gelbildung-pektin" | "chlorophyll-farbe" | "eiweiss-denaturierung" | "glutenbildung" | "karamellisierung" | "eiskristalle" | "siedepunkt-druck" | "enzym-zartmachen";
 
 interface Ctl { a: number; b: boolean; ph: number }
 interface Sim {
@@ -654,7 +654,124 @@ const karamell: Sim = {
   readouts(s, c) { const T = c.a; return [["Zustand", T < 150 ? "Kristalle" : T < 165 ? "flüssig" : "Karamell"], ["Farbe", T < 165 ? "klar" : T < 175 ? "golden" : T < 188 ? "bernstein" : T < 196 ? "dunkel" : "schwarz"], ["Geschmack", T < 165 ? "süß" : T < 188 ? "karamellig" : T < 196 ? "kräftig" : "bitter"]]; },
 };
 
-const PRESETS: Record<Preset, Sim> = { emulsion, osmose, "pektin-abbau": pektin, reduktion, hefegaerung: hefe, "chemische-lockerung": lockerung, waermeleitung: waerme, schaumbildung: schaum, diffusion, "zucker-kristallisation": kristall, leidenfrost: leiden, "gelbildung-pektin": pektinGel, "chlorophyll-farbe": gruen, "eiweiss-denaturierung": eiweiss, glutenbildung: gluten, karamellisierung: karamell };
+/* ---------------- Eiskristalle: langsam = wenige große, schnell oder gerührt = viele kleine ---------------- */
+const eis: Sim = {
+  title: "Ebene 3 · Wasser beim Gefrieren", scale: "≈ 0,1 mm",
+  controls: { slider: { label: "Gefriertempo", min: 0, max: 1, step: 0.01, def: 0.2, fmt: (v) => (v < 0.3 ? "langsam" : v < 0.7 ? "mittel" : "schnell") }, toggle: { label: "rühren", def: false }, reset: true },
+  init(W, H) { return { K: [] as any[], frozen: 0, cells: Array.from({ length: 140 }, () => ({ x: rnd(8, W - 8), y: rnd(8, H - 8), f: false })) }; },
+  step(s, dt, c, W, H) {
+    const nucRate = (0.6 + c.a * c.a * 25) * (c.b ? 3 : 1);
+    if (s.frozen < 0.98 && Math.random() < nucRate * dt) s.K.push({ x: rnd(10, W - 10), y: rnd(10, H - 10), r: 2, a: rnd(0, Math.PI), max: c.b ? 9 : 200 });
+    for (const k of s.K) if (k.r < k.max) k.r += 16 * dt;
+    if (c.b) for (const k of s.K) { k.x += rnd(-1, 1) * 30 * dt; k.y += rnd(-1, 1) * 30 * dt; }
+    let f = 0; for (const p of s.cells) { if (!p.f) p.f = s.K.some((k: any) => (k.x - p.x) ** 2 + (k.y - p.y) ** 2 < k.r * k.r); if (p.f) f++; }
+    s.frozen = f / s.cells.length;
+    if (c.b && s.frozen > 0.97 && s.K.length < 60) for (let i = 0; i < 4; i++) s.K.push({ x: rnd(10, W - 10), y: rnd(10, H - 10), r: 2, a: rnd(0, Math.PI), max: 9 });
+  },
+  draw(g, s, _c, W, H) {
+    g.fillStyle = "rgba(143,184,201,.18)"; g.fillRect(0, 0, W, H);
+    g.save(); g.beginPath(); g.rect(0, 0, W, H); g.clip();
+    for (const k of s.K) {
+      g.save(); g.translate(k.x, k.y); g.rotate(k.a); g.beginPath();
+      for (let i = 0; i < 6; i++) { const a = (i / 6) * Math.PI * 2; g.lineTo(Math.cos(a) * k.r, Math.sin(a) * k.r); }
+      g.closePath(); g.fillStyle = "rgba(240,248,252,.9)"; g.fill(); g.strokeStyle = "#5f8fa3"; g.lineWidth = 1; g.stroke();
+      if (k.r > 14) { g.strokeStyle = "rgba(95,143,163,.5)"; for (let i = 0; i < 3; i++) { const a = (i / 3) * Math.PI; g.beginPath(); g.moveTo(-Math.cos(a) * k.r * .8, -Math.sin(a) * k.r * .8); g.lineTo(Math.cos(a) * k.r * .8, Math.sin(a) * k.r * .8); g.stroke(); } }
+      g.restore();
+    }
+    g.restore();
+  },
+  status(s, c) {
+    const n = s.K.length, avg = n ? s.K.reduce((a: number, k: any) => a + k.r, 0) / n : 0;
+    if (s.frozen < 0.3) return "Die ersten Kristallkeime entstehen. Wie viele es werden, entscheidet über die Struktur.";
+    if (c.b || avg < 16) return "Viele kleine Kristalle: Die Masse wird fein und cremig, Zellwände bleiben heil.";
+    return "Wenige Kristalle wachsen lange und werden groß: Glace wird körnig, Gemüse wird beim Auftauen matschig.";
+  },
+  readouts(s) { const n = s.K.length, avg = n ? s.K.reduce((a: number, k: any) => a + k.r, 0) / n : 0; return [["Kristalle", String(n)], ["Größe", n === 0 ? "–" : avg < 12 ? "fein" : avg < 26 ? "mittel" : "grob"], ["gefroren", `${Math.round(s.frozen * 100)} %`]]; },
+};
+
+/* ---------------- Siedepunkt: Druck bestimmt, wann Wasser kocht ---------------- */
+const SIEDE: [number, string, number][] = [[0.33, "Mount Everest", 71], [0.7, "auf 3000 m", 90], [0.95, "Luzern", 98], [1, "Meereshöhe", 100], [2, "Dampfkochtopf", 120]];
+const siede: Sim = {
+  title: "Ebene 1 · Topf mit kochendem Wasser", scale: "≈ 20 cm",
+  controls: { slider: { label: "Luftdruck", min: 0, max: 4, step: 1, def: 3, fmt: (v) => SIEDE[Math.round(v)][1] } },
+  init(W, H) { return { B: [] as any[], T: 20 }; },
+  step(s, dt, c, W, H) {
+    const [, , boil] = SIEDE[Math.round(c.a)];
+    s.T = s.T < boil ? Math.min(boil, s.T + dt * 30) : boil;
+    const boiling = s.T >= boil - 0.5;
+    if (boiling && Math.random() < dt * 30) s.B.push({ x: rnd(W * 0.25, W * 0.75), y: H * 0.82, r: rnd(2, 5) });
+    for (const b of s.B) { b.y -= (40 + b.r * 10) * dt; b.r += dt * 2; }
+    s.B = s.B.filter((b: any) => b.y > H * 0.36);
+  },
+  draw(g, s, c, W, H, t) {
+    const [p, , boil] = SIEDE[Math.round(c.a)];
+    const L = W * 0.2, R = W * 0.8, top = H * 0.3, bot = H * 0.86;
+    g.fillStyle = "rgba(143,184,201,.45)"; g.fillRect(L, top + 10, R - L, bot - top - 10);
+    g.strokeStyle = "#2b2118"; g.lineWidth = 3; g.beginPath(); g.moveTo(L, top); g.lineTo(L, bot); g.lineTo(R, bot); g.lineTo(R, top); g.stroke();
+    if (p > 1.5) { g.fillStyle = "#3a3633"; g.fillRect(L - 6, top - 10, R - L + 12, 10); g.fillRect(W / 2 - 4, top - 22, 8, 12); }
+    for (const b of s.B) dot(g, b.x, b.y, b.r, "rgba(255,255,255,.85)", "rgba(95,143,163,.7)", .8);
+    // Luftdruck als Pfeile von oben
+    const n = Math.max(1, Math.round(p * 3)); g.strokeStyle = "rgba(43,33,24,.45)"; g.lineWidth = 1.5;
+    for (let i = 0; i < n; i++) { const x = L + ((i + 0.5) / n) * (R - L), y0 = 6, y1 = top - (p > 1.5 ? 26 : 8); g.beginPath(); g.moveTo(x, y0); g.lineTo(x, y1); g.lineTo(x - 4, y1 - 6); g.moveTo(x, y1); g.lineTo(x + 4, y1 - 6); g.stroke(); }
+    g.fillStyle = "#2b2118"; g.font = "12px JetBrains Mono, monospace"; g.textAlign = "center"; g.fillText(`Wasser ${Math.round(s.T)} °C · kocht bei ${boil} °C`, W / 2, bot + 18); g.textAlign = "left";
+    void t;
+  },
+  status(s, c) {
+    const [p, place, boil] = SIEDE[Math.round(c.a)];
+    if (s.T < boil - 0.5) return "Das Wasser erwärmt sich. Es kocht, sobald sein Dampf so stark drückt wie die Luft darüber.";
+    if (p < 0.9) return `${place}: Weniger Luftdruck, das Wasser kocht schon bei ${boil} °C. Pasta und Eier brauchen länger, mehr Hitze ändert nichts.`;
+    if (p > 1.5) return "Der Deckel hält den Dampf zurück, der Druck steigt: Das Wasser wird etwa 120 °C heiß, alles gart viel schneller.";
+    return `${place}: Das Wasser kocht bei ${boil} °C und wird nicht heißer, egal wie stark die Flamme ist.`;
+  },
+  readouts(s, c) { const [p, , boil] = SIEDE[Math.round(c.a)]; return [["Druck", `${p.toFixed(1).replace(".", ",")} bar`], ["kocht bei", `${boil} °C`], ["Garzeit", boil >= 110 ? "≈ ⅓" : boil >= 99 ? "normal" : boil >= 88 ? "länger" : "viel länger"]]; },
+};
+
+/* ---------------- Enzyme zerschneiden Eiweißketten (Ananas, Kiwi, Papaya) ---------------- */
+const enzymSchere: Sim = {
+  title: "Ebene 3 · Eiweißnetz mit Enzymen", scale: "≈ 10 nm",
+  controls: { slider: { label: "Zeit", min: 0, max: 1, step: 0.01, def: 0, fmt: (v) => `${Math.round(v * 120)} min` }, toggle: { label: "Ananas vorher gekocht", def: false }, reset: true },
+  init(W, H) {
+    const P = [] as any[], B = [] as any[]; const cols = 9, rows = 5;
+    for (let r = 0; r < rows; r++) for (let q = 0; q < cols; q++) P.push({ x: 20 + q * ((W - 40) / (cols - 1)), y: 20 + r * ((H - 40) / (rows - 1)) });
+    for (let r = 0; r < rows; r++) for (let q = 0; q < cols; q++) { const i = r * cols + q; if (q < cols - 1) B.push({ a: i, b: i + 1, cut: 1 }); if (r < rows - 1) B.push({ a: i, b: i + cols, cut: 1 }); }
+    return { P, B, S: Array.from({ length: 7 }, () => ({ x: rnd(10, W - 10), y: rnd(10, H - 10), vx: rnd(-1, 1), vy: rnd(-1, 1) })) };
+  },
+  step(s, dt, c, W, H) {
+    if (c.b) return; // gekocht: Enzyme abgeschaltet
+    for (const e of s.S) { e.x += e.vx * 50 * dt; e.y += e.vy * 50 * dt; if (e.x < 6 || e.x > W - 6) e.vx *= -1; if (e.y < 6 || e.y > H - 6) e.vy *= -1; }
+    const target = Math.round(c.a * s.B.length * 0.9); let cut = s.B.filter((b: any) => !b.cut).length;
+    if (cut < target) {
+      for (const e of s.S) {
+        let best: any = null, bd = 1e9;
+        for (const b of s.B) { if (!b.cut) continue; const mx = (s.P[b.a].x + s.P[b.b].x) / 2, my = (s.P[b.a].y + s.P[b.b].y) / 2, d = (mx - e.x) ** 2 + (my - e.y) ** 2; if (d < bd) { bd = d; best = b; } }
+        if (best && bd < 900 && cut < target) { best.cut = 0; cut++; }
+      }
+      if (cut < target && Math.random() < dt * 8) { const open = s.B.filter((b: any) => b.cut); if (open.length) { open[Math.floor(Math.random() * open.length)].cut = 0; } }
+    }
+    if (cut > target) for (const b of s.B) if (!b.cut && cut > target) { b.cut = 1; cut--; }
+  },
+  draw(g, s, c) {
+    g.lineWidth = 2.5; g.strokeStyle = C.lab;
+    for (const b of s.B) if (b.cut) { g.beginPath(); g.moveTo(s.P[b.a].x, s.P[b.a].y); g.lineTo(s.P[b.b].x, s.P[b.b].y); g.stroke(); }
+    for (const p of s.P) dot(g, p.x, p.y, 3.2, C.lab);
+    for (const e of s.S) {
+      if (c.b) { dot(g, e.x, e.y, 6, "#bdb3a4"); continue; }
+      g.save(); g.translate(e.x, e.y); g.strokeStyle = "#d9822b"; g.lineWidth = 2.2;
+      g.beginPath(); g.moveTo(-6, -6); g.lineTo(6, 6); g.moveTo(-6, 6); g.lineTo(6, -6); g.stroke();
+      dot(g, -6, -6, 2.5, "#d9822b"); dot(g, -6, 6, 2.5, "#d9822b"); g.restore();
+    }
+  },
+  status(s, c) {
+    const share = s.B.filter((b: any) => !b.cut).length / s.B.length;
+    if (c.b) return "Gekocht: Die Hitze hat die Enzyme abgeschaltet. Das Eiweißnetz bleibt ganz, Gelatine wird fest.";
+    if (share < 0.08) return "Die Enzyme aus der rohen Frucht (orange Scheren) suchen sich Eiweißketten.";
+    if (share < 0.45) return "Erste Ketten sind zerschnitten: Fleisch wird an der Oberfläche mürbe, Gelatine bleibt weich.";
+    return "Das Netz zerfällt: Fleisch wird mehlig, Gelatine wird nie fest, Kiwi-Quark wird bitter.";
+  },
+  readouts(s, c) { const share = s.B.filter((b: any) => !b.cut).length / s.B.length; return [["Enzyme", c.b ? "abgeschaltet" : "aktiv"], ["Netz", share < 0.1 ? "ganz" : share < 0.45 ? "gelockert" : "zerfallen"]]; },
+};
+
+const PRESETS: Record<Preset, Sim> = { emulsion, osmose, "pektin-abbau": pektin, reduktion, hefegaerung: hefe, "chemische-lockerung": lockerung, waermeleitung: waerme, schaumbildung: schaum, diffusion, "zucker-kristallisation": kristall, leidenfrost: leiden, "gelbildung-pektin": pektinGel, "chlorophyll-farbe": gruen, "eiweiss-denaturierung": eiweiss, glutenbildung: gluten, karamellisierung: karamell, eiskristalle: eis, "siedepunkt-druck": siede, "enzym-zartmachen": enzymSchere };
 
 /** Punkt-Simulation für einen Prozess. Läuft auf Canvas, mit Reglern aus dem Preset. */
 export default function ParticleSim({ preset }: { preset: Preset }) {
@@ -671,9 +788,9 @@ export default function ParticleSim({ preset }: { preset: Preset }) {
 
   // Osmose läuft beim Öffnen einmal von selbst durch
   useEffect(() => {
-    if (!["osmose", "reduktion", "chemische-lockerung", "diffusion", "chlorophyll-farbe", "eiweiss-denaturierung", "glutenbildung", "karamellisierung"].includes(preset)) return;
+    if (!["osmose", "reduktion", "chemische-lockerung", "diffusion", "chlorophyll-farbe", "eiweiss-denaturierung", "glutenbildung", "karamellisierung", "enzym-zartmachen"].includes(preset)) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    let raf = 0; const start = performance.now(); const [from, to] = preset === "osmose" || preset === "diffusion" ? [0, 1] : preset === "reduktion" ? [1, 0.35] : preset === "chlorophyll-farbe" ? [0, 8] : preset === "eiweiss-denaturierung" ? [20, 80] : preset === "glutenbildung" ? [0, 0.85] : preset === "karamellisierung" ? [120, 190] : [20, 180];
+    let raf = 0; const start = performance.now(); const [from, to] = preset === "osmose" || preset === "diffusion" ? [0, 1] : preset === "reduktion" ? [1, 0.35] : preset === "chlorophyll-farbe" ? [0, 8] : preset === "eiweiss-denaturierung" ? [20, 80] : preset === "glutenbildung" ? [0, 0.85] : preset === "karamellisierung" ? [120, 190] : preset === "enzym-zartmachen" ? [0, 1] : [20, 180];
     const dur = preset === "chemische-lockerung" || preset === "karamellisierung" ? 12000 : 9000;
     const run = (now: number) => { const p = Math.min(1, (now - start) / dur); setA(from + (to - from) * p); if (p < 1) raf = requestAnimationFrame(run); };
     raf = requestAnimationFrame(run);

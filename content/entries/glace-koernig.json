@@ -1,0 +1,101 @@
+{
+  "id": "glace-koernig",
+  "typ": "symptom",
+  "titel": "Glace wird körnig oder steinhart",
+  "synonyme": [
+    "Glace hart",
+    "Eis körnig",
+    "Sorbet hart",
+    "Glace eisig"
+  ],
+  "kurz": "Große Eiskristalle machen Glace körnig, zu wenig Zucker macht sie hart.",
+  "bild_im_kopf": "Wie Schnee, der getaut und wieder gefroren ist: Aus Pulver wird verharschte Kruste.",
+  "ursachen": [
+    {
+      "titel": "Zu langsam gefroren, nicht gerührt",
+      "haeufigkeit": 3,
+      "prinzip": "eiskristalle",
+      "warum": "Ohne Rühren wachsen wenige große Kristalle.",
+      "fix": [
+        "Masse gut vorkühlen",
+        "Im Tiefkühler alle 30 Minuten kräftig durchrühren, oder eine Glacemaschine nehmen"
+      ]
+    },
+    {
+      "titel": "Zu wenig Zucker",
+      "haeufigkeit": 2,
+      "prinzip": "gefrierpunkt-senkung",
+      "warum": "Zucker hält einen Teil flüssig. Fehlt er, friert alles fest.",
+      "fix": [
+        "Zucker nicht stark reduzieren",
+        "Ein Esslöffel Schnaps oder etwas Glukosesirup hält weicher"
+      ]
+    },
+    {
+      "titel": "Angetaut und wieder gefroren",
+      "haeufigkeit": 2,
+      "prinzip": "eiskristalle",
+      "warum": "Beim Antauen schmelzen kleine Kristalle, beim Gefrieren wachsen die großen weiter.",
+      "fix": [
+        "Glace nicht lange draußen stehen lassen",
+        "Folie direkt auf die Oberfläche legen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Ist sie eher körnig oder eher steinhart?",
+      "antworten": [
+        [
+          "Körnig, knirscht",
+          "q2"
+        ],
+        [
+          "Steinhart",
+          "u1"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Wurde sie schon einmal angetaut?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "eiskristalle",
+    "gefrierpunkt-senkung",
+    "einfrieren",
+    "cremig"
+  ],
+  "welten": [
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum"
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

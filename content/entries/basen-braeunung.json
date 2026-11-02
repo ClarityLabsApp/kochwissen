@@ -1,0 +1,58 @@
+{
+  "id": "basen-braeunung",
+  "typ": "prozess",
+  "titel": "Basen beschleunigen die Bräunung",
+  "synonyme": [
+    "Lauge",
+    "Laugenbrezel",
+    "Natron bräunt",
+    "basisch",
+    "Brezel braun"
+  ],
+  "kurz": "In basischer Umgebung läuft die [[maillard-reaktion|Maillard-Reaktion]] viel schneller. Darum werden Laugenbrezeln tiefbraun und Zwiebeln mit einer Prise Natron schneller dunkel.",
+  "bild_im_kopf": "Wie Rückenwind beim Velofahren: Der Weg ist derselbe, aber man kommt viel schneller ans Ziel.",
+  "was_passiert": "Die Bräunungsreaktion hängt vom [[ph-wert|pH-Wert]] ab. Säure bremst sie, Basen wie Natron oder Lauge beschleunigen sie stark. Laugengebäck wird vor dem Backen kurz in eine Lauge getaucht: Die Oberfläche bräunt dann tief, glänzt und schmeckt typisch. Eine Prise Natron lässt Zwiebeln schneller braun und weich werden, zu viel schmeckt seifig.",
+  "warum_wichtig": "Erklärt die Farbe von Brezeln und Laugenbrötchen und warum ein Hauch Natron beim Anbraten Zeit spart.",
+  "faustregeln": [
+    "Für Zwiebeln eine Messerspitze Natron, nicht mehr.",
+    "Säure wie Zitrone oder Wein bremst die Bräunung, also erst später zugeben.",
+    "Echte Backlauge ist ätzend: Handschuhe, Brille, nichts aus Aluminium."
+  ],
+  "stellschrauben": [
+    {
+      "id": "ph-wert",
+      "wirkung": "basisch → schneller braun, sauer → langsamer"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-brot",
+      "text": "Laugenbrezel: kurz in Lauge getaucht, dann gebacken. Mit gebackenem Natron geht es zu Hause milder."
+    },
+    {
+      "welt": "w-gemuese",
+      "text": "Natron-Zwiebeln werden in der Hälfte der Zeit goldbraun."
+    }
+  ],
+  "links": [
+    "maillard-reaktion",
+    "ph-wert",
+    "natron",
+    "natron-zwiebeln",
+    "laugen"
+  ],
+  "welten": [
+    "w-brot",
+    "w-gemuese"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "keine"
+  }
+}

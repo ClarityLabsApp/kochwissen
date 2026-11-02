@@ -21,7 +21,9 @@
     "kollagen-gelatine",
     "verdampfen",
     "maillard-reaktion",
-    "rauchpunkt"
+    "rauchpunkt",
+    "siedepunkt-druck",
+    "keimwachstum"
   ],
   "visual": {
     "vorlage": "temperaturskala",

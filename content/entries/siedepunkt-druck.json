@@ -1,0 +1,89 @@
+{
+  "id": "siedepunkt-druck",
+  "typ": "prozess",
+  "titel": "Siedepunkt: Druck und Höhe",
+  "synonyme": [
+    "Siedepunkt",
+    "Dampfkochtopf",
+    "Kochen in den Bergen",
+    "Wasser kocht bei 90 Grad",
+    "Schnellkochtopf"
+  ],
+  "kurz": "Wasser kocht nur auf Meereshöhe bei 100 °C. In den Bergen kocht es früher, im Dampfkochtopf erst bei etwa 120 °C.",
+  "bild_im_kopf": "Wie ein Deckel auf einem vollen Saal: Drückt er stark, kommt niemand hinaus, bis es richtig heiß wird.",
+  "was_passiert": "Wasser kocht, wenn sein Dampf so stark drückt wie die Luft darüber. Weniger Luftdruck in der Höhe heißt: Es kocht schon bei tieferer Temperatur, etwa 1 °C weniger pro 300 Höhenmeter. Auf 3000 m kocht Wasser bei rund 90 °C. Der Dampfkochtopf macht es umgekehrt: Er hält den Dampf zurück, der Druck steigt, und Wasser wird etwa 120 °C heiß. Höhere Temperatur heißt kürzere Garzeit.",
+  "warum_wichtig": "Erklärt, warum Pasta und Eier in der Berghütte länger brauchen und warum der Dampfkochtopf Bohnen und Schmorfleisch in einem Bruchteil der Zeit gart.",
+  "faustregeln": [
+    "In den Bergen Garzeiten verlängern, Hitze erhöhen hilft nicht.",
+    "Dampfkochtopf für Hülsenfrüchte, Fond und Schmorgerichte: etwa ein Drittel der Zeit.",
+    "Dampfkochtopf erst öffnen, wenn der Druck ganz abgebaut ist."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "mehr Druck → heißeres Wasser"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-eier",
+      "text": "Ein 6-Minuten-Ei auf 2000 m ist weicher als im Unterland, weil das Wasser kühler kocht."
+    },
+    {
+      "welt": "w-fleisch",
+      "text": "Rindsvoressen im Dampfkochtopf wird in rund einer Stunde zart."
+    }
+  ],
+  "links": [
+    "dampfkochtopf",
+    "verdampfen",
+    "wasser",
+    "kollagen-gelatine",
+    "bohnen-nicht-weich",
+    "temperatur"
+  ],
+  "welten": [
+    "w-eier",
+    "w-fleisch",
+    "w-getreide"
+  ],
+  "quellen": [
+    {
+      "titel": "Küchenfibel: Warum kocht Wasser in der Höhe langsamer?",
+      "url": "https://www.kuechenfibel.de/faq/warum-kocht-wasser-in-der-hohe-langsamer"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "temperaturskala",
+    "params": {
+      "hinweis": "Richtwerte",
+      "skala": [
+        {
+          "c": 71,
+          "name": "Mount Everest"
+        },
+        {
+          "c": 90,
+          "name": "auf rund 3000 m"
+        },
+        {
+          "c": 98,
+          "name": "Luzern (rund 435 m)"
+        },
+        {
+          "c": 100,
+          "name": "Meereshöhe"
+        },
+        {
+          "c": 120,
+          "name": "Dampfkochtopf"
+        }
+      ]
+    }
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

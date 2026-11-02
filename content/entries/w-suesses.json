@@ -25,7 +25,10 @@
     "gelbildung-gelatine",
     "fett-kristallisation",
     "schaumbildung",
-    "eiweiss-gerinnung"
+    "eiweiss-gerinnung",
+    "eiskristalle",
+    "gefrierpunkt-senkung",
+    "x-glace-beutel"
   ],
   "visual": {
     "vorlage": "keine",

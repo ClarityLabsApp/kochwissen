@@ -1,0 +1,96 @@
+{
+  "id": "x-ananas-gelatine",
+  "typ": "experiment",
+  "titel": "Warum Ananas die Götterspeise verhindert",
+  "synonyme": [
+    "Ananas Gelatine Experiment",
+    "Götterspeise flüssig",
+    "Wackelpudding Ananas"
+  ],
+  "kurz": "Mit frischer Ananas bleibt Gelatine flüssig, mit gekochter Ananas wird sie fest.",
+  "material": [
+    "1 Päckchen Götterspeise oder Gelatine mit Saft",
+    "frische Ananas",
+    "Ananas aus der Dose",
+    "drei Gläser"
+  ],
+  "schritte": [
+    "Götterspeise nach Packung zubereiten und auf drei Gläser verteilen.",
+    "Ins erste Glas Stücke frischer Ananas geben, ins zweite Dosen-Ananas, das dritte bleibt ohne.",
+    "Alles einige Stunden in den Kühlschrank stellen.",
+    "Gläser kippen und vergleichen."
+  ],
+  "beobachtung": "Ohne Ananas und mit Dosen-Ananas wird die Götterspeise fest. Mit frischer Ananas bleibt sie flüssig oder wird nur rund um die Stücke weich.",
+  "erklaerung": "Frische Ananas enthält ein [[enzym|Enzym]], das Eiweiß zerschneidet. Gelatine ist Eiweiß, ihr Netz wird zerlegt, bevor es fest werden kann. Beim Herstellen von Dosen-Ananas wird die Frucht erhitzt, das schaltet das Enzym ab.",
+  "dauer": "einige Stunden",
+  "sicherheit": "Heißes Wasser für die Götterspeise: Erwachsene übernehmen das Erhitzen.",
+  "links": [
+    "enzym-zartmachen",
+    "gelbildung-gelatine",
+    "gelatine",
+    "enzym"
+  ],
+  "welten": [
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "eingefüllt",
+      "nachher": "nach einigen Stunden",
+      "vergleich": [
+        {
+          "label": "frische Ananas",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#e9b13c",
+            "fuell": 0.6
+          },
+          "nachher": {
+            "farbe": "#e9b13c",
+            "fuell": 0.6,
+            "blasen": 0.15
+          }
+        },
+        {
+          "label": "Dosen-Ananas",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#e9b13c",
+            "fuell": 0.6
+          },
+          "nachher": {
+            "farbe": "#d99a24",
+            "fuell": 0.6,
+            "klumpen": 1,
+            "klumpenfarbe": "#d99a24"
+          }
+        },
+        {
+          "label": "ohne Ananas",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#e9b13c",
+            "fuell": 0.6
+          },
+          "nachher": {
+            "farbe": "#d99a24",
+            "fuell": 0.6,
+            "klumpen": 1,
+            "klumpenfarbe": "#d99a24"
+          }
+        }
+      ]
+    }
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

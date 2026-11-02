@@ -1,0 +1,58 @@
+{
+  "id": "salz-geschmack",
+  "typ": "prozess",
+  "titel": "Salz verstärkt Aromen und dämpft Bitterkeit",
+  "synonyme": [
+    "Geschmack verstärken",
+    "Salz und Bitterkeit",
+    "Prise Salz",
+    "Salz im Dessert"
+  ],
+  "kurz": "Salz schmeckt nicht nur salzig. In kleinen Mengen hebt es andere Aromen hervor und unterdrückt Bitterkeit.",
+  "bild_im_kopf": "Wie das Licht in einem Museum: Richtig eingestellt sieht man jedes Bild besser, zu grell blendet es.",
+  "was_passiert": "Salz wirkt auf die Geschmackswahrnehmung selbst. Unter der Schwelle, ab der etwas salzig schmeckt, lässt es Süße und Aromen voller wirken. Gleichzeitig dämpft es die Wahrnehmung von Bitterkeit, etwa bei Kaffee, Grapefruit, Rosenkohl oder dunkler Schokolade. Zu viel Salz überdeckt dagegen alles andere.",
+  "warum_wichtig": "Erklärt die Prise Salz im Kuchen, im Karamell und in der Schokoladenmousse, und warum ungesalzenes Essen flach wirkt.",
+  "faustregeln": [
+    "Jede süße Speise bekommt eine Prise Salz.",
+    "Bitteres Gemüse zuerst salzen, bevor man Zucker nimmt.",
+    "In kleinen Schritten salzen und dazwischen probieren."
+  ],
+  "stellschrauben": [
+    {
+      "id": "salzgehalt",
+      "wirkung": "wenig hebt hervor, viel überdeckt"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-suesses",
+      "text": "Salzkaramell und Schokolade mit Fleur de Sel: Das Salz macht die Süße tiefer."
+    },
+    {
+      "welt": "w-gemuese",
+      "text": "Rosenkohl und Chicorée wirken mit genug Salz deutlich weniger bitter."
+    }
+  ],
+  "links": [
+    "salz",
+    "mehr-geschmack",
+    "essen-flach",
+    "essen-versalzen",
+    "umami",
+    "abschmecken-saeure"
+  ],
+  "welten": [
+    "w-suesses",
+    "w-gemuese"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "keine"
+  }
+}

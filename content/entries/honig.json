@@ -32,7 +32,9 @@
   "links": [
     "zucker",
     "maillard-reaktion",
-    "chemische-lockerung"
+    "chemische-lockerung",
+    "zucker-feuchtigkeit",
+    "wasseraktivitaet"
   ],
   "welten": [
     "w-gebaeck"

@@ -1,0 +1,76 @@
+{
+  "id": "wasseraktivitaet",
+  "typ": "prozess",
+  "titel": "Haltbarkeit: Salz und Zucker binden das Wasser",
+  "synonyme": [
+    "Konservieren",
+    "haltbar machen",
+    "Wasseraktivität",
+    "warum Honig nicht schimmelt",
+    "Einsalzen"
+  ],
+  "kurz": "Keime brauchen freies Wasser. Salz, Zucker und Trocknen binden es, darum verderben Honig, Konfitüre, Salami und Dörrobst so langsam.",
+  "bild_im_kopf": "Wie eine Oase, in der jeder Tropfen schon vergeben ist: Wer neu ankommt, findet nichts mehr zu trinken.",
+  "was_passiert": "Nicht der Wassergehalt allein zählt, sondern wie viel Wasser frei verfügbar ist (Wasseraktivität). Salz und Zucker binden Wasser an sich, Trocknen entfernt es. Die meisten gefährlichen Bakterien brauchen sehr viel freies Wasser, Schimmel und manche Hefen kommen mit weniger aus. Darum kann Konfitüre schimmeln, Honig aber kaum.",
+  "warum_wichtig": "Erklärt, warum Konfitüre genug Zucker braucht, warum Salami ohne Kühlschrank hält und warum zuckerreduzierte Konfitüre in den Kühlschrank gehört.",
+  "faustregeln": [
+    "Zuckerreduzierte Konfitüre nach dem Öffnen kühl lagern.",
+    "Dörrobst und Nüsse trocken und verschlossen aufbewahren.",
+    "Salz, Zucker und Trocknen ersetzen nicht die Hygiene, sie bremsen Keime nur."
+  ],
+  "stellschrauben": [
+    {
+      "id": "salzgehalt",
+      "wirkung": "bindet Wasser"
+    },
+    {
+      "id": "zuckergehalt",
+      "wirkung": "bindet Wasser"
+    },
+    {
+      "id": "feuchtigkeit",
+      "wirkung": "trockener → haltbarer"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-suesses",
+      "text": "Konfitüre mit viel Zucker hält ungeöffnet lange, Honig fast unbegrenzt."
+    },
+    {
+      "welt": "w-fleisch",
+      "text": "Rohschinken und Salami werden durch Salz und Trocknen haltbar."
+    }
+  ],
+  "links": [
+    "keimwachstum",
+    "osmose",
+    "zucker",
+    "salz",
+    "laenger-haltbar",
+    "g-konfituere"
+  ],
+  "welten": [
+    "w-suesses",
+    "w-fleisch"
+  ],
+  "quellen": [
+    {
+      "titel": "Clemson University: Available moisture in foods",
+      "url": "https://hgic.clemson.edu/available-moisture-in-foods/"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "skala",
+    "params": {
+      "links": "viel freies Wasser: Fleisch, Milch, Brot",
+      "mitte": "Konfitüre, Salami, Hartkäse",
+      "rechts": "kaum freies Wasser: Honig, Dörrobst"
+    }
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

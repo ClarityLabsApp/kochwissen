@@ -1,0 +1,86 @@
+{
+  "id": "x-glace-beutel",
+  "typ": "experiment",
+  "titel": "Glace im Beutel schütteln",
+  "synonyme": [
+    "Eis selber machen Kinder",
+    "Glace ohne Maschine",
+    "Salz Eis Experiment"
+  ],
+  "kurz": "Mit Eiswürfeln, Salz und zwei Beuteln wird Milch in zehn Minuten zu Glace.",
+  "material": [
+    "250 ml Milch oder halb Milch, halb Rahm",
+    "2 EL Zucker, etwas Vanillezucker",
+    "ein kleiner und ein großer Gefrierbeutel mit Verschluss",
+    "2 Handvoll Eiswürfel",
+    "4 EL grobes Salz",
+    "Handschuhe oder ein Küchentuch"
+  ],
+  "schritte": [
+    "Milch und Zucker in den kleinen Beutel füllen, Luft herausdrücken, gut verschließen.",
+    "Eis und Salz in den großen Beutel geben.",
+    "Den kleinen Beutel hineinlegen, den großen verschließen.",
+    "Mit Handschuhen 5–10 Minuten kräftig schütteln und kneten.",
+    "Zum Vergleich einen zweiten Versuch mit Eis ohne Salz machen."
+  ],
+  "beobachtung": "Mit Salz wird die Milch nach einigen Minuten fest und cremig, der große Beutel wird außen eiskalt und beschlägt. Ohne Salz bleibt die Milch flüssig.",
+  "erklaerung": "Salz lässt das Eis schmelzen und senkt den Gefrierpunkt der entstehenden Lake weit unter 0 °C. Diese Lake zieht der Milch Wärme ab, bis sie gefriert. Das Schütteln hält die Eiskristalle klein, darum wird die Glace cremig.",
+  "dauer": "15 Minuten",
+  "sicherheit": "Die Salzlake wird sehr kalt: nicht mit bloßen Händen lange festhalten.",
+  "links": [
+    "gefrierpunkt-senkung",
+    "eiskristalle",
+    "salz"
+  ],
+  "welten": [
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "Start",
+      "nachher": "nach 10 Minuten Schütteln",
+      "vergleich": [
+        {
+          "label": "Eis mit Salz",
+          "gefaess": "schuessel",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#fbf7ec",
+            "fuell": 0.5,
+            "klumpen": 0,
+            "klumpenfarbe": "#fffaf0"
+          },
+          "nachher": {
+            "farbe": "#eaf1f4",
+            "fuell": 0.5,
+            "klumpen": 1,
+            "klumpenfarbe": "#fffaf0"
+          }
+        },
+        {
+          "label": "Eis ohne Salz",
+          "gefaess": "schuessel",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#fbf7ec",
+            "fuell": 0.5
+          },
+          "nachher": {
+            "farbe": "#fbf7ec",
+            "fuell": 0.5,
+            "klumpen": 0.1,
+            "klumpenfarbe": "#fffaf0"
+          }
+        }
+      ]
+    }
+  },
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ]
+}

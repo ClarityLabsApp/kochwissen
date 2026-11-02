@@ -32,7 +32,9 @@
     "retrogradation",
     "brot-altbacken",
     "sauerteig",
-    "milchsaeuregaerung"
+    "milchsaeuregaerung",
+    "zucker-feuchtigkeit",
+    "laenger-haltbar"
   ],
   "welten": [
     "w-brot"

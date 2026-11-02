@@ -1,0 +1,65 @@
+{
+  "id": "amylase",
+  "typ": "prozess",
+  "titel": "Amylase: Stärke wird zu Zucker",
+  "synonyme": [
+    "Amylase",
+    "Malz",
+    "Backmalz",
+    "Stärke abbauen",
+    "Teig süßer",
+    "Süßkartoffel süß"
+  ],
+  "kurz": "Amylase ist ein [[enzym|Enzym]], das Stärke in Zucker zerlegt. Es füttert die Hefe, bräunt die Kruste und macht Süßkartoffeln süß.",
+  "bild_im_kopf": "Wie ein Bäcker, der lange Brotlaibe in Scheiben schneidet: Erst in kleinen Stücken kann jeder etwas davon essen.",
+  "was_passiert": "Stärke besteht aus langen Ketten von Zuckerbausteinen. Amylase schneidet sie in kurze Stücke. Im Mehl steckt etwas davon, Malz enthält viel. Im Teig liefert sie der Hefe Futter und lässt Zucker für eine braune Kruste übrig. Süßkartoffeln enthalten selbst Amylase: Langsam gegart, arbeitet sie länger und macht sie süßer.",
+  "warum_wichtig": "Erklärt, warum Bäcker Backmalz verwenden, warum lange geführte Teige eine dunklere Kruste bekommen und warum Süßkartoffeln aus dem Ofen süßer schmecken als gekochte.",
+  "faustregeln": [
+    "Für eine kräftige Kruste: lange, kühle Teigführung oder etwas Backmalz.",
+    "Süßkartoffeln langsam im Ofen garen, nicht schnell kochen.",
+    "Kauen startet Amylase im Speichel: Brot schmeckt nach langem Kauen süßlich."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zeit",
+      "wirkung": "länger → mehr Zucker"
+    },
+    {
+      "id": "temperatur",
+      "wirkung": "warm arbeitet sie, Kochen stoppt sie"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-brot",
+      "text": "Kalte Gare über Nacht gibt der Amylase Zeit: mehr Zucker, braunere Kruste."
+    },
+    {
+      "welt": "w-kartoffeln",
+      "text": "Süßkartoffeln eine Stunde bei mittlerer Hitze im Ofen werden fast karamellig."
+    }
+  ],
+  "links": [
+    "enzym",
+    "staerkeverkleisterung",
+    "hefegaerung",
+    "maillard-reaktion",
+    "kalte-gare",
+    "mehl"
+  ],
+  "welten": [
+    "w-brot",
+    "w-kartoffeln",
+    "w-getreide"
+  ],
+  "schwierigkeit": "fortgeschritten",
+  "status": "entwurf",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "keine"
+  }
+}

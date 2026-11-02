@@ -1,0 +1,57 @@
+{
+  "id": "aroma-loeslichkeit",
+  "typ": "prozess",
+  "titel": "Aromen lösen sich in Fett, Wasser oder Alkohol",
+  "synonyme": [
+    "fettlöslich",
+    "Aroma lösen",
+    "Aroma in Öl",
+    "warum Fett Geschmack trägt"
+  ],
+  "kurz": "Viele Aromastoffe lösen sich besser in Fett als in Wasser. Fett trägt darum Geschmack, und Gewürze entfalten sich in Öl stärker.",
+  "bild_im_kopf": "Wie Gäste, die nur mit dem richtigen Taxi nach Hause kommen: Manche Aromen steigen nur ins Fett, andere nur ins Wasser.",
+  "was_passiert": "Aromastoffe sind winzige, oft flüchtige Moleküle. Ein großer Teil davon ist fettliebend: In Öl oder Butter lösen sie sich gut und bleiben länger im Mund. Andere lösen sich in Wasser oder in Alkohol. Wärme macht Aromen flüchtig, darum riecht Warmes stärker, und langes Kochen treibt Duftstoffe aus.",
+  "warum_wichtig": "Erklärt, warum fettarme Varianten flacher schmecken, warum man Gewürze in Öl anröstet und warum Wein in der Sauce andere Aromen löst als Wasser.",
+  "faustregeln": [
+    "Trockene Gewürze kurz in Fett anrösten, nicht ins Wasser streuen.",
+    "Frische Kräuter erst am Ende zugeben, ihre Duftstoffe verfliegen.",
+    "Ein Schuss Wein oder Schnaps löst Aromen, die Wasser nicht erreicht."
+  ],
+  "stellschrauben": [
+    {
+      "id": "fettgehalt",
+      "wirkung": "mehr Fett → mehr Aroma bleibt im Mund"
+    },
+    {
+      "id": "temperatur",
+      "wirkung": "wärmer → riecht stärker, verfliegt schneller"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-saucen",
+      "text": "Ein Stück kalte Butter am Schluss bindet nicht nur, es trägt auch die Aromen."
+    }
+  ],
+  "links": [
+    "aroma-blooming",
+    "gewuerze-roesten",
+    "fett",
+    "mehr-geschmack",
+    "schaerfe"
+  ],
+  "welten": [
+    "w-saucen",
+    "w-gemuese"
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "keine"
+  }
+}

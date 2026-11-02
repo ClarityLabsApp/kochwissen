@@ -1,0 +1,51 @@
+{
+  "id": "dampfkochtopf",
+  "typ": "technik",
+  "titel": "Mit dem Dampfkochtopf garen",
+  "synonyme": [
+    "Dampfkochtopf",
+    "Schnellkochtopf",
+    "Druckkochtopf",
+    "Kukident",
+    "Duromatic"
+  ],
+  "kurz": "Der Dampfkochtopf hält den Dampf zurück. Unter Druck wird das Wasser etwa 120 °C heiß, und alles gart viel schneller.",
+  "bild_im_kopf": "Wie eine Abkürzung über den Berg: gleiche Strecke, aber viel weniger Zeit.",
+  "schritte": [
+    "Mindestens die angegebene Flüssigkeitsmenge einfüllen, höchstens zu zwei Dritteln füllen.",
+    "Deckel schließen, auf hoher Stufe erhitzen, bis der Druck anzeigt.",
+    "Hitze reduzieren, sodass der Druck gerade gehalten wird, Garzeit ab jetzt rechnen.",
+    "Druck abbauen lassen oder nach Anleitung ablassen, erst dann öffnen."
+  ],
+  "faustregeln": [
+    "Etwa ein Drittel der normalen Garzeit, Richtwert.",
+    "Hülsenfrüchte und Getreide schäumen: nur halb füllen.",
+    "Nie mit Gewalt öffnen."
+  ],
+  "links": [
+    "siedepunkt-druck",
+    "schmoren",
+    "bohnen-nicht-weich",
+    "kollagen-gelatine",
+    "fond"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-gemuese",
+    "w-getreide"
+  ],
+  "quellen": [
+    {
+      "titel": "Küchenfibel: Warum kocht Wasser in der Höhe langsamer?",
+      "url": "https://www.kuechenfibel.de/faq/warum-kocht-wasser-in-der-hohe-langsamer"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "keine"
+  }
+}

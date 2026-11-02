@@ -39,7 +39,10 @@
     "wasserbindung-salz",
     "trockensalzen",
     "glutenbildung",
-    "essen-versalzen"
+    "essen-versalzen",
+    "salz-geschmack",
+    "wasseraktivitaet",
+    "gefrierpunkt-senkung"
   ],
   "welten": [
     "w-fleisch",
