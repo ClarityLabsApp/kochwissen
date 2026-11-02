@@ -1,0 +1,93 @@
+{
+  "id": "l-mascarpone",
+  "typ": "labor",
+  "titel": "Mascarpone selber machen",
+  "synonyme": [
+    "Mascarpone herstellen",
+    "Mascarpone Ersatz",
+    "Tiramisu Käse"
+  ],
+  "kurz": "Mascarpone ist Rahm, der mit etwas Säure in der Hitze eindickt und dann abtropft. Er braucht nur zwei Zutaten.",
+  "bild_im_kopf": "Wie Schlagrahm in Zeitlupe: Ohne Schneebesen wird der Rahm allein durch Wärme und Säure dick.",
+  "material": [
+    "500 ml Vollrahm",
+    "½ TL Zitronensäure in 4 EL Wasser gelöst (oder 2 EL Zitronensaft)",
+    "Topf, Thermometer",
+    "Sieb mit feinem Tuch"
+  ],
+  "dauer": "8–9 Stunden, davon 10 Minuten Arbeit",
+  "schluesselmomente": [
+    {
+      "schritt": "Rahm langsam auf etwa 82 °C erwärmen",
+      "warum": "Die Hitze bereitet das Milcheiweiß darauf vor, mit der Säure zu reagieren.",
+      "prinzip": "eiweiss-denaturierung"
+    },
+    {
+      "schritt": "Säure einrühren, 2 Minuten auf dieser Temperatur halten",
+      "warum": "Wie beim Frischkäse verlieren die Eiweißteilchen ihre Ladung. Weil Rahm aber so viel Fett hat, flockt nichts aus: Er dickt nur cremig ein.",
+      "prinzip": "saeure-denaturierung"
+    },
+    {
+      "schritt": "Vom Herd nehmen und 30 Minuten ruhen lassen",
+      "warum": "Beim Abkühlen festigt sich das Eiweißnetz zwischen den Fetttröpfchen.",
+      "prinzip": "emulsion"
+    },
+    {
+      "schritt": "Im Tuch 6–8 Stunden im Kühlschrank abtropfen lassen",
+      "warum": "Es tropft nur wenig Molke ab. Kälte lässt das Milchfett fest werden, so wird er streichfest.",
+      "prinzip": "fett-kristallisation"
+    }
+  ],
+  "ergebnis": "Eine dicke, glatte Creme, etwas weniger als die Rahmmenge (Richtwert).",
+  "haltbarkeit": "Gekühlt 4–5 Tage.",
+  "verwendung": [
+    "Tiramisu, Cheesecake, Risotto zum Schluss statt Butter.",
+    "Mit Zucker und Vanille als Füllung."
+  ],
+  "links": [
+    "saeure-denaturierung",
+    "sahne",
+    "l-frischkaese",
+    "g-risotto",
+    "emulsion"
+  ],
+  "welten": [
+    "w-milch",
+    "w-suesses"
+  ],
+  "quellen": [
+    {
+      "titel": "Cheese Grotto: Homemade mascarpone with citric acid",
+      "url": "https://cheesegrotto.com/blogs/journal/homemade-mascarpone-recipe-with-citric-acid"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "Rahm",
+      "nachher": "nach dem Abtropfen",
+      "vergleich": [
+        {
+          "label": "im Tuch",
+          "gefaess": "schuessel",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#fbf7ec",
+            "fuell": 0.6
+          },
+          "nachher": {
+            "farbe": "#f4f0e2",
+            "fuell": 0.15,
+            "klumpen": 1,
+            "klumpenfarbe": "#fff8e8"
+          }
+        }
+      ]
+    }
+  }
+}

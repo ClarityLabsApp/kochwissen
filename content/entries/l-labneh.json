@@ -1,0 +1,84 @@
+{
+  "id": "l-labneh",
+  "typ": "labor",
+  "titel": "Labneh aus Joghurt",
+  "synonyme": [
+    "Labneh",
+    "Joghurtkäse",
+    "abgetropfter Joghurt",
+    "griechischer Joghurt selber machen"
+  ],
+  "kurz": "Joghurt im Tuch abgetropft wird über Nacht zu einem cremigen Frischkäse: Labneh.",
+  "bild_im_kopf": "Wie ein Schwamm, der ausgedrückt wird: Das Wasser geht, die Substanz bleibt.",
+  "material": [
+    "500 g Naturjoghurt (Vollfett)",
+    "½ TL Salz",
+    "Sieb, sauberes Tuch, Schüssel"
+  ],
+  "dauer": "12–24 Stunden",
+  "schluesselmomente": [
+    {
+      "schritt": "Joghurt mit Salz verrühren",
+      "warum": "Salz würzt und zieht zusätzlich Molke heraus.",
+      "prinzip": "osmose"
+    },
+    {
+      "schritt": "Im Tuch über einer Schüssel im Kühlschrank abtropfen lassen",
+      "warum": "Das Eiweißnetz des Joghurts hält Fett und Eiweiß fest, die Molke tropft hindurch."
+    },
+    {
+      "schritt": "Nach 6–8 Stunden: griechischer Joghurt. Nach 24 Stunden: streichfester Labneh",
+      "warum": "Je mehr Molke weg ist, desto fester und haltbarer, weil weniger freies Wasser bleibt.",
+      "prinzip": "wasseraktivitaet"
+    }
+  ],
+  "ergebnis": "Etwa 250 g Labneh und 250 ml Molke (Richtwert).",
+  "haltbarkeit": "Gekühlt etwa eine Woche. Zu Kugeln geformt in Olivenöl länger.",
+  "verwendung": [
+    "Mit Olivenöl, Za’atar und Brot.",
+    "Statt Frischkäse auf Brot, in Dips und Saucen.",
+    "Die Molke zum Brotbacken."
+  ],
+  "links": [
+    "l-joghurt",
+    "joghurt",
+    "milchsaeuregaerung",
+    "wasseraktivitaet"
+  ],
+  "welten": [
+    "w-milch"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "Joghurt",
+      "nachher": "nach 24 Stunden",
+      "vergleich": [
+        {
+          "label": "Tuch über Schüssel",
+          "gefaess": "schuessel",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#f6f1e3",
+            "fuell": 0.1,
+            "klumpen": 1,
+            "klumpenfarbe": "#fbf7ec"
+          },
+          "nachher": {
+            "farbe": "#eef0d8",
+            "fuell": 0.4,
+            "klumpen": 0.55,
+            "klumpenfarbe": "#fbf7ec"
+          }
+        }
+      ]
+    }
+  }
+}

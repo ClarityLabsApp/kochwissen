@@ -1,0 +1,62 @@
+{
+  "id": "l-buttermilch-ersatz",
+  "typ": "labor",
+  "titel": "Buttermilch-Ersatz aus Milch und Zitrone",
+  "synonyme": [
+    "Buttermilch Ersatz",
+    "saure Milch",
+    "Buttermilch selber machen"
+  ],
+  "kurz": "Milch mit etwas Zitronensaft wird in wenigen Minuten sauer und leicht dick. Zum Backen ersetzt sie Buttermilch.",
+  "bild_im_kopf": "Wie ein Doppelgänger: Sieht nicht ganz gleich aus, spielt die Rolle im Teig aber genauso.",
+  "material": [
+    "250 ml Milch",
+    "1 EL Zitronensaft oder milder Essig"
+  ],
+  "dauer": "10 Minuten",
+  "schluesselmomente": [
+    {
+      "schritt": "Zitronensaft in ein Messglas geben, mit Milch auf 250 ml auffüllen",
+      "warum": "Die Säure senkt den [[ph-wert|pH-Wert]] der Milch.",
+      "prinzip": "ph-wert"
+    },
+    {
+      "schritt": "5–10 Minuten stehen lassen",
+      "warum": "Das Milcheiweiß beginnt zu gerinnen, die Milch wird dicker und bildet feine Flocken.",
+      "prinzip": "saeure-denaturierung"
+    },
+    {
+      "schritt": "Im Teig zusammen mit Natron verwenden",
+      "warum": "Die Säure reagiert mit Natron zu Kohlendioxid: Pancakes und Scones gehen auf.",
+      "prinzip": "chemische-lockerung"
+    }
+  ],
+  "ergebnis": "250 ml saure Milch.",
+  "haltbarkeit": "Frisch verwenden.",
+  "verwendung": [
+    "Pancakes, Scones, Zopf und Kuchen, die Buttermilch verlangen.",
+    "Marinade für Poulet: Die milde Säure macht die Oberfläche zart."
+  ],
+  "links": [
+    "chemische-lockerung",
+    "saeure",
+    "milch",
+    "natron",
+    "g-pancakes",
+    "l-butter"
+  ],
+  "welten": [
+    "w-milch",
+    "w-gebaeck"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "keine"
+  }
+}

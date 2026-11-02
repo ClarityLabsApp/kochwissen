@@ -1,0 +1,95 @@
+{
+  "id": "l-sauerkraut",
+  "typ": "labor",
+  "titel": "Sauerkraut selber machen",
+  "synonyme": [
+    "Sauerkraut herstellen",
+    "Kabis fermentieren",
+    "Weißkohl einlegen",
+    "Fermentieren"
+  ],
+  "kurz": "Kabis mit etwa 2 % Salz gärt in drei bis vier Wochen zu Sauerkraut. Milchsäurebakterien machen ihn sauer und haltbar.",
+  "bild_im_kopf": "Wie eine Burg, die ihre eigenen Wächter ausbildet: Das Salz hält Fremde draußen, bis die Milchsäurebakterien das Tor übernehmen.",
+  "material": [
+    "1 kg Weißkohl (Kabis)",
+    "20 g Salz ohne Jod (etwa 2 % des Kohlgewichts)",
+    "großes Glas oder Gärtopf",
+    "Gewicht zum Beschweren, sauberes Tuch"
+  ],
+  "dauer": "3–4 Wochen",
+  "schluesselmomente": [
+    {
+      "schritt": "Kohl fein hobeln und mit dem Salz kräftig kneten",
+      "warum": "Salz zieht Saft aus den Zellen. Nach einigen Minuten steht der Kohl in seiner eigenen Lake.",
+      "prinzip": "osmose"
+    },
+    {
+      "schritt": "Fest ins Glas drücken, bis Lake darüber steht, beschweren",
+      "warum": "Unter der Lake ist kein Sauerstoff: Schimmel kann nicht wachsen, Milchsäurebakterien schon.",
+      "prinzip": "milchsaeuregaerung"
+    },
+    {
+      "schritt": "Bei etwa 21–24 °C stehen lassen, Kohl immer unter der Lake halten",
+      "warum": "Die Bakterien bilden Milchsäure. Wärmer wird er weich, unter etwa 15 °C gärt er kaum.",
+      "prinzip": "milchsaeuregaerung"
+    },
+    {
+      "schritt": "Nach 3–4 Wochen, wenn es nicht mehr blubbert, kühl stellen",
+      "warum": "Die Säure ist jetzt so hoch, dass kaum ein Keim mehr wachsen kann.",
+      "prinzip": "keimwachstum"
+    }
+  ],
+  "ergebnis": "Etwa 1 kg Sauerkraut.",
+  "haltbarkeit": "Gekühlt mehrere Monate.",
+  "verwendung": [
+    "Roh als Salat: voller lebender Bakterien.",
+    "Gekocht zu Wurst, Speck und Kartoffeln."
+  ],
+  "links": [
+    "milchsaeuregaerung",
+    "osmose",
+    "salz",
+    "keimwachstum",
+    "laenger-haltbar",
+    "wasseraktivitaet"
+  ],
+  "welten": [
+    "w-gemuese"
+  ],
+  "quellen": [
+    {
+      "titel": "University of New Hampshire Extension: Fermenting, safe food preservation",
+      "url": "https://extension.unh.edu/node/22550"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "eingelegt",
+      "nachher": "nach 3–4 Wochen",
+      "vergleich": [
+        {
+          "label": "Gärglas",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#dfe8c4",
+            "fuell": 0.8,
+            "blasen": 0
+          },
+          "nachher": {
+            "farbe": "#e7deb0",
+            "fuell": 0.78,
+            "blasen": 0.7
+          }
+        }
+      ]
+    }
+  },
+  "sicherheit": "Weißer Film auf der Lake (Kahmhefe) abschöpfen. Pelziger, farbiger Schimmel oder fauliger Geruch: wegwerfen."
+}

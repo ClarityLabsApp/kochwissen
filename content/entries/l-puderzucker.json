@@ -1,0 +1,66 @@
+{
+  "id": "l-puderzucker",
+  "typ": "labor",
+  "titel": "Puderzucker selber mahlen",
+  "synonyme": [
+    "Puderzucker herstellen",
+    "Staubzucker",
+    "Puderzucker Ersatz"
+  ],
+  "kurz": "Puderzucker ist nichts anderes als fein gemahlener Kristallzucker. Ein starker Mixer schafft das in einer Minute.",
+  "bild_im_kopf": "Wie Kiesel, die zu Sand gemahlen werden: Es ist derselbe Stein, aber er verhält sich ganz anders.",
+  "material": [
+    "100 g Kristallzucker",
+    "1 TL Maisstärke (nach Wunsch)",
+    "Hochleistungsmixer oder Gewürzmühle",
+    "feines Sieb"
+  ],
+  "dauer": "5 Minuten",
+  "schluesselmomente": [
+    {
+      "schritt": "Zucker in kurzen Stößen fein mahlen",
+      "warum": "Die Kristalle zerbrechen in winzige Splitter. Die Oberfläche wird tausendfach größer.",
+      "prinzip": "oberflaeche"
+    },
+    {
+      "schritt": "Zwei Minuten warten, bevor der Deckel aufgeht",
+      "warum": "Der feine Staub soll sich setzen."
+    },
+    {
+      "schritt": "Durch ein feines Sieb streichen",
+      "warum": "Grobe Reste würden in Glasur knirschen."
+    },
+    {
+      "schritt": "Nach Wunsch Stärke untermischen",
+      "warum": "Zuckerstaub zieht Feuchtigkeit an und verklebt. Stärke hält ihn rieselfähig.",
+      "prinzip": "zucker-feuchtigkeit"
+    }
+  ],
+  "ergebnis": "Etwa 100 g Puderzucker.",
+  "haltbarkeit": "Luftdicht und trocken lange haltbar. Klumpen vor Gebrauch durchsieben.",
+  "verwendung": [
+    "Glasuren und Zuckerguss: Er löst sich sofort, ohne zu knirschen.",
+    "Schlagrahm, Mürbeteig, zum Bestäuben."
+  ],
+  "links": [
+    "oberflaeche",
+    "zucker",
+    "zucker-feuchtigkeit",
+    "muerbe"
+  ],
+  "welten": [
+    "w-suesses",
+    "w-gebaeck"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "keine"
+  },
+  "sicherheit": "Feiner Zuckerstaub: Mixer erst öffnen, wenn er sich gesetzt hat."
+}

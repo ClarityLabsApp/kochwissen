@@ -1,0 +1,93 @@
+{
+  "id": "l-dulce-de-leche",
+  "typ": "labor",
+  "titel": "Dulce de leche aus Milch und Zucker",
+  "synonyme": [
+    "Dulce de leche",
+    "Milchkaramell",
+    "Karamellcreme",
+    "Confiture de lait"
+  ],
+  "kurz": "Milch und Zucker werden stundenlang eingekocht, bis eine braune Karamellcreme entsteht. Eine Prise Natron beschleunigt die Bräunung.",
+  "bild_im_kopf": "Wie ein Sonnenuntergang: Er kommt langsam, aber Schritt für Schritt wird alles goldener.",
+  "material": [
+    "1 l Vollmilch",
+    "300 g Zucker",
+    "¼ TL Natron",
+    "1 Vanilleschote nach Wunsch",
+    "breiter Topf mit dickem Boden"
+  ],
+  "dauer": "2–3 Stunden (Richtwert)",
+  "schluesselmomente": [
+    {
+      "schritt": "Milch, Zucker und Vanille aufkochen, dann Natron einrühren",
+      "warum": "Natron macht die Milch leicht basisch. Das beschleunigt die Bräunung und verhindert, dass die Milch gerinnt.",
+      "prinzip": "basen-braeunung"
+    },
+    {
+      "schritt": "Offen leise köcheln lassen, regelmäßig rühren",
+      "warum": "Wasser verdampft, Zucker und Milcheiweiß werden konzentriert.",
+      "prinzip": "reduktion"
+    },
+    {
+      "schritt": "Zum Schluss häufiger rühren, bis sie karamellbraun und dick ist",
+      "warum": "Milchzucker und Milcheiweiß reagieren: Farbe und Karamellaroma entstehen bei unter 100 °C, weil es so lange dauert.",
+      "prinzip": "maillard-reaktion"
+    },
+    {
+      "schritt": "Heiß in saubere Gläser füllen",
+      "warum": "Beim Abkühlen wird sie noch dicker."
+    }
+  ],
+  "ergebnis": "Etwa 400 ml Dulce de leche.",
+  "haltbarkeit": "Gekühlt einige Wochen.",
+  "verwendung": [
+    "Aufs Brot, in Alfajores, zu Glace.",
+    "Zwischen Tortenböden."
+  ],
+  "links": [
+    "maillard-reaktion",
+    "basen-braeunung",
+    "reduktion",
+    "milch",
+    "karamellisierung"
+  ],
+  "welten": [
+    "w-milch",
+    "w-suesses"
+  ],
+  "quellen": [
+    {
+      "titel": "Great British Chefs: How to make dulce de leche sous vide",
+      "url": "https://www.greatbritishchefs.com/how-to-cook/how-to-make-dulce-de-leche-sous-vide"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "Start",
+      "nachher": "nach 2–3 Stunden",
+      "vergleich": [
+        {
+          "label": "Topf",
+          "gefaess": "schuessel",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#fbf7ec",
+            "fuell": 0.9
+          },
+          "nachher": {
+            "farbe": "#a0612a",
+            "fuell": 0.4
+          }
+        }
+      ]
+    }
+  },
+  "sicherheit": "Geschlossene Kondensmilchdosen nie im Wasser kochen: Kocht der Topf trocken, kann die Dose platzen."
+}

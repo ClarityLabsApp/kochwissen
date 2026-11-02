@@ -1,0 +1,60 @@
+{
+  "id": "l-brauner-zucker",
+  "typ": "labor",
+  "titel": "Brauner Zucker aus Zucker und Melasse",
+  "synonyme": [
+    "brauner Zucker selber machen",
+    "Rohrzucker Ersatz",
+    "Melasse Zucker",
+    "Brown Sugar"
+  ],
+  "kurz": "Brauner Zucker ist weißer Zucker mit etwas Melasse. Die Melasse bringt Aroma, Feuchtigkeit und ein wenig Säure.",
+  "bild_im_kopf": "Wie ein weißes Hemd, in Tee getaucht: Das Hemd bleibt dasselbe, aber es hat jetzt Farbe und Geschmack.",
+  "material": [
+    "200 g Kristallzucker",
+    "1 EL Melasse für hellen, 2 EL für dunklen Zucker",
+    "Schüssel und Gabel, oder Küchenmaschine"
+  ],
+  "dauer": "5 Minuten",
+  "schluesselmomente": [
+    {
+      "schritt": "Melasse zum Zucker geben und mit der Gabel einarbeiten",
+      "warum": "Die Melasse überzieht jeden Kristall mit einem dünnen Film."
+    },
+    {
+      "schritt": "So lange mischen, bis die Farbe gleichmäßig ist",
+      "warum": "Melasse ist Zuckersirup mit Aromastoffen und Mineralien, die beim Raffinieren übrig bleiben."
+    },
+    {
+      "schritt": "Luftdicht aufbewahren",
+      "warum": "Melasse zieht Feuchtigkeit an: Der Zucker bleibt weich und macht Gebäck saftiger.",
+      "prinzip": "zucker-feuchtigkeit"
+    }
+  ],
+  "ergebnis": "Etwa 200 g brauner Zucker.",
+  "haltbarkeit": "Luftdicht lange haltbar. Hart geworden: über Nacht mit einem Stück Brot in die Dose legen.",
+  "verwendung": [
+    "Chewy Cookies und Brownies: Sie bleiben weicher.",
+    "Mit Natron im Teig: Die leichte Säure der Melasse hilft beim Aufgehen."
+  ],
+  "links": [
+    "zucker-feuchtigkeit",
+    "zucker",
+    "chemische-lockerung",
+    "kekse-breit"
+  ],
+  "welten": [
+    "w-gebaeck",
+    "w-suesses"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "keine"
+  }
+}

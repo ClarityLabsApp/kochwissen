@@ -52,7 +52,7 @@ function Panel({ f, t, clock }: { f: Feld; t: number; clock: number }) {
     }
     if (f.gefaess === "flasche") {
       els.push(<path key="g" d={`M${L} 136 L${L} 92 Q${L} 78 48 72 L48 56 L72 56 L72 72 Q${R} 78 ${R} 92 L${R} 136 Z`} fill="none" stroke={GLASS} strokeWidth={1.5} />);
-      const r = 5 + ballon * 20; els.push(<g key="bal"><ellipse cx={60} cy={54 - r * 0.95} rx={r * 0.85} ry={r} fill="#c8564a" opacity={0.9} /><rect x={53} y={50} width={14} height={8} fill="#a8443a" /></g>);
+      if (f.vorher.ballon !== undefined || f.nachher.ballon !== undefined) { const r = 5 + ballon * 20; els.push(<g key="bal"><ellipse cx={60} cy={54 - r * 0.95} rx={r * 0.85} ry={r} fill="#c8564a" opacity={0.9} /><rect x={53} y={50} width={14} height={8} fill="#a8443a" /></g>); }
     } else els.push(<path key="g" d={`M${L - 2} 28 L${L} 136 L${R} 136 L${R + 2} 28`} fill="none" stroke={GLASS} strokeWidth={1.5} />);
   }
 

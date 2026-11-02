@@ -1,0 +1,89 @@
+{
+  "id": "l-apfelpektin",
+  "typ": "labor",
+  "titel": "Pektin aus Apfelresten",
+  "synonyme": [
+    "Apfelpektin",
+    "Pektin selber machen",
+    "Geliermittel aus Äpfeln",
+    "Gelierhilfe natürlich"
+  ],
+  "kurz": "Schalen und Kerngehäuse von sauren Äpfeln stecken voller Pektin. Ausgekocht und eingekocht wird daraus ein natürliches Geliermittel.",
+  "bild_im_kopf": "Wie Kleister aus dem Bastelschrank: Unscheinbar flüssig, aber er hält zusammen, was allein nicht hält.",
+  "material": [
+    "1–1,5 kg saure Äpfel oder Schalen und Kerngehäuse (z. B. vom Apfelkuchen, gesammelt im Tiefkühler)",
+    "Wasser, bis alles knapp bedeckt ist",
+    "Topf, Sieb, feines Tuch",
+    "kalter Teller für die Probe"
+  ],
+  "dauer": "1 Tag, davon 1½ Stunden Arbeit",
+  "schluesselmomente": [
+    {
+      "schritt": "Äpfel grob schneiden, mit Wasser bedecken, 40–60 Minuten zugedeckt köcheln",
+      "warum": "Hitze löst das [[pektin|Pektin]] aus den Zellwänden ins Wasser.",
+      "prinzip": "pektin-abbau"
+    },
+    {
+      "schritt": "Über Nacht durch ein Tuch abtropfen lassen, nicht pressen",
+      "warum": "Pressen macht den Saft trüb."
+    },
+    {
+      "schritt": "Den Saft offen auf die Hälfte einkochen",
+      "warum": "Das Pektin wird konzentriert.",
+      "prinzip": "reduktion"
+    },
+    {
+      "schritt": "Tellerprobe: einen Löffel mit etwas Zucker und Zitrone auf einem kalten Teller abkühlen lassen",
+      "warum": "Wird er fest und runzelt beim Schieben, ist genug Pektin da. Sonst weiter einkochen.",
+      "prinzip": "gelbildung-pektin"
+    }
+  ],
+  "ergebnis": "Etwa 500 ml Pektinsaft (Richtwert).",
+  "haltbarkeit": "Gekühlt eine Woche, eingefroren in Portionen viele Monate.",
+  "verwendung": [
+    "Für Konfitüre aus pektinarmen Früchten wie Erdbeeren, Kirschen oder Birnen: etwa 250 ml auf 1,5 kg Früchte (Richtwert).",
+    "Für Gelee."
+  ],
+  "links": [
+    "pektin",
+    "gelbildung-pektin",
+    "g-konfituere",
+    "reduktion"
+  ],
+  "welten": [
+    "w-suesses"
+  ],
+  "quellen": [
+    {
+      "titel": "Nourish and Nestle: How to make apple pectin stock",
+      "url": "https://nourishandnestle.com/how-to-make-apple-pectin-stock-for-jam-jelly/"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "ausgekocht",
+      "nachher": "eingekocht",
+      "vergleich": [
+        {
+          "label": "Pektinsaft",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#f1e2b4",
+            "fuell": 0.8
+          },
+          "nachher": {
+            "farbe": "#d9a54a",
+            "fuell": 0.4
+          }
+        }
+      ]
+    }
+  }
+}

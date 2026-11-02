@@ -87,7 +87,8 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - [x] 15 Gerichte und 12 Experimente ergänzt (Generator `scripts/batches/gen_batch_gerichte_experimente.py`)
 - [x] Batch Grundlagen-Chemie II: Geschmack, Kälte, Haltbarkeit, Enzyme, Druck, Basen, Zucker (30 Einträge, `scripts/batches/gen_batch_chemie2.py`)
 - [x] Kategorie „Labor“ mit 8 Rezepten (Backpulver, Butter, Bratbutter/Ghee, Frischkäse, Joghurt, Sauerteig, Crème fraîche, gebackenes Natron), `scripts/batches/gen_batch_labor.py`
-- [ ] Weitere Labor-Rezepte (z. B. Mascarpone, Vanilleextrakt, Puderzucker, Buttermilch-Ersatz, Senf, Essig-Mutter)
+- [x] Labor II: Mascarpone, Vanilleextrakt, Puderzucker, Buttermilch-Ersatz, Senf, Sauerkraut, brauner Zucker, Dulce de leche, Apfelpektin, Labneh (`scripts/batches/gen_batch_labor2.py`)
+- [ ] Weitere Labor-Rezepte (z. B. Essig-Mutter, Ricotta aus Molke, Kräutersalz, Kimchi). Keine Rezepte mit Botulismus-Risiko (Knoblauch- oder Kräuteröl ungekühlt, Einkochen säurearmer Lebensmittel)
 - [ ] Weitere Gerichte und Experimente (Vorher-Nachher-Grafik steht, neue Experimente brauchen `params.vergleich`)
 - [ ] Semantische Suche (z. B. pgvector) als Ergänzung; bis dahin fehlende Alltagswörter in `THESAURUS` nachtragen
 - [x] 45 Aquarell-Illustrationen (Welten und Zutaten) in `public/illustrationen/<id>.webp`, Anzeige im Seitenkopf. Neue Motive: `visual.illustration` setzen, `npm run illustrationen -- --only id1,id2` (schreibt WebP mit transparentem Hintergrund; ältere Bilder wurden per Skript freigestellt und beschnitten)

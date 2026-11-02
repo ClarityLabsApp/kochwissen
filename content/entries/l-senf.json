@@ -1,0 +1,94 @@
+{
+  "id": "l-senf",
+  "typ": "labor",
+  "titel": "Senf selber machen",
+  "synonyme": [
+    "Senf herstellen",
+    "Senf aus Senfkörnern",
+    "scharfer Senf",
+    "milder Senf"
+  ],
+  "kurz": "Senfkörner sind erst scharf, wenn man sie zerkleinert und mit Wasser mischt. Ein Enzym bildet dann die Schärfe, und mit Essig legt man fest, wie scharf er bleibt.",
+  "bild_im_kopf": "Wie eine Fotokamera: Wasser öffnet den Verschluss, Essig schließt ihn. Was dazwischen passiert, bleibt im Bild.",
+  "material": [
+    "75 g Senfkörner (gelb für mild, braun für scharf)",
+    "Wasser",
+    "2–3 EL Weißwein- oder Apfelessig",
+    "½ TL Salz, 1–2 EL Zucker oder Honig",
+    "Mörser oder Mixer"
+  ],
+  "dauer": "2 Stunden plus 2–3 Tage ziehen",
+  "schluesselmomente": [
+    {
+      "schritt": "Körner einige Stunden in Wasser einweichen",
+      "warum": "Sie quellen und lassen sich besser zerkleinern. Kaltes Wasser macht den Senf schärfer, warmes milder.",
+      "prinzip": "schaerfe"
+    },
+    {
+      "schritt": "Abgießen und mit Salz und Zucker grob oder fein mahlen",
+      "warum": "Beim Zerkleinern trifft ein [[enzym|Enzym]] in den Körnern auf seinen Partnerstoff. Gemeinsam bilden sie die scharfen Senföle.",
+      "prinzip": "enzym"
+    },
+    {
+      "schritt": "Ein paar Minuten warten, dann Essig einrühren",
+      "warum": "Säure stoppt das Enzym. Früher Essig gibt milden, später Essig scharfen Senf.",
+      "prinzip": "saeure"
+    },
+    {
+      "schritt": "In ein Glas füllen und 2–3 Tage im Kühlschrank ziehen lassen",
+      "warum": "Frisch ist er beißend und bitter. Mit der Zeit wird er runder und milder."
+    }
+  ],
+  "ergebnis": "Etwa ein kleines Glas Senf.",
+  "haltbarkeit": "Gekühlt mehrere Monate. Essig und Salz konservieren ihn.",
+  "verwendung": [
+    "Zur Wurst, in die Vinaigrette, in die Mayonnaise als Helfer für die Emulsion.",
+    "Grobkörnig zu Käse und Fleisch."
+  ],
+  "links": [
+    "senf",
+    "schaerfe",
+    "enzym",
+    "saeure",
+    "emulgieren",
+    "g-mayonnaise"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "quellen": [
+    {
+      "titel": "Popular Science: How to make mustard",
+      "url": "https://www.popsci.com/diy/how-to-make-mustard/"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "Körner",
+      "nachher": "gemahlen und gezogen",
+      "vergleich": [
+        {
+          "label": "Senfglas",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#eaf1f4",
+            "fuell": 0.4,
+            "kristalle": 0
+          },
+          "nachher": {
+            "farbe": "#d9b23a",
+            "fuell": 0.6
+          }
+        }
+      ]
+    }
+  },
+  "sicherheit": "Beim Mahlen steigen scharfe Dämpfe auf: nicht direkt über den Mixer beugen."
+}

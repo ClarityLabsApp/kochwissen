@@ -44,7 +44,9 @@
     "schaumbildung",
     "zucker-feuchtigkeit",
     "gefrierpunkt-senkung",
-    "wasseraktivitaet"
+    "wasseraktivitaet",
+    "l-puderzucker",
+    "l-brauner-zucker"
   ],
   "welten": [
     "w-gebaeck",

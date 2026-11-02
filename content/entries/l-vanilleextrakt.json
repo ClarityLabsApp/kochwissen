@@ -1,0 +1,88 @@
+{
+  "id": "l-vanilleextrakt",
+  "typ": "labor",
+  "titel": "Vanilleextrakt ansetzen",
+  "synonyme": [
+    "Vanilleextrakt selber machen",
+    "Vanille in Wodka",
+    "Vanilleessenz"
+  ],
+  "kurz": "Vanilleschoten geben ihr Aroma in Alkohol ab. Nach einigen Wochen ist daraus Vanilleextrakt geworden.",
+  "bild_im_kopf": "Wie Teebeutel in kaltem Wasser: Es geht langsam, aber am Ende ist alles Aroma im Glas.",
+  "material": [
+    "5–6 Vanilleschoten (etwa 30 g)",
+    "250 ml Wodka oder anderer Schnaps mit mindestens 35 % Alkohol",
+    "dunkle Glasflasche oder Schraubglas"
+  ],
+  "dauer": "mindestens 8 Wochen (Richtwert)",
+  "schluesselmomente": [
+    {
+      "schritt": "Schoten längs aufschneiden und klein schneiden",
+      "warum": "Mehr offene Fläche heißt: Das Aroma findet schneller hinaus.",
+      "prinzip": "diffusion"
+    },
+    {
+      "schritt": "Mit dem Alkohol übergießen, verschließen",
+      "warum": "Vanillin und die übrigen Duftstoffe lösen sich gut in Alkohol, schlecht in Wasser.",
+      "prinzip": "aroma-loeslichkeit"
+    },
+    {
+      "schritt": "Dunkel lagern, einmal pro Woche schütteln",
+      "warum": "Schütteln bringt frischen Alkohol an die Schoten. Licht würde Aromen zerstören.",
+      "prinzip": "diffusion"
+    },
+    {
+      "schritt": "Nach etwa 8 Wochen verwenden, die Schoten drin lassen",
+      "warum": "Je länger, desto kräftiger. Man kann mit Alkohol nachfüllen."
+    }
+  ],
+  "ergebnis": "Etwa 250 ml Vanilleextrakt, dunkelbraun und stark duftend.",
+  "haltbarkeit": "Dunkel und verschlossen jahrelang. Der Alkohol konserviert.",
+  "verwendung": [
+    "Kuchen, Cremen, Glace: etwa 1 TL ersetzt das Mark einer halben Schote (Richtwert).",
+    "Als Geschenk in kleinen Flaschen."
+  ],
+  "links": [
+    "aroma-loeslichkeit",
+    "diffusion",
+    "w-suesses"
+  ],
+  "welten": [
+    "w-suesses",
+    "w-gebaeck"
+  ],
+  "quellen": [
+    {
+      "titel": "Vanilla Bean Kings: How many vanilla beans do you need for extract?",
+      "url": "https://www.vanillabeankings.com/blogs/recipes/how-many-vanilla-beans-do-you-need-for-extract"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "Tag 1",
+      "nachher": "nach 8 Wochen",
+      "vergleich": [
+        {
+          "label": "Vanille in Wodka",
+          "gefaess": "flasche",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#f3efe2",
+            "fuell": 0.7
+          },
+          "nachher": {
+            "farbe": "#6b3a1e",
+            "fuell": 0.7
+          }
+        }
+      ]
+    }
+  },
+  "sicherheit": "Enthält Alkohol: Für Kinder nur im gebackenen Kuchen, nicht pur."
+}
