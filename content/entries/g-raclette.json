@@ -1,0 +1,51 @@
+{
+  "id": "g-raclette",
+  "typ": "gericht",
+  "titel": "Raclette",
+  "synonyme": [
+    "Raclette",
+    "Raclettekäse",
+    "Gschwellti mit Käse"
+  ],
+  "kurz": "Raclette ist geschmolzener Käse auf Kartoffeln. Er wird cremig, wenn er gerade schmilzt, und fettig, wenn er zu heiß wird.",
+  "bild_im_kopf": "Wie Schokolade in der Hand: Ein wenig Wärme macht sie weich, zu viel lässt sie auseinanderlaufen.",
+  "schwierigkeit": "einsteiger",
+  "status": "entwurf",
+  "schluesselmomente": [
+    {
+      "schritt": "Kartoffeln in der Schale kochen (Gschwellti)",
+      "warum": "Die Schale schützt: Die Kartoffel saugt kein Wasser auf und bleibt mehlig-fest.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Käse nur so lange erhitzen, bis er Blasen wirft",
+      "warum": "Erst schmilzt das Fett, dann wird das Eiweiß weich. Zu lange gehitzt ziehen sich die Eiweiße zusammen und pressen Fett heraus.",
+      "prinzip": "eiweiss-gerinnung"
+    },
+    {
+      "schritt": "Mit sauren Gurken und Silberzwiebeln essen",
+      "warum": "Säure hilft gegen das Gefühl der Schwere und macht jeden Bissen wieder frisch.",
+      "prinzip": "abschmecken-saeure"
+    }
+  ],
+  "links": [
+    "kaese",
+    "eiweiss-gerinnung",
+    "sauce-trennt-sich",
+    "g-kaesefondue",
+    "abschmecken-saeure"
+  ],
+  "welten": [
+    "w-milch",
+    "w-kartoffeln"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a wedge of raclette cheese melting onto boiled potatoes in their skins, with small pickles and pearl onions on a wooden board"
+  }
+}

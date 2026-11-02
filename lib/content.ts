@@ -101,3 +101,14 @@ export const TYP_NAME: Record<Typ, string> = {
   prozess: "Prozess", ziel: "Ziel", technik: "Technik", symptom: "Symptom", zutat: "Zutat",
   stellschraube: "Stellschraube", welt: "Welt", begriff: "Begriff", gericht: "Gericht", experiment: "Experiment", labor: "Labor",
 };
+
+/* ---------- Lernpfade ---------- */
+export interface Pfad { id: string; titel: string; kurz: string; fuer: string; dauer: string; schritte: { id: string; warum: string }[] }
+let pfadCache: Pfad[] | null = null;
+export function lernpfade(): Pfad[] {
+  if (!pfadCache) pfadCache = JSON.parse(readFileSync(join(root, "content/lernpfade.json"), "utf8")) as Pfad[];
+  return pfadCache;
+}
+export const getPfad = (id: string) => lernpfade().find((p) => p.id === id);
+/** Klartext ohne Glossar-Markierungen, für Listen und Popups. */
+export const plainText = (s: string) => s.replace(/\[\[[a-z0-9-]+\|([^\]]+)\]\]/g, "$1").replace(/\[\[([a-z0-9-]+)\]\]/g, (_, id: string) => titleOf(id));

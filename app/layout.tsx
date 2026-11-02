@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="wrap wide" style={{ paddingBottom: 0, gap: 0 }}>
           <div className="sitebar">
             <Link href="/" className="brand">Koch<em>wissen</em></Link>
-            <span className="mono">Prototyp</span>
+            <nav className="topnav"><Link href="/">Bibliothek</Link><Link href="/pfad">Lernpfade</Link></nav>
           </div>
         </div>
         {children}

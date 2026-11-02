@@ -1,0 +1,57 @@
+{
+  "id": "g-zuercher-geschnetzeltes",
+  "typ": "gericht",
+  "titel": "Zürcher Geschnetzeltes",
+  "synonyme": [
+    "Züri Gschnätzlets",
+    "Geschnetzeltes",
+    "Kalbsgeschnetzeltes"
+  ],
+  "kurz": "Zürcher Geschnetzeltes gelingt, wenn das Fleisch nur kurz scharf angebraten wird und erst ganz am Schluss zurück in die Sauce kommt.",
+  "bild_im_kopf": "Wie ein Gast, der erst zum Dessert erscheint: Kommt das Fleisch zu früh in die Sauce, wird es zäh.",
+  "schwierigkeit": "einsteiger",
+  "status": "entwurf",
+  "schluesselmomente": [
+    {
+      "schritt": "Fleisch trocken tupfen und portionsweise in sehr heißer Pfanne anbraten",
+      "warum": "Zu viel Fleisch auf einmal kühlt die Pfanne, es kocht im eigenen Saft und wird grau.",
+      "prinzip": "steak-grau"
+    },
+    {
+      "schritt": "Fleisch herausnehmen, Zwiebeln und Pilze im Bratsatz dünsten",
+      "warum": "Die braunen Röststoffe am Pfannenboden sind die Grundlage der Sauce.",
+      "prinzip": "maillard-reaktion"
+    },
+    {
+      "schritt": "Mit Weißwein ablöschen und einkochen, dann Rahm dazu",
+      "warum": "Wein löst den Bratsatz, Einkochen konzentriert den Geschmack.",
+      "prinzip": "deglacieren"
+    },
+    {
+      "schritt": "Sauce sämig einkochen, Fleisch nur noch kurz darin erwärmen",
+      "warum": "Dünne Fleischstreifen sind schnell durch. Kochen sie in der Sauce, ziehen sich die Fasern zusammen und werden trocken.",
+      "prinzip": "eiweiss-denaturierung"
+    }
+  ],
+  "links": [
+    "steak-grau",
+    "anbraten",
+    "deglacieren",
+    "reduktion",
+    "eiweiss-denaturierung",
+    "g-roesti"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-saucen"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "Zurich-style sliced veal in a creamy mushroom sauce on a white plate with a golden rösti beside it"
+  }
+}

@@ -22,7 +22,8 @@
   "erklaerung": "Ein [[enzym|Enzym]] im Apfel reagiert mit dem Sauerstoff der Luft und bildet braune Farbstoffe. Säure bremst das Enzym, Wasser hält die Luft fern.",
   "links": [
     "enzym-braeunung",
-    "saeure"
+    "saeure",
+    "g-birchermueesli"
   ],
   "welten": [
     "w-gemuese"
@@ -68,7 +69,8 @@
           }
         }
       ]
-    }
+    },
+    "illustration": "three apple slices on plates, one browned, one with lemon juice, one in water"
   },
   "status": "entwurf",
   "schwierigkeit": "einsteiger",

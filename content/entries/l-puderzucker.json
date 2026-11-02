@@ -60,7 +60,8 @@
   "status": "entwurf",
   "schwierigkeit": "einsteiger",
   "visual": {
-    "vorlage": "keine"
+    "vorlage": "keine",
+    "illustration": "a small heap of powdered sugar and a sieve, next to granulated sugar"
   },
   "sicherheit": "Feiner Zuckerstaub: Mixer erst öffnen, wenn er sich gesetzt hat."
 }

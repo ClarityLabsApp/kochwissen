@@ -1,0 +1,56 @@
+{
+  "id": "g-gerstensuppe",
+  "typ": "gericht",
+  "titel": "Bündner Gerstensuppe",
+  "synonyme": [
+    "Gerstensuppe",
+    "Bündner Suppe",
+    "Graupensuppe"
+  ],
+  "kurz": "Bündner Gerstensuppe wird sämig, weil die Gerste beim langen Köcheln Stärke abgibt. Speck und Trockenfleisch bringen die Tiefe.",
+  "bild_im_kopf": "Wie ein Feuer, das langsam Glut wird: Erst nach Stunden ist die volle Wärme da.",
+  "schwierigkeit": "einsteiger",
+  "status": "entwurf",
+  "schluesselmomente": [
+    {
+      "schritt": "Speck und Gemüsewürfel in wenig Fett andünsten",
+      "warum": "Das Fett aus dem Speck trägt die Aromen ins ganze Gericht.",
+      "prinzip": "aroma-loeslichkeit"
+    },
+    {
+      "schritt": "Gerste dazugeben, mit Wasser oder Brühe auffüllen, 1–2 Stunden leise köcheln",
+      "warum": "Die Gerstenkörner geben nach und nach Stärke ab und binden die Suppe.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Bündnerfleisch oder Rauchfleisch mitkochen",
+      "warum": "Gereiftes, getrocknetes Fleisch bringt viel [[umami|Umami]] in die Brühe.",
+      "prinzip": "umami"
+    },
+    {
+      "schritt": "Zum Schluss mit Rahm verfeinern und abschmecken",
+      "warum": "Fett rundet ab. Erst am Ende salzen, weil die Suppe beim Kochen einkocht.",
+      "prinzip": "reduktion"
+    }
+  ],
+  "links": [
+    "staerkeverkleisterung",
+    "umami",
+    "aroma-loeslichkeit",
+    "reduktion",
+    "w-getreide"
+  ],
+  "welten": [
+    "w-getreide",
+    "w-fleisch"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a rustic bowl of creamy Swiss barley soup with vegetables and diced cured meat, a slice of dark bread beside it"
+  }
+}

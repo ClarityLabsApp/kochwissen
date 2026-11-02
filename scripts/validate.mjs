@@ -58,6 +58,8 @@ for (const { file, data: e } of entries) {
 
 const unmarked = findUnmarked(entries.map((x) => x.data), known);
 if (unmarked.length) warn.push(`${unmarked.length} Fachwörter ohne Glossar-Link (Liste: npm run glossar, verlinken: npm run glossar -- --fix)`);
+const pfade = read("content/lernpfade.json");
+for (const p of pfade) for (const s of p.schritte) if (!known.has(s.id)) errors.push(`lernpfade.json: ${p.id} verweist auf unbekannte id "${s.id}"`);
 for (const w of warn) console.warn("Hinweis:", w);
 if (errors.length) {
   console.error(`\n${errors.length} Fehler:\n` + errors.map((x) => "  - " + x).join("\n"));

@@ -1,0 +1,58 @@
+{
+  "id": "g-aelplermagronen",
+  "typ": "gericht",
+  "titel": "Älplermagronen",
+  "synonyme": [
+    "Älplermakkaroni",
+    "Alpler Magronen",
+    "Magronen"
+  ],
+  "kurz": "Älplermagronen werden cremig, weil Pasta und Kartoffeln im selben Wasser kochen und ihre Stärke die Sauce bindet.",
+  "bild_im_kopf": "Wie ein Eintopf, der sich selbst die Sauce kocht: Was die Zutaten abgeben, hält am Ende alles zusammen.",
+  "schwierigkeit": "einsteiger",
+  "status": "entwurf",
+  "schluesselmomente": [
+    {
+      "schritt": "Kartoffelwürfel und Hörnli im selben Topf kochen",
+      "warum": "Beide geben Stärke ins Wasser. Ein Rest dieses Wassers bindet später Rahm und Käse.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Zwiebelringe langsam in Butter goldbraun braten",
+      "warum": "Langsam [[karamellisierung|karamellisiert]] der Zucker der Zwiebel, schnell verbrennt sie außen.",
+      "prinzip": "karamellisierung"
+    },
+    {
+      "schritt": "Abgießen, etwas Kochwasser behalten, mit Rahm und geriebenem Käse mischen",
+      "warum": "Stärke aus dem Kochwasser hält Käsefett und Rahm zusammen, die Sauce bleibt cremig statt fettig.",
+      "prinzip": "emulsion"
+    },
+    {
+      "schritt": "Mit Apfelmus servieren",
+      "warum": "Die Säure des Apfels schneidet durch Fett und Käse und macht das schwere Gericht frischer.",
+      "prinzip": "abschmecken-saeure"
+    }
+  ],
+  "links": [
+    "staerkeverkleisterung",
+    "emulsion",
+    "kaese",
+    "zwiebeln-verbrennen",
+    "abschmecken-saeure",
+    "g-kaesefondue"
+  ],
+  "welten": [
+    "w-pasta",
+    "w-kartoffeln",
+    "w-milch"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a rustic Swiss dish of macaroni and potato cubes with melted cheese and golden fried onion rings in a cast iron pan, a small bowl of applesauce beside it"
+  }
+}

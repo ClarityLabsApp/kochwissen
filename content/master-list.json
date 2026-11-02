@@ -1,7 +1,7 @@
 {
  "version": 1,
  "stand": "2026-11-02",
- "anzahl": 269,
+ "anzahl": 275,
  "eintraege": [
   {
    "id": "w-fleisch",
@@ -123,7 +123,9 @@
    "links": [
     "staerkeverkleisterung",
     "retrogradation",
-    "amylase"
+    "amylase",
+    "g-gerstensuppe",
+    "g-birchermueesli"
    ],
    "welten": [],
    "synonyme": [],
@@ -140,7 +142,8 @@
    "pilot": false,
    "links": [
     "staerkeverkleisterung",
-    "glutenbildung"
+    "glutenbildung",
+    "g-aelplermagronen"
    ],
    "welten": [],
    "synonyme": [],
@@ -328,6 +331,7 @@
     "anbraten",
     "brot-kruste-weich",
     "farbe",
+    "g-fotzelschnitten",
     "g-ofengemuese",
     "g-pizza",
     "g-roesti",
@@ -497,6 +501,9 @@
     "amylase",
     "creme-klumpig",
     "cremig",
+    "g-aelplermagronen",
+    "g-birchermueesli",
+    "g-gerstensuppe",
     "g-risotto",
     "g-roesti",
     "gebunden",
@@ -528,7 +535,8 @@
    "links": [
     "staerkeverkleisterung",
     "brot-altbacken",
-    "reis-matschig"
+    "reis-matschig",
+    "g-fotzelschnitten"
    ],
    "welten": [
     "w-brot",
@@ -573,6 +581,7 @@
    "verlinkt_von": [
     "fisch-zerfaellt",
     "g-steak",
+    "g-zuercher-geschnetzeltes",
     "l-joghurt",
     "pochieren-proz",
     "saeure-denaturierung",
@@ -608,7 +617,9 @@
    },
    "verlinkt_von": [
     "g-creme-brulee",
+    "g-fotzelschnitten",
     "g-hollandaise",
+    "g-raclette",
     "hollandaise-flockt",
     "kaese",
     "l-frischkaese",
@@ -706,6 +717,7 @@
     "cremig",
     "eigelb",
     "emulgieren",
+    "g-aelplermagronen",
     "g-hollandaise",
     "g-kaesefondue",
     "g-mayonnaise",
@@ -1102,6 +1114,8 @@
    "verlinkt_von": [
     "deglacieren",
     "fond",
+    "g-gerstensuppe",
+    "g-zuercher-geschnetzeltes",
     "l-apfelpektin",
     "l-dulce-de-leche",
     "mehr-geschmack",
@@ -1244,7 +1258,8 @@
    "pilot": false,
    "links": [
     "saeure",
-    "oxidation-fett"
+    "oxidation-fett",
+    "g-birchermueesli"
    ],
    "welten": [
     "w-gemuese"
@@ -1831,6 +1846,7 @@
     "vorlage": "punktmatrix"
    },
    "verlinkt_von": [
+    "g-birchermueesli",
     "zu-scharf"
    ]
   },
@@ -1844,7 +1860,9 @@
     "eiweiss-gerinnung",
     "emulsion",
     "umami",
-    "l-frischkaese"
+    "l-frischkaese",
+    "g-raclette",
+    "g-aelplermagronen"
    ],
    "welten": [
     "w-milch"
@@ -3071,7 +3089,8 @@
     "vorlage": "ablauf"
    },
    "verlinkt_von": [
-    "g-steak"
+    "g-steak",
+    "g-zuercher-geschnetzeltes"
    ]
   },
   {
@@ -3259,7 +3278,8 @@
    "pilot": false,
    "links": [
     "reduktion",
-    "mehr-geschmack"
+    "mehr-geschmack",
+    "g-zuercher-geschnetzeltes"
    ],
    "welten": [
     "w-saucen",
@@ -3801,6 +3821,8 @@
     "vorlage": "ablauf"
    },
    "verlinkt_von": [
+    "g-aelplermagronen",
+    "g-raclette",
     "salz-geschmack"
    ]
   },
@@ -3838,7 +3860,8 @@
    "links": [
     "maillard-reaktion",
     "pfanne-vorheizen",
-    "trocken-tupfen"
+    "trocken-tupfen",
+    "g-zuercher-geschnetzeltes"
    ],
    "welten": [
     "w-fleisch"
@@ -4063,7 +4086,8 @@
    "status": "geplant",
    "pilot": false,
    "links": [
-    "retrogradation"
+    "retrogradation",
+    "g-fotzelschnitten"
    ],
    "welten": [
     "w-brot"
@@ -4173,6 +4197,7 @@
    },
    "verlinkt_von": [
     "g-kaesefondue",
+    "g-raclette",
     "l-creme-fraiche"
    ]
   },
@@ -4618,6 +4643,7 @@
     "vorlage": "pfannentest"
    },
    "verlinkt_von": [
+    "g-aelplermagronen",
     "zwiebel"
    ]
   },
@@ -4733,7 +4759,8 @@
     "staerkeverkleisterung",
     "maillard-reaktion",
     "bratkartoffeln-kleben",
-    "knusprig"
+    "knusprig",
+    "g-zuercher-geschnetzeltes"
    ],
    "welten": [
     "w-kartoffeln"
@@ -4964,7 +4991,8 @@
    "links": [
     "hefegaerung",
     "glutenbildung",
-    "maillard-reaktion"
+    "maillard-reaktion",
+    "g-fotzelschnitten"
    ],
    "welten": [
     "w-brot",
@@ -4990,7 +5018,9 @@
     "kaese",
     "emulsion",
     "saeure",
-    "sauce-trennt-sich"
+    "sauce-trennt-sich",
+    "g-raclette",
+    "g-aelplermagronen"
    ],
    "welten": [
     "w-milch"
@@ -5231,7 +5261,8 @@
    "pilot": false,
    "links": [
     "enzym-braeunung",
-    "saeure"
+    "saeure",
+    "g-birchermueesli"
    ],
    "welten": [
     "w-gemuese"
@@ -5394,7 +5425,8 @@
     "kaese",
     "salz-geschmack",
     "fond",
-    "reduktion"
+    "reduktion",
+    "g-gerstensuppe"
    ],
    "welten": [
     "w-saucen",
@@ -5470,6 +5502,7 @@
     "warum Fett Geschmack trägt"
    ],
    "verlinkt_von": [
+    "g-gerstensuppe",
     "gewuerze",
     "zu-scharf"
    ],
@@ -6702,6 +6735,175 @@
    ],
    "visual": {
     "vorlage": "vergleich"
+   }
+  },
+  {
+   "id": "g-aelplermagronen",
+   "typ": "gericht",
+   "titel": "Älplermagronen",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "staerkeverkleisterung",
+    "emulsion",
+    "kaese",
+    "zwiebeln-verbrennen",
+    "abschmecken-saeure",
+    "g-kaesefondue"
+   ],
+   "welten": [
+    "w-pasta",
+    "w-kartoffeln",
+    "w-milch"
+   ],
+   "synonyme": [
+    "Älplermakkaroni",
+    "Alpler Magronen",
+    "Magronen"
+   ],
+   "verlinkt_von": [
+    "w-pasta"
+   ],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-zuercher-geschnetzeltes",
+   "typ": "gericht",
+   "titel": "Zürcher Geschnetzeltes",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "steak-grau",
+    "anbraten",
+    "deglacieren",
+    "reduktion",
+    "eiweiss-denaturierung",
+    "g-roesti"
+   ],
+   "welten": [
+    "w-fleisch",
+    "w-saucen"
+   ],
+   "synonyme": [
+    "Züri Gschnätzlets",
+    "Geschnetzeltes",
+    "Kalbsgeschnetzeltes"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-birchermueesli",
+   "typ": "gericht",
+   "titel": "Birchermüesli",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "enzym-braeunung",
+    "x-apfel-braun",
+    "staerkeverkleisterung",
+    "joghurt"
+   ],
+   "welten": [
+    "w-getreide",
+    "w-milch"
+   ],
+   "synonyme": [
+    "Bircher Müsli",
+    "Birchermüsli",
+    "Overnight Oats"
+   ],
+   "verlinkt_von": [
+    "w-getreide"
+   ],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-raclette",
+   "typ": "gericht",
+   "titel": "Raclette",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "kaese",
+    "eiweiss-gerinnung",
+    "sauce-trennt-sich",
+    "g-kaesefondue",
+    "abschmecken-saeure"
+   ],
+   "welten": [
+    "w-milch",
+    "w-kartoffeln"
+   ],
+   "synonyme": [
+    "Raclette",
+    "Raclettekäse",
+    "Gschwellti mit Käse"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-gerstensuppe",
+   "typ": "gericht",
+   "titel": "Bündner Gerstensuppe",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "staerkeverkleisterung",
+    "umami",
+    "aroma-loeslichkeit",
+    "reduktion",
+    "w-getreide"
+   ],
+   "welten": [
+    "w-getreide",
+    "w-fleisch"
+   ],
+   "synonyme": [
+    "Gerstensuppe",
+    "Bündner Suppe",
+    "Graupensuppe"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
+   }
+  },
+  {
+   "id": "g-fotzelschnitten",
+   "typ": "gericht",
+   "titel": "Fotzelschnitten",
+   "status": "geplant",
+   "pilot": false,
+   "links": [
+    "retrogradation",
+    "brot-altbacken",
+    "eiweiss-gerinnung",
+    "maillard-reaktion",
+    "g-zopf"
+   ],
+   "welten": [
+    "w-brot",
+    "w-eier"
+   ],
+   "synonyme": [
+    "Fotzelschnitte",
+    "Arme Ritter",
+    "French Toast",
+    "Pain perdu"
+   ],
+   "verlinkt_von": [],
+   "visual": {
+    "vorlage": "ablauf"
    }
   }
  ]

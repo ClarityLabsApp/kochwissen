@@ -35,13 +35,16 @@
     "kaese",
     "emulsion",
     "saeure",
-    "sauce-trennt-sich"
+    "sauce-trennt-sich",
+    "g-raclette",
+    "g-aelplermagronen"
   ],
   "welten": [
     "w-milch"
   ],
   "visual": {
-    "vorlage": "ablauf"
+    "vorlage": "ablauf",
+    "illustration": "a Swiss cheese fondue pot (caquelon) with melted cheese, a fork with a bread cube dipped in"
   },
   "status": "entwurf",
   "quellen": [

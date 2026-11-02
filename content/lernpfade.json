@@ -1,0 +1,99 @@
+[
+  {
+    "id": "grundprinzipien",
+    "titel": "Die 10 wichtigsten Prinzipien der Küche",
+    "kurz": "Wer diese zehn Vorgänge versteht, versteht den größten Teil dessen, was beim Kochen und Backen passiert.",
+    "fuer": "Für alle, die beim Grundsätzlichen anfangen wollen",
+    "dauer": "etwa 1 Stunde",
+    "schritte": [
+      { "id": "verdampfen", "warum": "Der Anfang von allem: Solange Wasser da ist, wird nichts heißer als 100 °C." },
+      { "id": "waermeleitung", "warum": "Wie die Hitze überhaupt ins Essen kommt, und warum außen schneller gar ist als innen." },
+      { "id": "maillard-reaktion", "warum": "Ab 140 °C entsteht das, was wir als Bratenduft und braune Kruste lieben." },
+      { "id": "karamellisierung", "warum": "Der Verwandte der Maillard-Reaktion: Zucker allein wird braun und aromatisch." },
+      { "id": "eiweiss-denaturierung", "warum": "Warum Fleisch, Fisch und Eier gar werden, und warum sie zu lange gegart trocken werden." },
+      { "id": "kollagen-gelatine", "warum": "Das Gegenteil: Zähes Fleisch braucht Zeit, bis sein Bindegewebe schmilzt." },
+      { "id": "staerkeverkleisterung", "warum": "Was Saucen bindet, Kartoffeln weich macht und Risotto cremig." },
+      { "id": "emulsion", "warum": "Wie Öl und Wasser zusammenhalten: Mayonnaise, Vinaigrette, Hollandaise." },
+      { "id": "glutenbildung", "warum": "Das Netz im Teig, das Brot aufgehen lässt und Kuchen zäh machen kann." },
+      { "id": "osmose", "warum": "Warum Salz Wasser zieht, und wann man darum salzen soll." }
+    ]
+  },
+  {
+    "id": "kinderlabor",
+    "titel": "Küchenlabor für Kinder",
+    "kurz": "Zwölf Versuche, bei denen man sieht, riecht und schmeckt, was in der Küche passiert. Mit Erwachsenen an Herd und heißem Wasser.",
+    "fuer": "Für Kinder ab etwa 8 Jahren, zusammen mit Erwachsenen",
+    "dauer": "ein paar Nachmittage",
+    "schritte": [
+      { "id": "x-rotkohl-indikator", "warum": "Der Farbzauber zum Einstieg: Rotkohlsaft zeigt, ob etwas sauer ist." },
+      { "id": "x-apfel-braun", "warum": "Warum der Apfel braun wird, und wie man es verhindert." },
+      { "id": "x-salz-gurke", "warum": "Salz zieht Wasser: Man kann richtig zusehen." },
+      { "id": "x-backpulver-kalt-heiss", "warum": "Was im Kuchen die Bläschen macht." },
+      { "id": "x-hefe-ballon", "warum": "Hefe lebt und atmet: Sie bläst einen Ballon auf." },
+      { "id": "x-eischnee-fett", "warum": "Ein winziger Tropfen Fett verdirbt den ganzen Eischnee." },
+      { "id": "x-butter-schuetteln", "warum": "Aus Rahm wird Butter, nur durch Schütteln." },
+      { "id": "x-glace-beutel", "warum": "Mit Eis und Salz in zehn Minuten Glace machen." },
+      { "id": "x-ananas-gelatine", "warum": "Frische Ananas zerschneidet die Götterspeise." },
+      { "id": "x-gluten-auswaschen", "warum": "Das unsichtbare Netz im Mehl wird sichtbar." },
+      { "id": "x-bohnen-gruen", "warum": "Warum Gemüse grau wird, wenn es zu lange kocht." },
+      { "id": "x-zuckerkristalle", "warum": "Zum Schluss ein Versuch über mehrere Tage: Kristalle wachsen lassen." }
+    ]
+  },
+  {
+    "id": "brot",
+    "titel": "Brot verstehen",
+    "kurz": "Vom Mehl bis zur Kruste: was in einem Brot passiert und woran man drehen kann.",
+    "fuer": "Für alle, die ihr eigenes Brot backen wollen",
+    "dauer": "etwa 1 Stunde Lesen, dann Üben",
+    "schritte": [
+      { "id": "mehl", "warum": "Was im Mehl steckt: Stärke, Eiweiß und ein paar Enzyme." },
+      { "id": "glutenbildung", "warum": "Das Netz, das die Gasblasen hält." },
+      { "id": "autolyse", "warum": "Warum ein bisschen Ruhe das Kneten ersetzt." },
+      { "id": "hefegaerung", "warum": "Wer das Gas liefert, und wie die Temperatur ihn bremst oder antreibt." },
+      { "id": "kalte-gare", "warum": "Mehr Zeit gibt mehr Aroma." },
+      { "id": "dehnen-falten", "warum": "Struktur ohne Kneten." },
+      { "id": "dampf-im-ofen", "warum": "Warum Dampf in den ersten Minuten das Brot größer macht." },
+      { "id": "maillard-reaktion", "warum": "Die Kruste." },
+      { "id": "retrogradation", "warum": "Warum Brot altbacken wird, und wie man es aufbackt." },
+      { "id": "l-sauerteig", "warum": "Der nächste Schritt: einen eigenen Sauerteig ansetzen." }
+    ]
+  },
+  {
+    "id": "fleisch",
+    "titel": "Fleisch richtig garen",
+    "kurz": "Saftig, zart, mit Kruste: die Prinzipien hinter Steak, Braten und Schmorgericht.",
+    "fuer": "Für alle, die Fleisch nicht mehr nach Gefühl braten wollen",
+    "dauer": "etwa 45 Minuten",
+    "schritte": [
+      { "id": "eiweiss-denaturierung", "warum": "Was im Fleisch beim Garen passiert, Grad für Grad." },
+      { "id": "kerntemperatur", "warum": "Die wichtigste Zahl, und warum ein Thermometer mehr hilft als jede Daumenregel." },
+      { "id": "trockensalzen", "warum": "Salz am Vortag: saftiger und besser gewürzt." },
+      { "id": "trocken-tupfen", "warum": "Ohne Wasser an der Oberfläche keine Kruste." },
+      { "id": "steak-grau", "warum": "Was schiefgeht, wenn die Pfanne zu voll oder zu kalt ist." },
+      { "id": "ruhen-lassen", "warum": "Was das Ruhen wirklich bringt, mit Messwerten." },
+      { "id": "kollagen-gelatine", "warum": "Warum zähe Stücke langsam zart werden." },
+      { "id": "schmoren", "warum": "Die Technik dazu." },
+      { "id": "keimwachstum", "warum": "Was beim Geflügel und bei Resten zu beachten ist." },
+      { "id": "g-steak", "warum": "Alles zusammen: ein Steak aus der Pfanne." }
+    ]
+  },
+  {
+    "id": "saucen",
+    "titel": "Saucen ohne Angst",
+    "kurz": "Fast jede Sauce ist eine Emulsion, mit Stärke gebunden oder eingekocht. Wer die drei Wege kennt, rettet jede Sauce.",
+    "fuer": "Für alle, denen Saucen schon einmal geronnen oder zu dünn geraten sind",
+    "dauer": "etwa 45 Minuten",
+    "schritte": [
+      { "id": "w-saucen", "warum": "Der Überblick: drei Wege, eine Sauce zu binden." },
+      { "id": "emulsion", "warum": "Weg 1: Fett in Wasser in winzigen Tröpfchen." },
+      { "id": "g-mayonnaise", "warum": "Die Emulsion zum Selbermachen." },
+      { "id": "mayo-gerinnt", "warum": "Was tun, wenn sie sich trennt." },
+      { "id": "staerkeverkleisterung", "warum": "Weg 2: Stärke quillt und bindet." },
+      { "id": "mehlschwitze", "warum": "Die klassische Technik dazu." },
+      { "id": "reduktion", "warum": "Weg 3: einkochen, bis es sämig wird." },
+      { "id": "montieren", "warum": "Kalte Butter zum Schluss: Glanz und Bindung." },
+      { "id": "g-hollandaise", "warum": "Die Königsdisziplin: warme Emulsion mit Eigelb." },
+      { "id": "sauce-trennt-sich", "warum": "Für den Notfall." }
+    ]
+  }
+]

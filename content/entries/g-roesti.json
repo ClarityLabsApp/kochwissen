@@ -37,13 +37,15 @@
     "staerkeverkleisterung",
     "maillard-reaktion",
     "bratkartoffeln-kleben",
-    "knusprig"
+    "knusprig",
+    "g-zuercher-geschnetzeltes"
   ],
   "welten": [
     "w-kartoffeln"
   ],
   "visual": {
-    "vorlage": "ablauf"
+    "vorlage": "ablauf",
+    "illustration": "a golden crispy Swiss rösti in a cast iron pan, one wedge cut out"
   },
   "status": "entwurf",
   "quellen": [

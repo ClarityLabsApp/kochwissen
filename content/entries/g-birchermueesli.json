@@ -1,0 +1,49 @@
+{
+  "id": "g-birchermueesli",
+  "typ": "gericht",
+  "titel": "Birchermüesli",
+  "synonyme": [
+    "Bircher Müsli",
+    "Birchermüsli",
+    "Overnight Oats"
+  ],
+  "kurz": "Im Birchermüesli quellen Haferflocken über Nacht in Milch oder Joghurt. Zitrone hält den geriebenen Apfel hell.",
+  "bild_im_kopf": "Wie ein Schwamm, den man abends ins Wasser legt: Am Morgen ist er weich und voll.",
+  "schwierigkeit": "einsteiger",
+  "status": "entwurf",
+  "schluesselmomente": [
+    {
+      "schritt": "Haferflocken mit Milch oder Joghurt mischen und über Nacht kühl stellen",
+      "warum": "Die Flocken nehmen Flüssigkeit auf, ihre Stärke quillt auch kalt etwas: Das Müesli wird cremig.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Apfel kurz vor dem Essen reiben und sofort mit Zitronensaft mischen",
+      "warum": "An der Luft bräunt ein [[enzym|Enzym]] den Apfel. Säure bremst es.",
+      "prinzip": "enzym-braeunung"
+    },
+    {
+      "schritt": "Nüsse erst am Schluss darüber streuen",
+      "warum": "So bleiben sie knackig, statt Feuchtigkeit aufzusaugen."
+    }
+  ],
+  "links": [
+    "enzym-braeunung",
+    "x-apfel-braun",
+    "staerkeverkleisterung",
+    "joghurt"
+  ],
+  "welten": [
+    "w-getreide",
+    "w-milch"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a glass bowl of Bircher muesli with grated apple, oats, yogurt, hazelnuts and a few berries on top"
+  }
+}

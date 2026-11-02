@@ -1,0 +1,56 @@
+{
+  "id": "g-fotzelschnitten",
+  "typ": "gericht",
+  "titel": "Fotzelschnitten",
+  "synonyme": [
+    "Fotzelschnitte",
+    "Arme Ritter",
+    "French Toast",
+    "Pain perdu"
+  ],
+  "kurz": "Fotzelschnitten sind altbackenes Brot, getränkt in Eiermilch und goldbraun gebraten. Gerade weil das Brot alt ist, funktioniert es.",
+  "bild_im_kopf": "Wie ein trockener Schwamm: Nur wer durstig ist, saugt sich richtig voll.",
+  "schwierigkeit": "einsteiger",
+  "status": "entwurf",
+  "schluesselmomente": [
+    {
+      "schritt": "Altbackenes Brot oder Zopf in Scheiben schneiden",
+      "warum": "Altes Brot ist fester, weil die Stärke sich neu geordnet hat. Es saugt Eiermilch auf, ohne zu zerfallen.",
+      "prinzip": "retrogradation"
+    },
+    {
+      "schritt": "In Eiermilch mit etwas Zucker tränken",
+      "warum": "Die Flüssigkeit zieht bis in die Mitte. Das Ei wird beim Braten fest und hält alles zusammen.",
+      "prinzip": "eiweiss-gerinnung"
+    },
+    {
+      "schritt": "Bei mittlerer Hitze in Butter goldbraun braten",
+      "warum": "Zucker, Ei und Milch bräunen schnell. Mittlere Hitze gibt dem Innern Zeit zu stocken.",
+      "prinzip": "maillard-reaktion"
+    },
+    {
+      "schritt": "Mit Zimtzucker bestreuen",
+      "warum": "Zimt und Zucker kleben an der warmen Butter."
+    }
+  ],
+  "links": [
+    "retrogradation",
+    "brot-altbacken",
+    "eiweiss-gerinnung",
+    "maillard-reaktion",
+    "g-zopf"
+  ],
+  "welten": [
+    "w-brot",
+    "w-eier"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)"
+    }
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "golden fried slices of Swiss braided bread dusted with cinnamon sugar on a plate, with a small bowl of apple compote"
+  }
+}

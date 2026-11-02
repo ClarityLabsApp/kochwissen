@@ -15,7 +15,8 @@ Lies vor jeder Arbeit auch **`DESIGN.md`** (Bildsprache, Farben, Vorlagen). Was 
 | `lib/content.ts` | Lädt Inhalte, zerlegt Glossar-Markierungen |
 | `app/` | Next.js App Router: Bibliothek `/`, Eintrag `/eintrag/[id]` |
 | `lib/search.ts` | Suche: gewichtet (Titel 3, Synonyme 2.5, Kurz 1), deutsche Stammformen, Tippfehler, Wörterbuch `THESAURUS` (Problem ↔ Ziel), „Beste Antwort“ |
-| `components/` | Library (Suche), Diagnosis, Term (Glossar-Popup), RichText |
+| `content/lernpfade.json` | Lernpfade: geführte Reihen von Einträgen (`id`, `titel`, `kurz`, `fuer`, `dauer`, `schritte[{id, warum}]`). Seiten `/pfad`, `/pfad/[id]`; auf Eintragsseiten Navigation mit `?pfad=…`, Fortschritt im Browser |
+| `components/` | Library (Startseite: drei Einstiege, Eintrag des Tages, Lernpfade, Welten, Suche, Bibliothek), PathSteps, PathNav, Diagnosis, Term (Glossar-Popup), RichText |
 | `public/prototypen/` | Die drei ursprünglichen HTML-Prototypen, nur noch als Referenz (alle als Komponenten nachgebaut) |
 
 Befehle: `npm run dev` · `npm run validate` · `npm run build`
@@ -89,6 +90,8 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - [x] Kategorie „Labor“ mit 8 Rezepten (Backpulver, Butter, Bratbutter/Ghee, Frischkäse, Joghurt, Sauerteig, Crème fraîche, gebackenes Natron), `scripts/batches/gen_batch_labor.py`
 - [x] Labor II: Mascarpone, Vanilleextrakt, Puderzucker, Buttermilch-Ersatz, Senf, Sauerkraut, brauner Zucker, Dulce de leche, Apfelpektin, Labneh (`scripts/batches/gen_batch_labor2.py`)
 - [ ] Weitere Labor-Rezepte (z. B. Essig-Mutter, Ricotta aus Molke, Kräutersalz, Kimchi). Keine Rezepte mit Botulismus-Risiko (Knoblauch- oder Kräuteröl ungekühlt, Einkochen säurearmer Lebensmittel)
+- [x] Startseite mit drei Einstiegen (Problem, Ziel, Verstehen), Eintrag des Tages, 5 Lernpfade, 6 Schweizer Gerichte (`gen_batch_schweiz.py`)
+- [ ] Bilder für 53 Gerichte, Experimente und Labor-Rezepte erzeugen: Motive stehen in `visual.illustration`, `npm run illustrationen` erzeugt nur fehlende
 - [ ] Weitere Gerichte und Experimente (Vorher-Nachher-Grafik steht, neue Experimente brauchen `params.vergleich`)
 - [ ] Semantische Suche (z. B. pgvector) als Ergänzung; bis dahin fehlende Alltagswörter in `THESAURUS` nachtragen
 - [x] 45 Aquarell-Illustrationen (Welten und Zutaten) in `public/illustrationen/<id>.webp`, Anzeige im Seitenkopf. Neue Motive: `visual.illustration` setzen, `npm run illustrationen -- --only id1,id2` (schreibt WebP mit transparentem Hintergrund; ältere Bilder wurden per Skript freigestellt und beschnitten)

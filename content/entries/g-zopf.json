@@ -35,14 +35,16 @@
   "links": [
     "hefegaerung",
     "glutenbildung",
-    "maillard-reaktion"
+    "maillard-reaktion",
+    "g-fotzelschnitten"
   ],
   "welten": [
     "w-brot",
     "w-gebaeck"
   ],
   "visual": {
-    "vorlage": "ablauf"
+    "vorlage": "ablauf",
+    "illustration": "a shiny golden Swiss braided butter bread (Zopf) on a linen cloth"
   },
   "status": "entwurf",
   "quellen": [

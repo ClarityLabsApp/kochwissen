@@ -7,7 +7,8 @@ import RichText from "@/components/RichText";
 import Diagnosis from "@/components/Diagnosis";
 import Visual, { plain } from "@/components/visuals/Visual";
 import StepFlow from "@/components/visuals/StepFlow";
-import { allIds, getEntry, getMasterItem, titleOf, typOf, PROTOTYPES, TYP_NAME, type Typ } from "@/lib/content";
+import PathNav from "@/components/PathNav";
+import { allIds, getEntry, getMasterItem, lernpfade, titleOf, typOf, PROTOTYPES, TYP_NAME, type Typ } from "@/lib/content";
 
 export function generateStaticParams() {
   return allIds().map((id) => ({ id }));
@@ -84,6 +85,7 @@ export default async function EntryPage(props: Params) {
     );
   }
 
+  const paths = lernpfade().filter((p) => p.schritte.some((s) => s.id === params.id)).map((p) => ({ id: p.id, titel: p.titel, schritte: p.schritte.map((s) => ({ id: s.id, titel: titleOf(s.id) })) }));
   const causesSorted = [...(e.ursachen ?? [])].sort((a, b) => (b.haeufigkeit ?? 0) - (a.haeufigkeit ?? 0));
   const principleTitles = Object.fromEntries((e.ursachen ?? []).filter((u) => u.prinzip).map((u) => [u.prinzip!, titleOf(u.prinzip!)]));
   const rules = e.faustregeln?.length ? (
@@ -99,6 +101,7 @@ export default async function EntryPage(props: Params) {
     <main className="wrap">
       <article className="entry">
         {head}
+        <PathNav entry={e.id} paths={paths} />
         <p className="kurz"><strong>Kurz gesagt:</strong> <RichText text={e.kurz} /></p>
         {proto && (
           <div className="proto">
@@ -183,6 +186,7 @@ export default async function EntryPage(props: Params) {
             <ul className="sources">{e.quellen.map((q) => <li key={q.titel}>{q.url ? <a href={q.url} target="_blank" rel="noopener noreferrer">{q.titel}</a> : q.titel}{q.stelle ? `, ${q.stelle}` : ""}</li>)}</ul>
           </div>
         ) : null}
+        <PathNav entry={e.id} paths={paths} />
         <div className="meta"><span>id · {e.id}</span><span>Grafik-Vorlage · {e.visual?.vorlage ?? "–"}</span></div>
       </article>
     </main>
