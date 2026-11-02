@@ -457,3 +457,4 @@ article.entry > details.sec + details.sec { margin-top: calc(-1 * var(--egap) - 
 .spec-knob { pointer-events: none; }
 .tends { align-items: baseline; gap: 8px; }
 .tends .hint { color: var(--sepia); opacity: .8; }
+@media (max-width: 700px) { .tiles2 { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; } .tile2 span { font-size: 13px; } }

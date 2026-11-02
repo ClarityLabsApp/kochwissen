@@ -18,8 +18,8 @@ const DOORS: { typ: "symptom" | "ziel" | "prozess"; ids: string[] }[] = [
   { typ: "prozess", ids: ["maillard-reaktion", "emulsion", "glutenbildung", "staerkeverkleisterung"] },
 ];
 /** Wie jede Kategorie als Liste erscheint: kurze Namen als Chips, mit Bild als Kacheln, sonst kompakte Zeilen in Gruppen. */
-const AS_CHIPS = new Set(["ziel", "zutat", "stellschraube", "begriff"]);
-const AS_TILES = new Set(["gericht", "experiment", "labor", "welt"]);
+const AS_CHIPS = new Set<string>();
+const AS_TILES = new Set(["gericht", "experiment", "labor", "welt", "zutat"]);
 const THEMES: [string, string, string[]][] = [
   ["Hitze und Bräunung", "Heat and browning", ["maillard-reaktion", "karamellisierung", "basen-braeunung", "pyrolyse", "waermeleitung", "waermestrahlung", "konvektion", "verdampfen", "leidenfrost", "siedepunkt-druck", "rauchpunkt", "pochieren-proz", "dampflockerung"]],
   ["Wasser, Salz und Zucker", "Water, salt and sugar", ["osmose", "diffusion", "wasserbindung-salz", "poekeln", "wasseraktivitaet", "zucker-feuchtigkeit", "reduktion", "zucker-kristallisation", "eiskristalle", "gefrierpunkt-senkung"]],
@@ -61,10 +61,30 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
     const day = Math.floor(Date.now() / 86400000);
     setDaily(pool.length ? pool[(day * 7919) % pool.length] : null);
   }, [items]);
+  // Die gewählte Kategorie steht in der Adresse (?k=prozess), damit „Zurück“ im Browser zum Molekül führt.
+  const scrollLib = () => setTimeout(() => document.getElementById("bibliothek")?.scrollIntoView({ behavior: "smooth", block: "start" }), 50);
   const openType = (t: string) => {
     setActive(new Set([t])); setSub(null);
-    setTimeout(() => document.getElementById("bibliothek")?.scrollIntoView({ behavior: "smooth", block: "start" }), 50);
+    const u = new URL(window.location.href); u.searchParams.set("k", t);
+    window.history.pushState({ k: t }, "", u);
+    scrollLib();
   };
+  const closeType = () => {
+    if (window.history.state?.k) window.history.back();
+    else { setActive(new Set()); const u = new URL(window.location.href); u.searchParams.delete("k"); window.history.replaceState(null, "", u); scrollLib(); }
+  };
+  useEffect(() => {
+    const sync = () => {
+      const k = new URL(window.location.href).searchParams.get("k");
+      setActive(k && T.types[k] ? new Set([k]) : new Set()); setSub(null);
+      if (document.getElementById("bibliothek")) scrollLib();
+    };
+    const k0 = new URL(window.location.href).searchParams.get("k");
+    if (k0 && T.types[k0]) { setActive(new Set([k0])); scrollLib(); }
+    window.addEventListener("popstate", sync);
+    return () => window.removeEventListener("popstate", sync);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const plain = (s: string) => s.replace(/\[\[[a-z0-9-]+\|([^\]]+)\]\]/g, "$1").replace(/\[\[([a-z0-9-]+)\]\]/g, (_, id) => byId.get(id)?.titel ?? id);
 
   const subgroups = (typ: string, g: LibItem[]): [string, LibItem[]][] => {
@@ -166,7 +186,7 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
           </div>
         </nav>
       )}
-      {!res && active.size > 0 && <button type="button" className="mol-back" onClick={() => setActive(new Set())}>{T.mol.back}</button>}
+      {!res && active.size > 0 && <button type="button" className="mol-back" onClick={closeType}>{T.mol.back}</button>}
       <h2 id="bibliothek" className={`libhead${!res && active.size > 0 ? " cat" : ""}`}>{res ? S.allHits : active.size ? T.types[[...active][0]][0] : S.whole}</h2>
       {!res && !active.size && (
         <>
@@ -229,11 +249,11 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
                   const sg = subgroups(t, g), cur = sg.find(([n]) => n === sub) ?? sg[0];
                   return (
                     <div className="rowgroups">
-                      <div className="typechips subchips" role="group">
+                      {sg.length > 1 && <div className="typechips subchips" role="group">
                         {sg.map(([n, r]) => (
                           <button key={n} type="button" className="typechip" aria-pressed={cur[0] === n} onClick={() => setSub(n)}>{n}<span>{r.length}</span></button>
                         ))}
-                      </div>
+                      </div>}
                       <ul className="rows">
                         {cur[1].map((e) => (
                           <li key={e.id}><Link href={ln(`/eintrag/${e.id}`)}><strong>{e.titel}{e.status === "geprueft" ? " ✓" : ""}</strong></Link></li>
