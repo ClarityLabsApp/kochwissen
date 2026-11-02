@@ -46,14 +46,14 @@ export default function Visual({ e, lang = "de" }: { e: Entry; lang?: Lang }) {
   const blocks: React.ReactNode[] = [];
 
   if (e.visual?.vorlage === "vergleich" && Array.isArray(p.vergleich)) {
-    blocks.push(<ExperimentCompare key="xp" felder={p.vergleich as Feld[]} vorher={typeof p.vorher === "string" ? p.vorher : undefined} nachher={typeof p.nachher === "string" ? p.nachher : undefined} />);
+    blocks.push(<ExperimentCompare key="xp" felder={p.vergleich as Feld[]} vorher={typeof p.vorher === "string" ? p.vorher : undefined} nachher={typeof p.nachher === "string" ? p.nachher : undefined} lang={lang} />);
   }
-  if (e.id === "maillard-reaktion") blocks.push(<MaillardSim key="maillard" />);
-  if (hasSim(e.id)) blocks.push(<ParticleSim key="sim" preset={e.id} />);
+  if (e.id === "maillard-reaktion") blocks.push(<MaillardSim key="maillard" lang={lang} />);
+  if (hasSim(e.id)) blocks.push(<ParticleSim key="sim" preset={e.id} lang={lang} />);
 
   if (e.typ === "symptom" && e.visual?.vorlage === "pfannentest") {
     const v = p.variante === "backblech" || p.variante === "fritteuse" ? p.variante : "pfanne";
-    blocks.push(<PanTest key="pan" variant={v} />);
+    blocks.push(<PanTest key="pan" variant={v} lang={lang} />);
   }
 
   if (e.typ === "ziel" && e.hebel?.length) {
@@ -68,7 +68,7 @@ export default function Visual({ e, lang = "de" }: { e: Entry; lang?: Lang }) {
       return [...rt].some((mid) => typOf(mid) === "prozess" && refsOf(mid).has(h));
     };
     for (const t of techs) for (const h of e.hebel) if (linked(t, h)) edges.push([h, t]);
-    if (right.length) blocks.push(<DotNet key="net" title={V.netGoal(e.titel)} leftTitle={V.levers} rightTitle={V.techs} left={left} right={right} edges={edges} />);
+    if (right.length) blocks.push(<DotNet key="net" title={V.netGoal(e.titel)} leftTitle={V.levers} rightTitle={V.techs} left={left} right={right} edges={edges} lang={lang} />);
   }
 
   if (e.typ === "zutat" && e.rolle?.length) {
@@ -76,7 +76,7 @@ export default function Visual({ e, lang = "de" }: { e: Entry; lang?: Lang }) {
     const procs = [...new Set(e.rolle.map((r) => r.prozess))];
     const right = procs.map((id) => node(id));
     const edges = e.rolle.map((r, i) => [`r${i}`, r.prozess] as [string, string]);
-    blocks.push(<DotNet key="net" title={V.netIng(lang === "en" ? e.titel : e.titel.split(" ")[0])} leftTitle={V.role} rightTitle={V.proc} left={left} right={right} edges={edges} />);
+    blocks.push(<DotNet key="net" title={V.netIng(lang === "en" ? e.titel : e.titel.split(" ")[0])} leftTitle={V.role} rightTitle={V.proc} left={left} right={right} edges={edges} lang={lang} />);
   }
 
   if (e.visual?.vorlage === "skala" && typeof p.links === "string" && typeof p.rechts === "string") {
@@ -89,7 +89,7 @@ export default function Visual({ e, lang = "de" }: { e: Entry; lang?: Lang }) {
   const marks = marksOf(e);
   if (marks.length) {
     const title = e.typ === "technik" ? V.temps : e.id === "rauchpunkt" ? V.smoke : V.thresholds;
-    blocks.push(<TempScale key="temp" marks={marks} title={title} note={typeof p.hinweis === "string" ? p.hinweis : undefined} unitMax={e.id === "rauchpunkt" ? 260 : undefined} />);
+    blocks.push(<TempScale key="temp" marks={marks} title={title} note={typeof p.hinweis === "string" ? p.hinweis : undefined} unitMax={e.id === "rauchpunkt" ? 260 : undefined} lang={lang} />);
   }
 
   return blocks.length ? <>{blocks}</> : null;

@@ -1,4 +1,5 @@
 "use client";
+import { t as ui, type Lang } from "@/lib/i18n";
 import { useEffect, useMemo, useState } from "react";
 
 export interface Mark { c: number; name: string }
@@ -16,7 +17,8 @@ function zoneColor(c: number) {
  * und eine Zeile, die sagt, was bei dieser Temperatur gerade passiert.
  * Läuft beim Öffnen einmal von kalt nach heiß durch.
  */
-export default function TempScale({ marks, title, note, unitMax }: { marks: Mark[]; title?: string; note?: string; unitMax?: number }) {
+export default function TempScale({ marks, title, note, unitMax, lang = "de" }: { marks: Mark[]; title?: string; note?: string; unitMax?: number; lang?: Lang }) {
+  const V = ui(lang).vis;
   const sorted = useMemo(() => [...marks].sort((a, b) => a.c - b.c), [marks]);
   const max = unitMax ?? Math.max(120, Math.ceil((sorted[sorted.length - 1]?.c ?? 100) * 1.15 / 10) * 10);
     const lo0 = Math.max(0, Math.floor(((sorted[0]?.c ?? 0) * 0.6) / 10) * 10);
@@ -47,8 +49,8 @@ export default function TempScale({ marks, title, note, unitMax }: { marks: Mark
 
   return (
     <div className="vis">
-      <div className="vis-head"><span className="mono">{title ?? "Temperatur-Schwellen"}</span><span className="vis-val">{t} °C</span></div>
-      <div className="tbar" role="img" aria-label={`Temperaturskala von ${lo} bis ${max} °C`}>
+      <div className="vis-head"><span className="mono">{title ?? V.thresholds}</span><span className="vis-val">{t} °C</span></div>
+      <div className="tbar" role="img" aria-label={lang === "en" ? `Temperature scale from ${lo} to ${max} °C` : `Temperaturskala von ${lo} bis ${max} °C`}>
         {bands.slice(0, -1).map((b, i) => (
           <span key={b} className="tband" style={{ left: pct(b), width: `calc(${pct(bands[i + 1])} - ${pct(b)})`, background: zoneColor(b) }} />
         ))}
@@ -59,7 +61,7 @@ export default function TempScale({ marks, title, note, unitMax }: { marks: Mark
         <span className="tnow" style={{ left: pct(t) }} />
       </div>
       <div className="tends"><span className="mono">{lo} °C</span><span className="mono">{max} °C</span></div>
-      <input type="range" min={lo} max={max} value={Math.max(lo, t)} aria-label="Temperatur wählen"
+      <input type="range" min={lo} max={max} value={Math.max(lo, t)} aria-label={V.pickTemp}
         onChange={(e) => { setTouched(true); setT(+e.target.value); }} />
       <ol className="tlist">
         {sorted.map((m) => (

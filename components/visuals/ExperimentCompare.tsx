@@ -1,4 +1,5 @@
 "use client";
+import { t as ui, type Lang } from "@/lib/i18n";
 import { useEffect, useRef, useState } from "react";
 
 /* Vorher-Nachher-Vergleich für Experimente. Jedes Feld ist ein Gefäß mit Inhalt;
@@ -91,7 +92,8 @@ function Panel({ f, t, clock }: { f: Feld; t: number; clock: number }) {
   );
 }
 
-export default function ExperimentCompare({ felder, vorher = "Vorher", nachher = "Nachher" }: { felder: Feld[]; vorher?: string; nachher?: string }) {
+export default function ExperimentCompare({ felder, vorher: v0, nachher: n0, lang = "de" }: { felder: Feld[]; vorher?: string; nachher?: string; lang?: Lang }) {
+  const V = ui(lang).vis, vorher = v0 ?? V.before, nachher = n0 ?? V.after;
   const [t, setT] = useState(0);
   const [clock, setClock] = useState(0);
   const [run, setRun] = useState(0);
@@ -116,18 +118,18 @@ export default function ExperimentCompare({ felder, vorher = "Vorher", nachher =
 
   return (
     <div className="vis" ref={root}>
-      <div className="vis-head"><span className="mono">Vorher · Nachher</span><span className="mono">{t < 0.5 ? vorher : nachher}</span></div>
+      <div className="vis-head"><span className="mono">{V.beforeAfter}</span><span className="mono">{t < 0.5 ? vorher : nachher}</span></div>
       <div className="xp-grid" style={{ gridTemplateColumns: `repeat(${felder.length}, minmax(0, 1fr))` }}>
         {felder.map((f) => <Panel key={f.label} f={f} t={t} clock={clock} />)}
       </div>
       <div className="vis-row">
         <label style={{ flex: "1 1 220px", flexDirection: "column", alignItems: "stretch" }}>
           <span className="mono">{vorher} ↔ {nachher}</span>
-          <input type="range" min={0} max={1} step={0.01} value={t} onChange={(e) => setT(+e.target.value)} aria-label="Vorher oder Nachher" />
+          <input type="range" min={0} max={1} step={0.01} value={t} onChange={(e) => setT(+e.target.value)} aria-label={`${V.before} / ${V.after}`} />
         </label>
-        <button type="button" className="vis-btn" onClick={() => { setT(0); setRun((r) => r + 1); }}>Nochmal</button>
+        <button type="button" className="vis-btn" onClick={() => { setT(0); setRun((r) => r + 1); }}>{V.again}</button>
       </div>
-      <span className="mono">Schematisch</span>
+      <span className="mono">{V.schematic}</span>
     </div>
   );
 }

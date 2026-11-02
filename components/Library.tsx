@@ -77,7 +77,7 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
         </Link>
       )}
       {!res && (
-        <section className="doors" aria-label="Einstiege">
+        <section className="doors" aria-label={lang === "en" ? "Ways in" : "Einstiege"}>
           {DOORS.map((d) => (
             <div key={d.typ} className="door" style={{ borderTopColor: `var(--t-${d.typ})` }}>
               <h2>{T.doors[d.typ][0]}</h2>
@@ -108,7 +108,7 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
         </Link>
       )}
       {!res && pfade.length > 0 && (
-        <section className="block" aria-label="Lernpfade">
+        <section className="block" aria-label={lang === "en" ? "Learning paths" : "Lernpfade"}>
           <span className="mono">{T.pathsRow}</span>
           <div className="pfad-row">
             {pfade.map((p) => (
@@ -122,7 +122,7 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
         </section>
       )}
       {!res && worlds.length > 0 && (
-        <nav className="worlds" aria-label="Lebensmittel-Welten">
+        <nav className="worlds" aria-label={lang === "en" ? "Food worlds" : "Lebensmittel-Welten"}>
           <span className="mono">{T.worlds}</span>
           <div className="worlds-row">
             {worlds.map((w) => (
@@ -136,7 +136,7 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
         </nav>
       )}
       <h2 id="bibliothek" className="libhead">{res ? S.allHits : S.whole}</h2>
-      <div className="typechips" role="group" aria-label="Eintragstyp">
+      <div className="typechips" role="group" aria-label={lang === "en" ? "Entry type" : "Eintragstyp"}>
         {TYPES.map(([t, name]) => {
           const n = items.filter((e) => e.typ === t).length;
           if (!n) return null;

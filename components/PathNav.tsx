@@ -20,7 +20,7 @@ export default function PathNav({ entry, paths, lang = "de" }: { entry: string; 
   const i = pfad.schritte.findIndex((s) => s.id === entry);
   const prev = pfad.schritte[i - 1], next = pfad.schritte[i + 1];
   return (
-    <nav className="pathnav" aria-label="Lernpfad">
+    <nav className="pathnav" aria-label={lang === "en" ? "Learning path" : "Lernpfad"}>
       <Link href={ln(`/pfad/${pfad.id}`)} className="mono">{P.nav(pfad.titel, i + 1, pfad.schritte.length)}</Link>
       <div className="row">
         {prev ? <Link href={ln(`/eintrag/${prev.id}?pfad=${pfad.id}`)}>← {prev.titel}</Link> : <span />}

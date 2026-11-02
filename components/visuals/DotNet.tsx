@@ -1,4 +1,5 @@
 "use client";
+import type { Lang } from "@/lib/i18n";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -8,8 +9,8 @@ export interface NetNode { id: string; label: string; color: string; href?: stri
  * Punktnetz: links die Hebel (oder Rollen), rechts die Techniken (oder Prozesse),
  * dazwischen Verbindungen. Antippen hebt alle Verbindungen eines Punktes hervor.
  */
-export default function DotNet({ title, leftTitle, rightTitle, left, right, edges }: {
-  title: string; leftTitle: string; rightTitle: string; left: NetNode[]; right: NetNode[]; edges: [string, string][];
+export default function DotNet({ title, leftTitle, rightTitle, left, right, edges, lang = "de" }: {
+  title: string; leftTitle: string; rightTitle: string; left: NetNode[]; right: NetNode[]; edges: [string, string][]; lang?: Lang;
 }) {
   const [sel, setSel] = useState<string | null>(null);
   const rowH = 34, top = 30;
@@ -25,8 +26,8 @@ export default function DotNet({ title, leftTitle, rightTitle, left, right, edge
 
   return (
     <div className="vis">
-      <div className="vis-head"><span className="mono">{title}</span>{sel && <button type="button" className="vis-btn" onClick={() => setSel(null)}>Alle zeigen</button>}</div>
-      <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`${leftTitle} und ${rightTitle}`}>
+      <div className="vis-head"><span className="mono">{title}</span>{sel && <button type="button" className="vis-btn" onClick={() => setSel(null)}>{lang === "en" ? "Show all" : "Alle zeigen"}</button>}</div>
+      <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`${leftTitle} ${lang === "en" ? "and" : "und"} ${rightTitle}`}>
         <text x={xl} y={16} fontFamily="JetBrains Mono, monospace" fontSize="10" fill="#7a5a3a" letterSpacing="1">{leftTitle.toUpperCase()}</text>
         <text x={xr} y={16} textAnchor="end" fontFamily="JetBrains Mono, monospace" fontSize="10" fill="#7a5a3a" letterSpacing="1">{rightTitle.toUpperCase()}</text>
         {edges.map(([a, b]) => {
@@ -58,7 +59,7 @@ export default function DotNet({ title, leftTitle, rightTitle, left, right, edge
         })}
       </svg>
       <p className="vis-status">
-        {selNode ? <>{selNode.full ?? selNode.label}{selNode.href && <> · <Link href={selNode.href}>öffnen</Link></>}</> : <>Tippe einen Punkt an, um seine Verbindungen zu sehen.</>}
+        {selNode ? <>{selNode.full ?? selNode.label}{selNode.href && <> · <Link href={selNode.href}>{lang === "en" ? "open" : "öffnen"}</Link></>}</> : <>{lang === "en" ? "Tap a dot to see its connections." : "Tippe einen Punkt an, um seine Verbindungen zu sehen."}</>}
       </p>
     </div>
   );

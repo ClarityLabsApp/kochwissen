@@ -77,6 +77,17 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - `ExperimentCompare` – Vorher-Nachher für Experimente: `vorlage: vergleich`, `params.vergleich` = Felder mit `gefaess` (glas, flasche, schuessel, teller, pfanne), `inhalt`, `vorher`/`nachher` (farbe, fuell, trueb, schaum, blasen, ballon, kristalle, tropfen, klumpen, bodensatz, tanzen)
 - Kein Prototyp mehr per iframe: `PROTOTYPES` in `lib/content.ts` ist leer, „Steak grau“ nutzt `PanTest`
 
+## Englische Version
+
+- Deutsch unter `/`, Englisch unter `/en/…`. Sprachauswahl DE | EN in `components/SiteNav.tsx`; die Sprache folgt dem Pfad (`langOf`, `switchPath` in `lib/i18n.ts`).
+- Alle Bedientexte stehen im Wörterbuch `UI` in `lib/i18n.ts` (de und en). Neue Knöpfe oder Überschriften immer dort eintragen, nie fest in Komponenten.
+- Einträge: `content/en/entries/<id>.json` enthält **nur** übersetzte Textfelder und liegt über dem deutschen Eintrag (`getEntry(id, "en")`). Fehlt die Datei, zeigt die englische Seite den deutschen Text mit Hinweis und `noindex`.
+- Werkzeug: `python3 scripts/i18n/textfelder.py extract id1 id2 > batch.json` zieht die Texte heraus, `… apply batch.json` setzt die Übersetzung wieder in den deutschen Aufbau ein (Verweise, Diagnose-Ziele, Temperaturen kommen immer aus dem Deutschen).
+- Wird ein deutscher Eintrag geändert, die englische Datei mit anpassen. Der Validator prüft, dass Aufbau und Verweise übereinstimmen.
+- Lernpfade und Quiz: `content/en/lernpfade.json`.
+- Animationen bleiben auf Deutsch geschrieben. `lib/simText.ts` übersetzt jeden angezeigten Text (auch Beschriftungen im Canvas) über `lib/sim-en.json` und Muster für Texte mit Zahlen. Neue Animationstexte dort ergänzen.
+- Englisch ist britisch (colour, flavour, yoghurt), Schweizer Begriffe werden erklärt (Zopf, Rösti, Älplermagronen).
+
 ## Offene Aufgaben
 
 - [x] Simulationen Gluten-Netz und Karamellisierung, Maillard als React-Komponente (2. November 2026)
@@ -98,4 +109,5 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - [ ] Weitere Gerichte und Experimente (Vorher-Nachher-Grafik steht, neue Experimente brauchen `params.vergleich`)
 - [ ] Semantische Suche (z. B. pgvector) als Ergänzung; bis dahin fehlende Alltagswörter in `THESAURUS` nachtragen
 - [x] 45 Aquarell-Illustrationen (Welten und Zutaten) in `public/illustrationen/<id>.webp`, Anzeige im Seitenkopf. Neue Motive: `visual.illustration` setzen, `npm run illustrationen -- --only id1,id2` (schreibt WebP mit transparentem Hintergrund; ältere Bilder wurden per Skript freigestellt und beschnitten)
+- [x] Englische Version: Gerüst, alle 286 Einträge, Lernpfade mit Quiz, Animationstexte (2. November 2026)
 - [x] Glossar-Prüfung: `npm run glossar` (Bericht), `npm run glossar -- --fix` (verlinkt erstes Vorkommen). Fachwörter und Ausnahmen in `scripts/glossar.mjs`

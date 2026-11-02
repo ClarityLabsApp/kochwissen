@@ -1,4 +1,6 @@
 "use client";
+import { t as ui, type Lang } from "@/lib/i18n";
+import { simTr } from "@/lib/simText";
 import { useMemo, useState } from "react";
 
 type Variant = "pfanne" | "backblech" | "fritteuse";
@@ -49,8 +51,9 @@ function model(v: Variant, n: number, wet: boolean): State {
 }
 
 /** Steak-, Backblech- oder Fritteusen-Test: Menge und Nässe einstellen, Ergebnis sehen. */
-export default function PanTest({ variant = "pfanne" }: { variant?: Variant }) {
+export default function PanTest({ variant = "pfanne", lang = "de" }: { variant?: Variant; lang?: Lang }) {
   const c = CFG[variant];
+  const T = useMemo(() => simTr(lang), [lang]), V = ui(lang).vis;
   const [n, setN] = useState<number>(c.def);
   const [wet, setWet] = useState(false);
   const s = useMemo(() => model(variant, n, wet), [variant, n, wet]);
@@ -79,8 +82,8 @@ export default function PanTest({ variant = "pfanne" }: { variant?: Variant }) {
 
   return (
     <div className="vis">
-      <div className="vis-head"><span className="mono">{c.head}</span></div>
-      <svg viewBox="0 0 400 300" role="img" aria-label={`${c.label}: ${n}, Ergebnis ${s.result}`}>
+      <div className="vis-head"><span className="mono">{T(c.head)}</span></div>
+      <svg viewBox="0 0 400 300" role="img" aria-label={T(`${c.label}: ${n}, Ergebnis ${s.result}`)}>
         {variant === "pfanne" && <>
           <rect x="296" y="142" width="104" height="16" rx="8" fill="#2f2b28" />
           <circle cx="170" cy="150" r="128" fill="#2f2b28" /><circle cx="170" cy="150" r="118" fill="#55504b" />
@@ -126,20 +129,20 @@ export default function PanTest({ variant = "pfanne" }: { variant?: Variant }) {
           <path d={`M352 ${gaugeY(s.temp)} l-7 -4.5 v9 z`} fill="#2b2118" style={{ transition: "d .3s" }} />
         </g>
       </svg>
-      <p className="vis-status">{s.status}</p>
+      <p className="vis-status">{T(s.status)}</p>
       <div className="vis-readouts">
-        <div><span className="mono">{variant === "backblech" ? "Oberfläche" : variant === "fritteuse" ? "Öl danach" : "Pfanne danach"}</span><b>{s.temp} °C</b></div>
-        <div><span className="mono">{c.extra}</span><b>{s.extra}</b></div>
-        <div><span className="mono">Ergebnis</span><b style={{ color: toneColor }}>{s.result}</b></div>
+        <div><span className="mono">{T(variant === "backblech" ? "Oberfläche" : variant === "fritteuse" ? "Öl danach" : "Pfanne danach")}</span><b>{s.temp} °C</b></div>
+        <div><span className="mono">{T(c.extra)}</span><b>{T(s.extra)}</b></div>
+        <div><span className="mono">{T("Ergebnis")}</span><b style={{ color: toneColor }}>{T(s.result)}</b></div>
       </div>
       <div className="vis-row">
         <label style={{ flex: "1 1 220px", flexDirection: "column", alignItems: "stretch" }}>
-          <span className="mono">{c.label} · {n}</span>
+          <span className="mono">{T(c.label)} · {n}</span>
           <input type="range" min={c.min} max={c.max} value={n} onChange={(e) => setN(+e.target.value)} />
         </label>
-        <label><input type="checkbox" checked={wet} onChange={(e) => setWet(e.target.checked)} />{c.wet}</label>
+        <label><input type="checkbox" checked={wet} onChange={(e) => setWet(e.target.checked)} />{T(c.wet)}</label>
       </div>
-      <span className="mono">Modell vereinfacht</span>
+      <span className="mono">{V.model}</span>
     </div>
   );
 }

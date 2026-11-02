@@ -1,5 +1,7 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { t as ui, type Lang } from "@/lib/i18n";
+import { simTr } from "@/lib/simText";
 
 /* Punkt-Sprache laut DESIGN.md */
 const C = { water: "#8fb8c9", waterRim: "#5f8fa3", fat: "#f0d27a", fatRim: "#c9a24a", lab: "#2f6f73", salt: "#ffffff", sepia: "#7a5a3a",
@@ -1480,8 +1482,9 @@ const PRESETS: Record<Preset, Sim> = { emulsion, osmose, "pektin-abbau": pektin,
 const AUTO: string[] = ["osmose", "reduktion", "chemische-lockerung", "diffusion", "chlorophyll-farbe", "eiweiss-denaturierung", "glutenbildung", "karamellisierung", "enzym-zartmachen", "staerkeverkleisterung", "kollagen-gelatine", "dampflockerung", "enzym-braeunung", "fleischreifung", "oxidation-fett", "eiweiss-gerinnung", "saeure-denaturierung", "wasserbindung-salz", "gelbildung-gelatine", "kalzium-pektin", "retrogradation", "poekeln", "pyrolyse"];
 
 /** Punkt-Simulation für einen Prozess. Läuft auf Canvas, mit Reglern aus dem Preset. */
-export default function ParticleSim({ preset }: { preset: Preset }) {
+export default function ParticleSim({ preset, lang = "de" }: { preset: Preset; lang?: Lang }) {
   const sim = PRESETS[preset];
+  const T = useMemo(() => simTr(lang), [lang]), V = ui(lang).vis;
   const ref = useRef<HTMLCanvasElement>(null);
   const [a, setA] = useState(sim.controls.slider?.def ?? 0);
   const [b, setB] = useState(sim.controls.toggle?.def ?? false);
@@ -1505,6 +1508,8 @@ export default function ParticleSim({ preset }: { preset: Preset }) {
 
   useEffect(() => {
     const cv = ref.current!; const g = cv.getContext("2d")!;
+    // Beschriftungen im Bild laufen ebenfalls durch die Übersetzung.
+    if (lang !== "de") { const ft = g.fillText.bind(g); g.fillText = ((txt: string, x: number, y: number, mw?: number) => ft(T(String(txt)), x, y, mw)) as typeof g.fillText; }
     let W = 360, H = 240, raf = 0, last = performance.now();
     const size = () => { const dpr = Math.min(2, window.devicePixelRatio || 1); W = cv.clientWidth; H = cv.clientHeight; cv.width = W * dpr; cv.height = H * dpr; g.setTransform(dpr, 0, 0, dpr, 0, 0); };
     size(); stateRef.current = sim.init(W, H, ctl.current);
@@ -1521,7 +1526,7 @@ export default function ParticleSim({ preset }: { preset: Preset }) {
     const ro = new ResizeObserver(() => { size(); stateRef.current = sim.init(W, H, ctl.current); });
     ro.observe(cv);
     return () => { cancelAnimationFrame(raf); ro.disconnect(); };
-  }, [sim, reset]);
+  }, [sim, reset, lang, T]);
 
   const s = stateRef.current;
   const ro = s ? sim.readouts(s, ctl.current) : [];
@@ -1529,22 +1534,22 @@ export default function ParticleSim({ preset }: { preset: Preset }) {
   void tick;
   return (
     <div className="vis">
-      <div className="vis-head"><span className="mono">{sim.title}</span><span className="mono">{sim.scale}</span></div>
-      <canvas ref={ref} className="sim-canvas" aria-label={sim.title} />
-      <p className="vis-status">{s ? sim.status(s, ctl.current) : " "}</p>
-      {ro.length > 0 && <div className="vis-readouts" style={{ gridTemplateColumns: `repeat(${ro.length}, minmax(0,1fr))` }}>{ro.map(([k, v]) => <div key={k}><span className="mono">{k}</span><b>{v}</b></div>)}</div>}
+      <div className="vis-head"><span className="mono">{T(sim.title)}</span><span className="mono">{T(sim.scale)}</span></div>
+      <canvas ref={ref} className="sim-canvas" aria-label={T(sim.title)} />
+      <p className="vis-status">{s ? T(sim.status(s, ctl.current)) : " "}</p>
+      {ro.length > 0 && <div className="vis-readouts" style={{ gridTemplateColumns: `repeat(${ro.length}, minmax(0,1fr))` }}>{ro.map(([k, v]) => <div key={k}><span className="mono">{T(k)}</span><b>{T(v)}</b></div>)}</div>}
       <div className="vis-row">
         {sl && <label style={{ flex: "1 1 220px", flexDirection: "column", alignItems: "stretch" }}>
-          <span className="mono">{sl.label} · {sl.fmt(a)}</span>
+          <span className="mono">{T(sl.label)} · {T(sl.fmt(a))}</span>
           <input type="range" min={sl.min} max={sl.max} step={sl.step} value={a} onChange={(e) => setA(+e.target.value)} />
         </label>}
-        {sim.controls.toggle && <label><input type="checkbox" checked={b} onChange={(e) => setB(e.target.checked)} />{sim.controls.toggle.label}</label>}
-        {(sim.controls.ph || sim.controls.seg) && <div className="seg" role="group" aria-label={sim.controls.seg?.label ?? "pH-Wert"}>
-          {(sim.controls.seg?.options ?? ["sauer", "neutral", "basisch"]).map((l, i) => <button key={l} type="button" aria-pressed={ph === i} onClick={() => setPh(i)}>{l}</button>)}
+        {sim.controls.toggle && <label><input type="checkbox" checked={b} onChange={(e) => setB(e.target.checked)} />{T(sim.controls.toggle.label)}</label>}
+        {(sim.controls.ph || sim.controls.seg) && <div className="seg" role="group" aria-label={T(sim.controls.seg?.label ?? "pH-Wert")}>
+          {(sim.controls.seg?.options ?? ["sauer", "neutral", "basisch"]).map((l, i) => <button key={l} type="button" aria-pressed={ph === i} onClick={() => setPh(i)}>{T(l)}</button>)}
         </div>}
-        {(sim.controls.reset || AUTO.includes(preset)) && <button type="button" className="vis-btn" onClick={() => setReset((r) => r + 1)}>Neu starten</button>}
+        {(sim.controls.reset || AUTO.includes(preset)) && <button type="button" className="vis-btn" onClick={() => setReset((r) => r + 1)}>{V.restart}</button>}
       </div>
-      <span className="mono">Modell vereinfacht</span>
+      <span className="mono">{V.model}</span>
     </div>
   );
 }

@@ -1,5 +1,7 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { t as ui, type Lang } from "@/lib/i18n";
+import { simTr } from "@/lib/simText";
 
 /* Maillard-Reaktion in drei Zoomstufen. Nachbau des HTML-Prototyps als React-Komponente.
    Kernidee: Solange Wasser auf der Oberfläche ist, hängt sie bei 100 °C fest. Erst trocken und über ~140 °C bräunt sie. */
@@ -51,7 +53,8 @@ function makeMol(W: number, H: number) {
   return { P, A: [] as A[], M: [] as M[], mk };
 }
 
-export default function MaillardSim() {
+export default function MaillardSim({ lang = "de" }: { lang?: Lang }) {
+  const TR = useMemo(() => simTr(lang), [lang]), V = ui(lang).vis;
   const ref = useRef<HTMLCanvasElement>(null);
   const S = useRef<State>({ pan: 200, wet: 1, gar: 0, brown: 0, t: 0 });
   const mol = useRef<ReturnType<typeof makeMol> | null>(null);
@@ -69,6 +72,7 @@ export default function MaillardSim() {
 
   useEffect(() => {
     const cv = ref.current!; const g = cv.getContext("2d")!;
+    if (lang !== "de") { const ft = g.fillText.bind(g); g.fillText = ((txt: string, x: number, y: number, mw?: number) => ft(TR(String(txt)), x, y, mw)) as typeof g.fillText; }
     let W = 360, H = 240, raf = 0, last = performance.now(), n = 0;
     const size = () => { const dpr = Math.min(2, window.devicePixelRatio || 1); W = cv.clientWidth; H = cv.clientHeight; cv.width = W * dpr; cv.height = H * dpr; g.setTransform(dpr, 0, 0, dpr, 0, 0); };
     size(); mol.current = makeMol(W, H);
@@ -157,34 +161,34 @@ export default function MaillardSim() {
     raf = requestAnimationFrame(frame);
     const ro = new ResizeObserver(() => { size(); mol.current = makeMol(W, H); }); ro.observe(cv);
     return () => { cancelAnimationFrame(raf); ro.disconnect(); };
-  }, []);
+  }, [lang, TR]);
 
   const s = S.current, T = surfaceT(s);
   const ZOOMS: [Zoom, string, string][] = [[1, "1 · Gericht", "≈ 10 cm"], [2, "2 · Oberfläche", "≈ 1 mm"], [3, "3 · Moleküle", "≈ 1 nm"]];
   return (
     <div className="vis">
-      <div className="seg" role="group" aria-label="Zoomstufe">
-        {ZOOMS.map(([z, l]) => <button key={z} type="button" aria-pressed={zoom === z} onClick={() => setZoom(z)}>{l}</button>)}
+      <div className="seg" role="group" aria-label={TR("Zoomstufe")}>
+        {ZOOMS.map(([z, l]) => <button key={z} type="button" aria-pressed={zoom === z} onClick={() => setZoom(z)}>{TR(l)}</button>)}
       </div>
-      <div className="vis-head"><span className="mono">Ebene {zoom} · {zoom === 1 ? "Steak in der Pfanne" : zoom === 2 ? "Schnitt durch die Oberfläche" : "Eiweiß, Zucker und Wasser"}</span><span className="mono">{ZOOMS[zoom - 1][2]}</span></div>
-      <canvas ref={ref} className="sim-canvas" aria-label="Maillard-Reaktion" />
-      {zoom === 3 && <div className="legend mono"><span><i style={{ background: COL.amino }} />Eiweiß</span><span><i style={{ background: COL.sugar }} />Zucker</span><span><i style={{ background: COL.water }} />Wasser</span><span><i style={{ background: COL.roast }} />Röstaroma</span></div>}
-      <p className="vis-status">{statusText(s)}</p>
+      <div className="vis-head"><span className="mono">{TR("Ebene")} {zoom} · {TR(zoom === 1 ? "Steak in der Pfanne" : zoom === 2 ? "Schnitt durch die Oberfläche" : "Eiweiß, Zucker und Wasser")}</span><span className="mono">{TR(ZOOMS[zoom - 1][2])}</span></div>
+      <canvas ref={ref} className="sim-canvas" aria-label={TR("Maillard-Reaktion")} />
+      {zoom === 3 && <div className="legend mono"><span><i style={{ background: COL.amino }} />{TR("Eiweiß")}</span><span><i style={{ background: COL.sugar }} />{TR("Zucker")}</span><span><i style={{ background: COL.water }} />{TR("Wasser")}</span><span><i style={{ background: COL.roast }} />{TR("Röstaroma")}</span></div>}
+      <p className="vis-status">{TR(statusText(s))}</p>
       <div className="vis-readouts" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))" }}>
-        <div><span className="mono">Oberfläche</span><b>{Math.round(T)} °C</b></div>
-        <div><span className="mono">Wasser</span><b>{Math.round(s.wet * 100)} %</b></div>
-        <div><span className="mono">Bräunung</span><b>{brownWord(s.brown)}</b></div>
-        <div><span className="mono">Zeit</span><b>{Math.floor(s.t)} s</b></div>
+        <div><span className="mono">{TR("Oberfläche")}</span><b>{Math.round(T)} °C</b></div>
+        <div><span className="mono">{TR("Wasser")}</span><b>{Math.round(s.wet * 100)} %</b></div>
+        <div><span className="mono">{TR("Bräunung")}</span><b>{TR(brownWord(s.brown))}</b></div>
+        <div><span className="mono">{TR("Zeit")}</span><b>{Math.floor(s.t)} s</b></div>
       </div>
       <div className="vis-row">
         <label style={{ flex: "1 1 220px", flexDirection: "column", alignItems: "stretch" }}>
-          <span className="mono">Pfanne · {pan} °C</span>
+          <span className="mono">{TR("Pfanne")} · {pan} °C</span>
           <input type="range" min={20} max={240} step={5} value={pan} onChange={(e) => setPan(+e.target.value)} />
         </label>
-        <button type="button" className="vis-btn" onClick={() => start(true)}>Nass einlegen</button>
-        <button type="button" className="vis-btn" onClick={() => start(false)}>Trocken getupft einlegen</button>
+        <button type="button" className="vis-btn" onClick={() => start(true)}>{TR("Nass einlegen")}</button>
+        <button type="button" className="vis-btn" onClick={() => start(false)}>{TR("Trocken getupft einlegen")}</button>
       </div>
-      <span className="mono">Modell vereinfacht · Richtwerte</span>
+      <span className="mono">{TR("Modell vereinfacht · Richtwerte")}</span>
     </div>
   );
 }
