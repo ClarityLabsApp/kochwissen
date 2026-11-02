@@ -81,6 +81,8 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - [x] Simulationen Gluten-Netz und Karamellisierung, Maillard als React-Komponente (2. November 2026)
 - [x] Alle drei Prototypen als Komponenten (Maillard → `MaillardSim`, Gluten → Preset `glutenbildung`, Steak grau → `PanTest`)
 - [x] Alle 197 Einträge der Masterliste als Entwurf geschrieben (1. November 2026)
+- [x] Zahlen gegen Quellen geprüft, Korrekturen und offene Richtwerte in `content/PRUEFUNG.md` (2. November 2026)
+- [x] Sicherheitsupdate auf Next.js 16 / React 19, `npm audit` sauber. Seitenparameter sind asynchron (`await params`)
 - [ ] Review durch Phil: Status von `entwurf` auf `geprueft`
 - [x] 15 Gerichte und 12 Experimente ergänzt (Generator `scripts/batches/gen_batch_gerichte_experimente.py`)
 - [ ] Weitere Gerichte und Experimente (Vorher-Nachher-Grafik steht, neue Experimente brauchen `params.vergleich`)
