@@ -1,0 +1,39 @@
+{
+  "id": "l-buttermilch-ersatz",
+  "titel": "Buttermilk substitute from milk and lemon",
+  "kurz": "Milk with a little lemon juice turns sour and slightly thick in a few minutes. For baking, it replaces buttermilk.",
+  "bild_im_kopf": "Like a body double: does not look quite the same, but plays the role in the batter just as well.",
+  "dauer": "10 minutes",
+  "ergebnis": "250 ml of soured milk.",
+  "haltbarkeit": "Use fresh.",
+  "synonyme": [
+    "buttermilk substitute",
+    "soured milk",
+    "homemade buttermilk"
+  ],
+  "material": [
+    "250 ml milk",
+    "1 tbsp lemon juice or mild vinegar"
+  ],
+  "verwendung": [
+    "Pancakes, scones, Zopf and cakes that call for buttermilk.",
+    "Marinade for chicken: the mild acidity makes the surface tender."
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Put lemon juice in a measuring jug and top up with milk to 250 ml",
+      "warum": "The acid lowers the [[ph-wert|pH]] of the milk.",
+      "prinzip": "ph-wert"
+    },
+    {
+      "schritt": "Leave for 5–10 minutes",
+      "warum": "The milk protein starts to curdle, and the milk thickens and forms fine flakes.",
+      "prinzip": "saeure-denaturierung"
+    },
+    {
+      "schritt": "Use in the batter together with baking soda",
+      "warum": "The acid reacts with baking soda to make carbon dioxide: pancakes and scones rise.",
+      "prinzip": "chemische-lockerung"
+    }
+  ]
+}

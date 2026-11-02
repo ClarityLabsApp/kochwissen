@@ -1,0 +1,75 @@
+{
+  "id": "l-butter",
+  "titel": "Making butter",
+  "kurz": "Butter forms when you whip cream until the fat droplets stick together. What is left is buttermilk.",
+  "bild_im_kopf": "Like a crowd gathering into little groups after a concert: many individuals become a few big clumps.",
+  "dauer": "20 minutes",
+  "ergebnis": "About 200 g of butter and a good 250 ml of buttermilk from 500 ml of cream (as a guide).",
+  "haltbarkeit": "About a week if washed well and chilled, longer if salted. A few months frozen.",
+  "synonyme": [
+    "making butter",
+    "butter from cream",
+    "homemade buttermilk"
+  ],
+  "material": [
+    "500 ml double cream, cold",
+    "blender or hand mixer",
+    "sieve, bowl of iced water",
+    "pinch of salt if you like"
+  ],
+  "verwendung": [
+    "On bread, for baking, for [[arosieren|basting]].",
+    "The buttermilk for pancakes or Zopf."
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Whip cold cream past the whipped-cream stage",
+      "warum": "First, whipping traps air. Then the shells of the fat droplets tear and the fat starts to clump.",
+      "prinzip": "schaumbildung"
+    },
+    {
+      "schritt": "Keep whipping until it suddenly splashes",
+      "warum": "The [[emulsion|emulsion]] flips: fat in water becomes a lump of fat, and buttermilk separates off.",
+      "prinzip": "emulsion"
+    },
+    {
+      "schritt": "Pour off and keep the buttermilk",
+      "warum": "It is the watery phase, with milk protein and milk sugar."
+    },
+    {
+      "schritt": "Knead the butter in iced water until the water stays clear",
+      "warum": "Leftover buttermilk would quickly turn sour and spoil the butter.",
+      "prinzip": "keimwachstum"
+    },
+    {
+      "schritt": "Salt and shape as you like",
+      "warum": "Salt seasons and makes the butter keep longer.",
+      "prinzip": "wasseraktivitaet"
+    }
+  ],
+  "visual": {
+    "params": {
+      "vorher": "cream",
+      "nachher": "whipped",
+      "vergleich": [
+        {
+          "label": "mixing bowl",
+          "gefaess": "schuessel",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#fbf7ec",
+            "fuell": 0.7,
+            "klumpen": 0,
+            "klumpenfarbe": "#f2d36b"
+          },
+          "nachher": {
+            "farbe": "#f4f1e6",
+            "fuell": 0.35,
+            "klumpen": 1,
+            "klumpenfarbe": "#f2d36b"
+          }
+        }
+      ]
+    }
+  }
+}

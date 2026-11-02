@@ -1,0 +1,71 @@
+{
+  "id": "l-sauerteig",
+  "titel": "Starting a sourdough",
+  "kurz": "Flour and water become a sourdough in about a week: wild yeasts and lactic acid bacteria from the flour multiply if you feed them regularly.",
+  "bild_im_kopf": "Like a garden from seeds already in the soil: you sow nothing, you only water and weed.",
+  "dauer": "5–7 days",
+  "sicherheit": "If it smells rotten, is pink or orange, or has furry mould: start again.",
+  "ergebnis": "An active sourdough that smells pleasantly sour and is full of bubbles.",
+  "haltbarkeit": "Keep it in the fridge and feed it about once a week. A grey film of liquid on top means hunger, not spoilage: pour it off and feed.",
+  "synonyme": [
+    "making a sourdough starter",
+    "sourdough starter",
+    "starter",
+    "levain"
+  ],
+  "material": [
+    "wholemeal wheat or rye flour to start",
+    "white flour for feeding",
+    "water",
+    "jar with a loose lid",
+    "scales"
+  ],
+  "verwendung": [
+    "For sourdough bread, pizza and sourdough Zopf.",
+    "The discard from feeding for pancakes or crackers."
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Day 1: mix 50 g wholemeal flour and 50 g water and leave for 24 hours",
+      "warum": "Wild yeasts and lactic acid bacteria live in flour. Wholemeal brings especially many.",
+      "prinzip": "milchsaeuregaerung"
+    },
+    {
+      "schritt": "Day 2: discard all but 50 g and feed with 50 g flour and 50 g water",
+      "warum": "Discarding keeps the amount small; fresh flour provides new food."
+    },
+    {
+      "schritt": "From day 3 feed like this twice a day, kept warm at about 21–26 °C",
+      "warum": "The bacteria's acid crowds out unwanted germs, and the yeasts get stronger.",
+      "prinzip": "milchsaeuregaerung"
+    },
+    {
+      "schritt": "Ready when it doubles within 6–8 hours of feeding",
+      "warum": "Then there are enough yeasts to raise a loaf.",
+      "prinzip": "hefegaerung"
+    }
+  ],
+  "visual": {
+    "params": {
+      "vorher": "freshly fed",
+      "nachher": "after 6–8 hours",
+      "vergleich": [
+        {
+          "label": "starter",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#e9dcc0",
+            "fuell": 0.3,
+            "blasen": 0.1
+          },
+          "nachher": {
+            "farbe": "#e9dcc0",
+            "fuell": 0.68,
+            "blasen": 0.9
+          }
+        }
+      ]
+    }
+  }
+}

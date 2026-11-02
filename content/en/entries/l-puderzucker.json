@@ -1,0 +1,46 @@
+{
+  "id": "l-puderzucker",
+  "titel": "Grinding your own icing sugar",
+  "kurz": "Icing sugar is nothing more than finely ground granulated sugar. A powerful blender does it in a minute.",
+  "bild_im_kopf": "Like pebbles ground into sand: it is the same stone, but it behaves completely differently.",
+  "dauer": "5 minutes",
+  "sicherheit": "Fine sugar dust: only open the blender once it has settled.",
+  "ergebnis": "About 100 g of icing sugar.",
+  "haltbarkeit": "Keeps a long time, airtight and dry. Sieve out lumps before use.",
+  "synonyme": [
+    "making icing sugar",
+    "powdered sugar",
+    "confectioners' sugar",
+    "icing sugar substitute"
+  ],
+  "material": [
+    "100 g granulated sugar",
+    "1 tsp cornflour (optional)",
+    "high-powered blender or spice grinder",
+    "fine sieve"
+  ],
+  "verwendung": [
+    "Glazes and icing: it dissolves at once without crunching.",
+    "Whipped cream, shortcrust, dusting."
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Grind the sugar finely in short bursts",
+      "warum": "The crystals break into tiny splinters. The surface becomes a thousand times larger.",
+      "prinzip": "oberflaeche"
+    },
+    {
+      "schritt": "Wait two minutes before opening the lid",
+      "warum": "The fine dust should settle."
+    },
+    {
+      "schritt": "Push through a fine sieve",
+      "warum": "Coarse leftovers would crunch in a glaze."
+    },
+    {
+      "schritt": "Mix in starch if you like",
+      "warum": "Sugar dust attracts moisture and clumps. Starch keeps it free-flowing.",
+      "prinzip": "zucker-feuchtigkeit"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "l-bratbutter",
+  "titel": "Making clarified butter and ghee",
+  "kurz": "Clarified butter is butter without the water and milk protein. Without the parts that burn, it can take much more heat.",
+  "bild_im_kopf": "Like panning for gold: you wash away everything that does not shine and keep what is pure.",
+  "dauer": "30 minutes",
+  "sicherheit": "Hot fat: children only watch, and keep water well away.",
+  "ergebnis": "About 200 g of clarified butter from 250 g of butter, because butter is around four fifths fat (as a guide).",
+  "haltbarkeit": "Several months, cool and dark. Without water, germs find hardly anything to live on.",
+  "synonyme": [
+    "clarified butter",
+    "ghee",
+    "drawn butter",
+    "clarifying butter"
+  ],
+  "material": [
+    "250 g butter",
+    "small pot",
+    "spoon or skimmer",
+    "sieve lined with kitchen paper or a fine cloth",
+    "clean jar"
+  ],
+  "verwendung": [
+    "Schnitzel, rösti and fried potatoes at high heat.",
+    "Ghee for curries and for toasting spices."
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Melt the butter over low heat and let it simmer gently",
+      "warum": "The water in the butter evaporates. It crackles as long as there is water left.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "Skim the foam off the surface",
+      "warum": "The foam is milk protein rising to the top."
+    },
+    {
+      "schritt": "Wait until it goes quiet and pale flecks settle at the bottom",
+      "warum": "Once there is no water left, the crackling stops. The remaining protein sinks to the bottom.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "For ghee, keep heating until the flecks are golden brown",
+      "warum": "The milk protein browns and gives off a nutty aroma.",
+      "prinzip": "maillard-reaktion"
+    },
+    {
+      "schritt": "Pour through the cloth into a clean jar",
+      "warum": "Without water and protein, the fat only smokes at about 200 °C; butter already at about 150 °C.",
+      "prinzip": "rauchpunkt"
+    }
+  ],
+  "visual": {
+    "params": {
+      "vorher": "butter melted",
+      "nachher": "clarified",
+      "vergleich": [
+        {
+          "label": "pot contents",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#f2d36b",
+            "fuell": 0.6,
+            "trueb": 0.6,
+            "schaum": 0.5
+          },
+          "nachher": {
+            "farbe": "#e8b93a",
+            "fuell": 0.5,
+            "trueb": 0,
+            "bodensatz": 0.6
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "l-sauerkraut",
+  "titel": "Making sauerkraut",
+  "kurz": "Cabbage with about 2 % salt ferments into sauerkraut in three to four weeks. Lactic acid bacteria make it sour and long-lasting.",
+  "bild_im_kopf": "Like a castle training its own guards: the salt keeps strangers out until the lactic acid bacteria take over the gate.",
+  "dauer": "3–4 weeks",
+  "sicherheit": "Skim off a white film on the brine (kahm yeast). Furry, coloured mould or a rotten smell: throw it away.",
+  "ergebnis": "About 1 kg of sauerkraut.",
+  "haltbarkeit": "Several months in the fridge.",
+  "synonyme": [
+    "making sauerkraut",
+    "fermenting cabbage",
+    "pickling white cabbage",
+    "fermentation"
+  ],
+  "material": [
+    "1 kg white cabbage",
+    "20 g non-iodised salt (about 2 % of the cabbage weight)",
+    "large jar or fermentation crock",
+    "weight to press it down, clean cloth"
+  ],
+  "verwendung": [
+    "Raw as a salad: full of live bacteria.",
+    "Cooked with sausage, bacon and potatoes."
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Slice the cabbage finely and knead it hard with the salt",
+      "warum": "Salt draws juice out of the cells. After a few minutes the cabbage is standing in its own brine.",
+      "prinzip": "osmose"
+    },
+    {
+      "schritt": "Press it firmly into the jar until brine covers it, then weigh it down",
+      "warum": "Under the brine there is no oxygen: mould cannot grow, but lactic acid bacteria can.",
+      "prinzip": "milchsaeuregaerung"
+    },
+    {
+      "schritt": "Leave at about 21–24 °C, always keeping the cabbage under the brine",
+      "warum": "The bacteria make lactic acid. Warmer and it turns soft; below about 15 °C it hardly ferments.",
+      "prinzip": "milchsaeuregaerung"
+    },
+    {
+      "schritt": "After 3–4 weeks, when it no longer bubbles, chill it",
+      "warum": "The acidity is now so high that hardly any germ can grow.",
+      "prinzip": "keimwachstum"
+    }
+  ],
+  "visual": {
+    "params": {
+      "vorher": "packed in",
+      "nachher": "after 3–4 weeks",
+      "vergleich": [
+        {
+          "label": "fermentation jar",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#dfe8c4",
+            "fuell": 0.8,
+            "blasen": 0
+          },
+          "nachher": {
+            "farbe": "#e7deb0",
+            "fuell": 0.78,
+            "blasen": 0.7
+          }
+        }
+      ]
+    }
+  }
+}

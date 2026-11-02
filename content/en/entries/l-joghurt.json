@@ -1,0 +1,77 @@
+{
+  "id": "l-joghurt",
+  "titel": "Making yoghurt",
+  "kurz": "Lactic acid bacteria turn warm milk into yoghurt overnight. A few spoonfuls of shop-bought yoghurt are enough as a starter.",
+  "bild_im_kopf": "Like yeast in dough, only for milk: a few workers are enough, and overnight they become billions.",
+  "dauer": "6–12 hours",
+  "sicherheit": "Work cleanly. If the yoghurt smells rotten, is pink or mouldy: throw it away.",
+  "ergebnis": "About 1 l of yoghurt. Drained in a cloth, it becomes Greek yoghurt or labneh.",
+  "haltbarkeit": "About a week in the fridge. Two spoonfuls of it are the starter for the next batch.",
+  "synonyme": [
+    "making yoghurt",
+    "natural yoghurt",
+    "yoghurt in the oven",
+    "yoghurt without a machine",
+    "homemade yogurt"
+  ],
+  "material": [
+    "1 l milk",
+    "2 tbsp natural yoghurt with live cultures",
+    "pot, thermometer",
+    "clean jars",
+    "oven with the light on, or a hot-water bottle in a cool box"
+  ],
+  "verwendung": [
+    "For breakfast, for raita against spicy heat, for marinades.",
+    "Drained as labneh with olive oil."
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Heat the milk to 85–90 °C and hold it for about 10 minutes",
+      "warum": "The heat changes the whey protein. Later it binds more water, and the yoghurt turns thicker.",
+      "prinzip": "eiweiss-denaturierung"
+    },
+    {
+      "schritt": "Let it cool to 43–46 °C",
+      "warum": "Yoghurt bacteria work best in this range. Above about 48 °C they die."
+    },
+    {
+      "schritt": "Stir a little milk smooth with the yoghurt, then mix everything",
+      "warum": "That way the bacteria spread evenly."
+    },
+    {
+      "schritt": "Fill into jars and keep warm for 4–12 hours without moving them",
+      "warum": "The bacteria turn milk sugar into lactic acid. The acid makes the milk protein set into a gel.",
+      "prinzip": "milchsaeuregaerung"
+    },
+    {
+      "schritt": "As soon as it is firm, into the fridge",
+      "warum": "Cold slows the bacteria: the longer it stays warm, the more sour it gets.",
+      "prinzip": "keimwachstum"
+    }
+  ],
+  "visual": {
+    "params": {
+      "vorher": "warm milk",
+      "nachher": "after the night",
+      "vergleich": [
+        {
+          "label": "jar",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#fbf9f2",
+            "fuell": 0.75
+          },
+          "nachher": {
+            "farbe": "#f6f1e3",
+            "fuell": 0.75,
+            "trueb": 0.4,
+            "klumpen": 0.8,
+            "klumpenfarbe": "#fbf7ec"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "l-dulce-de-leche",
+  "titel": "Dulce de leche from milk and sugar",
+  "kurz": "Milk and sugar are reduced for hours until a brown caramel cream forms. A pinch of baking soda speeds up the browning.",
+  "bild_im_kopf": "Like a sunset: it comes slowly, but step by step everything turns more golden.",
+  "dauer": "2–3 hours (as a guide)",
+  "sicherheit": "Never boil sealed tins of condensed milk in water: if the pot boils dry, the tin can burst.",
+  "ergebnis": "About 400 ml of dulce de leche.",
+  "haltbarkeit": "A few weeks in the fridge.",
+  "synonyme": [
+    "dulce de leche",
+    "milk caramel",
+    "caramel spread",
+    "confiture de lait"
+  ],
+  "material": [
+    "1 l whole milk",
+    "300 g sugar",
+    "¼ tsp baking soda",
+    "1 vanilla pod if you like",
+    "wide pot with a thick base"
+  ],
+  "verwendung": [
+    "On bread, in alfajores, with ice cream.",
+    "Between cake layers."
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Bring milk, sugar and vanilla to the boil, then stir in the baking soda",
+      "warum": "Baking soda makes the milk slightly alkaline. That speeds up browning and stops the milk curdling.",
+      "prinzip": "basen-braeunung"
+    },
+    {
+      "schritt": "Simmer gently, uncovered, stirring regularly",
+      "warum": "Water evaporates; sugar and milk protein concentrate.",
+      "prinzip": "reduktion"
+    },
+    {
+      "schritt": "Towards the end stir more often, until it is caramel brown and thick",
+      "warum": "Milk sugar and milk protein react: colour and caramel aroma form below 100 °C because it takes so long.",
+      "prinzip": "maillard-reaktion"
+    },
+    {
+      "schritt": "Fill into clean jars while hot",
+      "warum": "It thickens further as it cools."
+    }
+  ],
+  "visual": {
+    "params": {
+      "vorher": "start",
+      "nachher": "after 2–3 hours",
+      "vergleich": [
+        {
+          "label": "pot",
+          "gefaess": "schuessel",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#fbf7ec",
+            "fuell": 0.9
+          },
+          "nachher": {
+            "farbe": "#a0612a",
+            "fuell": 0.4
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "l-creme-fraiche",
+  "titel": "Making crème fraîche",
+  "kurz": "Cream with a splash of buttermilk turns thick and mildly tangy overnight at room temperature.",
+  "bild_im_kopf": "Like a sourdough for cream: a spoonful of the old starts the new.",
+  "dauer": "12–24 hours",
+  "ergebnis": "About 250 ml of crème fraîche.",
+  "haltbarkeit": "Up to about a month in the fridge.",
+  "synonyme": [
+    "crème fraîche",
+    "homemade sour cream",
+    "making creme fraiche"
+  ],
+  "material": [
+    "250 ml double cream",
+    "2 tbsp buttermilk with live cultures",
+    "clean jar"
+  ],
+  "verwendung": [
+    "For sauces: it does not curdle when boiled, because it has so much fat.",
+    "On tarte flambée, with soups, with desserts."
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Stir cream and buttermilk together in the jar",
+      "warum": "The buttermilk brings lactic acid bacteria."
+    },
+    {
+      "schritt": "Cover and leave at room temperature for 12–24 hours",
+      "warum": "The bacteria make lactic acid, which thickens the protein in the cream, along with typical buttery aromas.",
+      "prinzip": "milchsaeuregaerung"
+    },
+    {
+      "schritt": "Once it is thick, chill it",
+      "warum": "Cold slows the bacteria and makes it firmer still."
+    }
+  ]
+}

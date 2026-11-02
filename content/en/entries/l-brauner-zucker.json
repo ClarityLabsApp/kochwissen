@@ -1,0 +1,39 @@
+{
+  "id": "l-brauner-zucker",
+  "titel": "Brown sugar from sugar and molasses",
+  "kurz": "Brown sugar is white sugar with a little molasses. The molasses brings aroma, moisture and a little acidity.",
+  "bild_im_kopf": "Like a white shirt dipped in tea: the shirt is the same, but now it has colour and flavour.",
+  "dauer": "5 minutes",
+  "ergebnis": "About 200 g of brown sugar.",
+  "haltbarkeit": "Keeps a long time airtight. If it has gone hard: put it in the tin overnight with a piece of bread.",
+  "synonyme": [
+    "homemade brown sugar",
+    "brown sugar substitute",
+    "molasses sugar",
+    "brown sugar"
+  ],
+  "material": [
+    "200 g granulated sugar",
+    "1 tbsp molasses for light, 2 tbsp for dark sugar",
+    "bowl and fork, or food processor"
+  ],
+  "verwendung": [
+    "Chewy cookies and brownies: they stay softer.",
+    "With baking soda in a batter: the slight acidity of the molasses helps it rise."
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Add the molasses to the sugar and work it in with a fork",
+      "warum": "The molasses coats every crystal with a thin film."
+    },
+    {
+      "schritt": "Mix until the colour is even",
+      "warum": "Molasses is sugar syrup with the aroma compounds and minerals left over from refining."
+    },
+    {
+      "schritt": "Store airtight",
+      "warum": "Molasses attracts moisture: the sugar stays soft and makes baked goods moister.",
+      "prinzip": "zucker-feuchtigkeit"
+    }
+  ]
+}

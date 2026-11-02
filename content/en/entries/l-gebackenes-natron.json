@@ -1,0 +1,47 @@
+{
+  "id": "l-gebackenes-natron",
+  "titel": "Baked baking soda for pretzels",
+  "kurz": "Baking soda baked in the oven becomes washing soda, a stronger base. With it, pretzels turn almost as brown as with real lye, without its danger.",
+  "bild_im_kopf": "Like coffee getting stronger as it roasts: the same bean, but one step stronger.",
+  "dauer": "2 hours",
+  "sicherheit": "Washing soda irritates skin and eyes: wear gloves, keep it away from your face and out of children's reach.",
+  "ergebnis": "Around 130 g of washing soda from 200 g of baking soda, because weight is lost as water and carbon dioxide during baking (as a guide).",
+  "haltbarkeit": "Almost indefinitely, dry and sealed.",
+  "synonyme": [
+    "baked baking soda",
+    "lye substitute",
+    "pretzels without lye",
+    "sodium carbonate",
+    "washing soda"
+  ],
+  "material": [
+    "about 200 g baking soda",
+    "baking tray lined with baking paper (no aluminium)",
+    "screw-top jar",
+    "gloves for the dipping bath"
+  ],
+  "verwendung": [
+    "Pretzels, lye rolls, lye-dipped braided bread.",
+    "A pinch in the cooking water for Chinese noodles with bite."
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Spread the baking soda on the tray and bake for 2 hours at 120 °C",
+      "warum": "Heat drives off water and carbon dioxide. Baking soda becomes washing soda (sodium carbonate), and the base gets stronger: [[ph-wert|pH about]] 11 instead of 8.",
+      "prinzip": "basen-braeunung"
+    },
+    {
+      "schritt": "Let it cool, put it into a jar while dry and label it",
+      "warum": "Washing soda looks like baking soda but is more irritating. That is why you label it."
+    },
+    {
+      "schritt": "For dipping, dissolve about 150 g in just under 500 ml of warm water",
+      "warum": "The bath has to be strong so that the surface takes up enough base (amount from America’s Test Kitchen)."
+    },
+    {
+      "schritt": "Dip the pretzels briefly, rinse, salt and bake hot",
+      "warum": "The alkaline surface browns quickly and shines.",
+      "prinzip": "maillard-reaktion"
+    }
+  ]
+}

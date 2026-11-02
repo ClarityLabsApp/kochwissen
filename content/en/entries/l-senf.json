@@ -1,0 +1,70 @@
+{
+  "id": "l-senf",
+  "titel": "Making mustard",
+  "kurz": "Mustard seeds only turn hot once they are crushed and mixed with water. An enzyme then creates the heat, and vinegar sets how hot it stays.",
+  "bild_im_kopf": "Like a camera: water opens the shutter, vinegar closes it. Whatever happens in between stays in the picture.",
+  "dauer": "2 hours plus 2–3 days to mellow",
+  "sicherheit": "Sharp fumes rise when grinding: do not lean right over the blender.",
+  "ergebnis": "About one small jar of mustard.",
+  "haltbarkeit": "Several months in the fridge. Vinegar and salt preserve it.",
+  "synonyme": [
+    "making mustard",
+    "mustard from mustard seeds",
+    "hot mustard",
+    "mild mustard"
+  ],
+  "material": [
+    "75 g mustard seeds (yellow for mild, brown for hot)",
+    "water",
+    "2–3 tbsp white wine or cider vinegar",
+    "½ tsp salt, 1–2 tbsp sugar or honey",
+    "mortar or blender"
+  ],
+  "verwendung": [
+    "With sausages, in vinaigrette, in mayonnaise as a helper for the emulsion.",
+    "Wholegrain with cheese and meat."
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Soak the seeds in water for a few hours",
+      "warum": "They swell and are easier to crush. Cold water makes the mustard hotter, warm water milder.",
+      "prinzip": "schaerfe"
+    },
+    {
+      "schritt": "Drain and grind coarsely or finely with salt and sugar",
+      "warum": "When crushed, an [[enzym|enzyme]] in the seeds meets its partner substance. Together they form the hot mustard oils.",
+      "prinzip": "enzym"
+    },
+    {
+      "schritt": "Wait a few minutes, then stir in vinegar",
+      "warum": "Acid stops the enzyme. Vinegar early gives mild mustard, vinegar later gives hot.",
+      "prinzip": "saeure"
+    },
+    {
+      "schritt": "Fill into a jar and let it mellow in the fridge for 2–3 days",
+      "warum": "Fresh, it is biting and bitter. Over time it turns rounder and milder."
+    }
+  ],
+  "visual": {
+    "params": {
+      "vorher": "seeds",
+      "nachher": "ground and mellowed",
+      "vergleich": [
+        {
+          "label": "mustard jar",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#eaf1f4",
+            "fuell": 0.4,
+            "kristalle": 0
+          },
+          "nachher": {
+            "farbe": "#d9b23a",
+            "fuell": 0.6
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "l-frischkaese",
+  "titel": "Fresh cheese with lemon (paneer)",
+  "kurz": "Hot milk with a little lemon juice curdles into flakes in seconds. Drained and pressed, it becomes a firm fresh cheese.",
+  "bild_im_kopf": "Like mist gathering into drops on a cold window: at first everything is finely spread, then it clumps.",
+  "dauer": "1 hour",
+  "sicherheit": "Boiling milk boils over easily: adults do the heating.",
+  "ergebnis": "About 200 g of fresh cheese from 1 l of whole milk.",
+  "haltbarkeit": "2–3 days, covered, in the fridge.",
+  "synonyme": [
+    "paneer",
+    "homemade fresh cheese",
+    "homemade ricotta",
+    "cheese from milk and lemon",
+    "cottage cheese"
+  ],
+  "material": [
+    "1 l whole milk",
+    "2–4 tsp lemon juice or vinegar",
+    "sieve, muslin or a clean tea towel",
+    "a plate and something heavy for pressing"
+  ],
+  "verwendung": [
+    "Paneer in cubes for curries: it does not melt, because it is made with acid instead of rennet.",
+    "Pressed lightly as a ricotta substitute for pasta and cakes.",
+    "The whey for baking bread."
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Bring the milk to the boil, stirring",
+      "warum": "Heat loosens the milk protein (casein) so that it flocculates completely in a moment.",
+      "prinzip": "eiweiss-denaturierung"
+    },
+    {
+      "schritt": "Heat off; stir in lemon juice a spoonful at a time",
+      "warum": "The acid takes away the protein particles' charge. They stop repelling each other and clump together.",
+      "prinzip": "saeure-denaturierung"
+    },
+    {
+      "schritt": "Wait until the whey is clear and greenish",
+      "warum": "Then all the protein has flocculated. If it is milky, add a little more acid.",
+      "prinzip": "eiweiss-gerinnung"
+    },
+    {
+      "schritt": "Pour into the cloth and rinse briefly with water",
+      "warum": "Rinsing removes the lemon flavour."
+    },
+    {
+      "schritt": "Wrap it up and press for 30–40 minutes",
+      "warum": "Pressing squeezes out whey: pressed briefly it stays soft like ricotta; pressed long it becomes firm enough to slice."
+    }
+  ],
+  "visual": {
+    "params": {
+      "vorher": "hot milk",
+      "nachher": "with lemon",
+      "vergleich": [
+        {
+          "label": "pot",
+          "gefaess": "schuessel",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#fbf9f2",
+            "fuell": 0.8,
+            "klumpen": 0,
+            "klumpenfarbe": "#fffaf0"
+          },
+          "nachher": {
+            "farbe": "#e4ead0",
+            "fuell": 0.8,
+            "klumpen": 1,
+            "klumpenfarbe": "#fffaf0"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "l-apfelpektin",
+  "titel": "Pectin from apple scraps",
+  "kurz": "The peels and cores of tart apples are full of pectin. Simmered out and reduced, they become a natural setting agent.",
+  "bild_im_kopf": "Like paste from the craft cupboard: unremarkably runny, but it holds together what would not hold on its own.",
+  "dauer": "1 day, of which 1½ hours of work",
+  "ergebnis": "About 500 ml of pectin juice (as a guide).",
+  "haltbarkeit": "A week in the fridge; frozen in portions, many months.",
+  "synonyme": [
+    "apple pectin",
+    "homemade pectin",
+    "setting agent from apples",
+    "natural pectin"
+  ],
+  "material": [
+    "1–1.5 kg tart apples, or peels and cores (e.g. from apple cake, collected in the freezer)",
+    "water, just enough to cover",
+    "pot, sieve, fine cloth",
+    "a cold plate for the test"
+  ],
+  "verwendung": [
+    "For jam from low-pectin fruit such as strawberries, cherries or pears: about 250 ml per 1.5 kg of fruit (as a guide).",
+    "For jelly."
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Chop the apples roughly, cover with water and simmer, covered, for 40–60 minutes",
+      "warum": "Heat releases the [[pektin|pectin]] from the cell walls into the water.",
+      "prinzip": "pektin-abbau"
+    },
+    {
+      "schritt": "Let it drip through a cloth overnight; do not squeeze",
+      "warum": "Squeezing makes the juice cloudy."
+    },
+    {
+      "schritt": "Reduce the juice by half, uncovered",
+      "warum": "The pectin concentrates.",
+      "prinzip": "reduktion"
+    },
+    {
+      "schritt": "Plate test: let a spoonful with a little sugar and lemon cool on a cold plate",
+      "warum": "If it sets and wrinkles when pushed, there is enough pectin. Otherwise reduce further.",
+      "prinzip": "gelbildung-pektin"
+    }
+  ],
+  "visual": {
+    "params": {
+      "vorher": "simmered",
+      "nachher": "reduced",
+      "vergleich": [
+        {
+          "label": "pectin juice",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#f1e2b4",
+            "fuell": 0.8
+          },
+          "nachher": {
+            "farbe": "#d9a54a",
+            "fuell": 0.4
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "l-mascarpone",
+  "titel": "Making mascarpone",
+  "kurz": "Mascarpone is cream thickened in the heat with a little acid and then drained. It needs only two ingredients.",
+  "bild_im_kopf": "Like whipped cream in slow motion: without a whisk, the cream thickens through warmth and acid alone.",
+  "dauer": "8–9 hours, of which 10 minutes of work",
+  "ergebnis": "A thick, smooth cream, a little less than the amount of cream (as a guide).",
+  "haltbarkeit": "4–5 days in the fridge.",
+  "synonyme": [
+    "making mascarpone",
+    "mascarpone substitute",
+    "tiramisu cheese"
+  ],
+  "material": [
+    "500 ml double cream",
+    "½ tsp citric acid dissolved in 4 tbsp water (or 2 tbsp lemon juice)",
+    "pot, thermometer",
+    "sieve lined with a fine cloth"
+  ],
+  "verwendung": [
+    "Tiramisu, cheesecake, risotto at the end instead of butter.",
+    "With sugar and vanilla as a filling."
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Warm the cream slowly to about 82 °C",
+      "warum": "The heat prepares the milk protein to react with the acid.",
+      "prinzip": "eiweiss-denaturierung"
+    },
+    {
+      "schritt": "Stir in the acid and hold at this temperature for 2 minutes",
+      "warum": "As with fresh cheese, the protein particles lose their charge. But because cream has so much fat, nothing flocculates: it just thickens creamily.",
+      "prinzip": "saeure-denaturierung"
+    },
+    {
+      "schritt": "Take off the heat and rest for 30 minutes",
+      "warum": "As it cools, the protein network between the fat droplets firms up.",
+      "prinzip": "emulsion"
+    },
+    {
+      "schritt": "Drain in the cloth in the fridge for 6–8 hours",
+      "warum": "Only a little whey drips off. Cold makes the milk fat set, so it becomes spreadable.",
+      "prinzip": "fett-kristallisation"
+    }
+  ],
+  "visual": {
+    "params": {
+      "vorher": "cream",
+      "nachher": "after draining",
+      "vergleich": [
+        {
+          "label": "in the cloth",
+          "gefaess": "schuessel",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#fbf7ec",
+            "fuell": 0.6
+          },
+          "nachher": {
+            "farbe": "#f4f0e2",
+            "fuell": 0.15,
+            "klumpen": 1,
+            "klumpenfarbe": "#fff8e8"
+          }
+        }
+      ]
+    }
+  }
+}

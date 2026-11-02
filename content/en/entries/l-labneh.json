@@ -1,0 +1,66 @@
+{
+  "id": "l-labneh",
+  "titel": "Labneh from yoghurt",
+  "kurz": "Yoghurt drained in a cloth turns overnight into a creamy fresh cheese: labneh.",
+  "bild_im_kopf": "Like coffee in a filter: the liquid runs through, the thick part stays behind.",
+  "dauer": "12–24 hours",
+  "ergebnis": "About 250 g of labneh and 250 ml of whey (as a guide).",
+  "haltbarkeit": "About a week in the fridge; longer shaped into balls and kept in olive oil.",
+  "synonyme": [
+    "labneh",
+    "yoghurt cheese",
+    "strained yoghurt",
+    "homemade Greek yoghurt"
+  ],
+  "material": [
+    "500 g full-fat natural yoghurt",
+    "½ tsp salt",
+    "sieve, clean cloth, bowl"
+  ],
+  "verwendung": [
+    "With olive oil, za’atar and bread.",
+    "Instead of cream cheese on bread, in dips and sauces.",
+    "The whey for baking bread."
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Stir salt into the yoghurt",
+      "warum": "Salt seasons and draws out more whey.",
+      "prinzip": "osmose"
+    },
+    {
+      "schritt": "Let it drain in the cloth over a bowl in the fridge",
+      "warum": "The yoghurt's protein network holds on to fat and protein; the whey drips through."
+    },
+    {
+      "schritt": "After 6–8 hours: Greek yoghurt. After 24 hours: spreadable labneh",
+      "warum": "The more whey is gone, the firmer it is and the longer it keeps, because less free water remains.",
+      "prinzip": "wasseraktivitaet"
+    }
+  ],
+  "visual": {
+    "params": {
+      "vorher": "yoghurt",
+      "nachher": "after 24 hours",
+      "vergleich": [
+        {
+          "label": "cloth over a bowl",
+          "gefaess": "schuessel",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#f6f1e3",
+            "fuell": 0.1,
+            "klumpen": 1,
+            "klumpenfarbe": "#fbf7ec"
+          },
+          "nachher": {
+            "farbe": "#eef0d8",
+            "fuell": 0.4,
+            "klumpen": 0.55,
+            "klumpenfarbe": "#fbf7ec"
+          }
+        }
+      ]
+    }
+  }
+}

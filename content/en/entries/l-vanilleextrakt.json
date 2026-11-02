@@ -1,0 +1,66 @@
+{
+  "id": "l-vanilleextrakt",
+  "titel": "Making vanilla extract",
+  "kurz": "Vanilla pods release their aroma into alcohol. After a few weeks it has become vanilla extract.",
+  "bild_im_kopf": "Like teabags in cold water: it is slow, but in the end all the aroma is in the jar.",
+  "dauer": "at least 8 weeks (as a guide)",
+  "sicherheit": "Contains alcohol: for children only in baked cakes, not neat.",
+  "ergebnis": "About 250 ml of vanilla extract, dark brown and strongly fragrant.",
+  "haltbarkeit": "Years, dark and sealed. The alcohol preserves it.",
+  "synonyme": [
+    "homemade vanilla extract",
+    "vanilla in vodka",
+    "vanilla essence"
+  ],
+  "material": [
+    "5–6 vanilla pods (about 30 g)",
+    "250 ml vodka or other spirit with at least 35 % alcohol",
+    "dark glass bottle or screw-top jar"
+  ],
+  "verwendung": [
+    "Cakes, custards, ice cream: about 1 tsp replaces the seeds of half a pod (as a guide).",
+    "As a gift in small bottles."
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Split the pods lengthways and cut them small",
+      "warum": "More open surface means the aroma gets out faster.",
+      "prinzip": "diffusion"
+    },
+    {
+      "schritt": "Pour the alcohol over them and seal",
+      "warum": "Vanillin and the other scent compounds dissolve well in alcohol, poorly in water.",
+      "prinzip": "aroma-loeslichkeit"
+    },
+    {
+      "schritt": "Store in the dark and shake once a week",
+      "warum": "Shaking brings fresh alcohol to the pods. Light would destroy aromas.",
+      "prinzip": "diffusion"
+    },
+    {
+      "schritt": "Use after about 8 weeks, leaving the pods in",
+      "warum": "The longer, the stronger. You can top it up with alcohol."
+    }
+  ],
+  "visual": {
+    "params": {
+      "vorher": "day 1",
+      "nachher": "after 8 weeks",
+      "vergleich": [
+        {
+          "label": "vanilla in vodka",
+          "gefaess": "flasche",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#f3efe2",
+            "fuell": 0.7
+          },
+          "nachher": {
+            "farbe": "#6b3a1e",
+            "fuell": 0.7
+          }
+        }
+      ]
+    }
+  }
+}
