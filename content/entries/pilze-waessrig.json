@@ -1,0 +1,100 @@
+{
+  "id": "pilze-waessrig",
+  "typ": "symptom",
+  "titel": "Pilze werden wässrig und grau",
+  "synonyme": [
+    "Champignons wässrig",
+    "Pilze schwimmen im Saft",
+    "Pilze gummig"
+  ],
+  "kurz": "Die Pilze kochen im eigenen Saft, weil die Pfanne zu voll, zu kühl oder zu früh gesalzen war.",
+  "bild_im_kopf": "Wie zu viele Leute in einer Sauna: Es wird feucht statt heiß.",
+  "ursachen": [
+    {
+      "titel": "Pfanne überfüllt",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Viele Pilze geben mehr Wasser ab, als auf einmal verdampfen kann.",
+      "fix": [
+        "In einer Lage braten",
+        "In Portionen arbeiten"
+      ]
+    },
+    {
+      "titel": "Zu früh gesalzen",
+      "haeufigkeit": 2,
+      "prinzip": "osmose",
+      "warum": "Salz zieht Wasser aus den Pilzen, bevor sie bräunen können.",
+      "fix": [
+        "Erst am Schluss salzen"
+      ]
+    },
+    {
+      "titel": "Zu wenig Hitze",
+      "haeufigkeit": 2,
+      "prinzip": "pfanne-vorheizen",
+      "warum": "In einer lauwarmen Pfanne tritt der Saft aus, verdampft aber nicht.",
+      "fix": [
+        "Pfanne richtig vorheizen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Lagen die Pilze in einer einzigen Lage in der Pfanne?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Hast du gleich zu Beginn gesalzen?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "pilze-braten",
+    "osmose",
+    "verdampfen",
+    "w-pilze"
+  ],
+  "welten": [
+    "w-pilze"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum",
+    "illustration": "grey, shrunken sliced mushrooms swimming in liquid in a crowded frying pan"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Pilze"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

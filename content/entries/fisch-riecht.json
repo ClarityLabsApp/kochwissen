@@ -1,0 +1,99 @@
+{
+  "id": "fisch-riecht",
+  "typ": "symptom",
+  "titel": "Fisch riecht stark",
+  "synonyme": [
+    "Fischgeruch",
+    "Fisch stinkt",
+    "Fischgeruch entfernen"
+  ],
+  "kurz": "Frischer Fisch riecht nach Meer. Der typische Fischgeruch entsteht erst, wenn Bakterien Stoffe im Fleisch abbauen.",
+  "bild_im_kopf": "Wie Milch, die erst nach ein paar Tagen sauer riecht: Der Geruch zeigt das Alter.",
+  "ursachen": [
+    {
+      "titel": "Nicht mehr frisch",
+      "haeufigkeit": 3,
+      "prinzip": "keimwachstum",
+      "warum": "Meeresfisch enthält einen geruchlosen Stoff, den Bakterien zu stark riechendem Trimethylamin abbauen. Je älter, desto mehr.",
+      "fix": [
+        "Frisch kaufen und am selben Tag zubereiten"
+      ]
+    },
+    {
+      "titel": "Zu warm gelagert",
+      "haeufigkeit": 2,
+      "prinzip": "keimwachstum",
+      "warum": "Wärme lässt die Bakterien schneller arbeiten.",
+      "fix": [
+        "Im kältesten Fach auf Eis lagern"
+      ]
+    },
+    {
+      "titel": "Geruch bleibt an Händen und Pfanne",
+      "haeufigkeit": 1,
+      "prinzip": "saeure",
+      "warum": "Trimethylamin ist eine schwache Base. Säure wie Zitrone bindet es und mildert den Geruch.",
+      "fix": [
+        "Mit Zitronensaft beträufeln",
+        "Hände mit Zitrone oder Essig waschen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Roch der Fisch schon beim Auspacken stark?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Lag er länger als einen Tag im Kühlschrank?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "saeure",
+    "keimwachstum",
+    "w-fisch"
+  ],
+  "welten": [
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a whole fish on crushed ice next to lemon halves and a small bowl of vinegar"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fisch: Geruch"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

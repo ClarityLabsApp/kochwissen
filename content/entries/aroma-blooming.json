@@ -34,7 +34,8 @@
     "aroma-loeslichkeit"
   ],
   "welten": [
-    "w-saucen"
+    "w-saucen",
+    "w-kraeuter-gewuerze"
   ],
   "visual": {
     "vorlage": "zoom3-simulation"

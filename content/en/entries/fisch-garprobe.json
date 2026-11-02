@@ -1,0 +1,21 @@
+{
+  "id": "fisch-garprobe",
+  "titel": "Telling when fish is done",
+  "kurz": "Fish is done when the flesh turns from translucent to opaque and separates easily into flakes, usually at 50–60 °C at the core (as a guide).",
+  "bild_im_kopf": "Like a stack of playing cards: once cooked, a touch of the finger fans it into separate layers.",
+  "was_passiert": "Fish protein changes at much lower temperatures than the meat of land animals. Its connective tissue is weak and gives way early. So fish is quickly cooked and quickly overcooked: a few degrees decide between juicy and dry.",
+  "warum_wichtig": "Because fish keeps cooking, take it off when the middle is still just slightly translucent.",
+  "synonyme": [
+    "is the fish cooked",
+    "fish doneness",
+    "fish core temperature"
+  ],
+  "faustregeln": [
+    "Better a minute too early than too late: fish keeps cooking."
+  ],
+  "schritte": [
+    "Press gently into the thickest part with a fork.",
+    "If the flesh separates into flakes and is only a touch translucent inside, it is done.",
+    "With a thermometer: salmon at about 50 °C, white fish at 55–60 °C (as a guide)."
+  ]
+}

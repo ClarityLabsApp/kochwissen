@@ -1,0 +1,55 @@
+{
+  "id": "x-fisch-zitrone",
+  "titel": "Acid cooks fish without heat",
+  "kurz": "Raw fish cubes in lemon or lime juice turn white and firm within half an hour, as if cooked.",
+  "bild_im_kopf": "Like egg white in a hot pan, but without the pan: the acid does the work of the heat.",
+  "beobachtung": "In the juice the fish is white and firm on the outside; in the water it has stayed translucent and soft.",
+  "erklaerung": "Acid changes the proteins much as heat does: they unfold and link up anew. That is why the fish looks cooked. But acid does not kill germs as reliably as heat.",
+  "dauer": "30 minutes",
+  "sicherheit": "Only with very fresh fish; for children, for looking at only. Do not eat it if you are unsure how fresh it is.",
+  "synonyme": [
+    "ceviche experiment",
+    "fish in lime juice"
+  ],
+  "schritte": [
+    "Cut the fish into small cubes.",
+    "Cover one half with lemon juice and the other with water.",
+    "Cover and chill for 30 minutes, then compare."
+  ],
+  "material": [
+    "a piece of very fresh white fish",
+    "lemon or lime juice",
+    "water",
+    "two small bowls"
+  ],
+  "visual": {
+    "params": {
+      "vorher": "raw",
+      "nachher": "after 30 minutes",
+      "vergleich": [
+        {
+          "label": "in lemon juice",
+          "gefaess": "schuessel",
+          "inhalt": "scheiben",
+          "vorher": {
+            "farbe": "#f0c9c0"
+          },
+          "nachher": {
+            "farbe": "#f6f2ea"
+          }
+        },
+        {
+          "label": "in water",
+          "gefaess": "schuessel",
+          "inhalt": "scheiben",
+          "vorher": {
+            "farbe": "#f0c9c0"
+          },
+          "nachher": {
+            "farbe": "#eec4ba"
+          }
+        }
+      ]
+    }
+  }
+}

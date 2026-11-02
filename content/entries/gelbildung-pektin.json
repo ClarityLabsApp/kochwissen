@@ -35,7 +35,8 @@
     "l-apfelpektin"
   ],
   "welten": [
-    "w-suesses"
+    "w-suesses",
+    "w-obst"
   ],
   "visual": {
     "vorlage": "zoom3-simulation"

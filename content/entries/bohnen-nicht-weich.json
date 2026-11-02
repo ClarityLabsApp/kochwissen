@@ -85,7 +85,8 @@
     "dampfkochtopf"
   ],
   "welten": [
-    "w-gemuese"
+    "w-gemuese",
+    "w-huelsenfruechte"
   ],
   "visual": {
     "vorlage": "entscheidungsbaum",

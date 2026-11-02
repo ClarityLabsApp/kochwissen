@@ -1,7 +1,7 @@
 {
   "version": 1,
   "stand": "2026-11-02",
-  "anzahl": 309,
+  "anzahl": 346,
   "eintraege": [
     {
       "id": "w-fleisch",
@@ -7638,6 +7638,907 @@
       ],
       "visual": {
         "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "extraktion",
+      "typ": "begriff",
+      "titel": "Extraktion",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "kaffee-sauer-bitter",
+        "tee-ziehen",
+        "aroma-loeslichkeit"
+      ],
+      "welten": [],
+      "synonyme": [
+        "herauslösen",
+        "Auszug"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "kaffee-sauer-bitter",
+      "typ": "symptom",
+      "titel": "Kaffee schmeckt sauer oder bitter",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "extraktion",
+        "w-kaffee",
+        "temperatur"
+      ],
+      "welten": [
+        "w-kaffee"
+      ],
+      "synonyme": [
+        "Kaffee sauer",
+        "Kaffee bitter",
+        "Espresso sauer"
+      ],
+      "visual": {
+        "vorlage": "entscheidungsbaum"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "tee-ziehen",
+      "typ": "technik",
+      "titel": "Tee richtig ziehen lassen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "extraktion",
+        "gerbstoffe",
+        "w-kaffee",
+        "x-tee-zitrone"
+      ],
+      "welten": [
+        "w-kaffee"
+      ],
+      "synonyme": [
+        "Tee aufgießen",
+        "Grüntee Temperatur",
+        "Tee bitter"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "milchschaum",
+      "typ": "technik",
+      "titel": "Milch aufschäumen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "schaumbildung",
+        "milch",
+        "eiweiss-denaturierung",
+        "w-kaffee"
+      ],
+      "welten": [
+        "w-kaffee",
+        "w-milch"
+      ],
+      "synonyme": [
+        "Milchschaum",
+        "Cappuccino Schaum",
+        "Latte Art"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "x-tee-zitrone",
+      "typ": "experiment",
+      "titel": "Zitrone macht Schwarztee hell",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "ph-wert",
+        "indikator",
+        "x-rotkohl-indikator",
+        "tee-ziehen"
+      ],
+      "welten": [
+        "w-kaffee"
+      ],
+      "synonyme": [
+        "Tee Farbe Zitrone",
+        "Tee Experiment"
+      ],
+      "visual": {
+        "vorlage": "vergleich"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-cold-brew",
+      "typ": "gericht",
+      "titel": "Cold Brew",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "extraktion",
+        "kaffee-sauer-bitter",
+        "w-kaffee"
+      ],
+      "welten": [
+        "w-kaffee"
+      ],
+      "synonyme": [
+        "kalt gebrühter Kaffee",
+        "Cold Brew Kaffee"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "pasta-frisch",
+      "typ": "technik",
+      "titel": "Frische Pasta machen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "glutenbildung",
+        "ruhezeit",
+        "teig-schnurrt",
+        "w-pasta"
+      ],
+      "welten": [
+        "w-pasta"
+      ],
+      "synonyme": [
+        "Nudelteig",
+        "Pasta selber machen",
+        "Eierteig"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "pasta-in-sauce",
+      "typ": "technik",
+      "titel": "Pasta in der Sauce fertig garen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "mantecare",
+        "staerkeverkleisterung",
+        "emulsion",
+        "w-pasta"
+      ],
+      "welten": [
+        "w-pasta"
+      ],
+      "synonyme": [
+        "Pasta schwenken",
+        "Pasta in der Pfanne"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "pasta-zu-weich",
+      "typ": "symptom",
+      "titel": "Pasta wird weich und matschig",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "al-dente",
+        "pasta-in-sauce",
+        "pasta-klebt",
+        "w-pasta"
+      ],
+      "welten": [
+        "w-pasta"
+      ],
+      "synonyme": [
+        "Nudeln matschig",
+        "Pasta verkocht",
+        "Nudeln zu weich"
+      ],
+      "visual": {
+        "vorlage": "entscheidungsbaum"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-carbonara",
+      "typ": "gericht",
+      "titel": "Spaghetti Carbonara",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "eiweiss-gerinnung",
+        "mantecare",
+        "emulsion",
+        "pasta-in-sauce",
+        "w-pasta"
+      ],
+      "welten": [
+        "w-pasta"
+      ],
+      "synonyme": [
+        "Carbonara",
+        "Pasta Carbonara"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-brathaehnchen",
+      "typ": "gericht",
+      "titel": "Brathähnchen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "trockensalzen",
+        "haut-nicht-knusprig",
+        "kerntemperatur",
+        "flach-aufschneiden",
+        "w-gefluegel"
+      ],
+      "welten": [
+        "w-gefluegel"
+      ],
+      "synonyme": [
+        "Poulet im Ofen",
+        "ganzes Huhn braten",
+        "Güggeli"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "haut-nicht-knusprig",
+      "typ": "symptom",
+      "titel": "Geflügelhaut wird nicht knusprig",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "trocken-tupfen",
+        "trockensalzen",
+        "fett-ausbraten",
+        "g-brathaehnchen",
+        "w-gefluegel"
+      ],
+      "welten": [
+        "w-gefluegel"
+      ],
+      "synonyme": [
+        "Hähnchenhaut labbrig",
+        "Pouletschenkel Haut weich",
+        "Haut gummig"
+      ],
+      "visual": {
+        "vorlage": "entscheidungsbaum"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "pouletbrust-trocken",
+      "typ": "symptom",
+      "titel": "Pouletbrust wird trocken",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "kerntemperatur",
+        "fleisch-trocken",
+        "lake",
+        "w-gefluegel"
+      ],
+      "welten": [
+        "w-gefluegel"
+      ],
+      "synonyme": [
+        "Hähnchenbrust trocken",
+        "Hühnerbrust zäh",
+        "Pouletbrüstli"
+      ],
+      "visual": {
+        "vorlage": "entscheidungsbaum"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "flach-aufschneiden",
+      "typ": "technik",
+      "titel": "Geflügel flach aufschneiden",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "g-brathaehnchen",
+        "gleichmaessig-gar",
+        "fond",
+        "w-gefluegel"
+      ],
+      "welten": [
+        "w-gefluegel"
+      ],
+      "synonyme": [
+        "Spatchcock",
+        "Hähnchen flach",
+        "Rückgrat entfernen"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-lachs-haut",
+      "typ": "gericht",
+      "titel": "Lachs auf der Haut gebraten",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "fisch-klebt",
+        "fisch-garprobe",
+        "pfanne-vorheizen",
+        "w-fisch"
+      ],
+      "welten": [
+        "w-fisch"
+      ],
+      "synonyme": [
+        "Lachs braten",
+        "knusprige Fischhaut",
+        "Lachsfilet"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "fisch-garprobe",
+      "typ": "technik",
+      "titel": "Erkennen, wann Fisch gar ist",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "kerntemperatur",
+        "nachgaren",
+        "fisch-zerfaellt",
+        "g-lachs-haut",
+        "w-fisch"
+      ],
+      "welten": [
+        "w-fisch"
+      ],
+      "synonyme": [
+        "Fisch gar",
+        "Garprobe Fisch",
+        "Fisch Kerntemperatur"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "fisch-riecht",
+      "typ": "symptom",
+      "titel": "Fisch riecht stark",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "saeure",
+        "keimwachstum",
+        "w-fisch"
+      ],
+      "welten": [
+        "w-fisch"
+      ],
+      "synonyme": [
+        "Fischgeruch",
+        "Fisch stinkt",
+        "Fischgeruch entfernen"
+      ],
+      "visual": {
+        "vorlage": "entscheidungsbaum"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "x-fisch-zitrone",
+      "typ": "experiment",
+      "titel": "Säure gart Fisch ohne Hitze",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "saeure-denaturierung",
+        "eiweiss-denaturierung",
+        "w-fisch"
+      ],
+      "welten": [
+        "w-fisch"
+      ],
+      "synonyme": [
+        "Ceviche Experiment",
+        "Fisch in Zitrone"
+      ],
+      "visual": {
+        "vorlage": "vergleich"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "reis-quellmethode",
+      "typ": "technik",
+      "titel": "Reis kochen mit der Quellmethode",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "staerkeverkleisterung",
+        "reis-matschig",
+        "quellen",
+        "w-getreide"
+      ],
+      "welten": [
+        "w-getreide"
+      ],
+      "synonyme": [
+        "Reis kochen",
+        "Reis Wassermenge",
+        "Reis Verhältnis"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-polenta",
+      "typ": "gericht",
+      "titel": "Polenta",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "staerkeverkleisterung",
+        "quellen",
+        "retrogradation",
+        "w-getreide"
+      ],
+      "welten": [
+        "w-getreide"
+      ],
+      "synonyme": [
+        "Maisgrieß",
+        "Bramata",
+        "Ribelmais"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-milchreis",
+      "typ": "gericht",
+      "titel": "Milchreis",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "staerkeverkleisterung",
+        "milch",
+        "w-getreide",
+        "w-suesses"
+      ],
+      "welten": [
+        "w-getreide",
+        "w-suesses"
+      ],
+      "synonyme": [
+        "Reisbrei",
+        "Milchreis Rezept",
+        "Risotto dolce"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "w-huelsenfruechte",
+      "typ": "welt",
+      "titel": "Hülsenfrüchte",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "huelsenfruechte-einweichen",
+        "bohnen-nicht-weich",
+        "phasin",
+        "g-hummus",
+        "kalzium-pektin"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Bohnen",
+        "Linsen",
+        "Kichererbsen",
+        "Erbsen"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "huelsenfruechte-einweichen",
+      "typ": "technik",
+      "titel": "Hülsenfrüchte einweichen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "bohnen-nicht-weich",
+        "kalzium-pektin",
+        "natron",
+        "w-huelsenfruechte"
+      ],
+      "welten": [
+        "w-huelsenfruechte"
+      ],
+      "synonyme": [
+        "Bohnen einweichen",
+        "Kichererbsen einweichen",
+        "über Nacht einweichen"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "phasin",
+      "typ": "begriff",
+      "titel": "Phasin",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "w-huelsenfruechte",
+        "bohnen-nicht-weich"
+      ],
+      "welten": [],
+      "synonyme": [
+        "rohe Bohnen giftig",
+        "Lektine"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-hummus",
+      "typ": "gericht",
+      "titel": "Hummus",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "huelsenfruechte-einweichen",
+        "natron",
+        "emulsion",
+        "w-huelsenfruechte"
+      ],
+      "welten": [
+        "w-huelsenfruechte"
+      ],
+      "synonyme": [
+        "Kichererbsenpüree",
+        "Hummus selber machen"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "w-obst",
+      "typ": "welt",
+      "titel": "Obst & Früchte",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "ethylen",
+        "obst-lagern",
+        "enzym-braeunung",
+        "gelbildung-pektin",
+        "g-apfelmus"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Früchte",
+        "Äpfel",
+        "Beeren",
+        "Bananen"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "ethylen",
+      "typ": "begriff",
+      "titel": "Ethylen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "obst-lagern",
+        "x-avocado-apfel",
+        "w-obst"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Reifegas"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "obst-lagern",
+      "typ": "technik",
+      "titel": "Obst richtig lagern",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "ethylen",
+        "x-avocado-apfel",
+        "w-obst"
+      ],
+      "welten": [
+        "w-obst"
+      ],
+      "synonyme": [
+        "Obst Kühlschrank",
+        "Bananen lagern",
+        "Tomaten Kühlschrank"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "x-avocado-apfel",
+      "typ": "experiment",
+      "titel": "Ein Apfel lässt Avocados reifen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "ethylen",
+        "obst-lagern",
+        "w-obst"
+      ],
+      "welten": [
+        "w-obst"
+      ],
+      "synonyme": [
+        "Avocado nachreifen",
+        "Ethylen Experiment",
+        "Avocado Papiertüte"
+      ],
+      "visual": {
+        "vorlage": "vergleich"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-apfelmus",
+      "typ": "gericht",
+      "titel": "Apfelmus",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "pektin-abbau",
+        "enzym-braeunung",
+        "w-obst"
+      ],
+      "welten": [
+        "w-obst",
+        "w-suesses"
+      ],
+      "synonyme": [
+        "Apfelkompott",
+        "Apfelmus selber machen"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "w-kraeuter-gewuerze",
+      "typ": "welt",
+      "titel": "Kräuter & Gewürze",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "aroma-loeslichkeit",
+        "aroma-blooming",
+        "gewuerze",
+        "kraeuter-frisch-halten",
+        "g-pesto"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Kräuter",
+        "Gewürze",
+        "Basilikum",
+        "Pfeffer"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "kraeuter-frisch-halten",
+      "typ": "technik",
+      "titel": "Frische Kräuter lagern",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "kraeuter-schwarz",
+        "enzym-braeunung",
+        "w-kraeuter-gewuerze"
+      ],
+      "welten": [
+        "w-kraeuter-gewuerze"
+      ],
+      "synonyme": [
+        "Kräuter frisch halten",
+        "Basilikum lagern",
+        "Petersilie aufbewahren"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "kraeuter-schwarz",
+      "typ": "symptom",
+      "titel": "Kräuter werden schwarz",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "kraeuter-frisch-halten",
+        "enzym-braeunung",
+        "g-pesto",
+        "w-kraeuter-gewuerze"
+      ],
+      "welten": [
+        "w-kraeuter-gewuerze"
+      ],
+      "synonyme": [
+        "Basilikum schwarz",
+        "Kräuter dunkel",
+        "Pesto wird dunkel"
+      ],
+      "visual": {
+        "vorlage": "entscheidungsbaum"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-pesto",
+      "typ": "gericht",
+      "titel": "Pesto alla genovese",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "kraeuter-schwarz",
+        "enzym-braeunung",
+        "blanchieren",
+        "w-kraeuter-gewuerze"
+      ],
+      "welten": [
+        "w-kraeuter-gewuerze",
+        "w-saucen"
+      ],
+      "synonyme": [
+        "Basilikumpesto",
+        "Pesto selber machen"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "w-pilze",
+      "typ": "welt",
+      "titel": "Pilze",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "pilze-braten",
+        "pilze-waessrig",
+        "umami",
+        "verdampfen"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Champignons",
+        "Steinpilze",
+        "Pilze braten"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "pilze-braten",
+      "typ": "technik",
+      "titel": "Pilze braten",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "pilze-waessrig",
+        "osmose",
+        "maillard-reaktion",
+        "w-pilze"
+      ],
+      "welten": [
+        "w-pilze"
+      ],
+      "synonyme": [
+        "Champignons braten",
+        "Pilze anbraten",
+        "Pilze waschen"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "pilze-waessrig",
+      "typ": "symptom",
+      "titel": "Pilze werden wässrig und grau",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "pilze-braten",
+        "osmose",
+        "verdampfen",
+        "w-pilze"
+      ],
+      "welten": [
+        "w-pilze"
+      ],
+      "synonyme": [
+        "Champignons wässrig",
+        "Pilze schwimmen im Saft",
+        "Pilze gummig"
+      ],
+      "visual": {
+        "vorlage": "entscheidungsbaum"
       },
       "verlinkt_von": []
     }

@@ -1,0 +1,45 @@
+{
+  "id": "milchschaum",
+  "typ": "technik",
+  "titel": "Milch aufschäumen",
+  "synonyme": [
+    "Milchschaum",
+    "Cappuccino Schaum",
+    "Latte Art"
+  ],
+  "kurz": "Milcheiweiß legt sich um eingeschlagene Luftbläschen und hält sie fest, am besten bei 55–65 °C (Richtwert).",
+  "bild_im_kopf": "Wie Seifenblasen mit Eiweißhaut: Die Haut hält, solange sie nicht überhitzt.",
+  "was_passiert": "Beim Aufschäumen wird Luft in die [[milch|Milch]] geschlagen. Die Eiweiße der Milch legen sich um die Bläschen und bilden eine stabile Haut. Wird die Milch heißer als etwa 70 °C, verändern sich die Eiweiße zu stark: Der Schaum fällt zusammen und die Milch schmeckt gekocht.",
+  "warum_wichtig": "Kalte, frische Milch schäumt am besten. Vollmilch gibt cremigeren Schaum, Magermilch mehr Volumen, aber trockener.",
+  "schritte": [
+    "Kalte Milch in ein kaltes Kännchen füllen, höchstens ein Drittel voll.",
+    "Zuerst Luft einziehen, bis das Volumen etwa ein Drittel größer ist.",
+    "Dann tiefer eintauchen und die Milch wirbeln lassen, bis das Kännchen zu warm zum Anfassen wird.",
+    "Kurz aufklopfen und schwenken, damit große Blasen verschwinden."
+  ],
+  "faustregeln": [
+    "Für festen Schaum: kalte, frische Milch und nicht über etwa 65 °C erhitzen.",
+    "Schaum zerfällt sofort? Die Milch war zu heiß oder schon einmal erwärmt."
+  ],
+  "links": [
+    "schaumbildung",
+    "milch",
+    "eiweiss-denaturierung",
+    "w-kaffee"
+  ],
+  "welten": [
+    "w-kaffee",
+    "w-milch"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Milch: Milchschaum"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "tee-ziehen",
+  "titel": "Brewing tea properly",
+  "kurz": "Temperature and time decide whether tea is fragrant or bitter: green tea wants it cooler and shorter than black tea.",
+  "bild_im_kopf": "Like an hourglass: once the time is up, the flavour tips over.",
+  "was_passiert": "Hot water dissolves the aroma compounds and caffeine first, then the astringent [[gerbstoffe|tannins]]. The hotter and longer, the more tannins join in. Green tea is not oxidised and contains delicate compounds that quickly taste bitter in boiling water.",
+  "warum_wichtig": "The same tea can taste mild or bitter. The fault lies not with the tea but with the water and the clock.",
+  "synonyme": [
+    "steeping tea",
+    "green tea temperature",
+    "bitter tea"
+  ],
+  "faustregeln": [
+    "For mild green tea: no boiling water, or it turns bitter.",
+    "Tea too bitter? Steep it for less time rather than using less tea."
+  ],
+  "schritte": [
+    "Green tea: let the water cool to about 70–80 °C, steep for 2–3 minutes (as a guide).",
+    "Black tea: water at a rolling boil, steep for 3–5 minutes (as a guide).",
+    "Herbal tea: boiling water, 5–10 minutes, covered so the aromas stay in.",
+    "Then remove the leaves or bag, do not leave them in the water."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "extraktion",
+  "typ": "begriff",
+  "titel": "Extraktion",
+  "synonyme": [
+    "herauslösen",
+    "Auszug"
+  ],
+  "kurz": "Wasser löst Aroma-, Säure- und Bitterstoffe aus Kaffee, Tee oder Gewürzen, zuerst die Säuren, zuletzt die Bitterstoffe.",
+  "links": [
+    "kaffee-sauer-bitter",
+    "tee-ziehen",
+    "aroma-loeslichkeit"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kaffee und Tee"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

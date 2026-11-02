@@ -1,0 +1,32 @@
+{
+  "id": "g-apfelmus",
+  "titel": "Apple sauce",
+  "kurz": "Apples collapse into sauce in a little liquid because heat dissolves the pectin between the cells.",
+  "bild_im_kopf": "Like a wool jumper on a hot wash: the stitches loosen and everything collapses.",
+  "synonyme": [
+    "apple purée",
+    "stewed apples"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Use soft varieties such as Bramley-style cookers; for chunks, firmer ones",
+      "warum": "Varieties with loose cells break down easily; firm ones keep their shape.",
+      "prinzip": "pektin-abbau"
+    },
+    {
+      "schritt": "Toss peeled pieces with a little lemon juice straight away",
+      "warum": "Acid slows the enzyme that turns cut surfaces brown.",
+      "prinzip": "enzym-braeunung"
+    },
+    {
+      "schritt": "Steam until soft with a little water under a lid",
+      "warum": "Heat dissolves the pectin, and the apples give off enough juice themselves.",
+      "prinzip": "pektin-abbau"
+    },
+    {
+      "schritt": "Purée or press through a sieve, only then sweeten",
+      "warum": "That way the sweetness can be matched to the apples' acidity.",
+      "prinzip": "abschmecken-saeure"
+    }
+  ]
+}

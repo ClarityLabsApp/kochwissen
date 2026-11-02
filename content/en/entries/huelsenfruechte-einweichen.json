@@ -1,0 +1,26 @@
+{
+  "id": "huelsenfruechte-einweichen",
+  "titel": "Soaking pulses",
+  "kurz": "Soak dried beans and chickpeas overnight in salted water: they cook faster, more evenly and burst less.",
+  "bild_im_kopf": "Like raisins in rum: they plump up before the real work begins.",
+  "was_passiert": "During soaking the dried seeds take up roughly their own weight in water. Salt in the water swaps out calcium in the skin, which softens it. Some of the hard-to-digest sugars pass into the water.",
+  "warum_wichtig": "Unsoaked beans turn soft on the outside but stay hard inside, and the skins split.",
+  "synonyme": [
+    "soaking beans",
+    "soaking chickpeas",
+    "overnight soak"
+  ],
+  "faustregeln": [
+    "Hard water? Add a pinch of [[natron|baking soda]] to the soaking water."
+  ],
+  "schritte": [
+    "Pick over the pulses and rinse them.",
+    "Soak in three times their volume of water with about 1 tsp salt per litre, for 8–12 hours (as a guide).",
+    "Pour off the soaking water and cook until soft in fresh water.",
+    "Lentils and split peas need no soaking."
+  ],
+  "mythos": {
+    "behauptung": "Salt makes beans tough.",
+    "richtig": "Not true. Salt in the soaking water actually softens the skin. What keeps them hard is acid and calcium."
+  }
+}

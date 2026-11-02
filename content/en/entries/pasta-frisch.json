@@ -1,0 +1,24 @@
+{
+  "id": "pasta-frisch",
+  "titel": "Making fresh pasta",
+  "kurz": "Flour and egg are kneaded until a gluten network forms, then the dough rests so it can be rolled out.",
+  "bild_im_kopf": "Like a new jumper that has to relax after washing before it fits again.",
+  "was_passiert": "Kneading links the flour proteins into gluten; the egg provides water, fat and colour. At first the network makes the dough tough and springy. During resting it relaxes, and the flour fully absorbs the water.",
+  "warum_wichtig": "Without resting, the dough tears or shrinks back. Fresh [[w-pasta|pasta]] cooks in 2–4 minutes because it is still moist.",
+  "synonyme": [
+    "pasta dough",
+    "homemade pasta",
+    "egg pasta"
+  ],
+  "faustregeln": [
+    "Dough too dry? Keep kneading with wet hands rather than pouring in water.",
+    "Dough shrinks back when rolling: cover and rest for another 10 minutes."
+  ],
+  "schritte": [
+    "Weigh 100 g flour (tipo 00 or half durum semolina) per egg (as a guide).",
+    "Put the egg into a well in the flour and work it in gradually.",
+    "Knead for 8–10 minutes until the dough is smooth and elastic.",
+    "Wrap in film and rest for 30 minutes.",
+    "Roll out thinly, cut and cook in well-salted water for 2–4 minutes."
+  ]
+}

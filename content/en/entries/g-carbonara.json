@@ -1,0 +1,31 @@
+{
+  "id": "g-carbonara",
+  "titel": "Spaghetti carbonara",
+  "kurz": "Egg yolk, cheese and bacon fat are bound with pasta water into a creamy sauce without the egg turning into scrambled egg.",
+  "bild_im_kopf": "Like walking a tightrope over a pan: warm enough to bind, cool enough that nothing curdles.",
+  "synonyme": [
+    "carbonara"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Render guanciale or bacon slowly",
+      "warum": "The fat melts out and later becomes part of the sauce; the bacon turns crisp.",
+      "prinzip": "fett-ausbraten"
+    },
+    {
+      "schritt": "Mix egg yolks with pecorino and plenty of pepper",
+      "warum": "The cheese disperses in the yolk and helps bind later.",
+      "prinzip": "emulsion"
+    },
+    {
+      "schritt": "Add the pasta with a little pasta water to the bacon and take the pan off the heat",
+      "warum": "Egg yolk sets from about 65–70 °C. Off the flame the sauce stays below that.",
+      "prinzip": "eiweiss-gerinnung"
+    },
+    {
+      "schritt": "Stir in the egg mixture and toss hard until the sauce is glossy",
+      "warum": "Starch from the [[w-pasta|pasta]] water binds fat, egg and cheese into an [[emulsion|emulsion]].",
+      "prinzip": "mantecare"
+    }
+  ]
+}

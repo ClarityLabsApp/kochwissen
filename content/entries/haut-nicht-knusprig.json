@@ -1,0 +1,102 @@
+{
+  "id": "haut-nicht-knusprig",
+  "typ": "symptom",
+  "titel": "Geflügelhaut wird nicht knusprig",
+  "synonyme": [
+    "Hähnchenhaut labbrig",
+    "Pouletschenkel Haut weich",
+    "Haut gummig"
+  ],
+  "kurz": "Die Haut ist zu feucht oder liegt im Dampf, darum kann ihr Fett nicht ausbraten.",
+  "bild_im_kopf": "Wie Wäsche im Bad nach dem Duschen: In feuchter Luft wird nichts trocken.",
+  "ursachen": [
+    {
+      "titel": "Haut feucht",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Solange Wasser auf der Haut ist, bleibt sie bei 100 °C und bräunt nicht.",
+      "fix": [
+        "Trocken tupfen",
+        "Über Nacht unbedeckt im Kühlschrank trocknen"
+      ]
+    },
+    {
+      "titel": "Im eigenen Dampf gegart",
+      "haeufigkeit": 2,
+      "prinzip": "feuchtigkeit",
+      "warum": "Eine enge Form oder viel Gemüse drumherum gibt Dampf ab, der die Haut weich hält.",
+      "fix": [
+        "Auf einem Gitter oder mit Abstand garen",
+        "Ohne Deckel"
+      ]
+    },
+    {
+      "titel": "Zu wenig Hitze am Schluss",
+      "haeufigkeit": 2,
+      "prinzip": "fett-ausbraten",
+      "warum": "Die Fettschicht unter der Haut muss ausbraten, sonst bleibt die Haut zäh.",
+      "fix": [
+        "Zum Schluss 10 Minuten bei hoher Hitze oder Grill"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "War die Haut vor dem Garen ganz trocken?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Lag das Geflügel eng in der Form oder zwischen viel Gemüse?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "trocken-tupfen",
+    "trockensalzen",
+    "fett-ausbraten",
+    "g-brathaehnchen",
+    "w-gefluegel"
+  ],
+  "welten": [
+    "w-gefluegel"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a pale chicken leg with flabby, wrinkled skin sitting in liquid in a crowded roasting dish"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch: Geflügel"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

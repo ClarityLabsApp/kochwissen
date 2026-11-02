@@ -1,0 +1,56 @@
+{
+  "id": "g-brathaehnchen",
+  "typ": "gericht",
+  "titel": "Brathähnchen",
+  "synonyme": [
+    "Poulet im Ofen",
+    "ganzes Huhn braten",
+    "Güggeli"
+  ],
+  "kurz": "Knusprige Haut und saftiges Fleisch zugleich: Die Haut braucht Trockenheit und Hitze, die Brust darf nicht zu heiß werden.",
+  "bild_im_kopf": "Wie ein Mantel und sein Träger: Der Mantel soll trocken und knusprig sein, der Träger warm, aber nicht verschwitzt.",
+  "schwierigkeit": "fortgeschritten",
+  "schluesselmomente": [
+    {
+      "schritt": "Am Vortag rundum salzen und unbedeckt im Kühlschrank lagern",
+      "warum": "Das Salz würzt bis innen und hält Saft im Fleisch, die Haut trocknet an der Luft.",
+      "prinzip": "trockensalzen"
+    },
+    {
+      "schritt": "Bei 200–220 °C braten, nicht zudecken (Richtwert)",
+      "warum": "Trockene Hitze lässt das Fett der Haut ausbraten und die Oberfläche bräunen.",
+      "prinzip": "maillard-reaktion"
+    },
+    {
+      "schritt": "Mit dem Thermometer messen: Brust mindestens 70 °C, Keule besser 75–80 °C",
+      "warum": "Die Keule hat mehr [[kollagen-gelatine|Bindegewebe]] und wird mit etwas mehr Hitze zarter, die Brust bei zu viel trocken.",
+      "prinzip": "kerntemperatur"
+    },
+    {
+      "schritt": "10 Minuten ruhen lassen, dann zerlegen",
+      "warum": "Der Saft verteilt sich wieder im Fleisch und läuft beim Schneiden weniger aus.",
+      "prinzip": "ruhen-lassen"
+    }
+  ],
+  "links": [
+    "trockensalzen",
+    "haut-nicht-knusprig",
+    "kerntemperatur",
+    "flach-aufschneiden",
+    "w-gefluegel"
+  ],
+  "welten": [
+    "w-gefluegel"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a golden roast chicken with crisp skin in a cast iron pan with lemon and thyme"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch: Geflügel"
+    }
+  ],
+  "status": "entwurf"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "g-hummus",
+  "typ": "gericht",
+  "titel": "Hummus",
+  "synonyme": [
+    "Kichererbsenpüree",
+    "Hummus selber machen"
+  ],
+  "kurz": "Sehr weich gekochte Kichererbsen, Sesampaste und Zitrone werden zu einer glatten, luftigen [[emulsion|Emulsion]].",
+  "bild_im_kopf": "Wie ein Daunenkissen aus Kichererbsen: Je feiner und luftiger, desto weicher.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Eingeweichte Kichererbsen mit einer Prise Natron kochen, bis sie fast zerfallen",
+      "warum": "[[natron|Natron]] löst die Zellwände und Schalen, die sonst körnig bleiben.",
+      "prinzip": "pektin-abbau"
+    },
+    {
+      "schritt": "Tahini mit Zitronensaft verrühren",
+      "warum": "Die Sesampaste dickt erst ein und wird dann cremig: Wasser und Fett verbinden sich.",
+      "prinzip": "emulsion"
+    },
+    {
+      "schritt": "Noch warme Kichererbsen dazugeben und lange pürieren",
+      "warum": "Warm sind sie weicher und lassen sich feiner zerkleinern.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Mit etwas Eiswasser aufschlagen",
+      "warum": "Das Wasser lockert die Masse auf und macht sie hell und fluffig.",
+      "prinzip": "emulsion"
+    }
+  ],
+  "links": [
+    "huelsenfruechte-einweichen",
+    "natron",
+    "emulsion",
+    "w-huelsenfruechte"
+  ],
+  "welten": [
+    "w-huelsenfruechte"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a shallow bowl of smooth hummus with a swirl of olive oil, paprika and whole chickpeas"
+  },
+  "quellen": [
+    {
+      "titel": "Serious Eats: The Food Lab, Hummus"
+    }
+  ],
+  "status": "entwurf"
+}

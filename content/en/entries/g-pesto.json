@@ -1,0 +1,32 @@
+{
+  "id": "g-pesto",
+  "titel": "Pesto alla genovese",
+  "kurz": "Basil, pine nuts, cheese and oil become a green paste: the gentler the chopping, the greener and more fragrant it stays.",
+  "bild_im_kopf": "Like greenery in summer rain: the less it is crushed, the fresher it stays.",
+  "synonyme": [
+    "basil pesto",
+    "homemade pesto"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Toast the pine nuts golden in a dry pan",
+      "warum": "Roasted flavours make the pesto rounder.",
+      "prinzip": "maillard-reaktion"
+    },
+    {
+      "schritt": "Crush the basil in a mortar or with short pulses of the blender",
+      "warum": "A blender left running warms the leaves: the enzymes work faster and the pesto turns dark.",
+      "prinzip": "enzym-braeunung"
+    },
+    {
+      "schritt": "For bright green: blanch the leaves for 10 seconds and refresh in iced water",
+      "warum": "The brief heat switches off the browning enzymes, and the green stays.",
+      "prinzip": "blanchieren"
+    },
+    {
+      "schritt": "Stir in cheese and oil at the end and cover with oil",
+      "warum": "The layer of oil keeps air out and slows darkening.",
+      "prinzip": "oxidation-fett"
+    }
+  ]
+}

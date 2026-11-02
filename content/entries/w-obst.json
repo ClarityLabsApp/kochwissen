@@ -1,0 +1,38 @@
+{
+  "id": "w-obst",
+  "typ": "welt",
+  "titel": "Obst & Früchte",
+  "synonyme": [
+    "Früchte",
+    "Äpfel",
+    "Beeren",
+    "Bananen"
+  ],
+  "kurz": "Obst reift, bräunt und geliert nach den gleichen Regeln: Reifegas, [[enzym|Enzyme]], Säure und [[pektin|Pektin]].",
+  "bild_im_kopf": "Wie eine Zündschnur: Einmal angezündet, brennt sie auch nach dem Pflücken weiter.",
+  "was_passiert": "Viele Früchte reifen nach der Ernte weiter. Ein Gas namens [[ethylen|Ethylen]] setzt das in Gang: Stärke wird zu Zucker, das Fruchtfleisch wird weich. Angeschnitten bräunen viele Früchte durch ein Enzym. Ihr Pektin lässt sich mit Zucker und Säure zu Konfitüre binden.",
+  "warum_wichtig": "Wer die Regeln kennt, lagert Obst länger, lässt es gezielt nachreifen und hält es hell.",
+  "faustregeln": [
+    "Äpfel getrennt von anderem Obst lagern, außer es soll nachreifen.",
+    "Angeschnittenes Obst mit Zitrone beträufeln."
+  ],
+  "links": [
+    "ethylen",
+    "obst-lagern",
+    "enzym-braeunung",
+    "gelbildung-pektin",
+    "g-apfelmus"
+  ],
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a still life of apples, pears, a bunch of grapes and berries in a woven basket"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Früchte"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

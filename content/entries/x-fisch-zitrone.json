@@ -1,0 +1,74 @@
+{
+  "id": "x-fisch-zitrone",
+  "typ": "experiment",
+  "titel": "Säure gart Fisch ohne Hitze",
+  "synonyme": [
+    "Ceviche Experiment",
+    "Fisch in Zitrone"
+  ],
+  "kurz": "Rohe Fischwürfel in Zitronen- oder Limettensaft werden in einer halben Stunde weiß und fest, wie gegart.",
+  "bild_im_kopf": "Wie Eiweiß in der heißen Pfanne, nur ohne Pfanne: Die Säure übernimmt die Arbeit der Hitze.",
+  "material": [
+    "ein Stück sehr frischer Weißfisch",
+    "Zitronen- oder Limettensaft",
+    "Wasser",
+    "zwei kleine Schalen"
+  ],
+  "schritte": [
+    "Fisch in kleine Würfel schneiden.",
+    "Eine Hälfte mit Zitronensaft bedecken, die andere mit Wasser.",
+    "Zugedeckt 30 Minuten in den Kühlschrank stellen und dann vergleichen."
+  ],
+  "beobachtung": "Im Saft ist der Fisch außen weiß und fest, im Wasser glasig und weich geblieben.",
+  "erklaerung": "Säure verändert die Eiweiße ähnlich wie Hitze: Sie entfalten sich und verbinden sich neu. Darum wirkt der Fisch gegart. Keime tötet Säure aber nicht so sicher wie Hitze.",
+  "sicherheit": "Nur mit sehr frischem Fisch, für Kinder nur zum Anschauen. Nicht essen, wenn die Frische unsicher ist.",
+  "dauer": "30 Minuten",
+  "links": [
+    "saeure-denaturierung",
+    "eiweiss-denaturierung",
+    "w-fisch"
+  ],
+  "welten": [
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "roh",
+      "nachher": "nach 30 Minuten",
+      "vergleich": [
+        {
+          "label": "in Zitronensaft",
+          "gefaess": "schuessel",
+          "inhalt": "scheiben",
+          "vorher": {
+            "farbe": "#f0c9c0"
+          },
+          "nachher": {
+            "farbe": "#f6f2ea"
+          }
+        },
+        {
+          "label": "in Wasser",
+          "gefaess": "schuessel",
+          "inhalt": "scheiben",
+          "vorher": {
+            "farbe": "#f0c9c0"
+          },
+          "nachher": {
+            "farbe": "#eec4ba"
+          }
+        }
+      ]
+    },
+    "illustration": "two small bowls of raw fish cubes, one turned white in lime juice, one translucent pink in water, lime halves beside them"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fisch: Ceviche"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

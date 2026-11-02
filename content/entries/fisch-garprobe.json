@@ -1,0 +1,43 @@
+{
+  "id": "fisch-garprobe",
+  "typ": "technik",
+  "titel": "Erkennen, wann Fisch gar ist",
+  "synonyme": [
+    "Fisch gar",
+    "Garprobe Fisch",
+    "Fisch Kerntemperatur"
+  ],
+  "kurz": "Fisch ist gar, wenn das Fleisch von glasig zu hell wechselt und sich leicht in Lamellen teilen lässt, meist bei 50–60 °C im Kern (Richtwert).",
+  "bild_im_kopf": "Wie ein Stapel Spielkarten: Gar lässt er sich mit einem Fingerdruck in einzelne Blätter auffächern.",
+  "was_passiert": "Fischeiweiß verändert sich bei viel niedrigeren Temperaturen als Fleisch vom Land. Das [[kollagen-gelatine|Bindegewebe]] ist schwach und löst sich früh. Darum ist Fisch schnell gar und schnell übergart: Wenige Grad entscheiden zwischen saftig und trocken.",
+  "warum_wichtig": "Weil Fisch [[nachgaren|nachgart]], nimmt man ihn heraus, wenn er in der Mitte gerade noch leicht glasig ist.",
+  "schritte": [
+    "An der dicksten Stelle mit einer Gabel leicht hineindrücken.",
+    "Teilt sich das Fleisch in Lamellen und ist innen nur noch ein Hauch glasig, ist es fertig.",
+    "Mit Thermometer: Lachs bei etwa 50 °C, Weißfisch bei 55–60 °C (Richtwert)."
+  ],
+  "faustregeln": [
+    "Lieber eine Minute zu früh als zu spät: Fisch gart nach."
+  ],
+  "links": [
+    "kerntemperatur",
+    "nachgaren",
+    "fisch-zerfaellt",
+    "g-lachs-haut",
+    "w-fisch"
+  ],
+  "welten": [
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fisch"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

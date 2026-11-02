@@ -1,0 +1,78 @@
+{
+  "id": "pilze-waessrig",
+  "titel": "Mushrooms turn watery and grey",
+  "kurz": "The mushrooms stew in their own juice because the pan was too full, too cool or salted too early.",
+  "bild_im_kopf": "Like too many people in a sauna: it gets steamy instead of hot.",
+  "synonyme": [
+    "watery mushrooms",
+    "mushrooms swimming in juice",
+    "rubbery mushrooms"
+  ],
+  "ursachen": [
+    {
+      "titel": "Pan overcrowded",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Lots of mushrooms give off more water than can evaporate at once.",
+      "fix": [
+        "Fry in a single layer",
+        "Work in batches"
+      ]
+    },
+    {
+      "titel": "Salted too early",
+      "haeufigkeit": 2,
+      "prinzip": "osmose",
+      "warum": "Salt draws water out of the mushrooms before they can brown.",
+      "fix": [
+        "Salt only at the end"
+      ]
+    },
+    {
+      "titel": "Not enough heat",
+      "haeufigkeit": 2,
+      "prinzip": "pfanne-vorheizen",
+      "warum": "In a lukewarm pan the juice comes out but does not evaporate.",
+      "fix": [
+        "Preheat the pan properly"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Were the mushrooms in a single layer in the pan?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did you salt right at the start?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

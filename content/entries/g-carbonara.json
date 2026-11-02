@@ -1,0 +1,55 @@
+{
+  "id": "g-carbonara",
+  "typ": "gericht",
+  "titel": "Spaghetti Carbonara",
+  "synonyme": [
+    "Carbonara",
+    "Pasta Carbonara"
+  ],
+  "kurz": "Eigelb, Käse und Speckfett werden mit Nudelwasser zu einer cremigen Sauce gebunden, ohne dass das Ei zu Rührei wird.",
+  "bild_im_kopf": "Wie Seiltanzen über einer Pfanne: Warm genug zum Binden, kühl genug, damit nichts gerinnt.",
+  "schwierigkeit": "fortgeschritten",
+  "schluesselmomente": [
+    {
+      "schritt": "Guanciale oder Speck langsam auslassen",
+      "warum": "Das Fett schmilzt aus und wird später Teil der Sauce, der Speck wird knusprig.",
+      "prinzip": "fett-ausbraten"
+    },
+    {
+      "schritt": "Eigelb mit Pecorino und viel Pfeffer verrühren",
+      "warum": "Der Käse verteilt sich im Eigelb und bindet später mit.",
+      "prinzip": "emulsion"
+    },
+    {
+      "schritt": "Pasta mit etwas Nudelwasser zum Speck geben und die Pfanne vom Herd ziehen",
+      "warum": "Eigelb stockt ab etwa 65–70 °C. Abseits der Flamme bleibt die Sauce darunter.",
+      "prinzip": "eiweiss-gerinnung"
+    },
+    {
+      "schritt": "Eimasse einrühren und kräftig schwenken, bis die Sauce glänzt",
+      "warum": "Stärke aus dem Nudelwasser verbindet Fett, Ei und Käse zu einer [[emulsion|Emulsion]].",
+      "prinzip": "mantecare"
+    }
+  ],
+  "links": [
+    "eiweiss-gerinnung",
+    "mantecare",
+    "emulsion",
+    "pasta-in-sauce",
+    "w-pasta"
+  ],
+  "welten": [
+    "w-pasta"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a plate of spaghetti carbonara with glossy sauce, crisp guanciale and black pepper"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Eier"
+    }
+  ],
+  "status": "entwurf"
+}

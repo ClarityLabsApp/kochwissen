@@ -1,0 +1,54 @@
+{
+  "id": "x-avocado-apfel",
+  "titel": "An apple ripens avocados",
+  "kurz": "A hard avocado in a paper bag with an apple softens a day or two sooner than one on its own.",
+  "bild_im_kopf": "Like a contagious yawn: one ripe fruit gets the others going.",
+  "beobachtung": "The avocado in the bag gives noticeably sooner, after one to three days.",
+  "erklaerung": "The apple gives off the ripening gas [[ethylen|ethylene]]. It collects in the bag and starts the avocado ripening sooner.",
+  "dauer": "1–3 days",
+  "synonyme": [
+    "ripening avocados",
+    "ethylene experiment",
+    "avocado paper bag"
+  ],
+  "schritte": [
+    "Put one avocado in the paper bag with the apple and close it.",
+    "Leave the other avocado uncovered next to it.",
+    "Gently squeeze both each day and compare."
+  ],
+  "material": [
+    "two equally hard avocados",
+    "an apple",
+    "a paper bag"
+  ],
+  "visual": {
+    "params": {
+      "vorher": "day 1",
+      "nachher": "after 2 days",
+      "vergleich": [
+        {
+          "label": "with apple in bag",
+          "gefaess": "teller",
+          "inhalt": "keins",
+          "vorher": {
+            "farbe": "#5f7a34"
+          },
+          "nachher": {
+            "farbe": "#2f3a1e"
+          }
+        },
+        {
+          "label": "on its own",
+          "gefaess": "teller",
+          "inhalt": "keins",
+          "vorher": {
+            "farbe": "#5f7a34"
+          },
+          "nachher": {
+            "farbe": "#56702f"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "pouletbrust-trocken",
+  "typ": "symptom",
+  "titel": "Pouletbrust wird trocken",
+  "synonyme": [
+    "Hähnchenbrust trocken",
+    "Hühnerbrust zäh",
+    "Pouletbrüstli"
+  ],
+  "kurz": "Die magere Brust verliert schnell Saft, wenn sie deutlich über 70 °C gart oder ungleich dick ist.",
+  "bild_im_kopf": "Wie ein Handtuch auf der Heizung: Eben noch feucht, Minuten später steif und trocken.",
+  "ursachen": [
+    {
+      "titel": "Zu lange gegart",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "Je heißer das Eiweiß wird, desto stärker zieht es sich zusammen und presst Saft heraus. Brust hat kaum Fett, das das ausgleicht.",
+      "fix": [
+        "Thermometer: bei 70 °C herausnehmen"
+      ]
+    },
+    {
+      "titel": "Ungleich dick",
+      "haeufigkeit": 2,
+      "prinzip": "waermeleitung",
+      "warum": "Bis das dicke Ende gar ist, ist das dünne längst übergart.",
+      "fix": [
+        "Flach klopfen oder waagrecht halbieren"
+      ]
+    },
+    {
+      "titel": "Nicht vorgesalzen",
+      "haeufigkeit": 1,
+      "prinzip": "wasserbindung-salz",
+      "warum": "Salz, das eine Weile einwirkt, hilft dem Fleisch, Wasser zu halten.",
+      "fix": [
+        "Einige Stunden vorher salzen oder kurz in Salzlake legen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hast du die Temperatur gemessen und bei etwa 70 °C aufgehört?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "War die Brust an einem Ende deutlich dicker?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "kerntemperatur",
+    "fleisch-trocken",
+    "lake",
+    "w-gefluegel"
+  ],
+  "welten": [
+    "w-gefluegel"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a sliced chicken breast, dry and fibrous, on a wooden board"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fleisch: Geflügel"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

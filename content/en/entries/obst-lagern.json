@@ -1,0 +1,22 @@
+{
+  "id": "obst-lagern",
+  "titel": "Storing fruit properly",
+  "kurz": "Some fruit belongs in the fridge, some does not: it depends on whether it keeps ripening and how sensitive it is to cold.",
+  "bild_im_kopf": "Like a shared flat: whoever is noisy needs a room of their own.",
+  "was_passiert": "[[w-obst|Fruit]] keeps breathing after harvest. Cold slows this down but harms fruit from warm climates: bananas turn black, tomatoes mealy and bland. Apples and ripe bananas give off [[ethylen|ethylene]] and speed up the ripening of their neighbours.",
+  "warum_wichtig": "Stored properly, fruit often keeps twice as long and tastes better.",
+  "synonyme": [
+    "fruit in the fridge",
+    "storing bananas",
+    "tomatoes in the fridge"
+  ],
+  "faustregeln": [
+    "Never put tomatoes in the fridge if you want them to taste of anything."
+  ],
+  "schritte": [
+    "Fridge: berries, cherries, grapes and ripe apples, unwashed.",
+    "Room temperature: bananas, tomatoes, avocados, stone fruit and citrus until they are ripe.",
+    "Keep apples separate so they do not ripen other fruit too early.",
+    "Wash berries only just before eating."
+  ]
+}

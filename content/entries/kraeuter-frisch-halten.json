@@ -1,0 +1,42 @@
+{
+  "id": "kraeuter-frisch-halten",
+  "typ": "technik",
+  "titel": "Frische Kräuter lagern",
+  "synonyme": [
+    "Kräuter frisch halten",
+    "Basilikum lagern",
+    "Petersilie aufbewahren"
+  ],
+  "kurz": "Zarte Kräuter wie Blumen ins Wasser stellen, harte in ein feuchtes Tuch, und Basilikum nie in den Kühlschrank.",
+  "bild_im_kopf": "Wie ein Blumenstrauß: Mit Wasser im Glas hält er Tage, ohne welkt er in Stunden.",
+  "was_passiert": "Geschnittene Kräuter verlieren Wasser und welken. Zarte Kräuter ziehen über die Stiele Wasser nach. Basilikum stammt aus warmen Gegenden: Unter etwa 10 °C werden seine Zellen geschädigt, und die Blätter färben sich schwarz.",
+  "warum_wichtig": "Richtig gelagert halten Kräuter eine Woche statt zwei Tage.",
+  "schritte": [
+    "Petersilie, Koriander und Dill: Stiele anschneiden und in ein Glas Wasser stellen, locker mit einem Beutel abdecken, in den Kühlschrank.",
+    "Basilikum: genauso, aber bei Raumtemperatur, nicht in der Sonne.",
+    "Rosmarin, Thymian, Salbei: in ein leicht feuchtes Tuch wickeln, in den Kühlschrank.",
+    "Erst kurz vor dem Gebrauch waschen und schneiden."
+  ],
+  "faustregeln": [
+    "Mit scharfem Messer schneiden: Ein stumpfes quetscht die Blätter, sie werden dunkel."
+  ],
+  "links": [
+    "kraeuter-schwarz",
+    "enzym-braeunung",
+    "w-kraeuter-gewuerze"
+  ],
+  "welten": [
+    "w-kraeuter-gewuerze"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kräuter"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

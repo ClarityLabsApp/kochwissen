@@ -1,0 +1,78 @@
+{
+  "id": "kraeuter-schwarz",
+  "titel": "Herbs turn black",
+  "kurz": "Cold, bruising or air damage the leaf cells, and enzymes turn them dark.",
+  "bild_im_kopf": "Like a bruise on an apple: where the cells are hurt, it turns dark.",
+  "synonyme": [
+    "basil turns black",
+    "herbs darken",
+    "pesto turns dark"
+  ],
+  "ursachen": [
+    {
+      "titel": "Stored too cold",
+      "haeufigkeit": 3,
+      "prinzip": "temperatur",
+      "warum": "Basil and other herbs from warm climates suffer damage below about 10 °C.",
+      "fix": [
+        "Keep basil at room temperature in a glass of water"
+      ]
+    },
+    {
+      "titel": "Cut or chopped with a blunt knife",
+      "haeufigkeit": 2,
+      "prinzip": "enzym-braeunung",
+      "warum": "Bruised cells release an enzyme that forms brown pigments with oxygen.",
+      "fix": [
+        "Sharp knife, cut through only once"
+      ]
+    },
+    {
+      "titel": "Too long in the air",
+      "haeufigkeit": 2,
+      "prinzip": "enzym-braeunung",
+      "warum": "Chopped herbs and pesto darken in the air.",
+      "fix": [
+        "Chop just before serving",
+        "Cover pesto with oil"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Were the herbs in the fridge?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Were they finely chopped or cut with a blunt knife?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "g-cold-brew",
+  "titel": "Cold brew",
+  "kurz": "Coffee steeps for many hours in cold water: this dissolves less acid and bitterness, so it tastes mild.",
+  "bild_im_kopf": "Like slow watering instead of a cloudburst: less arrives at once, but more gently.",
+  "synonyme": [
+    "cold brew coffee",
+    "cold-brewed coffee"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Grind coffee coarsely, about 80–100 g per litre of cold water (as a guide)",
+      "warum": "A coarse grind filters off easily, and the long time makes up for the smaller surface.",
+      "prinzip": "extraktion"
+    },
+    {
+      "schritt": "Steep in the fridge for 12–24 hours",
+      "warum": "Cold water dissolves flavours slowly and leaves many acids and bitter compounds behind.",
+      "prinzip": "temperatur"
+    },
+    {
+      "schritt": "Strain through a paper filter",
+      "warum": "Fine particles would keep steeping and cloud the coffee.",
+      "prinzip": "zeit"
+    },
+    {
+      "schritt": "Dilute the concentrate with water or milk",
+      "warum": "The brew is strong. Diluted, it keeps chilled for about a week (as a guide).",
+      "prinzip": "extraktion"
+    }
+  ]
+}

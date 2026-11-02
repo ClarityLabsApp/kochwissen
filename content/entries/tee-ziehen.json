@@ -1,0 +1,44 @@
+{
+  "id": "tee-ziehen",
+  "typ": "technik",
+  "titel": "Tee richtig ziehen lassen",
+  "synonyme": [
+    "Tee aufgießen",
+    "Grüntee Temperatur",
+    "Tee bitter"
+  ],
+  "kurz": "Temperatur und Zeit bestimmen, ob Tee duftet oder bitter wird: Grüntee will es kühler und kürzer als Schwarztee.",
+  "bild_im_kopf": "Wie eine Sanduhr: Ist die Zeit um, kippt der Geschmack.",
+  "was_passiert": "Heißes Wasser löst zuerst die Duftstoffe und das Koffein, danach die herben [[gerbstoffe|Gerbstoffe]]. Je heißer und länger, desto mehr Gerbstoffe kommen dazu. Grüner Tee wird anders als Schwarztee nicht oxidiert und enthält empfindliche Stoffe, die bei kochendem Wasser schnell bitter schmecken.",
+  "warum_wichtig": "Der gleiche Tee kann mild oder bitter schmecken. Nicht die Sorte ist schuld, sondern Wasser und Uhr.",
+  "schritte": [
+    "Grüntee: Wasser auf etwa 70–80 °C abkühlen lassen, 2–3 Minuten ziehen (Richtwert).",
+    "Schwarztee: sprudelnd heißes Wasser, 3–5 Minuten ziehen (Richtwert).",
+    "Kräutertee: kochendes Wasser, 5–10 Minuten, zugedeckt, damit die Duftstoffe bleiben.",
+    "Blätter oder Beutel danach herausnehmen, nicht im Wasser lassen."
+  ],
+  "faustregeln": [
+    "Für milden Grüntee: kein kochendes Wasser, sonst wird er bitter.",
+    "Tee zu bitter? Kürzer ziehen lassen statt weniger Tee nehmen."
+  ],
+  "links": [
+    "extraktion",
+    "gerbstoffe",
+    "w-kaffee",
+    "x-tee-zitrone"
+  ],
+  "welten": [
+    "w-kaffee"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Tee"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "obst-lagern",
+  "typ": "technik",
+  "titel": "Obst richtig lagern",
+  "synonyme": [
+    "Obst Kühlschrank",
+    "Bananen lagern",
+    "Tomaten Kühlschrank"
+  ],
+  "kurz": "Manches Obst gehört in den Kühlschrank, manches nicht: Es kommt darauf an, ob es nachreift und wie kälteempfindlich es ist.",
+  "bild_im_kopf": "Wie eine Wohngemeinschaft: Wer laut ist, braucht ein eigenes Zimmer.",
+  "was_passiert": "Früchte atmen nach der Ernte weiter. Kälte bremst das, schadet aber Früchten aus warmen Gegenden: Bananen werden schwarz, Tomaten mehlig und fade. Äpfel und reife Bananen geben [[ethylen|Ethylen]] ab und beschleunigen das Reifen ihrer Nachbarn.",
+  "warum_wichtig": "Richtig gelagert hält Obst oft doppelt so lange und schmeckt besser.",
+  "schritte": [
+    "Kühlschrank: Beeren, Kirschen, Trauben und reife Äpfel, ungewaschen.",
+    "Raumtemperatur: Bananen, Tomaten, Avocados, Steinobst und Zitrusfrüchte, bis sie reif sind.",
+    "Äpfel getrennt lagern, damit sie anderes Obst nicht vorzeitig reifen lassen.",
+    "Beeren erst kurz vor dem Essen waschen."
+  ],
+  "faustregeln": [
+    "Tomaten nie in den Kühlschrank, wenn sie nach etwas schmecken sollen."
+  ],
+  "links": [
+    "ethylen",
+    "x-avocado-apfel",
+    "w-obst"
+  ],
+  "welten": [
+    "w-obst"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Früchte: Lagerung"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

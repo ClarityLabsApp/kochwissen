@@ -1,0 +1,55 @@
+{
+  "id": "g-lachs-haut",
+  "typ": "gericht",
+  "titel": "Lachs auf der Haut gebraten",
+  "synonyme": [
+    "Lachs braten",
+    "knusprige Fischhaut",
+    "Lachsfilet"
+  ],
+  "kurz": "Die Haut schützt das zarte Fleisch und wird knusprig, wenn der Fisch fast die ganze Zeit auf ihr brät.",
+  "bild_im_kopf": "Wie ein Topflappen, der zugleich knusprig wird: Die Haut schützt und brät mit.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Haut trocken tupfen und mit dem Messerrücken abstreifen",
+      "warum": "So wenig Wasser wie möglich auf der Haut: Sonst klebt sie und wird nicht knusprig.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "In gut vorgeheiztes Öl legen und die ersten Sekunden leicht andrücken",
+      "warum": "Die Haut zieht sich in der Hitze zusammen und wölbt sich. Andrücken hält sie flach auf dem Pfannenboden.",
+      "prinzip": "pfanne-vorheizen"
+    },
+    {
+      "schritt": "Etwa drei Viertel der Zeit auf der Haut braten, bis das Fleisch von unten zur Hälfte hell geworden ist",
+      "warum": "Die Haut isoliert: Das Fleisch gart sanft von unten, während die Haut bräunt.",
+      "prinzip": "waermeleitung"
+    },
+    {
+      "schritt": "Nur kurz wenden und bei etwa 50 °C Kerntemperatur herausnehmen (Richtwert)",
+      "warum": "Lachs bleibt so in der Mitte saftig und leicht glasig.",
+      "prinzip": "kerntemperatur"
+    }
+  ],
+  "links": [
+    "fisch-klebt",
+    "fisch-garprobe",
+    "pfanne-vorheizen",
+    "w-fisch"
+  ],
+  "welten": [
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a salmon fillet with golden crisp skin in a steel pan, a lemon wedge beside it"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fisch"
+    }
+  ],
+  "status": "entwurf"
+}

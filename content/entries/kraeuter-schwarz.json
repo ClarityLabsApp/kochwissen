@@ -1,0 +1,100 @@
+{
+  "id": "kraeuter-schwarz",
+  "typ": "symptom",
+  "titel": "Kräuter werden schwarz",
+  "synonyme": [
+    "Basilikum schwarz",
+    "Kräuter dunkel",
+    "Pesto wird dunkel"
+  ],
+  "kurz": "Kälte, Quetschen oder Luft zerstören die Zellen der Blätter, und [[enzym|Enzyme]] färben sie dunkel.",
+  "bild_im_kopf": "Wie ein blauer Fleck auf einem Apfel: Wo die Zellen verletzt sind, wird es dunkel.",
+  "ursachen": [
+    {
+      "titel": "Zu kalt gelagert",
+      "haeufigkeit": 3,
+      "prinzip": "temperatur",
+      "warum": "Basilikum und andere Kräuter aus warmen Gegenden nehmen unter etwa 10 °C Schaden.",
+      "fix": [
+        "Basilikum bei Raumtemperatur im Wasserglas"
+      ]
+    },
+    {
+      "titel": "Mit stumpfem Messer geschnitten oder gehackt",
+      "haeufigkeit": 2,
+      "prinzip": "enzym-braeunung",
+      "warum": "Gequetschte Zellen setzen ein Enzym frei, das mit Sauerstoff braune Farbstoffe bildet.",
+      "fix": [
+        "Scharfes Messer, nur einmal durchschneiden"
+      ]
+    },
+    {
+      "titel": "Zu lange an der Luft",
+      "haeufigkeit": 2,
+      "prinzip": "enzym-braeunung",
+      "warum": "Geschnittene Kräuter und Pesto dunkeln an der Luft nach.",
+      "fix": [
+        "Erst kurz vor dem Servieren schneiden",
+        "Pesto mit Öl bedecken"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Lagen die Kräuter im Kühlschrank?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Wurden sie fein gehackt oder mit stumpfem Messer geschnitten?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "kraeuter-frisch-halten",
+    "enzym-braeunung",
+    "g-pesto",
+    "w-kraeuter-gewuerze"
+  ],
+  "welten": [
+    "w-kraeuter-gewuerze"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a sprig of basil with blackened, limp leaves on a cold plate"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kräuter"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

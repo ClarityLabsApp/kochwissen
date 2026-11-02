@@ -1,0 +1,103 @@
+{
+  "id": "kaffee-sauer-bitter",
+  "typ": "symptom",
+  "titel": "Kaffee schmeckt sauer oder bitter",
+  "synonyme": [
+    "Kaffee sauer",
+    "Kaffee bitter",
+    "Espresso sauer"
+  ],
+  "kurz": "Sauer heißt meist zu wenig herausgelöst, bitter zu viel: Mahlgrad, Brühzeit und Wassertemperatur entscheiden.",
+  "bild_im_kopf": "Wie ein Teebeutel, den man zu früh oder zu spät herausnimmt: Dazwischen liegt der gute Moment.",
+  "ursachen": [
+    {
+      "titel": "Zu grob gemahlen oder zu kurz gebrüht",
+      "haeufigkeit": 3,
+      "prinzip": "extraktion",
+      "warum": "Säuren lösen sich zuerst. Hört das Brühen zu früh auf, fehlen Süße und Körper, und die Säure sticht hervor.",
+      "fix": [
+        "Feiner mahlen",
+        "Länger brühen"
+      ]
+    },
+    {
+      "titel": "Zu fein gemahlen oder zu lange gebrüht",
+      "haeufigkeit": 3,
+      "prinzip": "extraktion",
+      "warum": "Zuletzt lösen sich die Bitterstoffe. Zu feines Pulver oder zu lange Kontaktzeit holt sie heraus.",
+      "fix": [
+        "Gröber mahlen",
+        "Kürzer brühen"
+      ]
+    },
+    {
+      "titel": "Wasser zu kalt oder kochend",
+      "haeufigkeit": 2,
+      "prinzip": "temperatur",
+      "warum": "Unter etwa 90 °C löst das Wasser zu wenig, sprudelnd kochendes Wasser holt rasch Bitteres heraus. Gut sind etwa 92–96 °C (Richtwert).",
+      "fix": [
+        "Wasser kurz nach dem Kochen verwenden"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Ist der Kaffee eher bitter als sauer?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Mahlst du sehr fein oder brühst du länger als üblich?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "extraktion",
+    "w-kaffee",
+    "temperatur"
+  ],
+  "welten": [
+    "w-kaffee"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum",
+    "illustration": "two cups of coffee side by side, one pale and thin, one very dark and oily, a hand grinder beside them"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kaffee"
+    },
+    {
+      "titel": "Specialty Coffee Association: Brewing Control Chart"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

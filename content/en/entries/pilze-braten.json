@@ -1,0 +1,26 @@
+{
+  "id": "pilze-braten",
+  "titel": "Frying mushrooms",
+  "kurz": "Let mushrooms give up their water first, then brown them in fat and salt at the end.",
+  "bild_im_kopf": "Like puddles after rain: they have to evaporate before the ground warms up.",
+  "was_passiert": "In the hot pan, water and juice come out first. Once this juice boils away, the temperature rises and the [[w-pilze|mushrooms]] brown. Too many mushrooms at once cool the pan, and they stew in their own juice.",
+  "warum_wichtig": "The difference between grey, rubbery mushrooms and golden, savoury ones lies only in space, heat and patience.",
+  "synonyme": [
+    "frying button mushrooms",
+    "sautéing mushrooms",
+    "washing mushrooms"
+  ],
+  "faustregeln": [
+    "For brown mushrooms: salt only once they have browned, otherwise they draw water."
+  ],
+  "schritte": [
+    "Rinse or wipe the mushrooms briefly and pat them dry well.",
+    "Fry in a single layer in a large pan over high heat, in two batches if needed.",
+    "Do not stir constantly: turn only once the underside is brown.",
+    "Add butter, garlic, herbs and salt at the end."
+  ],
+  "mythos": {
+    "behauptung": "Never wash mushrooms, they soak up water.",
+    "richtig": "Hardly true. Rinsed briefly, they take up very little water. What matters is patting them dry afterwards."
+  }
+}

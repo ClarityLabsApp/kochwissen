@@ -1,0 +1,55 @@
+{
+  "id": "g-pesto",
+  "typ": "gericht",
+  "titel": "Pesto alla genovese",
+  "synonyme": [
+    "Basilikumpesto",
+    "Pesto selber machen"
+  ],
+  "kurz": "Basilikum, Pinienkerne, Käse und Öl werden zu einer grünen Paste: Je schonender man zerkleinert, desto grüner und duftender bleibt sie.",
+  "bild_im_kopf": "Wie Grünes im Sommerregen: Je weniger man es zerdrückt, desto frischer bleibt es.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Pinienkerne ohne Fett goldbraun rösten",
+      "warum": "Röstaromen machen das Pesto runder.",
+      "prinzip": "maillard-reaktion"
+    },
+    {
+      "schritt": "Basilikum im Mörser oder mit kurzen Mixer-Stößen zerkleinern",
+      "warum": "Ein lange laufender Mixer erwärmt die Blätter: Die [[enzym|Enzyme]] arbeiten schneller und das Pesto wird dunkel.",
+      "prinzip": "enzym-braeunung"
+    },
+    {
+      "schritt": "Wer es leuchtend grün will: Blätter 10 Sekunden blanchieren und abschrecken",
+      "warum": "Die kurze Hitze schaltet die bräunenden Enzyme ab, das Grün bleibt.",
+      "prinzip": "blanchieren"
+    },
+    {
+      "schritt": "Käse und Öl erst zum Schluss unterrühren und mit Öl bedecken",
+      "warum": "Die Ölschicht hält Luft fern und bremst das Nachdunkeln.",
+      "prinzip": "oxidation-fett"
+    }
+  ],
+  "links": [
+    "kraeuter-schwarz",
+    "enzym-braeunung",
+    "blanchieren",
+    "w-kraeuter-gewuerze"
+  ],
+  "welten": [
+    "w-kraeuter-gewuerze",
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a marble mortar filled with bright green basil pesto, pine nuts and basil leaves beside it"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kräuter: Pesto"
+    }
+  ],
+  "status": "entwurf"
+}

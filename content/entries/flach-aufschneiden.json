@@ -1,0 +1,42 @@
+{
+  "id": "flach-aufschneiden",
+  "typ": "technik",
+  "titel": "Geflügel flach aufschneiden",
+  "synonyme": [
+    "Spatchcock",
+    "Hähnchen flach",
+    "Rückgrat entfernen"
+  ],
+  "kurz": "Ohne Rückgrat liegt das Huhn flach: Es gart schneller und gleichmäßiger, und die ganze Haut liegt oben.",
+  "bild_im_kopf": "Wie eine Landkarte, die man auf dem Tisch ausbreitet: Flach sieht man alles auf einmal.",
+  "was_passiert": "Ein ganzes Huhn ist rund und ungleich dick. Liegt es flach, sind Brust und Keulen ähnlich weit von der Hitze entfernt. Die Keulen werden gar, bevor die Brust austrocknet.",
+  "warum_wichtig": "Die Garzeit sinkt deutlich, ungefähr um ein Drittel (Richtwert), und die Haut wird überall knusprig.",
+  "schritte": [
+    "Huhn mit der Brust nach unten hinlegen.",
+    "Mit einer Geflügelschere links und rechts entlang dem Rückgrat schneiden und es herausnehmen.",
+    "Umdrehen und mit dem Handballen kräftig auf das Brustbein drücken, bis es flach liegt.",
+    "Haut trocken tupfen, salzen und auf einem Blech braten."
+  ],
+  "faustregeln": [
+    "Rückgrat aufheben: Es gibt einen guten Fond."
+  ],
+  "links": [
+    "g-brathaehnchen",
+    "gleichmaessig-gar",
+    "fond",
+    "w-gefluegel"
+  ],
+  "welten": [
+    "w-gefluegel"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Serious Eats: Spatchcocked Chicken"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "fortgeschritten"
+}

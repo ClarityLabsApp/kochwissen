@@ -1,0 +1,73 @@
+{
+  "id": "x-avocado-apfel",
+  "typ": "experiment",
+  "titel": "Ein Apfel lässt Avocados reifen",
+  "synonyme": [
+    "Avocado nachreifen",
+    "Ethylen Experiment",
+    "Avocado Papiertüte"
+  ],
+  "kurz": "Eine harte Avocado in einer Papiertüte mit einem Apfel wird ein bis zwei Tage früher weich als eine allein.",
+  "bild_im_kopf": "Wie ein Gähnen, das ansteckt: Eine reife Frucht bringt die anderen auf Trab.",
+  "material": [
+    "zwei gleich harte Avocados",
+    "ein Apfel",
+    "eine Papiertüte"
+  ],
+  "schritte": [
+    "Eine Avocado mit dem Apfel in die Papiertüte geben und verschließen.",
+    "Die andere Avocado daneben offen liegen lassen.",
+    "Jeden Tag beide sanft drücken und vergleichen."
+  ],
+  "beobachtung": "Die Avocado in der Tüte gibt nach ein bis drei Tagen deutlich früher nach.",
+  "erklaerung": "Der Apfel gibt das Reifegas [[ethylen|Ethylen]] ab. In der Tüte sammelt es sich und setzt das Reifen der Avocado schneller in Gang.",
+  "dauer": "1–3 Tage",
+  "links": [
+    "ethylen",
+    "obst-lagern",
+    "w-obst"
+  ],
+  "welten": [
+    "w-obst"
+  ],
+  "visual": {
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "Tag 1",
+      "nachher": "nach 2 Tagen",
+      "vergleich": [
+        {
+          "label": "mit Apfel in der Tüte",
+          "gefaess": "teller",
+          "inhalt": "keins",
+          "vorher": {
+            "farbe": "#5f7a34"
+          },
+          "nachher": {
+            "farbe": "#2f3a1e"
+          }
+        },
+        {
+          "label": "allein",
+          "gefaess": "teller",
+          "inhalt": "keins",
+          "vorher": {
+            "farbe": "#5f7a34"
+          },
+          "nachher": {
+            "farbe": "#56702f"
+          }
+        }
+      ]
+    },
+    "illustration": "two avocados, one in a brown paper bag with a red apple, the other lying beside it"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Früchte: Reifung"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

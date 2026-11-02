@@ -1,0 +1,55 @@
+{
+  "id": "g-polenta",
+  "typ": "gericht",
+  "titel": "Polenta",
+  "synonyme": [
+    "Maisgrieß",
+    "Bramata",
+    "Ribelmais"
+  ],
+  "kurz": "Maisgrieß [[quellen|quillt]] in viel Flüssigkeit langsam zu einem cremigen Brei: Rühren verhindert Klumpen, Zeit macht ihn weich.",
+  "bild_im_kopf": "Wie trockene Erde nach einem langen Landregen: Sie wird weich und sämig.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Grieß unter Rühren in kochendes Salzwasser oder Brühe einrieseln, etwa 1 : 4 für weiche Polenta (Richtwert)",
+      "warum": "Jedes Körnchen soll einzeln ins Wasser kommen. Ein Klumpen [[staerkeverkleisterung|verkleistert]] außen und bleibt innen trocken.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Bei kleiner Hitze 30–45 Minuten garen und ab und zu rühren",
+      "warum": "Grober Mais braucht Zeit, bis die Stärke im Inneren aufgequollen ist.",
+      "prinzip": "quellen"
+    },
+    {
+      "schritt": "Zum Schluss Butter und Käse einrühren",
+      "warum": "Fett und Käse machen die Polenta glatt und runden den Geschmack ab.",
+      "prinzip": "cremig"
+    },
+    {
+      "schritt": "Reste auf ein Blech streichen, fest werden lassen und anbraten",
+      "warum": "Beim Abkühlen ordnet sich die Stärke neu und wird fest.",
+      "prinzip": "retrogradation"
+    }
+  ],
+  "links": [
+    "staerkeverkleisterung",
+    "quellen",
+    "retrogradation",
+    "w-getreide"
+  ],
+  "welten": [
+    "w-getreide"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a copper pot of golden creamy polenta with a wooden spoon and grated cheese"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Getreide: Mais"
+    }
+  ],
+  "status": "entwurf"
+}

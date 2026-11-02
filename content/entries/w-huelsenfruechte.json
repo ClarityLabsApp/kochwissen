@@ -1,0 +1,39 @@
+{
+  "id": "w-huelsenfruechte",
+  "typ": "welt",
+  "titel": "Hülsenfrüchte",
+  "synonyme": [
+    "Bohnen",
+    "Linsen",
+    "Kichererbsen",
+    "Erbsen"
+  ],
+  "kurz": "Getrocknete Bohnen, Linsen und Kichererbsen brauchen Wasser, Zeit und Hitze, bis Schale und Zellwände weich werden.",
+  "bild_im_kopf": "Wie ein Samen im Frühling: Erst Wasser, dann wird er wieder lebendig und weich.",
+  "was_passiert": "Beim Einweichen nehmen die getrockneten Samen Wasser auf. Beim Kochen lösen sich die Kittstoffe zwischen den Zellen ([[pektin|Pektin]]), die Stärke [[staerkeverkleisterung|verkleistert]]. Säure und Kalk halten die Zellwände fest, Natron und Salz machen sie weicher.",
+  "warum_wichtig": "Wer weiß, was Hülsenfrüchte weich macht und was sie hart hält, braucht nie mehr stundenlang auf zähe Bohnen zu warten.",
+  "faustregeln": [
+    "Bohnen und Kichererbsen einweichen, Linsen nicht.",
+    "Säure wie Tomate oder Wein erst zugeben, wenn sie weich sind.",
+    "Rote Bohnen immer mindestens 10 Minuten sprudelnd kochen."
+  ],
+  "links": [
+    "huelsenfruechte-einweichen",
+    "bohnen-nicht-weich",
+    "phasin",
+    "g-hummus",
+    "kalzium-pektin"
+  ],
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "small piles of dried beans, lentils and chickpeas in linen sacks and a wooden scoop"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Hülsenfrüchte"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

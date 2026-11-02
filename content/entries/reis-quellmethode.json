@@ -1,0 +1,43 @@
+{
+  "id": "reis-quellmethode",
+  "typ": "technik",
+  "titel": "Reis kochen mit der Quellmethode",
+  "synonyme": [
+    "Reis kochen",
+    "Reis Wassermenge",
+    "Reis Verhältnis"
+  ],
+  "kurz": "Reis gart in genau so viel Wasser, wie er aufnehmen kann, und [[quellen|quillt]] danach zugedeckt fertig.",
+  "bild_im_kopf": "Wie ein Garten, den man genau so viel gießt, wie die Erde schlucken kann.",
+  "was_passiert": "Die Stärke im Korn nimmt Wasser auf und [[staerkeverkleisterung|verkleistert]]. Ist das Wasser aufgesogen, verteilt sich die Feuchtigkeit in der Ruhezeit gleichmäßig im Korn. Waschen spült losen Stärkestaub ab, der die Körner sonst verklebt.",
+  "warum_wichtig": "Kein Abgießen, keine verlorenen Nährstoffe, und der Reis wird locker statt matschig.",
+  "schritte": [
+    "Reis waschen, bis das Wasser fast klar ist.",
+    "Mit Wasser im Verhältnis von etwa 1 : 1,5 aufkochen, Basmati eher 1 : 1,25 (Richtwert).",
+    "Deckel drauf, auf kleinster Stufe 12–15 Minuten garen.",
+    "Vom Herd nehmen und 10 Minuten zugedeckt ruhen lassen, dann auflockern."
+  ],
+  "faustregeln": [
+    "Für lockeren Reis: während des Garens den Deckel nicht heben, der Dampf gart mit."
+  ],
+  "links": [
+    "staerkeverkleisterung",
+    "reis-matschig",
+    "quellen",
+    "w-getreide"
+  ],
+  "welten": [
+    "w-getreide"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Getreide: Reis"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

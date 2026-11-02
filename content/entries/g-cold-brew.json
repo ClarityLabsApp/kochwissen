@@ -1,0 +1,53 @@
+{
+  "id": "g-cold-brew",
+  "typ": "gericht",
+  "titel": "Cold Brew",
+  "synonyme": [
+    "kalt gebrühter Kaffee",
+    "Cold Brew Kaffee"
+  ],
+  "kurz": "Kaffee zieht viele Stunden in kaltem Wasser: Das löst weniger Säure und Bitterstoffe und schmeckt darum mild.",
+  "bild_im_kopf": "Wie langsames Gießen statt eines Wolkenbruchs: Es kommt weniger auf einmal, dafür sanfter.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Kaffee grob mahlen, etwa 80–100 g auf einen Liter kaltes Wasser (Richtwert)",
+      "warum": "Grobes Pulver lässt sich gut abfiltern, und die lange Zeit gleicht die geringere Oberfläche aus.",
+      "prinzip": "extraktion"
+    },
+    {
+      "schritt": "12–24 Stunden im Kühlschrank ziehen lassen",
+      "warum": "Kaltes Wasser löst Aromen langsam und lässt viele Säuren und Bitterstoffe zurück.",
+      "prinzip": "temperatur"
+    },
+    {
+      "schritt": "Durch einen Papierfilter abgießen",
+      "warum": "Feine Teilchen würden weiter ziehen und den Kaffee trüben.",
+      "prinzip": "zeit"
+    },
+    {
+      "schritt": "Als Konzentrat mit Wasser oder Milch verdünnen",
+      "warum": "Die Mischung ist stark. Verdünnt hält sie sich gekühlt etwa eine Woche (Richtwert).",
+      "prinzip": "extraktion"
+    }
+  ],
+  "links": [
+    "extraktion",
+    "kaffee-sauer-bitter",
+    "w-kaffee"
+  ],
+  "welten": [
+    "w-kaffee"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a glass jar of cold brew coffee with a paper filter and a glass of iced coffee with milk"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kaffee"
+    }
+  ],
+  "status": "entwurf"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "haut-nicht-knusprig",
+  "titel": "Poultry skin won't crisp",
+  "kurz": "The skin is too moist or sits in steam, so its fat cannot render.",
+  "bild_im_kopf": "Like washing hung in the bathroom after a shower: nothing dries in damp air.",
+  "synonyme": [
+    "flabby chicken skin",
+    "rubbery skin",
+    "soggy skin"
+  ],
+  "ursachen": [
+    {
+      "titel": "Skin wet",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "As long as there is water on the skin, it stays at 100 °C and does not brown.",
+      "fix": [
+        "Pat dry",
+        "Dry uncovered in the fridge overnight"
+      ]
+    },
+    {
+      "titel": "Cooked in its own steam",
+      "haeufigkeit": 2,
+      "prinzip": "feuchtigkeit",
+      "warum": "A tight dish or lots of vegetables around it give off steam that keeps the skin soft.",
+      "fix": [
+        "Cook on a rack or with space around it",
+        "No lid"
+      ]
+    },
+    {
+      "titel": "Too little heat at the end",
+      "haeufigkeit": 2,
+      "prinzip": "fett-ausbraten",
+      "warum": "The fat layer under the skin must render, or the skin stays chewy.",
+      "fix": [
+        "Finish for 10 minutes on high heat or under the grill"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Was the skin completely dry before cooking?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Was the bird packed tightly in the dish or among lots of vegetables?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

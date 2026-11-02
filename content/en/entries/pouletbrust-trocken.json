@@ -1,0 +1,76 @@
+{
+  "id": "pouletbrust-trocken",
+  "titel": "Chicken breast turns out dry",
+  "kurz": "The lean breast loses juice quickly if it cooks well beyond 70 °C or is uneven in thickness.",
+  "bild_im_kopf": "Like a towel on the radiator: damp a moment ago, stiff and dry minutes later.",
+  "synonyme": [
+    "dry chicken breast",
+    "tough chicken breast"
+  ],
+  "ursachen": [
+    {
+      "titel": "Cooked too long",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-denaturierung",
+      "warum": "The hotter the protein gets, the more it contracts and squeezes out juice. Breast has hardly any fat to make up for it.",
+      "fix": [
+        "Thermometer: take it out at 70 °C"
+      ]
+    },
+    {
+      "titel": "Uneven thickness",
+      "haeufigkeit": 2,
+      "prinzip": "waermeleitung",
+      "warum": "By the time the thick end is cooked, the thin end is long overcooked.",
+      "fix": [
+        "Pound flat or slice in half horizontally"
+      ]
+    },
+    {
+      "titel": "Not salted ahead",
+      "haeufigkeit": 1,
+      "prinzip": "wasserbindung-salz",
+      "warum": "Salt given time to work helps the meat hold on to water.",
+      "fix": [
+        "Salt a few hours ahead or brine briefly"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did you measure the temperature and stop at about 70 °C?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Was the breast much thicker at one end?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

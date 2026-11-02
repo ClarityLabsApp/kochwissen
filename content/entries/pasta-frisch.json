@@ -1,0 +1,45 @@
+{
+  "id": "pasta-frisch",
+  "typ": "technik",
+  "titel": "Frische Pasta machen",
+  "synonyme": [
+    "Nudelteig",
+    "Pasta selber machen",
+    "Eierteig"
+  ],
+  "kurz": "Mehl und Ei werden geknetet, bis ein [[glutenbildung|Glutennetz]] entsteht, dann ruht der Teig, damit er sich ausrollen lässt.",
+  "bild_im_kopf": "Wie ein neuer Pullover, der nach dem Waschen erst entspannen muss, bevor er wieder passt.",
+  "was_passiert": "Beim Kneten verbinden sich die Eiweiße des Mehls zu Gluten, das Ei liefert Wasser, Fett und Farbe. Das Netz macht den Teig erst zäh und zurückschnurrend. In der [[ruhezeit|Ruhezeit]] entspannt es sich, und das Mehl nimmt das Wasser ganz auf.",
+  "warum_wichtig": "Ohne Ruhezeit reißt der Teig oder zieht sich zusammen. Frische [[w-pasta|Pasta]] gart in 2–4 Minuten, weil sie noch feucht ist.",
+  "schritte": [
+    "100 g Mehl (Tipo 00 oder halb Hartweizengrieß) pro Ei abwiegen (Richtwert).",
+    "Ei in eine Mulde im Mehl geben und nach und nach einarbeiten.",
+    "8–10 Minuten kneten, bis der Teig glatt und elastisch ist.",
+    "In Folie gewickelt 30 Minuten ruhen lassen.",
+    "Dünn ausrollen, schneiden und in kräftig gesalzenem Wasser 2–4 Minuten kochen."
+  ],
+  "faustregeln": [
+    "Teig zu trocken? Mit nassen Händen weiterkneten statt Wasser zugießen.",
+    "Teig zieht sich beim Ausrollen zurück: zugedeckt nochmals 10 Minuten ruhen lassen."
+  ],
+  "links": [
+    "glutenbildung",
+    "ruhezeit",
+    "teig-schnurrt",
+    "w-pasta"
+  ],
+  "welten": [
+    "w-pasta"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Getreide: Pasta"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "fortgeschritten"
+}

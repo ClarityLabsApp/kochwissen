@@ -1,0 +1,50 @@
+{
+  "id": "huelsenfruechte-einweichen",
+  "typ": "technik",
+  "titel": "Hülsenfrüchte einweichen",
+  "synonyme": [
+    "Bohnen einweichen",
+    "Kichererbsen einweichen",
+    "über Nacht einweichen"
+  ],
+  "kurz": "Getrocknete Bohnen und Kichererbsen über Nacht in Salzwasser einweichen: Sie garen schneller, gleichmäßiger und platzen weniger.",
+  "bild_im_kopf": "Wie Rosinen im Rum: Sie werden prall, bevor die eigentliche Arbeit beginnt.",
+  "was_passiert": "Die getrockneten Samen nehmen beim Einweichen etwa ihr eigenes Gewicht an Wasser auf. Salz im Wasser tauscht Kalk in der Schale aus, dadurch wird sie weicher. Ein Teil der schwer verdaulichen Zucker geht ins Wasser über.",
+  "warum_wichtig": "Uneingeweichte Bohnen garen außen weich und bleiben innen hart, und die Schalen reißen.",
+  "schritte": [
+    "Hülsenfrüchte verlesen und abspülen.",
+    "In der dreifachen Menge Wasser mit etwa 1 TL Salz pro Liter einweichen, 8–12 Stunden (Richtwert).",
+    "Einweichwasser weggießen und mit frischem Wasser weich kochen.",
+    "Linsen und Spalterbsen brauchen kein Einweichen."
+  ],
+  "faustregeln": [
+    "Hartes Wasser? Eine Prise [[natron|Natron]] ins Einweichwasser."
+  ],
+  "mythos": {
+    "behauptung": "Salz macht Bohnen hart.",
+    "richtig": "Stimmt nicht. Salz im Einweichwasser macht die Schale sogar weicher. Hart halten sie Säure und Kalk."
+  },
+  "links": [
+    "bohnen-nicht-weich",
+    "kalzium-pektin",
+    "natron",
+    "w-huelsenfruechte"
+  ],
+  "welten": [
+    "w-huelsenfruechte"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Hülsenfrüchte"
+    },
+    {
+      "titel": "Serious Eats: The Food Lab, Beans"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

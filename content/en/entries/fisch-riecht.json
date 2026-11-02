@@ -1,0 +1,78 @@
+{
+  "id": "fisch-riecht",
+  "titel": "Fish smells strong",
+  "kurz": "Fresh fish smells of the sea. The typical fishy smell only develops when bacteria break down substances in the flesh.",
+  "bild_im_kopf": "Like milk that only smells sour after a few days: the smell shows the age.",
+  "synonyme": [
+    "fishy smell",
+    "fish smells",
+    "removing fishy smell"
+  ],
+  "ursachen": [
+    {
+      "titel": "No longer fresh",
+      "haeufigkeit": 3,
+      "prinzip": "keimwachstum",
+      "warum": "Sea fish contains an odourless substance that bacteria break down into strong-smelling trimethylamine. The older the fish, the more of it.",
+      "fix": [
+        "Buy fresh and cook the same day"
+      ]
+    },
+    {
+      "titel": "Stored too warm",
+      "haeufigkeit": 2,
+      "prinzip": "keimwachstum",
+      "warum": "Warmth makes the bacteria work faster.",
+      "fix": [
+        "Store on ice in the coldest part of the fridge"
+      ]
+    },
+    {
+      "titel": "The smell clings to hands and pan",
+      "haeufigkeit": 1,
+      "prinzip": "saeure",
+      "warum": "Trimethylamine is a weak base. Acid such as lemon binds it and softens the smell.",
+      "fix": [
+        "Sprinkle with lemon juice",
+        "Wash hands with lemon or vinegar"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did the fish already smell strong when unwrapped?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Was it in the fridge for more than a day?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

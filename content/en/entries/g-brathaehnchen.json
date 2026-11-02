@@ -1,0 +1,32 @@
+{
+  "id": "g-brathaehnchen",
+  "titel": "Roast chicken",
+  "kurz": "Crisp skin and juicy meat at once: the skin needs dryness and heat, the breast must not get too hot.",
+  "bild_im_kopf": "Like a coat and its wearer: the coat should be dry and crisp, the wearer warm but not sweaty.",
+  "synonyme": [
+    "whole roast chicken",
+    "roasted chicken"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Salt all over the day before and store uncovered in the fridge",
+      "warum": "The salt seasons right through and keeps juice in the meat; the skin dries in the air.",
+      "prinzip": "trockensalzen"
+    },
+    {
+      "schritt": "Roast at 200–220 °C, uncovered (as a guide)",
+      "warum": "Dry heat renders the fat in the skin and browns the surface.",
+      "prinzip": "maillard-reaktion"
+    },
+    {
+      "schritt": "Check with a thermometer: breast at least 70 °C, leg better at 75–80 °C",
+      "warum": "The leg has more connective tissue and gets more tender with a little more heat; too much makes the breast dry.",
+      "prinzip": "kerntemperatur"
+    },
+    {
+      "schritt": "Rest for 10 minutes, then carve",
+      "warum": "The juices redistribute in the meat and run out less when carving.",
+      "prinzip": "ruhen-lassen"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "reis-quellmethode",
+  "titel": "Cooking rice by absorption",
+  "kurz": "Rice cooks in exactly as much water as it can absorb, then finishes [[quellen|swelling]] under the lid.",
+  "bild_im_kopf": "Like a garden watered with exactly as much as the soil can drink.",
+  "was_passiert": "The starch in the grain absorbs water and gelatinises. Once the water is taken up, the moisture spreads evenly through the grain during resting. Rinsing washes off loose starch dust that would otherwise glue the grains together.",
+  "warum_wichtig": "No draining, no lost nutrients, and the rice comes out fluffy rather than mushy.",
+  "synonyme": [
+    "how to cook rice",
+    "rice water ratio",
+    "absorption method"
+  ],
+  "faustregeln": [
+    "For fluffy rice: do not lift the lid while it cooks, the steam is part of the cooking."
+  ],
+  "schritte": [
+    "Rinse the rice until the water runs almost clear.",
+    "Bring to the boil with water at a ratio of about 1 : 1.5, basmati more like 1 : 1.25 (as a guide).",
+    "Cover and cook on the lowest heat for 12–15 minutes.",
+    "Take off the heat and rest, covered, for 10 minutes, then fluff up."
+  ]
+}

@@ -34,7 +34,8 @@
     "g-birchermueesli"
   ],
   "welten": [
-    "w-gemuese"
+    "w-gemuese",
+    "w-obst"
   ],
   "visual": {
     "vorlage": "zoom3-simulation"

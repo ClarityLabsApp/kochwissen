@@ -20,5 +20,8 @@
   ],
   "visual": {
     "vorlage": "keine"
-  }
+  },
+  "welten": [
+    "w-pilze"
+  ]
 }

@@ -1,0 +1,21 @@
+{
+  "id": "phasin",
+  "typ": "begriff",
+  "titel": "Phasin",
+  "synonyme": [
+    "rohe Bohnen giftig",
+    "Lektine"
+  ],
+  "kurz": "Ein Eiweiß in rohen Bohnen, vor allem roten Kidneybohnen, das Übelkeit und Erbrechen auslöst. Mindestens 10 Minuten sprudelndes Kochen macht es unschädlich, Garen unter dem [[siedepunkt-druck|Siedepunkt]] reicht nicht.",
+  "links": [
+    "w-huelsenfruechte",
+    "bohnen-nicht-weich"
+  ],
+  "quellen": [
+    {
+      "titel": "U.S. Food and Drug Administration: Bad Bug Book, Phytohaemagglutinin"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "pasta-zu-weich",
+  "titel": "Pasta turns soft and mushy",
+  "kurz": "The starch has swollen too far: the pasta cooked too long or kept cooking in the heat afterwards.",
+  "bild_im_kopf": "Like a bread roll left too long in the soup.",
+  "synonyme": [
+    "mushy pasta",
+    "overcooked pasta",
+    "soggy noodles"
+  ],
+  "ursachen": [
+    {
+      "titel": "Cooked too long",
+      "haeufigkeit": 3,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "The starch keeps [[quellen|swelling]] until the centre has no bite left.",
+      "fix": [
+        "Taste a minute before the packet time"
+      ]
+    },
+    {
+      "titel": "Kept cooking after draining",
+      "haeufigkeit": 2,
+      "prinzip": "nachgaren",
+      "warum": "Hot pasta in a colander or in hot sauce keeps cooking even off the heat.",
+      "fix": [
+        "Drain a little earlier",
+        "Serve with the sauce straight away"
+      ]
+    },
+    {
+      "titel": "Water not boiling enough",
+      "haeufigkeit": 1,
+      "prinzip": "staerke",
+      "warum": "If pasta goes into merely hot water, the surface dissolves before it sets and turns slimy.",
+      "fix": [
+        "Add only at a rolling boil"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did you stick to the cooking time on the packet?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did the pasta then sit for a while in the colander or sauce?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

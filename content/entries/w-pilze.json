@@ -1,0 +1,36 @@
+{
+  "id": "w-pilze",
+  "typ": "welt",
+  "titel": "Pilze",
+  "synonyme": [
+    "Champignons",
+    "Steinpilze",
+    "Pilze braten"
+  ],
+  "kurz": "Pilze bestehen zu rund 90 % aus Wasser und bringen viel [[umami|Umami]] mit: Erst wenn das Wasser weg ist, werden sie braun und würzig.",
+  "bild_im_kopf": "Wie ein Schwamm voller Brühe: Erst ausdrücken, dann rösten.",
+  "was_passiert": "Pilze geben beim Erhitzen zuerst viel Wasser ab und schrumpfen. Solange sie im eigenen Saft liegen, garen sie bei 100 °C. Ist das Wasser verdampft, bräunen sie in Fett und entwickeln Röstaromen. Ihre Zellwände bleiben dabei fest, darum werden sie kaum matschig.",
+  "warum_wichtig": "Wer Pilze geduldig brät, bis das Wasser weg ist, bekommt Geschmack statt grauer Gummistücke.",
+  "faustregeln": [
+    "Pilze in einer großen Pfanne mit Platz braten.",
+    "Salz erst, wenn sie braun sind."
+  ],
+  "links": [
+    "pilze-braten",
+    "pilze-waessrig",
+    "umami",
+    "verdampfen"
+  ],
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a basket of mixed mushrooms, button mushrooms, porcini and chanterelles on a linen cloth"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Pilze"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

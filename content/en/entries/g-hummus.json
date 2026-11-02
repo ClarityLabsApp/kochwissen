@@ -1,0 +1,32 @@
+{
+  "id": "g-hummus",
+  "titel": "Hummus",
+  "kurz": "Very soft-cooked chickpeas, sesame paste and lemon become a smooth, airy emulsion.",
+  "bild_im_kopf": "Like a down pillow made of chickpeas: the finer and airier, the softer.",
+  "synonyme": [
+    "chickpea dip",
+    "homemade hummus"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Cook soaked chickpeas with a pinch of baking soda until almost falling apart",
+      "warum": "[[natron|Baking soda]] loosens the cell walls and skins, which would otherwise stay grainy.",
+      "prinzip": "pektin-abbau"
+    },
+    {
+      "schritt": "Mix tahini with lemon juice",
+      "warum": "The sesame paste first thickens, then turns creamy: water and fat combine.",
+      "prinzip": "emulsion"
+    },
+    {
+      "schritt": "Add the chickpeas while still warm and blend for a long time",
+      "warum": "Warm, they are softer and break down more finely.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Whip with a little iced water",
+      "warum": "The water loosens the mixture and makes it pale and fluffy.",
+      "prinzip": "emulsion"
+    }
+  ]
+}

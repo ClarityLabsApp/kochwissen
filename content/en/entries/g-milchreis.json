@@ -1,0 +1,32 @@
+{
+  "id": "g-milchreis",
+  "titel": "Rice pudding",
+  "kurz": "Short-grain rice releases plenty of starch into milk and binds it into a creamy pudding when it cooks slowly.",
+  "bild_im_kopf": "Like a ball of wool slowly melting into a warm blanket.",
+  "synonyme": [
+    "creamy rice pudding",
+    "stovetop rice pudding"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Use short-grain rice and do not rinse it",
+      "warum": "Short-grain rice has a lot of starch that escapes easily. That is exactly what makes the [[milch|milk]] creamy.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Simmer gently for 30–40 minutes, stirring often",
+      "warum": "Milk proteins and [[milchzucker|lactose]] settle on the bottom and catch easily on high heat.",
+      "prinzip": "milch"
+    },
+    {
+      "schritt": "Add the sugar towards the end",
+      "warum": "Sugar binds water and slows the starch from [[quellen|swelling]].",
+      "prinzip": "zucker-feuchtigkeit"
+    },
+    {
+      "schritt": "Take it off the heat a little runnier than it should be",
+      "warum": "It thickens noticeably as it cools.",
+      "prinzip": "retrogradation"
+    }
+  ]
+}

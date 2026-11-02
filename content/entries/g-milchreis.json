@@ -1,0 +1,56 @@
+{
+  "id": "g-milchreis",
+  "typ": "gericht",
+  "titel": "Milchreis",
+  "synonyme": [
+    "Reisbrei",
+    "Milchreis Rezept",
+    "Risotto dolce"
+  ],
+  "kurz": "Rundkornreis gibt in Milch viel Stärke ab und bindet sie zu einem cremigen Brei, wenn er langsam gart.",
+  "bild_im_kopf": "Wie ein Wollknäuel, das sich langsam in einer warmen Decke auflöst.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Rundkornreis verwenden und nicht waschen",
+      "warum": "Rundkornreis hat viel Stärke, die leicht austritt. Genau sie macht die [[milch|Milch]] cremig.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Bei kleiner Hitze 30–40 Minuten köcheln und oft rühren",
+      "warum": "Milcheiweiß und [[milchzucker|Milchzucker]] setzen sich am Boden ab und brennen bei starker Hitze leicht an.",
+      "prinzip": "milch"
+    },
+    {
+      "schritt": "Zucker erst gegen Ende zugeben",
+      "warum": "Zucker bindet Wasser und bremst das [[quellen|Aufquellen]] der Stärke.",
+      "prinzip": "zucker-feuchtigkeit"
+    },
+    {
+      "schritt": "Etwas flüssiger vom Herd nehmen, als er sein soll",
+      "warum": "Beim Abkühlen dickt er deutlich nach.",
+      "prinzip": "retrogradation"
+    }
+  ],
+  "links": [
+    "staerkeverkleisterung",
+    "milch",
+    "w-getreide",
+    "w-suesses"
+  ],
+  "welten": [
+    "w-getreide",
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a bowl of creamy rice pudding dusted with cinnamon sugar, with a spoon"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Getreide: Reis"
+    }
+  ],
+  "status": "entwurf"
+}

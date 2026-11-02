@@ -1,0 +1,32 @@
+{
+  "id": "g-polenta",
+  "titel": "Polenta",
+  "kurz": "Cornmeal [[quellen|swells]] slowly in plenty of liquid into a creamy porridge: stirring prevents lumps, time makes it soft.",
+  "bild_im_kopf": "Like dry earth after a long steady rain: it turns soft and creamy.",
+  "synonyme": [
+    "cornmeal porridge",
+    "maize meal"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Rain the cornmeal into boiling salted water or stock while stirring, about 1 : 4 for soft polenta (as a guide)",
+      "warum": "Each grain should enter the water separately. A lump gelatinises on the outside and stays dry inside.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Cook on low heat for 30–45 minutes, stirring now and then",
+      "warum": "Coarse maize needs time for the starch inside to swell.",
+      "prinzip": "quellen"
+    },
+    {
+      "schritt": "Stir in butter and cheese at the end",
+      "warum": "Fat and cheese make the polenta smooth and round off the flavour.",
+      "prinzip": "cremig"
+    },
+    {
+      "schritt": "Spread leftovers on a tray, let them set and fry them",
+      "warum": "As it cools, the starch rearranges and sets.",
+      "prinzip": "retrogradation"
+    }
+  ]
+}

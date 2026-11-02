@@ -1,0 +1,38 @@
+{
+  "id": "w-kraeuter-gewuerze",
+  "typ": "welt",
+  "titel": "Kräuter & Gewürze",
+  "synonyme": [
+    "Kräuter",
+    "Gewürze",
+    "Basilikum",
+    "Pfeffer"
+  ],
+  "kurz": "Kräuter und Gewürze tragen ihr Aroma in flüchtigen Duftstoffen: Hitze, Fett und Zeit entscheiden, wie viel davon im Essen ankommt.",
+  "bild_im_kopf": "Wie Parfüm: Ein Hauch wirkt, offen stehen gelassen verfliegt es.",
+  "was_passiert": "Die Duftstoffe sitzen in kleinen Öldrüsen der Blätter und Samen. Viele lösen sich besser in Fett als in Wasser. Frische Kräuter verlieren sie beim langen Kochen, getrocknete [[gewuerze|Gewürze]] entfalten sie erst in Hitze und Fett.",
+  "warum_wichtig": "Wann und wie man würzt, macht oft mehr aus als die Menge.",
+  "faustregeln": [
+    "Harte Kräuter wie Rosmarin und Thymian früh, zarte wie Basilikum und Petersilie am Schluss.",
+    "Ganze Gewürze kurz in Fett rösten, bevor Flüssigkeit dazukommt."
+  ],
+  "links": [
+    "aroma-loeslichkeit",
+    "aroma-blooming",
+    "gewuerze",
+    "kraeuter-frisch-halten",
+    "g-pesto"
+  ],
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "bunches of fresh basil, rosemary and parsley next to a mortar with peppercorns and star anise"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kräuter und Gewürze"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,100 @@
+{
+  "id": "pasta-zu-weich",
+  "typ": "symptom",
+  "titel": "Pasta wird weich und matschig",
+  "synonyme": [
+    "Nudeln matschig",
+    "Pasta verkocht",
+    "Nudeln zu weich"
+  ],
+  "kurz": "Die Stärke ist zu weit aufgequollen: Die Pasta hat zu lange gekocht oder danach im Heißen weitergegart.",
+  "bild_im_kopf": "Wie ein Brötchen, das zu lange in der Suppe lag.",
+  "ursachen": [
+    {
+      "titel": "Zu lange gekocht",
+      "haeufigkeit": 3,
+      "prinzip": "staerkeverkleisterung",
+      "warum": "Die Stärke [[quellen|quillt]] weiter, bis der Kern keinen Biss mehr hat.",
+      "fix": [
+        "Eine Minute vor der Packungszeit probieren"
+      ]
+    },
+    {
+      "titel": "Nach dem Abgießen weitergegart",
+      "haeufigkeit": 2,
+      "prinzip": "nachgaren",
+      "warum": "Heiße Pasta im Sieb oder in heißer Sauce gart weiter, auch ohne Herd.",
+      "fix": [
+        "Etwas früher abgießen",
+        "Sofort mit der Sauce servieren"
+      ]
+    },
+    {
+      "titel": "Zu wenig sprudelndes Wasser",
+      "haeufigkeit": 1,
+      "prinzip": "staerke",
+      "warum": "Kommt Pasta in nur warmes Wasser, löst sich die Oberfläche, bevor sie fest wird, und wird schleimig.",
+      "fix": [
+        "Erst bei sprudelndem Kochen hineingeben"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hast du dich an die Kochzeit auf der Packung gehalten?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Stand die Pasta danach noch eine Weile im Sieb oder in der Sauce?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "al-dente",
+    "pasta-in-sauce",
+    "pasta-klebt",
+    "w-pasta"
+  ],
+  "welten": [
+    "w-pasta"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a bowl of overcooked, bloated, broken spaghetti looking soft and mushy"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Getreide: Pasta"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

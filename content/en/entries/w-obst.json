@@ -1,0 +1,18 @@
+{
+  "id": "w-obst",
+  "titel": "Fruit",
+  "kurz": "Fruit ripens, browns and sets by the same rules: ripening gas, enzymes, acid and pectin.",
+  "bild_im_kopf": "Like a fuse: once lit, it keeps burning even after picking.",
+  "was_passiert": "Many fruits keep ripening after harvest. A gas called [[ethylen|ethylene]] sets this off: starch turns into sugar and the flesh softens. Once cut, many fruits brown through an enzyme. Their pectin can be set into jam with sugar and acid.",
+  "warum_wichtig": "Knowing the rules means storing fruit longer, ripening it on purpose and keeping it bright.",
+  "synonyme": [
+    "fruit",
+    "apples",
+    "berries",
+    "bananas"
+  ],
+  "faustregeln": [
+    "Store apples apart from other fruit, unless you want it to ripen.",
+    "Sprinkle cut fruit with lemon."
+  ]
+}

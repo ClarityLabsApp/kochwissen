@@ -1,0 +1,33 @@
+{
+  "id": "g-lachs-haut",
+  "titel": "Pan-fried salmon, skin on",
+  "kurz": "The skin protects the delicate flesh and turns crisp if the fish cooks on it for almost the whole time.",
+  "bild_im_kopf": "Like an oven glove that turns crisp: the skin protects and fries at the same time.",
+  "synonyme": [
+    "crispy salmon skin",
+    "pan-seared salmon",
+    "salmon fillet"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Pat the skin dry and scrape it with the back of a knife",
+      "warum": "As little water on the skin as possible: otherwise it sticks and won't crisp.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "Lay it in well-heated oil and press lightly for the first few seconds",
+      "warum": "The skin contracts in the heat and curls. Pressing keeps it flat on the pan.",
+      "prinzip": "pfanne-vorheizen"
+    },
+    {
+      "schritt": "Fry about three quarters of the time skin side down, until the flesh has turned opaque halfway up",
+      "warum": "The skin insulates: the flesh cooks gently from below while the skin browns.",
+      "prinzip": "waermeleitung"
+    },
+    {
+      "schritt": "Turn only briefly and take it off at about 50 °C core temperature (as a guide)",
+      "warum": "That way salmon stays juicy and slightly translucent in the middle.",
+      "prinzip": "kerntemperatur"
+    }
+  ]
+}

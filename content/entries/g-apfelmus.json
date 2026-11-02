@@ -1,0 +1,54 @@
+{
+  "id": "g-apfelmus",
+  "typ": "gericht",
+  "titel": "Apfelmus",
+  "synonyme": [
+    "Apfelkompott",
+    "Apfelmus selber machen"
+  ],
+  "kurz": "Äpfel zerfallen in wenig Flüssigkeit zu Mus, weil Hitze das [[pektin|Pektin]] zwischen den Zellen löst.",
+  "bild_im_kopf": "Wie ein Wollpullover in der Kochwäsche: Die Maschen lösen sich, alles fällt in sich zusammen.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Mürbe Sorten wie Boskoop nehmen, für Stücke eher feste Sorten",
+      "warum": "Sorten mit lockeren Zellen zerfallen leicht, feste behalten ihre Form.",
+      "prinzip": "pektin-abbau"
+    },
+    {
+      "schritt": "Geschälte Stücke sofort mit etwas Zitronensaft mischen",
+      "warum": "Säure bremst das [[enzym|Enzym]], das die Schnittflächen braun färbt.",
+      "prinzip": "enzym-braeunung"
+    },
+    {
+      "schritt": "Mit wenig Wasser zugedeckt weich dünsten",
+      "warum": "Hitze löst das Pektin, die Äpfel geben selbst genug Saft ab.",
+      "prinzip": "pektin-abbau"
+    },
+    {
+      "schritt": "Pürieren oder durch ein Sieb streichen, erst dann süßen",
+      "warum": "So lässt sich die Süße an die Säure der Äpfel anpassen.",
+      "prinzip": "abschmecken-saeure"
+    }
+  ],
+  "links": [
+    "pektin-abbau",
+    "enzym-braeunung",
+    "w-obst"
+  ],
+  "welten": [
+    "w-obst",
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a bowl of homemade apple sauce with a cinnamon stick and two whole apples"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Früchte"
+    }
+  ],
+  "status": "entwurf"
+}

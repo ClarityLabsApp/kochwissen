@@ -1,0 +1,85 @@
+{
+  "id": "x-tee-zitrone",
+  "typ": "experiment",
+  "titel": "Zitrone macht Schwarztee hell",
+  "synonyme": [
+    "Tee Farbe Zitrone",
+    "Tee Experiment"
+  ],
+  "kurz": "Ein Spritzer Zitrone hellt Schwarztee sichtbar auf, eine Prise Natron macht ihn dunkler.",
+  "bild_im_kopf": "Wie eine Ampel im Glas: Die Farbe zeigt, ob es sauer oder basisch ist.",
+  "material": [
+    "Schwarztee, frisch aufgebrüht",
+    "drei durchsichtige Gläser",
+    "Zitronensaft",
+    "eine Prise Natron"
+  ],
+  "schritte": [
+    "Tee gleichmäßig auf drei Gläser verteilen.",
+    "Ins erste Glas einen Teelöffel Zitronensaft geben, ins zweite eine Prise Natron, das dritte so lassen.",
+    "Umrühren und die Farben vergleichen."
+  ],
+  "beobachtung": "Mit Zitrone wird der Tee hell orange, mit Natron dunkel rotbraun.",
+  "erklaerung": "Die roten und braunen Farbstoffe im Schwarztee ändern ihre Farbe mit dem [[ph-wert|pH-Wert]], ähnlich wie Rotkohlsaft. Säure macht sie heller, eine Base dunkler.",
+  "dauer": "5 Minuten",
+  "links": [
+    "ph-wert",
+    "indikator",
+    "x-rotkohl-indikator",
+    "tee-ziehen"
+  ],
+  "welten": [
+    "w-kaffee"
+  ],
+  "visual": {
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "frischer Tee",
+      "nachher": "nach dem Umrühren",
+      "vergleich": [
+        {
+          "label": "mit Zitrone",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#9a5a22"
+          },
+          "nachher": {
+            "farbe": "#d99a3e"
+          }
+        },
+        {
+          "label": "ohne",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#9a5a22"
+          },
+          "nachher": {
+            "farbe": "#9a5a22"
+          }
+        },
+        {
+          "label": "mit Natron",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#9a5a22"
+          },
+          "nachher": {
+            "farbe": "#5a2a14"
+          }
+        }
+      ]
+    },
+    "illustration": "three glasses of black tea in different shades, light orange, amber and dark red-brown, a lemon half beside them"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Tee"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

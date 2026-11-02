@@ -1,0 +1,23 @@
+{
+  "id": "milchschaum",
+  "titel": "Frothing milk",
+  "kurz": "Milk proteins wrap around beaten-in air bubbles and hold them, best at 55–65 °C (as a guide).",
+  "bild_im_kopf": "Like soap bubbles with a protein skin: the skin holds as long as it does not overheat.",
+  "was_passiert": "Frothing beats air into the [[milch|milk]]. The milk proteins gather around the bubbles and form a stable skin. If the milk gets hotter than about 70 °C, the [[eiweiss-denaturierung|proteins change]] too much: the foam collapses and the milk tastes cooked.",
+  "warum_wichtig": "Cold, fresh milk froths best. Whole milk gives creamier foam, skimmed milk more volume but drier.",
+  "synonyme": [
+    "milk foam",
+    "cappuccino foam",
+    "steamed milk"
+  ],
+  "faustregeln": [
+    "For firm foam: cold, fresh milk, heated to no more than about 65 °C.",
+    "Foam collapses at once? The milk was too hot or had been heated before."
+  ],
+  "schritte": [
+    "Pour cold milk into a cold jug, no more than a third full.",
+    "First draw in air until the volume has grown by about a third.",
+    "Then dip deeper and let the milk swirl until the jug is too hot to hold.",
+    "Tap and swirl briefly so large bubbles disappear."
+  ]
+}

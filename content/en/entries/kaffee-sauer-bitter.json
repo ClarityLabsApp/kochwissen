@@ -1,0 +1,79 @@
+{
+  "id": "kaffee-sauer-bitter",
+  "titel": "Coffee tastes sour or bitter",
+  "kurz": "Sour usually means too little was extracted, bitter too much: grind size, brewing time and water temperature decide.",
+  "bild_im_kopf": "Like a teabag taken out too early or too late: the good moment lies in between.",
+  "synonyme": [
+    "sour coffee",
+    "bitter coffee",
+    "sour espresso"
+  ],
+  "ursachen": [
+    {
+      "titel": "Ground too coarse or brewed too briefly",
+      "haeufigkeit": 3,
+      "prinzip": "extraktion",
+      "warum": "Acids dissolve first. If brewing stops too early, sweetness and body are missing and the acidity stands out.",
+      "fix": [
+        "Grind finer",
+        "Brew longer"
+      ]
+    },
+    {
+      "titel": "Ground too fine or brewed too long",
+      "haeufigkeit": 3,
+      "prinzip": "extraktion",
+      "warum": "The bitter compounds dissolve last. Too fine a grind or too long a contact time pulls them out.",
+      "fix": [
+        "Grind coarser",
+        "Brew for less time"
+      ]
+    },
+    {
+      "titel": "Water too cool or boiling",
+      "haeufigkeit": 2,
+      "prinzip": "temperatur",
+      "warum": "Below about 90 °C the water dissolves too little; water at a rolling boil quickly pulls out bitterness. About 92–96 °C works well (as a guide).",
+      "fix": [
+        "Use water just off the boil"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Is the coffee more bitter than sour?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Do you grind very fine or brew longer than usual?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "pilze-braten",
+  "typ": "technik",
+  "titel": "Pilze braten",
+  "synonyme": [
+    "Champignons braten",
+    "Pilze anbraten",
+    "Pilze waschen"
+  ],
+  "kurz": "Pilze erst ihr Wasser abgeben lassen, dann in Fett bräunen und zum Schluss salzen.",
+  "bild_im_kopf": "Wie Pfützen nach dem Regen: Erst müssen sie verdunsten, dann wird der Boden warm.",
+  "was_passiert": "In der heißen Pfanne treten zuerst Wasser und Saft aus. Kocht dieser Saft weg, steigt die Temperatur und die [[w-pilze|Pilze]] bräunen. Zu viele Pilze auf einmal kühlen die Pfanne, und sie kochen im eigenen Saft.",
+  "warum_wichtig": "Der Unterschied zwischen grau-gummigen und goldbraunen, würzigen Pilzen liegt nur in Platz, Hitze und Geduld.",
+  "schritte": [
+    "Pilze kurz abbrausen oder abreiben und gut trocken tupfen.",
+    "In einer großen Pfanne bei hoher Hitze in einer Lage braten, notfalls in zwei Portionen.",
+    "Nicht ständig rühren: Erst wenden, wenn die Unterseite braun ist.",
+    "Zum Schluss Butter, Knoblauch, Kräuter und Salz zugeben."
+  ],
+  "faustregeln": [
+    "Für braune Pilze: erst salzen, wenn sie gebräunt sind, sonst ziehen sie Wasser."
+  ],
+  "mythos": {
+    "behauptung": "Pilze darf man nicht waschen, sie saugen sich voll.",
+    "richtig": "Stimmt kaum. Kurz abgebraust nehmen sie nur wenig Wasser auf. Wichtig ist, sie danach trocken zu tupfen."
+  },
+  "links": [
+    "pilze-waessrig",
+    "osmose",
+    "maillard-reaktion",
+    "w-pilze"
+  ],
+  "welten": [
+    "w-pilze"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Pilze"
+    },
+    {
+      "titel": "Serious Eats: The Food Lab, Mushrooms"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

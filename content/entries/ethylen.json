@@ -1,0 +1,22 @@
+{
+  "id": "ethylen",
+  "typ": "begriff",
+  "titel": "Ethylen",
+  "synonyme": [
+    "Reifegas"
+  ],
+  "kurz": "Ein Gas, das reifende Früchte wie Äpfel, Bananen, Avocados und Tomaten abgeben. Es lässt Früchte in der Nähe schneller reifen und welken.",
+  "links": [
+    "obst-lagern",
+    "x-avocado-apfel",
+    "w-obst"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Früchte: Reifung"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

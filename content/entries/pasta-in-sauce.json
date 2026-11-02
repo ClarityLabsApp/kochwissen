@@ -1,0 +1,45 @@
+{
+  "id": "pasta-in-sauce",
+  "typ": "technik",
+  "titel": "Pasta in der Sauce fertig garen",
+  "synonyme": [
+    "Pasta schwenken",
+    "Pasta in der Pfanne"
+  ],
+  "kurz": "Pasta 1–2 Minuten vor dem Ende abgießen und mit etwas Nudelwasser in der Sauce fertig garen: So nimmt sie Geschmack auf und die Sauce haftet.",
+  "bild_im_kopf": "Wie Brot, das man in die Suppe tunkt: Es nimmt auf, was zuletzt um es herum ist.",
+  "was_passiert": "In den letzten Minuten nimmt die [[w-pasta|Pasta]] noch Flüssigkeit auf. Gart sie in der Sauce statt im Wasser, saugt sie Sauce statt Wasser. Gleichzeitig gibt sie Stärke ab, die zusammen mit dem Nudelwasser Fett und Flüssigkeit zu einer sämigen Sauce bindet.",
+  "warum_wichtig": "Abgegossene Pasta mit Sauce obendrauf bleibt fade, und die Sauce rutscht ab.",
+  "schritte": [
+    "Eine Tasse Nudelwasser aufheben.",
+    "Pasta 1–2 Minuten vor der Packungszeit abgießen.",
+    "In die heiße Sauce geben, einen Schuss Nudelwasser dazu.",
+    "Unter Schwenken 1–2 Minuten garen, bis die Sauce glänzt und an der Pasta haftet."
+  ],
+  "faustregeln": [
+    "Sauce zu dick? Mehr Nudelwasser. Zu dünn? Weiter schwenken, die Stärke bindet."
+  ],
+  "links": [
+    "mantecare",
+    "staerkeverkleisterung",
+    "emulsion",
+    "w-pasta"
+  ],
+  "welten": [
+    "w-pasta"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Getreide: Pasta"
+    },
+    {
+      "titel": "Serious Eats: The Food Lab, Pasta"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

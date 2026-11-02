@@ -1,0 +1,65 @@
+{
+  "id": "x-tee-zitrone",
+  "titel": "Lemon turns black tea pale",
+  "kurz": "A squeeze of lemon visibly lightens black tea; a pinch of baking soda makes it darker.",
+  "bild_im_kopf": "Like a traffic light in a glass: the colour shows whether it is acidic or alkaline.",
+  "beobachtung": "With lemon the tea turns light orange, with baking soda dark red-brown.",
+  "erklaerung": "The red and brown pigments in black tea change colour with the pH, much like red cabbage juice. Acid makes them lighter, a base darker.",
+  "dauer": "5 minutes",
+  "synonyme": [
+    "tea colour lemon",
+    "tea experiment"
+  ],
+  "schritte": [
+    "Divide the tea evenly between three glasses.",
+    "Add a teaspoon of lemon juice to the first, a pinch of baking soda to the second, leave the third as it is.",
+    "Stir and compare the colours."
+  ],
+  "material": [
+    "freshly brewed black tea",
+    "three clear glasses",
+    "lemon juice",
+    "a pinch of baking soda"
+  ],
+  "visual": {
+    "params": {
+      "vorher": "fresh tea",
+      "nachher": "after stirring",
+      "vergleich": [
+        {
+          "label": "with lemon",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#9a5a22"
+          },
+          "nachher": {
+            "farbe": "#d99a3e"
+          }
+        },
+        {
+          "label": "plain",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#9a5a22"
+          },
+          "nachher": {
+            "farbe": "#9a5a22"
+          }
+        },
+        {
+          "label": "with soda",
+          "gefaess": "glas",
+          "inhalt": "fluessig",
+          "vorher": {
+            "farbe": "#9a5a22"
+          },
+          "nachher": {
+            "farbe": "#5a2a14"
+          }
+        }
+      ]
+    }
+  }
+}
