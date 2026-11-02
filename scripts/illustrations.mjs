@@ -33,6 +33,11 @@ let jobs = readdirSync(dir).filter((f) => f.endsWith(".json"))
   .filter((e) => e.visual?.illustration)
   .filter((e) => !only || only.includes(e.id))
   .filter((e) => !existsSync(join(outDir, `${e.id}.webp`)) && !existsSync(join(outDir, `${e.id}.png`)));
+// Zusätzliche Motive ohne eigenen Eintrag (z. B. Kategoriebilder cat-<typ>) aus content/illustrationen-extra.json
+const extraPath = join(root, "content/illustrationen-extra.json");
+if (existsSync(extraPath)) for (const [id, illustration] of Object.entries(JSON.parse(readFileSync(extraPath, "utf8")))) {
+  if ((!only || only.includes(id)) && !existsSync(join(outDir, `${id}.webp`)) && !existsSync(join(outDir, `${id}.png`))) jobs.push({ id, visual: { illustration } });
+}
 if (test) jobs = jobs.filter((e) => ["w-brot", "mehl", "zwiebel", "schokolade"].includes(e.id)).slice(0, 4);
 
 console.log(`${jobs.length} Illustration(en) zu erzeugen mit ${model} (${quality}).`);

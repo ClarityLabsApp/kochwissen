@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { search } from "@/lib/search";
 import { href, t, type Lang } from "@/lib/i18n";
-import Molecule from "./Molecule";
+import Contents from "./Contents";
 
 export interface LibItem {
   id: string; typ: string; titel: string; status: string; pilot: boolean;
@@ -197,7 +197,7 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
       <h2 id="bibliothek" className={`libhead${!res && active.size > 0 ? " cat" : ""}`}>{res ? S.allHits : active.size ? T.types[[...active][0]][0] : S.whole}</h2>
       {!res && !active.size && (
         <>
-          <Molecule items={items} lang={lang} onAll={openType} pics={has} />
+          <Contents items={items} lang={lang} onOpen={openType} pics={has} />
           <div className="mol-terms">
             <button type="button" className="linkbtn" onClick={() => openType("begriff")}>{T.mol.terms} ({items.filter((e) => e.typ === "begriff").length}) →</button>
           </div>

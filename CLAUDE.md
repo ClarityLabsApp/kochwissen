@@ -121,6 +121,6 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - [ ] Weitere Gerichte und Experimente (Vorher-Nachher-Grafik steht, neue Experimente brauchen `params.vergleich`)
 - [ ] Semantische Suche (z. B. pgvector) als Ergänzung; bis dahin fehlende Alltagswörter in `THESAURUS` nachtragen
 - [x] 45 Aquarell-Illustrationen (Welten und Zutaten) in `public/illustrationen/<id>.webp`, Anzeige im Seitenkopf. Neue Motive: `visual.illustration` setzen, `npm run illustrationen -- --only id1,id2` (schreibt WebP mit transparentem Hintergrund; ältere Bilder wurden per Skript freigestellt und beschnitten)
-- [x] Startseite: Bibliothek als Molekül (`components/Molecule.tsx`) statt langer Kategorienliste; „Symptome“ heissen jetzt „Probleme“ (2. November 2026)
+- [x] Startseite: Bibliothek als illustriertes Inhaltsverzeichnis (`components/Contents.tsx`, Kapitel Was passiert / Womit / Wofür) statt Kategorienliste; das Molekül wurde wieder entfernt. Kategoriebilder `cat-<typ>` aus `content/illustrationen-extra.json`, bis dahin Stellvertreterbilder. „Symptome“ heissen jetzt „Probleme“ (2. November 2026)
 - [x] Englische Version: Gerüst, alle 286 Einträge, Lernpfade mit Quiz, Animationstexte (2. November 2026)
 - [x] Glossar-Prüfung: `npm run glossar` (Bericht), `npm run glossar -- --fix` (verlinkt erstes Vorkommen). Fachwörter und Ausnahmen in `scripts/glossar.mjs`
