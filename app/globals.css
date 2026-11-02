@@ -121,7 +121,7 @@ details.more[open] > summary { margin-bottom: 8px; }
 @media (prefers-reduced-motion: reduce) { .vis-step, .vis .steam, .vis .bubble { animation: none; } }
 
 .sim-canvas { width: 100%; height: 260px; display: block; background: rgba(246, 238, 221, .6); border: 1px solid var(--rule); }
-.seg { display: inline-flex; border: 1px solid var(--ink); border-radius: 2px; overflow: hidden; }
+.seg { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--ink); border-radius: 2px; overflow: hidden; }
 .seg button { font: 600 12px var(--f-mono); background: var(--paper); color: var(--ink); border: 0; padding: 7px 10px; cursor: pointer; }
 .seg button + button { border-left: 1px solid var(--ink); }
 .seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper-2); }
