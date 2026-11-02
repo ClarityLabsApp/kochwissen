@@ -13,8 +13,11 @@ export function generateStaticParams() {
   return allIds().map((id) => ({ id }));
 }
 
-export function generateMetadata({ params }: { params: { id: string } }): Metadata {
-  return { title: titleOf(params.id) };
+type Params = { params: Promise<{ id: string }> };
+
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+  const { id } = await params;
+  return { title: titleOf(id) };
 }
 
 function Chips({ ids }: { ids: string[] }) {
@@ -33,7 +36,8 @@ function Chips({ ids }: { ids: string[] }) {
   );
 }
 
-export default function EntryPage({ params }: { params: { id: string } }) {
+export default async function EntryPage(props: Params) {
+  const params = await props.params;
   const e = getEntry(params.id);
   const m = getMasterItem(params.id);
   if (!e && !m) notFound();
