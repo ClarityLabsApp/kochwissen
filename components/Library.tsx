@@ -29,6 +29,7 @@ const THEMES: [string, string, string[]][] = [
   ["Gärung und Lockerung", "Fermentation and raising", ["hefegaerung", "milchsaeuregaerung", "chemische-lockerung", "keimwachstum"]],
   ["Geschmack", "Taste", ["umami", "salz-geschmack", "schaerfe"]],
 ];
+const THEME_PIC = ["cat-prozess", "salz", "eiweiss", "staerke", "oel", "hefe", "gewuerze"];
 const DAILY = new Set(["prozess", "gericht", "experiment", "labor"]);
 export interface PfadCard { id: string; titel: string; n: number; dauer: string; fuer: string; pics?: string[] }
 
@@ -87,18 +88,19 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
   }, []);
   const plain = (s: string) => s.replace(/\[\[[a-z0-9-]+\|([^\]]+)\]\]/g, "$1").replace(/\[\[([a-z0-9-]+)\]\]/g, (_, id) => byId.get(id)?.titel ?? id);
 
-  const subgroups = (typ: string, g: LibItem[]): [string, LibItem[]][] => {
+  // Untergruppen einer Kategorie: [Name, Einträge, Bild]. Prozesse nach Themen, sonst nach erster Welt.
+  const subgroups = (typ: string, g: LibItem[]): [string, LibItem[], string | null][] => {
     if (typ === "prozess") {
-      const out: [string, LibItem[]][] = THEMES.map(([de, en, ids]) => [lang === "en" ? en : de, ids.map((id) => g.find((e) => e.id === id)).filter(Boolean) as LibItem[]]);
+      const out: [string, LibItem[], string | null][] = THEMES.map(([de, en, ids], i) => [lang === "en" ? en : de, ids.map((id) => g.find((e) => e.id === id)).filter(Boolean) as LibItem[], has.has(THEME_PIC[i]) ? THEME_PIC[i] : null]);
       const seen = new Set(THEMES.flatMap((x) => x[2]));
       const rest = g.filter((e) => !seen.has(e.id));
-      if (rest.length) out.push([lang === "en" ? "Other" : "Weitere", rest]);
+      if (rest.length) out.push([lang === "en" ? "Other" : "Weitere", rest, null]);
       return out.filter(([, r]) => r.length);
     }
     const m = new Map<string, LibItem[]>();
     for (const e of g) { const w = e.welten?.[0] ?? ""; m.set(w, [...(m.get(w) ?? []), e]); }
     return [...m.entries()].sort((a, b) => (a[0] ? 0 : 1) - (b[0] ? 0 : 1) || b[1].length - a[1].length)
-      .map(([w, r]) => [w ? (byId.get(w)?.titel ?? w) : (lang === "en" ? "Other" : "Weitere"), r]);
+      .map(([w, r]) => [w ? (byId.get(w)?.titel ?? w) : (lang === "en" ? "Other" : "Weitere"), r, w && has.has(w) ? w : null]);
   };
   let list = items.filter((e) => (!active.size || active.has(e.typ)) && (!res || res.has(e.id)));
   if (res) list = [...list].sort((a, b) => res.get(b.id)! - res.get(a.id)!);
@@ -256,14 +258,21 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
                   const sg = subgroups(t, g), cur = sg.find(([n]) => n === sub) ?? sg[0];
                   return (
                     <div className="rowgroups">
-                      {sg.length > 1 && <div className="typechips subchips" role="group">
-                        {sg.map(([n, r]) => (
-                          <button key={n} type="button" className="typechip" aria-pressed={cur[0] === n} onClick={() => setSub(n)}>{n}<span>{r.length}</span></button>
+                      {sg.length > 1 && <div className="themes" role="group">
+                        {sg.map(([n, r, pic]) => (
+                          <button key={n} type="button" className="theme" aria-pressed={cur[0] === n} onClick={() => setSub(n)}>
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            {pic ? <img src={`/illustrationen/${pic}.webp`} alt="" width={64} height={64} loading="lazy" /> : <span className="theme-ph" />}
+                            <span>{n}</span><small>{r.length}</small>
+                          </button>
                         ))}
                       </div>}
                       <ul className="rows">
                         {cur[1].map((e) => (
-                          <li key={e.id}><Link href={ln(`/eintrag/${e.id}`)}><strong>{e.titel}{e.status === "geprueft" ? " ✓" : ""}</strong></Link></li>
+                          <li key={e.id}><Link href={ln(`/eintrag/${e.id}`)} className={has.has(e.id) ? "with-pic" : ""}>
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            {has.has(e.id) && <img src={`/illustrationen/${e.id}.webp`} alt="" width={36} height={36} loading="lazy" />}
+                            <strong>{e.titel}{e.status === "geprueft" ? " ✓" : ""}</strong></Link></li>
                         ))}
                       </ul>
                     </div>

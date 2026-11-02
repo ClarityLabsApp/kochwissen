@@ -491,3 +491,13 @@ article.entry > details.sec + details.sec { margin-top: calc(-1 * var(--egap) - 
 .toc-ch .ct { font: 600 15px var(--f-mono); color: var(--sepia); font-variant-numeric: tabular-nums; }
 .toc-ch button:hover .nm { color: var(--crust); }
 .toc-ch button:focus-visible { outline: 2px solid var(--crust); outline-offset: 2px; }
+/* Themen mit Bild statt Text-Chips */
+.themes { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 8px; padding-bottom: 8px; }
+.theme { display: flex; flex-direction: column; align-items: center; gap: 4px; background: var(--paper-2); border: 1px solid var(--rule); border-radius: 2px; padding: 8px 6px 7px; cursor: pointer; color: var(--ink); text-align: center; }
+.theme img { width: 64px; height: 64px; object-fit: contain; }
+.theme .theme-ph { width: 64px; height: 64px; border-radius: 50%; border: 1.5px dashed var(--rule); }
+.theme span { font: 600 13px/1.2 var(--f-display); }
+.theme small { font: 11px var(--f-mono); color: var(--sepia); }
+.theme[aria-pressed="true"] { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); background: #fbf5e8; }
+.theme:hover { border-color: var(--sepia); }
+@media (max-width: 700px) { .themes { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 92px; overflow-x: auto; scrollbar-width: none; margin-right: -16px; padding-right: 16px; } .themes::-webkit-scrollbar { display: none; } .theme img, .theme .theme-ph { width: 52px; height: 52px; } }
