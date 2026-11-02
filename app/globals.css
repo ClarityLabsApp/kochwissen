@@ -376,3 +376,6 @@ footer.site { border-top: 1px solid var(--rule); padding-top: 14px; display: fle
 .group.solo > summary h3 { font-size: 0; }
 .group.solo > summary h3 small { font-size: 15px; font-family: var(--f-body); font-style: italic; color: var(--sepia); letter-spacing: 0; text-transform: none; }
 .group.solo > summary::after { display: none; }
+
+.brand { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; }
+.brand img { width: 28px; height: 28px; border-radius: 6px; display: block; }

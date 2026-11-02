@@ -12,7 +12,7 @@ export default function SiteNav() {
   useEffect(() => { document.documentElement.lang = lang; }, [lang]);
   return (
     <div className="sitebar">
-      <Link href={href(lang, "/")} className="brand" aria-label="Garum">Gar<em>um</em></Link>
+      <Link href={href(lang, "/")} className="brand" aria-label="Garum">{/* eslint-disable-next-line @next/next/no-img-element */}<img src="/logo.svg" alt="" width={28} height={28} /><span>Gar<em>um</em></span></Link>
       <nav className="topnav" aria-label="Navigation">
         <Link href={href(lang, "/")}>{T.nav.library}</Link>
         <Link href={href(lang, "/pfad")}>{T.nav.paths}</Link>
