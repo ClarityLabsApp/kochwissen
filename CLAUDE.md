@@ -15,7 +15,7 @@ Lies vor jeder Arbeit auch **`DESIGN.md`** (Bildsprache, Farben, Vorlagen). Was 
 | `lib/content.ts` | Lädt Inhalte, zerlegt Glossar-Markierungen |
 | `app/` | Next.js App Router: Bibliothek `/`, Eintrag `/eintrag/[id]` |
 | `lib/search.ts` | Suche: gewichtet (Titel 3, Synonyme 2.5, Kurz 1), deutsche Stammformen, Tippfehler, Wörterbuch `THESAURUS` (Problem ↔ Ziel), „Beste Antwort“ |
-| `content/lernpfade.json` | Lernpfade: geführte Reihen von Einträgen (`id`, `titel`, `kurz`, `fuer`, `dauer`, `schritte[{id, warum}]`). Seiten `/pfad`, `/pfad/[id]`; auf Eintragsseiten Navigation mit `?pfad=…`, Fortschritt im Browser |
+| `content/lernpfade.json` | Lernpfade: geführte Reihen von Einträgen (`id`, `titel`, `kurz`, `fuer`, `dauer`, `schritte[{id, warum}]`, `quiz[{frage, antworten, richtig, erklaerung, eintrag}]`). Seiten `/pfad`, `/pfad/[id]`; auf Eintragsseiten Navigation mit `?pfad=…`, Fortschritt im Browser |
 | `components/` | Library (Startseite: drei Einstiege, Eintrag des Tages, Lernpfade, Welten, Suche, Bibliothek), PathSteps, PathNav, Diagnosis, Term (Glossar-Popup), RichText |
 | `public/prototypen/` | Die drei ursprünglichen HTML-Prototypen, nur noch als Referenz (alle als Komponenten nachgebaut) |
 
@@ -72,7 +72,7 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - `PanTest` – Symptome mit `vorlage: pfannentest`, `params.variante`: pfanne | backblech | fritteuse
 - `DotNet` – Ziele (Hebel ↔ Techniken) und Zutaten (Rolle ↔ Vorgang)
 - `Spectrum` – Skala für Stellschrauben und Anthocyane (`params.links`, `mitte`, `rechts`)
-- `ParticleSim` – Canvas-Simulationen pro Prozess (emulsion, osmose, pektin-abbau, reduktion, hefegaerung, chemische-lockerung, waermeleitung, schaumbildung, diffusion, zucker-kristallisation, leidenfrost, gelbildung-pektin, chlorophyll-farbe, eiweiss-denaturierung, glutenbildung, karamellisierung, eiskristalle, siedepunkt-druck, enzym-zartmachen). Neue Presets dort anlegen und in `SIMS` in `Visual.tsx` eintragen
+- `ParticleSim` – Canvas-Simulationen pro Prozess (emulsion, osmose, pektin-abbau, reduktion, hefegaerung, chemische-lockerung, waermeleitung, schaumbildung, diffusion, zucker-kristallisation, leidenfrost, gelbildung-pektin, chlorophyll-farbe, eiweiss-denaturierung, glutenbildung, karamellisierung, eiskristalle, siedepunkt-druck, enzym-zartmachen, verdampfen, staerkeverkleisterung, kollagen-gelatine, konvektion, dampflockerung, milchsaeuregaerung). Neue Presets dort anlegen und in `SIMS` in `Visual.tsx` eintragen
 - `MaillardSim` – Maillard-Reaktion in drei Zoomstufen (Gericht, Oberfläche, Moleküle), ersetzt den alten Prototyp
 - `ExperimentCompare` – Vorher-Nachher für Experimente: `vorlage: vergleich`, `params.vergleich` = Felder mit `gefaess` (glas, flasche, schuessel, teller, pfanne), `inhalt`, `vorher`/`nachher` (farbe, fuell, trueb, schaum, blasen, ballon, kristalle, tropfen, klumpen, bodensatz, tanzen)
 - Kein Prototyp mehr per iframe: `PROTOTYPES` in `lib/content.ts` ist leer, „Steak grau“ nutzt `PanTest`
@@ -93,6 +93,8 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - [x] Startseite mit drei Einstiegen (Problem, Ziel, Verstehen), Eintrag des Tages, 5 Lernpfade, 6 Schweizer Gerichte (`gen_batch_schweiz.py`)
 - [ ] Bilder für 53 Gerichte, Experimente und Labor-Rezepte erzeugen: Motive stehen in `visual.illustration`, `npm run illustrationen` erzeugt nur fehlende
 - [x] Seitenbeschreibungen, Vorschaubilder (Open Graph), Sitemap, robots.txt; Druckansicht mit Knopf bei Experimenten und Labor; Sprunglink zum Inhalt
+- [x] Quiz am Ende jedes Lernpfads (29 Fragen), 6 neue Simulationen (Verdampfen, Stärke, Kollagen, Konvektion, Blätterteig, Milchsäuregärung)
+- [ ] Weitere Simulationen für Prozesse ohne Animation (z. B. Umami, Oxidation Fett, Wärmestrahlung, Säure gart Eiweiß, Fett ausbraten)
 - [ ] Weitere Gerichte und Experimente (Vorher-Nachher-Grafik steht, neue Experimente brauchen `params.vergleich`)
 - [ ] Semantische Suche (z. B. pgvector) als Ergänzung; bis dahin fehlende Alltagswörter in `THESAURUS` nachtragen
 - [x] 45 Aquarell-Illustrationen (Welten und Zutaten) in `public/illustrationen/<id>.webp`, Anzeige im Seitenkopf. Neue Motive: `visual.illustration` setzen, `npm run illustrationen -- --only id1,id2` (schreibt WebP mit transparentem Hintergrund; ältere Bilder wurden per Skript freigestellt und beschnitten)

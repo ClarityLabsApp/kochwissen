@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 const C = { water: "#8fb8c9", waterRim: "#5f8fa3", fat: "#f0d27a", fatRim: "#c9a24a", lab: "#2f6f73", salt: "#ffffff", sepia: "#7a5a3a",
   ink: "#2b2118", roast: "#6b3a1e", nut: "#b8873a", caramel: "#d9822b", meat: "#c97b72", meatRim: "#a9564e", cell: "#c8d9a8", cellRim: "#7f9a5a", sugar: "#e0ad3a" };
 
-export type Preset = "emulsion" | "osmose" | "pektin-abbau" | "reduktion" | "hefegaerung" | "chemische-lockerung" | "waermeleitung" | "schaumbildung" | "diffusion" | "zucker-kristallisation" | "leidenfrost" | "gelbildung-pektin" | "chlorophyll-farbe" | "eiweiss-denaturierung" | "glutenbildung" | "karamellisierung" | "eiskristalle" | "siedepunkt-druck" | "enzym-zartmachen";
+export type Preset = "emulsion" | "osmose" | "pektin-abbau" | "reduktion" | "hefegaerung" | "chemische-lockerung" | "waermeleitung" | "schaumbildung" | "diffusion" | "zucker-kristallisation" | "leidenfrost" | "gelbildung-pektin" | "chlorophyll-farbe" | "eiweiss-denaturierung" | "glutenbildung" | "karamellisierung" | "eiskristalle" | "siedepunkt-druck" | "enzym-zartmachen" | "verdampfen" | "staerkeverkleisterung" | "kollagen-gelatine" | "konvektion" | "dampflockerung" | "milchsaeuregaerung";
 
 interface Ctl { a: number; b: boolean; ph: number }
 interface Sim {
@@ -771,7 +771,194 @@ const enzymSchere: Sim = {
   readouts(s, c) { const share = s.B.filter((b: any) => !b.cut).length / s.B.length; return [["Enzyme", c.b ? "abgeschaltet" : "aktiv"], ["Netz", share < 0.1 ? "ganz" : share < 0.45 ? "gelockert" : "zerfallen"]]; },
 };
 
-const PRESETS: Record<Preset, Sim> = { emulsion, osmose, "pektin-abbau": pektin, reduktion, hefegaerung: hefe, "chemische-lockerung": lockerung, waermeleitung: waerme, schaumbildung: schaum, diffusion, "zucker-kristallisation": kristall, leidenfrost: leiden, "gelbildung-pektin": pektinGel, "chlorophyll-farbe": gruen, "eiweiss-denaturierung": eiweiss, glutenbildung: gluten, karamellisierung: karamell, eiskristalle: eis, "siedepunkt-druck": siede, "enzym-zartmachen": enzymSchere };
+const clamp = (v: number, a: number, b: number) => Math.max(a, Math.min(b, v));
+
+/* ---------------- Verdampfen: Die Oberfläche hängt bei 100 °C, bis das Wasser weg ist ---------------- */
+const verdampf: Sim = {
+  title: "Ebene 2 · Fleischoberfläche in der Pfanne", scale: "≈ 1 mm",
+  controls: { slider: { label: "Pfanne", min: 120, max: 240, step: 5, def: 200, fmt: (v) => `${Math.round(v)} °C` }, toggle: { label: "vorher trocken getupft", def: false }, reset: true },
+  init(W) { return { wet: 1, T: 20, t: 0, drops: Array.from({ length: 14 }, (_, i) => ({ x: 14 + i * ((W - 60) / 13), r: rnd(4, 7) })), steam: [] as any[], started: false }; },
+  step(s, dt, c, W, H) {
+    if (s.lastB !== c.b) { s.wet = c.b ? 0.15 : 1; s.T = 20; s.t = 0; s.lastB = c.b; } // Umschalten startet neu
+    s.t += dt;
+    const pan = c.a;
+    if (s.wet > 0) { s.T = Math.min(100, s.T + dt * 60); if (s.T >= 99.5) s.wet = Math.max(0, s.wet - ((pan - 100) / 140) * 0.12 * dt); }
+    else s.T += (Math.min(pan - 30, 200) - s.T) * dt * 0.6;
+    if (s.wet > 0 && s.T >= 99.5 && Math.random() < dt * 25) { const left = Math.random() < 0.5; s.steam.push({ x: left ? rnd(2, 10) : rnd(W - 64, W - 50), y: H * 0.7, life: 0 }); }
+    for (const q of s.steam) { q.y -= 40 * dt; q.x += Math.sin(q.life * 4) * 0.4; q.life += dt; }
+    s.steam = s.steam.filter((q: any) => q.life < 1.6);
+  },
+  draw(g, s, _c, W, H) {
+    const base = H * 0.74, gapH = 10 * Math.sqrt(s.wet), top = H * 0.4, bottom = base - 2 - gapH, brown = clamp((s.T - 140) / 60, 0, 1);
+    g.fillStyle = "#3a3633"; g.fillRect(0, base, W - 46, H - base);
+    g.fillStyle = "#c97b72"; g.fillRect(0, top, W - 46, bottom - top);
+    g.fillStyle = `rgb(${Math.round(201 - brown * 90)},${Math.round(123 - brown * 60)},${Math.round(114 - brown * 70)})`; g.fillRect(0, bottom - 8, W - 46, 8);
+    for (const d of s.drops) { const r = Math.min(d.r, 5) * Math.sqrt(s.wet); if (r > 0.6) dot(g, d.x, base - 1 - r, r, C.water, C.waterRim, .8); }
+    for (const q of s.steam) { g.strokeStyle = `rgba(143,184,201,${1 - q.life / 1.6})`; g.lineWidth = 1.5; g.beginPath(); g.moveTo(q.x, q.y); g.quadraticCurveTo(q.x - 4, q.y - 6, q.x, q.y - 12); g.stroke(); }
+    g.fillStyle = C.ink; g.font = "10px JetBrains Mono, monospace"; g.fillText("Fleisch", 8, top + 16); g.fillStyle = "#f3e7d3"; g.fillText("Pfanne", 8, base + 16);
+    const tx = W - 24, t0 = 14, t1 = base - 6, y = t1 - (clamp(s.T, 0, 220) / 220) * (t1 - t0);
+    g.strokeStyle = C.ink; g.lineWidth = 1; g.strokeRect(tx - 5, t0, 10, t1 - t0);
+    g.fillStyle = s.T > 139 ? "#b4542a" : "#8fb8c9"; g.fillRect(tx - 4, y, 8, t1 - y);
+    for (const [c, l] of [[100, "100"], [140, "140"]] as const) { const yy = t1 - (c / 220) * (t1 - t0); g.beginPath(); g.moveTo(tx - 9, yy); g.lineTo(tx - 5, yy); g.stroke(); g.fillStyle = C.ink; g.font = "10px JetBrains Mono, monospace"; g.fillText(l, tx - 32, yy + 3); }
+  },
+  status(s) {
+    if (s.T < 99) return "Die Oberfläche erwärmt sich.";
+    if (s.wet > 0.02) return "Das Wasser verdampft. Solange noch ein Tropfen da ist, bleibt die Oberfläche bei 100 °C hängen, egal wie heiß die Pfanne ist.";
+    if (s.T < 140) return "Das Wasser ist weg. Jetzt steigt die Temperatur über 100 °C.";
+    return "Trocken und über 140 °C: Jetzt bräunt die Oberfläche.";
+  },
+  readouts(s) { return [["Oberfläche", `${Math.round(s.T)} °C`], ["Wasser", `${Math.round(s.wet * 100)} %`], ["Zeit", `${Math.round(s.t)} s`]]; },
+};
+
+/* ---------------- Stärkeverkleisterung: Körner nehmen Wasser auf, quellen und platzen ---------------- */
+const staerke: Sim = {
+  title: "Ebene 3 · Stärkekörner in Wasser", scale: "≈ 0,05 mm",
+  controls: { slider: { label: "Temperatur", min: 20, max: 98, step: 1, def: 20, fmt: (v) => `${Math.round(v)} °C` } },
+  init(W, H) { return { G: Array.from({ length: 9 }, (_, i) => ({ x: 40 + (i % 3) * ((W - 80) / 2), y: 40 + Math.floor(i / 3) * ((H - 80) / 2), a: rnd(0, 3), ph: rnd(0, 6) })), Wd: Array.from({ length: 90 }, () => ({ x: rnd(6, W - 6), y: rnd(6, H - 6), ph: rnd(0, 6) })) }; },
+  step() {},
+  draw(g, s, c, W, H, t) {
+    const T = c.a, swell = clamp((T - 58) / 22, 0, 1), burst = clamp((T - 82) / 12, 0, 1);
+    const free = Math.round(s.Wd.length * (1 - swell * 0.7));
+    s.Wd.slice(0, free).forEach((w: any) => dot(g, w.x + Math.sin(t + w.ph) * 2, w.y + Math.cos(t * 1.3 + w.ph) * 2, 2.3, C.water, C.waterRim, .6));
+    for (const k of s.G) {
+      const rx = 10 + swell * 16, ry = 7 + swell * 13;
+      g.save(); g.translate(k.x, k.y); g.rotate(k.a);
+      if (burst > 0) { g.strokeStyle = `rgba(184,154,106,${0.4 + burst * 0.5})`; g.lineWidth = 1.4;
+        for (let j = 0; j < 7; j++) { const a = (j / 7) * Math.PI * 2 + k.ph; g.beginPath(); g.moveTo(Math.cos(a) * rx * 0.6, Math.sin(a) * ry * 0.6);
+          g.bezierCurveTo(Math.cos(a) * rx * (1 + burst), Math.sin(a + 0.6) * ry * (1 + burst), Math.cos(a + 0.4) * rx * (1.2 + burst * 1.4), Math.sin(a) * ry * (1.2 + burst * 1.4), Math.cos(a + 0.8) * rx * (1.3 + burst * 1.8), Math.sin(a + 0.3) * ry * (1.3 + burst * 1.8)); g.stroke(); } }
+      g.beginPath(); g.ellipse(0, 0, rx, ry, 0, 0, Math.PI * 2); g.fillStyle = `rgba(230,211,174,${1 - burst * 0.45})`; g.fill(); g.strokeStyle = "#b89a6a"; g.lineWidth = 1.2; g.stroke();
+      if (swell > 0.1) for (let j = 0; j < Math.round(swell * 6); j++) dot(g, Math.cos(j * 1.7) * rx * 0.5, Math.sin(j * 2.3) * ry * 0.5, 1.8, C.water);
+      g.restore();
+    }
+  },
+  status(_s, c) {
+    const T = c.a;
+    if (T < 58) return "Kalt passiert fast nichts: Die Stärkekörner schwimmen hart und dicht gepackt im Wasser.";
+    if (T < 82) return "Ab etwa 60 °C saugen die Körner Wasser auf und quellen. Die Flüssigkeit wird spürbar dicker.";
+    return "Die Körner platzen und geben lange Stärkeketten frei. Sie verhaken sich: Die Sauce bindet, der Pudding wird fest.";
+  },
+  readouts(_s, c) { const T = c.a, sw = clamp((T - 58) / 22, 0, 1); return [["Körner", T < 58 ? "hart" : T < 82 ? "quellen" : "geplatzt"], ["Konsistenz", sw < 0.1 ? "dünn" : sw < 0.8 ? "sämig" : "dick"]]; },
+};
+
+/* ---------------- Kollagen wird zu Gelatine: Zeit statt Hitze ---------------- */
+const kollagen: Sim = {
+  title: "Ebene 3 · Bindegewebe im Schmorfleisch", scale: "≈ 100 nm",
+  controls: { slider: { label: "Schmorzeit", min: 0, max: 4, step: 0.05, def: 0, fmt: (v) => `${v.toFixed(1).replace(".", ",")} h` }, toggle: { label: "sprudelnd kochen statt leise simmern", def: false } },
+  init(W, H) { return { H: Array.from({ length: 5 }, (_, i) => ({ y: 34 + i * ((H - 68) / 4), ph: rnd(0, 6) })) }; },
+  step() {},
+  draw(g, s, c, W, H, t) {
+    const prog = clamp(c.a / 3, 0, 1), squeeze = c.b ? clamp(c.a / 2, 0, 1) : clamp(c.a / 6, 0, 0.3);
+    for (const h of s.H) {
+      for (let k = 0; k < 3; k++) {
+        g.beginPath(); g.strokeStyle = prog > 0.6 ? "rgba(224,173,58,.9)" : ["#b4542a", "#c97b72", "#8c2f2a"][k]; g.lineWidth = 2.2;
+        for (let x = 16; x <= W - 16; x += 3) {
+          const tight = (1 - prog) * 7, loose = prog * 16;
+          const y = h.y + Math.sin(x / 9 + (k * Math.PI * 2) / 3) * tight + Math.sin(x / (22 + k * 7) + h.ph + k + t * 0.6 * prog) * loose;
+          if (x === 16) g.moveTo(x, y); else g.lineTo(x, y);
+        }
+        g.stroke();
+      }
+    }
+    for (let i = 0; i < 26; i++) { const out = i / 26 < squeeze; const x = out ? (i % 2 ? 8 : W - 8) : 24 + ((i * 53) % (W - 48)); const y = 20 + ((i * 37) % (H - 40)); g.globalAlpha = out ? 0.4 : 0.9; dot(g, x, y, 2.6, C.water, C.waterRim, .6); g.globalAlpha = 1; }
+  },
+  status(_s, c) {
+    const prog = clamp(c.a / 3, 0, 1);
+    if (prog < 0.15) return "Bindegewebe besteht aus fest gedrehten Eiweiß-Strängen (Kollagen). Darum ist ein rohes Schmorstück zäh.";
+    if (c.b && c.a > 1) return "Die Stränge lösen sich, aber Sprudeln presst gleichzeitig den Saft aus den Muskelfasern: zart, aber trocken und faserig.";
+    if (prog < 0.6) return "Feuchte Hitze lockert die Stränge langsam auf. Das braucht Zeit, mehr Hitze beschleunigt es kaum.";
+    return "Die Stränge sind zu Gelatine geworden. Sie bindet Wasser: Das Fleisch zerfällt zart, die Sauce wird sämig.";
+  },
+  readouts(_s, c) { const prog = clamp(c.a / 3, 0, 1), sq = c.b ? clamp(c.a / 2, 0, 1) : clamp(c.a / 6, 0, 0.3); return [["Zartheit", prog < 0.3 ? "zäh" : prog < 0.7 ? "weicher" : "zerfällt"], ["Saftigkeit", sq < 0.35 ? "saftig" : sq < 0.7 ? "trockener" : "trocken"]]; },
+};
+
+/* ---------------- Konvektion: Umluft trägt die Hitze schneller heran ---------------- */
+const konv: Sim = {
+  title: "Ebene 1 · Luft im Backofen", scale: "≈ 40 cm",
+  controls: { toggle: { label: "Umluft (Ventilator an)", def: false }, reset: true },
+  init(W, H) { return { A: Array.from({ length: 70 }, () => ({ x: rnd(16, W - 16), y: rnd(16, H - 16), a: rnd(0, 6) })), T: 20, t: 0 }; },
+  step(s, dt, c, W, H) {
+    s.t += dt; const fan = c.b, cx = W / 2, cy = H / 2;
+    for (const p of s.A) {
+      if (fan) { const dx = p.x - cx, dy = p.y - cy, r = Math.hypot(dx, dy) || 1; p.x += (-dy / r * 120 + rnd(-20, 20)) * dt; p.y += (dx / r * 120 + rnd(-20, 20)) * dt; }
+      else { p.y += (p.x < cx ? -1 : 1) * 14 * dt * (p.y > 24 && p.y < H - 24 ? 1 : 0) + rnd(-8, 8) * dt; p.x += (p.y < 30 ? 1 : p.y > H - 30 ? -1 : 0) * 14 * dt + rnd(-8, 8) * dt; }
+      p.x = clamp(p.x, 12, W - 12); p.y = clamp(p.y, 12, H - 12);
+    }
+    s.T += ((180 - s.T) * (fan ? 0.09 : 0.045)) * dt;
+  },
+  draw(g, s, c, W, H) {
+    g.strokeStyle = C.ink; g.lineWidth = 2; g.strokeRect(6, 6, W - 12, H - 12);
+    g.strokeStyle = "#b4542a"; g.lineWidth = 3; g.beginPath(); for (let x = 20; x < W - 20; x += 12) g.lineTo(x, H - 14 - (x % 24 ? 4 : 0)); g.stroke();
+    if (c.b) { g.save(); g.translate(W - 22, H / 2); g.rotate(s.t * 8); g.strokeStyle = C.ink; g.lineWidth = 2; for (let i = 0; i < 4; i++) { g.rotate(Math.PI / 2); g.beginPath(); g.moveTo(0, 0); g.lineTo(0, 10); g.stroke(); } g.restore(); }
+    for (const p of s.A) dot(g, p.x, p.y, 2.2, "rgba(217,130,43,.65)");
+    const w = 90, h = 34, x = W / 2 - w / 2, y = H / 2 - h / 2, layer = c.b ? 4 : 13;
+    g.fillStyle = "rgba(143,184,201,.35)"; g.fillRect(x - layer, y - layer, w + 2 * layer, h + 2 * layer);
+    const k = clamp((s.T - 20) / 160, 0, 1);
+    g.fillStyle = `rgb(${Math.round(230 - k * 70)},${Math.round(200 - k * 80)},${Math.round(150 - k * 90)})`; g.fillRect(x, y, w, h);
+  },
+  status(_s, c) { return c.b ? "Der Ventilator bläst die kühle Luftschicht um das Gargut weg. Heiße Luft trifft direkt auf die Oberfläche: Es wird schneller warm und trocknet schneller." : "Ohne Ventilator steigt warme Luft nur langsam auf. Um das Gargut bleibt eine kühle Luftschicht (blau), die die Hitze bremst."; },
+  readouts(s, c) { return [["Oberfläche", `${Math.round(s.T)} °C`], ["Luftschicht", c.b ? "dünn" : "dick"], ["Zeit", `${Math.round(s.t)} s`]]; },
+};
+
+/* ---------------- Dampflockerung: Blätterteig hebt sich durch Dampf zwischen den Schichten ---------------- */
+const blaetter: Sim = {
+  title: "Ebene 2 · Blätterteig im Ofen", scale: "≈ 2 mm",
+  controls: { slider: { label: "Backzeit", min: 0, max: 1, step: 0.01, def: 0, fmt: (v) => `${Math.round(v * 15)} min` }, toggle: { label: "Butter war zu warm (verschmiert)", def: false } },
+  init() { return {}; },
+  step() {},
+  draw(g, _s, c, W, H, t) {
+    const n = 8, rise = clamp(c.a / 0.5, 0, 1) * (c.b ? 0.25 : 1), brown = clamp((c.a - 0.55) / 0.45, 0, 1);
+    const baseY = H - 14, layerH = 6, gap = 4 + rise * 16;
+    g.fillStyle = "#3a3633"; g.fillRect(0, baseY, W, 6);
+    for (let i = 0; i < n; i++) {
+      const y = baseY - (i + 1) * (layerH + (c.b ? 1 : gap));
+      g.fillStyle = `rgb(${Math.round(233 - brown * 50)},${Math.round(211 - brown * 70)},${Math.round(166 - brown * 90)})`; g.fillRect(16, y, W - 32, layerH);
+      if (i < n - 1) {
+        if (c.b) { g.fillStyle = "rgba(240,210,122,.6)"; g.fillRect(16, y - 1, W - 32, 1); }
+        else if (rise < 0.05) { g.fillStyle = C.fat; g.fillRect(16, y - 3, W - 32, 3); }
+        else for (let k = 0; k < 6; k++) { const x = 30 + k * ((W - 60) / 5); g.strokeStyle = `rgba(143,184,201,${0.8 - brown * 0.5})`; g.lineWidth = 1.2; g.beginPath(); g.arc(x + Math.sin(t * 3 + k + i) * 2, y - gap / 2, Math.max(1.5, gap / 2.6), 0, Math.PI * 2); g.stroke(); }
+      }
+    }
+  },
+  status(_s, c) {
+    if (c.b) return "War die Butter zu warm, hat sie sich mit dem Teig vermischt. Es gibt keine getrennten Schichten mehr, der Dampf entweicht: Der Teig bleibt flach und zäh.";
+    if (c.a < 0.05) return "Hauchdünne Teigschichten, getrennt durch Butter. Im Teig steckt Wasser.";
+    if (c.a < 0.55) return "Im heißen Ofen wird das Wasser zu Dampf. Die Butter hält die Schichten getrennt, der Dampf drückt sie auseinander.";
+    return "Die Schichten sind fest und gebräunt, die Hohlräume bleiben: blättrig und knusprig.";
+  },
+  readouts(_s, c) { const rise = clamp(c.a / 0.5, 0, 1) * (c.b ? 0.25 : 1); return [["Höhe", `${Math.round(100 + rise * 250)} %`], ["Schichten", c.b ? "verklebt" : "getrennt"]]; },
+};
+
+/* ---------------- Milchsäuregärung: Bakterien machen aus Zucker Säure ---------------- */
+const milchsaeure: Sim = {
+  title: "Ebene 3 · Milch mit Joghurtbakterien", scale: "≈ 0,01 mm",
+  controls: { slider: { label: "Temperatur", min: 4, max: 52, step: 1, def: 43, fmt: (v) => `${Math.round(v)} °C` }, reset: true },
+  init(W, H) { return { B: Array.from({ length: 8 }, () => ({ x: rnd(10, W - 10), y: rnd(10, H - 10), a: rnd(0, 6) })), S: Array.from({ length: 60 }, () => ({ x: rnd(6, W - 6), y: rnd(6, H - 6), acid: false })), pH: 6.6, t: 0 }; },
+  step(s, dt, c, W, H) {
+    const T = c.a, dead = T > 48, rate = dead ? 0 : T < 10 ? 0.05 : clamp(1 - Math.abs(T - 43) / 30, 0.1, 1);
+    s.t += dt;
+    for (const b of s.B) { b.a += rnd(-1, 1) * dt * 2; b.x = clamp(b.x + Math.cos(b.a) * 18 * dt * (dead ? 0 : 1), 8, W - 8); b.y = clamp(b.y + Math.sin(b.a) * 18 * dt * (dead ? 0 : 1), 8, H - 8); }
+    if (!dead && s.B.length < 40 && Math.random() < rate * dt * 2.5) { const p = s.B[Math.floor(Math.random() * s.B.length)]; s.B.push({ x: p.x + 6, y: p.y, a: rnd(0, 6) }); }
+    for (const b of s.B) for (const q of s.S) if (!q.acid && Math.random() < rate * dt * 0.35 && (q.x - b.x) ** 2 + (q.y - b.y) ** 2 < 1600) q.acid = true;
+    const share = s.S.filter((q: any) => q.acid).length / s.S.length;
+    s.pH = 6.6 - share * 2.3;
+  },
+  draw(g, s, c, W, H) {
+    const gel = clamp((5.0 - s.pH) / 0.6, 0, 1);
+    if (gel > 0) { g.strokeStyle = `rgba(47,111,115,${gel * 0.35})`; g.lineWidth = 1; for (let i = 0; i < 14; i++) { g.beginPath(); g.moveTo((i * 37) % W, 0); g.lineTo((i * 71 + 40) % W, H); g.stroke(); } }
+    for (const q of s.S) dot(g, q.x, q.y, 2.6, q.acid ? "#b4542a" : C.sugar);
+    for (const b of s.B) { g.save(); g.translate(b.x, b.y); g.rotate(b.a); g.fillStyle = c.a > 48 ? "#9a948c" : "#4f7a3a"; g.beginPath(); (g as any).roundRect ? (g as any).roundRect(-6, -2.2, 12, 4.4, 2.2) : g.rect(-6, -2.2, 12, 4.4); g.fill(); g.restore(); }
+  },
+  status(s, c) {
+    if (c.a > 48) return "Zu heiß: Über etwa 48 °C sterben die Joghurtbakterien. Die Milch bleibt flüssig.";
+    if (c.a < 10) return "Im Kühlschrank arbeiten die Bakterien kaum noch. Darum stellt man fertigen Joghurt kalt.";
+    if (s.pH > 5.2) return "Die Bakterien (grün) vermehren sich und verwandeln Milchzucker (gelb) in Milchsäure (rot).";
+    if (s.pH > 4.7) return "Die Säure steigt. Das Milcheiweiß beginnt, sich zu einem Netz zu verbinden.";
+    return "Sauer genug: Das Milcheiweiß ist zu einem Gel gestockt. Aus Milch ist Joghurt geworden.";
+  },
+  readouts(s) { return [["pH-Wert", s.pH.toFixed(1).replace(".", ",")], ["Bakterien", String(s.B.length)], ["Milch", s.pH > 5.2 ? "flüssig" : s.pH > 4.7 ? "dickt ein" : "Joghurt"]]; },
+};
+
+const PRESETS: Record<Preset, Sim> = { emulsion, osmose, "pektin-abbau": pektin, reduktion, hefegaerung: hefe, "chemische-lockerung": lockerung, waermeleitung: waerme, schaumbildung: schaum, diffusion, "zucker-kristallisation": kristall, leidenfrost: leiden, "gelbildung-pektin": pektinGel, "chlorophyll-farbe": gruen, "eiweiss-denaturierung": eiweiss, glutenbildung: gluten, karamellisierung: karamell, eiskristalle: eis, "siedepunkt-druck": siede, "enzym-zartmachen": enzymSchere, verdampfen: verdampf, staerkeverkleisterung: staerke, "kollagen-gelatine": kollagen, konvektion: konv, dampflockerung: blaetter, milchsaeuregaerung: milchsaeure };
 
 /** Punkt-Simulation für einen Prozess. Läuft auf Canvas, mit Reglern aus dem Preset. */
 export default function ParticleSim({ preset }: { preset: Preset }) {
@@ -788,9 +975,9 @@ export default function ParticleSim({ preset }: { preset: Preset }) {
 
   // Osmose läuft beim Öffnen einmal von selbst durch
   useEffect(() => {
-    if (!["osmose", "reduktion", "chemische-lockerung", "diffusion", "chlorophyll-farbe", "eiweiss-denaturierung", "glutenbildung", "karamellisierung", "enzym-zartmachen"].includes(preset)) return;
+    if (!["osmose", "reduktion", "chemische-lockerung", "diffusion", "chlorophyll-farbe", "eiweiss-denaturierung", "glutenbildung", "karamellisierung", "enzym-zartmachen", "staerkeverkleisterung", "kollagen-gelatine", "dampflockerung"].includes(preset)) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    let raf = 0; const start = performance.now(); const [from, to] = preset === "osmose" || preset === "diffusion" ? [0, 1] : preset === "reduktion" ? [1, 0.35] : preset === "chlorophyll-farbe" ? [0, 8] : preset === "eiweiss-denaturierung" ? [20, 80] : preset === "glutenbildung" ? [0, 0.85] : preset === "karamellisierung" ? [120, 190] : preset === "enzym-zartmachen" ? [0, 1] : [20, 180];
+    let raf = 0; const start = performance.now(); const [from, to] = preset === "osmose" || preset === "diffusion" ? [0, 1] : preset === "reduktion" ? [1, 0.35] : preset === "chlorophyll-farbe" ? [0, 8] : preset === "eiweiss-denaturierung" ? [20, 80] : preset === "glutenbildung" ? [0, 0.85] : preset === "karamellisierung" ? [120, 190] : preset === "enzym-zartmachen" || preset === "dampflockerung" ? [0, 1] : preset === "staerkeverkleisterung" ? [20, 95] : preset === "kollagen-gelatine" ? [0, 3.5] : [20, 180];
     const dur = preset === "chemische-lockerung" || preset === "karamellisierung" ? 12000 : 9000;
     const run = (now: number) => { const p = Math.min(1, (now - start) / dur); setA(from + (to - from) * p); if (p < 1) raf = requestAnimationFrame(run); };
     raf = requestAnimationFrame(run);
