@@ -8,7 +8,8 @@ import Diagnosis from "@/components/Diagnosis";
 import Visual, { plain } from "@/components/visuals/Visual";
 import StepFlow from "@/components/visuals/StepFlow";
 import PathNav from "@/components/PathNav";
-import { allIds, getEntry, getMasterItem, lernpfade, titleOf, typOf, PROTOTYPES, TYP_NAME, type Typ } from "@/lib/content";
+import PrintButton from "@/components/PrintButton";
+import { allIds, getEntry, getMasterItem, lernpfade, plainText, titleOf, typOf, PROTOTYPES, TYP_NAME, type Typ } from "@/lib/content";
 
 export function generateStaticParams() {
   return allIds().map((id) => ({ id }));
@@ -18,7 +19,14 @@ type Params = { params: Promise<{ id: string }> };
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { id } = await params;
-  return { title: titleOf(id) };
+  const e = getEntry(id);
+  const description = e?.kurz ? plainText(e.kurz) : `${titleOf(id)}: verstehen, warum es in der Küche funktioniert.`;
+  const img = existsSync(join(process.cwd(), "public/illustrationen", `${id}.webp`)) ? [{ url: `/illustrationen/${id}.webp`, width: 800, height: 800 }] : undefined;
+  return {
+    title: titleOf(id), description,
+    alternates: { canonical: `/eintrag/${id}` },
+    openGraph: { title: titleOf(id), description, type: "article", url: `/eintrag/${id}`, images: img },
+  };
 }
 
 function Chips({ ids }: { ids: string[] }) {
@@ -115,7 +123,7 @@ export default async function EntryPage(props: Params) {
         {e.was_passiert && <div className="block"><h2>Was passiert</h2><div className="prose"><p><RichText text={e.was_passiert} /></p></div></div>}
         {e.warum_wichtig && <div className="block"><h2>Warum wichtig</h2><div className="prose"><p><RichText text={e.warum_wichtig} /></p></div></div>}
         {(e.typ === "experiment" || e.typ === "labor") && e.material?.length ? (
-          <div className="exp"><span className="mono">Du brauchst{e.dauer ? ` · ${e.dauer}` : ""}</span>
+          <div className="exp"><div className="exp-head"><span className="mono">Du brauchst{e.dauer ? ` · ${e.dauer}` : ""}</span><PrintButton /></div>
             <ul className="plain">{e.material.map((m) => <li key={m}>{m}</li>)}</ul>
             {e.sicherheit && <p className="safety">{e.sicherheit}</p>}
           </div>

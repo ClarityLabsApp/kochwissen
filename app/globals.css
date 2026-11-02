@@ -278,3 +278,26 @@ footer.site { border-top: 1px solid var(--rule); padding-top: 14px; display: fle
 .topnav { display: flex; gap: 16px; }
 .topnav a { font: 600 12px var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--sepia); text-decoration: none; }
 .topnav a:hover { color: var(--crust); }
+
+/* Zugänglichkeit */
+.skip { position: absolute; left: -9999px; top: 8px; background: var(--ink); color: var(--paper-2); padding: 8px 12px; z-index: 10; font: 600 13px var(--f-mono); }
+.skip:focus { left: 8px; }
+.exp-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.printbtn { color: var(--t-experiment); }
+
+/* Druckansicht: Inhalt ohne Navigation, Regler und Animationen */
+@media print {
+  @page { margin: 16mm; }
+  body { background: #fff !important; color: #000; font-size: 11pt; }
+  .sitebar, .skip, .search, .typechips, .vis-row, .vis-btn, .printbtn, .pathnav, .examples, .doors, .worlds, footer.site, .meta, .sim-canvas, .more > summary, iframe { display: none !important; }
+  .wrap { max-width: none; padding: 0; }
+  .vis { border: 0; background: none; padding: 0; break-inside: avoid; }
+  .box, .exp, .moments li, .causes li, .tile { break-inside: avoid; }
+  .moments li, .pfad-steps li { padding: 6px 0; }
+  a { color: #000; text-decoration: none; }
+  .chip { border-color: #999; background: none; }
+  h1 { font-size: 26pt; }
+  h2 { font-size: 15pt; break-after: avoid; }
+  .illu { max-height: 140px; }
+  details > *:not(summary) { display: block !important; }
+}

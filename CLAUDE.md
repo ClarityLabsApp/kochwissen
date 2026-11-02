@@ -11,7 +11,7 @@ Lies vor jeder Arbeit auch **`DESIGN.md`** (Bildsprache, Farben, Vorlagen). Was 
 | `content/schema.json` | JSON-Schema für jeden Eintrag |
 | `content/master-list.json` | Alle geplanten Einträge mit Typ, Links, Synonymen (Gerüst des Buchs) |
 | `content/entries/<id>.json` | Ausgeschriebene Einträge, eine Datei pro Eintrag, Dateiname = id |
-| `scripts/validate.mjs` | Prüft Schema, Verknüpfungen, Diagnosebäume, Glossar. Läuft vor jedem Build |
+| `scripts/validate.mjs` | Prüft Schema, Verknüpfungen, Diagnosebäume, Glossar, Lernpfade und den Schreibleitfaden (Analogien einmalig, Sätze ≤ 25 Wörter, kein Werbeton) als Hinweise. Läuft vor jedem Build |
 | `lib/content.ts` | Lädt Inhalte, zerlegt Glossar-Markierungen |
 | `app/` | Next.js App Router: Bibliothek `/`, Eintrag `/eintrag/[id]` |
 | `lib/search.ts` | Suche: gewichtet (Titel 3, Synonyme 2.5, Kurz 1), deutsche Stammformen, Tippfehler, Wörterbuch `THESAURUS` (Problem ↔ Ziel), „Beste Antwort“ |
@@ -92,6 +92,7 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - [ ] Weitere Labor-Rezepte (z. B. Essig-Mutter, Ricotta aus Molke, Kräutersalz, Kimchi). Keine Rezepte mit Botulismus-Risiko (Knoblauch- oder Kräuteröl ungekühlt, Einkochen säurearmer Lebensmittel)
 - [x] Startseite mit drei Einstiegen (Problem, Ziel, Verstehen), Eintrag des Tages, 5 Lernpfade, 6 Schweizer Gerichte (`gen_batch_schweiz.py`)
 - [ ] Bilder für 53 Gerichte, Experimente und Labor-Rezepte erzeugen: Motive stehen in `visual.illustration`, `npm run illustrationen` erzeugt nur fehlende
+- [x] Seitenbeschreibungen, Vorschaubilder (Open Graph), Sitemap, robots.txt; Druckansicht mit Knopf bei Experimenten und Labor; Sprunglink zum Inhalt
 - [ ] Weitere Gerichte und Experimente (Vorher-Nachher-Grafik steht, neue Experimente brauchen `params.vergleich`)
 - [ ] Semantische Suche (z. B. pgvector) als Ergänzung; bis dahin fehlende Alltagswörter in `THESAURUS` nachtragen
 - [x] 45 Aquarell-Illustrationen (Welten und Zutaten) in `public/illustrationen/<id>.webp`, Anzeige im Seitenkopf. Neue Motive: `visual.illustration` setzen, `npm run illustrationen -- --only id1,id2` (schreibt WebP mit transparentem Hintergrund; ältere Bilder wurden per Skript freigestellt und beschnitten)
