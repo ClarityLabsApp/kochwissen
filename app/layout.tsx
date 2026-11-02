@@ -3,13 +3,14 @@ import "./globals.css";
 import PrintHelper from "@/components/PrintHelper";
 import SiteNav from "@/components/SiteNav";
 
-const site = process.env.NEXT_PUBLIC_SITE_URL ?? (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : "http://localhost:3000");
+import { SITE_URL } from "@/lib/site";
+const site = SITE_URL;
 
 export const metadata: Metadata = {
   metadataBase: new URL(site),
-  title: { default: "Kochwissen", template: "%s · Kochwissen" },
+  title: { default: "Garum · Verstehen, warum Kochen funktioniert", template: "%s · Garum" },
   description: "Verstehen, warum Kochen und Backen funktionieren: einfach erklärt und sichtbar gemacht.",
-  openGraph: { siteName: "Kochwissen", locale: "de_CH", type: "website", images: [{ url: "/illustrationen/w-brot.webp", width: 800, height: 800 }] },
+  openGraph: { siteName: "Garum", locale: "de_CH", type: "website", images: [{ url: "/illustrationen/w-brot.webp", width: 800, height: 800 }] },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

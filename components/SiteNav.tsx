@@ -12,7 +12,7 @@ export default function SiteNav() {
   useEffect(() => { document.documentElement.lang = lang; }, [lang]);
   return (
     <div className="sitebar">
-      <Link href={href(lang, "/")} className="brand">Koch<em>wissen</em></Link>
+      <Link href={href(lang, "/")} className="brand" aria-label="Garum">Gar<em>um</em></Link>
       <nav className="topnav" aria-label="Navigation">
         <Link href={href(lang, "/")}>{T.nav.library}</Link>
         <Link href={href(lang, "/pfad")}>{T.nav.paths}</Link>

@@ -21,7 +21,7 @@ const de = {
     eyebrow: (n: number, m: number) => `Die Bibliothek · ${n} von ${m} Einträgen geschrieben`,
     h1a: "Verstehen, warum es ", h1b: "funktioniert",
     lede: "Kein Rezeptbuch, sondern die Vorgänge dahinter: einfach erklärt und sichtbar gemacht. Wer weiß, warum etwas passiert, kocht freier.",
-    footerA: "Kochwissen", footerB: "Inhalte im Aufbau",
+    footerA: "Garum · warum Kochen funktioniert", footerB: "Inhalte im Aufbau",
   },
   search: {
     label: "Suche · Alltagssprache funktioniert", placeholder: "z. B. Wie werden meine Wedges knuspriger?",
@@ -79,7 +79,7 @@ const en: Dict = {
     eyebrow: (n, m) => `The library · ${n} of ${m} entries written`,
     h1a: "Understand why it ", h1b: "works",
     lede: "Not a recipe book, but the processes behind it: simply explained and made visible. If you know why something happens, you cook more freely.",
-    footerA: "Kochwissen", footerB: "Work in progress",
+    footerA: "Garum · why cooking works", footerB: "Work in progress",
   },
   search: {
     label: "Search · everyday language works", placeholder: "e.g. How do I make my wedges crispier?",

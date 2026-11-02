@@ -1,4 +1,4 @@
-# Kochwissen – Arbeitsanleitung für Claude
+# Garum (Projektordner: kochwissen) – Arbeitsanleitung für Claude
 
 Kochwissen ist eine visuelle Bibliothek, die erklärt, **warum** Kochen und Backen funktionieren. Kein Rezeptbuch: Wer die Vorgänge versteht, kocht freier. Besitzer: Phil (Luzern). Sprache der Inhalte: Deutsch.
 
@@ -76,6 +76,11 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - `MaillardSim` – Maillard-Reaktion in drei Zoomstufen (Gericht, Oberfläche, Moleküle), ersetzt den alten Prototyp
 - `ExperimentCompare` – Vorher-Nachher für Experimente: `vorlage: vergleich`, `params.vergleich` = Felder mit `gefaess` (glas, flasche, schuessel, teller, pfanne), `inhalt`, `vorher`/`nachher` (farbe, fuell, trueb, schaum, blasen, ballon, kristalle, tropfen, klumpen, bodensatz, tanzen)
 - Kein Prototyp mehr per iframe: `PROTOTYPES` in `lib/content.ts` ist leer, „Steak grau“ nutzt `PanTest`
+
+## Name und Adresse
+
+- Die Seite heisst **Garum** (Wortspiel mit „warum“ und „gar“), Adresse **garum.guide**. Untertitel: „Verstehen, warum Kochen funktioniert“ / „Understand why cooking works“.
+- Adresse zentral in `lib/site.ts` (in Produktion https://garum.guide).
 
 ## Englische Version
 
