@@ -94,13 +94,13 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
       const out: [string, LibItem[], string | null][] = THEMES.map(([de, en, ids], i) => [lang === "en" ? en : de, ids.map((id) => g.find((e) => e.id === id)).filter(Boolean) as LibItem[], has.has(THEME_PIC[i]) ? THEME_PIC[i] : null]);
       const seen = new Set(THEMES.flatMap((x) => x[2]));
       const rest = g.filter((e) => !seen.has(e.id));
-      if (rest.length) out.push([lang === "en" ? "Other" : "Weitere", rest, null]);
+      if (rest.length) out.push([lang === "en" ? "Other" : "Weitere", rest, has.has("cat-prozess") ? "cat-prozess" : null]);
       return out.filter(([, r]) => r.length);
     }
     const m = new Map<string, LibItem[]>();
     for (const e of g) { const w = e.welten?.[0] ?? ""; m.set(w, [...(m.get(w) ?? []), e]); }
     return [...m.entries()].sort((a, b) => (a[0] ? 0 : 1) - (b[0] ? 0 : 1) || b[1].length - a[1].length)
-      .map(([w, r]) => [w ? (byId.get(w)?.titel ?? w) : (lang === "en" ? "Other" : "Weitere"), r, w && has.has(w) ? w : null]);
+      .map(([w, r]) => [w ? (byId.get(w)?.titel ?? w) : (lang === "en" ? "Other" : "Weitere"), r, w && has.has(w) ? w : has.has(`cat-${typ}`) ? `cat-${typ}` : null]);
   };
   let list = items.filter((e) => (!active.size || active.has(e.typ)) && (!res || res.has(e.id)));
   if (res) list = [...list].sort((a, b) => res.get(b.id)! - res.get(a.id)!);
