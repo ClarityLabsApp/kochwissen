@@ -1,20 +1,29 @@
 import type { MetadataRoute } from "next";
 import { allIds, isTranslated, lernpfade } from "@/lib/content";
-
 import { SITE_URL } from "@/lib/site";
+
 const site = SITE_URL;
+const lastModified = new Date();
+
+/** Eintrag mit Sprachvarianten (hreflang) in beide Richtungen. */
+function pair(path: string, priority: number, en = true): MetadataRoute.Sitemap {
+  const de = `${site}${path === "/" ? "/" : path}`;
+  const enUrl = `${site}/en${path === "/" ? "" : path}`;
+  const alternates = en ? { languages: { de, en: enUrl, "x-default": de } } : undefined;
+  return [
+    { url: de, lastModified, priority, alternates },
+    ...(en ? [{ url: enUrl, lastModified, priority: Math.max(0.1, priority - 0.1), alternates }] : []),
+  ];
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const enPaths = new Set(lernpfade("en").map((p) => p.id));
   return [
-    { url: `${site}/`, priority: 1 },
-    { url: `${site}/pfad`, priority: 0.8 },
-    ...lernpfade().map((p) => ({ url: `${site}/pfad/${p.id}`, priority: 0.7 })),
-    ...allIds().map((id) => ({ url: `${site}/eintrag/${id}`, priority: 0.6, ...(isTranslated(id) ? { alternates: { languages: { en: `${site}/en/eintrag/${id}` } } } : {}) })),
-    { url: `${site}/impressum`, priority: 0.1 },
-    { url: `${site}/datenschutz`, priority: 0.1 },
-    { url: `${site}/en`, priority: 0.9 },
-    { url: `${site}/en/pfad`, priority: 0.7 },
-    ...lernpfade("en").map((p) => ({ url: `${site}/en/pfad/${p.id}`, priority: 0.6 })),
-    ...allIds().filter(isTranslated).map((id) => ({ url: `${site}/en/eintrag/${id}`, priority: 0.5 })),
+    ...pair("/", 1),
+    ...pair("/pfad", 0.8),
+    ...lernpfade().flatMap((p) => pair(`/pfad/${p.id}`, 0.7, enPaths.has(p.id))),
+    ...allIds().flatMap((id) => pair(`/eintrag/${id}`, 0.6, isTranslated(id))),
+    ...pair("/impressum", 0.1),
+    ...pair("/datenschutz", 0.1),
   ];
 }

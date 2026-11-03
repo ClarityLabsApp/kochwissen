@@ -121,6 +121,7 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - [ ] Weitere Labor-Rezepte (z. B. Essig-Mutter, Ricotta aus Molke, Kräutersalz, Kimchi). Keine Rezepte mit Botulismus-Risiko (Knoblauch- oder Kräuteröl ungekühlt, Einkochen säurearmer Lebensmittel)
 - [x] Startseite mit drei Einstiegen (Problem, Ziel, Verstehen), Eintrag des Tages, 5 Lernpfade, 6 Schweizer Gerichte (`gen_batch_schweiz.py`)
 - [x] Bilder für 53 Gerichte, Experimente und Labor-Rezepte (2. November 2026). Neue Motive: `visual.illustration` setzen, `npm run illustrationen` erzeugt PNG, dann `python3 scripts/freistellen.py` (WebP, transparent, beschnitten), PNG löschen
+- [x] Google: Seitentitel mit Zusatz je Typ (`TITLE_SUFFIX` in `EntryView.tsx`, z. B. „Ursachen und Lösung“), strukturierte Daten (Article/DefinedTerm + BreadcrumbList je Eintrag, WebSite + Organization auf der Startseite), hreflang de/en/x-default in Sitemap und Metadaten (3. November 2026). Search Console: Phil bestätigt die Domain per DNS-TXT bei Namecheap
 - [x] Seitenbeschreibungen, Vorschaubilder (Open Graph), Sitemap, robots.txt; Druckansicht mit Knopf bei Experimenten und Labor; Sprunglink zum Inhalt
 - [x] Quiz am Ende jedes Lernpfads (29 Fragen), 6 neue Simulationen (Verdampfen, Stärke, Kollagen, Konvektion, Blätterteig, Milchsäuregärung)
 - [x] Alle 54 Prozesse haben eine Animation (2. November 2026)

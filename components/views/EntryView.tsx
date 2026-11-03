@@ -12,17 +12,53 @@ import PrintButton from "@/components/PrintButton";
 import MerkButton from "@/components/MerkButton";
 import { appearsIn, getEntry, getMasterItem, hasPicture, isTranslated, lernpfade, plainText, titleOf, typOf, type Typ } from "@/lib/content";
 import { href, t, type Lang } from "@/lib/i18n";
-import { CONTACT_EMAIL, SITE_URL } from "@/lib/site";
+import { CONTACT_EMAIL, OWNER, SITE_URL } from "@/lib/site";
 
 /** Seitentitel, Beschreibung und Vorschaubild eines Eintrags. */
+/** Suchfreundlicher Zusatz zum Seitentitel je nach Typ (nur <title>, nicht die Überschrift). */
+const TITLE_SUFFIX: Record<Lang, Partial<Record<Typ, string>>> = {
+  de: { symptom: "Ursachen und Lösung", prozess: "einfach erklärt", begriff: "Bedeutung in der Küche", technik: "so funktioniert es", ziel: "so gelingt es", gericht: "warum das Rezept funktioniert", experiment: "Küchenexperiment", labor: "selber machen", zutat: "was sie beim Kochen tut", stellschraube: "wie sie das Ergebnis verändert", welt: "Kochwissen" },
+  en: { symptom: "causes and fixes", prozess: "explained simply", begriff: "meaning in cooking", technik: "how it works", ziel: "how to get it right", gericht: "why the recipe works", experiment: "kitchen experiment", labor: "make it yourself", zutat: "what it does in cooking", stellschraube: "how it changes the result", welt: "cooking science" },
+};
+
+/** Strukturierte Daten (schema.org) für Google: Artikel und Brotkrumen. */
+function entryJsonLd(id: string, lang: Lang) {
+  const e = getEntry(id, lang);
+  if (!e) return null;
+  const typ = e.typ as Typ;
+  const url = SITE_URL + href(lang, `/eintrag/${id}`);
+  const home = SITE_URL + href(lang, "/");
+  const cat = t(lang).types[typ]?.[0] ?? typ;
+  const pic = hasPicture(id) ? SITE_URL + `/illustrationen/${id}.webp` : undefined;
+  const brand = { "@type": "Organization", name: "Garum", url: SITE_URL, logo: SITE_URL + "/icon-512.png" };
+  return [
+    {
+      "@context": "https://schema.org", "@type": typ === "begriff" ? "DefinedTerm" : "Article",
+      ...(typ === "begriff"
+        ? { name: e.titel, description: plainText(e.kurz, lang), url, inDefinedTermSet: home }
+        : { headline: e.titel, description: plainText(e.kurz, lang), url, mainEntityOfPage: url, inLanguage: lang === "en" ? "en-GB" : "de-CH", image: pic, author: { "@type": "Person", name: OWNER.name }, publisher: brand, dateModified: BUILD_DATE, citation: (e.quellen ?? []).map((q: { titel: string; url?: string }) => q.url ?? q.titel) }),
+    },
+    {
+      "@context": "https://schema.org", "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Garum", item: home },
+        { "@type": "ListItem", position: 2, name: cat, item: `${home}${home.endsWith("/") ? "" : "/"}?k=${typ}` },
+        { "@type": "ListItem", position: 3, name: e.titel, item: url },
+      ],
+    },
+  ];
+}
+const BUILD_DATE = new Date().toISOString().slice(0, 10);
+
 export function entryMetadata(id: string, lang: Lang): Metadata {
   const e = getEntry(id, lang);
   const title = titleOf(id, lang);
+  const suffix = e ? TITLE_SUFFIX[isTranslated(id) ? lang : "de"][e.typ as Typ] : undefined;
   const description = e?.kurz ? plainText(e.kurz, lang) : lang === "en" ? `${title}: understand why it works in the kitchen.` : `${title}: verstehen, warum es in der Küche funktioniert.`;
   const img = existsSync(join(process.cwd(), "public/illustrationen", `${id}.webp`)) ? [{ url: `/illustrationen/${id}.webp`, width: 800, height: 800 }] : undefined;
   const tr = isTranslated(id);
   return {
-    title, description,
+    title: suffix ? `${title}: ${suffix}` : title, description,
     // Nicht übersetzte englische Seiten zeigen den deutschen Text: nicht indexieren, Original als kanonisch.
     ...(lang === "en" && !tr ? { robots: { index: false, follow: true } } : {}),
     alternates: { canonical: lang === "en" && !tr ? `/eintrag/${id}` : href(lang, `/eintrag/${id}`), languages: tr ? { de: `/eintrag/${id}`, en: `/en/eintrag/${id}` } : { de: `/eintrag/${id}` } },
@@ -120,6 +156,7 @@ export default function EntryView({ id, lang }: { id: string; lang: Lang }) {
 
   return (
     <main className="wrap" lang={untranslated ? "de" : lang}>
+      {!untranslated && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(entryJsonLd(id, lang)).replace(/</g, "\\u003c") }} />}
       <article className="entry">
         {head}
         {untranslated && <p className="untranslated" lang="en">{L.notTranslated}</p>}
