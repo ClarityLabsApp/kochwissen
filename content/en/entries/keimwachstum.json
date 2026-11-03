@@ -3,7 +3,7 @@
   "titel": "Bacteria and temperature: the danger zone",
   "kurz": "Bacteria multiply fastest between about 10 and 50 °C. Cold slows them down; thorough heating kills most of them.",
   "bild_im_kopf": "Like weeds in spring: in mild weather they grow overnight; in frost and in heat they rest.",
-  "was_passiert": "In pleasant warmth, bacteria divide every few minutes to hours. The fridge slows them down a lot but does not kill them. Only enough heat makes meat and leftovers safe: food safety authorities recommend at least 70 °C at the core. Cooked food should pass through the warm range quickly, taking at most about two hours to cool.",
+  "was_passiert": "In pleasant warmth, bacteria divide every few minutes to hours. The fridge slows them down a lot but does not kill them. Some, such as listeria, keep growing slowly even below 5 °C. Only enough heat makes meat and leftovers safe: food safety authorities recommend at least 70 °C at the core. Cooked food should pass through the warm range quickly, taking at most about two hours to cool.",
   "warum_wichtig": "Explains why [[w-gefluegel|poultry]] is cooked through, why leftovers should not sit on the stove for hours and why keeping food warm means keeping it hot.",
   "synonyme": [
     "food safety",
@@ -17,6 +17,7 @@
     "Heat poultry, minced meat and leftovers to at least 70 °C at the core.",
     "Keep food warm at 65 °C or more, otherwise cool it quickly.",
     "Put leftovers in shallow containers in the fridge within two hours.",
+    "Set the fridge to 5 °C at most and eat leftovers within two to three days.",
     "Thaw in the fridge, not on the kitchen counter."
   ],
   "stellschrauben": [
@@ -45,7 +46,7 @@
       "skala": [
         {
           "c": 5,
-          "name": "fridge: bacteria strongly slowed"
+          "name": "fridge: strongly slowed, not stopped"
         },
         {
           "c": 10,
