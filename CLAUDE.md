@@ -89,6 +89,9 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - Die Seite heisst **Garum** (Wortspiel mit „warum“ und „gar“), Adresse **garum.guide**. Untertitel: „Verstehen, warum Kochen funktioniert“ / „Understand why cooking works“.
 - Adresse zentral in `lib/site.ts` (in Produktion https://garum.guide).
 
+- Impressum und Datenschutz: `/impressum`, `/datenschutz` (und `/en/…`), Texte in `components/views/LegalView.tsx`, Kontakt `CONTACT_EMAIL` in `lib/site.ts` (Weiterleitung über den Domain-Anbieter). Fußzeile `components/SiteFooter.tsx` auf jeder Seite.
+- Schriften werden selbst ausgeliefert (`@fontsource…` in `app/layout.tsx`), keine Verbindung zu Google Fonts. Keine Cookies, kein Tracking.
+
 ## Englische Version
 
 - Deutsch unter `/`, Englisch unter `/en/…`. Sprachauswahl DE | EN in `components/SiteNav.tsx`; die Sprache folgt dem Pfad (`langOf`, `switchPath` in `lib/i18n.ts`).

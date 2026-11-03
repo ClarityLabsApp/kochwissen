@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
+import "@fontsource-variable/fraunces/opsz.css";
+import "@fontsource-variable/fraunces/opsz-italic.css";
+import "@fontsource-variable/newsreader/opsz.css";
+import "@fontsource-variable/newsreader/opsz-italic.css";
+import "@fontsource/jetbrains-mono/400.css";
+import "@fontsource/jetbrains-mono/600.css";
 import "./globals.css";
 import PrintHelper from "@/components/PrintHelper";
 import SiteNav from "@/components/SiteNav";
+import SiteFooter from "@/components/SiteFooter";
 
 import { SITE_URL } from "@/lib/site";
 const site = SITE_URL;
@@ -16,15 +23,6 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="de">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=JetBrains+Mono:wght@400;600&display=swap"
-        />
-      </head>
       <body>
         <a href="#inhalt" className="skip">Zum Inhalt springen · Skip to content</a>
         <PrintHelper />
@@ -32,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <SiteNav />
         </div>
         <div id="inhalt">{children}</div>
+        <SiteFooter />
       </body>
     </html>
   );
