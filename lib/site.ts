@@ -8,3 +8,4 @@ export const SITE_URL =
 /** Kontakt für Impressum und Datenschutz (Weiterleitung, im Domain-Anbieter eingerichtet). */
 export const CONTACT_EMAIL = "info@garum.guide";
 export const OWNER = { name: "Philipp Sidler", place: "Luzern, Schweiz", placeEn: "Lucerne, Switzerland" };
+export const INSTAGRAM_URL = "https://www.instagram.com/garum.guide/";

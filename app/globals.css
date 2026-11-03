@@ -519,3 +519,4 @@ article.entry > details.sec + details.sec { margin-top: calc(-1 * var(--egap) - 
 .feedback a { font: 600 13px var(--f-mono); color: var(--crust); text-decoration: none; }
 .feedback a:hover { text-decoration: underline; }
 @media print { .feedback { display: none; } }
+.footer-links .ig { display: inline-flex; align-items: center; gap: 6px; }

@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL, OWNER } from "@/lib/site";
+import { CONTACT_EMAIL, INSTAGRAM_URL, OWNER } from "@/lib/site";
 import type { Lang } from "@/lib/i18n";
 
 const STAND = { de: "Stand: November 2026", en: "Last updated: November 2026" };
@@ -12,7 +12,7 @@ export function ImpressumView({ lang }: { lang: Lang }) {
       <h1>{de ? "Impressum" : "Legal notice"}</h1>
       <section>
         <h2>{de ? "Verantwortlich" : "Responsible"}</h2>
-        <p>{OWNER.name}<br />{de ? OWNER.place : OWNER.placeEn}<br />{mail}</p>
+        <p>{OWNER.name}<br />{de ? OWNER.place : OWNER.placeEn}<br />{mail}<br /><a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">Instagram: @garum.guide</a></p>
         <p>{de ? "Garum ist ein privates, nicht kommerzielles Projekt. Es gibt keine Werbung und nichts zu kaufen."
           : "Garum is a private, non-commercial project. There is no advertising and nothing for sale."}</p>
       </section>
