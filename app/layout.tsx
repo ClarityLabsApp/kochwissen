@@ -18,7 +18,8 @@ export const metadata: Metadata = {
   metadataBase: new URL(site),
   title: { default: "Garum · Verstehen, warum Kochen funktioniert", template: "%s · Garum" },
   description: "Verstehen, warum Kochen und Backen funktionieren: einfach erklärt und sichtbar gemacht.",
-  openGraph: { siteName: "Garum", locale: "de_CH", type: "website", images: [{ url: "/illustrationen/w-brot.webp", width: 800, height: 800 }] },
+  openGraph: { siteName: "Garum", locale: "de_CH", type: "website", images: [{ url: "/og-de.png", width: 1200, height: 630, alt: "Garum · Verstehen, warum Kochen funktioniert" }] },
+  twitter: { card: "summary_large_image", images: ["/og-de.png"] },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -55,7 +55,7 @@ export function entryMetadata(id: string, lang: Lang): Metadata {
   const title = titleOf(id, lang);
   const suffix = e ? TITLE_SUFFIX[isTranslated(id) ? lang : "de"][e.typ as Typ] : undefined;
   const description = e?.kurz ? plainText(e.kurz, lang) : lang === "en" ? `${title}: understand why it works in the kitchen.` : `${title}: verstehen, warum es in der Küche funktioniert.`;
-  const img = existsSync(join(process.cwd(), "public/illustrationen", `${id}.webp`)) ? [{ url: `/illustrationen/${id}.webp`, width: 800, height: 800 }] : undefined;
+  const img = existsSync(join(process.cwd(), "public/illustrationen", `${id}.webp`)) ? [{ url: `/illustrationen/${id}.webp`, width: 800, height: 800 }] : [{ url: `/og-${lang}.png`, width: 1200, height: 630 }];
   const tr = isTranslated(id);
   return {
     title: suffix ? `${title}: ${suffix}` : title, description,
