@@ -1,0 +1,40 @@
+{
+  "id": "koji",
+  "titel": "Koji: the mould behind miso and soy sauce",
+  "kurz": "Koji is a mould that grows on steamed rice or barley and produces enzymes: they turn starch into sugar and protein into umami.",
+  "bild_im_kopf": "Like a workshop full of scissors: the mould itself tastes of little, but its tools cut everything into tasty pieces.",
+  "was_passiert": "Steamed rice is inoculated with spores and kept warm and moist for about two days (as a guide, around 30 °C). A white, fluffy layer of mould covers the grains. It releases two kinds of [[enzym|enzymes]]. One kind breaks starch down into sugar, which is needed for sake and sweet rice drinks. The other breaks protein down into amino acids, which gives miso and soy sauce their umami.",
+  "warum_wichtig": "Koji is why Japanese cooking has so much umami. Top chefs now also use it for garums, for ageing meat and for their own seasoning pastes.",
+  "synonyme": [
+    "koji",
+    "Aspergillus oryzae",
+    "miso",
+    "soy sauce",
+    "sake"
+  ],
+  "faustregeln": [
+    "Only use bought koji spores or ready-made koji rice: a close relative of this mould produces toxins.",
+    "Stir miso into soup only at the end and do not boil it any more: that keeps the aroma fresh.",
+    "A spoonful of miso in a dressing, butter or a braise acts like an umami booster."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "Around 30 °C the mould grows well; much warmer and it dies"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "After about two days it has produced enough enzymes"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-huelsenfruechte",
+      "text": "Miso is cooked soya, aged for months with koji and salt."
+    },
+    {
+      "welt": "w-getreide",
+      "text": "For sake, koji breaks rice starch down into sugar, which yeast then [[fermentation|ferments]]."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "x-nase-zu",
+  "typ": "experiment",
+  "titel": "Mit zugehaltener Nase schmeckt man nur noch süß",
+  "synonyme": [
+    "Geschmackstest Nase",
+    "Gummibärchen Experiment",
+    "Nase zuhalten schmecken"
+  ],
+  "kurz": "Ein Gummibärchen mit zugehaltener Nase schmeckt nur süß. Lässt man los, ist plötzlich die Frucht da.",
+  "bild_im_kopf": "Wie ein Film ohne Ton: Man sieht, dass etwas passiert, aber erst der Ton erzählt die Geschichte.",
+  "material": [
+    "Gummibärchen in verschiedenen Farben",
+    "eine zweite Person, die die Farbe auswählt"
+  ],
+  "schritte": [
+    "Augen schließen und die Nase fest zuhalten.",
+    "Die zweite Person gibt ein Gummibärchen in den Mund.",
+    "Kauen und raten, welche Sorte es ist.",
+    "Dann die Nase loslassen und weiterkauen."
+  ],
+  "beobachtung": "Mit zugehaltener Nase schmeckt man nur süß und etwas sauer. Sobald die Nase frei ist, erkennt man Erdbeere, Zitrone oder Himbeere.",
+  "erklaerung": "Die Zunge erkennt nur Grundgeschmäcker wie süß und sauer. Die Fruchtsorte ist ein Duft. Er steigt beim Kauen von hinten in die Nase, aber nur, wenn dort Luft strömen kann.",
+  "dauer": "5 Minuten",
+  "links": [
+    "aroma-nase",
+    "geschmack-balance",
+    "suess"
+  ],
+  "welten": [
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a small glass bowl of colourful gummy bears and a clothes peg lying beside it"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Geschmack und Aroma"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "xanthan",
+  "typ": "begriff",
+  "titel": "Xanthan",
+  "synonyme": [
+    "Xanthan",
+    "Xanthangummi",
+    "E 415"
+  ],
+  "kurz": "Ein Bindemittel, das Bakterien aus Zucker bilden. Schon wenige Zehntelgramm pro 100 ml machen Flüssigkeiten kalt oder warm sämig, ohne Kochen, und es hält Salatsaucen stabil. Zu viel macht schleimig.",
+  "links": [
+    "abbinden-staerke",
+    "agar-agar",
+    "emulsion",
+    "fermentation"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen: Gummis und Verdickungsmittel"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

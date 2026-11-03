@@ -1,7 +1,7 @@
 {
   "version": 1,
   "stand": "2026-11-02",
-  "anzahl": 361,
+  "anzahl": 373,
   "eintraege": [
     {
       "id": "w-fleisch",
@@ -8912,6 +8912,356 @@
       ],
       "visual": {
         "vorlage": "vergleich"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "garum",
+      "typ": "prozess",
+      "titel": "Garum: die römische Fischsauce",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "umami",
+        "glutamat",
+        "proteolyse",
+        "enzym",
+        "fermentation",
+        "wasseraktivitaet",
+        "koji",
+        "salz-geschmack",
+        "w-fisch"
+      ],
+      "welten": [
+        "w-fisch",
+        "w-saucen"
+      ],
+      "synonyme": [
+        "Garum",
+        "Liquamen",
+        "Fischsauce",
+        "römische Würzsauce",
+        "Colatura di alici",
+        "Woher kommt der Name Garum"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "proteolyse",
+      "typ": "begriff",
+      "titel": "Proteolyse",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "enzym",
+        "garum",
+        "fleischreifung",
+        "umami"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Eiweißabbau",
+        "Eiweißspaltung"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "koji",
+      "typ": "prozess",
+      "titel": "Koji: der Schimmelpilz hinter Miso und Sojasauce",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "fermentation",
+        "enzym",
+        "amylase",
+        "proteolyse",
+        "umami",
+        "garum",
+        "edelschimmel"
+      ],
+      "welten": [
+        "w-getreide",
+        "w-huelsenfruechte"
+      ],
+      "synonyme": [
+        "Koji",
+        "Aspergillus oryzae",
+        "Kōji",
+        "Miso",
+        "Sojasauce",
+        "Sake",
+        "Edelpilz Reis"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "edelschimmel",
+      "typ": "prozess",
+      "titel": "Edelschimmel: wenn Schimmel erwünscht ist",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "kaese",
+        "proteolyse",
+        "fermentation",
+        "koji",
+        "keimwachstum",
+        "w-milch"
+      ],
+      "welten": [
+        "w-milch",
+        "w-fleisch"
+      ],
+      "synonyme": [
+        "Edelschimmel",
+        "Blauschimmel",
+        "Weißschimmel",
+        "Camembert Rinde",
+        "Salami Schimmel",
+        "Schimmel essen",
+        "Schimmel abschneiden"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "bitter",
+      "typ": "prozess",
+      "titel": "Bitter: der Warnsensor, der zum Genuss wurde",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "kaffee-sauer-bitter",
+        "knoblauch-bitter",
+        "salz-geschmack",
+        "geschmack-balance",
+        "x-salz-bitter",
+        "suess"
+      ],
+      "welten": [
+        "w-kaffee",
+        "w-gemuese"
+      ],
+      "synonyme": [
+        "bitter",
+        "Bitterkeit",
+        "Bitterstoffe",
+        "zu bitter",
+        "Bitterkeit mildern",
+        "Chicorée bitter"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "suess",
+      "typ": "prozess",
+      "titel": "Süß: warum warm süßer schmeckt",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "zucker",
+        "saeure",
+        "salz-geschmack",
+        "geschmack-balance",
+        "gefrierpunkt-senkung",
+        "bitter"
+      ],
+      "welten": [
+        "w-suesses",
+        "w-obst"
+      ],
+      "synonyme": [
+        "süß",
+        "Süße",
+        "zu süß",
+        "Süße ausgleichen",
+        "geschmolzene Glace zu süß",
+        "warum schmeckt warm süßer"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "geschmack-balance",
+      "typ": "prozess",
+      "titel": "Wie Geschmäcker sich gegenseitig verändern",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "salz-geschmack",
+        "saeure",
+        "abschmecken-saeure",
+        "umami",
+        "bitter",
+        "suess",
+        "schaerfe",
+        "essen-flach",
+        "aroma-nase"
+      ],
+      "welten": [
+        "w-saucen",
+        "w-kraeuter-gewuerze"
+      ],
+      "synonyme": [
+        "Geschmack ausgleichen",
+        "abschmecken",
+        "Balance süß sauer",
+        "zu sauer",
+        "zu salzig retten",
+        "Grundgeschmäcker",
+        "fünf Geschmacksrichtungen"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "aroma-nase",
+      "typ": "prozess",
+      "titel": "Geschmack ist meistens Geruch",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "aroma-loeslichkeit",
+        "aroma-blooming",
+        "geschmack-balance",
+        "x-nase-zu",
+        "flavor-pairing",
+        "reduktion"
+      ],
+      "welten": [
+        "w-kraeuter-gewuerze",
+        "w-kaffee"
+      ],
+      "synonyme": [
+        "Geschmack und Geruch",
+        "retronasal",
+        "Aroma riechen",
+        "Schnupfen schmeckt nichts",
+        "Nase und Geschmack",
+        "Aroma"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "flavor-pairing",
+      "typ": "prozess",
+      "titel": "Flavor Pairing: passen gleiche Aromen zusammen?",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "aroma-nase",
+        "geschmack-balance",
+        "aroma-loeslichkeit",
+        "w-kraeuter-gewuerze"
+      ],
+      "welten": [
+        "w-obst",
+        "w-kraeuter-gewuerze"
+      ],
+      "synonyme": [
+        "Flavor Pairing",
+        "Foodpairing",
+        "Aromen kombinieren",
+        "was passt zusammen",
+        "Schokolade und Kaviar",
+        "Aromapaare"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "xanthan",
+      "typ": "begriff",
+      "titel": "Xanthan",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "abbinden-staerke",
+        "agar-agar",
+        "emulsion",
+        "fermentation"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Xanthan",
+        "Xanthangummi",
+        "E 415"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "x-nase-zu",
+      "typ": "experiment",
+      "titel": "Mit zugehaltener Nase schmeckt man nur noch süß",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "aroma-nase",
+        "geschmack-balance",
+        "suess"
+      ],
+      "welten": [
+        "w-suesses"
+      ],
+      "synonyme": [
+        "Geschmackstest Nase",
+        "Gummibärchen Experiment",
+        "Nase zuhalten schmecken"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "x-salz-bitter",
+      "typ": "experiment",
+      "titel": "Eine Prise Salz macht Grapefruit süßer",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "bitter",
+        "geschmack-balance",
+        "salz-geschmack",
+        "suess"
+      ],
+      "welten": [
+        "w-obst"
+      ],
+      "synonyme": [
+        "Salz gegen Bitterkeit",
+        "Grapefruit mit Salz",
+        "Salz im Kaffee"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
       },
       "verlinkt_von": []
     }

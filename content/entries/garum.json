@@ -1,0 +1,76 @@
+{
+  "id": "garum",
+  "typ": "prozess",
+  "titel": "Garum: die römische Fischsauce",
+  "synonyme": [
+    "Garum",
+    "Liquamen",
+    "Fischsauce",
+    "römische Würzsauce",
+    "Colatura di alici",
+    "Woher kommt der Name Garum"
+  ],
+  "kurz": "Garum war die Würzsauce der Römer: Fisch und viel Salz, monatelang stehen gelassen, bis die [[enzym|Enzyme]] des Fisches sein Eiweiß zu herzhaftem [[umami|Umami]] zerlegt haben. Nach ihr ist diese Seite benannt.",
+  "bild_im_kopf": "Wie ein Haus, das von innen abgebaut wird: Die Arbeiter wohnten schon darin, das Salz sperrt nur die Plünderer aus.",
+  "was_passiert": "Die Römer schichteten kleine Fische oder Fischinnereien mit Salz in Becken und ließen sie in der Wärme stehen. Das viele Salz hält Fäulnisbakterien fern. Die Verdauungsenzyme im Fisch arbeiten aber weiter und zerlegen Eiweiß in seine Bausteine ([[proteolyse|Proteolyse]]). Darunter ist viel [[glutamat|Glutamat]], der Träger von Umami. Nach einigen Monaten wurde die klare, bernsteinfarbene Flüssigkeit abgeschöpft: das Garum.",
+  "warum_wichtig": "Garum zeigt, dass Umami-Würze kein moderner Trick ist. Thailändische und vietnamesische Fischsauce, italienische Colatura di alici und Worcestershiresauce funktionieren nach demselben Prinzip. Moderne Spitzenküchen nennen heute jede so [[fermentation|fermentierte]] Würze ein Garum, auch aus Fleisch, Pilzen oder Bienenbrot.",
+  "faustregeln": [
+    "Ein paar Tropfen Fischsauce in Tomatensauce, Schmorgericht oder Salatsauce geben Tiefe, ohne nach Fisch zu schmecken.",
+    "Fischsauce ist sehr salzig: Erst würzen, dann nachsalzen.",
+    "Fischsauce nicht selbst in der Sonne ansetzen: Ohne genaue Salzmenge und Kontrolle können gefährliche Keime wachsen. Gekaufte verwenden."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zeit",
+      "wirkung": "Je länger die Enzyme arbeiten, desto mehr Eiweiß wird zu Umami"
+    },
+    {
+      "id": "salzgehalt",
+      "wirkung": "Viel Salz hält Fäulnis fern, zu wenig lässt sie zu"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-saucen",
+      "text": "Ein Spritzer Fischsauce rundet eine Bolognese ab, wie früher das Garum die römische Küche."
+    },
+    {
+      "welt": "w-fisch",
+      "text": "Colatura di alici aus Sardellen ist der direkte Nachfahre des Garums."
+    }
+  ],
+  "links": [
+    "umami",
+    "glutamat",
+    "proteolyse",
+    "enzym",
+    "fermentation",
+    "wasseraktivitaet",
+    "koji",
+    "salz-geschmack",
+    "w-fisch"
+  ],
+  "welten": [
+    "w-fisch",
+    "w-saucen"
+  ],
+  "quellen": [
+    {
+      "titel": "Robert I. Curtis: Garum and Salsamenta. Production and Commerce in Materia Medica (1991)"
+    },
+    {
+      "titel": "Mother Jones: How a smelly fish sauce helped solve one of ancient Rome's mysteries",
+      "url": "https://www.motherjones.com/?p=503347"
+    },
+    {
+      "titel": "René Redzepi, David Zilber: The Noma Guide to Fermentation (2018)",
+      "stelle": "Kapitel Koji und Garums"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "an ancient Roman clay amphora with a small dish of amber fish sauce, a few anchovies and coarse salt crystals beside it"
+  }
+}

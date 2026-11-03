@@ -1,0 +1,30 @@
+{
+  "id": "flavor-pairing",
+  "titel": "Flavour pairing: do shared aromas go together?",
+  "kurz": "The idea: ingredients that share key aroma compounds go well together. It produces good ideas, but it is not a law of nature.",
+  "bild_im_kopf": "Like two strangers on a train who find out they come from the same village: they often get on, but some of the best friendships share nothing at all.",
+  "was_passiert": "Every ingredient smells of a blend of many aroma compounds. In the early 2000s it was noticed that surprising pairs such as white chocolate and caviar share some of them. An analysis of around 56,000 recipes showed that Western cuisines do tend to combine ingredients with shared aroma compounds. East Asian cuisines tend to do the opposite and still taste excellent.",
+  "warum_wichtig": "Flavour pairing helps when inventing new combinations, such as strawberry with basil or tomato with strawberry. Whether a dish works also depends on basic tastes, texture, temperature and habit.",
+  "synonyme": [
+    "flavour pairing",
+    "food pairing",
+    "combining flavours",
+    "what goes with what",
+    "aroma pairs"
+  ],
+  "faustregeln": [
+    "For new ideas: pick one ingredient and look for a second that smells similar.",
+    "Shared aromas reinforce each other, contrasts bring tension: both can work.",
+    "Always balance the basic tastes at the end; aroma alone is not enough."
+  ],
+  "praxis": [
+    {
+      "welt": "w-obst",
+      "text": "Strawberry and basil share fruity, green aroma notes."
+    },
+    {
+      "welt": "w-kraeuter-gewuerze",
+      "text": "Coriander seed and orange peel share citrus-like aroma compounds."
+    }
+  ]
+}

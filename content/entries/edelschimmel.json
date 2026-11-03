@@ -1,0 +1,71 @@
+{
+  "id": "edelschimmel",
+  "typ": "prozess",
+  "titel": "Edelschimmel: wenn Schimmel erwünscht ist",
+  "synonyme": [
+    "Edelschimmel",
+    "Blauschimmel",
+    "Weißschimmel",
+    "Camembert Rinde",
+    "Salami Schimmel",
+    "Schimmel essen",
+    "Schimmel abschneiden"
+  ],
+  "kurz": "Bestimmte Schimmelpilze werden gezielt eingesetzt: Sie machen Camembert cremig, Gorgonzola würzig und schützen Salami. Wilder Schimmel dagegen kann Gift bilden.",
+  "bild_im_kopf": "Wie ein Wachhund im Garten: Der eigene Hund besetzt den Platz, damit kein streunender hineinkommt.",
+  "was_passiert": "Weißschimmel auf Camembert zerlegt Eiweiß und Fett von außen nach innen. Darum wird der [[kaese|Käse]] unter der Rinde zuerst weich. Blauschimmel wächst in Luftkanälen, die man in den Käse sticht, und bildet würzige, scharfe Aromen. Auf Salami besetzt ein weißer Edelschimmel die Oberfläche, bremst das Austrocknen und lässt anderen Schimmel nicht hin. Wilder Schimmel bildet dagegen oft Gifte (Mykotoxine), die man weder sieht noch wegkochen kann.",
+  "warum_wichtig": "Erklärt, warum man Blauschimmelkäse essen kann, aber verschimmeltes Brot nicht. Der Unterschied liegt nicht im Schimmel an sich, sondern darin, welcher Pilz es ist und wo sein Geflecht schon überall steckt.",
+  "faustregeln": [
+    "Weiches und Feuchtes mit fremdem Schimmel ganz wegwerfen: Brot, Konfitüre, Joghurt, Obst, Weichkäse. Das Geflecht reicht weiter, als man sieht.",
+    "Bei Hartkäse und Salami einzelne Stellen großzügig wegschneiden, mindestens einen Zentimeter (Richtwert).",
+    "Camembert reift im Kühlschrank weiter: Je näher am Datum, desto cremiger."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zeit",
+      "wirkung": "Mit der Reifezeit dringt der Schimmel weiter ein und der Käse wird weicher und kräftiger"
+    },
+    {
+      "id": "feuchtigkeit",
+      "wirkung": "Feuchte Lebensmittel lassen fremden Schimmel tief hineinwachsen"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-milch",
+      "text": "Gorgonzola, Roquefort und Camembert verdanken ihren Charakter einem gezielt zugesetzten Edelschimmel."
+    },
+    {
+      "welt": "w-fleisch",
+      "text": "Der weiße Belag auf Salami ist gewollt und schützt die Wurst beim Trocknen."
+    }
+  ],
+  "links": [
+    "kaese",
+    "proteolyse",
+    "fermentation",
+    "koji",
+    "keimwachstum",
+    "w-milch"
+  ],
+  "welten": [
+    "w-milch",
+    "w-fleisch"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Käse: Schimmelgereifte Käse"
+    },
+    {
+      "titel": "Stiftung Warentest: Schimmel auf Lebensmitteln",
+      "url": "https://www.test.de/Lebensmittel-Schimmels-schlimme-Sporen-1133015-1134201/"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a wedge of blue-veined cheese, a round camembert with white rind and a salami with white mould coating on a wooden board"
+  }
+}

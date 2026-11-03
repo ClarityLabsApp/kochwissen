@@ -1,0 +1,47 @@
+{
+  "id": "x-salz-bitter",
+  "typ": "experiment",
+  "titel": "Eine Prise Salz macht Grapefruit süßer",
+  "synonyme": [
+    "Salz gegen Bitterkeit",
+    "Grapefruit mit Salz",
+    "Salz im Kaffee"
+  ],
+  "kurz": "Zwei Schnitze Grapefruit, einer mit einer winzigen Prise Salz: Der gesalzene schmeckt weniger bitter und süßer.",
+  "bild_im_kopf": "Wie ein Vorhang, der vor eine grelle Lampe gezogen wird: Plötzlich sieht man die anderen Farben im Raum.",
+  "material": [
+    "eine Grapefruit",
+    "Salz",
+    "ein Glas Wasser zum Neutralisieren"
+  ],
+  "schritte": [
+    "Zwei Schnitze herauslösen.",
+    "Auf einen ganz wenig Salz streuen, gerade sichtbar.",
+    "Zuerst den ungesalzenen probieren, Wasser trinken, dann den gesalzenen.",
+    "Vergleichen: Wie bitter, wie süß, wie salzig?"
+  ],
+  "beobachtung": "Der gesalzene Schnitz schmeckt kaum salzig, aber weniger bitter, und die Süße tritt hervor.",
+  "erklaerung": "Salz dämpft die Wahrnehmung von Bitterstoffen. Weil das Bittere zurücktritt, schmeckt man die Süße stärker, obwohl kein Zucker dazugekommen ist.",
+  "dauer": "5 Minuten",
+  "links": [
+    "bitter",
+    "geschmack-balance",
+    "salz-geschmack",
+    "suess"
+  ],
+  "welten": [
+    "w-obst"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "two pink grapefruit segments on a small plate, one sprinkled with a few salt crystals, a pinch bowl of salt beside them"
+  },
+  "quellen": [
+    {
+      "titel": "Breslin, Beauchamp: Salt enhances flavour by suppressing bitterness. Nature 387 (1997)",
+      "url": "https://www.nature.com/articles/42388"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

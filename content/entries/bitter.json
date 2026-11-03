@@ -1,0 +1,70 @@
+{
+  "id": "bitter",
+  "typ": "prozess",
+  "titel": "Bitter: der Warnsensor, der zum Genuss wurde",
+  "synonyme": [
+    "bitter",
+    "Bitterkeit",
+    "Bitterstoffe",
+    "zu bitter",
+    "Bitterkeit mildern",
+    "Chicorée bitter"
+  ],
+  "kurz": "Bitter warnt ursprünglich vor Gift. In kleinen Mengen gibt es Kaffee, Schokolade, Bier und Salaten Tiefe, und Salz kann es dämpfen.",
+  "bild_im_kopf": "Wie die Bassstimme im Chor: Allein klingt sie düster, im Zusammenspiel gibt sie Fundament.",
+  "was_passiert": "Die Zunge hat rund zwei Dutzend verschiedene Sensoren für Bitterstoffe. Viele Pflanzengifte schmecken bitter, darum reagieren wir empfindlich, Kinder noch stärker als Erwachsene. Wie stark jemand Bitteres wahrnimmt, ist zum Teil angeboren. Salz dämpft Bitterkeit nachweislich, Zucker und Fett überdecken sie.",
+  "warum_wichtig": "Erklärt, warum Salz Grapefruit und Rosenkohl milder macht, warum Kinder Chicorée meiden und warum verbrannter Knoblauch ein Gericht kippen lässt.",
+  "faustregeln": [
+    "Zu bitter: zuerst eine Prise Salz, dann etwas Süßes oder Fett.",
+    "Bittere Salate wie Chicorée oder Radicchio mit süßer Frucht und salzigem Käse kombinieren.",
+    "Knoblauch und Nüsse nicht zu dunkel rösten: Ab einem Punkt kippt Röstaroma in Bitterkeit."
+  ],
+  "stellschrauben": [
+    {
+      "id": "salzgehalt",
+      "wirkung": "Wenig Salz dämpft Bitterkeit spürbar"
+    },
+    {
+      "id": "temperatur",
+      "wirkung": "Zu heiß Geröstetes wird bitter"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-kaffee",
+      "text": "Zu feiner Mahlgrad oder zu lange Brühzeit löst mehr Bitterstoffe."
+    },
+    {
+      "welt": "w-gemuese",
+      "text": "Rosenkohl, Chicorée und Endivie mögen Salz, Fett und etwas Süße."
+    }
+  ],
+  "links": [
+    "kaffee-sauer-bitter",
+    "knoblauch-bitter",
+    "salz-geschmack",
+    "geschmack-balance",
+    "x-salz-bitter",
+    "suess"
+  ],
+  "welten": [
+    "w-kaffee",
+    "w-gemuese"
+  ],
+  "quellen": [
+    {
+      "titel": "Breslin, Beauchamp: Salt enhances flavour by suppressing bitterness. Nature 387 (1997)",
+      "url": "https://www.nature.com/articles/42388"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Geschmack und Aroma"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a halved grapefruit, a head of red radicchio and a cup of black coffee on a linen cloth"
+  }
+}

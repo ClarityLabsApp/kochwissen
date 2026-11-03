@@ -21,6 +21,7 @@ const de = {
     eyebrow: (n: number, m: number) => `Die Bibliothek · ${n} von ${m} Einträgen geschrieben`,
     h1a: "Verstehen, warum es ", h1b: "funktioniert",
     lede: "Kein Rezeptbuch, sondern die Vorgänge dahinter: einfach erklärt und sichtbar gemacht. Wer weiß, warum etwas passiert, kocht freier.",
+    nameQ: "Warum Garum?", nameA: "Die römische Fischsauce, nach der diese Seite heißt",
     footerA: "Garum · warum Kochen funktioniert", footerB: "Inhalte im Aufbau",
   },
   search: {
@@ -83,6 +84,7 @@ const en: Dict = {
     eyebrow: (n, m) => `The library · ${n} of ${m} entries written`,
     h1a: "Understand why it ", h1b: "works",
     lede: "Not a recipe book, but the processes behind it: simply explained and made visible. If you know why something happens, you cook more freely.",
+    nameQ: "Why Garum?", nameA: "The Roman fish sauce this site is named after",
     footerA: "Garum · why cooking works", footerB: "Work in progress",
   },
   search: {

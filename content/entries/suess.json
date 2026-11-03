@@ -1,0 +1,70 @@
+{
+  "id": "suess",
+  "typ": "prozess",
+  "titel": "Süß: warum warm süßer schmeckt",
+  "synonyme": [
+    "süß",
+    "Süße",
+    "zu süß",
+    "Süße ausgleichen",
+    "geschmolzene Glace zu süß",
+    "warum schmeckt warm süßer"
+  ],
+  "kurz": "Süße meldet der Zunge Energie. Wie süß etwas wirkt, hängt stark von der Temperatur ab: Warm schmeckt es deutlich süßer als kalt.",
+  "bild_im_kopf": "Wie ein Radio, dessen Lautstärke mit der Wärme steigt: Derselbe Sender, aber kalt ist er leise gedreht.",
+  "was_passiert": "[[zucker|Zucker]] docken an einen Süß-Sensor auf der Zunge an. Ein Teil der Signalkette arbeitet bei Wärme viel stärker, bei Kälte schwächer. Darum schmeckt geschmolzene Glace pappsüß und warme Cola klebrig. [[saeure|Säure]], Bitteres und Salz verändern die Süße zusätzlich: Eine Prise Salz hebt sie, Säure gleicht sie aus.",
+  "warum_wichtig": "Wer das weiß, süßt kalte Desserts kräftiger und warme sparsamer. Und er rettet ein zu süßes Gericht mit Säure statt mit noch mehr von allem anderen.",
+  "faustregeln": [
+    "Glace- und Sorbetmasse warm abschmecken und etwas zu süß lassen: Gefroren wirkt sie deutlich weniger süß.",
+    "Zu süß: ein paar Tropfen Zitrone oder eine Prise Salz.",
+    "Eine Prise Salz gehört auch in süße Teige und Karamell, sie macht den Geschmack runder."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "Warm schmeckt süßer, kalt weniger süß"
+    },
+    {
+      "id": "zuckergehalt",
+      "wirkung": "Mehr Zucker macht nicht nur süßer, er bindet auch Wasser und verändert die Textur"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-suesses",
+      "text": "Eine Glacemasse, die warm genau richtig schmeckt, ist gefroren zu fad."
+    },
+    {
+      "welt": "w-obst",
+      "text": "Erdbeeren mit einem Spritzer Zitrone schmecken fruchtiger, nicht saurer."
+    }
+  ],
+  "links": [
+    "zucker",
+    "saeure",
+    "salz-geschmack",
+    "geschmack-balance",
+    "gefrierpunkt-senkung",
+    "bitter"
+  ],
+  "welten": [
+    "w-suesses",
+    "w-obst"
+  ],
+  "quellen": [
+    {
+      "titel": "Talavera et al.: Heat activation of TRPM5 underlies thermal sensitivity of sweet taste. Nature 438 (2005)",
+      "url": "https://www.nature.com/articles/nature04248"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Zucker und Geschmack"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a melting scoop of vanilla ice cream in a glass bowl next to a sugar bowl with a spoon"
+  }
+}

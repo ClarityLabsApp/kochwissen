@@ -1,0 +1,24 @@
+{
+  "id": "proteolyse",
+  "typ": "begriff",
+  "titel": "Proteolyse",
+  "synonyme": [
+    "Eiweißabbau",
+    "Eiweißspaltung"
+  ],
+  "kurz": "Das Zerlegen von Eiweiß durch [[enzym|Enzyme]] in kleinere Stücke bis zu einzelnen Bausteinen (Aminosäuren). Es macht gereiftes Fleisch zart, Käse würzig und Fischsauce herzhaft.",
+  "links": [
+    "enzym",
+    "garum",
+    "fleischreifung",
+    "umami"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Eiweiß und Enzyme"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

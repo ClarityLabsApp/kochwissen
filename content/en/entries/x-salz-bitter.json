@@ -1,0 +1,25 @@
+{
+  "id": "x-salz-bitter",
+  "titel": "A pinch of salt makes grapefruit sweeter",
+  "kurz": "Two segments of grapefruit, one with a tiny pinch of salt: the salted one tastes less bitter and sweeter.",
+  "bild_im_kopf": "Like a curtain drawn in front of a glaring lamp: suddenly you can see the other colours in the room.",
+  "beobachtung": "The salted segment hardly tastes salty, but it is less bitter and the sweetness comes forward.",
+  "erklaerung": "Salt dampens the perception of bitter compounds. Because the bitterness recedes, you taste the sweetness more strongly, although no sugar has been added.",
+  "dauer": "5 minutes",
+  "synonyme": [
+    "salt against bitterness",
+    "salted grapefruit",
+    "salt in coffee"
+  ],
+  "schritte": [
+    "Take out two segments.",
+    "Sprinkle a very little salt on one, just visible.",
+    "Taste the unsalted one first, drink some water, then the salted one.",
+    "Compare: how bitter, how sweet, how salty?"
+  ],
+  "material": [
+    "a grapefruit",
+    "salt",
+    "a glass of water to rinse"
+  ]
+}

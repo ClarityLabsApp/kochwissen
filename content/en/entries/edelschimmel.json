@@ -1,0 +1,40 @@
+{
+  "id": "edelschimmel",
+  "titel": "Noble moulds: when mould is wanted",
+  "kurz": "Certain moulds are used on purpose: they make Camembert creamy, Gorgonzola savoury and protect salami. Wild mould, on the other hand, can produce toxins.",
+  "bild_im_kopf": "Like a guard dog in the garden: your own dog takes up the space so that no stray can get in.",
+  "was_passiert": "White mould on Camembert breaks down protein and fat from the outside in. That is why the [[kaese|cheese]] softens under the rind first. Blue mould grows in air channels pierced into the cheese and creates savoury, sharp aromas. On salami, a white noble mould occupies the surface, slows drying and keeps other moulds out. Wild mould, by contrast, often produces toxins (mycotoxins) that you can neither see nor cook away.",
+  "warum_wichtig": "Explains why you can eat blue cheese but not mouldy bread. The difference is not mould as such, but which fungus it is and how far its network has already spread.",
+  "synonyme": [
+    "noble mould",
+    "blue cheese mould",
+    "white rind",
+    "salami mould",
+    "is mould safe to eat"
+  ],
+  "faustregeln": [
+    "Throw soft and moist foods with unwanted mould away completely: bread, jam, yoghurt, fruit, soft cheese. The network reaches further than you can see.",
+    "On hard cheese and salami, cut away single spots generously, at least one centimetre (as a guide).",
+    "Camembert keeps ripening in the fridge: the closer to its date, the creamier it is."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zeit",
+      "wirkung": "With ripening time the mould penetrates further and the cheese turns softer and stronger"
+    },
+    {
+      "id": "feuchtigkeit",
+      "wirkung": "Moist foods let unwanted mould grow deep inside"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-milch",
+      "text": "Gorgonzola, Roquefort and Camembert owe their character to a deliberately added noble mould."
+    },
+    {
+      "welt": "w-fleisch",
+      "text": "The white coating on salami is intentional and protects the sausage while it dries."
+    }
+  ]
+}

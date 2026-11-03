@@ -1,0 +1,40 @@
+{
+  "id": "bitter",
+  "titel": "Bitter: the warning sensor that became a pleasure",
+  "kurz": "Bitterness originally warns of poison. In small amounts it gives depth to coffee, chocolate, beer and salads, and salt can tone it down.",
+  "bild_im_kopf": "Like the bass voice in a choir: alone it sounds gloomy, in harmony it gives a foundation.",
+  "was_passiert": "The tongue has around two dozen different sensors for bitter compounds. Many plant poisons taste bitter, so we are sensitive to it, children even more than adults. How strongly someone perceives bitterness is partly inborn. Salt demonstrably dampens bitterness; sugar and fat mask it.",
+  "warum_wichtig": "Explains why salt makes grapefruit and Brussels sprouts milder, why children avoid chicory and why burnt garlic can tip a dish over.",
+  "synonyme": [
+    "bitter",
+    "bitterness",
+    "too bitter",
+    "reduce bitterness",
+    "bitter compounds"
+  ],
+  "faustregeln": [
+    "Too bitter: first a pinch of salt, then something sweet or fatty.",
+    "Combine bitter leaves such as chicory or radicchio with sweet fruit and salty cheese.",
+    "Do not roast garlic and nuts too dark: past a certain point roasted flavour tips into bitterness."
+  ],
+  "stellschrauben": [
+    {
+      "id": "salzgehalt",
+      "wirkung": "A little salt noticeably dampens bitterness"
+    },
+    {
+      "id": "temperatur",
+      "wirkung": "Anything roasted too hot turns bitter"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-kaffee",
+      "text": "Too fine a grind or too long a brew dissolves more bitter compounds."
+    },
+    {
+      "welt": "w-gemuese",
+      "text": "Brussels sprouts, chicory and endive like salt, fat and a little sweetness."
+    }
+  ]
+}

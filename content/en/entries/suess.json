@@ -1,0 +1,40 @@
+{
+  "id": "suess",
+  "titel": "Sweet: why warm tastes sweeter",
+  "kurz": "Sweetness signals energy to the tongue. How sweet something seems depends strongly on temperature: warm, it tastes noticeably sweeter than cold.",
+  "bild_im_kopf": "Like a radio whose volume rises with warmth: the same station, but cold it is turned down.",
+  "was_passiert": "[[zucker|Sugars]] dock onto a sweet sensor on the tongue. Part of the signal chain works much harder when warm and more weakly when cold. That is why melted ice cream tastes sickly sweet and warm cola sticky. [[saeure|Acid]], bitterness and salt change sweetness further: a pinch of salt lifts it, acid balances it.",
+  "warum_wichtig": "Knowing this, you sweeten cold desserts more strongly and warm ones more sparingly. And you rescue an overly sweet dish with acid rather than more of everything else.",
+  "synonyme": [
+    "sweet",
+    "sweetness",
+    "too sweet",
+    "balance sweetness",
+    "melted ice cream too sweet"
+  ],
+  "faustregeln": [
+    "Taste ice cream and sorbet mixtures warm and leave them slightly too sweet: frozen, they seem much less sweet.",
+    "Too sweet: a few drops of lemon or a pinch of salt.",
+    "A pinch of salt also belongs in sweet doughs and caramel; it rounds out the flavour."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "Warm tastes sweeter, cold less sweet"
+    },
+    {
+      "id": "zuckergehalt",
+      "wirkung": "More sugar does not only sweeten, it also binds water and changes texture"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-suesses",
+      "text": "An ice cream mixture that tastes just right warm is too bland once frozen."
+    },
+    {
+      "welt": "w-obst",
+      "text": "Strawberries with a splash of lemon taste fruitier, not more sour."
+    }
+  ]
+}

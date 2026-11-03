@@ -1,0 +1,72 @@
+{
+  "id": "koji",
+  "typ": "prozess",
+  "titel": "Koji: der Schimmelpilz hinter Miso und Sojasauce",
+  "synonyme": [
+    "Koji",
+    "Aspergillus oryzae",
+    "Kōji",
+    "Miso",
+    "Sojasauce",
+    "Sake",
+    "Edelpilz Reis"
+  ],
+  "kurz": "Koji ist ein Schimmelpilz, der auf gedämpftem Reis oder Gerste wächst und [[enzym|Enzyme]] bildet: Sie machen aus Stärke Zucker und aus Eiweiß [[umami|Umami]].",
+  "bild_im_kopf": "Wie eine Werkstatt voller Scheren: Der Pilz selbst schmeckt nach wenig, aber seine Werkzeuge zerschneiden alles in schmackhafte Stücke.",
+  "was_passiert": "Man impft gedämpften Reis mit Sporen und hält ihn etwa zwei Tage warm und feucht (Richtwert um 30 °C). Ein weißer, flaumiger Pilzrasen überzieht die Körner. Er gibt zwei Arten von Enzymen ab. Die einen zerlegen Stärke zu Zucker, das braucht man für Sake und süßen Reistrunk. Die anderen zerlegen Eiweiß zu Aminosäuren, daraus entsteht das Umami von Miso und Sojasauce.",
+  "warum_wichtig": "Koji ist der Grund, warum die japanische Küche so viel Umami hat. Spitzenköche nutzen ihn heute auch für Garums, zum Reifen von Fleisch und für eigene Würzpasten.",
+  "faustregeln": [
+    "Nur gekaufte Koji-Sporen oder fertigen Koji-Reis verwenden: Ein naher Verwandter des Pilzes bildet Gift.",
+    "Miso erst am Schluss in die Suppe rühren und nicht mehr kochen: So bleibt das Aroma frisch.",
+    "Ein Löffel Miso in Salatsauce, Butter oder Schmorgericht wirkt wie ein Umami-Verstärker."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "Um 30 °C wächst der Pilz gut, deutlich wärmer stirbt er"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "Nach etwa zwei Tagen hat er genug Enzyme gebildet"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-huelsenfruechte",
+      "text": "Miso ist gekochte Soja, mit Koji und Salz monatelang gereift."
+    },
+    {
+      "welt": "w-getreide",
+      "text": "Für Sake zerlegt Koji die Reisstärke zu Zucker, den dann Hefe vergärt."
+    }
+  ],
+  "links": [
+    "fermentation",
+    "enzym",
+    "amylase",
+    "proteolyse",
+    "umami",
+    "garum",
+    "edelschimmel"
+  ],
+  "welten": [
+    "w-getreide",
+    "w-huelsenfruechte"
+  ],
+  "quellen": [
+    {
+      "titel": "René Redzepi, David Zilber: The Noma Guide to Fermentation (2018)",
+      "stelle": "Kapitel Koji und Garums"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Samen: Sojasauce und Miso"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "fortgeschritten",
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a wooden tray of steamed rice grains covered in fine white fluffy koji mould, a small bowl of miso beside it"
+  }
+}

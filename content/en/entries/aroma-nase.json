@@ -1,0 +1,40 @@
+{
+  "id": "aroma-nase",
+  "titel": "Flavour is mostly smell",
+  "kurz": "The tongue only recognises five basic tastes. Everything else, from strawberry to cinnamon, is smelled by the nose, including from the inside while you chew.",
+  "bild_im_kopf": "Like a chimney with two openings: the scent comes in at the front, but also from the back of the mouth up through the shaft.",
+  "was_passiert": "As you chew and swallow, aroma compounds rise from the back of the mouth into the nose (retronasal). The brain places this impression on the tongue, so we take it for taste. With a blocked nose, only sweet, sour, salty, bitter and umami remain. Aroma compounds are volatile: warm food releases more of them than cold.",
+  "warum_wichtig": "Explains why food tastes bland when you have a cold, why cold dishes need stronger seasoning and why herbs go in at the end.",
+  "synonyme": [
+    "taste and smell",
+    "retronasal smell",
+    "aroma",
+    "cold food tastes of nothing",
+    "nose and flavour"
+  ],
+  "faustregeln": [
+    "Season food served cold more strongly, and taste it cold.",
+    "Add delicate herbs and lemon zest just before serving: their aroma compounds escape in the heat.",
+    "Toast spices briefly in fat: many aroma compounds dissolve in fat and are released that way."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "Warmth releases more aroma compounds; cold mutes them"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "Long cooking drives out volatile aromas"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-kraeuter-gewuerze",
+      "text": "Basil, coriander and parsley lose their fresh scent when cooked along."
+    },
+    {
+      "welt": "w-kaffee",
+      "text": "Freshly ground coffee smells stronger because its aroma compounds have not yet escaped."
+    }
+  ]
+}

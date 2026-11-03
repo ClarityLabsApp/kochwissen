@@ -1,0 +1,69 @@
+{
+  "id": "aroma-nase",
+  "typ": "prozess",
+  "titel": "Geschmack ist meistens Geruch",
+  "synonyme": [
+    "Geschmack und Geruch",
+    "retronasal",
+    "Aroma riechen",
+    "Schnupfen schmeckt nichts",
+    "Nase und Geschmack",
+    "Aroma"
+  ],
+  "kurz": "Die Zunge erkennt nur fünf Grundgeschmäcker. Alles andere, von Erdbeere bis Zimt, riecht die Nase, auch von innen beim Kauen.",
+  "bild_im_kopf": "Wie ein Kamin mit zwei Öffnungen: Der Duft kommt von vorne herein, aber auch von hinten aus dem Mund durch den Schacht nach oben.",
+  "was_passiert": "Beim Kauen und Schlucken steigen Duftstoffe aus dem Mund hinten in die Nase hinauf (retronasal). Das Gehirn verlegt diesen Eindruck auf die Zunge, darum halten wir ihn für Geschmack. Mit verstopfter Nase bleiben nur süß, sauer, salzig, bitter und [[umami|umami]] übrig. Duftstoffe sind flüchtig: Warme Speisen geben mehr davon ab als kalte.",
+  "warum_wichtig": "Erklärt, warum Essen bei Schnupfen fad ist, warum kalte Speisen kräftiger gewürzt werden müssen und warum Kräuter erst am Schluss dazukommen.",
+  "faustregeln": [
+    "Kalt serviertes Essen kräftiger würzen und kalt abschmecken.",
+    "Zarte Kräuter und Zitronenschale erst kurz vor dem Servieren: Ihre Duftstoffe verfliegen in der Hitze.",
+    "Gewürze kurz in Fett rösten: Viele Duftstoffe lösen sich in Fett und werden so freigesetzt."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "Wärme setzt mehr Duftstoffe frei, Kälte dämpft sie"
+    },
+    {
+      "id": "zeit",
+      "wirkung": "Langes Kochen treibt flüchtige Aromen aus"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-kraeuter-gewuerze",
+      "text": "Basilikum, Koriander und Petersilie verlieren beim Mitkochen ihren frischen Duft."
+    },
+    {
+      "welt": "w-kaffee",
+      "text": "Frisch gemahlener Kaffee duftet stärker, weil die Duftstoffe noch nicht verflogen sind."
+    }
+  ],
+  "links": [
+    "aroma-loeslichkeit",
+    "aroma-blooming",
+    "geschmack-balance",
+    "x-nase-zu",
+    "flavor-pairing",
+    "reduktion"
+  ],
+  "welten": [
+    "w-kraeuter-gewuerze",
+    "w-kaffee"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Geschmack und Aroma"
+    },
+    {
+      "titel": "Gordon M. Shepherd: Neurogastronomy. How the Brain Creates Flavor (2012)"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a nose-shaped wisp of aromatic steam rising from a cup of tea next to a halved strawberry and a cinnamon stick"
+  }
+}

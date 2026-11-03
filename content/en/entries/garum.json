@@ -1,0 +1,40 @@
+{
+  "id": "garum",
+  "titel": "Garum: the Roman fish sauce",
+  "kurz": "Garum was the seasoning sauce of the Romans: fish and lots of salt, left for months until the fish's own enzymes had broken its protein down into savoury umami. This site is named after it.",
+  "bild_im_kopf": "Like a house dismantled from the inside: the workers already lived there, and the salt simply locks out the looters.",
+  "was_passiert": "The Romans layered small fish or fish innards with salt in vats and left them in the warmth. The large amount of salt keeps putrefying bacteria away. The digestive [[enzym|enzymes]] in the fish keep working, though, and break protein down into its building blocks ([[proteolyse|proteolysis]]). Among them is plenty of [[glutamat|glutamate]], the carrier of umami. After a few months the clear, amber liquid was skimmed off: the garum.",
+  "warum_wichtig": "Garum shows that umami seasoning is no modern trick. Thai and Vietnamese fish sauce, Italian colatura di alici and Worcestershire sauce work on the same principle. Modern high-end kitchens now call any seasoning [[fermentation|fermented]] this way a garum, including ones made from meat, mushrooms or bee bread.",
+  "synonyme": [
+    "garum",
+    "liquamen",
+    "fish sauce",
+    "Roman fish sauce",
+    "colatura di alici"
+  ],
+  "faustregeln": [
+    "A few drops of fish sauce in tomato sauce, a braise or a dressing add depth without tasting of fish.",
+    "Fish sauce is very salty: season with it first, then add salt.",
+    "Do not ferment fish sauce yourself in the sun: without the right amount of salt and proper control, dangerous germs can grow. Use bought sauce."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zeit",
+      "wirkung": "The longer the enzymes work, the more protein turns into umami"
+    },
+    {
+      "id": "salzgehalt",
+      "wirkung": "Lots of salt keeps putrefaction away; too little lets it in"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-saucen",
+      "text": "A splash of fish sauce rounds off a Bolognese, just as garum once did in Roman cooking."
+    },
+    {
+      "welt": "w-fisch",
+      "text": "Colatura di alici, made from anchovies, is the direct descendant of garum."
+    }
+  ]
+}

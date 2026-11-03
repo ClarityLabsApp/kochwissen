@@ -1,0 +1,47 @@
+{
+  "id": "geschmack-balance",
+  "titel": "How tastes change one another",
+  "kurz": "Sweet, sour, salty, bitter and umami do not act alone: they dampen or lift one another. All seasoning is based on this.",
+  "bild_im_kopf": "Like a mixing desk with five faders: turn one up and the others suddenly sound different.",
+  "was_passiert": "The five basic tastes are detected separately but combined in the brain. Sweet and sour weaken each other. Salt dampens bitterness and makes sweetness seem rounder. Umami and salt boost each other. Heat from chilli is not a taste but a pain signal, which sweetness and fat soften.",
+  "warum_wichtig": "Almost every seasoning problem can be solved with the opposing taste rather than with more water. Only too much salt cannot really be balanced; it can only be diluted.",
+  "synonyme": [
+    "balancing flavours",
+    "seasoning to taste",
+    "sweet and sour balance",
+    "too sour",
+    "rescue too salty",
+    "five basic tastes"
+  ],
+  "faustregeln": [
+    "Too sour: something sweet or fatty.",
+    "Too sweet: [[saeure|acid]] or a pinch of salt.",
+    "Too bitter: salt, then sweetness or fat.",
+    "Too hot: yoghurt, cream, sugar or coconut milk.",
+    "Too salty: dilute with an unsalted ingredient. Acid only distracts a little."
+  ],
+  "stellschrauben": [
+    {
+      "id": "salzgehalt",
+      "wirkung": "Salt lifts sweetness and umami, dampens bitterness"
+    },
+    {
+      "id": "zuckergehalt",
+      "wirkung": "Sweetness balances acidity, bitterness and heat"
+    },
+    {
+      "id": "ph-wert",
+      "wirkung": "Acid makes sweet things fresher and fatty things lighter"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-saucen",
+      "text": "A tomato sauce often needs a pinch of sugar against the acidity; a vinaigrette needs salt against the bitterness in the oil."
+    },
+    {
+      "welt": "w-kraeuter-gewuerze",
+      "text": "A chilli dish tastes rounder and burns less with a little sugar and lime."
+    }
+  ]
+}

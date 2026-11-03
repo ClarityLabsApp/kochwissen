@@ -1,0 +1,80 @@
+{
+  "id": "geschmack-balance",
+  "typ": "prozess",
+  "titel": "Wie Geschmäcker sich gegenseitig verändern",
+  "synonyme": [
+    "Geschmack ausgleichen",
+    "abschmecken",
+    "Balance süß sauer",
+    "zu sauer",
+    "zu salzig retten",
+    "Grundgeschmäcker",
+    "fünf Geschmacksrichtungen"
+  ],
+  "kurz": "Süß, sauer, salzig, bitter und [[umami|umami]] wirken nicht einzeln: Sie dämpfen oder heben sich gegenseitig. Darauf beruht jedes Abschmecken.",
+  "bild_im_kopf": "Wie ein Mischpult mit fünf Reglern: Dreht man einen hoch, klingen die anderen plötzlich anders.",
+  "was_passiert": "Die fünf Grundgeschmäcker werden getrennt erkannt, aber im Gehirn verrechnet. Süß und sauer schwächen sich gegenseitig ab. Salz dämpft Bitterkeit und lässt Süßes runder wirken. Umami und Salz verstärken sich. Schärfe ist kein Geschmack, sondern ein Schmerzreiz, den Süße und Fett mildern.",
+  "warum_wichtig": "Fast jedes Problem beim Abschmecken lässt sich mit dem Gegenspieler lösen statt mit mehr Wasser. Nur zu viel Salz lässt sich nicht wirklich ausgleichen, sondern nur verdünnen.",
+  "faustregeln": [
+    "Zu sauer: etwas Süßes oder Fett.",
+    "Zu süß: [[saeure|Säure]] oder eine Prise Salz.",
+    "Zu bitter: Salz, dann Süße oder Fett.",
+    "Zu scharf: Joghurt, Sahne, Zucker oder Kokosmilch.",
+    "Zu salzig: mit ungesalzener Zutat verdünnen. Säure lenkt nur etwas ab."
+  ],
+  "stellschrauben": [
+    {
+      "id": "salzgehalt",
+      "wirkung": "Salz hebt Süßes und Umami, dämpft Bitteres"
+    },
+    {
+      "id": "zuckergehalt",
+      "wirkung": "Süße gleicht Säure, Bitterkeit und Schärfe aus"
+    },
+    {
+      "id": "ph-wert",
+      "wirkung": "Säure macht Süßes frischer und Fettes leichter"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-saucen",
+      "text": "Eine Tomatensauce braucht oft eine Prise Zucker gegen die Säure, eine Vinaigrette Salz gegen das Bittere im Öl."
+    },
+    {
+      "welt": "w-kraeuter-gewuerze",
+      "text": "Ein Chiligericht wirkt mit etwas Zucker und Limette runder und weniger brennend."
+    }
+  ],
+  "links": [
+    "salz-geschmack",
+    "saeure",
+    "abschmecken-saeure",
+    "umami",
+    "bitter",
+    "suess",
+    "schaerfe",
+    "essen-flach",
+    "aroma-nase"
+  ],
+  "welten": [
+    "w-saucen",
+    "w-kraeuter-gewuerze"
+  ],
+  "quellen": [
+    {
+      "titel": "Breslin, Beauchamp: Salt enhances flavour by suppressing bitterness. Nature 387 (1997)",
+      "url": "https://www.nature.com/articles/42388"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Geschmack und Aroma"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "five small ceramic bowls with salt, sugar, a lemon wedge, a piece of dark chocolate and a dab of miso, with a tasting spoon"
+  }
+}

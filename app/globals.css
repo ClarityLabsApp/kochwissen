@@ -34,6 +34,9 @@ h1 { font-family: var(--f-display); font-weight: 600; font-size: clamp(34px, 7vw
 h1 em { font-style: italic; font-weight: 400; color: var(--crust); }
 h2 { font-family: var(--f-display); font-weight: 600; font-size: 24px; margin: 0; text-wrap: balance; }
 .lede { margin: 0; max-width: 62ch; font-size: 19px; }
+.name-note { margin: 2px 0 0; font-size: 15px; }
+.name-note a { color: var(--sepia); text-decoration: none; border-bottom: 1px dotted currentColor; }
+.name-note .mono { margin-right: 6px; }
 
 /* Eintrag */
 article.entry { --egap: 26px; display: flex; flex-direction: column; gap: var(--egap); }

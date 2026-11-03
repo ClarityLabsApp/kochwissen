@@ -1,0 +1,59 @@
+{
+  "id": "flavor-pairing",
+  "typ": "prozess",
+  "titel": "Flavor Pairing: passen gleiche Aromen zusammen?",
+  "synonyme": [
+    "Flavor Pairing",
+    "Foodpairing",
+    "Aromen kombinieren",
+    "was passt zusammen",
+    "Schokolade und Kaviar",
+    "Aromapaare"
+  ],
+  "kurz": "Die Idee: Zutaten, die wichtige Duftstoffe teilen, passen gut zusammen. Das liefert gute Einfälle, ist aber kein Naturgesetz.",
+  "bild_im_kopf": "Wie zwei Fremde im Zug, die merken, dass sie aus demselben Dorf kommen: Oft verstehen sie sich, aber manche der besten Freundschaften verbindet gar nichts.",
+  "was_passiert": "Jede Zutat riecht nach einer Mischung aus vielen Duftstoffen. Anfang der 2000er-Jahre fiel auf, dass überraschende Paare wie weiße Schokolade und Kaviar einige davon teilen. Eine Auswertung von rund 56 000 Rezepten zeigte: Westliche Küchen kombinieren tatsächlich gern Zutaten mit gemeinsamen Duftstoffen. Ostasiatische Küchen tun eher das Gegenteil und schmecken trotzdem hervorragend.",
+  "warum_wichtig": "Flavor Pairing hilft beim Erfinden neuer Kombinationen, etwa Erdbeere mit Basilikum oder Tomate mit Erdbeere. Ob ein Gericht gelingt, entscheiden aber auch Grundgeschmäcker, Textur, Temperatur und Gewohnheit.",
+  "faustregeln": [
+    "Für neue Ideen: eine Zutat wählen und eine zweite suchen, die ähnlich duftet.",
+    "Gleiche Aromen verstärken sich, Gegensätze bringen Spannung: Beides kann funktionieren.",
+    "Am Schluss immer die Grundgeschmäcker ausbalancieren, das Aroma allein reicht nicht."
+  ],
+  "stellschrauben": [],
+  "praxis": [
+    {
+      "welt": "w-obst",
+      "text": "Erdbeere und Basilikum teilen fruchtig-grüne Duftnoten."
+    },
+    {
+      "welt": "w-kraeuter-gewuerze",
+      "text": "Koriandersamen und Orangenschale teilen zitrusartige Duftstoffe."
+    }
+  ],
+  "links": [
+    "aroma-nase",
+    "geschmack-balance",
+    "aroma-loeslichkeit",
+    "w-kraeuter-gewuerze"
+  ],
+  "welten": [
+    "w-obst",
+    "w-kraeuter-gewuerze"
+  ],
+  "quellen": [
+    {
+      "titel": "Ahn et al.: Flavor network and the principles of food pairing. Scientific Reports 1 (2011)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3240947"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Geschmack und Aroma"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "fortgeschritten",
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a strawberry and a sprig of basil connected by a fine dotted ink line, with a few pieces of white chocolate"
+  }
+}
