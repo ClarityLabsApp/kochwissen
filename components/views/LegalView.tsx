@@ -53,8 +53,8 @@ export function DatenschutzView({ lang }: { lang: Lang }) {
       </section>
       <section>
         <h2>{de ? "Speicherung im eigenen Browser" : "Storage in your own browser"}</h2>
-        <p>{de ? "Der Fortschritt in den Lernpfaden und die Antworten im Quiz werden nur im Speicher deines Browsers abgelegt (localStorage). Sie verlassen dein Gerät nicht, und du kannst sie jederzeit über die Browsereinstellungen löschen."
-          : "Your progress in the learning paths and your quiz answers are kept only in your browser's storage (localStorage). They never leave your device, and you can delete them at any time in your browser settings."}</p>
+        <p>{de ? "Deine Merkliste, welche Einträge du schon gelesen hast, der Fortschritt in den Lernpfaden und die Antworten im Quiz werden nur im Speicher deines Browsers abgelegt (localStorage). Sie verlassen dein Gerät nicht, außer du teilst deine Merkliste selbst als Link, und du kannst sie jederzeit über die Browsereinstellungen löschen."
+          : "Your saved entries, which entries you have already read, your progress in the learning paths and your quiz answers are kept only in your browser's storage (localStorage). They never leave your device unless you share your list yourself, and you can delete them at any time in your browser settings."}</p>
       </section>
       <section>
         <h2>{de ? "Schriften" : "Fonts"}</h2>

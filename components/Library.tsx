@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { search } from "@/lib/search";
 import { href, t, type Lang } from "@/lib/i18n";
 import Contents from "./Contents";
+import { addMerk, useMemo2 } from "@/lib/memo";
 
 export interface LibItem {
   id: string; typ: string; titel: string; status: string; pilot: boolean;
@@ -50,6 +51,10 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
   const [active, setActive] = useState<Set<string>>(new Set());
   const [sub, setSub] = useState<string | null>(null);
   const [door, setDoor] = useState(0);
+  const merk = useMemo2("merk"), gelesen = useMemo2("read");
+  const readSet = useMemo(() => new Set(gelesen), [gelesen]);
+  const [incoming, setIncoming] = useState<string[]>([]);
+  const [copied, setCopied] = useState(false);
   const found = useMemo(() => (q.trim() ? search(items, q) : null), [items, q]);
   const res = found?.scores ?? null;
   const best = (found?.best ?? null) as LibItem | null;
@@ -64,6 +69,20 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
   }, [items]);
   // Die gewählte Kategorie steht in der Adresse (?k=prozess), damit „Zurück“ im Browser zum Molekül führt.
   const scrollLib = () => setTimeout(() => document.getElementById("bibliothek")?.scrollIntoView({ behavior: "smooth", block: "start" }), 50);
+  useEffect(() => {
+    const m = new URL(window.location.href).searchParams.get("merk");
+    if (m) setIncoming(m.split(",").filter((id) => byId.has(id)).slice(0, 200));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  const clearIncoming = () => { setIncoming([]); const u = new URL(window.location.href); u.searchParams.delete("merk"); window.history.replaceState(window.history.state, "", u); };
+  const shareMerk = async () => {
+    const url = `${window.location.origin}${href(lang, "/")}?merk=${merk.join(",")}`;
+    try {
+      if (navigator.share) { await navigator.share({ title: "Garum", url }); return; }
+      await navigator.clipboard.writeText(url); setCopied(true); setTimeout(() => setCopied(false), 2500);
+    } catch { /* abgebrochen */ }
+  };
+  const merkItems = merk.map((id) => byId.get(id)).filter(Boolean) as LibItem[];
   const openType = (t: string) => {
     setActive(new Set([t])); setSub(null);
     const u = new URL(window.location.href); u.searchParams.set("k", t);
@@ -141,7 +160,7 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
                     <li key={id}><Link href={ln(`/eintrag/${id}`)} className={has.has(id) ? "with-pic" : ""}>
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       {has.has(id) && <img src={`/illustrationen/${id}.webp`} alt="" width={36} height={36} loading="lazy" />}
-                      <strong>{byId.get(id)!.titel}</strong></Link></li>
+                      <strong>{byId.get(id)!.titel}</strong>{readSet.has(id) && <small className="read">{T.memo.read}</small>}</Link></li>
                   ))}
                 </ul>
               <div className="door-foot">
@@ -149,6 +168,32 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
               </div>
             </div>
           ))}
+        </section>
+      )}
+      {!res && incoming.length > 0 && (
+        <div className="merk-in">
+          <p>{T.memo.shared(incoming.length)}</p>
+          <div className="vis-row">
+            <button type="button" className="vis-btn" onClick={() => { addMerk(incoming); clearIncoming(); }}>{T.memo.take}</button>
+            <button type="button" className="linkbtn" onClick={clearIncoming}>{T.memo.dismiss}</button>
+          </div>
+        </div>
+      )}
+      {!res && merkItems.length > 0 && (
+        <section className="block merk-list" aria-label={T.memo.list}>
+          <div className="merk-head"><span className="mono">{T.memo.list} · {merkItems.length}</span>
+            <button type="button" className="linkbtn" onClick={shareMerk}>{copied ? T.memo.copied : `${T.memo.share} →`}</button></div>
+          <div className="seen">{merkItems.map((e) => {
+            const pic = pictureOf(e, has);
+            return (
+              <Link key={e.id} href={ln(`/eintrag/${e.id}`)} className="seen-item">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                {pic ? <img src={`/illustrationen/${pic}.webp`} alt="" width={96} height={96} loading="lazy" /> : <span className="tile2-ph" style={{ background: `var(--t-${e.typ})` }} />}
+                <span>{e.titel}</span>
+              </Link>
+            );
+          })}</div>
+          <span className="mono merk-hint">{T.memo.hint}</span>
         </section>
       )}
       {!res && daily && (
@@ -272,7 +317,7 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
                           <li key={e.id}><Link href={ln(`/eintrag/${e.id}`)} className={has.has(e.id) ? "with-pic" : ""}>
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             {has.has(e.id) && <img src={`/illustrationen/${e.id}.webp`} alt="" width={36} height={36} loading="lazy" />}
-                            <strong>{e.titel}{e.status === "geprueft" ? " ✓" : ""}</strong></Link></li>
+                            <strong>{e.titel}{e.status === "geprueft" ? " ✓" : ""}</strong>{readSet.has(e.id) && <small className="read">{T.memo.read}</small>}</Link></li>
                         ))}
                       </ul>
                     </div>

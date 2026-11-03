@@ -90,6 +90,7 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - Adresse zentral in `lib/site.ts` (in Produktion https://garum.guide).
 
 - Impressum und Datenschutz: `/impressum`, `/datenschutz` (und `/en/…`), Texte in `components/views/LegalView.tsx`, Kontakt `CONTACT_EMAIL` in `lib/site.ts` (Weiterleitung über den Domain-Anbieter). Fußzeile `components/SiteFooter.tsx` auf jeder Seite.
+- Merkliste und „gelesen“ ohne Konto: `lib/memo.ts` (localStorage), Knopf `components/MerkButton.tsx` auf Eintragsseiten, Bereich „Deine Merkliste“ auf der Startseite, teilbar als Link `/?merk=id1,id2`.
 - Schriften werden selbst ausgeliefert (`@fontsource…` in `app/layout.tsx`), keine Verbindung zu Google Fonts. Keine Cookies, kein Tracking.
 
 ## Englische Version

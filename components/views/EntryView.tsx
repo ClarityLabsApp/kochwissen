@@ -9,6 +9,7 @@ import Visual, { plain } from "@/components/visuals/Visual";
 import StepFlow from "@/components/visuals/StepFlow";
 import PathNav from "@/components/PathNav";
 import PrintButton from "@/components/PrintButton";
+import MerkButton from "@/components/MerkButton";
 import { appearsIn, getEntry, getMasterItem, hasPicture, isTranslated, lernpfade, plainText, titleOf, typOf, type Typ } from "@/lib/content";
 import { href, t, type Lang } from "@/lib/i18n";
 import { CONTACT_EMAIL, SITE_URL } from "@/lib/site";
@@ -66,6 +67,7 @@ export default function EntryView({ id, lang }: { id: string; lang: Lang }) {
           <span className="tag" style={{ background: `var(--t-${typ})` }}>{T.types[typ]?.[2] ?? typ}</span>
           {e?.schwierigkeit && <span className="mono">{T.level[e.schwierigkeit] ?? e.schwierigkeit}</span>}
           <span className="mono">{T.status[e ? e.status : "geplant"] ?? e?.status}</span>
+          {e && <MerkButton id={id} lang={lang} />}
         </div>
         <h1>{e?.titel ?? titleOf(id, lang)}</h1>
         {(e?.synonyme ?? m?.synonyme)?.length ? <p className="syn">{L.syn}: {(e?.synonyme ?? m!.synonyme).join(", ")}</p> : null}

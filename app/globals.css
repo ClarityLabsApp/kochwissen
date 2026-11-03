@@ -520,3 +520,17 @@ article.entry > details.sec + details.sec { margin-top: calc(-1 * var(--egap) - 
 .feedback a:hover { text-decoration: underline; }
 @media print { .feedback { display: none; } }
 .footer-links .ig { display: inline-flex; align-items: center; gap: 6px; }
+/* Merkliste und gelesen */
+.merk { display: inline-flex; align-items: center; gap: 6px; font: 600 11px var(--f-mono); letter-spacing: .08em; text-transform: uppercase; background: var(--paper-2); color: var(--ink); border: 1px solid var(--rule); border-radius: 999px; padding: 5px 11px; cursor: pointer; }
+.merk.on { color: var(--crust); border-color: var(--crust); }
+.merk:hover { border-color: var(--ink); }
+.merk-list { gap: 8px; }
+.merk-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.merk-hint { opacity: .75; font-size: 10px; }
+.merk-in { border: 1px solid var(--crust); background: var(--paper-2); padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+.merk-in p { margin: 0; }
+.rows a small.read { font: 10px var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--sepia); opacity: .8; margin-left: 10px; white-space: nowrap; }
+.rows a:has(small.read) strong { color: var(--sepia); }
+.rows a:has(small.read)::after { margin-left: 10px; }
+@media print { .merk { display: none; } }
+.rows a strong { flex: 1; }
