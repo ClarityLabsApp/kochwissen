@@ -23,7 +23,7 @@
   "stellschrauben": [
     {
       "id": "temperatur",
-      "wirkung": "ab ca. 60 °C (Kartoffel) beginnt es, darunter nichts"
+      "wirkung": "ab ca. 60 °C (Kartoffel) beginnt es, darunter kaum etwas"
     },
     {
       "id": "feuchtigkeit",
@@ -107,7 +107,7 @@
         },
         {
           "c": 100,
-          "name": "Wasser kocht, Stärke voll verkleistert"
+          "name": "Wasser kocht, Stärke weitgehend verkleistert"
         }
       ]
     }
@@ -130,5 +130,5 @@
       "url": "https://asbe.org/article/starch-gelatinization/"
     }
   ],
-  "status": "entwurf"
+  "status": "geprueft"
 }

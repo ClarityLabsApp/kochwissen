@@ -22,7 +22,7 @@
     "temperatur",
     "fettgehalt"
   ],
-  "was_passiert": "Zuerst muss das Wasser an der Oberfläche verdampfen. Erst dann steigt die Temperatur über 100 °C, die Schicht trocknet aus und bräunt. Eine raue Oberfläche hat mehr Fläche, die knusprig werden kann. Ein dünner Film Fett leitet die Hitze gleichmäßig an jede Stelle.",
+  "was_passiert": "Zuerst muss das Wasser an der Oberfläche verdampfen. Erst dann steigt die Temperatur über 100 °C, die Schicht trocknet aus und bräunt. Eine raue Oberfläche hat mehr Fläche, die knusprig werden kann. Ein dünner Film Fett füllt die Lücken zwischen Pfanne und Oberfläche und leitet die Hitze so viel gleichmäßiger.",
   "warum_wichtig": "Bei Wedges, Pommes, Rösti, Geflügelhaut, Panaden und Brotkruste ist es dasselbe Ziel mit denselben Hebeln.",
   "faustregeln": [
     "Wasser ist der Gegner: [[trocken-tupfen|trocken tupfen]], Platz lassen, nicht abdecken.",
@@ -102,5 +102,5 @@
       "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
     }
   ],
-  "status": "entwurf"
+  "status": "geprueft"
 }

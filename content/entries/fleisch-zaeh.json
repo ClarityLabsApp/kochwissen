@@ -25,7 +25,7 @@
       "titel": "Falsches Stück für die Methode",
       "haeufigkeit": 2,
       "prinzip": "kollagen-gelatine",
-      "warum": "Stücke mit viel Bindegewebe werden kurz gebraten immer zäh.",
+      "warum": "Stücke mit viel Bindegewebe werden kurz gebraten fast immer zäh.",
       "fix": [
         "Schulter, Wade, Backe schmoren",
         "Zum Kurzbraten Filet, Entrecôte oder Huft wählen"
@@ -154,6 +154,6 @@
       "url": "https://blog.thermoworks.com/coming-heat-effects-muscle-fibers-meat/"
     }
   ],
-  "status": "entwurf",
+  "status": "geprueft",
   "schwierigkeit": "einsteiger"
 }

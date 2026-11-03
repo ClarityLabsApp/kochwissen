@@ -10,7 +10,7 @@
   ],
   "kurz": "Bei starker Hitze reagieren Eiweiß und Zucker miteinander. Dabei entstehen braune Farbe und hunderte Röstaromen.",
   "bild_im_kopf": "Wie ein Lagerfeuer mit nassem Holz: Erst muss das Wasser raus, dann brennt es. Solange die Oberfläche nass ist, kocht sie bei 100 °C, egal wie heiß die Pfanne ist.",
-  "was_passiert": "Ab etwa 140 °C verbinden sich Bausteine von Eiweiß mit Zucker zu hunderten neuen Aromastoffen und brauner Farbe. Solange Wasser auf der Oberfläche ist, bleibt sie bei rund 100 °C hängen, weil das Wasser erst [[verdampfen|verdampfen]] muss. Erst wenn sie trocken ist, steigt die Temperatur und die Bräunung beginnt. Eine basische Umgebung beschleunigt die Reaktion.",
+  "was_passiert": "Ab etwa 140 °C verbinden sich Bausteine von Eiweiß rasch mit Zucker zu hunderten neuen Aromastoffen und brauner Farbe. Solange Wasser auf der Oberfläche ist, bleibt sie bei rund 100 °C hängen, weil das Wasser erst [[verdampfen|verdampfen]] muss. Erst wenn sie trocken ist, steigt die Temperatur und die Bräunung beginnt. Darunter läuft die Reaktion auch, nur sehr langsam (Stunden statt Minuten, wie bei Dulce de leche). Eine basische Umgebung beschleunigt sie.",
   "warum_wichtig": "Kruste beim Steak, Brotkruste, geröstete Zwiebeln, Kaffee, Röstgemüse: Fast alles, was herzhaft geröstet schmeckt, kommt von hier.",
   "faustregeln": [
     "Oberfläche [[trocken-tupfen|trocken tupfen]], bevor sie in die Pfanne kommt.",
@@ -131,7 +131,7 @@
         },
         {
           "c": 140,
-          "name": "Bräunung beginnt"
+          "name": "Bräunung wird schnell"
         },
         {
           "c": 190,
@@ -150,6 +150,6 @@
       "url": "https://edu.rsc.org/download?ac=12379"
     }
   ],
-  "status": "entwurf",
+  "status": "geprueft",
   "schwierigkeit": "einsteiger"
 }

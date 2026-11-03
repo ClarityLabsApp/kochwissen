@@ -34,7 +34,7 @@
       "titel": "Roggenanteil",
       "haeufigkeit": 1,
       "prinzip": "milchsaeuregaerung",
-      "warum": "Roggenteige kleben immer, sie bilden kaum Gluten.",
+      "warum": "Roggenteige kleben fast immer, sie bilden kaum Gluten.",
       "fix": [
         "Mit nassen Händen oder einem Teigschaber arbeiten",
         "Nicht kneten, nur mischen"
@@ -97,6 +97,6 @@
       "stelle": "Kapitel Brot, Getreide"
     }
   ],
-  "status": "entwurf",
+  "status": "geprueft",
   "schwierigkeit": "einsteiger"
 }

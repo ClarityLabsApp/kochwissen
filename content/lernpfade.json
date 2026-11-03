@@ -8,7 +8,7 @@
   "schritte": [
    {
     "id": "verdampfen",
-    "warum": "Der Anfang von allem: Solange Wasser da ist, wird nichts heißer als 100 °C."
+    "warum": "Der Anfang von allem: Solange Wasser verdampft, bleibt die Oberfläche bei etwa 100 °C."
    },
    {
     "id": "waermeleitung",
@@ -16,7 +16,7 @@
    },
    {
     "id": "maillard-reaktion",
-    "warum": "Ab 140 °C entsteht das, was wir als Bratenduft und braune Kruste lieben."
+    "warum": "Ab etwa 140 °C entsteht rasch das, was wir als Bratenduft und braune Kruste lieben."
    },
    {
     "id": "karamellisierung",
@@ -214,7 +214,7 @@
      "Der Zucker verdampft"
     ],
     "richtig": 0,
-    "erklaerung": "Hefe frisst Zucker und atmet Kohlendioxid aus. Dasselbe Gas macht die Löcher im Brot.",
+    "erklaerung": "Hefe frisst Zucker und gärt ihn zu Kohlendioxid und Alkohol. Dasselbe Gas macht die Löcher im Brot.",
     "eintrag": "x-hefe-ballon"
    },
    {
@@ -478,7 +478,7 @@
  {
   "id": "saucen",
   "titel": "Saucen ohne Angst",
-  "kurz": "Fast jede Sauce ist eine Emulsion, mit Stärke gebunden oder eingekocht. Wer die drei Wege kennt, rettet jede Sauce.",
+  "kurz": "Die meisten Saucen sind eine Emulsion, mit Stärke gebunden oder eingekocht. Wer die drei Wege kennt, rettet jede Sauce.",
   "fuer": "Für alle, denen Saucen schon einmal geronnen oder zu dünn geraten sind",
   "dauer": "etwa 45 Minuten",
   "schritte": [
@@ -532,7 +532,7 @@
      "Kochen, Braten, Backen"
     ],
     "richtig": 1,
-    "erklaerung": "Fast jede Sauce ist eine Emulsion, mit Stärke gebunden oder eingekocht.",
+    "erklaerung": "Die meisten Saucen sind eine Emulsion, mit Stärke gebunden oder eingekocht.",
     "eintrag": "w-saucen"
    },
    {

@@ -7,7 +7,7 @@
     "Backtriebmittel",
     "Weinsteinbackpulver"
   ],
-  "kurz": "Backpulver ist Natron mit eingebauter Säure und etwas Stärke. Es reagiert einmal beim Anrühren und noch einmal in der Ofenhitze.",
+  "kurz": "Backpulver ist Natron mit eingebauter Säure und etwas Stärke. Die meisten Sorten reagieren einmal beim Anrühren und noch einmal in der Ofenhitze.",
   "bild_im_kopf": "Wie ein Brausepulver mit Zeitzünder.",
   "rolle": [
     {
@@ -43,6 +43,6 @@
       "url": "https://www.americastestkitchen.com/cooksillustrated/articles/6262-what-is-the-difference-between-baking-powder-and-baking-soda-ask-paul"
     }
   ],
-  "status": "entwurf",
+  "status": "geprueft",
   "schwierigkeit": "einsteiger"
 }

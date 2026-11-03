@@ -6,7 +6,7 @@
     "Backpulver Experiment",
     "Triebmittel testen"
   ],
-  "kurz": "Backpulver sprudelt zweimal: einmal, wenn es nass wird, und noch einmal in der Hitze.",
+  "kurz": "Die meisten Backpulver sprudeln zweimal: einmal, wenn es nass wird, und noch einmal in der Hitze.",
   "material": [
     "Backpulver",
     "zwei Gläser",
@@ -67,7 +67,7 @@
     "illustration": "two glasses of water, one with a few bubbles and one fizzing strongly, a small tin of baking powder"
   },
   "sicherheit": "Heißes Wasser: Erwachsene gießen.",
-  "status": "entwurf",
+  "status": "geprueft",
   "schwierigkeit": "einsteiger",
   "quellen": [
     {

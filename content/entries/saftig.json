@@ -16,7 +16,7 @@
     "zeit",
     "fettgehalt"
   ],
-  "was_passiert": "Die [[kerntemperatur|Kerntemperatur]] ist der größte Hebel. Dazu kommen Salz, das Wasser bindet, und Ruhezeit, damit beim Anschneiden weniger ausläuft. Bei Schmorgerichten übernimmt Gelatine die Rolle des Safts.",
+  "was_passiert": "Die [[kerntemperatur|Kerntemperatur]] ist der größte Hebel. Dazu kommen Salz, das die Eiweiße so verändert, dass sie mehr Wasser halten, und Ruhezeit, damit beim Anschneiden weniger ausläuft. Bei Schmorgerichten kommt Gelatine dazu: Sie ersetzt kein Wasser, macht das Fleisch aber im Mund saftig.",
   "faustregeln": [
     "Thermometer benutzen und früh herausnehmen.",
     "Über Nacht salzen.",
@@ -77,6 +77,6 @@
       "url": "https://www.americastestkitchen.com/articles/5710-resting-meat-is-worth-it-and-we-ve-got-the-data-to-prove-it"
     }
   ],
-  "status": "entwurf",
+  "status": "geprueft",
   "schwierigkeit": "einsteiger"
 }

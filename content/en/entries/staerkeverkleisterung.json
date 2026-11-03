@@ -24,7 +24,7 @@
   "stellschrauben": [
     {
       "id": "temperatur",
-      "wirkung": "starts from approx. 60 °C (potato), nothing below"
+      "wirkung": "starts from approx. 60 °C (potato), hardly anything below"
     },
     {
       "id": "feuchtigkeit",
@@ -75,7 +75,7 @@
         },
         {
           "c": 100,
-          "name": "water boils, starch fully gelatinised"
+          "name": "water boils, starch largely gelatinised"
         }
       ]
     }

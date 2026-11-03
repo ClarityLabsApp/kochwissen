@@ -17,7 +17,7 @@
   "faustregeln": [
     "Thermometer für Zucker und Schokolade.",
     "Eiercremes nie kochen lassen.",
-    "Gelatine nie kochen, nur auflösen."
+    "Gelatine nur auflösen, nicht lange kochen: Sonst geliert sie schwächer."
   ],
   "links": [
     "karamellisierung",
@@ -42,6 +42,6 @@
       "stelle": "Kapitel Milch, Zucker, Schokolade"
     }
   ],
-  "status": "entwurf",
+  "status": "geprueft",
   "schwierigkeit": "einsteiger"
 }

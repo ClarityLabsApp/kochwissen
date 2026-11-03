@@ -3,7 +3,7 @@
   "titel": "Maillard reaction",
   "kurz": "In strong heat, protein and sugar react with each other. This creates brown colour and hundreds of roasted aromas.",
   "bild_im_kopf": "Like a campfire with wet wood: first the water has to go, then it burns. As long as the surface is wet, it boils at 100 °C, however hot the pan is.",
-  "was_passiert": "From about 140 °C, building blocks of protein combine with sugar into hundreds of new aroma compounds and brown colour. As long as there is water on the surface, it stays stuck at around 100 °C, because the water has to evaporate first. Only once it is dry does the temperature rise and browning begin. Alkaline conditions speed up the reaction.",
+  "was_passiert": "From about 140 °C, building blocks of protein rapidly combine with sugar into hundreds of new aroma compounds and brown colour. As long as there is water on the surface, it stays stuck at around 100 °C, because the water has to evaporate first. Only once it is dry does the temperature rise and browning begin. Below that the reaction still runs, only very slowly (hours instead of minutes, as with dulce de leche). Alkaline conditions speed it up.",
   "warum_wichtig": "The crust on a steak, bread crust, roasted onions, coffee, roast vegetables: almost everything that tastes savoury and roasted comes from here.",
   "synonyme": [
     "browning",
@@ -97,7 +97,7 @@
         },
         {
           "c": 140,
-          "name": "browning begins"
+          "name": "browning gets fast"
         },
         {
           "c": 190,

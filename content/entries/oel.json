@@ -9,7 +9,7 @@
     "Olivenöl",
     "Frittieröl"
   ],
-  "kurz": "Öl überträgt Hitze gleichmäßig an jede Stelle einer Oberfläche und trägt Geschmack.",
+  "kurz": "Öl überträgt Hitze viel gleichmäßiger auf eine unebene Oberfläche und trägt Geschmack.",
   "bild_im_kopf": "Wie eine Brücke zwischen Pfanne und Essen: Ohne Öl berührt nur die Spitze jeder Unebenheit die Hitze.",
   "rolle": [
     {
@@ -51,5 +51,5 @@
       "stelle": "Kapitel Kartoffeln, Stärke, Frittieren"
     }
   ],
-  "status": "entwurf"
+  "status": "geprueft"
 }

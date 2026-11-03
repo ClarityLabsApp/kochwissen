@@ -8,7 +8,7 @@
   "schritte": [
    {
     "id": "verdampfen",
-    "warum": "Where it all begins: as long as there is water, nothing gets hotter than 100 °C."
+    "warum": "Where it all begins: as long as water is evaporating, the surface stays at about 100 °C."
    },
    {
     "id": "waermeleitung",
@@ -16,7 +16,7 @@
    },
    {
     "id": "maillard-reaktion",
-    "warum": "From 140 °C you get what we love as the smell of roasting and a brown crust."
+    "warum": "From about 140 °C you quickly get what we love as the smell of roasting and a brown crust."
    },
    {
     "id": "karamellisierung",
@@ -214,7 +214,7 @@
      "The sugar evaporates"
     ],
     "richtig": 0,
-    "erklaerung": "Yeast eats sugar and breathes out carbon dioxide. The same gas makes the holes in bread.",
+    "erklaerung": "Yeast eats sugar and ferments it into carbon dioxide and alcohol. The same gas makes the holes in bread.",
     "eintrag": "x-hefe-ballon"
    },
    {
@@ -478,7 +478,7 @@
  {
   "id": "saucen",
   "titel": "Sauces without fear",
-  "kurz": "Almost every sauce is an emulsion, thickened with starch, or reduced. Know the three ways and you can rescue any sauce.",
+  "kurz": "Most sauces are an emulsion, thickened with starch, or reduced. Know the three ways and you can rescue any sauce.",
   "fuer": "For anyone whose sauce has ever split or come out too thin",
   "dauer": "about 45 minutes",
   "schritte": [
@@ -532,7 +532,7 @@
      "Boiling, frying, baking"
     ],
     "richtig": 1,
-    "erklaerung": "Almost every sauce is an emulsion, thickened with starch, or reduced.",
+    "erklaerung": "Most sauces are an emulsion, thickened with starch, or reduced.",
     "eintrag": "w-saucen"
    },
    {

@@ -1,7 +1,7 @@
 {
   "id": "steak-grau",
   "titel": "Steak turns grey instead of brown",
-  "kurz": "The meat stews in its own juice instead of frying. The surface never gets hot enough for a crust.",
+  "kurz": "The meat stews in its own juice instead of frying. The surface does not get hot enough for a crust.",
   "bild_im_kopf": "Like an overfilled fryer basket: the oil cools down and the chips turn limp instead of crisp. The pan only has as much heat as it has stored.",
   "synonyme": [
     "no crust",
@@ -14,7 +14,7 @@
       "titel": "Pan not hot enough",
       "haeufigkeit": 3,
       "prinzip": "maillard-reaktion",
-      "warum": "Without a sizzle, the water evaporates too slowly. The surface never reaches the 140 °C at which browning starts.",
+      "warum": "Without a sizzle, the water evaporates too slowly. For too long, the surface stays below the roughly 140 °C at which browning really gets going.",
       "fix": [
         "Preheat the pan for 3–5 minutes",
         "Test: a drop of water dances as a little ball",

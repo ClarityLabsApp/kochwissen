@@ -9,7 +9,7 @@
     "Dressing",
     "Vinaigrette"
   ],
-  "kurz": "Fast jede Sauce ist eine von drei Sachen: eine [[emulsion|Emulsion]] aus Fett und Wasser, eine mit Stärke gebundene Flüssigkeit oder ein eingekochter Saft.",
+  "kurz": "Die meisten Saucen beruhen auf einer von drei Sachen: eine [[emulsion|Emulsion]] aus Fett und Wasser, eine mit Stärke gebundene Flüssigkeit oder ein eingekochter Saft.",
   "bild_im_kopf": "Drei Werkzeuge im Kasten: Mixer (Emulsion), Kleister (Stärke) und Kochtopf (Reduktion). Wer weiß, welches er benutzt, weiß auch, was schiefgehen kann.",
   "was_passiert": "Emulsionen wie Mayonnaise, Vinaigrette oder Hollandaise halten Fetttröpfchen im Wasser fest. Stärke-Saucen wie Béchamel oder ein abgebundener Jus werden dick, weil Stärkekörner quellen. [[reduktion|Reduktionen]] werden konzentriert und sämig, weil Wasser verdampft und Gelatine zurückbleibt.",
   "warum_wichtig": "Jedes Saucenproblem lässt sich einer der drei Gruppen zuordnen. Gerinnt, trennt, klumpt oder bleibt dünn: Das Prinzip zeigt die Lösung.",
@@ -41,6 +41,6 @@
       "url": "https://med.libretexts.org/Courses/Kansas_State_University/FNDH_313%3A_Science_of_Food/04%3A_Soups_Salads_and_Gelatins/4.02%3A_Roux_and_Thickening"
     }
   ],
-  "status": "entwurf",
+  "status": "geprueft",
   "schwierigkeit": "einsteiger"
 }

@@ -7,14 +7,14 @@
     "Fleisch kocht im Saft",
     "Steak nicht braun"
   ],
-  "kurz": "Das Fleisch kocht im eigenen Saft, statt zu braten. Die Oberfläche wird nie heiß genug für eine Kruste.",
+  "kurz": "Das Fleisch kocht im eigenen Saft, statt zu braten. Die Oberfläche wird nicht heiß genug für eine Kruste.",
   "bild_im_kopf": "Wie ein zu voller Frittierkorb: Das Öl kühlt ab, und die Pommes werden labbrig statt knusprig. Die Pfanne hat nur so viel Hitze, wie sie gespeichert hat.",
   "ursachen": [
     {
       "titel": "Pfanne nicht heiß genug",
       "haeufigkeit": 3,
       "prinzip": "maillard-reaktion",
-      "warum": "Ohne Zischen verdampft das Wasser zu langsam. Die Oberfläche erreicht nie die 140 °C, ab denen die Bräunung startet.",
+      "warum": "Ohne Zischen verdampft das Wasser zu langsam. Die Oberfläche bleibt lange unter den etwa 140 °C, ab denen die Bräunung richtig in Gang kommt.",
       "fix": [
         "Pfanne 3–5 Minuten vorheizen",
         "Test: Ein Wassertropfen tanzt als Kügelchen",
@@ -161,6 +161,6 @@
       "stelle": "Kapitel Fleisch"
     }
   ],
-  "status": "entwurf",
+  "status": "geprueft",
   "schwierigkeit": "einsteiger"
 }

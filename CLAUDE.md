@@ -34,6 +34,7 @@ Gilt für jeden Text in einem Eintrag.
 1. **Erster Satz trifft den Kern.** `kurz` ist ein einziger Satz, verständlich ohne Vorwissen.
 2. **Alltagssprache.** Sätze unter 25 Wörtern. Fachwort nur in Klammern hinter dem Alltagswort: „Eiweiß verändert sich (Denaturierung)“.
 3. **Jeder Eintrag hat ein `bild_im_kopf`.** Eine Analogie aus dem Alltag, die man sich merken kann (Lagerfeuer mit nassem Holz, Kaugummi-Netz, Mörtel zwischen Ziegeln). Keine Analogie zweimal verwenden.
+   Absolute Wörter (nichts, nie, immer, alles, jede) nur, wenn sie wirklich ausnahmslos stimmen; Temperaturen sind Bereiche, ab denen etwas spürbar schnell läuft, keine Schalter.
 4. **Was passiert → warum wichtig → woran drehen.** In dieser Reihenfolge denken.
 5. **Faustregeln sind handfest.** Etwas, das man morgen in der Küche anders macht. Höchstens fünf.
 6. **Zahlen nur, wenn sie stimmen.** Temperaturen und Mengen mit Quelle, sonst als Richtwert kennzeichnen.
@@ -111,7 +112,7 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - [x] Alle 197 Einträge der Masterliste als Entwurf geschrieben (1. November 2026)
 - [x] Zahlen gegen Quellen geprüft, Korrekturen und offene Richtwerte in `content/PRUEFUNG.md` (2. November 2026)
 - [x] Sicherheitsupdate auf Next.js 16 / React 19, `npm audit` sauber. Seitenparameter sind asynchron (`await params`)
-- [ ] Review durch Phil: Status von `entwurf` auf `geprueft`. Prüfliste unter `/pruefen` (versteckt, noindex): Phil markiert «Passt» oder schreibt Anmerkungen und fügt das kopierte Ergebnis in den Chat; dann `status` der genannten ids auf `geprueft` setzen und Anmerkungen einarbeiten
+- [x] Alle 372 Einträge auf `geprueft` gesetzt (3. November 2026, auf Phils Anweisung nach zwei externen KI-Prüfungen; Korrekturen: Temperaturskala-Text ohne absolutes „nichts“, Maillard „rasch ab etwa 140 °C“, Einkochen und flüchtige Aromen, Gelatine/Saft, Backpulver „die meisten“, Saucen „die meisten“). Neue Einträge starten weiter als `entwurf`. Review durch Phil: Prüfliste unter `/pruefen` (versteckt, noindex): Phil markiert «Passt» oder schreibt Anmerkungen und fügt das kopierte Ergebnis in den Chat; dann `status` der genannten ids auf `geprueft` setzen und Anmerkungen einarbeiten
 - [x] Besuchsstatistik: Vercel Web Analytics (`@vercel/analytics`, ohne Cookies), in der Datenschutzerklärung beschrieben; im Vercel-Projekt unter Analytics aktivieren
 - [x] 15 Gerichte und 12 Experimente ergänzt (Generator `scripts/batches/gen_batch_gerichte_experimente.py`)
 - [x] Batch Grundlagen-Chemie II: Geschmack, Kälte, Haltbarkeit, Enzyme, Druck, Basen, Zucker (30 Einträge, `scripts/batches/gen_batch_chemie2.py`)

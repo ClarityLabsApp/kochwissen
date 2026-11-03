@@ -10,7 +10,7 @@
   ],
   "kurz": "Beim Einkochen verdampft Wasser. Geschmack, Salz und Gelatine bleiben zurück und werden konzentrierter.",
   "bild_im_kopf": "Wie Ausverkauf im Laden: Die Regale leeren sich (Wasser), aber die besten Stücke (Geschmack) bleiben und fallen umso mehr auf.",
-  "was_passiert": "Kocht man eine Flüssigkeit offen, verdampft vor allem Wasser. Alles andere bleibt im Topf: Aromen, Zucker, Salz und bei Fonds die Gelatine aus den Knochen. Darum wird ein Jus beim Einkochen kräftiger und sämiger, ganz ohne Mehl oder Stärke.",
+  "was_passiert": "Kocht man eine Flüssigkeit offen, verdampft vor allem Wasser. Zucker, Salz und bei Fonds die Gelatine aus den Knochen bleiben im Topf und werden konzentrierter. Flüchtige Aromen dagegen entweichen zum Teil mit dem Dampf, andere verändern sich in der Hitze. Darum wird ein Jus beim Einkochen kräftiger und sämiger, ganz ohne Mehl oder Stärke.",
   "warum_wichtig": "Gibt Saucen Tiefe und natürliche Bindung. Aber auch Salz konzentriert sich: Wer am Anfang salzt, hat am Ende eine versalzene Sauce.",
   "faustregeln": [
     "Erst am Schluss salzen: Beim Einkochen wird auch das Salz konzentriert.",
@@ -61,6 +61,6 @@
       "stelle": "Kapitel Saucen, Eier"
     }
   ],
-  "status": "entwurf",
+  "status": "geprueft",
   "schwierigkeit": "einsteiger"
 }

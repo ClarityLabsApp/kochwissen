@@ -19,7 +19,7 @@
     "ph-wert",
     "zeit"
   ],
-  "was_passiert": "Ein flaches Gericht braucht oft eher Säure als Salz. Röstaromen entstehen beim Anbraten, nicht beim Kochen. Einkochen konzentriert alles.",
+  "was_passiert": "Ein flaches Gericht braucht oft eher Säure als Salz. Röstaromen entstehen beim Anbraten, nicht beim Kochen. Einkochen konzentriert Salz, Zucker und Geschmack, flüchtige Aromen gehen dabei zum Teil verloren.",
   "faustregeln": [
     "Kräftig anbraten und den Bratensatz lösen.",
     "Zum Schluss mit Säure und Salz abschmecken.",
@@ -44,7 +44,7 @@
     "vorlage": "punktmatrix",
     "illustration": "a pan with browned fond being deglazed with wine, herbs and parmesan beside it"
   },
-  "status": "entwurf",
+  "status": "geprueft",
   "schwierigkeit": "einsteiger",
   "quellen": [
     {
