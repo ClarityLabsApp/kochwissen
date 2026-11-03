@@ -1,0 +1,56 @@
+{
+  "id": "g-chraebeli",
+  "typ": "gericht",
+  "titel": "Chräbeli",
+  "synonyme": [
+    "Anisguetzli",
+    "Chräbeli Füsschen",
+    "Anisbrötli"
+  ],
+  "kurz": "Anisguetzli, die über Nacht antrocknen und im Ofen kleine Füßchen bekommen: Die trockene Haut oben hält, der weiche Teig drückt unten heraus.",
+  "bild_im_kopf": "Wie ein Topf mit Deckel, der überkocht: Oben ist zu, also [[quellen|quillt]] es unten heraus.",
+  "schwierigkeit": "fortgeschritten",
+  "schluesselmomente": [
+    {
+      "schritt": "Eier und Zucker lange schaumig schlagen, Anis und Mehl unterheben",
+      "warum": "Viel eingeschlagene Luft macht den Teig später leicht und lässt ihn im Ofen aufgehen.",
+      "prinzip": "schaumbildung"
+    },
+    {
+      "schritt": "Rollen formen, schräg einschneiden und leicht biegen",
+      "warum": "Die Einschnitte öffnen sich beim Backen zu den typischen Krallen.",
+      "prinzip": "mechanik"
+    },
+    {
+      "schritt": "Bei Raumtemperatur 24 Stunden trocknen lassen",
+      "warum": "Die Oberfläche trocknet zu einer festen Zuckerhaut, das Innere bleibt feucht.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "Bei niedriger Hitze, etwa 140–150 °C, backen (Richtwert)",
+      "warum": "Das Innere dehnt sich mit Dampf aus. Die Haut oben gibt nicht nach, also quillt der Teig unten heraus: Das sind die Füßchen.",
+      "prinzip": "dampflockerung"
+    }
+  ],
+  "links": [
+    "dampflockerung",
+    "schaumbildung",
+    "guetzli-lagern",
+    "w-gebaeck"
+  ],
+  "welten": [
+    "w-gebaeck",
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "pale Swiss Chräbeli aniseed biscuits with little feet and claw-shaped cuts, a few star anise beside them"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Teige und Gebäck"
+    }
+  ],
+  "status": "entwurf"
+}

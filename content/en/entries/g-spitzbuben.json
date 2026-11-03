@@ -1,0 +1,32 @@
+{
+  "id": "g-spitzbuben",
+  "titel": "Spitzbuben (jam-filled biscuits)",
+  "kurz": "Two thin, short biscuits with jam in between: baked pale they stay tender, and boiled-up jam glues them together.",
+  "bild_im_kopf": "Like a sandwich with a built-in window: the base below, the frame above, the jam glowing in between.",
+  "synonyme": [
+    "jam sandwich biscuits",
+    "Linzer cookies"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Make a shortcrust with icing sugar and chill it",
+      "warum": "Icing sugar dissolves quickly and makes the dough fine and tender.",
+      "prinzip": "muerbe"
+    },
+    {
+      "schritt": "Roll out thinly, cut out, and cut a hole in half of them",
+      "warum": "Thin rounds bake through quickly, before they brown.",
+      "prinzip": "waermeleitung"
+    },
+    {
+      "schritt": "Bake at about 200 °C for only 6–8 minutes, until still pale (as a guide)",
+      "warum": "Spitzbuben should stay pale: more browning makes them hard and bitter.",
+      "prinzip": "maillard-reaktion"
+    },
+    {
+      "schritt": "Bring the jam briefly to the boil, spread on the bases, add the tops with the hole",
+      "warum": "Hot jam is runny and spreads well. As it cools, the pectin sets again and glues the halves together.",
+      "prinzip": "gelbildung-pektin"
+    }
+  ]
+}

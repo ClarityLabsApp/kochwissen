@@ -1,0 +1,43 @@
+{
+  "id": "teig-kuehlen",
+  "typ": "technik",
+  "titel": "Guetzliteig kühlen",
+  "synonyme": [
+    "Teig kalt stellen",
+    "Mürbeteig kühlen",
+    "Teig ruhen lassen"
+  ],
+  "kurz": "Butterteig vor dem Auswallen kühlen: Er klebt nicht, lässt sich sauber ausstechen und zerläuft im Ofen nicht.",
+  "bild_im_kopf": "Wie eine Tafel Schokolade im Sommer: Aus dem Kühlschrank bricht sie sauber, warm verbiegt sie sich.",
+  "was_passiert": "Im Kühlschrank wird die Butter im Teig fest. Gleichzeitig nimmt das Mehl die Feuchtigkeit ganz auf, und das wenige [[glutenbildung|Gluten]] entspannt sich. Kommen die ausgestochenen Formen kalt in den Ofen, ist der Rand schon fest, bevor die Butter schmilzt.",
+  "warum_wichtig": "Warmer Teig klebt am Wallholz, die Formen verziehen sich und laufen beim Backen breit.",
+  "schritte": [
+    "Teig flach drücken und in Folie mindestens eine Stunde kühlen.",
+    "Zum Auswallen 5–10 Minuten antauen lassen, wenn er bröckelt.",
+    "Zwischen zwei Backpapieren auswallen, so braucht es kein zusätzliches Mehl.",
+    "Ausgestochene Guetzli auf dem Blech nochmals 10 Minuten kühlen, dann backen."
+  ],
+  "faustregeln": [
+    "Für scharfe Konturen: Guetzli kalt in den heißen Ofen."
+  ],
+  "links": [
+    "muerbe",
+    "kekse-breit",
+    "teig-broeckelt",
+    "w-gebaeck"
+  ],
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Teige: Mürbeteig"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

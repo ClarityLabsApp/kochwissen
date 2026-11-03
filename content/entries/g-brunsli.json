@@ -1,0 +1,54 @@
+{
+  "id": "g-brunsli",
+  "typ": "gericht",
+  "titel": "Basler Brunsli",
+  "synonyme": [
+    "Brunsli backen",
+    "Schokoladeguetzli ohne Mehl"
+  ],
+  "kurz": "Mandeln, Schokolade, Zucker und Eiweiß ohne Mehl: Kurz und heiß gebacken bleiben sie innen weich und werden außen leicht fest.",
+  "bild_im_kopf": "Wie eine Praline im Mantel: Außen eine dünne Kruste, innen weich wie Marzipan.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Mandeln, Zucker, Kakao oder geschmolzene Schokolade und Eiweiß zu einem Teig kneten",
+      "warum": "Das Eiweiß bindet, der [[zucker-feuchtigkeit|Zucker hält Feuchtigkeit fest]]. Ohne Mehl entsteht kein [[glutenbildung|Gluten]], der Teig bleibt zart.",
+      "prinzip": "zucker-feuchtigkeit"
+    },
+    {
+      "schritt": "Auf Zucker auswallen und ausstechen",
+      "warum": "Zucker statt Mehl verhindert Kleben und gibt eine feine, knusprige Oberfläche.",
+      "prinzip": "zucker"
+    },
+    {
+      "schritt": "Einige Stunden oder über Nacht antrocknen lassen",
+      "warum": "Die Oberfläche trocknet zu einer Haut, die im Ofen die Form hält.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "Bei hoher Hitze, etwa 250 °C, nur 3–5 Minuten backen (Richtwert)",
+      "warum": "Die kurze, starke Hitze festigt nur die Außenseite. Länger gebacken würden sie hart.",
+      "prinzip": "waermeleitung"
+    }
+  ],
+  "links": [
+    "zucker-feuchtigkeit",
+    "guetzli-lagern",
+    "w-gebaeck"
+  ],
+  "welten": [
+    "w-gebaeck",
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "dark chocolate almond Basler Brunsli biscuits in heart and clover shapes, coated with sugar"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Teige und Gebäck"
+    }
+  ],
+  "status": "entwurf"
+}

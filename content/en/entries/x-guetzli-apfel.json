@@ -1,0 +1,54 @@
+{
+  "id": "x-guetzli-apfel",
+  "titel": "An apple slice softens gingerbread",
+  "kurz": "Two identical gingerbreads, one in a tin with an apple slice: after two days it is noticeably softer.",
+  "bild_im_kopf": "Like a humidifier in a little room.",
+  "beobachtung": "The gingerbread with the apple is soft, the other has stayed hard. The apple slice has gone wrinkly.",
+  "erklaerung": "The apple gives off water into the air in the tin. The honey and sugar in the [[g-lebkuchen|gingerbread]] draw in this moisture and hold on to it.",
+  "dauer": "2 days",
+  "synonyme": [
+    "soften gingerbread",
+    "apple in the cookie tin"
+  ],
+  "schritte": [
+    "Put one gingerbread in each tin.",
+    "Add the apple slice to one tin.",
+    "Close both and compare after two days: press and taste."
+  ],
+  "material": [
+    "two identical, slightly hard gingerbreads or biscuits",
+    "two tins or jars with lids",
+    "an apple slice"
+  ],
+  "visual": {
+    "params": {
+      "vorher": "day 1",
+      "nachher": "after 2 days",
+      "vergleich": [
+        {
+          "label": "with apple slice",
+          "gefaess": "teller",
+          "inhalt": "keins",
+          "vorher": {
+            "farbe": "#a0622c"
+          },
+          "nachher": {
+            "farbe": "#7a4a22"
+          }
+        },
+        {
+          "label": "without",
+          "gefaess": "teller",
+          "inhalt": "keins",
+          "vorher": {
+            "farbe": "#a0622c"
+          },
+          "nachher": {
+            "farbe": "#b0743a",
+            "kristalle": true
+          }
+        }
+      ]
+    }
+  }
+}

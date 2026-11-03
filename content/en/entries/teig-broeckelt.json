@@ -1,0 +1,78 @@
+{
+  "id": "teig-broeckelt",
+  "titel": "Biscuit dough crumbles when rolled out",
+  "kurz": "The dough is too cold, too dry or not pressed together enough: the butter does not hold [[krume|the crumbs]] together.",
+  "bild_im_kopf": "Like a snowball made of powder snow: too cold and too dry, it will not hold.",
+  "synonyme": [
+    "shortcrust cracks",
+    "dough breaks apart",
+    "crumbly cookie dough"
+  ],
+  "ursachen": [
+    {
+      "titel": "Too cold straight from the fridge",
+      "haeufigkeit": 3,
+      "prinzip": "temperatur",
+      "warum": "Very cold butter is brittle and breaks rather than giving.",
+      "fix": [
+        "Leave at room temperature for 10 minutes",
+        "Work it briefly with your hands"
+      ]
+    },
+    {
+      "titel": "Not enough liquid",
+      "haeufigkeit": 2,
+      "prinzip": "wasser",
+      "warum": "Without enough egg or water, flour and fat do not bind into a dough.",
+      "fix": [
+        "Work in a tablespoon of cold water or egg white"
+      ]
+    },
+    {
+      "titel": "Not pressed together enough",
+      "haeufigkeit": 1,
+      "prinzip": "mechanik",
+      "warum": "Shortcrust should barely be kneaded, but it must be pressed firmly together once.",
+      "fix": [
+        "Press into a ball, chill flat in film"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did the dough come straight from the fridge?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Is it dry and crumbly even after warming up?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

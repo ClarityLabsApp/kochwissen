@@ -1,0 +1,32 @@
+{
+  "id": "g-brunsli",
+  "titel": "Basler Brunsli (chocolate almond biscuits)",
+  "kurz": "Almonds, chocolate, sugar and egg white without flour: baked short and hot they stay soft inside and turn slightly firm outside.",
+  "bild_im_kopf": "Like a chocolate with a coat: a thin crust outside, soft as marzipan inside.",
+  "synonyme": [
+    "Swiss chocolate almond cookies",
+    "flourless chocolate cookies"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Knead almonds, sugar, cocoa or melted chocolate and egg white into a dough",
+      "warum": "The egg white binds, the sugar holds moisture. Without flour no gluten forms, and the dough stays tender.",
+      "prinzip": "zucker-feuchtigkeit"
+    },
+    {
+      "schritt": "Roll out on sugar and cut out",
+      "warum": "Sugar instead of flour stops sticking and gives a fine, crisp surface.",
+      "prinzip": "zucker"
+    },
+    {
+      "schritt": "Leave to dry for a few hours or overnight",
+      "warum": "The surface dries into a skin that holds the shape in the oven.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "Bake at high heat, about 250 °C, for just 3–5 minutes (as a guide)",
+      "warum": "The short, strong heat only firms the outside. Baked longer, they would turn hard.",
+      "prinzip": "waermeleitung"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "g-gluehwein",
+  "typ": "gericht",
+  "titel": "Glühwein",
+  "synonyme": [
+    "Glühwein machen",
+    "Glühwein Alkohol",
+    "Punsch"
+  ],
+  "kurz": "Wein mit Gewürzen sanft erhitzt, nicht gekocht: So bleiben Aroma und auch der meiste Alkohol drin.",
+  "bild_im_kopf": "Wie ein Teebeutel aus Gewürzen in warmem Wein: Ziehen lassen ja, kochen nein.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Rotwein mit Zimt, Nelken, Sternanis, Orangenschale und Zucker erwärmen",
+      "warum": "Viele Duftstoffe der Gewürze lösen sich in Alkohol besser als in Wasser.",
+      "prinzip": "aroma-loeslichkeit"
+    },
+    {
+      "schritt": "Auf etwa 70 °C bringen und nicht kochen lassen (Richtwert)",
+      "warum": "Alkohol siedet schon bei rund 78 °C. Kocht der [[wein|Wein]], verfliegen mit dem Alkohol auch Aromen, und er schmeckt flach.",
+      "prinzip": "siedepunkt-druck"
+    },
+    {
+      "schritt": "20–30 Minuten ziehen lassen, dann Gewürze entfernen",
+      "warum": "Länger ziehende Nelken und Zimtrinde geben bittere, herbe Stoffe ab.",
+      "prinzip": "extraktion"
+    },
+    {
+      "schritt": "Für Kinder: Traubensaft statt Wein",
+      "warum": "Auch langes Köcheln entfernt Alkohol nicht vollständig. Nach 15 Minuten ist noch rund 40 % davon da (Richtwert).",
+      "prinzip": "verdampfen"
+    }
+  ],
+  "links": [
+    "aroma-loeslichkeit",
+    "wein",
+    "extraktion"
+  ],
+  "welten": [
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a glass mug of steaming mulled wine with an orange slice, cinnamon sticks, cloves and star anise"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Wein und Alkohol"
+    },
+    {
+      "titel": "USDA: Table of Nutrient Retention Factors, Release 6 (Alkohol beim Kochen)"
+    }
+  ],
+  "status": "entwurf"
+}

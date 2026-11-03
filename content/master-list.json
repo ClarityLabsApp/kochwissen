@@ -1,7 +1,7 @@
 {
   "version": 1,
   "stand": "2026-11-02",
-  "anzahl": 346,
+  "anzahl": 361,
   "eintraege": [
     {
       "id": "w-fleisch",
@@ -8539,6 +8539,379 @@
       ],
       "visual": {
         "vorlage": "entscheidungsbaum"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-mailaenderli",
+      "typ": "gericht",
+      "titel": "Mailänderli",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "muerbe",
+        "glutenbildung",
+        "teig-kuehlen",
+        "guetzli-lagern",
+        "w-gebaeck"
+      ],
+      "welten": [
+        "w-gebaeck",
+        "w-suesses"
+      ],
+      "synonyme": [
+        "Mailänderli backen",
+        "Butterguetzli",
+        "Weihnachtsguetzli"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-spitzbuben",
+      "typ": "gericht",
+      "titel": "Spitzbuben",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "muerbe",
+        "gelbildung-pektin",
+        "teig-kuehlen",
+        "w-gebaeck"
+      ],
+      "welten": [
+        "w-gebaeck",
+        "w-suesses"
+      ],
+      "synonyme": [
+        "Spitzbuben backen",
+        "Linzer Guetzli",
+        "Konfitüreguetzli"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-zimtsterne",
+      "typ": "gericht",
+      "titel": "Zimtsterne",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "schaumbildung",
+        "g-meringue",
+        "guetzli-lagern",
+        "w-gebaeck"
+      ],
+      "welten": [
+        "w-gebaeck",
+        "w-suesses"
+      ],
+      "synonyme": [
+        "Zimtsterne backen",
+        "Zimtstern Glasur"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-brunsli",
+      "typ": "gericht",
+      "titel": "Basler Brunsli",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "zucker-feuchtigkeit",
+        "guetzli-lagern",
+        "w-gebaeck"
+      ],
+      "welten": [
+        "w-gebaeck",
+        "w-suesses"
+      ],
+      "synonyme": [
+        "Brunsli backen",
+        "Schokoladeguetzli ohne Mehl"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-chraebeli",
+      "typ": "gericht",
+      "titel": "Chräbeli",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "dampflockerung",
+        "schaumbildung",
+        "guetzli-lagern",
+        "w-gebaeck"
+      ],
+      "welten": [
+        "w-gebaeck",
+        "w-suesses"
+      ],
+      "synonyme": [
+        "Anisguetzli",
+        "Chräbeli Füsschen",
+        "Anisbrötli"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-grittibaenz",
+      "typ": "gericht",
+      "titel": "Grittibänz",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "g-zopf",
+        "hefegaerung",
+        "glutenbildung",
+        "w-brot"
+      ],
+      "welten": [
+        "w-brot",
+        "w-gebaeck"
+      ],
+      "synonyme": [
+        "Grittibänz backen",
+        "Grättimaa",
+        "Elggermaa",
+        "Samichlaus"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-lebkuchen",
+      "typ": "gericht",
+      "titel": "Lebkuchen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "hirschhornsalz",
+        "pottasche",
+        "honig",
+        "guetzli-lagern",
+        "w-gebaeck"
+      ],
+      "welten": [
+        "w-gebaeck",
+        "w-suesses"
+      ],
+      "synonyme": [
+        "Lebkuchen backen",
+        "Honiglebkuchen",
+        "Biber",
+        "Lebkuchenteig"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-gluehwein",
+      "typ": "gericht",
+      "titel": "Glühwein",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "aroma-loeslichkeit",
+        "wein",
+        "extraktion"
+      ],
+      "welten": [
+        "w-suesses"
+      ],
+      "synonyme": [
+        "Glühwein machen",
+        "Glühwein Alkohol",
+        "Punsch"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "guetzli-hart",
+      "typ": "symptom",
+      "titel": "Guetzli werden steinhart",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "guetzli-lagern",
+        "zucker-feuchtigkeit",
+        "g-lebkuchen",
+        "w-gebaeck"
+      ],
+      "welten": [
+        "w-gebaeck"
+      ],
+      "synonyme": [
+        "Kekse hart",
+        "Plätzchen hart",
+        "Lebkuchen hart",
+        "Guetzli trocken"
+      ],
+      "visual": {
+        "vorlage": "entscheidungsbaum"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "teig-broeckelt",
+      "typ": "symptom",
+      "titel": "Guetzliteig bröckelt beim Auswallen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "muerbe",
+        "teig-kuehlen",
+        "muerbeteig-zaeh",
+        "w-gebaeck"
+      ],
+      "welten": [
+        "w-gebaeck"
+      ],
+      "synonyme": [
+        "Mürbeteig bricht",
+        "Teig reißt",
+        "Plätzchenteig bröselig"
+      ],
+      "visual": {
+        "vorlage": "entscheidungsbaum"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "teig-kuehlen",
+      "typ": "technik",
+      "titel": "Guetzliteig kühlen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "muerbe",
+        "kekse-breit",
+        "teig-broeckelt",
+        "w-gebaeck"
+      ],
+      "welten": [
+        "w-gebaeck"
+      ],
+      "synonyme": [
+        "Teig kalt stellen",
+        "Mürbeteig kühlen",
+        "Teig ruhen lassen"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "guetzli-lagern",
+      "typ": "technik",
+      "titel": "Guetzli richtig lagern",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "zucker-feuchtigkeit",
+        "guetzli-hart",
+        "x-guetzli-apfel",
+        "w-gebaeck"
+      ],
+      "welten": [
+        "w-gebaeck"
+      ],
+      "synonyme": [
+        "Kekse aufbewahren",
+        "Plätzchen lagern",
+        "Guetzlidose"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "hirschhornsalz",
+      "typ": "begriff",
+      "titel": "Hirschhornsalz",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "g-lebkuchen",
+        "triebmittel",
+        "chemische-lockerung"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Ammoniumhydrogencarbonat",
+        "ABC-Trieb"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "pottasche",
+      "typ": "begriff",
+      "titel": "Pottasche",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "g-lebkuchen",
+        "triebmittel",
+        "hirschhornsalz"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Kaliumcarbonat"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "x-guetzli-apfel",
+      "typ": "experiment",
+      "titel": "Ein Apfelschnitz macht Lebkuchen weich",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "zucker-feuchtigkeit",
+        "guetzli-lagern",
+        "hygroskopisch",
+        "g-lebkuchen"
+      ],
+      "welten": [
+        "w-gebaeck"
+      ],
+      "synonyme": [
+        "Lebkuchen weich machen",
+        "Kekse weich Apfel"
+      ],
+      "visual": {
+        "vorlage": "vergleich"
       },
       "verlinkt_von": []
     }

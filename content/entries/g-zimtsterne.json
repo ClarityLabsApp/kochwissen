@@ -1,0 +1,55 @@
+{
+  "id": "g-zimtsterne",
+  "typ": "gericht",
+  "titel": "Zimtsterne",
+  "synonyme": [
+    "Zimtsterne backen",
+    "Zimtstern Glasur"
+  ],
+  "kurz": "Mandeln, Zucker und Eischnee ohne Mehl: Die weiße Glasur bleibt nur weiß, wenn der Ofen kühl genug ist.",
+  "bild_im_kopf": "Wie Schnee auf einem Dach: Er bleibt liegen, solange die Sonne nicht zu stark scheint.",
+  "schwierigkeit": "fortgeschritten",
+  "schluesselmomente": [
+    {
+      "schritt": "Eiweiß mit Puderzucker steif schlagen, einen Teil als Glasur beiseitestellen",
+      "warum": "Zucker stabilisiert den Schaum. Er wird fest und glänzend und trocknet später zu einer Glasur.",
+      "prinzip": "schaumbildung"
+    },
+    {
+      "schritt": "Den Rest mit gemahlenen Mandeln und Zimt zu einem Teig verarbeiten",
+      "warum": "Ohne Mehl hält das Eiweiß den Teig zusammen. Die Mandeln bringen Fett und Biss.",
+      "prinzip": "eiweiss-gerinnung"
+    },
+    {
+      "schritt": "Ausstechen, glasieren und einige Stunden trocknen lassen",
+      "warum": "Die Glasur bekommt eine trockene Haut und reißt im Ofen weniger.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "Bei etwa 150 °C nur wenige Minuten backen (Richtwert)",
+      "warum": "Bei höherer Hitze bräunen Eiweiß und Zucker, und die Glasur wird gelblich. Innen sollen die Sterne weich bleiben.",
+      "prinzip": "maillard-reaktion"
+    }
+  ],
+  "links": [
+    "schaumbildung",
+    "g-meringue",
+    "guetzli-lagern",
+    "w-gebaeck"
+  ],
+  "welten": [
+    "w-gebaeck",
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "star-shaped cinnamon cookies with bright white meringue glaze, a cinnamon stick and almonds beside them"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Teige und Gebäck"
+    }
+  ],
+  "status": "entwurf"
+}

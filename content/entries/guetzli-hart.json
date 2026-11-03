@@ -1,0 +1,102 @@
+{
+  "id": "guetzli-hart",
+  "typ": "symptom",
+  "titel": "Guetzli werden steinhart",
+  "synonyme": [
+    "Kekse hart",
+    "Plätzchen hart",
+    "Lebkuchen hart",
+    "Guetzli trocken"
+  ],
+  "kurz": "Zu lange gebacken oder offen gelagert: Die Guetzli verlieren Feuchtigkeit, und der Zucker darin wird fest.",
+  "bild_im_kopf": "Wie ein Brot, das man offen liegen lässt: Am nächsten Tag ist es ein Ziegel.",
+  "ursachen": [
+    {
+      "titel": "Zu lange gebacken",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Guetzli sind dünn. Schon eine Minute zu viel treibt das letzte Wasser hinaus.",
+      "fix": [
+        "Herausnehmen, wenn die Ränder gerade fest sind",
+        "Auf dem Blech noch nachgaren lassen"
+      ]
+    },
+    {
+      "titel": "Offen oder in einer Dose mit trockenem Gebäck gelagert",
+      "haeufigkeit": 3,
+      "prinzip": "zucker-feuchtigkeit",
+      "warum": "Weiche Guetzli geben Feuchtigkeit an die Luft oder an trockene Nachbarn ab.",
+      "fix": [
+        "Luftdicht und nach Sorten getrennt lagern",
+        "Einen Apfelschnitz in die Dose legen"
+      ]
+    },
+    {
+      "titel": "Zu viel Mehl beim Auswallen",
+      "haeufigkeit": 1,
+      "prinzip": "mehl",
+      "warum": "Zusätzliches Mehl macht den Teig trockener und das Gebäck härter.",
+      "fix": [
+        "Zwischen zwei Backpapieren auswallen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Waren die Guetzli schon frisch aus dem Ofen hart?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Lagen sie offen oder zusammen mit anderen Sorten in der Dose?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "guetzli-lagern",
+    "zucker-feuchtigkeit",
+    "g-lebkuchen",
+    "w-gebaeck"
+  ],
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum",
+    "illustration": "an open tin of dry, cracked, hard Christmas biscuits next to a hammer-like rolling pin, crumbs around"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Teige und Gebäck"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

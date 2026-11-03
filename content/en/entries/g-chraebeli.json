@@ -1,0 +1,33 @@
+{
+  "id": "g-chraebeli",
+  "titel": "Chräbeli (Swiss aniseed biscuits)",
+  "kurz": "Aniseed biscuits that dry overnight and grow little feet in the oven: the dry skin on top holds, and the soft dough pushes out underneath.",
+  "bild_im_kopf": "Like a pot with a lid boiling over: the top is shut, so it bubbles out underneath.",
+  "synonyme": [
+    "aniseed cookies",
+    "Swiss anise biscuits",
+    "Springerle-style biscuits"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Whisk eggs and sugar for a long time until foamy, fold in aniseed and flour",
+      "warum": "Lots of beaten-in air makes the dough light later and lets it rise in the oven.",
+      "prinzip": "schaumbildung"
+    },
+    {
+      "schritt": "Shape into rolls, cut diagonally and bend slightly",
+      "warum": "The cuts open into the typical claws during baking.",
+      "prinzip": "mechanik"
+    },
+    {
+      "schritt": "Leave to dry at room temperature for 24 hours",
+      "warum": "The surface dries into a firm sugar skin; the inside stays moist.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "Bake at low heat, about 140–150 °C (as a guide)",
+      "warum": "The inside expands with steam. The skin on top does not give, so the dough [[quellen|swells]] out at the bottom: those are the feet.",
+      "prinzip": "dampflockerung"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "guetzli-lagern",
+  "typ": "technik",
+  "titel": "Guetzli richtig lagern",
+  "synonyme": [
+    "Kekse aufbewahren",
+    "Plätzchen lagern",
+    "Guetzlidose"
+  ],
+  "kurz": "Knusprige und weiche Guetzli getrennt und luftdicht lagern: Feuchtigkeit wandert immer vom Feuchten zum Trockenen.",
+  "bild_im_kopf": "Wie zwei Zimmer mit offener Tür: Die Feuchtigkeit verteilt sich, bis beide gleich sind.",
+  "was_passiert": "Zucker zieht Feuchtigkeit an. Liegen weiche und knusprige Guetzli zusammen, geben die weichen Wasser ab: Sie werden hart, die knusprigen weich. Eine luftdichte Dose hält die Feuchtigkeit, wo sie ist.",
+  "warum_wichtig": "Richtig gelagert halten die meisten Guetzli zwei bis drei Wochen, Lebkuchen deutlich länger (Richtwert).",
+  "schritte": [
+    "Guetzli ganz auskühlen lassen, sonst kondensiert Dampf in der Dose.",
+    "Jede Sorte in eine eigene, gut schließende Dose.",
+    "Weiche Guetzli und Lebkuchen mit einem Apfelschnitz lagern, ihn alle paar Tage wechseln.",
+    "Kühl lagern, aber nicht im Kühlschrank."
+  ],
+  "faustregeln": [
+    "Knusprige zu knusprigen, weiche zu weichen."
+  ],
+  "links": [
+    "zucker-feuchtigkeit",
+    "guetzli-hart",
+    "x-guetzli-apfel",
+    "w-gebaeck"
+  ],
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "ablauf"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

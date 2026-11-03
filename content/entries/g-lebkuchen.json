@@ -1,0 +1,58 @@
+{
+  "id": "g-lebkuchen",
+  "typ": "gericht",
+  "titel": "Lebkuchen",
+  "synonyme": [
+    "Lebkuchen backen",
+    "Honiglebkuchen",
+    "Biber",
+    "Lebkuchenteig"
+  ],
+  "kurz": "Honig hält Lebkuchen weich, und besondere [[triebmittel|Triebmittel]] lockern den schweren Teig: Hirschhornsalz und Pottasche.",
+  "bild_im_kopf": "Wie ein Schwammtuch in der Küche: Honig zieht Feuchtigkeit an und gibt sie nicht mehr her.",
+  "schwierigkeit": "fortgeschritten",
+  "schluesselmomente": [
+    {
+      "schritt": "Honig und Zucker erwärmen, Gewürze dazu, abkühlen lassen",
+      "warum": "Warm löst sich alles gut, und die Gewürze geben ihr Aroma an den Honig ab.",
+      "prinzip": "aroma-loeslichkeit"
+    },
+    {
+      "schritt": "Mehl und aufgelöstes Hirschhornsalz oder Pottasche einarbeiten",
+      "warum": "Hefe käme gegen viel Honig und Zucker kaum an. Diese Triebsalze bilden erst im Ofen Gas.",
+      "prinzip": "triebmittel"
+    },
+    {
+      "schritt": "Den Teig mindestens über Nacht, traditionell länger, ruhen lassen",
+      "warum": "Mehl nimmt die Feuchtigkeit ganz auf, und die Aromen verbinden sich.",
+      "prinzip": "ruhezeit"
+    },
+    {
+      "schritt": "Backen und danach luftdicht lagern, wenn nötig mit einem Apfelschnitz",
+      "warum": "Honig zieht Feuchtigkeit an. In der Dose bleibt sie im Lebkuchen, und er wird über die Tage sogar weicher.",
+      "prinzip": "zucker-feuchtigkeit"
+    }
+  ],
+  "links": [
+    "hirschhornsalz",
+    "pottasche",
+    "honig",
+    "guetzli-lagern",
+    "w-gebaeck"
+  ],
+  "welten": [
+    "w-gebaeck",
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "honey gingerbread hearts and a Swiss Biber with almond decoration, a jar of honey beside them"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Teige und Gebäck"
+    }
+  ],
+  "status": "entwurf"
+}

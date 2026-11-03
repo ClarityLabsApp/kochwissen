@@ -1,0 +1,56 @@
+{
+  "id": "g-spitzbuben",
+  "typ": "gericht",
+  "titel": "Spitzbuben",
+  "synonyme": [
+    "Spitzbuben backen",
+    "Linzer Guetzli",
+    "Konfitüreguetzli"
+  ],
+  "kurz": "Zwei dünne, mürbe Böden mit Konfitüre dazwischen: Hell gebacken bleiben sie zart, und aufgekochte Konfitüre klebt sie zusammen.",
+  "bild_im_kopf": "Wie ein Sandwich mit eingebautem Fenster: Unten der Boden, oben der Rahmen, dazwischen leuchtet die Konfitüre.",
+  "schwierigkeit": "fortgeschritten",
+  "schluesselmomente": [
+    {
+      "schritt": "Mürbeteig mit Puderzucker machen und kühlen",
+      "warum": "Puderzucker löst sich schnell und macht den Teig fein und zart.",
+      "prinzip": "muerbe"
+    },
+    {
+      "schritt": "Dünn auswallen, ausstechen, bei der Hälfte ein Loch ausstechen",
+      "warum": "Dünne Böden backen schnell durch, bevor sie bräunen.",
+      "prinzip": "waermeleitung"
+    },
+    {
+      "schritt": "Bei etwa 200 °C nur 6–8 Minuten backen, bis sie hell sind (Richtwert)",
+      "warum": "Spitzbuben sollen hell bleiben: Mehr Bräunung macht sie hart und bitter.",
+      "prinzip": "maillard-reaktion"
+    },
+    {
+      "schritt": "Konfitüre kurz aufkochen, auf die Böden streichen, Deckel mit Loch darauf",
+      "warum": "Heiße Konfitüre ist flüssig und verteilt sich gut. Beim Abkühlen geliert das [[pektin|Pektin]] wieder und klebt die Hälften fest.",
+      "prinzip": "gelbildung-pektin"
+    }
+  ],
+  "links": [
+    "muerbe",
+    "gelbildung-pektin",
+    "teig-kuehlen",
+    "w-gebaeck"
+  ],
+  "welten": [
+    "w-gebaeck",
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "Swiss Spitzbuben jam-filled biscuits dusted with icing sugar, red jam showing through heart-shaped windows"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Teige und Gebäck"
+    }
+  ],
+  "status": "entwurf"
+}

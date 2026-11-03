@@ -1,0 +1,23 @@
+{
+  "id": "hirschhornsalz",
+  "typ": "begriff",
+  "titel": "Hirschhornsalz",
+  "synonyme": [
+    "Ammoniumhydrogencarbonat",
+    "ABC-Trieb"
+  ],
+  "kurz": "Ein [[triebmittel|Triebmittel]], das im Ofen zu Gas, Wasser und Ammoniak zerfällt. Es eignet sich nur für flaches, trockenes Gebäck wie Lebkuchen, weil das Ammoniak sonst nicht entweicht.",
+  "links": [
+    "g-lebkuchen",
+    "triebmittel",
+    "chemische-lockerung"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot: chemische Triebmittel"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

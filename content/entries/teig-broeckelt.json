@@ -1,0 +1,100 @@
+{
+  "id": "teig-broeckelt",
+  "typ": "symptom",
+  "titel": "Guetzliteig bröckelt beim Auswallen",
+  "synonyme": [
+    "Mürbeteig bricht",
+    "Teig reißt",
+    "Plätzchenteig bröselig"
+  ],
+  "kurz": "Der Teig ist zu kalt, zu trocken oder zu wenig zusammengedrückt: Die Butter hält die Krümel nicht zusammen.",
+  "bild_im_kopf": "Wie ein Schneeball aus Pulverschnee: Zu kalt und zu trocken, er hält nicht.",
+  "ursachen": [
+    {
+      "titel": "Direkt aus dem Kühlschrank zu kalt",
+      "haeufigkeit": 3,
+      "prinzip": "temperatur",
+      "warum": "Ganz kalte Butter ist spröde und bricht statt nachzugeben.",
+      "fix": [
+        "10 Minuten bei Raumtemperatur stehen lassen",
+        "Kurz mit den Händen durchkneten"
+      ]
+    },
+    {
+      "titel": "Zu wenig Flüssigkeit",
+      "haeufigkeit": 2,
+      "prinzip": "wasser",
+      "warum": "Ohne genug Ei oder Wasser verbinden sich Mehl und Fett nicht zu einem Teig.",
+      "fix": [
+        "Einen Esslöffel kaltes Wasser oder Eiweiß einarbeiten"
+      ]
+    },
+    {
+      "titel": "Zu wenig zusammengedrückt",
+      "haeufigkeit": 1,
+      "prinzip": "mechanik",
+      "warum": "Mürbeteig soll kaum geknetet werden, aber er muss einmal fest zusammengedrückt sein.",
+      "fix": [
+        "Zu einer Kugel drücken, flach in Folie kühlen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Kam der Teig direkt aus dem Kühlschrank?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Ist er auch nach dem Anwärmen trocken und krümelig?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "links": [
+    "muerbe",
+    "teig-kuehlen",
+    "muerbeteig-zaeh",
+    "w-gebaeck"
+  ],
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a sheet of cracked, crumbling shortcrust dough under a wooden rolling pin with star cookie cutters"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Teige: Mürbeteig"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

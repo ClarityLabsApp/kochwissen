@@ -1,0 +1,74 @@
+{
+  "id": "x-guetzli-apfel",
+  "typ": "experiment",
+  "titel": "Ein Apfelschnitz macht Lebkuchen weich",
+  "synonyme": [
+    "Lebkuchen weich machen",
+    "Kekse weich Apfel"
+  ],
+  "kurz": "Zwei gleiche Lebkuchen, einer mit Apfelschnitz in der Dose: Nach zwei Tagen ist er spürbar weicher.",
+  "bild_im_kopf": "Wie ein Luftbefeuchter in einer kleinen Kammer.",
+  "material": [
+    "zwei gleiche, etwas harte Lebkuchen oder Guetzli",
+    "zwei Dosen oder Gläser mit Deckel",
+    "ein Apfelschnitz"
+  ],
+  "schritte": [
+    "In jede Dose einen Lebkuchen legen.",
+    "In eine Dose zusätzlich den Apfelschnitz legen.",
+    "Beide verschließen und nach zwei Tagen vergleichen: drücken und probieren."
+  ],
+  "beobachtung": "Der Lebkuchen mit Apfel ist weich, der andere hart geblieben. Der Apfelschnitz ist runzlig geworden.",
+  "erklaerung": "Der Apfel gibt Wasser an die Luft in der Dose ab. Honig und Zucker im [[g-lebkuchen|Lebkuchen]] ziehen diese Feuchtigkeit an und halten sie fest.",
+  "dauer": "2 Tage",
+  "links": [
+    "zucker-feuchtigkeit",
+    "guetzli-lagern",
+    "hygroskopisch",
+    "g-lebkuchen"
+  ],
+  "welten": [
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "vergleich",
+    "params": {
+      "vorher": "Tag 1",
+      "nachher": "nach 2 Tagen",
+      "vergleich": [
+        {
+          "label": "mit Apfelschnitz",
+          "gefaess": "teller",
+          "inhalt": "keins",
+          "vorher": {
+            "farbe": "#a0622c"
+          },
+          "nachher": {
+            "farbe": "#7a4a22"
+          }
+        },
+        {
+          "label": "ohne",
+          "gefaess": "teller",
+          "inhalt": "keins",
+          "vorher": {
+            "farbe": "#a0622c"
+          },
+          "nachher": {
+            "farbe": "#b0743a",
+            "kristalle": true
+          }
+        }
+      ]
+    },
+    "illustration": "two glass jars with gingerbread hearts, one also containing an apple slice"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

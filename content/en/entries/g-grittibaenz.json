@@ -1,0 +1,33 @@
+{
+  "id": "g-grittibaenz",
+  "titel": "Grittibänz (Swiss bread man)",
+  "kurz": "The yeast-dough man for St Nicholas Day is a Zopf dough in a shape: kneading builds the network, rest lets it rise, egg yolk makes it shiny and brown.",
+  "bild_im_kopf": "Like a balloon given a shape: the gas inflates it, the skin decides the figure.",
+  "synonyme": [
+    "Swiss St Nicholas bread",
+    "bread man",
+    "Grättimaa"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Knead flour, milk, butter, yeast, sugar and salt for 10 minutes",
+      "warum": "Kneading builds the gluten network that will later hold the yeast's gas.",
+      "prinzip": "glutenbildung"
+    },
+    {
+      "schritt": "Leave covered until doubled in size",
+      "warum": "The yeast produces gas and flavour. Milk and butter make the dough soft and the crust tender.",
+      "prinzip": "hefegaerung"
+    },
+    {
+      "schritt": "Shape the figure, cut arms and legs, leave to rise briefly again",
+      "warum": "The second short proof relaxes the dough; otherwise the cuts tear open untidily.",
+      "prinzip": "ruhezeit"
+    },
+    {
+      "schritt": "Brush with egg yolk, bake at about 200 °C for 20–25 minutes (as a guide)",
+      "warum": "Egg yolk, [[milchzucker|lactose]] and butter brown quickly into a glossy crust.",
+      "prinzip": "maillard-reaktion"
+    }
+  ]
+}

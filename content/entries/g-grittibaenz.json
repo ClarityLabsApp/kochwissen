@@ -1,0 +1,57 @@
+{
+  "id": "g-grittibaenz",
+  "typ": "gericht",
+  "titel": "Grittibänz",
+  "synonyme": [
+    "Grittibänz backen",
+    "Grättimaa",
+    "Elggermaa",
+    "Samichlaus"
+  ],
+  "kurz": "Der Hefeteigmann zum Samichlaus ist ein Zopfteig in Form: Kneten baut das Netz, Ruhe lässt ihn aufgehen, Eigelb macht ihn glänzend braun.",
+  "bild_im_kopf": "Wie ein Ballon, der eine Form bekommt: Das Gas bläst ihn auf, die Hülle bestimmt die Figur.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Mehl, Milch, Butter, Hefe, Zucker und Salz 10 Minuten kneten",
+      "warum": "Das Kneten baut das [[glutenbildung|Glutennetz]], das später das Gas der Hefe hält.",
+      "prinzip": "glutenbildung"
+    },
+    {
+      "schritt": "Zugedeckt aufs doppelte Volumen gehen lassen",
+      "warum": "Die Hefe bildet Gas und Aromen. Milch und Butter machen den Teig weich und die Kruste zart.",
+      "prinzip": "hefegaerung"
+    },
+    {
+      "schritt": "Figur formen, Arme und Beine einschneiden, nochmals kurz gehen lassen",
+      "warum": "Die zweite kurze Gare entspannt den Teig, sonst reißen die Einschnitte unschön auf.",
+      "prinzip": "ruhezeit"
+    },
+    {
+      "schritt": "Mit Eigelb bestreichen, bei etwa 200 °C 20–25 Minuten backen (Richtwert)",
+      "warum": "Eigelb, [[milchzucker|Milchzucker]] und Butter bräunen schnell zu einer glänzenden Kruste.",
+      "prinzip": "maillard-reaktion"
+    }
+  ],
+  "links": [
+    "g-zopf",
+    "hefegaerung",
+    "glutenbildung",
+    "w-brot"
+  ],
+  "welten": [
+    "w-brot",
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a golden glazed Swiss Grittibänz bread man with raisin eyes and a small clay pipe, on a wooden board"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Teige und Gebäck"
+    }
+  ],
+  "status": "entwurf"
+}

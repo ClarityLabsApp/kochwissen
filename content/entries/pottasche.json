@@ -1,0 +1,22 @@
+{
+  "id": "pottasche",
+  "typ": "begriff",
+  "titel": "Pottasche",
+  "synonyme": [
+    "Kaliumcarbonat"
+  ],
+  "kurz": "Ein altes [[triebmittel|Triebmittel]] für Honig- und Lebkuchenteige. Es braucht Säure aus dem Honig und eine lange Teigruhe und lässt Gebäck eher in die Breite als in die Höhe gehen.",
+  "links": [
+    "g-lebkuchen",
+    "triebmittel",
+    "hirschhornsalz"
+  ],
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot: chemische Triebmittel"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "g-mailaenderli",
+  "titel": "Mailänderli (Swiss butter biscuits)",
+  "kurz": "Short butter biscuits that hold their shape when cut and shine golden with egg yolk: cold dough and little kneading do the trick.",
+  "bild_im_kopf": "Like sand on the beach: pressed together loosely it holds its shape, kneaded too hard it turns tough.",
+  "synonyme": [
+    "Swiss Christmas biscuits",
+    "butter cookies",
+    "Mailänderli"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Cream soft butter with sugar until pale, add eggs and lemon zest",
+      "warum": "Creaming beats in a little air, so the biscuits turn tender rather than hard.",
+      "prinzip": "luftig"
+    },
+    {
+      "schritt": "Mix in the flour only briefly, until no dry flour is visible",
+      "warum": "The less it is kneaded, the less gluten forms. That keeps the biscuits short.",
+      "prinzip": "glutenbildung"
+    },
+    {
+      "schritt": "Chill the dough for at least an hour, then roll out about 7 mm thick and cut out (as a guide)",
+      "warum": "Cold butter is firm: the dough does not stick and the shapes do not spread in the oven.",
+      "prinzip": "teig-kuehlen"
+    },
+    {
+      "schritt": "Brush twice with egg yolk, bake at about 200 °C for 8–10 minutes (as a guide)",
+      "warum": "The protein and sugar in the yolk brown quickly and give the golden sheen.",
+      "prinzip": "maillard-reaktion"
+    }
+  ]
+}

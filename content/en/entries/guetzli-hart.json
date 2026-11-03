@@ -1,0 +1,79 @@
+{
+  "id": "guetzli-hart",
+  "titel": "Christmas biscuits turn rock hard",
+  "kurz": "Baked too long or stored open: the biscuits lose moisture, and the sugar in them sets hard.",
+  "bild_im_kopf": "Like bread left out uncovered: the next day it is a brick.",
+  "synonyme": [
+    "hard cookies",
+    "biscuits gone hard",
+    "hard gingerbread"
+  ],
+  "ursachen": [
+    {
+      "titel": "Baked too long",
+      "haeufigkeit": 3,
+      "prinzip": "verdampfen",
+      "warum": "Biscuits are thin. Even a minute too long drives out the last of the water.",
+      "fix": [
+        "Take out when the edges have just set",
+        "Let them finish on the tray"
+      ]
+    },
+    {
+      "titel": "Stored open or in a tin with dry biscuits",
+      "haeufigkeit": 3,
+      "prinzip": "zucker-feuchtigkeit",
+      "warum": "Soft biscuits give up moisture to the air or to dry neighbours.",
+      "fix": [
+        "Store airtight and by type",
+        "Put an apple slice in the tin"
+      ]
+    },
+    {
+      "titel": "Too much flour when rolling out",
+      "haeufigkeit": 1,
+      "prinzip": "mehl",
+      "warum": "Extra flour makes the dough drier and the biscuits harder.",
+      "fix": [
+        "Roll out between two sheets of baking paper"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Were the biscuits already hard straight out of the oven?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Were they stored open or in a tin with other kinds?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

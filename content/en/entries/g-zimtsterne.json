@@ -1,0 +1,32 @@
+{
+  "id": "g-zimtsterne",
+  "titel": "Cinnamon stars (Zimtsterne)",
+  "kurz": "Almonds, sugar and whisked egg white, no flour: the white glaze stays white only if the oven is cool enough.",
+  "bild_im_kopf": "Like snow on a roof: it stays as long as the sun is not too strong.",
+  "synonyme": [
+    "cinnamon star cookies",
+    "German cinnamon stars"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Whisk egg white with icing sugar until stiff, set some aside for the glaze",
+      "warum": "Sugar stabilises the foam. It turns firm and glossy and later dries into a glaze.",
+      "prinzip": "schaumbildung"
+    },
+    {
+      "schritt": "Work the rest into a dough with ground almonds and cinnamon",
+      "warum": "Without flour, the egg white holds the dough together. The almonds bring fat and bite.",
+      "prinzip": "eiweiss-gerinnung"
+    },
+    {
+      "schritt": "Cut out, glaze and leave to dry for a few hours",
+      "warum": "The glaze forms a dry skin and cracks less in the oven.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "Bake at about 150 °C for just a few minutes (as a guide)",
+      "warum": "At higher heat, protein and sugar brown and the glaze turns yellowish. Inside, the stars should stay soft.",
+      "prinzip": "maillard-reaktion"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "g-lebkuchen",
+  "titel": "Gingerbread (Lebkuchen)",
+  "kurz": "Honey keeps gingerbread soft, and special [[triebmittel|raising agents]] lighten the heavy dough: baker's ammonia and potash.",
+  "bild_im_kopf": "Like a kitchen sponge cloth: honey draws in moisture and won't let go of it.",
+  "synonyme": [
+    "honey gingerbread",
+    "Lebkuchen",
+    "Swiss Biber"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Warm honey and sugar, add spices, leave to cool",
+      "warum": "Warm, everything dissolves easily and the spices release their aroma into the honey.",
+      "prinzip": "aroma-loeslichkeit"
+    },
+    {
+      "schritt": "Work in flour and dissolved baker's ammonia or potash",
+      "warum": "Yeast could hardly cope with so much honey and sugar. These raising salts only release gas in the oven.",
+      "prinzip": "triebmittel"
+    },
+    {
+      "schritt": "Rest the dough at least overnight, traditionally longer",
+      "warum": "The flour fully absorbs the moisture and the flavours come together.",
+      "prinzip": "ruhezeit"
+    },
+    {
+      "schritt": "Bake, then store airtight, with an apple slice if needed",
+      "warum": "Honey draws in moisture. In the tin it stays in the gingerbread, which even gets softer over the days.",
+      "prinzip": "zucker-feuchtigkeit"
+    }
+  ]
+}

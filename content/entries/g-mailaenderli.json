@@ -1,0 +1,57 @@
+{
+  "id": "g-mailaenderli",
+  "typ": "gericht",
+  "titel": "Mailänderli",
+  "synonyme": [
+    "Mailänderli backen",
+    "Butterguetzli",
+    "Weihnachtsguetzli"
+  ],
+  "kurz": "Mürbe Butterguetzli, die beim Ausstechen die Form halten und mit Eigelb golden glänzen: kalter Teig und wenig Kneten sind das Geheimnis.",
+  "bild_im_kopf": "Wie Sand am Strand: Locker zusammengedrückt hält er die Form, zu fest geknetet wird er zäh.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Weiche Butter mit Zucker hell rühren, Eier und Zitronenschale dazu",
+      "warum": "Das Rühren schlägt etwas Luft ein, die Guetzli werden zart statt hart.",
+      "prinzip": "luftig"
+    },
+    {
+      "schritt": "Mehl nur kurz untermischen, bis kein Mehl mehr sichtbar ist",
+      "warum": "Je weniger geknetet wird, desto weniger [[glutenbildung|Gluten]] entsteht. Darum bleiben die Guetzli [[muerbe|mürbe]].",
+      "prinzip": "glutenbildung"
+    },
+    {
+      "schritt": "Teig mindestens eine Stunde kühlen, dann etwa 7 mm dick auswallen und ausstechen (Richtwert)",
+      "warum": "Kalte Butter ist fest: Der Teig klebt nicht, und die Formen zerlaufen im Ofen nicht.",
+      "prinzip": "teig-kuehlen"
+    },
+    {
+      "schritt": "Zweimal mit Eigelb bestreichen, bei etwa 200 °C 8–10 Minuten backen (Richtwert)",
+      "warum": "Eiweiß und Zucker im Eigelb bräunen schnell und geben den goldenen Glanz.",
+      "prinzip": "maillard-reaktion"
+    }
+  ],
+  "links": [
+    "muerbe",
+    "glutenbildung",
+    "teig-kuehlen",
+    "guetzli-lagern",
+    "w-gebaeck"
+  ],
+  "welten": [
+    "w-gebaeck",
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "golden glazed Swiss Mailänderli butter biscuits in heart and star shapes on a baking tray with cookie cutters"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Teige und Gebäck"
+    }
+  ],
+  "status": "entwurf"
+}

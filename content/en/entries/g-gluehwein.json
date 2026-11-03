@@ -1,0 +1,33 @@
+{
+  "id": "g-gluehwein",
+  "titel": "Mulled wine (Glühwein)",
+  "kurz": "Wine with spices heated gently, not boiled: that keeps the aroma, and most of the alcohol too.",
+  "bild_im_kopf": "Like a teabag of spices in warm wine: steep it, yes; boil it, no.",
+  "synonyme": [
+    "mulled wine",
+    "Glühwein",
+    "hot spiced wine"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Warm red wine with cinnamon, cloves, star anise, orange peel and sugar",
+      "warum": "Many aroma compounds in the spices dissolve better in alcohol than in water.",
+      "prinzip": "aroma-loeslichkeit"
+    },
+    {
+      "schritt": "Bring to about 70 °C and do not let it boil (as a guide)",
+      "warum": "Alcohol boils at around 78 °C. If the [[wein|wine]] boils, aromas escape along with the alcohol and it tastes flat.",
+      "prinzip": "siedepunkt-druck"
+    },
+    {
+      "schritt": "Let it steep for 20–30 minutes, then remove the spices",
+      "warum": "Cloves and cinnamon bark steeped too long release bitter, astringent compounds.",
+      "prinzip": "extraktion"
+    },
+    {
+      "schritt": "For children: grape juice instead of wine",
+      "warum": "Even long simmering does not remove the alcohol completely. After 15 minutes around 40 % of it is still there (as a guide).",
+      "prinzip": "verdampfen"
+    }
+  ]
+}
