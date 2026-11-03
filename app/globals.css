@@ -515,3 +515,7 @@ article.entry > details.sec + details.sec { margin-top: calc(-1 * var(--egap) - 
 .legal h2 { font: 600 21px var(--f-display); margin: 8px 0 0; }
 .legal p { margin: 0; }
 .legal a { color: var(--crust); }
+.feedback { margin: 0; padding: 12px 14px; border: 1px dashed var(--rule); font-size: 16px; color: var(--sepia); display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: baseline; }
+.feedback a { font: 600 13px var(--f-mono); color: var(--crust); text-decoration: none; }
+.feedback a:hover { text-decoration: underline; }
+@media print { .feedback { display: none; } }

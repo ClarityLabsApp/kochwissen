@@ -11,6 +11,7 @@ import PathNav from "@/components/PathNav";
 import PrintButton from "@/components/PrintButton";
 import { appearsIn, getEntry, getMasterItem, hasPicture, isTranslated, lernpfade, plainText, titleOf, typOf, type Typ } from "@/lib/content";
 import { href, t, type Lang } from "@/lib/i18n";
+import { CONTACT_EMAIL, SITE_URL } from "@/lib/site";
 
 /** Seitentitel, Beschreibung und Vorschaubild eines Eintrags. */
 export function entryMetadata(id: string, lang: Lang): Metadata {
@@ -199,6 +200,12 @@ export default function EntryView({ id, lang }: { id: string; lang: Lang }) {
           const inText = new Set([...JSON.stringify(e).matchAll(/\[\[([a-z0-9-]+)/g)].map((m) => m[1]));
           const rest = (e.links ?? []).filter((id) => !inText.has(id) && !seen.includes(id));
           return rest.length ? <div className="block"><span className="mono">{L.related}</span><Chips ids={rest} lang={lang} /></div> : null;
+        })()}
+        {(() => {
+          // Rückmeldung zum Eintrag: öffnet eine E-Mail mit Titel und Link im Betreff
+          const url = `${SITE_URL}${href(lang, `/eintrag/${e.id}`)}`;
+          const mail = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`Garum: ${e.titel}`)}&body=${encodeURIComponent(`${url}\n\n`)}`;
+          return <p className="feedback"><span>{L.feedbackQ}</span> <a href={mail}>{L.feedbackA}</a></p>;
         })()}
         {e.quellen?.length ? (
           <details className="sec small"><summary><span className="mono">{L.sources} · {e.quellen.length}</span></summary>
