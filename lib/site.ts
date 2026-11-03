@@ -6,5 +6,5 @@ export const SITE_URL =
     : process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
 
 /** Kontakt für Impressum und Datenschutz (Weiterleitung, im Domain-Anbieter eingerichtet). */
-export const CONTACT_EMAIL = "hallo@garum.guide";
+export const CONTACT_EMAIL = "info@garum.guide";
 export const OWNER = { name: "Philipp Sidler", place: "Luzern, Schweiz", placeEn: "Lucerne, Switzerland" };
