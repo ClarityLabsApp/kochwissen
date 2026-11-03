@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { href, t, type Lang } from "@/lib/i18n";
 
 interface Ursache { titel: string; warum: string; fix: string[]; prinzip?: string }
@@ -13,12 +13,13 @@ export default function Diagnosis({ tree, causes, principleTitles, lang = "de" }
   const D = t(lang).diag;
   const [path, setPath] = useState<string[]>(["q1"]);
   const [answers, setAnswers] = useState<[string, string][]>([]);
+  const box = useRef<HTMLDivElement>(null);
   const id = path[path.length - 1];
   const node = tree[id];
   const cause = node?.ursache !== undefined ? causes[node.ursache] : null;
 
   return (
-    <div className="diag" aria-live="polite">
+    <div className="diag" aria-live="polite" ref={box}>
       <div className="card">
         {answers.length > 0 && (
           <ol className="trail">{answers.map(([q, a], i) => <li key={i}>{q} <b>{a}</b></li>)}</ol>
@@ -49,7 +50,7 @@ export default function Diagnosis({ tree, causes, principleTitles, lang = "de" }
             {cause.prinzip && (
               <Link className="chip" href={href(lang, `/eintrag/${cause.prinzip}`)}>{D.principle}: {principleTitles[cause.prinzip] ?? cause.prinzip}</Link>
             )}
-            <button type="button" className="btn ghost" onClick={() => { setPath(["q1"]); setAnswers([]); }}>{D.again}</button>
+            <button type="button" className="btn again" onClick={() => { setPath(["q1"]); setAnswers([]); box.current?.scrollIntoView({ behavior: "smooth", block: "start" }); }}>{D.again}</button>
           </>
         )}
       </div>
