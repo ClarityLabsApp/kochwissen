@@ -111,7 +111,8 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - [x] Alle 197 Einträge der Masterliste als Entwurf geschrieben (1. November 2026)
 - [x] Zahlen gegen Quellen geprüft, Korrekturen und offene Richtwerte in `content/PRUEFUNG.md` (2. November 2026)
 - [x] Sicherheitsupdate auf Next.js 16 / React 19, `npm audit` sauber. Seitenparameter sind asynchron (`await params`)
-- [ ] Review durch Phil: Status von `entwurf` auf `geprueft`
+- [ ] Review durch Phil: Status von `entwurf` auf `geprueft`. Prüfliste unter `/pruefen` (versteckt, noindex): Phil markiert «Passt» oder schreibt Anmerkungen und fügt das kopierte Ergebnis in den Chat; dann `status` der genannten ids auf `geprueft` setzen und Anmerkungen einarbeiten
+- [x] Besuchsstatistik: Vercel Web Analytics (`@vercel/analytics`, ohne Cookies), in der Datenschutzerklärung beschrieben; im Vercel-Projekt unter Analytics aktivieren
 - [x] 15 Gerichte und 12 Experimente ergänzt (Generator `scripts/batches/gen_batch_gerichte_experimente.py`)
 - [x] Batch Grundlagen-Chemie II: Geschmack, Kälte, Haltbarkeit, Enzyme, Druck, Basen, Zucker (30 Einträge, `scripts/batches/gen_batch_chemie2.py`)
 - [x] Kategorie „Labor“ mit 8 Rezepten (Backpulver, Butter, Bratbutter/Ghee, Frischkäse, Joghurt, Sauerteig, Crème fraîche, gebackenes Natron), `scripts/batches/gen_batch_labor.py`

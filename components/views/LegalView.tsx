@@ -39,8 +39,8 @@ export function DatenschutzView({ lang }: { lang: Lang }) {
   return (
     <main className="wrap legal" lang={lang}>
       <h1>{de ? "Datenschutz" : "Privacy"}</h1>
-      <p className="lede">{de ? "Kurz gesagt: Garum setzt keine Cookies, kein Tracking und keine Analysewerkzeuge ein. Es gibt keine Konten und keine Formulare."
-        : "In short: Garum uses no cookies, no tracking and no analytics tools. There are no accounts and no forms."}</p>
+      <p className="lede">{de ? "Kurz gesagt: Garum setzt keine Cookies und kein Tracking ein. Es gibt keine Konten und keine Formulare. Gezählt wird nur anonym, welche Seiten aufgerufen werden."
+        : "In short: Garum uses no cookies and no tracking. There are no accounts and no forms. All that is counted, anonymously, is which pages are visited."}</p>
       <section>
         <h2>{de ? "Verantwortlich" : "Controller"}</h2>
         <p>{OWNER.name}, {de ? OWNER.place : OWNER.placeEn}, {mail}</p>
@@ -50,6 +50,12 @@ export function DatenschutzView({ lang }: { lang: Lang }) {
         <p>{de ? "Die Seite wird bei Vercel Inc. (USA) betrieben. Beim Aufruf verarbeitet Vercel technisch notwendige Angaben wie IP-Adresse, Zeitpunkt, aufgerufene Seite und Browsertyp, um die Seite auszuliefern und vor Missbrauch zu schützen. Diese Daten können in den USA verarbeitet werden und werden nicht mit anderen Daten zusammengeführt. Einzelheiten: "
           : "The site is hosted by Vercel Inc. (USA). When a page is requested, Vercel processes technically necessary details such as IP address, time, page requested and browser type in order to deliver the site and protect it from abuse. This data may be processed in the USA and is not combined with other data. Details: "}
           <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">{de ? "Datenschutzerklärung von Vercel" : "Vercel privacy policy"}</a>.</p>
+      </section>
+      <section>
+        <h2>{de ? "Besuchsstatistik" : "Visitor statistics"}</h2>
+        <p>{de ? "Um zu sehen, welche Einträge gelesen werden, nutzt Garum Vercel Web Analytics. Gezählt werden aufgerufene Seiten, Herkunftsseite, Land, Gerätetyp und Browser. Es werden keine Cookies gesetzt und keine Daten gespeichert, die dich als Person erkennbar machen; Besuche werden nur innerhalb eines Tages zusammengefasst und nicht über Websites hinweg verfolgt. Einzelheiten: "
+          : "To see which entries are read, Garum uses Vercel Web Analytics. It counts pages visited, referring page, country, device type and browser. No cookies are set and no data is stored that identifies you as a person; visits are only grouped within a single day and never tracked across websites. Details: "}
+          <a href="https://vercel.com/docs/analytics/privacy-policy" target="_blank" rel="noopener noreferrer">{de ? "Datenschutz bei Vercel Web Analytics" : "Vercel Web Analytics privacy"}</a>.</p>
       </section>
       <section>
         <h2>{de ? "Speicherung im eigenen Browser" : "Storage in your own browser"}</h2>

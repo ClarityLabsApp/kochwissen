@@ -534,3 +534,21 @@ article.entry > details.sec + details.sec { margin-top: calc(-1 * var(--egap) - 
 .rows a:has(small.read)::after { margin-left: 10px; }
 @media print { .merk { display: none; } }
 .rows a strong { flex: 1; }
+/* Prüfliste */
+.review { display: flex; flex-direction: column; gap: 14px; }
+.review-bar { position: sticky; top: 0; z-index: 5; background: var(--paper); border-bottom: 1px solid var(--rule); padding: 10px 0; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.review-prog { display: flex; flex-direction: column; gap: 6px; font-size: 16px; }
+.review-meter { display: block; width: min(240px, 60vw); height: 6px; background: var(--rule); border-radius: 3px; overflow: hidden; }
+.review-meter i { display: block; height: 100%; background: var(--crust); }
+.review-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.review-list li { background: var(--paper-2); border: 1px solid var(--rule); padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+.review-list li.ok { opacity: .6; border-color: #9cbf8f; }
+.review-list li.noted { border-color: var(--crust); }
+.rv-head { display: flex; flex-direction: column; gap: 4px; }
+.rv-head .mono i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+.rv-title { font: 600 20px var(--f-display); color: var(--ink); text-decoration: none; }
+.rv-head p { margin: 0; font-size: 16px; color: var(--sepia); }
+.rv-act { display: flex; gap: 8px; }
+.rv-act .btn { padding: 8px 14px; }
+.rv-act .btn.on { background: #4f7a3a; color: #fff8ea; border-color: #4f7a3a; }
+.review textarea { width: 100%; font: 16px var(--f-body); padding: 8px; border: 1px solid var(--rule); background: var(--paper); }

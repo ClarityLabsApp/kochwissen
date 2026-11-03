@@ -166,3 +166,20 @@ export function appearsIn(id: string, max = 8): string[] {
   const order = (x: string) => (mine.has(x) ? 0 : 10) + SHOW_TYPES.indexOf(typOf(x) as Typ);
   return [...out].sort((a, b) => order(a) - order(b)).slice(0, max);
 }
+
+/* ---------- Prüfliste für Phil ---------- */
+export interface ReviewItem { id: string; titel: string; typ: Typ; kurz: string; prio: number; grund: string }
+/** Alle Entwürfe, nach Wichtigkeit: Startseite, Lernpfade, dann wie oft andere Einträge darauf verweisen. */
+export function reviewList(homeIds: string[]): ReviewItem[] {
+  const { entries } = load();
+  const inPath = new Set(lernpfade().flatMap((p) => p.schritte.map((s) => s.id)));
+  const back = new Map<string, number>();
+  for (const e of entries.values()) for (const l of new Set([...(e.links ?? []), ...[...JSON.stringify(e).matchAll(/\[\[([a-z0-9-]+)/g)].map((m) => m[1])])) back.set(l, (back.get(l) ?? 0) + 1);
+  const W: Partial<Record<Typ, number>> = { prozess: 6, symptom: 5, ziel: 4, technik: 3, gericht: 3, zutat: 2, labor: 2, experiment: 2, stellschraube: 1 };
+  return [...entries.values()].filter((e) => e.status !== "geprueft").map((e) => {
+    const home = homeIds.includes(e.id), path = inPath.has(e.id), b = back.get(e.id) ?? 0;
+    const prio = (home ? 1000 : 0) + (path ? 300 : 0) + b * 3 + (W[e.typ] ?? 0);
+    const grund = home ? "Startseite" : path ? "Lernpfad" : b >= 8 ? "oft verlinkt" : "";
+    return { id: e.id, titel: e.titel, typ: e.typ, kurz: plainText(e.kurz), prio, grund };
+  }).sort((a, b) => b.prio - a.prio);
+}

@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { search } from "@/lib/search";
 import { href, t, type Lang } from "@/lib/i18n";
 import Contents from "./Contents";
+import { DOORS } from "@/lib/home";
 import { addMerk, useMemo2 } from "@/lib/memo";
 
 export interface LibItem {
@@ -13,11 +14,7 @@ export interface LibItem {
 
 const TYPE_ORDER = ["ziel", "gericht", "experiment", "labor", "symptom", "prozess", "technik", "zutat", "stellschraube", "welt", "begriff"];
 /** Die drei Einstiege: vom Problem, vom Ziel, vom Prinzip. */
-const DOORS: { typ: "symptom" | "ziel" | "prozess"; ids: string[] }[] = [
-  { typ: "symptom", ids: ["steak-grau", "sauce-zu-duenn", "mayo-gerinnt", "kuchen-sinkt-ein"] },
-  { typ: "ziel", ids: ["knusprig", "saftig", "luftig", "cremig"] },
-  { typ: "prozess", ids: ["maillard-reaktion", "emulsion", "glutenbildung", "staerkeverkleisterung"] },
-];
+
 /** Wie jede Kategorie als Liste erscheint: kurze Namen als Chips, mit Bild als Kacheln, sonst kompakte Zeilen in Gruppen. */
 const AS_CHIPS = new Set<string>();
 const AS_TILES = new Set(["gericht", "experiment", "labor", "welt", "zutat"]);
