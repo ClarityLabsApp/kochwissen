@@ -1,0 +1,125 @@
+{
+  "id": "tomatensauce-sauer",
+  "typ": "symptom",
+  "titel": "Tomatensauce schmeckt sauer",
+  "synonyme": [
+    "Tomatensugo sauer",
+    "Sugo zu sauer",
+    "Dosentomaten sauer",
+    "Tomaten Säure",
+    "Tomatensauce Säure neutralisieren",
+    "Tomatensauce Natron",
+    "Tomatensauce Zucker",
+    "Pelati sauer"
+  ],
+  "kurz": "Tomaten enthalten viel Säure, Dosentomaten oft zusätzlich Zitronensäure: Süße, Fett und Röstaromen gleichen sie aus, eine Prise Natron neutralisiert sie.",
+  "bild_im_kopf": "Wie ein zu helles Licht im Zimmer: Man kann es dimmen (Natron) oder warme Lampen dazustellen (Zucker, Fett), dann blendet es nicht mehr.",
+  "ursachen": [
+    {
+      "titel": "Zu kurz gekocht, Tomatenmark nicht angeröstet",
+      "haeufigkeit": 3,
+      "prinzip": "geschmack-balance",
+      "warum": "Die Säure verkocht nicht. Aber angeröstetes Tomatenmark und langes Köcheln bringen Süße und Röstaromen, die die Säure runder wirken lassen.",
+      "fix": [
+        "Tomatenmark in Öl anrösten, bis es dunkelrot wird",
+        "Die Sauce mindestens 20 bis 30 Minuten leise köcheln lassen"
+      ]
+    },
+    {
+      "titel": "Saure Tomaten oder zugesetzte Zitronensäure",
+      "haeufigkeit": 3,
+      "prinzip": "saeure",
+      "warum": "Viele Dosentomaten enthalten Zitronensäure (E 330) für die Haltbarkeit. Auch unreife Tomaten sind saurer.",
+      "fix": [
+        "Eine Prise Zucker, eine geriebene Karotte oder etwas Ketchup: Sie überdecken die Säure mit Süße",
+        "Oder eine Messerspitze Natron pro Dose: Es neutralisiert die Säure und schäumt kurz auf",
+        "Beim Einkauf Dosen ohne Zitronensäure wählen"
+      ]
+    },
+    {
+      "titel": "Zu wenig Fett und Salz",
+      "haeufigkeit": 2,
+      "prinzip": "salz-geschmack",
+      "warum": "Fett und Salz dämpfen den spitzen Eindruck der Säure. Ohne sie steht die Säure allein im Vordergrund.",
+      "fix": [
+        "Am Schluss ein Stück Butter oder einen Schuss Olivenöl einrühren",
+        "Salzen und erneut probieren, bevor man Zucker nimmt"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hast du Tomatenmark angeröstet und die Sauce mindestens 20 Minuten gekocht?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Steht auf der Dose Zitronensäure oder E 330, oder waren die Tomaten unreif?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "faustregeln": [
+    "Zucker und Karotte überdecken die [[saeure|Säure]], [[natron|Natron]] entfernt sie: Natron nur in kleinsten Mengen, zu viel schmeckt seifig und macht die Sauce flach.",
+    "Ketchup bringt Zucker und [[umami|Umami]], aber auch Essig: Bei sehr saurer Sauce lieber Zucker oder Karotte nehmen.",
+    "Immer in kleinen Schritten nachwürzen und probieren: Was drin ist, bekommt man nicht mehr heraus."
+  ],
+  "links": [
+    "saeure",
+    "natron",
+    "geschmack-balance",
+    "abschmecken-saeure",
+    "suess",
+    "salz-geschmack",
+    "w-saucen"
+  ],
+  "welten": [
+    "w-saucen",
+    "w-gemuese"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum",
+    "illustration": "an open tin of peeled tomatoes next to a small pot of red tomato sauce, a carrot, a sugar bowl and a small dish of baking soda"
+  },
+  "quellen": [
+    {
+      "titel": "America's Test Kitchen: Toning Down Tomato Sauce",
+      "url": "https://www.americastestkitchen.com/how_tos/6605-toning-down-tomato-sauce"
+    },
+    {
+      "titel": "The Takeout: The fix for acidic canned tomatoes",
+      "url": "https://thetakeout.com/1695996/fix-acidic-canned-tomatoes-baking-soda"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Früchte und Gemüse: Tomaten"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,88 @@
+{
+  "id": "tomatensauce-sauer",
+  "titel": "Tomato sauce tastes sour",
+  "kurz": "Tomatoes contain a lot of acid, and canned tomatoes often have added citric acid: sweetness, fat and roasted flavours balance it, and a pinch of baking soda neutralises it.",
+  "bild_im_kopf": "Like a light that is too bright in a room: you can dim it (baking soda) or add warm lamps around it (sugar, fat), and then it no longer glares.",
+  "synonyme": [
+    "tomato sauce too acidic",
+    "sour tomato sauce",
+    "canned tomatoes acidic",
+    "reduce acidity tomato sauce",
+    "baking soda tomato sauce"
+  ],
+  "faustregeln": [
+    "Sugar and carrot cover the [[saeure|acid]], [[natron|baking soda]] removes it: use baking soda only in tiny amounts, too much tastes soapy and makes the sauce flat.",
+    "Ketchup brings sugar and umami, but also vinegar: for a very sour sauce, sugar or carrot is the better choice.",
+    "Always adjust in small steps and taste: what is in cannot be taken out again."
+  ],
+  "ursachen": [
+    {
+      "titel": "Cooked too briefly, tomato paste not roasted",
+      "haeufigkeit": 3,
+      "prinzip": "geschmack-balance",
+      "warum": "The acid does not cook away. But roasted tomato paste and long simmering add sweetness and roasted flavours that make the acid seem rounder.",
+      "fix": [
+        "Fry the tomato paste in oil until it turns dark red",
+        "Simmer the sauce gently for at least 20 to 30 minutes"
+      ]
+    },
+    {
+      "titel": "Sour tomatoes or added citric acid",
+      "haeufigkeit": 3,
+      "prinzip": "saeure",
+      "warum": "Many canned tomatoes contain citric acid (E330) to keep them safe. Underripe tomatoes are also more acidic.",
+      "fix": [
+        "A pinch of sugar, a grated carrot or a little ketchup: they cover the acid with sweetness",
+        "Or a knife tip of baking soda per tin: it neutralises the acid and briefly fizzes",
+        "When shopping, choose tins without citric acid"
+      ]
+    },
+    {
+      "titel": "Too little fat and salt",
+      "haeufigkeit": 2,
+      "prinzip": "salz-geschmack",
+      "warum": "Fat and salt soften the sharp impression of acid. Without them the acid stands alone in the foreground.",
+      "fix": [
+        "Stir in a knob of butter or a splash of olive oil at the end",
+        "Salt and taste again before reaching for sugar"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did you roast tomato paste and simmer the sauce for at least 20 minutes?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Does the tin list citric acid or E330, or were the tomatoes underripe?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

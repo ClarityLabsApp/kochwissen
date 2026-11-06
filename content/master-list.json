@@ -1,7 +1,7 @@
 {
   "version": 1,
   "stand": "2026-11-02",
-  "anzahl": 373,
+  "anzahl": 374,
   "eintraege": [
     {
       "id": "w-fleisch",
@@ -9262,6 +9262,40 @@
       ],
       "visual": {
         "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "tomatensauce-sauer",
+      "typ": "symptom",
+      "titel": "Tomatensauce schmeckt sauer",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "saeure",
+        "natron",
+        "geschmack-balance",
+        "abschmecken-saeure",
+        "suess",
+        "salz-geschmack",
+        "w-saucen"
+      ],
+      "welten": [
+        "w-saucen",
+        "w-gemuese"
+      ],
+      "synonyme": [
+        "Tomatensugo sauer",
+        "Sugo zu sauer",
+        "Dosentomaten sauer",
+        "Tomaten Säure",
+        "Tomatensauce Säure neutralisieren",
+        "Tomatensauce Natron",
+        "Tomatensauce Zucker",
+        "Pelati sauer"
+      ],
+      "visual": {
+        "vorlage": "entscheidungsbaum"
       },
       "verlinkt_von": []
     }
