@@ -71,6 +71,7 @@ const THESAURUS: Record<string, string[]> = {
   mayo: ["mayonnaise", "mayonaise"],
   brot: ["teig", "backen", "kruste", "krume", "bread", "loaf"],
   panade: ["panieren", "breading", "crumb", "coating"],
+  abschmecken: ["schmecken", "schmecke", "nachwuerzen", "wuerzen", "season", "seasoning"],
 };
 const EXPAND = new Map<string, Set<string>>();
 for (const [k, vs] of Object.entries(THESAURUS)) {
@@ -135,7 +136,13 @@ export function search(items: SearchItem[], q: string, extras?: Record<string, s
   const all = norm(q).split(/\s+/).filter(Boolean);
   const raw = [...new Set(all.filter((w) => w.length > 1 && !STOP.has(w)))];
   if (!raw.length) return null;
-  const terms = raw.map(stem);
+  // Trennbare Verben: "schmecke … ab" → auch "abschmecke" prüfen, das abgetrennte "ab" selbst zählt nicht.
+  const PART = ["ab", "an", "auf", "aus", "ein", "nach", "vor", "zu"];
+  const parts = all.filter((w) => PART.includes(w));
+  const rawT = raw.filter((w) => !PART.includes(w));
+  const terms = (rawT.length ? rawT : raw).map(stem);
+  const rawUsed = rawT.length ? rawT : raw;
+  const joined = rawUsed.map((w) => parts.map((p) => stem(p + w)));
   const isProblem = all.some((w) => PROBLEM.has(w));
   const wantsExperiment = terms.some((t) => ["experiment", "versuch", "ausprobier", "kinder", "kind", "kid", "children"].some((k) => t.startsWith(k)));
   const wantsLab = terms.some((t) => ["selb", "hausgemacht", "herstell", "homemade", "diy"].some((k) => t.startsWith(k)));
@@ -149,14 +156,15 @@ export function search(items: SearchItem[], q: string, extras?: Record<string, s
     for (const [ti, t] of terms.entries()) {
       const alts = EXPAND.get(t);
       for (const [fi, [ws, weight]] of fields.entries()) for (const w of ws) {
-        let m = wordMatch(t, w, raw[ti]) * weight;
+        let m = wordMatch(t, w, rawUsed[ti]) * weight;
+        for (const j of joined[ti]) m = Math.max(m, wordMatch(j, w) * weight);
         if (alts && m < weight * 0.8) for (const a of alts) m = Math.max(m, wordMatch(a, w) * weight * 0.7);
         if (m > b[ti]) { b[ti] = m; if (fi < 2 && m >= weight * 0.7) strong |= 1 << ti; }
       }
       if (b[ti] > 0) df[ti]++;
     }
     // Alle Suchwörter in einem einzigen Titel oder Synonym ("Tomaten Säure") zählen extra.
-    const phrase = terms.length > 1 && phrases.some((ws) => terms.every((t, i) => ws.some((w) => wordMatch(t, w, raw[i]) >= 0.7)));
+    const phrase = terms.length > 1 && phrases.some((ws) => terms.every((t, i) => ws.some((w) => wordMatch(t, w, rawUsed[i]) >= 0.7 || joined[i].some((j) => wordMatch(j, w) >= 0.7))));
     if (b.some((x) => x > 0)) per.push({ e, b, strong: phrase ? -1 : strong });
   }
   if (!per.length) return { scores: new Map(), best: null, terms };
