@@ -1,0 +1,48 @@
+{
+  "id": "kontraste",
+  "typ": "prozess",
+  "titel": "Kontraste: warum Gegensätze Spannung bringen",
+  "synonyme": [
+    "Kontrast",
+    "knusprig und cremig",
+    "Textur kombinieren",
+    "warm und kalt",
+    "Gericht langweilig",
+    "Spannung im Gericht"
+  ],
+  "kurz": "Derselbe Eindruck nutzt sich beim Essen schnell ab: Ein Gegensatz in Textur, Temperatur oder Geschmack hält jeden Bissen interessant.",
+  "bild_im_kopf": "Wie Musik mit nur einem Ton: Auch ein schöner Ton wird nach einer Minute langweilig, erst der Wechsel macht eine Melodie.",
+  "was_passiert": "Unsere Sinne gewöhnen sich rasch an einen gleichbleibenden Reiz. Die Freude an genau diesem Eindruck sinkt, schon während man isst (sensorisch-spezifische Sättigung). Ein Gegenreiz setzt die Aufmerksamkeit wieder zurück: [[knusprig|Knuspriges]] zu Cremigem, [[saeure|Säure]] zu Fett, Kaltes zu Warmem.",
+  "warum_wichtig": "Viele Klassiker leben davon: Affogato, Pommes mit Mayonnaise, Risotto mit knusprigem Parmesan, Gurkensalat zum fetten Braten.",
+  "faustregeln": [
+    "Wirkt ein Gericht eintönig: etwas Knuspriges darüber, geröstete Nüsse, Brösel oder Zwiebeln.",
+    "Zu Fettem etwas Saures servieren: Essiggurke, Zitrone, eingelegtes Gemüse.",
+    "Warm und kalt kombinieren: Glace auf warmem Kuchen, kalter Joghurt zu scharfem Curry."
+  ],
+  "stellschrauben": [],
+  "praxis": [],
+  "links": [
+    "knusprig",
+    "cremig",
+    "mundgefuehl",
+    "geschmack-balance",
+    "saeure"
+  ],
+  "welten": [],
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a scoop of vanilla ice cream melting on a warm slice of apple crumble with crisp crumbs"
+  },
+  "quellen": [
+    {
+      "titel": "Rolls et al.: Sensory specific satiety in man. Physiology & Behavior 27 (1981)",
+      "url": "https://doi.org/10.1016/0031-9384(81)90310-3"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Geschmack und Aroma"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

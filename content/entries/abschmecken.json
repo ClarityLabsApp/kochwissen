@@ -1,0 +1,53 @@
+{
+  "id": "abschmecken",
+  "typ": "technik",
+  "titel": "Richtig abschmecken",
+  "synonyme": [
+    "abschmecken",
+    "was fehlt",
+    "Essen schmeckt nach nichts",
+    "würzen lernen",
+    "nachwürzen",
+    "Geschmack prüfen"
+  ],
+  "kurz": "Abschmecken heißt fragen, was fehlt, und in einer festen Reihenfolge nachwürzen: zuerst Salz, dann Säure, dann Süße, Schärfe und [[umami|Umami]], zuletzt Frisches.",
+  "bild_im_kopf": "Wie ein Instrument stimmen: zuerst den Grundton, erst dann die feinen Saiten.",
+  "was_passiert": "Salz verstärkt alle anderen Geschmäcker, darum kommt es zuerst. Säure macht ein Gericht lebendig und leichter. Süße, Fett und Umami runden ab und geben Tiefe. Kräuter, Zitronenschale und Pfeffer liefern Duft, der in der Hitze verfliegt, darum kommen sie zuletzt.",
+  "warum_wichtig": "Der Schritt vom Rezept zum eigenen Kochen: Wer abschmecken kann, rettet fade, flache oder zu scharfe Gerichte, auch ohne Rezept.",
+  "schritte": [
+    "Bei der Temperatur probieren, mit der serviert wird.",
+    "Fad, schmeckt nach wenig: eine Prise Salz, kurz rühren, erneut probieren.",
+    "Schwer, flach, müde: ein paar Tropfen Zitrone oder Essig.",
+    "Spitz, zu sauer oder zu scharf: etwas Süße oder Fett, etwa Honig, Butter oder Rahm.",
+    "Fehlt Tiefe: Umami, etwa Parmesan, Sojasauce, Tomatenmark oder Miso. Ganz am Schluss Kräuter, Zitronenschale oder Pfeffer."
+  ],
+  "faustregeln": [
+    "In kleinen Schritten würzen und nach jedem Schritt probieren: Was drin ist, bekommt man nicht mehr heraus.",
+    "Unsicher, ob etwas passt: zuerst nur einen Löffel davon würzen und vergleichen.",
+    "Nach dem Einkochen nochmals probieren, weil sich Salz dabei konzentriert."
+  ],
+  "links": [
+    "geschmack-balance",
+    "salz-geschmack",
+    "abschmecken-saeure",
+    "umami",
+    "temperatur-geschmack",
+    "essen-flach",
+    "essen-versalzen"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a wooden tasting spoon over a pot of soup with small bowls of salt, lemon, honey and grated Parmesan around it"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Geschmack und Aroma"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

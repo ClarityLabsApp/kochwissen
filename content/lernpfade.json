@@ -56,7 +56,7 @@
      "Wasser verhindert, dass Salz wirkt"
     ],
     "richtig": 1,
-    "erklaerung": "Bräunung beginnt erst um 140 °C. Solange Wasser da ist, kommt die Oberfläche nicht darüber.",
+    "erklaerung": "Bräunung wird erst ab etwa 140 °C schnell. Solange Wasser verdampft, bleibt die Oberfläche bei etwa 100 °C.",
     "eintrag": "verdampfen"
    },
    {
@@ -696,6 +696,124 @@
     "richtig": 0,
     "erklaerung": "Honig und Zucker ziehen Feuchtigkeit an. Der Apfel liefert sie in der geschlossenen Dose.",
     "eintrag": "x-guetzli-apfel"
+   }
+  ]
+ },
+ {
+  "id": "schmecken-lernen",
+  "titel": "Schmecken lernen",
+  "kurz": "Was die Zunge spürt, was die Nase riecht und warum Salz, Säure und Kontraste ein Gericht lebendig machen: der Weg vom Rezept zum eigenen Abschmecken.",
+  "fuer": "Für alle, die nicht nur nachkochen, sondern selber abschmecken wollen",
+  "dauer": "etwa 45 Minuten, mit drei kleinen Selbstversuchen",
+  "schritte": [
+   {
+    "id": "aroma-nase",
+    "warum": "Zuerst die Überraschung: Das meiste, was wir Geschmack nennen, riecht die Nase."
+   },
+   {
+    "id": "x-nase-zu",
+    "warum": "Selbst ausprobieren: ein Gummibärchen mit zugehaltener Nase."
+   },
+   {
+    "id": "salz-geschmack",
+    "warum": "Salz macht nicht nur salzig, es hebt alles andere."
+   },
+   {
+    "id": "saeure",
+    "warum": "Säure macht ein Gericht lebendig und leichter."
+   },
+   {
+    "id": "umami",
+    "warum": "Der herzhafte fünfte Geschmack und wo er steckt."
+   },
+   {
+    "id": "bitter",
+    "warum": "Bitter: warum wenig davon Tiefe gibt."
+   },
+   {
+    "id": "x-salz-bitter",
+    "warum": "Selbst ausprobieren: Salz auf Grapefruit."
+   },
+   {
+    "id": "temperatur-geschmack",
+    "warum": "Warum kalt anders schmeckt als warm."
+   },
+   {
+    "id": "mundgefuehl",
+    "warum": "Was sich im Mund anfühlt, zählt so viel wie der Geschmack."
+   },
+   {
+    "id": "kontraste",
+    "warum": "Gegensätze halten jeden Bissen spannend."
+   },
+   {
+    "id": "augen-ohren",
+    "warum": "Augen und Ohren essen mit."
+   },
+   {
+    "id": "geschmack-balance",
+    "warum": "Wie sich die Geschmäcker gegenseitig dämpfen und heben."
+   },
+   {
+    "id": "abschmecken",
+    "warum": "Alles zusammen: in welcher Reihenfolge man nachwürzt."
+   }
+  ],
+  "quiz": [
+   {
+    "frage": "Warum schmeckt Essen bei Schnupfen fad?",
+    "antworten": [
+     "Die Zunge ist geschwollen",
+     "Die Nase riecht den Duft beim Kauen nicht mehr",
+     "Der Speichel fehlt"
+    ],
+    "richtig": 1,
+    "erklaerung": "Fast alle Aromen riecht die Nase, auch von innen beim Kauen. Die Zunge allein erkennt nur fünf Grundgeschmäcker.",
+    "eintrag": "aroma-nase"
+   },
+   {
+    "frage": "Ein Eintopf schmeckt schwer und müde. Was hilft meist am schnellsten?",
+    "antworten": [
+     "Ein paar Tropfen Zitrone oder Essig",
+     "Mehr Wasser",
+     "Länger kochen"
+    ],
+    "richtig": 0,
+    "erklaerung": "Säure macht Gerichte lebendiger und leichter, besonders fette und lange gekochte.",
+    "eintrag": "saeure"
+   },
+   {
+    "frage": "Warum braucht Kartoffelsalat am nächsten Tag oft mehr Würze?",
+    "antworten": [
+     "Das Salz zerfällt über Nacht",
+     "Kälte dämpft Geschmack und Duft",
+     "Kartoffeln werden bitter"
+    ],
+    "richtig": 1,
+    "erklaerung": "Kalt gibt Essen weniger Duft ab, und Süße wirkt schwächer. Darum kalt abschmecken.",
+    "eintrag": "temperatur-geschmack"
+   },
+   {
+    "frage": "Was gehört beim Abschmecken zuerst ins Gericht?",
+    "antworten": [
+     "Kräuter",
+     "Zucker",
+     "Salz"
+    ],
+    "richtig": 2,
+    "erklaerung": "Salz verstärkt alle anderen Geschmäcker. Erst danach lässt sich beurteilen, was sonst noch fehlt.",
+    "eintrag": "abschmecken"
+   },
+   {
+    "frage": "Warum wirkt ein Risotto mit knusprigem Parmesan oben spannender?",
+    "antworten": [
+     "Der Kontrast hält die Sinne wach",
+     "Knuspriges enthält mehr Salz",
+     "Parmesan ist bitter"
+    ],
+    "richtig": 0,
+    "erklaerung": "Ein gleichbleibender Eindruck nutzt sich ab. Ein Gegensatz setzt die Aufmerksamkeit zurück.",
+    "eintrag": "kontraste"
    }
   ]
  }

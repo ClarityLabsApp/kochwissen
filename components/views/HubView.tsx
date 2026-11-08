@@ -1,8 +1,8 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { hasPicture, libraryData, plainText, titleOf } from "@/lib/content";
+import { hasPicture, lernpfade, libraryData, plainText, titleOf } from "@/lib/content";
 import { href, t, type Lang } from "@/lib/i18n";
-import { GROUPS, THEMES, THEME_PIC, type GroupKey } from "@/lib/nav";
+import { GROUPS, PRINZIPIEN_PFAD, THEMES, WAHRNEHMUNG, WAHRNEHMUNG_PFAD, type GroupKey } from "@/lib/nav";
 
 type Item = ReturnType<typeof libraryData>[number];
 
@@ -154,13 +154,22 @@ export default function HubView({ group, lang }: { group: GroupKey; lang: Lang }
   }
   if (group === "verstehen") {
     const proz = items.filter((e) => e.typ === "prozess");
-    const seen = new Set(THEMES.flatMap((x) => x[3]));
+    const seen = new Set([...THEMES.flatMap((x) => x[3]), ...WAHRNEHMUNG.flatMap((x) => x[2])]);
+    const allById = new Map(written(lang).map((e) => [e.id, e]));
+    const percept = WAHRNEHMUNG.map(([de, en, ids]) => [lang === "en" ? en : de, ids.map((id) => allById.get(id)).filter(Boolean) as Item[]] as const);
+    const perceptN = percept.reduce((a, [, r]) => a + r.length, 0);
+    const pfad = lernpfade(lang).find((x) => x.id === WAHRNEHMUNG_PFAD);
     const themeBlocks = [...THEMES.map(([k, de, en, ids]) => [k, lang === "en" ? en : de, ids.map((id) => proz.find((e) => e.id === id)).filter(Boolean) as Item[]] as const),
       ["weitere", H.other, proz.filter((e) => !seen.has(e.id))] as const].filter(([, , r]) => r.length);
     const tech = items.filter((e) => e.typ === "technik");
     sections = [
       { id: "vorgaenge", title: H.vorgaenge, pic: "cat-prozess", n: proz.length,
         body: themeBlocks.map(([k, name, r]) => <div key={k}><h3>{name}</h3>{list(r)}</div>) },
+      { id: "wahrnehmung", title: H.wahrnehmung, pic: hasPicture("geschmack-balance") ? "geschmack-balance" : undefined, n: perceptN,
+        body: <>
+          <p className="hub-sub">{H.wahrnehmungLede}{pfad && <> <Link href={href(lang, `/pfad/${pfad.id}`)}>{H.pathLink(pfad.titel)} →</Link></>}</p>
+          {percept.map(([name, r]) => <div key={name}><h3>{name}</h3>{list(r, true)}</div>)}
+        </> },
       { id: "techniken", title: T.types.technik[0], pic: hasPicture("cat-technik") ? "cat-technik" : undefined, n: tech.length,
         body: byWorld(tech).map(([w, r]) => <div key={w || "x"}><h3>{w ? titleOf(w, lang) : H.other}</h3>{list(r)}</div>) },
       { id: "zutaten", title: T.types.zutat[0], pic: hasPicture("cat-zutat") ? "cat-zutat" : undefined, n: items.filter((e) => e.typ === "zutat").length,
@@ -180,9 +189,27 @@ export default function HubView({ group, lang }: { group: GroupKey; lang: Lang }
         <h1>{H[group][0]}</h1>
         <p>{H[group][1]}</p>
       </header>
+      {group === "verstehen" && <Rules lang={lang} />}
       <Sections sections={sections} lang={lang} />
       <MoreGroups lang={lang} except={group} />
     </main>
+  );
+}
+
+/** Die Grundregeln der Küche (aus dem Lernpfad „Die 10 wichtigsten Prinzipien“) als Kasten oben auf „Verstehen“. */
+function Rules({ lang }: { lang: Lang }) {
+  const H = t(lang).hub;
+  const p = lernpfade(lang).find((x) => x.id === PRINZIPIEN_PFAD);
+  if (!p) return null;
+  return (
+    <section className="rules" aria-label={H.rules}>
+      <div className="rules-head"><span className="mono">{H.rules}</span><Link href={href(lang, `/pfad/${p.id}`)}>{H.pathLink(p.titel)} →</Link></div>
+      <ol>
+        {p.schritte.map((x) => (
+          <li key={x.id}><Link href={href(lang, `/eintrag/${x.id}`)}><strong>{titleOf(x.id, lang)}</strong></Link> <span>{plainText(x.warum, lang)}</span></li>
+        ))}
+      </ol>
+    </section>
   );
 }
 

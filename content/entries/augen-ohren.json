@@ -1,0 +1,49 @@
+{
+  "id": "augen-ohren",
+  "typ": "prozess",
+  "titel": "Augen und Ohren essen mit",
+  "synonyme": [
+    "Farbe und Geschmack",
+    "Aussehen Geschmack",
+    "Geräusch knusprig",
+    "Erwartung beim Essen",
+    "Anrichten",
+    "Teller anrichten Wirkung"
+  ],
+  "kurz": "Was wir sehen und hören, verändert, was wir schmecken: Farbe weckt Erwartungen, und das Knacken beim Beißen lässt Chips frischer wirken.",
+  "bild_im_kopf": "Wie eine Filmmusik: Dieselbe Szene wirkt mit fröhlicher Musik heiter, mit düsterer bedrohlich.",
+  "was_passiert": "Das Gehirn setzt Geschmack aus allen Sinnen zusammen und füllt Lücken mit Erwartungen. In einem bekannten Versuch beschrieben Weinkenner rot gefärbten Weißwein mit Begriffen für Rotwein. In einem anderen wirkten Chips knuspriger und frischer, wenn das Knacken lauter über Kopfhörer kam.",
+  "warum_wichtig": "Erklärt, warum blasses Fleisch weniger würzig wirkt, warum Anrichten nicht nur Dekoration ist und warum matschige Pommes enttäuschen, auch wenn sie gut schmecken.",
+  "faustregeln": [
+    "Farbe ist Geschmack: gut bräunen lohnt sich doppelt, für Aroma und Erwartung.",
+    "[[knusprig|Knuspriges]] erst kurz vor dem Servieren auf das Gericht, damit es hörbar knackt.",
+    "Frische Kräuter und ein Spritzer Farbe am Schluss lassen ein Gericht lebendiger wirken."
+  ],
+  "stellschrauben": [],
+  "praxis": [],
+  "links": [
+    "farbe",
+    "maillard-reaktion",
+    "knusprig",
+    "kontraste",
+    "x-farbe-taeuscht",
+    "aroma-nase"
+  ],
+  "welten": [],
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a glass of white wine and a glass of the same wine tinted red side by side, a bowl of crisps and headphones"
+  },
+  "quellen": [
+    {
+      "titel": "Morrot, Brochet, Dubourdieu: The color of odors. Brain and Language 79 (2001)",
+      "url": "https://doi.org/10.1006/brln.2001.2493"
+    },
+    {
+      "titel": "Zampini, Spence: The role of auditory cues in modulating the perceived crispness and staleness of potato chips. Journal of Sensory Studies 19 (2004)",
+      "url": "https://doi.org/10.1111/j.1745-459x.2004.080403.x"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

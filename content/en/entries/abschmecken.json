@@ -1,0 +1,27 @@
+{
+  "id": "abschmecken",
+  "titel": "How to season to taste",
+  "kurz": "Seasoning to taste means asking what is missing and adjusting in a set order: salt first, then acid, then sweetness, heat and umami, fresh things last.",
+  "bild_im_kopf": "Like tuning an instrument: the base note first, only then the fine strings.",
+  "was_passiert": "Salt boosts all other tastes, so it comes first. Acid makes a dish lively and lighter. Sweetness, fat and umami round off and add depth. Herbs, lemon zest and pepper bring aroma that escapes in the heat, so they come last.",
+  "warum_wichtig": "The step from following recipes to cooking for yourself: knowing how to season rescues bland, flat or overly hot dishes, even without a recipe.",
+  "synonyme": [
+    "seasoning to taste",
+    "what's missing",
+    "food tastes of nothing",
+    "learning to season",
+    "adjusting seasoning"
+  ],
+  "faustregeln": [
+    "Season in small steps and taste after each one: what is in cannot be taken out.",
+    "Unsure whether something fits: season just one spoonful first and compare.",
+    "Taste again after reducing, because salt concentrates as it does."
+  ],
+  "schritte": [
+    "Taste at the temperature it will be served.",
+    "Bland, tastes of little: a pinch of salt, stir briefly, taste again.",
+    "Heavy, flat, tired: a few drops of lemon or vinegar.",
+    "Sharp, too sour or too hot: a little sweetness or fat, such as honey, butter or cream.",
+    "Lacks depth: umami, such as Parmesan, soy sauce, tomato paste or miso. At the very end herbs, lemon zest or pepper."
+  ]
+}

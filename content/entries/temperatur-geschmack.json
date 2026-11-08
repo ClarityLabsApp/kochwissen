@@ -1,0 +1,53 @@
+{
+  "id": "temperatur-geschmack",
+  "typ": "prozess",
+  "titel": "Temperatur verändert den Geschmack",
+  "synonyme": [
+    "kalt schmeckt anders",
+    "kaltes Essen würzen",
+    "warm schmeckt süßer",
+    "Temperatur Geschmack",
+    "Gazpacho würzen",
+    "kalt servieren"
+  ],
+  "kurz": "Kälte dämpft Süße und Duft, Wärme verstärkt beides: Kalt serviertes Essen braucht darum kräftigere Würze.",
+  "bild_im_kopf": "Wie eine Stimme im Nebel: Bei Kälte kommt dasselbe nur gedämpft an.",
+  "was_passiert": "Ein Teil der Signalkette für Süß arbeitet bei Wärme deutlich stärker. Duftstoffe sind flüchtig: Warmes Essen gibt viel mehr davon ab als kaltes. Sehr heißes Essen dagegen überdeckt feine Nuancen, weil die Hitze selbst im Vordergrund steht.",
+  "warum_wichtig": "Erklärt, warum Kartoffelsalat am nächsten Tag fad wirkt, Glacemasse warm zu süß schmeckt und eine heiße Suppe nach dem Abkühlen plötzlich versalzen.",
+  "faustregeln": [
+    "Kalt serviertes Essen kalt abschmecken und kräftiger würzen.",
+    "Suppen und Saucen nicht kochend heiß abschmecken: einen Löffel kurz abkühlen lassen.",
+    "Käse und Rotwein nicht eiskalt servieren, sonst bleibt ihr Aroma stumm."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "Wärmer schmeckt süßer und duftet stärker, kälter gedämpfter"
+    }
+  ],
+  "praxis": [],
+  "links": [
+    "suess",
+    "aroma-nase",
+    "abschmecken",
+    "essen-flach",
+    "x-temperatur-cola"
+  ],
+  "welten": [],
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "two bowls of the same soup, one steaming hot and one cold with ice cubes in a glass beside it, a tasting spoon"
+  },
+  "quellen": [
+    {
+      "titel": "Talavera et al.: Heat activation of TRPM5 underlies thermal sensitivity of sweet taste. Nature 438 (2005)",
+      "url": "https://www.nature.com/articles/nature04248"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Geschmack und Aroma"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

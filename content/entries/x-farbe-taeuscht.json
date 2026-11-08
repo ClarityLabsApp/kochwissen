@@ -1,0 +1,45 @@
+{
+  "id": "x-farbe-taeuscht",
+  "typ": "experiment",
+  "titel": "Farbe täuscht den Geschmack",
+  "synonyme": [
+    "Farbe Geschmack Experiment",
+    "Lebensmittelfarbe Test",
+    "Geschmackstest Farbe"
+  ],
+  "kurz": "Drei Gläser mit demselben Getränk, nur anders gefärbt: Die meisten schmecken plötzlich Kirsche, Zitrone oder Apfel.",
+  "bild_im_kopf": "Wie ein Etikett auf einer Flasche: Wir schmecken oft, was draufsteht, nicht was drin ist.",
+  "material": [
+    "heller Traubensaft oder Zuckerwasser mit etwas Zitrone",
+    "rote, gelbe und grüne Lebensmittelfarbe",
+    "drei gleiche Gläser",
+    "eine Person, die probiert, und eine, die eingießt"
+  ],
+  "schritte": [
+    "In drei Gläser dasselbe Getränk gießen, ohne dass die probierende Person zusieht.",
+    "Jedes Glas mit einem Tropfen einer anderen Farbe färben.",
+    "Probieren lassen und fragen: Nach welcher Frucht schmeckt es?",
+    "Erst danach verraten, dass alle drei gleich sind."
+  ],
+  "beobachtung": "Das rote Glas schmeckt vielen nach Kirsche oder Erdbeere, das gelbe nach Zitrone, das grüne nach Apfel oder Limette.",
+  "erklaerung": "Das Gehirn setzt Geschmack aus allen Sinnen zusammen. Die Farbe weckt eine Erwartung, und die Nase findet im schwachen Duft, was sie sucht.",
+  "dauer": "10 Minuten",
+  "links": [
+    "augen-ohren",
+    "aroma-nase",
+    "x-nase-zu"
+  ],
+  "welten": [],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "three identical glasses of drink tinted red, yellow and green with a small bottle of food colouring"
+  },
+  "quellen": [
+    {
+      "titel": "Morrot, Brochet, Dubourdieu: The color of odors. Brain and Language 79 (2001)",
+      "url": "https://doi.org/10.1006/brln.2001.2493"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

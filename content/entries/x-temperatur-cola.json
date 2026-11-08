@@ -1,0 +1,46 @@
+{
+  "id": "x-temperatur-cola",
+  "typ": "experiment",
+  "titel": "Warme Limonade schmeckt süßer",
+  "synonyme": [
+    "Temperatur Süße Experiment",
+    "warme Cola süß",
+    "Geschmackstest Temperatur"
+  ],
+  "kurz": "Dieselbe Limonade, einmal eiskalt und einmal zimmerwarm: Die warme schmeckt deutlich süßer, obwohl gleich viel Zucker drin ist.",
+  "bild_im_kopf": "Wie ein Lautstärkeregler, den die Kälte herunterdreht.",
+  "material": [
+    "eine Flasche Limonade oder Apfelsaft",
+    "zwei Gläser",
+    "Eiswürfel"
+  ],
+  "schritte": [
+    "Ein Glas mit Eis kühlen, das andere zimmerwarm lassen.",
+    "In beide gleich viel Limonade gießen, das kalte Glas einige Minuten kühlen lassen, Eis entfernen.",
+    "Abwechselnd probieren, dazwischen Wasser trinken.",
+    "Vergleichen: Welches schmeckt süßer?"
+  ],
+  "beobachtung": "Die zimmerwarme Limonade schmeckt deutlich süßer und klebriger, die kalte frischer und weniger süß.",
+  "erklaerung": "Der Süß-Sensor auf der Zunge arbeitet bei Wärme stärker. Darum enthalten kalte Getränke und Glace viel Zucker, den man kaum merkt.",
+  "dauer": "10 Minuten",
+  "links": [
+    "temperatur-geschmack",
+    "suess",
+    "x-nase-zu"
+  ],
+  "welten": [
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "two glasses of golden lemonade, one frosty with ice cubes and one plain, on a small tray"
+  },
+  "quellen": [
+    {
+      "titel": "Talavera et al.: Heat activation of TRPM5 underlies thermal sensitivity of sweet taste. Nature 438 (2005)",
+      "url": "https://www.nature.com/articles/nature04248"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -56,7 +56,7 @@
      "Water stops the salt from working"
     ],
     "richtig": 1,
-    "erklaerung": "Browning only starts at around 140 °C. As long as there is water, the surface cannot get hotter than that.",
+    "erklaerung": "Browning only gets fast from about 140 °C. As long as water is evaporating, the surface stays at about 100 °C.",
     "eintrag": "verdampfen"
    },
    {
@@ -696,6 +696,124 @@
     "richtig": 0,
     "erklaerung": "Honey and sugar draw in moisture. The apple supplies it in the closed tin.",
     "eintrag": "x-guetzli-apfel"
+   }
+  ]
+ },
+ {
+  "id": "schmecken-lernen",
+  "titel": "Learning to taste",
+  "kurz": "What the tongue senses, what the nose smells and why salt, acid and contrast bring a dish to life: the path from following recipes to seasoning by yourself.",
+  "fuer": "For anyone who wants to season by themselves, not just follow recipes",
+  "dauer": "about 45 minutes, with three small self-experiments",
+  "schritte": [
+   {
+    "id": "aroma-nase",
+    "warum": "First the surprise: most of what we call taste is smelled by the nose."
+   },
+   {
+    "id": "x-nase-zu",
+    "warum": "Try it yourself: a gummy bear with your nose pinched."
+   },
+   {
+    "id": "salz-geschmack",
+    "warum": "Salt doesn't only make things salty, it lifts everything else."
+   },
+   {
+    "id": "saeure",
+    "warum": "Acid makes a dish lively and lighter."
+   },
+   {
+    "id": "umami",
+    "warum": "The savoury fifth taste and where it hides."
+   },
+   {
+    "id": "bitter",
+    "warum": "Bitter: why a little of it adds depth."
+   },
+   {
+    "id": "x-salz-bitter",
+    "warum": "Try it yourself: salt on grapefruit."
+   },
+   {
+    "id": "temperatur-geschmack",
+    "warum": "Why cold tastes different from warm."
+   },
+   {
+    "id": "mundgefuehl",
+    "warum": "What we feel in the mouth counts as much as the taste."
+   },
+   {
+    "id": "kontraste",
+    "warum": "Contrasts keep every bite exciting."
+   },
+   {
+    "id": "augen-ohren",
+    "warum": "Eyes and ears eat too."
+   },
+   {
+    "id": "geschmack-balance",
+    "warum": "How tastes dampen and lift one another."
+   },
+   {
+    "id": "abschmecken",
+    "warum": "All together: the order in which to adjust seasoning."
+   }
+  ],
+  "quiz": [
+   {
+    "frage": "Why does food taste bland when you have a cold?",
+    "antworten": [
+     "The tongue is swollen",
+     "The nose can no longer smell the aroma while chewing",
+     "There is no saliva"
+    ],
+    "richtig": 1,
+    "erklaerung": "The nose smells almost all aromas, including from inside while chewing. The tongue alone only recognises five basic tastes.",
+    "eintrag": "aroma-nase"
+   },
+   {
+    "frage": "A stew tastes heavy and tired. What usually helps fastest?",
+    "antworten": [
+     "A few drops of lemon or vinegar",
+     "More water",
+     "Cook it longer"
+    ],
+    "richtig": 0,
+    "erklaerung": "Acid makes dishes livelier and lighter, especially rich and long-cooked ones.",
+    "eintrag": "saeure"
+   },
+   {
+    "frage": "Why does potato salad often need more seasoning the next day?",
+    "antworten": [
+     "The salt breaks down overnight",
+     "Cold dulls taste and aroma",
+     "Potatoes turn bitter"
+    ],
+    "richtig": 1,
+    "erklaerung": "Cold food releases less aroma and sweetness seems weaker. So taste it cold.",
+    "eintrag": "temperatur-geschmack"
+   },
+   {
+    "frage": "What goes into the dish first when seasoning?",
+    "antworten": [
+     "Herbs",
+     "Sugar",
+     "Salt"
+    ],
+    "richtig": 2,
+    "erklaerung": "Salt boosts all other tastes. Only then can you judge what else is missing.",
+    "eintrag": "abschmecken"
+   },
+   {
+    "frage": "Why does a risotto topped with crisp Parmesan seem more exciting?",
+    "antworten": [
+     "The contrast keeps the senses alert",
+     "Crisp things contain more salt",
+     "Parmesan is bitter"
+    ],
+    "richtig": 0,
+    "erklaerung": "An unchanging sensation wears off. A contrast resets attention.",
+    "eintrag": "kontraste"
    }
   ]
  }

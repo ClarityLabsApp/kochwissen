@@ -652,3 +652,12 @@ a.tag { text-decoration: none; color: #fff; }
 .crumbs + .hub-head { margin-top: 14px; }
 .nav-mobile { max-height: calc(100vh - 90px); overflow-y: auto; }
 .footer-map { display: flex; flex-wrap: wrap; gap: 6px 18px; border-top: 1px solid var(--rule); padding: 18px 0 4px; } .footer-map a { color: var(--sepia); text-decoration: none; } .footer-map a:hover { color: var(--crust); } .footer-map + footer.site { border-top: 0; }
+.rules { margin: 4px 0 18px; padding: 16px 18px; background: var(--paper-2); border: 1px solid var(--rule); border-left: 4px solid var(--t-prozess); }
+.rules-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 14px; align-items: baseline; margin-bottom: 8px; }
+.rules-head a { font-size: 15px; }
+.rules ol { margin: 0; padding-left: 22px; columns: 2 320px; column-gap: 32px; }
+.rules li { break-inside: avoid; margin: 0 0 8px; line-height: 1.35; }
+.rules li strong { font: 600 16px var(--f-display); }
+.rules li span { font-size: 15px; color: var(--sepia); }
+.hub-sec { scroll-margin-top: 120px; }
+@media (max-width: 700px) { .jump { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; } .jump a { flex: none; } .hub-sec { scroll-margin-top: 70px; } }

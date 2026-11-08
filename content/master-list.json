@@ -1,7 +1,7 @@
 {
   "version": 1,
   "stand": "2026-11-02",
-  "anzahl": 394,
+  "anzahl": 401,
   "eintraege": [
     {
       "id": "w-fleisch",
@@ -9861,6 +9861,198 @@
         "Quinoa kochen",
         "Quinoa seifig",
         "Saponine"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "mundgefuehl",
+      "typ": "prozess",
+      "titel": "Mundgefühl: wie sich Essen im Mund anfühlt",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "aroma-loeslichkeit",
+        "cremig",
+        "montieren",
+        "kontraste",
+        "geschmack-balance",
+        "w-milch"
+      ],
+      "welten": [
+        "w-saucen",
+        "w-kaffee"
+      ],
+      "synonyme": [
+        "Mundgefühl",
+        "Textur",
+        "adstringierend",
+        "pelzig im Mund",
+        "Tannine",
+        "Gerbstoffe",
+        "Wein trocken im Mund",
+        "Fett macht rund"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "temperatur-geschmack",
+      "typ": "prozess",
+      "titel": "Temperatur verändert den Geschmack",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "suess",
+        "aroma-nase",
+        "abschmecken",
+        "essen-flach",
+        "x-temperatur-cola"
+      ],
+      "welten": [],
+      "synonyme": [
+        "kalt schmeckt anders",
+        "kaltes Essen würzen",
+        "warm schmeckt süßer",
+        "Temperatur Geschmack",
+        "Gazpacho würzen",
+        "kalt servieren"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "kontraste",
+      "typ": "prozess",
+      "titel": "Kontraste: warum Gegensätze Spannung bringen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "knusprig",
+        "cremig",
+        "mundgefuehl",
+        "geschmack-balance",
+        "saeure"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Kontrast",
+        "knusprig und cremig",
+        "Textur kombinieren",
+        "warm und kalt",
+        "Gericht langweilig",
+        "Spannung im Gericht"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "abschmecken",
+      "typ": "technik",
+      "titel": "Richtig abschmecken",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "geschmack-balance",
+        "salz-geschmack",
+        "abschmecken-saeure",
+        "umami",
+        "temperatur-geschmack",
+        "essen-flach",
+        "essen-versalzen"
+      ],
+      "welten": [
+        "w-saucen"
+      ],
+      "synonyme": [
+        "abschmecken",
+        "was fehlt",
+        "Essen schmeckt nach nichts",
+        "würzen lernen",
+        "nachwürzen",
+        "Geschmack prüfen"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "augen-ohren",
+      "typ": "prozess",
+      "titel": "Augen und Ohren essen mit",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "farbe",
+        "maillard-reaktion",
+        "knusprig",
+        "kontraste",
+        "x-farbe-taeuscht",
+        "aroma-nase"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Farbe und Geschmack",
+        "Aussehen Geschmack",
+        "Geräusch knusprig",
+        "Erwartung beim Essen",
+        "Anrichten",
+        "Teller anrichten Wirkung"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "x-farbe-taeuscht",
+      "typ": "experiment",
+      "titel": "Farbe täuscht den Geschmack",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "augen-ohren",
+        "aroma-nase",
+        "x-nase-zu"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Farbe Geschmack Experiment",
+        "Lebensmittelfarbe Test",
+        "Geschmackstest Farbe"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "x-temperatur-cola",
+      "typ": "experiment",
+      "titel": "Warme Limonade schmeckt süßer",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "temperatur-geschmack",
+        "suess",
+        "x-nase-zu"
+      ],
+      "welten": [
+        "w-suesses"
+      ],
+      "synonyme": [
+        "Temperatur Süße Experiment",
+        "warme Cola süß",
+        "Geschmackstest Temperatur"
       ],
       "visual": {
         "vorlage": "ablauf"

@@ -1,0 +1,33 @@
+{
+  "id": "mundgefuehl",
+  "titel": "Mouthfeel: how food feels in the mouth",
+  "kurz": "Besides taste and smell, tongue and palate also feel texture, fat and dryness: this mouthfeel often decides more than the aroma whether we like something.",
+  "bild_im_kopf": "Like fabric on the skin: the same colour feels quite different as silk than as sackcloth.",
+  "was_passiert": "The mouth senses whether something is thick or thin, smooth or grainy, crisp or soft. Fat forms a film on the tongue, feels rounded and holds aromas longer. [[gerbstoffe|Tannins]] in red wine, black tea or unripe fruit bind with protein in saliva: the mouth feels dry and furry (astringent).",
+  "warum_wichtig": "Many kitchen tricks change not the taste but the mouthfeel: butter in a sauce, milk in tea, a spoonful of cream in soup.",
+  "synonyme": [
+    "mouthfeel",
+    "texture",
+    "astringent",
+    "furry mouth",
+    "tannins",
+    "why fat feels rich"
+  ],
+  "faustregeln": [
+    "If a sauce tastes thin and sharp, it often lacks fat: a knob of cold butter rounds it out.",
+    "Milk in black tea softens the furriness because its protein captures the tannins.",
+    "For smooth creams and sauces: strain or blend, grains bother us more than a weak flavour."
+  ],
+  "stellschrauben": [
+    {
+      "id": "fettgehalt",
+      "wirkung": "More fat feels rounder and carries aromas longer"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-kaffee",
+      "text": "A splash of milk makes strong black tea softer because milk protein binds the tannins."
+    }
+  ]
+}

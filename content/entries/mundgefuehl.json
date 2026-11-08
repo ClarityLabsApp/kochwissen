@@ -1,0 +1,60 @@
+{
+  "id": "mundgefuehl",
+  "typ": "prozess",
+  "titel": "Mundgefühl: wie sich Essen im Mund anfühlt",
+  "synonyme": [
+    "Mundgefühl",
+    "Textur",
+    "adstringierend",
+    "pelzig im Mund",
+    "Tannine",
+    "Gerbstoffe",
+    "Wein trocken im Mund",
+    "Fett macht rund"
+  ],
+  "kurz": "Neben Geschmack und Duft spüren Zunge und Gaumen auch Textur, Fett und Zusammenziehen: Dieses Mundgefühl entscheidet oft mehr als das Aroma, ob uns etwas schmeckt.",
+  "bild_im_kopf": "Wie Stoff auf der Haut: Dieselbe Farbe fühlt sich als Seide ganz anders an als als Sackleinen.",
+  "was_passiert": "Der Mund spürt, ob etwas dick oder dünn, glatt oder körnig, knusprig oder weich ist. Fett legt sich als Film auf die Zunge, wirkt rund und hält Aromen länger fest. [[gerbstoffe|Gerbstoffe]] (Tannine) in Rotwein, Schwarztee oder unreifen Früchten verbinden sich mit Eiweiß im Speichel: Der Mund fühlt sich trocken und pelzig an (adstringierend).",
+  "warum_wichtig": "Viele Küchentricks verändern gar nicht den Geschmack, sondern das Mundgefühl: Butter in der Sauce, Milch im Tee, ein Löffel Rahm in der Suppe.",
+  "faustregeln": [
+    "Wirkt eine Sauce dünn und spitz, fehlt oft Fett: ein Stück kalte Butter rundet sie ab.",
+    "Milch im Schwarztee mildert das Pelzige, weil ihr Eiweiß die Gerbstoffe abfängt.",
+    "Für glatte Cremes und Saucen: lieber passieren oder mixen, Körnchen stören mehr als ein schwacher Geschmack."
+  ],
+  "stellschrauben": [
+    {
+      "id": "fettgehalt",
+      "wirkung": "Mehr Fett wirkt runder und trägt Aromen länger"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-kaffee",
+      "text": "Ein Schuss Milch macht starken Schwarztee weicher, weil das Milcheiweiß die Gerbstoffe bindet."
+    }
+  ],
+  "links": [
+    "aroma-loeslichkeit",
+    "cremig",
+    "montieren",
+    "kontraste",
+    "geschmack-balance",
+    "w-milch"
+  ],
+  "welten": [
+    "w-saucen",
+    "w-kaffee"
+  ],
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a spoon dripping glossy butter sauce next to a cup of black tea with a splash of milk swirling in"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Geschmack und Aroma; Wein und Tee: Gerbstoffe"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

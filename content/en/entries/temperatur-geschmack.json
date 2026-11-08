@@ -1,0 +1,25 @@
+{
+  "id": "temperatur-geschmack",
+  "titel": "Temperature changes taste",
+  "kurz": "Cold dulls sweetness and aroma, warmth strengthens both: food served cold therefore needs stronger seasoning.",
+  "bild_im_kopf": "Like a voice in fog: in the cold the same message arrives only muffled.",
+  "was_passiert": "Part of the signal chain for sweetness works much harder when warm. Aroma compounds are volatile: warm food releases far more of them than cold. Very hot food, on the other hand, masks fine nuances because the heat itself takes centre stage.",
+  "warum_wichtig": "Explains why potato salad tastes bland the next day, ice cream base tastes too sweet when warm and a hot soup suddenly seems oversalted once it cools.",
+  "synonyme": [
+    "cold food tastes bland",
+    "seasoning cold food",
+    "warm tastes sweeter",
+    "temperature and taste"
+  ],
+  "faustregeln": [
+    "Taste food served cold while cold and season it more strongly.",
+    "Don't taste soups and sauces boiling hot: let a spoonful cool briefly.",
+    "Don't serve cheese and red wine ice-cold, or their aroma stays silent."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "Warmer tastes sweeter and smells stronger, colder more muted"
+    }
+  ]
+}

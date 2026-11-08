@@ -1,0 +1,25 @@
+{
+  "id": "x-temperatur-cola",
+  "titel": "Warm lemonade tastes sweeter",
+  "kurz": "The same lemonade, once ice-cold and once at room temperature: the warm one tastes noticeably sweeter, although it contains the same sugar.",
+  "bild_im_kopf": "Like a volume knob that the cold turns down.",
+  "beobachtung": "The room-temperature lemonade tastes much sweeter and stickier, the cold one fresher and less sweet.",
+  "erklaerung": "The sweet sensor on the tongue works harder when warm. That is why cold drinks and ice cream contain a lot of sugar you barely notice.",
+  "dauer": "10 minutes",
+  "synonyme": [
+    "temperature sweetness experiment",
+    "warm cola sweeter",
+    "taste test temperature"
+  ],
+  "schritte": [
+    "Chill one glass with ice and leave the other at room temperature.",
+    "Pour the same amount of lemonade into each, let the cold one chill for a few minutes, remove the ice.",
+    "Taste them in turn, drinking water in between.",
+    "Compare: which tastes sweeter?"
+  ],
+  "material": [
+    "a bottle of lemonade or apple juice",
+    "two glasses",
+    "ice cubes"
+  ]
+}

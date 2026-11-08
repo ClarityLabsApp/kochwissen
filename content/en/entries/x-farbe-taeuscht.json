@@ -1,0 +1,26 @@
+{
+  "id": "x-farbe-taeuscht",
+  "titel": "Colour fools the taste",
+  "kurz": "Three glasses of the same drink, only coloured differently: most people suddenly taste cherry, lemon or apple.",
+  "bild_im_kopf": "Like a label on a bottle: we often taste what it says, not what is inside.",
+  "beobachtung": "To many, the red glass tastes of cherry or strawberry, the yellow of lemon, the green of apple or lime.",
+  "erklaerung": "The brain builds taste from all the senses. The colour raises an expectation, and the nose finds what it is looking for in the faint aroma.",
+  "dauer": "10 minutes",
+  "synonyme": [
+    "colour taste experiment",
+    "food colouring test",
+    "taste test colour"
+  ],
+  "schritte": [
+    "Pour the same drink into three glasses without the taster watching.",
+    "Colour each glass with a drop of a different colour.",
+    "Let them taste and ask: which fruit does it taste of?",
+    "Only then reveal that all three are the same."
+  ],
+  "material": [
+    "pale grape juice or sugar water with a little lemon",
+    "red, yellow and green food colouring",
+    "three identical glasses",
+    "one person to taste and one to pour"
+  ]
+}
