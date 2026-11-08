@@ -1,0 +1,33 @@
+{
+  "id": "g-moules",
+  "titel": "Moules marinières (mussels in white wine)",
+  "kurz": "Mussels steam in wine and shallots until they pop open: their own juice becomes the sauce you mop up with bread.",
+  "bild_im_kopf": "Like tea bags in hot water: the mussels give their flavour to the broth, and the broth gives it back.",
+  "synonyme": [
+    "mussels in white wine",
+    "moules frites",
+    "steamed mussels recipe"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Clean the mussels and discard open ones that won't close",
+      "warum": "Only live mussels are safe. Dead ones spoil quickly.",
+      "prinzip": "muscheln-garen"
+    },
+    {
+      "schritt": "Soften shallots and garlic in butter",
+      "warum": "Their flavours dissolve in the fat and later in the broth.",
+      "prinzip": "aroma-loeslichkeit"
+    },
+    {
+      "schritt": "Add white wine, bring to the boil, add the mussels, lid on",
+      "warum": "The steam cooks the mussels from all sides in a few minutes.",
+      "prinzip": "daempfen"
+    },
+    {
+      "schritt": "After 3 to 5 minutes, once they are open, add parsley and a knob of butter to the broth",
+      "warum": "The cold butter lightly thickens the broth and rounds it out.",
+      "prinzip": "montieren"
+    }
+  ]
+}

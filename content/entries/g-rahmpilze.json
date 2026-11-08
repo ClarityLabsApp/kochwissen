@@ -1,0 +1,59 @@
+{
+  "id": "g-rahmpilze",
+  "typ": "gericht",
+  "titel": "Rahmpilze",
+  "synonyme": [
+    "Pilze an Rahmsauce",
+    "Champignons à la crème",
+    "Pilzrahmsauce",
+    "Rahmchampignons",
+    "Pilzsauce"
+  ],
+  "kurz": "Erst müssen die Pilze ihr Wasser loswerden und braun braten, dann bindet eingekochter Rahm alles zu einer dichten Sauce.",
+  "bild_im_kopf": "Wie nasse Wäsche vor dem Bügeln: Erst wenn das Wasser draußen ist, bekommt sie Form und Glanz.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Pilze in einer heißen, großen Pfanne ohne Gedränge braten",
+      "warum": "Zuerst tritt Wasser aus. Erst wenn es verdampft ist, beginnen sie zu bräunen.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "Erst salzen, wenn sie gebräunt sind",
+      "warum": "Salz zieht Wasser heraus und verzögert die Bräunung.",
+      "prinzip": "osmose"
+    },
+    {
+      "schritt": "Schalotten dazu, mit Weißwein ablöschen",
+      "warum": "Der Wein löst den braunen Bratsatz vom Pfannenboden.",
+      "prinzip": "deglacieren"
+    },
+    {
+      "schritt": "Rahm dazugießen und einkochen, bis die Sauce den Löffel überzieht",
+      "warum": "Mit dem Wasser verdampft, wird der Rahm dicker und kräftiger.",
+      "prinzip": "reduktion"
+    }
+  ],
+  "links": [
+    "pilze-braten",
+    "pilze-waessrig",
+    "reduktion",
+    "w-pilze",
+    "w-saucen"
+  ],
+  "welten": [
+    "w-pilze",
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a cast-iron pan of browned mushrooms in a creamy sauce with chopped parsley and a wooden spoon"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Pilze"
+    }
+  ],
+  "status": "entwurf"
+}

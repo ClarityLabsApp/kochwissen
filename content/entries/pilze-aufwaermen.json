@@ -1,0 +1,49 @@
+{
+  "id": "pilze-aufwaermen",
+  "typ": "technik",
+  "titel": "Pilzgerichte aufbewahren und aufwärmen",
+  "synonyme": [
+    "Pilze aufwärmen",
+    "Pilze aufwärmen giftig",
+    "Pilzreste",
+    "Champignons aufwärmen"
+  ],
+  "kurz": "Pilzgerichte darf man aufwärmen, wenn sie rasch abgekühlt und im Kühlschrank gelagert wurden: Die alte Warnung stammt aus der Zeit ohne Kühlschrank.",
+  "bild_im_kopf": "Wie Milch auf dem Küchentisch: Nicht die Milch ist das Problem, sondern die Stunden in der Wärme.",
+  "was_passiert": "[[w-pilze|Pilze]] enthalten viel Eiweiß und Wasser. Bleiben sie lange warm stehen, vermehren sich darin Bakterien rasch, und Eiweiß kann sich zersetzen. Im Kühlschrank geht beides viel langsamer.",
+  "warum_wichtig": "Es gilt dasselbe wie für Fleisch- und Reisreste. Wer das weiß, muss keine Pilzreste wegwerfen.",
+  "schritte": [
+    "Reste in einer flachen Schale rasch abkühlen lassen.",
+    "Abgedeckt in den Kühlschrank stellen.",
+    "Innerhalb von etwa einem Tag essen.",
+    "Gründlich und durchgehend erhitzen, auf mindestens 70 °C."
+  ],
+  "faustregeln": [
+    "Pilzgerichte nicht stundenlang warmhalten oder bei Raumtemperatur stehen lassen.",
+    "Nur einmal aufwärmen."
+  ],
+  "links": [
+    "keimwachstum",
+    "pilze-braten",
+    "w-pilze"
+  ],
+  "welten": [
+    "w-pilze"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a small glass container of creamy mushroom leftovers with a lid beside a saucepan"
+  },
+  "quellen": [
+    {
+      "titel": "Verbraucherzentrale: Pilze aufwärmen",
+      "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/lebensmittelproduktion/pilze-sammeln-zubereiten-und-aufwaermen-darauf-sollten-sie-achten-12279"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "mythos": {
+    "behauptung": "Pilze darf man nie aufwärmen.",
+    "richtig": "Mushrooms must never be reheated."
+  }
+}

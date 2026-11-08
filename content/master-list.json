@@ -1,7 +1,7 @@
 {
   "version": 1,
   "stand": "2026-11-02",
-  "anzahl": 375,
+  "anzahl": 394,
   "eintraege": [
     {
       "id": "w-fleisch",
@@ -9327,6 +9327,543 @@
       ],
       "visual": {
         "vorlage": "entscheidungsbaum"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "muscheln-garen",
+      "typ": "technik",
+      "titel": "Muscheln garen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "daempfen",
+        "eiweiss-gerinnung",
+        "keimwachstum",
+        "g-moules",
+        "w-fisch"
+      ],
+      "welten": [
+        "w-fisch"
+      ],
+      "synonyme": [
+        "Miesmuscheln kochen",
+        "Muscheln putzen",
+        "Muscheln geschlossen",
+        "Muscheln öffnen sich nicht",
+        "Venusmuscheln",
+        "Meeresfrüchte"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "crevetten-gummig",
+      "typ": "symptom",
+      "titel": "Crevetten werden gummig",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "eiweiss-gerinnung",
+        "nachgaren",
+        "trocken-tupfen",
+        "pfanne-vorheizen",
+        "krustentiere-rot",
+        "w-fisch"
+      ],
+      "welten": [
+        "w-fisch"
+      ],
+      "synonyme": [
+        "Garnelen gummig",
+        "Shrimps zäh",
+        "Crevetten zäh",
+        "Riesencrevetten braten",
+        "Scampi gummig",
+        "Meeresfrüchte zäh"
+      ],
+      "visual": {
+        "vorlage": "entscheidungsbaum"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "tintenfisch-zaeh",
+      "typ": "symptom",
+      "titel": "Tintenfisch wird zäh",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "kollagen-gelatine",
+        "schmoren",
+        "fleisch-zaeh",
+        "w-fisch"
+      ],
+      "welten": [
+        "w-fisch"
+      ],
+      "synonyme": [
+        "Calamari zäh",
+        "Kalmar gummig",
+        "Tintenfischringe zäh",
+        "Oktopus zäh",
+        "Sepia zäh",
+        "Pulpo weich kochen"
+      ],
+      "visual": {
+        "vorlage": "entscheidungsbaum"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "krustentiere-rot",
+      "typ": "prozess",
+      "titel": "Warum Krustentiere beim Kochen rot werden",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "eiweiss-denaturierung",
+        "crevetten-gummig",
+        "farbe",
+        "aroma-loeslichkeit",
+        "w-fisch"
+      ],
+      "welten": [
+        "w-fisch"
+      ],
+      "synonyme": [
+        "Crevetten werden rosa",
+        "Hummer wird rot",
+        "Krebse rot",
+        "Astaxanthin",
+        "Garnelen Farbe",
+        "Krustentiere"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "jakobsmuscheln-braten",
+      "typ": "technik",
+      "titel": "Jakobsmuscheln braten",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "maillard-reaktion",
+        "trocken-tupfen",
+        "pfanne-vorheizen",
+        "steak-grau",
+        "w-fisch"
+      ],
+      "welten": [
+        "w-fisch"
+      ],
+      "synonyme": [
+        "Jakobsmuscheln anbraten",
+        "Coquilles St-Jacques",
+        "Kammmuscheln",
+        "Jakobsmuscheln Kruste"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-moules",
+      "typ": "gericht",
+      "titel": "Moules marinières (Muscheln in Weißwein)",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "muscheln-garen",
+        "daempfen",
+        "wein",
+        "w-fisch",
+        "w-saucen"
+      ],
+      "welten": [
+        "w-fisch",
+        "w-saucen"
+      ],
+      "synonyme": [
+        "Muscheln in Weißwein",
+        "Miesmuscheln Rezept",
+        "Moules frites",
+        "Muscheln Sud"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "pilze-getrocknet",
+      "typ": "technik",
+      "titel": "Getrocknete Pilze einweichen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "umami",
+        "glutamat",
+        "quellen",
+        "g-risotto",
+        "w-pilze"
+      ],
+      "welten": [
+        "w-pilze",
+        "w-saucen"
+      ],
+      "synonyme": [
+        "Steinpilze getrocknet",
+        "getrocknete Shiitake",
+        "Trockenpilze",
+        "Pilzwasser",
+        "Morcheln einweichen"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "pilze-aufwaermen",
+      "typ": "technik",
+      "titel": "Pilzgerichte aufbewahren und aufwärmen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "keimwachstum",
+        "pilze-braten",
+        "w-pilze"
+      ],
+      "welten": [
+        "w-pilze"
+      ],
+      "synonyme": [
+        "Pilze aufwärmen",
+        "Pilze aufwärmen giftig",
+        "Pilzreste",
+        "Champignons aufwärmen"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-rahmpilze",
+      "typ": "gericht",
+      "titel": "Rahmpilze",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "pilze-braten",
+        "pilze-waessrig",
+        "reduktion",
+        "w-pilze",
+        "w-saucen"
+      ],
+      "welten": [
+        "w-pilze",
+        "w-saucen"
+      ],
+      "synonyme": [
+        "Pilze an Rahmsauce",
+        "Champignons à la crème",
+        "Pilzrahmsauce",
+        "Rahmchampignons",
+        "Pilzsauce"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "linsen-kochen",
+      "typ": "technik",
+      "titel": "Linsen kochen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "kalzium-pektin",
+        "staerkeverkleisterung",
+        "bohnen-salzen",
+        "huelsenfruechte-einweichen",
+        "w-huelsenfruechte"
+      ],
+      "welten": [
+        "w-huelsenfruechte"
+      ],
+      "synonyme": [
+        "Linsen einweichen",
+        "rote Linsen",
+        "Beluga Linsen",
+        "Berglinsen",
+        "Linsen hart",
+        "Linsen zerfallen",
+        "Dal"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "bohnen-salzen",
+      "typ": "technik",
+      "titel": "Bohnen in Salzwasser einweichen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "kalzium-pektin",
+        "huelsenfruechte-einweichen",
+        "bohnen-nicht-weich",
+        "osmose",
+        "w-huelsenfruechte"
+      ],
+      "welten": [
+        "w-huelsenfruechte"
+      ],
+      "synonyme": [
+        "Bohnen salzen",
+        "Salz macht Bohnen hart",
+        "Kichererbsen salzen",
+        "Bohnen platzen",
+        "Bohnen Salzlake"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "blaehungen",
+      "typ": "prozess",
+      "titel": "Warum Hülsenfrüchte blähen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "huelsenfruechte-einweichen",
+        "fermentation",
+        "diffusion",
+        "linsen-kochen",
+        "w-huelsenfruechte"
+      ],
+      "welten": [
+        "w-huelsenfruechte"
+      ],
+      "synonyme": [
+        "Bohnen Blähungen",
+        "Hülsenfrüchte verträglich",
+        "Kichererbsen blähen",
+        "Linsen Blähungen",
+        "Bohnen bekömmlich"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "tofu",
+      "typ": "prozess",
+      "titel": "Tofu: Sojamilch gerinnt",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "eiweiss-gerinnung",
+        "kasein",
+        "l-frischkaese",
+        "mit-staerke-bestaeuben",
+        "w-huelsenfruechte"
+      ],
+      "welten": [
+        "w-huelsenfruechte"
+      ],
+      "synonyme": [
+        "Tofu selber machen",
+        "Tofu herstellen",
+        "Nigari",
+        "Seidentofu",
+        "Tofu knusprig",
+        "Sojamilch"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "g-falafel",
+      "typ": "gericht",
+      "titel": "Falafel",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "g-hummus",
+        "huelsenfruechte-einweichen",
+        "frittiertes-fettig",
+        "w-huelsenfruechte",
+        "w-frittieren"
+      ],
+      "welten": [
+        "w-huelsenfruechte",
+        "w-frittieren"
+      ],
+      "synonyme": [
+        "Falafel selber machen",
+        "Falafel zerfallen",
+        "Kichererbsenbällchen"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "eier-gruener-rand",
+      "typ": "symptom",
+      "titel": "Grüner Rand ums Eigelb",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "eiweiss-gerinnung",
+        "abschrecken",
+        "eier-schaelen",
+        "ei",
+        "w-eier"
+      ],
+      "welten": [
+        "w-eier"
+      ],
+      "synonyme": [
+        "Ei grüner Rand",
+        "Eigelb grau",
+        "hartgekochtes Ei grün",
+        "Eier zu lange gekocht",
+        "Eier riechen nach Schwefel"
+      ],
+      "visual": {
+        "vorlage": "entscheidungsbaum"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "eier-schaelen",
+      "typ": "symptom",
+      "titel": "Gekochte Eier lassen sich schlecht schälen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "ph-wert",
+        "abschrecken",
+        "eier-gruener-rand",
+        "daempfen",
+        "w-eier"
+      ],
+      "welten": [
+        "w-eier"
+      ],
+      "synonyme": [
+        "Eier schälen",
+        "Eier kleben an der Schale",
+        "Eier schälen Trick",
+        "Ei Schale klebt",
+        "frische Eier schälen"
+      ],
+      "visual": {
+        "vorlage": "entscheidungsbaum"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "fruechte-sinken",
+      "typ": "symptom",
+      "titel": "Früchte sinken im Kuchen auf den Boden",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "kuchen-klitschig",
+        "unterheben",
+        "luftig",
+        "w-obst",
+        "w-gebaeck"
+      ],
+      "welten": [
+        "w-obst",
+        "w-gebaeck"
+      ],
+      "synonyme": [
+        "Früchte sinken ab",
+        "Beeren sinken im Kuchen",
+        "Rosinen sinken",
+        "Heidelbeeren sinken",
+        "Obst im Rührteig"
+      ],
+      "visual": {
+        "vorlage": "entscheidungsbaum"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "erdbeeren-mazerieren",
+      "typ": "technik",
+      "titel": "Früchte mit Zucker ziehen lassen (Mazerieren)",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "osmose",
+        "suess",
+        "zucker-feuchtigkeit",
+        "w-obst",
+        "w-suesses"
+      ],
+      "welten": [
+        "w-obst",
+        "w-suesses"
+      ],
+      "synonyme": [
+        "Erdbeeren zuckern",
+        "Mazerieren",
+        "Erdbeeren Saft ziehen",
+        "Früchte marinieren",
+        "Beeren mit Zucker"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "quinoa-spuelen",
+      "typ": "technik",
+      "titel": "Quinoa spülen und kochen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "bitter",
+        "reis-quellmethode",
+        "quellen",
+        "w-getreide"
+      ],
+      "welten": [
+        "w-getreide"
+      ],
+      "synonyme": [
+        "Quinoa bitter",
+        "Quinoa waschen",
+        "Quinoa kochen",
+        "Quinoa seifig",
+        "Saponine"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
       },
       "verlinkt_von": []
     }

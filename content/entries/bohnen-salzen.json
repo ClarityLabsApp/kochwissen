@@ -1,0 +1,56 @@
+{
+  "id": "bohnen-salzen",
+  "typ": "technik",
+  "titel": "Bohnen in Salzwasser einweichen",
+  "synonyme": [
+    "Bohnen salzen",
+    "Salz macht Bohnen hart",
+    "Kichererbsen salzen",
+    "Bohnen platzen",
+    "Bohnen Salzlake"
+  ],
+  "kurz": "Salz im Einweichwasser macht Bohnen nicht hart, sondern ihre Schale weicher: Sie platzen seltener und werden cremiger.",
+  "bild_im_kopf": "Wie ein Schlüsseltausch: Das Salz nimmt den Platz des Kalks in der Schale ein, und die Tür geht leichter auf.",
+  "was_passiert": "In der Schale halten Kalzium und Magnesium die Zellwände fest zusammen. Natrium aus dem Salz verdrängt sie teilweise. Dadurch wird die Schale weicher und lässt Wasser gleichmäßiger hinein. Die Bohnen garen gleichmäßiger und platzen weniger.",
+  "warum_wichtig": "Der alte Rat, Bohnen erst am Ende zu salzen, beruht auf einem Irrtum. Wer früh salzt, bekommt gleichmäßigere und besser gewürzte Bohnen.",
+  "schritte": [
+    "Getrocknete Bohnen oder Kichererbsen in reichlich Wasser einlegen.",
+    "Pro Liter Wasser etwa einen Esslöffel Salz einrühren (Richtwert).",
+    "Über Nacht einweichen lassen.",
+    "Abgießen, abspülen und in frischem Wasser weich kochen."
+  ],
+  "faustregeln": [
+    "Bremsen tun Säure (Tomaten, Wein, Essig) und sehr hartes Wasser: Diese erst zugeben, wenn die Bohnen weich sind.",
+    "Sehr alte Bohnen werden auch mit Salz nur langsam weich."
+  ],
+  "links": [
+    "kalzium-pektin",
+    "huelsenfruechte-einweichen",
+    "bohnen-nicht-weich",
+    "osmose",
+    "w-huelsenfruechte"
+  ],
+  "welten": [
+    "w-huelsenfruechte"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a glass bowl of dried white beans soaking in water with a small dish of coarse salt beside it"
+  },
+  "quellen": [
+    {
+      "titel": "America's Test Kitchen: How to brine beans",
+      "url": "https://www.americastestkitchen.com/articles/7720-how-to-brine-beans"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Samen: Hülsenfrüchte"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "mythos": {
+    "behauptung": "Salz im Kochwasser macht Bohnen hart.",
+    "richtig": "Salt in the cooking water makes beans tough."
+  }
+}

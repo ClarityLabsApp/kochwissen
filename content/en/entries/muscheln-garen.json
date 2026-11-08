@@ -1,0 +1,31 @@
+{
+  "id": "muscheln-garen",
+  "titel": "Cooking mussels and clams",
+  "kurz": "Mussels go into the pot alive and cook in a few minutes in their own steam: they are done as soon as they open.",
+  "bild_im_kopf": "Like a door with a spring lock: the muscle holds it shut while alive. Heat makes it let go, and the door springs open.",
+  "was_passiert": "A living closing muscle holds the shells together. In the heat its protein sets, it lets go and the shell opens. At the same time salty mussel juice runs out. It is the base of every mussel sauce.",
+  "warum_wichtig": "Mussels spoil quickly, so only one thing counts when buying and before cooking: they must be alive. And because they cook so fast, too much heat makes them tough and rubbery.",
+  "synonyme": [
+    "cooking mussels",
+    "cleaning mussels",
+    "mussels that don't open",
+    "clams",
+    "seafood"
+  ],
+  "faustregeln": [
+    "Keep mussels in the fridge covered with a damp cloth, not in water: fresh water kills them.",
+    "Best cooked on the day you buy them, at the latest the day after.",
+    "Do not force open mussels that stay closed after cooking; when in doubt, throw them away."
+  ],
+  "schritte": [
+    "Scrub the mussels in cold water and pull off the beard just before cooking.",
+    "Tap any open mussels: if they don't close, throw them away. Broken ones too.",
+    "Heat a little liquid (wine, water) hard in a large pot, add the mussels, put the lid on.",
+    "After about 3 to 5 minutes give the pot a shake: as soon as most have opened, take it off the heat.",
+    "Strain the liquid through a fine sieve if there is sand in it."
+  ],
+  "mythos": {
+    "behauptung": "Nicht unbedingt: Manche haben einfach einen kräftigeren Muskel. Weil man den Unterschied nicht sieht, wirft man sie trotzdem besser weg.",
+    "richtig": "Not necessarily: some simply have a stronger muscle. Since you cannot tell the difference, it is still better to throw them away."
+  }
+}

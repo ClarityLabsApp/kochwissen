@@ -1,0 +1,58 @@
+{
+  "id": "g-moules",
+  "typ": "gericht",
+  "titel": "Moules marinières (Muscheln in Weißwein)",
+  "synonyme": [
+    "Muscheln in Weißwein",
+    "Miesmuscheln Rezept",
+    "Moules frites",
+    "Muscheln Sud"
+  ],
+  "kurz": "Muscheln dämpfen in Wein und Schalotten, bis sie aufspringen: Ihr eigener Saft wird zur Sauce, die man mit Brot auftunkt.",
+  "bild_im_kopf": "Wie Teebeutel in heißem Wasser: Die Muscheln geben ihren Geschmack an den Sud ab, und der Sud gibt ihn wieder zurück.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Muscheln putzen und offene, die sich nicht schließen, aussortieren",
+      "warum": "Nur lebende Muscheln sind sicher. Tote verderben schnell.",
+      "prinzip": "muscheln-garen"
+    },
+    {
+      "schritt": "Schalotten und Knoblauch in Butter weich dünsten",
+      "warum": "Ihre Aromen lösen sich im Fett und später im Sud.",
+      "prinzip": "aroma-loeslichkeit"
+    },
+    {
+      "schritt": "Weißwein dazu, aufkochen, Muscheln hinein, Deckel drauf",
+      "warum": "Der Dampf gart die Muscheln von allen Seiten in wenigen Minuten.",
+      "prinzip": "daempfen"
+    },
+    {
+      "schritt": "Nach 3 bis 5 Minuten, sobald sie offen sind, Petersilie und ein Stück Butter in den Sud",
+      "warum": "Die kalte Butter bindet den Sud leicht und macht ihn rund.",
+      "prinzip": "montieren"
+    }
+  ],
+  "links": [
+    "muscheln-garen",
+    "daempfen",
+    "wein",
+    "w-fisch",
+    "w-saucen"
+  ],
+  "welten": [
+    "w-fisch",
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a steaming pot of moules marinières with opened black mussels, parsley, a slice of baguette and a glass of white wine"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fisch und Meeresfrüchte: Muscheln"
+    }
+  ],
+  "status": "entwurf"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "linsen-kochen",
+  "typ": "technik",
+  "titel": "Linsen kochen",
+  "synonyme": [
+    "Linsen einweichen",
+    "rote Linsen",
+    "Beluga Linsen",
+    "Berglinsen",
+    "Linsen hart",
+    "Linsen zerfallen",
+    "Dal"
+  ],
+  "kurz": "Linsen brauchen kein Einweichen und sind in 10 bis 30 Minuten gar: Rote zerfallen zu Brei, dunkle halten ihre Form.",
+  "bild_im_kopf": "Wie Knöpfe mit und ohne Mantel: Ohne Schale lösen sich die roten auf, die dunklen behalten ihre Hülle.",
+  "was_passiert": "Linsen sind klein und flach, darum dringt Wasser schnell bis in die Mitte. Rote und gelbe Linsen sind geschält und halbiert: Ihre Stärke [[quellen|quillt]] frei auf, sie zerfallen. Beluga-, Berg- und Tellerlinsen haben eine feste Schale und bleiben ganz.",
+  "warum_wichtig": "Wer die Sorte nach dem Gericht wählt, bekommt Suppe oder Salat und nicht aus Versehen das Gegenteil.",
+  "schritte": [
+    "Linsen in einem Sieb abspülen und Steinchen aussortieren.",
+    "In reichlich Wasser oder Brühe aufsetzen und sanft köcheln.",
+    "Rote Linsen etwa 10 bis 15 Minuten, dunkle 20 bis 30 Minuten (Richtwert).",
+    "Salzen darf man früh, Säure wie Essig oder Tomaten erst am Schluss dazugeben."
+  ],
+  "faustregeln": [
+    "Für Salat: Beluga- oder Berglinsen nehmen und eher knapp garen.",
+    "Für Dal und Suppe: rote Linsen, sie werden von selbst cremig.",
+    "Bleiben Linsen hart, ist oft Säure oder sehr hartes Wasser schuld."
+  ],
+  "links": [
+    "kalzium-pektin",
+    "staerkeverkleisterung",
+    "bohnen-salzen",
+    "huelsenfruechte-einweichen",
+    "w-huelsenfruechte"
+  ],
+  "welten": [
+    "w-huelsenfruechte"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "three small heaps of red, green and black beluga lentils on a wooden board with a small pot"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Samen: Hülsenfrüchte"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

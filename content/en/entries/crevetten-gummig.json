@@ -1,0 +1,85 @@
+{
+  "id": "crevetten-gummig",
+  "titel": "Prawns turn rubbery",
+  "kurz": "Prawns cook in a minute or two: even a little too long makes their protein contract tightly, squeeze out juice and turn rubbery.",
+  "bild_im_kopf": "Like a hair tie wound too tight: briefly stretched it springs, overstretched it turns hard and stiff.",
+  "synonyme": [
+    "rubbery shrimp",
+    "tough prawns",
+    "chewy shrimp",
+    "overcooked prawns"
+  ],
+  "faustregeln": [
+    "For juicy prawns: short and hot, better half a minute too early than too late, because they keep cooking in a hot sauce.",
+    "Fried in their shells they stay juicier; the shell protects them from direct heat."
+  ],
+  "ursachen": [
+    {
+      "titel": "Cooked too long",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "Prawns are thin and lean. They are done as soon as they are pink and no longer glassy, often after one to two minutes per side.",
+      "fix": [
+        "Take them out as soon as they are pink and just white inside",
+        "Rule of thumb: a C shape is done, an O shape is overdone"
+      ]
+    },
+    {
+      "titel": "Too little heat, they stew in their own juice",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "In a crowded or lukewarm pan juice runs out and stays there. The prawns boil instead of frying and need longer.",
+      "fix": [
+        "Let the pan get properly hot",
+        "Pat the prawns dry and don't add too many at once"
+      ]
+    },
+    {
+      "titel": "Thawed or pre-treated prawns",
+      "haeufigkeit": 1,
+      "prinzip": "wasserbindung-salz",
+      "warum": "Frozen prawns lose water when thawed. Some are treated with salts that bind water and turn watery and spongy when fried.",
+      "fix": [
+        "Thaw slowly in the fridge and pat very dry",
+        "Check the pack for additives"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did you take them out as soon as they were pink and no longer glassy?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Was there a lot of liquid in the pan, did they simmer rather than fry?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "tofu",
+  "typ": "prozess",
+  "titel": "Tofu: Sojamilch gerinnt",
+  "synonyme": [
+    "Tofu selber machen",
+    "Tofu herstellen",
+    "Nigari",
+    "Seidentofu",
+    "Tofu knusprig",
+    "Sojamilch"
+  ],
+  "kurz": "Tofu entsteht wie Käse: Ein Salz bringt das Eiweiß in heißer Sojamilch zum Ausflocken, die Flocken werden zu einem Block gepresst.",
+  "bild_im_kopf": "Wie Schneeflocken, die sich zu einem Schneeball pressen lassen: Erst lose Flocken, dann ein fester Block.",
+  "was_passiert": "Eingeweichte Sojabohnen werden gemahlen, gekocht und abgesiebt: Das ist Sojamilch. Ein Gerinnungsmittel wie Nigari (Magnesiumchlorid) oder Calciumsulfat verbindet die Eiweiße zu Flocken. Gepresst ergibt das festen Tofu, ungepresst den zarten Seidentofu.",
+  "warum_wichtig": "Fester Tofu enthält viel Wasser. Wer ihn vor dem Braten auspresst und trocknet, bekommt eine knusprige Kruste statt einer blassen Oberfläche.",
+  "faustregeln": [
+    "Für knusprigen Tofu: in Scheiben schneiden, zwischen Küchenpapier mit einem Gewicht 15 Minuten pressen.",
+    "Mit etwas Stärke bestäuben und in heißem Öl braten, nicht rühren.",
+    "Seidentofu nicht braten, sondern für Saucen, Desserts und Suppen verwenden."
+  ],
+  "stellschrauben": [
+    {
+      "id": "feuchtigkeit",
+      "wirkung": "Je trockener die Oberfläche, desto knuspriger"
+    }
+  ],
+  "praxis": [],
+  "links": [
+    "eiweiss-gerinnung",
+    "kasein",
+    "l-frischkaese",
+    "mit-staerke-bestaeuben",
+    "w-huelsenfruechte"
+  ],
+  "welten": [
+    "w-huelsenfruechte"
+  ],
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a white block of tofu on a wooden board, a few cubes fried golden in a small pan, soybeans beside it"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Samen: Sojabohnen und Tofu"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

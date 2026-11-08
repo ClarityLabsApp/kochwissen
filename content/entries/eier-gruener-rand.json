@@ -1,0 +1,106 @@
+{
+  "id": "eier-gruener-rand",
+  "typ": "symptom",
+  "titel": "Grüner Rand ums Eigelb",
+  "synonyme": [
+    "Ei grüner Rand",
+    "Eigelb grau",
+    "hartgekochtes Ei grün",
+    "Eier zu lange gekocht",
+    "Eier riechen nach Schwefel"
+  ],
+  "kurz": "Der graugrüne Rand entsteht, wenn Eier zu lange kochen: Schwefel aus dem Eiweiß verbindet sich mit Eisen aus dem Eigelb. Harmlos, aber vermeidbar.",
+  "bild_im_kopf": "Wie ein Silberlöffel, der im Ei anläuft: Derselbe Schwefel färbt hier das Eigelb.",
+  "ursachen": [
+    {
+      "titel": "Zu lange gekocht",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "Bei langer Hitze setzt das Eiweiß Schwefelwasserstoff frei. Er wandert zum Eigelb und bildet mit dessen Eisen graugrünes Eisensulfid.",
+      "fix": [
+        "Hart gekochte Eier etwa 10 bis 11 Minuten kochen, nicht länger"
+      ]
+    },
+    {
+      "titel": "Langsam abgekühlt",
+      "haeufigkeit": 2,
+      "prinzip": "abschrecken",
+      "warum": "Im heißen Wasser oder an der Luft geht die Reaktion weiter, auch wenn der Herd schon aus ist.",
+      "fix": [
+        "Sofort in Eiswasser legen"
+      ]
+    },
+    {
+      "titel": "Ältere Eier",
+      "haeufigkeit": 1,
+      "prinzip": "ph-wert",
+      "warum": "Mit dem Alter wird das Eiweiß basischer. Dann bildet sich der Schwefelwasserstoff leichter.",
+      "fix": [
+        "Kochzeit bei älteren Eiern eher knapp halten"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Kochten die Eier höchstens etwa 11 Minuten?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Lagen sie danach noch länger im warmen Wasser?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "faustregeln": [
+    "Für ein gelbes Eigelb: kurz genug kochen und sofort in Eiswasser, weil die Hitze sonst weiterwirkt.",
+    "Der Rand ist unbedenklich, nur der Geschmack wird etwas schweflig."
+  ],
+  "links": [
+    "eiweiss-gerinnung",
+    "abschrecken",
+    "eier-schaelen",
+    "ei",
+    "w-eier"
+  ],
+  "welten": [
+    "w-eier"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a halved hard-boiled egg with a grey-green ring around the yolk next to a perfectly yellow one"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Eier: hart gekochte Eier"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

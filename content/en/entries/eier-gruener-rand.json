@@ -1,0 +1,82 @@
+{
+  "id": "eier-gruener-rand",
+  "titel": "Green ring around the yolk",
+  "kurz": "The grey-green ring forms when eggs cook too long: sulphur from the white combines with iron from the yolk. Harmless, but avoidable.",
+  "bild_im_kopf": "Like a silver spoon tarnishing in an egg: the same sulphur stains the yolk here.",
+  "synonyme": [
+    "green ring egg yolk",
+    "grey yolk",
+    "overcooked hard-boiled eggs",
+    "sulphur smell eggs"
+  ],
+  "faustregeln": [
+    "For a yellow yolk: cook just long enough and go straight into iced water, because otherwise the heat keeps working.",
+    "The ring is harmless; it only makes the taste a little sulphurous."
+  ],
+  "ursachen": [
+    {
+      "titel": "Cooked too long",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "With long heating the white releases hydrogen sulphide. It moves to the yolk and forms grey-green iron sulphide with its iron.",
+      "fix": [
+        "Boil hard-boiled eggs for about 10 to 11 minutes, no longer"
+      ]
+    },
+    {
+      "titel": "Cooled slowly",
+      "haeufigkeit": 2,
+      "prinzip": "abschrecken",
+      "warum": "In hot water or in the air the reaction continues even after the hob is off.",
+      "fix": [
+        "Put them straight into iced water"
+      ]
+    },
+    {
+      "titel": "Older eggs",
+      "haeufigkeit": 1,
+      "prinzip": "ph-wert",
+      "warum": "With age the egg white becomes more alkaline. Hydrogen sulphide then forms more easily.",
+      "fix": [
+        "Keep the cooking time on the short side for older eggs"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did the eggs boil for no more than about 11 minutes?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did they then sit in the warm water for a while?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "pilze-aufwaermen",
+  "titel": "Storing and reheating mushroom dishes",
+  "kurz": "You can reheat mushroom dishes if they were cooled quickly and kept in the fridge: the old warning dates from the time before fridges.",
+  "bild_im_kopf": "Like milk left on the kitchen table: the problem is not the milk but the hours in the warmth.",
+  "was_passiert": "[[w-pilze|Mushrooms]] contain a lot of protein and water. Left warm for a long time, bacteria multiply quickly in them and protein can break down. In the fridge both happen far more slowly.",
+  "warum_wichtig": "The same applies as for leftover meat and rice. Knowing this, you need not throw away leftover mushrooms.",
+  "synonyme": [
+    "reheating mushrooms",
+    "leftover mushrooms",
+    "are reheated mushrooms dangerous"
+  ],
+  "faustregeln": [
+    "Do not keep mushroom dishes warm for hours or leave them at room temperature.",
+    "Reheat only once."
+  ],
+  "schritte": [
+    "Let leftovers cool quickly in a shallow dish.",
+    "Cover and put them in the fridge.",
+    "Eat within about one day.",
+    "Reheat thoroughly all the way through, to at least 70 °C."
+  ],
+  "mythos": {
+    "behauptung": "Das stammt aus der Zeit ohne Kühlschrank. Rasch gekühlt und gut erhitzt sind sie unbedenklich.",
+    "richtig": "That dates from before fridges. Cooled quickly and reheated well, they are safe."
+  }
+}

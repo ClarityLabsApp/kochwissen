@@ -1,0 +1,577 @@
+"""Welten III: Lücken in den Welten schließen (8. November 2026).
+Meeresfrüchte (Muscheln, Crevetten, Tintenfisch, Krustentiere, Jakobsmuscheln, Moules), Pilze (getrocknete Pilze,
+Aufwärmen, Rahmpilze), Hülsenfrüchte (Linsen, Salzwasser, Blähungen, Tofu, Falafel), Eier (grüner Rand, schälen),
+Obst (Früchte sinken, Mazerieren), Getreide (Quinoa). Texte als Paare L(deutsch, englisch)."""
+import json, os, subprocess, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from gen_batch_welten2 import L, res, MC, ROOT, U, tree3  # noqa: E402
+
+E = []
+add = E.append
+
+ATK_SQUID = {"titel": "America's Test Kitchen: Why and how you should cook with squid", "url": "https://www.americastestkitchen.com/articles/why-and-how-you-should-cook-with-squid"}
+ATK_EGGS = {"titel": "Cook's Illustrated: Easy-peel hard-cooked eggs", "url": "https://www.americastestkitchen.com/cooksillustrated/articles/168-easy-peel-hard-cooked-eggs"}
+ATK_BEANS = {"titel": "America's Test Kitchen: How to brine beans", "url": "https://www.americastestkitchen.com/articles/7720-how-to-brine-beans"}
+LIVESCI = {"titel": "Live Science: Why do cooked lobsters turn red?", "url": "https://livescience.com/66093-why-cooked-lobsters-turn-red.html"}
+MUSSELS = {"titel": "Tasting Table: The rule about not eating closed mussels is actually complicated", "url": "https://www.tastingtable.com/1348663/rule-not-eating-closed-mussels-complicated/"}
+VZ_PILZE = {"titel": "Verbraucherzentrale: Pilze aufwärmen", "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/lebensmittelproduktion/pilze-sammeln-zubereiten-und-aufwaermen-darauf-sollten-sie-achten-12279"}
+
+
+def T(id, titel, syn, kurz, bild, was, warum, schritte, regeln, links, welten, illu, quellen, mythos=None, schw="einsteiger"):
+    e = {"id": id, "typ": "technik", "titel": titel, "synonyme": syn, "kurz": kurz, "bild_im_kopf": bild, "was_passiert": was, "warum_wichtig": warum,
+         "schritte": schritte, "faustregeln": regeln, "links": links, "welten": welten, "visual": {"vorlage": "ablauf", "illustration": illu},
+         "quellen": quellen, "status": "entwurf", "schwierigkeit": schw}
+    if mythos:  # L((behauptung, richtig), (claim, truth))
+        de, en = res(mythos, 0), res(mythos, 1)
+        e["mythos"] = {"behauptung": L(de[0], en[0]), "richtig": L(de[1], en[1])}
+    return e
+
+
+def S(id, titel, syn, kurz, bild, ursachen, q1, q2, regeln, links, welten, illu, quellen):
+    return {"id": id, "typ": "symptom", "titel": titel, "synonyme": syn, "kurz": kurz, "bild_im_kopf": bild, "ursachen": ursachen,
+            "diagnose": tree3(q1, q2), "faustregeln": regeln, "links": links, "welten": welten,
+            "visual": {"vorlage": "entscheidungsbaum", "illustration": illu}, "quellen": quellen, "status": "entwurf", "schwierigkeit": "einsteiger"}
+
+
+def P(id, titel, syn, kurz, bild, was, warum, regeln, stell, links, welten, illu, quellen, praxis=()):
+    return {"id": id, "typ": "prozess", "titel": titel, "synonyme": syn, "kurz": kurz, "bild_im_kopf": bild, "was_passiert": was, "warum_wichtig": warum,
+            "faustregeln": regeln, "stellschrauben": [{"id": a, "wirkung": b} for a, b in stell], "praxis": [{"welt": a, "text": b} for a, b in praxis],
+            "links": links, "welten": welten, "visual": {"vorlage": "keine", "illustration": illu}, "quellen": quellen, "status": "entwurf", "schwierigkeit": "einsteiger"}
+
+
+def G(id, titel, syn, kurz, bild, schritte, links, welten, illu, quellen, schw="einsteiger"):
+    return {"id": id, "typ": "gericht", "titel": titel, "synonyme": syn, "kurz": kurz, "bild_im_kopf": bild, "schwierigkeit": schw,
+            "schluesselmomente": [{"schritt": a, "warum": b, "prinzip": c} for a, b, c in schritte],
+            "links": links, "welten": welten, "visual": {"vorlage": "ablauf", "illustration": illu}, "quellen": quellen, "status": "entwurf"}
+
+
+# ================================================================ Meeresfrüchte
+add(T("muscheln-garen", L("Muscheln garen", "Cooking mussels and clams"),
+      L(["Miesmuscheln kochen", "Muscheln putzen", "Muscheln geschlossen", "Muscheln öffnen sich nicht", "Venusmuscheln", "Meeresfrüchte"], ["cooking mussels", "cleaning mussels", "mussels that don't open", "clams", "seafood"]),
+      L("Muscheln kommen lebend in den Topf und garen in wenigen Minuten im eigenen Dampf: Sie sind fertig, sobald sie sich öffnen.",
+        "Mussels go into the pot alive and cook in a few minutes in their own steam: they are done as soon as they open."),
+      L("Wie eine Tür mit Federschloss: Der Muskel hält sie zu, solange er lebt. Die Hitze lässt ihn los, und die Tür springt auf.",
+        "Like a door with a spring lock: the muscle holds it shut while alive. Heat makes it let go, and the door springs open."),
+      L("Ein lebender Schließmuskel hält die Schalen zusammen. In der Hitze gerinnt sein Eiweiß, er lässt los, und die Schale öffnet sich. Gleichzeitig tritt salziger Muschelsaft aus. Er ist die Grundlage jeder Muschelsauce.",
+        "A living closing muscle holds the shells together. In the heat its protein sets, it lets go and the shell opens. At the same time salty mussel juice runs out. It is the base of every mussel sauce."),
+      L("Muscheln verderben schnell, darum zählt beim Einkauf und vor dem Kochen nur eines: Sie müssen leben. Und weil sie so schnell garen, werden sie bei zu langer Hitze zäh und gummig.",
+        "Mussels spoil quickly, so only one thing counts when buying and before cooking: they must be alive. And because they cook so fast, too much heat makes them tough and rubbery."),
+      L(["Muscheln in kaltem Wasser abbürsten, den Bart kurz vor dem Kochen abziehen.",
+         "Offene Muscheln antippen: Schließen sie sich nicht, wegwerfen. Zerbrochene ebenfalls.",
+         "Wenig Flüssigkeit (Wein, Wasser) in einem großen Topf stark erhitzen, Muscheln hinein, Deckel drauf.",
+         "Nach etwa 3 bis 5 Minuten einmal schütteln: Sobald sich die meisten geöffnet haben, vom Herd nehmen.",
+         "Den Sud durch ein feines Sieb gießen, falls Sand darin ist."],
+        ["Scrub the mussels in cold water and pull off the beard just before cooking.",
+         "Tap any open mussels: if they don't close, throw them away. Broken ones too.",
+         "Heat a little liquid (wine, water) hard in a large pot, add the mussels, put the lid on.",
+         "After about 3 to 5 minutes give the pot a shake: as soon as most have opened, take it off the heat.",
+         "Strain the liquid through a fine sieve if there is sand in it."]),
+      L(["Muscheln im Kühlschrank mit einem feuchten Tuch bedeckt lagern, nicht in Wasser: Süßwasser tötet sie.",
+         "Lieber am Einkaufstag kochen, spätestens am Tag danach.",
+         "Muscheln, die nach dem Kochen geschlossen bleiben, nicht aufbrechen und im Zweifel wegwerfen."],
+        ["Keep mussels in the fridge covered with a damp cloth, not in water: fresh water kills them.",
+         "Best cooked on the day you buy them, at the latest the day after.",
+         "Do not force open mussels that stay closed after cooking; when in doubt, throw them away."]),
+      ["daempfen", "eiweiss-gerinnung", "keimwachstum", "g-moules", "w-fisch"], ["w-fisch"],
+      "a black pot of steamed blue mussels with opened shells, a sprig of parsley and a glass of white wine",
+      [MC("Kapitel Fisch und Meeresfrüchte: Muscheln", "Chapter on fish and shellfish: molluscs"), MUSSELS],
+      mythos=L(("Muscheln, die nach dem Kochen zu sind, sind giftig.", "Mussels that stay closed after cooking are poisonous."),
+               ("Nicht unbedingt: Manche haben einfach einen kräftigeren Muskel. Weil man den Unterschied nicht sieht, wirft man sie trotzdem besser weg.",
+                "Not necessarily: some simply have a stronger muscle. Since you cannot tell the difference, it is still better to throw them away."))))
+
+add(S("crevetten-gummig", L("Crevetten werden gummig", "Prawns turn rubbery"),
+      L(["Garnelen gummig", "Shrimps zäh", "Crevetten zäh", "Riesencrevetten braten", "Scampi gummig", "Meeresfrüchte zäh"], ["rubbery shrimp", "tough prawns", "chewy shrimp", "overcooked prawns"]),
+      L("Crevetten garen in ein, zwei Minuten: Schon kurz zu lange zieht sich ihr Eiweiß fest zusammen, drückt Saft hinaus und wird gummig.",
+        "Prawns cook in a minute or two: even a little too long makes their protein contract tightly, squeeze out juice and turn rubbery."),
+      L("Wie ein Gummiring, den man zu stark aufzieht: Kurz gespannt federt er, überspannt wird er hart und spröde.",
+        "Like a hair tie wound too tight: briefly stretched it springs, overstretched it turns hard and stiff."),
+      [U(L("Zu lange gegart", "Cooked too long"), 3, "eiweiss-gerinnung",
+         L("Crevetten sind dünn und mager. Sie sind gar, sobald sie rosa und nicht mehr glasig sind, oft nach ein bis zwei Minuten pro Seite.",
+           "Prawns are thin and lean. They are done as soon as they are pink and no longer glassy, often after one to two minutes per side."),
+         [L("Herausnehmen, sobald sie rosa und innen gerade weiß sind", "Take them out as soon as they are pink and just white inside"),
+          L("Merkhilfe: C-Form ist gar, O-Form ist übergart", "Rule of thumb: a C shape is done, an O shape is overdone")]),
+       U(L("Zu wenig Hitze, sie köcheln im eigenen Saft", "Too little heat, they stew in their own juice"), 2, "verdampfen",
+         L("In einer vollen oder lauwarmen Pfanne tritt Saft aus und bleibt liegen. Die Crevetten kochen statt zu braten und brauchen länger.",
+           "In a crowded or lukewarm pan juice runs out and stays there. The prawns boil instead of frying and need longer."),
+         [L("Pfanne richtig heiß werden lassen", "Let the pan get properly hot"), L("Crevetten trocken tupfen und nicht zu viele auf einmal", "Pat the prawns dry and don't add too many at once")]),
+       U(L("Aufgetaute oder vorbehandelte Ware", "Thawed or pre-treated prawns"), 1, "wasserbindung-salz",
+         L("Tiefgekühlte Crevetten verlieren beim Auftauen Wasser. Manche sind mit Salzen behandelt, die Wasser binden, und werden beim Braten wässrig und weich-zäh.",
+           "Frozen prawns lose water when thawed. Some are treated with salts that bind water and turn watery and spongy when fried."),
+         [L("Langsam im Kühlschrank auftauen und gut trocken tupfen", "Thaw slowly in the fridge and pat very dry"), L("Auf der Packung auf Zusätze achten", "Check the pack for additives")])],
+      L("Hast du sie herausgenommen, sobald sie rosa und nicht mehr glasig waren?", "Did you take them out as soon as they were pink and no longer glassy?"),
+      L("Lag viel Flüssigkeit in der Pfanne, köchelten sie eher, als dass sie brieten?", "Was there a lot of liquid in the pan, did they simmer rather than fry?"),
+      L(["Für saftige Crevetten: kurz und heiß, lieber eine halbe Minute zu früh als zu spät, weil sie in der heißen Sauce nachgaren.",
+         "Mit Schale gebraten bleiben sie saftiger, die Schale schützt vor der direkten Hitze."],
+        ["For juicy prawns: short and hot, better half a minute too early than too late, because they keep cooking in a hot sauce.",
+         "Fried in their shells they stay juicier; the shell protects them from direct heat."]),
+      ["eiweiss-gerinnung", "nachgaren", "trocken-tupfen", "pfanne-vorheizen", "krustentiere-rot", "w-fisch"], ["w-fisch"],
+      "a few curled pink prawns in a hot cast-iron pan with garlic slices and a lemon wedge",
+      [MC("Kapitel Fisch und Meeresfrüchte: Krebstiere", "Chapter on fish and shellfish: crustaceans")]))
+
+add(S("tintenfisch-zaeh", L("Tintenfisch wird zäh", "Squid turns tough"),
+      L(["Calamari zäh", "Kalmar gummig", "Tintenfischringe zäh", "Oktopus zäh", "Sepia zäh", "Pulpo weich kochen"], ["tough calamari", "rubbery squid", "chewy octopus", "tender octopus"]),
+      L("Tintenfisch hat viel Bindegewebe: Er wird zart, wenn man ihn ganz kurz oder sehr lange gart. Dazwischen ist er zäh wie Gummi.",
+        "Squid has a lot of connective tissue: it turns tender if cooked very briefly or for a long time. In between it is as tough as rubber."),
+      L("Wie ein Brückenweg über ein Tal: Man bleibt entweder ganz kurz auf der Seite oder geht ganz hinüber. In der Mitte hängt man fest.",
+        "Like a rope bridge across a valley: you either stay right at the near edge or go all the way across. In the middle you get stuck."),
+      [U(L("Mittlere Garzeit: zu lang für kurz, zu kurz für lang", "Medium cooking time: too long for quick, too short for slow"), 3, "kollagen-gelatine",
+         L("Nach etwa zwei Minuten zieht sich das Bindegewebe fest zusammen. Erst nach einer halben Stunde oder mehr wird es zu weicher Gelatine (Richtwert).",
+           "After about two minutes the connective tissue contracts hard. Only after half an hour or more does it turn into soft gelatine (as a guide)."),
+         [L("Kurz: höchstens ein, zwei Minuten bei großer Hitze", "Quick: one or two minutes at most over high heat"),
+          L("Lang: mindestens 30 bis 45 Minuten sanft schmoren, Oktopus oft länger", "Slow: braise gently for at least 30 to 45 minutes, octopus often longer")]),
+       U(L("Pfanne zu voll oder nicht heiß genug", "Pan too full or not hot enough"), 2, "verdampfen",
+         L("Tintenfisch gibt viel Wasser ab. In einer kühlen Pfanne kocht er im eigenen Saft und braucht zu lange, bis er Farbe nimmt.",
+           "Squid releases a lot of water. In a cool pan it boils in its own juice and takes too long to colour."),
+         [L("In kleinen Portionen in sehr heißer Pfanne braten", "Fry in small batches in a very hot pan"), L("Vorher gut trocken tupfen", "Pat very dry first")]),
+       U(L("Dicke Stücke ohne Einschnitte", "Thick pieces without scoring"), 1, "waermeleitung",
+         L("Dicke Tuben brauchen länger, bis sie innen heiß sind, und rutschen so in die zähe Mitte.",
+           "Thick tubes take longer to heat through and so slip into the tough middle zone."),
+         [L("Tuben aufschneiden und rautenförmig einritzen", "Cut the tubes open and score them in a diamond pattern"), L("In dünne Ringe oder Streifen schneiden", "Cut into thin rings or strips")])],
+      L("War er weniger als zwei Minuten oder länger als eine halbe Stunde in der Hitze?", "Was it in the heat for less than two minutes or more than half an hour?"),
+      L("War er kurz gebraten, aber zischte es kaum in der Pfanne?", "Was it fried briefly but did the pan barely sizzle?"),
+      L(["Für zarten Tintenfisch: entweder blitzschnell oder geduldig, nie dazwischen.",
+         "Ist er schon zäh geworden, weiter schmoren statt aufgeben: Nach einer halben Stunde wird er wieder weich."],
+        ["For tender squid: either lightning fast or patient, never in between.",
+         "If it has already turned tough, keep braising rather than giving up: after half an hour it softens again."]),
+      ["kollagen-gelatine", "schmoren", "fleisch-zaeh", "w-fisch"], ["w-fisch"],
+      "fried golden calamari rings on a small plate with a lemon wedge, a whole raw squid beside them",
+      [MC("Kapitel Fisch und Meeresfrüchte: Tintenfische", "Chapter on fish and shellfish: squid and octopus"), ATK_SQUID]))
+
+add(P("krustentiere-rot", L("Warum Krustentiere beim Kochen rot werden", "Why shellfish turn red when cooked"),
+      L(["Crevetten werden rosa", "Hummer wird rot", "Krebse rot", "Astaxanthin", "Garnelen Farbe", "Krustentiere"], ["why shrimp turn pink", "lobster turns red", "astaxanthin", "crustaceans"]),
+      L("Im Panzer von Crevetten, Krebsen und Hummer steckt ein roter Farbstoff, den ein Eiweiß grau-blau verpackt. Hitze löst die Verpackung, und das Rot kommt zum Vorschein.",
+        "The shells of prawns, crabs and lobster contain a red pigment wrapped up grey-blue by a protein. Heat undoes the wrapping and the red appears."),
+      L("Wie ein rotes Geschenk in grauem Packpapier: Erst wenn man das Papier aufreißt, sieht man die Farbe.",
+        "Like a red present in grey wrapping paper: only when you tear the paper open do you see the colour."),
+      L("Der Farbstoff heißt Astaxanthin und ist eigentlich rot. Im lebenden Tier ist er an ein Eiweiß gebunden, das ihn blau-grau erscheinen lässt. Beim Erhitzen verändert sich dieses Eiweiß (Denaturierung) und lässt den Farbstoff los. Das freie Astaxanthin färbt Panzer und Fleisch rot und rosa.",
+        "The pigment is called astaxanthin and is actually red. In the living animal it is bound to a protein that makes it look blue-grey. When heated this protein changes (denaturation) and lets the pigment go. The free astaxanthin colours shell and flesh red and pink."),
+      L("Die Farbe zeigt zuverlässig, wann Crevetten gar sind. Derselbe Farbstoff gelangt über die Nahrung in Lachs und Forelle und macht ihr Fleisch rosa.",
+        "The colour reliably shows when prawns are cooked. The same pigment reaches salmon and trout through their diet and turns their flesh pink."),
+      L(["Crevetten sind gar, sobald sie durchgehend rosa und nicht mehr glasig sind.",
+         "Mit Schale braten gibt Farbe und Aroma ab: Die Schalen eignen sich für einen roten Fond oder ein Krustentieröl."],
+        ["Prawns are done once they are pink throughout and no longer glassy.",
+         "Frying in the shell releases colour and flavour: the shells make a red stock or a shellfish oil."]),
+      [("temperatur", L("Schon mäßige Hitze löst den Farbstoff vom Eiweiß", "Even moderate heat frees the pigment from the protein"))],
+      ["eiweiss-denaturierung", "crevetten-gummig", "farbe", "aroma-loeslichkeit", "w-fisch"], ["w-fisch"],
+      "one grey-blue raw prawn next to a bright red cooked prawn and a red lobster claw on a white plate",
+      [MC("Kapitel Fisch und Meeresfrüchte: Farbe der Krebstiere", "Chapter on fish and shellfish: crustacean colour"), LIVESCI],
+      praxis=[("w-fisch", L("Lachs aus Zucht bekommt Astaxanthin ins Futter, sonst bliebe sein Fleisch blass.", "Farmed salmon is fed astaxanthin, otherwise its flesh would stay pale."))]))
+
+add(T("jakobsmuscheln-braten", L("Jakobsmuscheln braten", "Searing scallops"),
+      L(["Jakobsmuscheln anbraten", "Coquilles St-Jacques", "Kammmuscheln", "Jakobsmuscheln Kruste"], ["seared scallops", "pan-fried scallops", "scallop crust"]),
+      L("Jakobsmuscheln brauchen eine trockene Oberfläche und eine sehr heiße Pfanne: außen eine goldene Kruste, innen noch glasig und süß.",
+        "Scallops need a dry surface and a very hot pan: a golden crust outside, still glassy and sweet inside."),
+      L("Wie ein Marshmallow über dem Feuer: Außen soll es karamellisieren, bevor das Innere zerläuft.",
+        "Like a marshmallow over a fire: the outside should caramelise before the inside melts."),
+      L("Das Muskelfleisch enthält etwas Zucker, darum bräunt es schnell und schmeckt süßlich. Nasse Oberflächen bremsen das Bräunen, weil das Wasser erst verdampfen muss. Manche Ware wird mit Salzen behandelt, die Wasser binden: Sie gibt in der Pfanne Wasser ab und bräunt kaum.",
+        "The muscle contains a little sugar, so it browns fast and tastes sweet. Wet surfaces slow browning because the water has to evaporate first. Some scallops are treated with salts that bind water: they release water in the pan and barely brown."),
+      L("Jakobsmuscheln sind teuer und in einer Minute verdorben. Wer weiß, worauf es ankommt, bekommt die Kruste, bevor das Innere gummig wird.",
+        "Scallops are expensive and ruined in a minute. Knowing what matters gets you the crust before the inside turns rubbery."),
+      L(["Den kleinen, festen Seitenmuskel abziehen.",
+         "Mit Küchenpapier gründlich trocken tupfen, erst kurz vor dem Braten salzen.",
+         "Pfanne mit wenig Öl stark erhitzen, bis das Öl schimmert.",
+         "Muscheln mit Abstand einlegen und etwa 1,5 bis 2 Minuten nicht bewegen.",
+         "Wenden, ein Stück Butter dazu, nach einer weiteren Minute herausnehmen."],
+        ["Pull off the small, tough side muscle.",
+         "Pat thoroughly dry with kitchen paper and salt only just before frying.",
+         "Heat a pan with a little oil until the oil shimmers.",
+         "Lay the scallops in with space between them and leave them untouched for about 1.5 to 2 minutes.",
+         "Turn, add a knob of butter and take them out after another minute."]),
+      L(["Unbehandelte, sogenannte trockene Jakobsmuscheln kaufen: Sie bräunen viel besser.",
+         "Innen soll die Mitte noch leicht glasig sein, sie gart auf dem Teller nach."],
+        ["Buy untreated, so-called dry scallops: they brown far better.",
+         "The centre should still be slightly glassy; it keeps cooking on the plate."]),
+      ["maillard-reaktion", "trocken-tupfen", "pfanne-vorheizen", "steak-grau", "w-fisch"], ["w-fisch"],
+      "three seared scallops with a golden crust in a small copper pan with butter and thyme",
+      [MC("Kapitel Fisch und Meeresfrüchte: Kammmuscheln", "Chapter on fish and shellfish: scallops")]))
+
+add(G("g-moules", L("Moules marinières (Muscheln in Weißwein)", "Moules marinières (mussels in white wine)"),
+      L(["Muscheln in Weißwein", "Miesmuscheln Rezept", "Moules frites", "Muscheln Sud"], ["mussels in white wine", "moules frites", "steamed mussels recipe"]),
+      L("Muscheln dämpfen in Wein und Schalotten, bis sie aufspringen: Ihr eigener Saft wird zur Sauce, die man mit Brot auftunkt.",
+        "Mussels steam in wine and shallots until they pop open: their own juice becomes the sauce you mop up with bread."),
+      L("Wie Teebeutel in heißem Wasser: Die Muscheln geben ihren Geschmack an den Sud ab, und der Sud gibt ihn wieder zurück.",
+        "Like tea bags in hot water: the mussels give their flavour to the broth, and the broth gives it back."),
+      [(L("Muscheln putzen und offene, die sich nicht schließen, aussortieren", "Clean the mussels and discard open ones that won't close"),
+        L("Nur lebende Muscheln sind sicher. Tote verderben schnell.", "Only live mussels are safe. Dead ones spoil quickly."), "muscheln-garen"),
+       (L("Schalotten und Knoblauch in Butter weich dünsten", "Soften shallots and garlic in butter"),
+        L("Ihre Aromen lösen sich im Fett und später im Sud.", "Their flavours dissolve in the fat and later in the broth."), "aroma-loeslichkeit"),
+       (L("Weißwein dazu, aufkochen, Muscheln hinein, Deckel drauf", "Add white wine, bring to the boil, add the mussels, lid on"),
+        L("Der Dampf gart die Muscheln von allen Seiten in wenigen Minuten.", "The steam cooks the mussels from all sides in a few minutes."), "daempfen"),
+       (L("Nach 3 bis 5 Minuten, sobald sie offen sind, Petersilie und ein Stück Butter in den Sud", "After 3 to 5 minutes, once they are open, add parsley and a knob of butter to the broth"),
+        L("Die kalte Butter bindet den Sud leicht und macht ihn rund.", "The cold butter lightly thickens the broth and rounds it out."), "montieren")],
+      ["muscheln-garen", "daempfen", "wein", "w-fisch", "w-saucen"], ["w-fisch", "w-saucen"],
+      "a steaming pot of moules marinières with opened black mussels, parsley, a slice of baguette and a glass of white wine",
+      [MC("Kapitel Fisch und Meeresfrüchte: Muscheln", "Chapter on fish and shellfish: molluscs")]))
+
+# ================================================================ Pilze
+add(T("pilze-getrocknet", L("Getrocknete Pilze einweichen", "Soaking dried mushrooms"),
+      L(["Steinpilze getrocknet", "getrocknete Shiitake", "Trockenpilze", "Pilzwasser", "Morcheln einweichen"], ["dried porcini", "dried shiitake", "rehydrating mushrooms", "mushroom soaking liquid"]),
+      L("Getrocknete Pilze schmecken kräftiger als frische: Beim Trocknen konzentriert sich ihr Umami, und das Einweichwasser ist fast so wertvoll wie die Pilze selbst.",
+        "Dried mushrooms taste stronger than fresh ones: drying concentrates their umami, and the soaking water is almost as valuable as the mushrooms."),
+      L("Wie eine Rosine, die im Rum wieder prall wird: Sie saugt sich voll, und der Rum schmeckt danach nach Rosine.",
+        "Like a raisin plumping up again in rum: it soaks up the liquid, and the rum then tastes of raisin."),
+      L("Beim Trocknen verlieren Pilze fast ihr ganzes Wasser, die Geschmacksstoffe bleiben. Shiitake und Steinpilze enthalten Stoffe, die das Umami von Glutamat vervielfachen. In warmem Wasser saugen sich die Pilze wieder voll und geben Geschmack ins Wasser ab.",
+        "When drying, mushrooms lose almost all their water while the flavour compounds remain. Shiitake and porcini contain compounds that multiply the umami of glutamate. In warm water the mushrooms soak up water again and release flavour into it."),
+      L("Ein paar getrocknete Pilze geben Risotto, Saucen und Schmorgerichten mehr Tiefe als die doppelte Menge frischer.",
+        "A few dried mushrooms give risotto, sauces and braises more depth than twice the amount of fresh ones."),
+      L(["Pilze kurz abspülen und in warmes Wasser legen, sodass sie bedeckt sind.",
+         "Etwa 20 bis 30 Minuten einweichen, bis sie weich sind.",
+         "Pilze herausheben und leicht ausdrücken.",
+         "Das Wasser durch einen Kaffeefilter gießen, damit Sand und Erde zurückbleiben.",
+         "Pilze und gefiltertes Wasser beide mitverwenden."],
+        ["Rinse the mushrooms briefly and put them in enough warm water to cover.",
+         "Soak for about 20 to 30 minutes until soft.",
+         "Lift out the mushrooms and squeeze them lightly.",
+         "Pour the water through a coffee filter so sand and grit stay behind.",
+         "Use both the mushrooms and the filtered water."]),
+      L(["Einweichwasser nie weggießen: Es ist eine fertige Pilzbrühe.",
+         "Getrocknete Pilze zu Pulver mahlen und als Würze über Fleisch oder in Saucen streuen."],
+        ["Never pour away the soaking water: it is a ready-made mushroom stock.",
+         "Grind dried mushrooms to a powder and use it as seasoning on meat or in sauces."]),
+      ["umami", "glutamat", "quellen", "g-risotto", "w-pilze"], ["w-pilze", "w-saucen"],
+      "a small bowl of dried porcini slices soaking in amber water next to a coffee filter",
+      [MC("Kapitel Pilze", "Chapter on mushrooms")]))
+
+add(T("pilze-aufwaermen", L("Pilzgerichte aufbewahren und aufwärmen", "Storing and reheating mushroom dishes"),
+      L(["Pilze aufwärmen", "Pilze aufwärmen giftig", "Pilzreste", "Champignons aufwärmen"], ["reheating mushrooms", "leftover mushrooms", "are reheated mushrooms dangerous"]),
+      L("Pilzgerichte darf man aufwärmen, wenn sie rasch abgekühlt und im Kühlschrank gelagert wurden: Die alte Warnung stammt aus der Zeit ohne Kühlschrank.",
+        "You can reheat mushroom dishes if they were cooled quickly and kept in the fridge: the old warning dates from the time before fridges."),
+      L("Wie Milch auf dem Küchentisch: Nicht die Milch ist das Problem, sondern die Stunden in der Wärme.",
+        "Like milk left on the kitchen table: the problem is not the milk but the hours in the warmth."),
+      L("Pilze enthalten viel Eiweiß und Wasser. Bleiben sie lange warm stehen, vermehren sich darin Bakterien rasch, und Eiweiß kann sich zersetzen. Im Kühlschrank geht beides viel langsamer.",
+        "Mushrooms contain a lot of protein and water. Left warm for a long time, bacteria multiply quickly in them and protein can break down. In the fridge both happen far more slowly."),
+      L("Es gilt dasselbe wie für Fleisch- und Reisreste. Wer das weiß, muss keine Pilzreste wegwerfen.",
+        "The same applies as for leftover meat and rice. Knowing this, you need not throw away leftover mushrooms."),
+      L(["Reste in einer flachen Schale rasch abkühlen lassen.",
+         "Abgedeckt in den Kühlschrank stellen.",
+         "Innerhalb von etwa einem Tag essen.",
+         "Gründlich und durchgehend erhitzen, auf mindestens 70 °C."],
+        ["Let leftovers cool quickly in a shallow dish.",
+         "Cover and put them in the fridge.",
+         "Eat within about one day.",
+         "Reheat thoroughly all the way through, to at least 70 °C."]),
+      L(["Pilzgerichte nicht stundenlang warmhalten oder bei Raumtemperatur stehen lassen.",
+         "Nur einmal aufwärmen."],
+        ["Do not keep mushroom dishes warm for hours or leave them at room temperature.",
+         "Reheat only once."]),
+      ["keimwachstum", "pilze-braten", "w-pilze"], ["w-pilze"],
+      "a small glass container of creamy mushroom leftovers with a lid beside a saucepan",
+      [VZ_PILZE],
+      mythos=L(("Pilze darf man nie aufwärmen.", "Mushrooms must never be reheated."),
+               ("Das stammt aus der Zeit ohne Kühlschrank. Rasch gekühlt und gut erhitzt sind sie unbedenklich.",
+                "That dates from before fridges. Cooled quickly and reheated well, they are safe."))))
+
+add(G("g-rahmpilze", L("Rahmpilze", "Creamed mushrooms"),
+      L(["Pilze an Rahmsauce", "Champignons à la crème", "Pilzrahmsauce", "Rahmchampignons", "Pilzsauce"], ["mushrooms in cream sauce", "creamy mushroom sauce", "champignons à la crème"]),
+      L("Erst müssen die Pilze ihr Wasser loswerden und braun braten, dann bindet eingekochter Rahm alles zu einer dichten Sauce.",
+        "First the mushrooms must get rid of their water and brown, then reduced cream binds everything into a rich sauce."),
+      L("Wie nasse Wäsche vor dem Bügeln: Erst wenn das Wasser draußen ist, bekommt sie Form und Glanz.",
+        "Like wet laundry before ironing: only once the water is out does it take on shape and sheen."),
+      [(L("Pilze in einer heißen, großen Pfanne ohne Gedränge braten", "Fry the mushrooms in a large hot pan without crowding"),
+        L("Zuerst tritt Wasser aus. Erst wenn es verdampft ist, beginnen sie zu bräunen.", "First water runs out. Only once it has evaporated do they start to brown."), "verdampfen"),
+       (L("Erst salzen, wenn sie gebräunt sind", "Salt only once they have browned"),
+        L("Salz zieht Wasser heraus und verzögert die Bräunung.", "Salt draws out water and delays browning."), "osmose"),
+       (L("Schalotten dazu, mit Weißwein ablöschen", "Add shallots, deglaze with white wine"),
+        L("Der Wein löst den braunen Bratsatz vom Pfannenboden.", "The wine dissolves the brown residue from the bottom of the pan."), "deglacieren"),
+       (L("Rahm dazugießen und einkochen, bis die Sauce den Löffel überzieht", "Pour in cream and reduce until the sauce coats a spoon"),
+        L("Mit dem Wasser verdampft, wird der Rahm dicker und kräftiger.", "As the water evaporates, the cream thickens and gains flavour."), "reduktion")],
+      ["pilze-braten", "pilze-waessrig", "reduktion", "w-pilze", "w-saucen"], ["w-pilze", "w-saucen"],
+      "a cast-iron pan of browned mushrooms in a creamy sauce with chopped parsley and a wooden spoon",
+      [MC("Kapitel Pilze", "Chapter on mushrooms")]))
+
+# ================================================================ Hülsenfrüchte
+add(T("linsen-kochen", L("Linsen kochen", "Cooking lentils"),
+      L(["Linsen einweichen", "rote Linsen", "Beluga Linsen", "Berglinsen", "Linsen hart", "Linsen zerfallen", "Dal"], ["how to cook lentils", "red lentils", "beluga lentils", "lentils stay hard", "dal"]),
+      L("Linsen brauchen kein Einweichen und sind in 10 bis 30 Minuten gar: Rote zerfallen zu Brei, dunkle halten ihre Form.",
+        "Lentils need no soaking and cook in 10 to 30 minutes: red ones collapse into a purée, dark ones hold their shape."),
+      L("Wie Knöpfe mit und ohne Mantel: Ohne Schale lösen sich die roten auf, die dunklen behalten ihre Hülle.",
+        "Like buttons with and without a coat: without their skin the red ones dissolve, the dark ones keep their shell."),
+      L("Linsen sind klein und flach, darum dringt Wasser schnell bis in die Mitte. Rote und gelbe Linsen sind geschält und halbiert: Ihre Stärke quillt frei auf, sie zerfallen. Beluga-, Berg- und Tellerlinsen haben eine feste Schale und bleiben ganz.",
+        "Lentils are small and flat, so water quickly reaches the centre. Red and yellow lentils are hulled and split: their starch swells freely and they fall apart. Beluga, green and brown lentils have a firm skin and stay whole."),
+      L("Wer die Sorte nach dem Gericht wählt, bekommt Suppe oder Salat und nicht aus Versehen das Gegenteil.",
+        "Choosing the variety to suit the dish gets you soup or salad and not accidentally the opposite."),
+      L(["Linsen in einem Sieb abspülen und Steinchen aussortieren.",
+         "In reichlich Wasser oder Brühe aufsetzen und sanft köcheln.",
+         "Rote Linsen etwa 10 bis 15 Minuten, dunkle 20 bis 30 Minuten (Richtwert).",
+         "Salzen darf man früh, Säure wie Essig oder Tomaten erst am Schluss dazugeben."],
+        ["Rinse the lentils in a sieve and pick out any small stones.",
+         "Put them in plenty of water or stock and simmer gently.",
+         "Red lentils about 10 to 15 minutes, dark ones 20 to 30 minutes (as a guide).",
+         "Salt can go in early; add acid such as vinegar or tomatoes only at the end."]),
+      L(["Für Salat: Beluga- oder Berglinsen nehmen und eher knapp garen.",
+         "Für Dal und Suppe: rote Linsen, sie werden von selbst cremig.",
+         "Bleiben Linsen hart, ist oft Säure oder sehr hartes Wasser schuld."],
+        ["For salads: use beluga or green lentils and cook them just tender.",
+         "For dal and soup: red lentils, they turn creamy by themselves.",
+         "If lentils stay hard, acid or very hard water is often to blame."]),
+      ["kalzium-pektin", "staerkeverkleisterung", "bohnen-salzen", "huelsenfruechte-einweichen", "w-huelsenfruechte"], ["w-huelsenfruechte"],
+      "three small heaps of red, green and black beluga lentils on a wooden board with a small pot",
+      [MC("Kapitel Samen: Hülsenfrüchte", "Chapter on seeds: legumes")]))
+
+add(T("bohnen-salzen", L("Bohnen in Salzwasser einweichen", "Brining dried beans"),
+      L(["Bohnen salzen", "Salz macht Bohnen hart", "Kichererbsen salzen", "Bohnen platzen", "Bohnen Salzlake"], ["salting beans", "does salt make beans tough", "brined beans", "beans bursting"]),
+      L("Salz im Einweichwasser macht Bohnen nicht hart, sondern ihre Schale weicher: Sie platzen seltener und werden cremiger.",
+        "Salt in the soaking water does not make beans tough but softens their skins: they burst less and turn creamier."),
+      L("Wie ein Schlüsseltausch: Das Salz nimmt den Platz des Kalks in der Schale ein, und die Tür geht leichter auf.",
+        "Like swapping keys: the salt takes the place of the lime in the skin, and the door opens more easily."),
+      L("In der Schale halten Kalzium und Magnesium die Zellwände fest zusammen. Natrium aus dem Salz verdrängt sie teilweise. Dadurch wird die Schale weicher und lässt Wasser gleichmäßiger hinein. Die Bohnen garen gleichmäßiger und platzen weniger.",
+        "In the skin, calcium and magnesium hold the cell walls tightly together. Sodium from salt partly replaces them. This softens the skin and lets water in more evenly. The beans cook more evenly and burst less."),
+      L("Der alte Rat, Bohnen erst am Ende zu salzen, beruht auf einem Irrtum. Wer früh salzt, bekommt gleichmäßigere und besser gewürzte Bohnen.",
+        "The old advice to salt beans only at the end is based on a mistake. Salting early gives more even, better-seasoned beans."),
+      L(["Getrocknete Bohnen oder Kichererbsen in reichlich Wasser einlegen.",
+         "Pro Liter Wasser etwa einen Esslöffel Salz einrühren (Richtwert).",
+         "Über Nacht einweichen lassen.",
+         "Abgießen, abspülen und in frischem Wasser weich kochen."],
+        ["Put dried beans or chickpeas in plenty of water.",
+         "Stir in about one tablespoon of salt per litre of water (as a guide).",
+         "Leave to soak overnight.",
+         "Drain, rinse and cook until tender in fresh water."]),
+      L(["Bremsen tun Säure (Tomaten, Wein, Essig) und sehr hartes Wasser: Diese erst zugeben, wenn die Bohnen weich sind.",
+         "Sehr alte Bohnen werden auch mit Salz nur langsam weich."],
+        ["What slows them down is acid (tomatoes, wine, vinegar) and very hard water: add these only once the beans are soft.",
+         "Very old beans stay slow to soften even with salt."]),
+      ["kalzium-pektin", "huelsenfruechte-einweichen", "bohnen-nicht-weich", "osmose", "w-huelsenfruechte"], ["w-huelsenfruechte"],
+      "a glass bowl of dried white beans soaking in water with a small dish of coarse salt beside it",
+      [ATK_BEANS, MC("Kapitel Samen: Hülsenfrüchte", "Chapter on seeds: legumes")],
+      mythos=L(("Salz im Kochwasser macht Bohnen hart.", "Salt in the cooking water makes beans tough."),
+               ("Das Gegenteil stimmt: Salz macht die Schale weicher. Hart bleiben sie durch Säure, hartes Wasser oder hohes Alter.",
+                "The opposite is true: salt softens the skin. Acid, hard water or old age keep them hard."))))
+
+add(P("blaehungen", L("Warum Hülsenfrüchte blähen", "Why beans cause wind"),
+      L(["Bohnen Blähungen", "Hülsenfrüchte verträglich", "Kichererbsen blähen", "Linsen Blähungen", "Bohnen bekömmlich"], ["beans flatulence", "why beans make you gassy", "digestible legumes"]),
+      L("Hülsenfrüchte enthalten Zuckerarten, die unser Darm nicht aufspalten kann: Darmbakterien vergären sie, und dabei entsteht Gas.",
+        "Legumes contain sugars our gut cannot break down: gut bacteria ferment them, and that produces gas."),
+      L("Wie ein Paket ohne passenden Schlüssel: Wir kriegen es nicht auf, also öffnen es weiter hinten andere, und dabei wird es laut.",
+        "Like a parcel with no key that fits: we can't open it, so others further down do, and it gets noisy."),
+      L("Bestimmte Zucker in Hülsenfrüchten (Oligosaccharide) bestehen aus mehreren verketteten Bausteinen. Unserem Dünndarm fehlt das Enzym, sie zu trennen. Sie wandern unverdaut in den Dickdarm, wo Bakterien sie vergären. Dabei entstehen Gase.",
+        "Certain sugars in legumes (oligosaccharides) consist of several linked building blocks. Our small intestine lacks the enzyme to split them. They travel undigested into the large intestine, where bacteria ferment them. This produces gases."),
+      L("Ein Teil dieser Zucker löst sich ins Einweichwasser. Wer es weggießt und die Hülsenfrüchte gut weich kocht, isst davon etwas weniger.",
+        "Some of these sugars dissolve into the soaking water. Pouring it away and cooking the legumes until really soft means eating a little less of them."),
+      L(["Einweichwasser weggießen und in frischem Wasser kochen.",
+         "Gründlich weich kochen, nicht nur bissfest.",
+         "Linsen und geschälte Erbsen sind oft besser verträglich als große Bohnen.",
+         "Gewürze wie Kümmel oder Fenchel gelten als hilfreich, gut belegt ist das nicht."],
+        ["Pour away the soaking water and cook in fresh water.",
+         "Cook until thoroughly soft, not just al dente.",
+         "Lentils and split peas are often easier to digest than large beans.",
+         "Spices such as caraway or fennel are said to help, but this is not well proven."]),
+      [("zeit", L("Längeres Einweichen und Kochen löst mehr dieser Zucker", "Longer soaking and cooking dissolves more of these sugars"))],
+      ["huelsenfruechte-einweichen", "fermentation", "diffusion", "linsen-kochen", "w-huelsenfruechte"], ["w-huelsenfruechte"],
+      "a bowl of cooked chickpeas and beans with a few caraway and fennel seeds scattered beside it",
+      [MC("Kapitel Samen: Hülsenfrüchte und Blähungen", "Chapter on seeds: legumes and flatulence")]))
+
+add(P("tofu", L("Tofu: Sojamilch gerinnt", "Tofu: soy milk curdles"),
+      L(["Tofu selber machen", "Tofu herstellen", "Nigari", "Seidentofu", "Tofu knusprig", "Sojamilch"], ["how tofu is made", "making tofu", "nigari", "silken tofu", "crispy tofu"]),
+      L("Tofu entsteht wie Käse: Ein Salz bringt das Eiweiß in heißer Sojamilch zum Ausflocken, die Flocken werden zu einem Block gepresst.",
+        "Tofu is made like cheese: a salt makes the protein in hot soy milk flocculate, and the curds are pressed into a block."),
+      L("Wie Schneeflocken, die sich zu einem Schneeball pressen lassen: Erst lose Flocken, dann ein fester Block.",
+        "Like snowflakes pressed into a snowball: first loose flakes, then a firm block."),
+      L("Eingeweichte Sojabohnen werden gemahlen, gekocht und abgesiebt: Das ist Sojamilch. Ein Gerinnungsmittel wie Nigari (Magnesiumchlorid) oder Calciumsulfat verbindet die Eiweiße zu Flocken. Gepresst ergibt das festen Tofu, ungepresst den zarten Seidentofu.",
+        "Soaked soybeans are ground, boiled and strained: that is soy milk. A coagulant such as nigari (magnesium chloride) or calcium sulfate links the proteins into curds. Pressed, this gives firm tofu; unpressed, delicate silken tofu."),
+      L("Fester Tofu enthält viel Wasser. Wer ihn vor dem Braten auspresst und trocknet, bekommt eine knusprige Kruste statt einer blassen Oberfläche.",
+        "Firm tofu holds a lot of water. Pressing and drying it before frying gives a crisp crust instead of a pale surface."),
+      L(["Für knusprigen Tofu: in Scheiben schneiden, zwischen Küchenpapier mit einem Gewicht 15 Minuten pressen.",
+         "Mit etwas Stärke bestäuben und in heißem Öl braten, nicht rühren.",
+         "Seidentofu nicht braten, sondern für Saucen, Desserts und Suppen verwenden."],
+        ["For crispy tofu: slice, press between kitchen paper under a weight for 15 minutes.",
+         "Dust with a little starch and fry in hot oil without stirring.",
+         "Do not fry silken tofu; use it for sauces, desserts and soups."]),
+      [("feuchtigkeit", L("Je trockener die Oberfläche, desto knuspriger", "The drier the surface, the crispier"))],
+      ["eiweiss-gerinnung", "kasein", "l-frischkaese", "mit-staerke-bestaeuben", "w-huelsenfruechte"], ["w-huelsenfruechte"],
+      "a white block of tofu on a wooden board, a few cubes fried golden in a small pan, soybeans beside it",
+      [MC("Kapitel Samen: Sojabohnen und Tofu", "Chapter on seeds: soybeans and tofu")]))
+
+add(G("g-falafel", L("Falafel", "Falafel"),
+      L(["Falafel selber machen", "Falafel zerfallen", "Kichererbsenbällchen"], ["homemade falafel", "falafel falling apart", "chickpea fritters"]),
+      L("Falafel entstehen aus eingeweichten, aber rohen Kichererbsen: Ihre Stärke bindet erst im heißen Öl. Gekochte Kichererbsen zerfallen.",
+        "Falafel are made from soaked but raw chickpeas: their starch binds only in the hot oil. Cooked chickpeas fall apart."),
+      L("Wie ein Sandburgenrand, der erst in der Sonne fest wird: Feucht und locker geformt, hält er erst durch die Hitze.",
+        "Like the rim of a sandcastle that only firms up in the sun: shaped damp and loose, it holds only through the heat."),
+      [(L("Getrocknete Kichererbsen über Nacht einweichen, nicht kochen", "Soak dried chickpeas overnight, do not cook them"),
+        L("Rohe Stärke quillt erst beim Frittieren und hält dann alles zusammen. Gekochte Kichererbsen sind schon zu weich.", "Raw starch swells only in the frying and then holds everything together. Cooked chickpeas are already too soft."), "staerkeverkleisterung"),
+       (L("Mit Zwiebel, Knoblauch, Kräutern und Gewürzen grob mahlen", "Grind coarsely with onion, garlic, herbs and spices"),
+        L("Grob gemahlen bleiben die Bällchen innen locker und luftig.", "Ground coarsely, the balls stay light and fluffy inside."), "mechanik"),
+       (L("Masse 30 Minuten kühlen, dann formen", "Chill the mixture for 30 minutes, then shape"),
+        L("Kalte Masse lässt sich besser formen und hält im Öl.", "Cold mixture is easier to shape and holds together in the oil."), "temperatur"),
+       (L("Bei etwa 175 °C frittieren, bis sie tief goldbraun sind", "Fry at about 175 °C until deep golden brown"),
+        L("Die Hitze gart die rohen Kichererbsen durch und bildet die knusprige Kruste.", "The heat cooks the raw chickpeas through and forms the crisp crust."), "knusprig")],
+      ["g-hummus", "huelsenfruechte-einweichen", "frittiertes-fettig", "w-huelsenfruechte", "w-frittieren"], ["w-huelsenfruechte", "w-frittieren"],
+      "a plate of golden falafel balls, one broken open showing a green herby inside, with a small bowl of tahini",
+      [MC("Kapitel Samen: Hülsenfrüchte", "Chapter on seeds: legumes")]))
+
+# ================================================================ Eier
+add(S("eier-gruener-rand", L("Grüner Rand ums Eigelb", "Green ring around the yolk"),
+      L(["Ei grüner Rand", "Eigelb grau", "hartgekochtes Ei grün", "Eier zu lange gekocht", "Eier riechen nach Schwefel"], ["green ring egg yolk", "grey yolk", "overcooked hard-boiled eggs", "sulphur smell eggs"]),
+      L("Der graugrüne Rand entsteht, wenn Eier zu lange kochen: Schwefel aus dem Eiweiß verbindet sich mit Eisen aus dem Eigelb. Harmlos, aber vermeidbar.",
+        "The grey-green ring forms when eggs cook too long: sulphur from the white combines with iron from the yolk. Harmless, but avoidable."),
+      L("Wie ein Silberlöffel, der im Ei anläuft: Derselbe Schwefel färbt hier das Eigelb.",
+        "Like a silver spoon tarnishing in an egg: the same sulphur stains the yolk here."),
+      [U(L("Zu lange gekocht", "Cooked too long"), 3, "eiweiss-gerinnung",
+         L("Bei langer Hitze setzt das Eiweiß Schwefelwasserstoff frei. Er wandert zum Eigelb und bildet mit dessen Eisen graugrünes Eisensulfid.",
+           "With long heating the white releases hydrogen sulphide. It moves to the yolk and forms grey-green iron sulphide with its iron."),
+         [L("Hart gekochte Eier etwa 10 bis 11 Minuten kochen, nicht länger", "Boil hard-boiled eggs for about 10 to 11 minutes, no longer")]),
+       U(L("Langsam abgekühlt", "Cooled slowly"), 2, "abschrecken",
+         L("Im heißen Wasser oder an der Luft geht die Reaktion weiter, auch wenn der Herd schon aus ist.",
+           "In hot water or in the air the reaction continues even after the hob is off."),
+         [L("Sofort in Eiswasser legen", "Put them straight into iced water")]),
+       U(L("Ältere Eier", "Older eggs"), 1, "ph-wert",
+         L("Mit dem Alter wird das Eiweiß basischer. Dann bildet sich der Schwefelwasserstoff leichter.",
+           "With age the egg white becomes more alkaline. Hydrogen sulphide then forms more easily."),
+         [L("Kochzeit bei älteren Eiern eher knapp halten", "Keep the cooking time on the short side for older eggs")])],
+      L("Kochten die Eier höchstens etwa 11 Minuten?", "Did the eggs boil for no more than about 11 minutes?"),
+      L("Lagen sie danach noch länger im warmen Wasser?", "Did they then sit in the warm water for a while?"),
+      L(["Für ein gelbes Eigelb: kurz genug kochen und sofort in Eiswasser, weil die Hitze sonst weiterwirkt.",
+         "Der Rand ist unbedenklich, nur der Geschmack wird etwas schweflig."],
+        ["For a yellow yolk: cook just long enough and go straight into iced water, because otherwise the heat keeps working.",
+         "The ring is harmless; it only makes the taste a little sulphurous."]),
+      ["eiweiss-gerinnung", "abschrecken", "eier-schaelen", "ei", "w-eier"], ["w-eier"],
+      "a halved hard-boiled egg with a grey-green ring around the yolk next to a perfectly yellow one",
+      [MC("Kapitel Eier: hart gekochte Eier", "Chapter on eggs: hard-cooked eggs")]))
+
+add(S("eier-schaelen", L("Gekochte Eier lassen sich schlecht schälen", "Boiled eggs are hard to peel"),
+      L(["Eier schälen", "Eier kleben an der Schale", "Eier schälen Trick", "Ei Schale klebt", "frische Eier schälen"], ["peeling eggs", "eggs hard to peel", "egg shell sticks", "easy peel eggs"]),
+      L("Bei sehr frischen Eiern klebt das Eiweiß an der Schalenhaut. Ältere Eier, ein Start in kochendem Wasser und Eiswasser danach machen das Schälen leicht.",
+        "In very fresh eggs the white sticks to the shell membrane. Older eggs, starting in boiling water and iced water afterwards make peeling easy."),
+      L("Wie ein frisch geklebtes Pflaster: In den ersten Tagen haftet es fest, später löst es sich fast von selbst.",
+        "Like a freshly applied plaster: in the first days it sticks firmly, later it almost comes off by itself."),
+      [U(L("Sehr frische Eier", "Very fresh eggs"), 3, "ph-wert",
+         L("Frisches Eiweiß ist eher sauer und haftet an der Haut unter der Schale. In einigen Tagen entweicht Kohlendioxid, das Eiweiß wird basischer und löst sich leichter.",
+           "Fresh egg white is more acidic and sticks to the membrane under the shell. Over a few days carbon dioxide escapes, the white becomes more alkaline and releases more easily."),
+         [L("Zum Kochen Eier nehmen, die etwa eine Woche alt sind", "Use eggs about a week old for boiling")]),
+       U(L("Im kalten Wasser aufgesetzt", "Started in cold water"), 2, "eiweiss-gerinnung",
+         L("Langsam erwärmt verbindet sich das Eiweiß mit der Haut. Ein heißer Start lässt es gerinnen, bevor es anhaften kann.",
+           "Heated slowly, the white bonds with the membrane. A hot start sets it before it can stick."),
+         [L("Eier direkt in sprudelnd kochendes Wasser oder in den Dampf legen", "Lower eggs straight into boiling water or into steam")]),
+       U(L("Nicht abgeschreckt", "Not cooled in cold water"), 2, "abschrecken",
+         L("Im Eiswasser zieht sich das Ei leicht zusammen und löst sich von der Schale.",
+           "In iced water the egg contracts slightly and pulls away from the shell."),
+         [L("Nach dem Kochen einige Minuten in Eiswasser legen", "Put them in iced water for a few minutes after cooking"),
+          L("Am stumpfen Ende beginnen, dort sitzt die Luftblase", "Start at the blunt end, where the air pocket is")])],
+      L("Waren die Eier älter als etwa eine Woche?", "Were the eggs older than about a week?"),
+      L("Hast du sie im kalten Wasser aufgesetzt?", "Did you start them in cold water?"),
+      L(["Für leicht schälbare Eier: in kochendes Wasser oder Dampf legen und danach in Eiswasser, weil das Eiweiß so nicht an der Haut haftet.",
+         "Unter fließendem Wasser oder in der Schüssel schälen, das Wasser hilft beim Ablösen."],
+        ["For easy-peel eggs: lower them into boiling water or steam and then into iced water, because that stops the white sticking to the membrane.",
+         "Peel under running water or in the bowl; the water helps lift the shell."]),
+      ["ph-wert", "abschrecken", "eier-gruener-rand", "daempfen", "w-eier"], ["w-eier"],
+      "a boiled egg with a torn, cratered white and shell fragments next to a smoothly peeled egg in a bowl of iced water",
+      [ATK_EGGS, MC("Kapitel Eier: Schälen", "Chapter on eggs: peeling")]))
+
+# ================================================================ Obst
+add(S("fruechte-sinken", L("Früchte sinken im Kuchen auf den Boden", "Fruit sinks to the bottom of the cake"),
+      L(["Früchte sinken ab", "Beeren sinken im Kuchen", "Rosinen sinken", "Heidelbeeren sinken", "Obst im Rührteig"], ["fruit sinks in cake", "berries sink to the bottom", "raisins sink", "blueberries sink in muffins"]),
+      L("Früchte sinken, wenn der Teig sie nicht trägt oder sie schwer und nass sind: Sie fallen durch, bevor der Teig fest wird.",
+        "Fruit sinks when the batter cannot hold it up or the fruit is heavy and wet: it drops before the batter sets."),
+      L("Wie Steine in Honig und in Wasser: Im dicken Honig bleiben sie hängen, im Wasser fallen sie sofort auf den Grund.",
+        "Like stones in honey and in water: in thick honey they stay suspended, in water they drop straight to the bottom."),
+      [U(L("Teig zu flüssig", "Batter too runny"), 3, "gebunden",
+         L("Ein dünner Rührteig hat zu wenig Halt. Im Ofen wird er zuerst noch flüssiger, bevor er fest wird.",
+           "A thin batter offers too little support. In the oven it first gets even runnier before it sets."),
+         [L("Einen dickeren Teig wählen, der schwer vom Löffel fällt", "Use a thicker batter that drops heavily from the spoon"),
+          L("Zuerst etwas Teig ohne Früchte einfüllen, Früchte oben verteilen", "Pour in some batter without fruit first, scatter the fruit on top")]),
+       U(L("Früchte zu groß, nass oder gefroren", "Fruit too large, wet or frozen"), 2, "feuchtigkeit",
+         L("Große, schwere Stücke sinken schneller. Nasse Früchte machen den Teig um sich herum flüssig.",
+           "Large, heavy pieces sink faster. Wet fruit makes the batter around it runny."),
+         [L("Früchte trocken tupfen und kleiner schneiden", "Pat the fruit dry and cut it smaller"),
+          L("In etwas Mehl wenden: hilft ein wenig, ein dickerer Teig hilft mehr", "Toss in a little flour: it helps a bit, a thicker batter helps more")]),
+       U(L("Der Kuchen braucht lange, bis er fest wird", "The cake takes a long time to set"), 1, "umluft-ober-unterhitze",
+         L("Eine große Form oder ein zu kühler Ofen geben den Früchten mehr Zeit zum Sinken.",
+           "A large tin or an oven that is too cool gives the fruit more time to sink."),
+         [L("Ofen richtig vorheizen, Temperatur prüfen", "Preheat the oven properly and check its temperature")])],
+      L("War der Teig dickflüssig und fiel schwer vom Löffel?", "Was the batter thick and did it drop heavily from the spoon?"),
+      L("Waren die Früchte groß, nass oder tiefgekühlt?", "Was the fruit large, wet or frozen?"),
+      L(["Für gleichmäßig verteilte Früchte: dicker Teig, kleine trockene Stücke.",
+         "Tiefgekühlte Beeren gefroren unterheben, nicht vorher auftauen."],
+        ["For evenly spread fruit: thick batter, small dry pieces.",
+         "Fold frozen berries in still frozen, don't thaw them first."]),
+      ["kuchen-klitschig", "unterheben", "luftig", "w-obst", "w-gebaeck"], ["w-obst", "w-gebaeck"],
+      "a slice of cake with all the blueberries sunk to the bottom layer, a few fresh blueberries beside it",
+      [MC("Kapitel Teige und Gebäck", "Chapter on doughs and batters")]))
+
+add(T("erdbeeren-mazerieren", L("Früchte mit Zucker ziehen lassen (Mazerieren)", "Macerating fruit with sugar"),
+      L(["Erdbeeren zuckern", "Mazerieren", "Erdbeeren Saft ziehen", "Früchte marinieren", "Beeren mit Zucker"], ["macerating strawberries", "sugaring strawberries", "fruit in its own syrup"]),
+      L("Zucker zieht Saft aus geschnittenen Früchten: In einer Viertelstunde liegen sie in ihrem eigenen Sirup und schmecken intensiver.",
+        "Sugar draws juice out of cut fruit: within a quarter of an hour it sits in its own syrup and tastes more intense."),
+      L("Wie ein trockener Schwamm auf einer nassen Fläche: Er zieht das Wasser zu sich herüber.",
+        "Like a dry sponge on a wet surface: it pulls the water over to itself."),
+      L("Zucker auf geschnittenen Früchten löst sich in ihrem Saft. Die konzentrierte Zuckerlösung zieht weiteres Wasser aus den Zellen (Osmose). So entsteht ein Sirup, und die Früchte werden weicher.",
+        "Sugar on cut fruit dissolves in its juice. The concentrated sugar solution draws more water out of the cells (osmosis). This creates a syrup, and the fruit softens."),
+      L("Auch blasse Erdbeeren schmecken so süßer und saftiger. Der Sirup tränkt Kuchenböden und Biskuit.",
+        "Even pale strawberries taste sweeter and juicier this way. The syrup soaks cake layers and sponge."),
+      L(["Früchte waschen, trocknen und schneiden.",
+         "Mit etwas Zucker bestreuen, etwa ein Esslöffel pro 250 g (Richtwert), und vorsichtig mischen.",
+         "15 bis 30 Minuten stehen lassen.",
+         "Nach Wunsch Zitronensaft, Balsamico oder Minze dazugeben."],
+        ["Wash, dry and cut the fruit.",
+         "Sprinkle with a little sugar, about one tablespoon per 250 g (as a guide), and mix gently.",
+         "Leave for 15 to 30 minutes.",
+         "Add lemon juice, balsamic vinegar or mint if you like."]),
+      L(["Nicht stundenlang ziehen lassen: Die Früchte werden sonst matschig.",
+         "Eine Prise Salz oder ein Spritzer Säure macht den Geschmack fruchtiger."],
+        ["Don't leave them for hours: otherwise the fruit turns mushy.",
+         "A pinch of salt or a splash of acid makes the flavour fruitier."]),
+      ["osmose", "suess", "zucker-feuchtigkeit", "w-obst", "w-suesses"], ["w-obst", "w-suesses"],
+      "a glass bowl of halved strawberries glistening in their own red syrup with a sugar spoon",
+      [MC("Kapitel Früchte und Zucker", "Chapter on fruit and sugar")]))
+
+# ================================================================ Getreide
+add(T("quinoa-spuelen", L("Quinoa spülen und kochen", "Rinsing and cooking quinoa"),
+      L(["Quinoa bitter", "Quinoa waschen", "Quinoa kochen", "Quinoa seifig", "Saponine"], ["quinoa bitter", "rinse quinoa", "how to cook quinoa", "quinoa soapy", "saponins"]),
+      L("Quinoa trägt eine bittere, seifige Schicht (Saponine) auf der Schale: Kurz spülen, dann im Verhältnis 1 zu 2 kochen.",
+        "Quinoa carries a bitter, soapy coating (saponins) on its shell: rinse briefly, then cook at a ratio of 1 to 2."),
+      L("Wie Seifenreste an frisch gewaschenem Geschirr: Ein kurzes Nachspülen, und nichts schmeckt mehr bitter.",
+        "Like soap left on freshly washed dishes: a quick rinse, and nothing tastes bitter any more."),
+      L("Die Pflanze schützt ihre Samen mit Saponinen vor Vögeln und Insekten. Diese Stoffe schmecken bitter und schäumen in Wasser wie Seife. Die meiste Quinoa im Handel ist vorgewaschen, Reste sitzen aber oft noch an.",
+        "The plant protects its seeds from birds and insects with saponins. These compounds taste bitter and foam in water like soap. Most quinoa sold is pre-washed, but traces often remain."),
+      L("Bittere Quinoa ist der häufigste Grund, warum Leute sie nicht mögen. Ein Sieb und eine Minute ändern das.",
+        "Bitter quinoa is the most common reason people dislike it. A sieve and a minute change that."),
+      L(["Quinoa in ein feines Sieb geben und unter fließendem Wasser spülen, bis kein Schaum mehr entsteht.",
+         "Mit der doppelten Menge Wasser und etwas Salz aufkochen.",
+         "Zugedeckt etwa 12 bis 15 Minuten leise köcheln, bis das Wasser aufgesogen ist.",
+         "Vom Herd nehmen, 5 Minuten zugedeckt ruhen lassen, mit der Gabel auflockern."],
+        ["Put the quinoa in a fine sieve and rinse under running water until no more foam forms.",
+         "Bring to the boil with twice the amount of water and a little salt.",
+         "Cover and simmer gently for about 12 to 15 minutes until the water is absorbed.",
+         "Take off the heat, rest covered for 5 minutes, fluff up with a fork."]),
+      L(["Für mehr Geschmack: nach dem Spülen kurz in der trockenen Pfanne rösten.",
+         "Fertig ist sie, wenn sich der kleine weiße Keimring vom Korn löst."],
+        ["For more flavour: toast briefly in a dry pan after rinsing.",
+         "It is done when the small white germ ring separates from the grain."]),
+      ["bitter", "reis-quellmethode", "quellen", "w-getreide"], ["w-getreide"],
+      "a fine metal sieve of quinoa under a trickle of water with a little white foam, a bowl of fluffy cooked quinoa beside it",
+      [MC("Kapitel Samen: Getreide und Pseudogetreide", "Chapter on seeds: grains and pseudo-grains")]))
+
+
+if __name__ == "__main__":
+    known = {f[:-5] for f in os.listdir(f"{ROOT}/content/entries")} | {e["id"] for e in E}
+    ml = json.load(open(f"{ROOT}/content/master-list.json"))
+    have = {m["id"] for m in ml["eintraege"]}
+    for e in E:
+        de = res(e, 0)
+        miss = [l for l in de.get("links", []) if l not in known]
+        miss += [u["prinzip"] for u in de.get("ursachen", []) if u.get("prinzip") not in known]
+        miss += [s["prinzip"] for s in de.get("schluesselmomente", []) if s.get("prinzip") not in known]
+        miss += [s["id"] for s in de.get("stellschrauben", []) if s["id"] not in known]
+        if miss: print("Unbekannte Verweise in", de["id"], miss)
+        de["links"] = [l for l in de.get("links", []) if l in known]
+        json.dump(de, open(f"{ROOT}/content/entries/{de['id']}.json", "w"), ensure_ascii=False, indent=2)
+        if de["id"] not in have:
+            ml["eintraege"].append({"id": de["id"], "typ": de["typ"], "titel": de["titel"], "status": "entwurf", "pilot": False, "links": de["links"],
+                                    "welten": de.get("welten", []), "synonyme": de.get("synonyme", []), "visual": {"vorlage": de.get("visual", {}).get("vorlage", "keine")}, "verlinkt_von": []})
+    ml["anzahl"] = len(ml["eintraege"])
+    json.dump(ml, open(f"{ROOT}/content/master-list.json", "w"), ensure_ascii=False, indent=2)
+    ids = [e["id"] for e in E]
+    ex = json.loads(subprocess.check_output([sys.executable, f"{ROOT}/scripts/i18n/textfelder.py", "extract", *ids], cwd=ROOT))
+
+    def pick(shape, src):
+        if isinstance(shape, dict): return {k: (src[k] if k == "synonyme" else pick(v, src[k])) for k, v in shape.items()}
+        if isinstance(shape, list): return [pick(v, src[i]) for i, v in enumerate(shape)]
+        if isinstance(src, dict): return src.get("wirkung", src.get("text"))
+        if isinstance(src, list) and not isinstance(shape, list): return src[0]
+        return src
+    batch = {e["id"]: pick(ex[e["id"]], res(e, 1)) for e in E}
+    path = f"{ROOT}/content/en/_batch_welten3.json"
+    json.dump(batch, open(path, "w"), ensure_ascii=False, indent=1)
+    subprocess.check_call([sys.executable, f"{ROOT}/scripts/i18n/textfelder.py", "apply", path], cwd=ROOT)
+    os.remove(path)
+    print(len(E), "Einträge geschrieben")

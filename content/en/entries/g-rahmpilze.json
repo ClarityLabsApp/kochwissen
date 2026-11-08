@@ -1,0 +1,33 @@
+{
+  "id": "g-rahmpilze",
+  "titel": "Creamed mushrooms",
+  "kurz": "First the mushrooms must get rid of their water and brown, then reduced cream binds everything into a rich sauce.",
+  "bild_im_kopf": "Like wet laundry before ironing: only once the water is out does it take on shape and sheen.",
+  "synonyme": [
+    "mushrooms in cream sauce",
+    "creamy mushroom sauce",
+    "champignons à la crème"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Fry the mushrooms in a large hot pan without crowding",
+      "warum": "First water runs out. Only once it has evaporated do they start to brown.",
+      "prinzip": "verdampfen"
+    },
+    {
+      "schritt": "Salt only once they have browned",
+      "warum": "Salt draws out water and delays browning.",
+      "prinzip": "osmose"
+    },
+    {
+      "schritt": "Add shallots, deglaze with white wine",
+      "warum": "The wine dissolves the brown residue from the bottom of the pan.",
+      "prinzip": "deglacieren"
+    },
+    {
+      "schritt": "Pour in cream and reduce until the sauce coats a spoon",
+      "warum": "As the water evaporates, the cream thickens and gains flavour.",
+      "prinzip": "reduktion"
+    }
+  ]
+}

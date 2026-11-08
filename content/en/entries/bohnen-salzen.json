@@ -1,0 +1,28 @@
+{
+  "id": "bohnen-salzen",
+  "titel": "Brining dried beans",
+  "kurz": "Salt in the soaking water does not make beans tough but softens their skins: they burst less and turn creamier.",
+  "bild_im_kopf": "Like swapping keys: the salt takes the place of the lime in the skin, and the door opens more easily.",
+  "was_passiert": "In the skin, calcium and magnesium hold the cell walls tightly together. Sodium from salt partly replaces them. This softens the skin and lets water in more evenly. The beans cook more evenly and burst less.",
+  "warum_wichtig": "The old advice to salt beans only at the end is based on a mistake. Salting early gives more even, better-seasoned beans.",
+  "synonyme": [
+    "salting beans",
+    "does salt make beans tough",
+    "brined beans",
+    "beans bursting"
+  ],
+  "faustregeln": [
+    "What slows them down is acid (tomatoes, wine, vinegar) and very hard water: add these only once the beans are soft.",
+    "Very old beans stay slow to soften even with salt."
+  ],
+  "schritte": [
+    "Put dried beans or chickpeas in plenty of water.",
+    "Stir in about one tablespoon of salt per litre of water (as a guide).",
+    "Leave to soak overnight.",
+    "Drain, rinse and cook until tender in fresh water."
+  ],
+  "mythos": {
+    "behauptung": "Das Gegenteil stimmt: Salz macht die Schale weicher. Hart bleiben sie durch Säure, hartes Wasser oder hohes Alter.",
+    "richtig": "The opposite is true: salt softens the skin. Acid, hard water or old age keep them hard."
+  }
+}

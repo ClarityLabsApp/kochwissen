@@ -1,0 +1,84 @@
+{
+  "id": "fruechte-sinken",
+  "titel": "Fruit sinks to the bottom of the cake",
+  "kurz": "Fruit sinks when the batter cannot hold it up or the fruit is heavy and wet: it drops before the batter sets.",
+  "bild_im_kopf": "Like stones in honey and in water: in thick honey they stay suspended, in water they drop straight to the bottom.",
+  "synonyme": [
+    "fruit sinks in cake",
+    "berries sink to the bottom",
+    "raisins sink",
+    "blueberries sink in muffins"
+  ],
+  "faustregeln": [
+    "For evenly spread [[w-obst|fruit]]: thick batter, small dry pieces.",
+    "Fold frozen berries in still frozen, don't thaw them first."
+  ],
+  "ursachen": [
+    {
+      "titel": "Batter too runny",
+      "haeufigkeit": 3,
+      "prinzip": "gebunden",
+      "warum": "A thin batter offers too little support. In the oven it first gets even runnier before it sets.",
+      "fix": [
+        "Use a thicker batter that drops heavily from the spoon",
+        "Pour in some batter without fruit first, scatter the fruit on top"
+      ]
+    },
+    {
+      "titel": "Fruit too large, wet or frozen",
+      "haeufigkeit": 2,
+      "prinzip": "feuchtigkeit",
+      "warum": "Large, heavy pieces sink faster. Wet fruit makes the batter around it runny.",
+      "fix": [
+        "Pat the fruit dry and cut it smaller",
+        "Toss in a little flour: it helps a bit, a thicker batter helps more"
+      ]
+    },
+    {
+      "titel": "The cake takes a long time to set",
+      "haeufigkeit": 1,
+      "prinzip": "umluft-ober-unterhitze",
+      "warum": "A large tin or an oven that is too cool gives the fruit more time to sink.",
+      "fix": [
+        "Preheat the oven properly and check its temperature"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Was the batter thick and did it drop heavily from the spoon?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Was the fruit large, wet or frozen?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

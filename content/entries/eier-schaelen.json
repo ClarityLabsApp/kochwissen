@@ -1,0 +1,111 @@
+{
+  "id": "eier-schaelen",
+  "typ": "symptom",
+  "titel": "Gekochte Eier lassen sich schlecht schälen",
+  "synonyme": [
+    "Eier schälen",
+    "Eier kleben an der Schale",
+    "Eier schälen Trick",
+    "Ei Schale klebt",
+    "frische Eier schälen"
+  ],
+  "kurz": "Bei sehr frischen Eiern klebt das Eiweiß an der Schalenhaut. Ältere Eier, ein Start in kochendem Wasser und Eiswasser danach machen das Schälen leicht.",
+  "bild_im_kopf": "Wie ein frisch geklebtes Pflaster: In den ersten Tagen haftet es fest, später löst es sich fast von selbst.",
+  "ursachen": [
+    {
+      "titel": "Sehr frische Eier",
+      "haeufigkeit": 3,
+      "prinzip": "ph-wert",
+      "warum": "Frisches Eiweiß ist eher sauer und haftet an der Haut unter der Schale. In einigen Tagen entweicht [[kohlendioxid|Kohlendioxid]], das Eiweiß wird basischer und löst sich leichter.",
+      "fix": [
+        "Zum Kochen Eier nehmen, die etwa eine Woche alt sind"
+      ]
+    },
+    {
+      "titel": "Im kalten Wasser aufgesetzt",
+      "haeufigkeit": 2,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "Langsam erwärmt verbindet sich das Eiweiß mit der Haut. Ein heißer Start lässt es gerinnen, bevor es anhaften kann.",
+      "fix": [
+        "Eier direkt in sprudelnd kochendes Wasser oder in den Dampf legen"
+      ]
+    },
+    {
+      "titel": "Nicht abgeschreckt",
+      "haeufigkeit": 2,
+      "prinzip": "abschrecken",
+      "warum": "Im Eiswasser zieht sich das Ei leicht zusammen und löst sich von der Schale.",
+      "fix": [
+        "Nach dem Kochen einige Minuten in Eiswasser legen",
+        "Am stumpfen Ende beginnen, dort sitzt die Luftblase"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Waren die Eier älter als etwa eine Woche?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Hast du sie im kalten Wasser aufgesetzt?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "faustregeln": [
+    "Für leicht schälbare [[w-eier|Eier]]: in kochendes Wasser oder Dampf legen und danach in Eiswasser, weil das Eiweiß so nicht an der Haut haftet.",
+    "Unter fließendem Wasser oder in der Schüssel schälen, das Wasser hilft beim Ablösen."
+  ],
+  "links": [
+    "ph-wert",
+    "abschrecken",
+    "eier-gruener-rand",
+    "daempfen",
+    "w-eier"
+  ],
+  "welten": [
+    "w-eier"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a boiled egg with a torn, cratered white and shell fragments next to a smoothly peeled egg in a bowl of iced water"
+  },
+  "quellen": [
+    {
+      "titel": "Cook's Illustrated: Easy-peel hard-cooked eggs",
+      "url": "https://www.americastestkitchen.com/cooksillustrated/articles/168-easy-peel-hard-cooked-eggs"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Eier: Schälen"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

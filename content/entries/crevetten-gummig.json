@@ -1,0 +1,111 @@
+{
+  "id": "crevetten-gummig",
+  "typ": "symptom",
+  "titel": "Crevetten werden gummig",
+  "synonyme": [
+    "Garnelen gummig",
+    "Shrimps zäh",
+    "Crevetten zäh",
+    "Riesencrevetten braten",
+    "Scampi gummig",
+    "Meeresfrüchte zäh"
+  ],
+  "kurz": "Crevetten garen in ein, zwei Minuten: Schon kurz zu lange zieht sich ihr Eiweiß fest zusammen, drückt Saft hinaus und wird gummig.",
+  "bild_im_kopf": "Wie ein Gummiring, den man zu stark aufzieht: Kurz gespannt federt er, überspannt wird er hart und spröde.",
+  "ursachen": [
+    {
+      "titel": "Zu lange gegart",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "Crevetten sind dünn und mager. Sie sind gar, sobald sie rosa und nicht mehr glasig sind, oft nach ein bis zwei Minuten pro Seite.",
+      "fix": [
+        "Herausnehmen, sobald sie rosa und innen gerade weiß sind",
+        "Merkhilfe: C-Form ist gar, O-Form ist übergart"
+      ]
+    },
+    {
+      "titel": "Zu wenig Hitze, sie köcheln im eigenen Saft",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "In einer vollen oder lauwarmen Pfanne tritt Saft aus und bleibt liegen. Die Crevetten kochen statt zu braten und brauchen länger.",
+      "fix": [
+        "Pfanne richtig heiß werden lassen",
+        "Crevetten trocken tupfen und nicht zu viele auf einmal"
+      ]
+    },
+    {
+      "titel": "Aufgetaute oder vorbehandelte Ware",
+      "haeufigkeit": 1,
+      "prinzip": "wasserbindung-salz",
+      "warum": "Tiefgekühlte Crevetten verlieren beim Auftauen Wasser. Manche sind mit Salzen behandelt, die Wasser binden, und werden beim Braten wässrig und weich-zäh.",
+      "fix": [
+        "Langsam im Kühlschrank auftauen und gut trocken tupfen",
+        "Auf der Packung auf Zusätze achten"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hast du sie herausgenommen, sobald sie rosa und nicht mehr glasig waren?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Lag viel Flüssigkeit in der Pfanne, köchelten sie eher, als dass sie brieten?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "faustregeln": [
+    "Für saftige Crevetten: kurz und heiß, lieber eine halbe Minute zu früh als zu spät, weil sie in der heißen Sauce [[nachgaren|nachgaren]].",
+    "Mit Schale gebraten bleiben sie saftiger, die Schale schützt vor der direkten Hitze."
+  ],
+  "links": [
+    "eiweiss-gerinnung",
+    "nachgaren",
+    "trocken-tupfen",
+    "pfanne-vorheizen",
+    "krustentiere-rot",
+    "w-fisch"
+  ],
+  "welten": [
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a few curled pink prawns in a hot cast-iron pan with garlic slices and a lemon wedge"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fisch und Meeresfrüchte: Krebstiere"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

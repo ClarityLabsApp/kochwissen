@@ -1,0 +1,51 @@
+{
+  "id": "blaehungen",
+  "typ": "prozess",
+  "titel": "Warum Hülsenfrüchte blähen",
+  "synonyme": [
+    "Bohnen Blähungen",
+    "Hülsenfrüchte verträglich",
+    "Kichererbsen blähen",
+    "Linsen Blähungen",
+    "Bohnen bekömmlich"
+  ],
+  "kurz": "Hülsenfrüchte enthalten Zuckerarten, die unser Darm nicht aufspalten kann: Darmbakterien vergären sie, und dabei entsteht Gas.",
+  "bild_im_kopf": "Wie ein Paket ohne passenden Schlüssel: Wir kriegen es nicht auf, also öffnen es weiter hinten andere, und dabei wird es laut.",
+  "was_passiert": "Bestimmte Zucker in [[w-huelsenfruechte|Hülsenfrüchten]] (Oligosaccharide) bestehen aus mehreren verketteten Bausteinen. Unserem Dünndarm fehlt das [[enzym|Enzym]], sie zu trennen. Sie wandern unverdaut in den Dickdarm, wo Bakterien sie vergären. Dabei entstehen Gase.",
+  "warum_wichtig": "Ein Teil dieser Zucker löst sich ins Einweichwasser. Wer es weggießt und die Hülsenfrüchte gut weich kocht, isst davon etwas weniger.",
+  "faustregeln": [
+    "Einweichwasser weggießen und in frischem Wasser kochen.",
+    "Gründlich weich kochen, nicht nur bissfest.",
+    "Linsen und geschälte Erbsen sind oft besser verträglich als große Bohnen.",
+    "Gewürze wie Kümmel oder Fenchel gelten als hilfreich, gut belegt ist das nicht."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zeit",
+      "wirkung": "Längeres Einweichen und Kochen löst mehr dieser Zucker"
+    }
+  ],
+  "praxis": [],
+  "links": [
+    "huelsenfruechte-einweichen",
+    "fermentation",
+    "diffusion",
+    "linsen-kochen",
+    "w-huelsenfruechte"
+  ],
+  "welten": [
+    "w-huelsenfruechte"
+  ],
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a bowl of cooked chickpeas and beans with a few caraway and fennel seeds scattered beside it"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Samen: Hülsenfrüchte und Blähungen"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

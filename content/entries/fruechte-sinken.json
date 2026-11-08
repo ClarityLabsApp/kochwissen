@@ -1,0 +1,109 @@
+{
+  "id": "fruechte-sinken",
+  "typ": "symptom",
+  "titel": "Früchte sinken im Kuchen auf den Boden",
+  "synonyme": [
+    "Früchte sinken ab",
+    "Beeren sinken im Kuchen",
+    "Rosinen sinken",
+    "Heidelbeeren sinken",
+    "Obst im Rührteig"
+  ],
+  "kurz": "Früchte sinken, wenn der Teig sie nicht trägt oder sie schwer und nass sind: Sie fallen durch, bevor der Teig fest wird.",
+  "bild_im_kopf": "Wie Steine in Honig und in Wasser: Im dicken Honig bleiben sie hängen, im Wasser fallen sie sofort auf den Grund.",
+  "ursachen": [
+    {
+      "titel": "Teig zu flüssig",
+      "haeufigkeit": 3,
+      "prinzip": "gebunden",
+      "warum": "Ein dünner Rührteig hat zu wenig Halt. Im Ofen wird er zuerst noch flüssiger, bevor er fest wird.",
+      "fix": [
+        "Einen dickeren Teig wählen, der schwer vom Löffel fällt",
+        "Zuerst etwas Teig ohne Früchte einfüllen, Früchte oben verteilen"
+      ]
+    },
+    {
+      "titel": "Früchte zu groß, nass oder gefroren",
+      "haeufigkeit": 2,
+      "prinzip": "feuchtigkeit",
+      "warum": "Große, schwere Stücke sinken schneller. Nasse Früchte machen den Teig um sich herum flüssig.",
+      "fix": [
+        "Früchte trocken tupfen und kleiner schneiden",
+        "In etwas Mehl wenden: hilft ein wenig, ein dickerer Teig hilft mehr"
+      ]
+    },
+    {
+      "titel": "Der Kuchen braucht lange, bis er fest wird",
+      "haeufigkeit": 1,
+      "prinzip": "umluft-ober-unterhitze",
+      "warum": "Eine große Form oder ein zu kühler Ofen geben den Früchten mehr Zeit zum Sinken.",
+      "fix": [
+        "Ofen richtig vorheizen, Temperatur prüfen"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "War der Teig dickflüssig und fiel schwer vom Löffel?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Waren die Früchte groß, nass oder tiefgekühlt?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "faustregeln": [
+    "Für gleichmäßig verteilte Früchte: dicker Teig, kleine trockene Stücke.",
+    "Tiefgekühlte Beeren gefroren [[unterheben|unterheben]], nicht vorher auftauen."
+  ],
+  "links": [
+    "kuchen-klitschig",
+    "unterheben",
+    "luftig",
+    "w-obst",
+    "w-gebaeck"
+  ],
+  "welten": [
+    "w-obst",
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a slice of cake with all the blueberries sunk to the bottom layer, a few fresh blueberries beside it"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Teige und Gebäck"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

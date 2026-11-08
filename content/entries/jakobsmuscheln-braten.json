@@ -1,0 +1,48 @@
+{
+  "id": "jakobsmuscheln-braten",
+  "typ": "technik",
+  "titel": "Jakobsmuscheln braten",
+  "synonyme": [
+    "Jakobsmuscheln anbraten",
+    "Coquilles St-Jacques",
+    "Kammmuscheln",
+    "Jakobsmuscheln Kruste"
+  ],
+  "kurz": "Jakobsmuscheln brauchen eine trockene Oberfläche und eine sehr heiße Pfanne: außen eine goldene Kruste, innen noch glasig und süß.",
+  "bild_im_kopf": "Wie ein Marshmallow über dem Feuer: Außen soll es [[karamellisierung|karamellisieren]], bevor das Innere zerläuft.",
+  "was_passiert": "Das Muskelfleisch enthält etwas Zucker, darum bräunt es schnell und schmeckt süßlich. Nasse Oberflächen bremsen das Bräunen, weil das Wasser erst verdampfen muss. Manche Ware wird mit Salzen behandelt, die Wasser binden: Sie gibt in der Pfanne Wasser ab und bräunt kaum.",
+  "warum_wichtig": "Jakobsmuscheln sind teuer und in einer Minute verdorben. Wer weiß, worauf es ankommt, bekommt die Kruste, bevor das Innere gummig wird.",
+  "schritte": [
+    "Den kleinen, festen Seitenmuskel abziehen.",
+    "Mit Küchenpapier gründlich trocken tupfen, erst kurz vor dem Braten salzen.",
+    "Pfanne mit wenig Öl stark erhitzen, bis das Öl schimmert.",
+    "Muscheln mit Abstand einlegen und etwa 1,5 bis 2 Minuten nicht bewegen.",
+    "Wenden, ein Stück Butter dazu, nach einer weiteren Minute herausnehmen."
+  ],
+  "faustregeln": [
+    "Unbehandelte, sogenannte trockene Jakobsmuscheln kaufen: Sie bräunen viel besser.",
+    "Innen soll die Mitte noch leicht glasig sein, sie gart auf dem Teller nach."
+  ],
+  "links": [
+    "maillard-reaktion",
+    "trocken-tupfen",
+    "pfanne-vorheizen",
+    "steak-grau",
+    "w-fisch"
+  ],
+  "welten": [
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "three seared scallops with a golden crust in a small copper pan with butter and thyme"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fisch und Meeresfrüchte: Kammmuscheln"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

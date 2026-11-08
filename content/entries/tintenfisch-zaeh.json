@@ -1,0 +1,113 @@
+{
+  "id": "tintenfisch-zaeh",
+  "typ": "symptom",
+  "titel": "Tintenfisch wird zäh",
+  "synonyme": [
+    "Calamari zäh",
+    "Kalmar gummig",
+    "Tintenfischringe zäh",
+    "Oktopus zäh",
+    "Sepia zäh",
+    "Pulpo weich kochen"
+  ],
+  "kurz": "Tintenfisch hat viel [[kollagen-gelatine|Bindegewebe]]: Er wird zart, wenn man ihn ganz kurz oder sehr lange gart. Dazwischen ist er zäh wie Gummi.",
+  "bild_im_kopf": "Wie ein Brückenweg über ein Tal: Man bleibt entweder ganz kurz auf der Seite oder geht ganz hinüber. In der Mitte hängt man fest.",
+  "ursachen": [
+    {
+      "titel": "Mittlere Garzeit: zu lang für kurz, zu kurz für lang",
+      "haeufigkeit": 3,
+      "prinzip": "kollagen-gelatine",
+      "warum": "Nach etwa zwei Minuten zieht sich das Bindegewebe fest zusammen. Erst nach einer halben Stunde oder mehr wird es zu weicher Gelatine (Richtwert).",
+      "fix": [
+        "Kurz: höchstens ein, zwei Minuten bei großer Hitze",
+        "Lang: mindestens 30 bis 45 Minuten sanft schmoren, Oktopus oft länger"
+      ]
+    },
+    {
+      "titel": "Pfanne zu voll oder nicht heiß genug",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "Tintenfisch gibt viel Wasser ab. In einer kühlen Pfanne kocht er im eigenen Saft und braucht zu lange, bis er Farbe nimmt.",
+      "fix": [
+        "In kleinen Portionen in sehr heißer Pfanne braten",
+        "Vorher gut trocken tupfen"
+      ]
+    },
+    {
+      "titel": "Dicke Stücke ohne Einschnitte",
+      "haeufigkeit": 1,
+      "prinzip": "waermeleitung",
+      "warum": "Dicke Tuben brauchen länger, bis sie innen heiß sind, und rutschen so in die zähe Mitte.",
+      "fix": [
+        "Tuben aufschneiden und rautenförmig einritzen",
+        "In dünne Ringe oder Streifen schneiden"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "War er weniger als zwei Minuten oder länger als eine halbe Stunde in der Hitze?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "War er kurz gebraten, aber zischte es kaum in der Pfanne?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "faustregeln": [
+    "Für zarten Tintenfisch: entweder blitzschnell oder geduldig, nie dazwischen.",
+    "Ist er schon zäh geworden, weiter [[schmoren|schmoren]] statt aufgeben: Nach einer halben Stunde wird er wieder weich."
+  ],
+  "links": [
+    "kollagen-gelatine",
+    "schmoren",
+    "fleisch-zaeh",
+    "w-fisch"
+  ],
+  "welten": [
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum",
+    "illustration": "fried golden calamari rings on a small plate with a lemon wedge, a whole raw squid beside them"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fisch und Meeresfrüchte: Tintenfische"
+    },
+    {
+      "titel": "America's Test Kitchen: Why and how you should cook with squid",
+      "url": "https://www.americastestkitchen.com/articles/why-and-how-you-should-cook-with-squid"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

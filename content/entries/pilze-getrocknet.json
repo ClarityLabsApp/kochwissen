@@ -1,0 +1,50 @@
+{
+  "id": "pilze-getrocknet",
+  "typ": "technik",
+  "titel": "Getrocknete Pilze einweichen",
+  "synonyme": [
+    "Steinpilze getrocknet",
+    "getrocknete Shiitake",
+    "Trockenpilze",
+    "Pilzwasser",
+    "Morcheln einweichen"
+  ],
+  "kurz": "Getrocknete Pilze schmecken kräftiger als frische: Beim Trocknen konzentriert sich ihr [[umami|Umami]], und das Einweichwasser ist fast so wertvoll wie die Pilze selbst.",
+  "bild_im_kopf": "Wie eine Rosine, die im Rum wieder prall wird: Sie saugt sich voll, und der Rum schmeckt danach nach Rosine.",
+  "was_passiert": "Beim Trocknen verlieren [[w-pilze|Pilze]] fast ihr ganzes Wasser, die Geschmacksstoffe bleiben. Shiitake und Steinpilze enthalten Stoffe, die das Umami von [[glutamat|Glutamat]] vervielfachen. In warmem Wasser saugen sich die Pilze wieder voll und geben Geschmack ins Wasser ab.",
+  "warum_wichtig": "Ein paar getrocknete Pilze geben [[g-risotto|Risotto]], Saucen und Schmorgerichten mehr Tiefe als die doppelte Menge frischer.",
+  "schritte": [
+    "Pilze kurz abspülen und in warmes Wasser legen, sodass sie bedeckt sind.",
+    "Etwa 20 bis 30 Minuten einweichen, bis sie weich sind.",
+    "Pilze herausheben und leicht ausdrücken.",
+    "Das Wasser durch einen Kaffeefilter gießen, damit Sand und Erde zurückbleiben.",
+    "Pilze und gefiltertes Wasser beide mitverwenden."
+  ],
+  "faustregeln": [
+    "Einweichwasser nie weggießen: Es ist eine fertige Pilzbrühe.",
+    "Getrocknete Pilze zu Pulver mahlen und als Würze über Fleisch oder in Saucen streuen."
+  ],
+  "links": [
+    "umami",
+    "glutamat",
+    "quellen",
+    "g-risotto",
+    "w-pilze"
+  ],
+  "welten": [
+    "w-pilze",
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a small bowl of dried porcini slices soaking in amber water next to a coffee filter"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Pilze"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

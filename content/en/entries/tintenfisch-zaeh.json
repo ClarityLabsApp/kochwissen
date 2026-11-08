@@ -1,0 +1,85 @@
+{
+  "id": "tintenfisch-zaeh",
+  "titel": "Squid turns tough",
+  "kurz": "Squid has a lot of connective tissue: it turns tender if cooked very briefly or for a long time. In between it is as tough as rubber.",
+  "bild_im_kopf": "Like a rope bridge across a valley: you either stay right at the near edge or go all the way across. In the middle you get stuck.",
+  "synonyme": [
+    "tough calamari",
+    "rubbery squid",
+    "chewy octopus",
+    "tender octopus"
+  ],
+  "faustregeln": [
+    "For tender squid: either lightning fast or patient, never in between.",
+    "If it has already turned tough, keep [[schmoren|braising]] rather than giving up: after half an hour it softens again."
+  ],
+  "ursachen": [
+    {
+      "titel": "Medium cooking time: too long for quick, too short for slow",
+      "haeufigkeit": 3,
+      "prinzip": "kollagen-gelatine",
+      "warum": "After about two minutes the connective tissue contracts hard. Only after half an hour or more does it turn into soft gelatine (as a guide).",
+      "fix": [
+        "Quick: one or two minutes at most over high heat",
+        "Slow: braise gently for at least 30 to 45 minutes, octopus often longer"
+      ]
+    },
+    {
+      "titel": "Pan too full or not hot enough",
+      "haeufigkeit": 2,
+      "prinzip": "verdampfen",
+      "warum": "Squid releases a lot of water. In a cool pan it boils in its own juice and takes too long to colour.",
+      "fix": [
+        "Fry in small batches in a very hot pan",
+        "Pat very dry first"
+      ]
+    },
+    {
+      "titel": "Thick pieces without scoring",
+      "haeufigkeit": 1,
+      "prinzip": "waermeleitung",
+      "warum": "Thick tubes take longer to heat through and so slip into the tough middle zone.",
+      "fix": [
+        "Cut the tubes open and score them in a diamond pattern",
+        "Cut into thin rings or strips"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Was it in the heat for less than two minutes or more than half an hour?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Was it fried briefly but did the pan barely sizzle?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

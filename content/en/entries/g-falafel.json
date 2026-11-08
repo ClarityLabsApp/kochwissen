@@ -1,0 +1,33 @@
+{
+  "id": "g-falafel",
+  "titel": "Falafel",
+  "kurz": "Falafel are made from soaked but raw chickpeas: their starch binds only in the hot oil. Cooked chickpeas fall apart.",
+  "bild_im_kopf": "Like the rim of a sandcastle that only firms up in the sun: shaped damp and loose, it holds only through the heat.",
+  "synonyme": [
+    "homemade falafel",
+    "falafel falling apart",
+    "chickpea fritters"
+  ],
+  "schluesselmomente": [
+    {
+      "schritt": "Soak dried chickpeas overnight, do not cook them",
+      "warum": "Raw starch [[quellen|swells]] only in the frying and then holds everything together. Cooked chickpeas are already too soft.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Grind coarsely with onion, garlic, herbs and spices",
+      "warum": "Ground coarsely, the balls stay light and fluffy inside.",
+      "prinzip": "mechanik"
+    },
+    {
+      "schritt": "Chill the mixture for 30 minutes, then shape",
+      "warum": "Cold mixture is easier to shape and holds together in the oil.",
+      "prinzip": "temperatur"
+    },
+    {
+      "schritt": "Fry at about 175 °C until deep golden brown",
+      "warum": "The heat cooks the raw chickpeas through and forms the crisp crust.",
+      "prinzip": "knusprig"
+    }
+  ]
+}

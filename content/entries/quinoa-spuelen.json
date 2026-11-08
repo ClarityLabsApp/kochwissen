@@ -1,0 +1,47 @@
+{
+  "id": "quinoa-spuelen",
+  "typ": "technik",
+  "titel": "Quinoa spülen und kochen",
+  "synonyme": [
+    "Quinoa bitter",
+    "Quinoa waschen",
+    "Quinoa kochen",
+    "Quinoa seifig",
+    "Saponine"
+  ],
+  "kurz": "Quinoa trägt eine bittere, seifige Schicht (Saponine) auf der Schale: Kurz spülen, dann im Verhältnis 1 zu 2 kochen.",
+  "bild_im_kopf": "Wie Seifenreste an frisch gewaschenem Geschirr: Ein kurzes Nachspülen, und nichts schmeckt mehr bitter.",
+  "was_passiert": "Die Pflanze schützt ihre Samen mit Saponinen vor Vögeln und Insekten. Diese Stoffe schmecken bitter und schäumen in Wasser wie Seife. Die meiste Quinoa im Handel ist vorgewaschen, Reste sitzen aber oft noch an.",
+  "warum_wichtig": "Bittere Quinoa ist der häufigste Grund, warum Leute sie nicht mögen. Ein Sieb und eine Minute ändern das.",
+  "schritte": [
+    "Quinoa in ein feines Sieb geben und unter fließendem Wasser spülen, bis kein Schaum mehr entsteht.",
+    "Mit der doppelten Menge Wasser und etwas Salz aufkochen.",
+    "Zugedeckt etwa 12 bis 15 Minuten leise köcheln, bis das Wasser aufgesogen ist.",
+    "Vom Herd nehmen, 5 Minuten zugedeckt ruhen lassen, mit der Gabel auflockern."
+  ],
+  "faustregeln": [
+    "Für mehr Geschmack: nach dem Spülen kurz in der trockenen Pfanne rösten.",
+    "Fertig ist sie, wenn sich der kleine weiße Keimring vom Korn löst."
+  ],
+  "links": [
+    "bitter",
+    "reis-quellmethode",
+    "quellen",
+    "w-getreide"
+  ],
+  "welten": [
+    "w-getreide"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a fine metal sieve of quinoa under a trickle of water with a little white foam, a bowl of fluffy cooked quinoa beside it"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Samen: Getreide und Pseudogetreide"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

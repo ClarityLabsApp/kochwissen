@@ -1,0 +1,49 @@
+{
+  "id": "erdbeeren-mazerieren",
+  "typ": "technik",
+  "titel": "Früchte mit Zucker ziehen lassen (Mazerieren)",
+  "synonyme": [
+    "Erdbeeren zuckern",
+    "Mazerieren",
+    "Erdbeeren Saft ziehen",
+    "Früchte marinieren",
+    "Beeren mit Zucker"
+  ],
+  "kurz": "Zucker zieht Saft aus geschnittenen Früchten: In einer Viertelstunde liegen sie in ihrem eigenen Sirup und schmecken intensiver.",
+  "bild_im_kopf": "Wie ein trockener Schwamm auf einer nassen Fläche: Er zieht das Wasser zu sich herüber.",
+  "was_passiert": "Zucker auf geschnittenen Früchten löst sich in ihrem Saft. Die konzentrierte Zuckerlösung zieht weiteres Wasser aus den Zellen ([[osmose|Osmose]]). So entsteht ein Sirup, und die Früchte werden weicher.",
+  "warum_wichtig": "Auch blasse Erdbeeren schmecken so süßer und saftiger. Der Sirup tränkt Kuchenböden und Biskuit.",
+  "schritte": [
+    "Früchte waschen, trocknen und schneiden.",
+    "Mit etwas Zucker bestreuen, etwa ein Esslöffel pro 250 g (Richtwert), und vorsichtig mischen.",
+    "15 bis 30 Minuten stehen lassen.",
+    "Nach Wunsch Zitronensaft, Balsamico oder Minze dazugeben."
+  ],
+  "faustregeln": [
+    "Nicht stundenlang ziehen lassen: Die Früchte werden sonst matschig.",
+    "Eine Prise Salz oder ein Spritzer Säure macht den Geschmack fruchtiger."
+  ],
+  "links": [
+    "osmose",
+    "suess",
+    "zucker-feuchtigkeit",
+    "w-obst",
+    "w-suesses"
+  ],
+  "welten": [
+    "w-obst",
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a glass bowl of halved strawberries glistening in their own red syrup with a sugar spoon"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Früchte und Zucker"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

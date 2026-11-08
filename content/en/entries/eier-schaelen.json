@@ -1,0 +1,83 @@
+{
+  "id": "eier-schaelen",
+  "titel": "Boiled eggs are hard to peel",
+  "kurz": "In very fresh eggs the white sticks to the shell membrane. Older eggs, starting in boiling water and iced water afterwards make peeling easy.",
+  "bild_im_kopf": "Like a freshly applied plaster: in the first days it sticks firmly, later it almost comes off by itself.",
+  "synonyme": [
+    "peeling eggs",
+    "eggs hard to peel",
+    "egg shell sticks",
+    "easy peel eggs"
+  ],
+  "faustregeln": [
+    "For easy-peel [[w-eier|eggs]]: lower them into boiling water or steam and then into iced water, because that stops the white sticking to the membrane.",
+    "Peel under running water or in the bowl; the water helps lift the shell."
+  ],
+  "ursachen": [
+    {
+      "titel": "Very fresh eggs",
+      "haeufigkeit": 3,
+      "prinzip": "ph-wert",
+      "warum": "Fresh egg white is more acidic and sticks to the membrane under the shell. Over a few days [[kohlendioxid|carbon dioxide]] escapes, the white becomes more alkaline and releases more easily.",
+      "fix": [
+        "Use eggs about a week old for boiling"
+      ]
+    },
+    {
+      "titel": "Started in cold water",
+      "haeufigkeit": 2,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "Heated slowly, the white bonds with the membrane. A hot start sets it before it can stick.",
+      "fix": [
+        "Lower eggs straight into boiling water or into steam"
+      ]
+    },
+    {
+      "titel": "Not cooled in cold water",
+      "haeufigkeit": 2,
+      "prinzip": "abschrecken",
+      "warum": "In iced water the egg contracts slightly and pulls away from the shell.",
+      "fix": [
+        "Put them in iced water for a few minutes after cooking",
+        "Start at the blunt end, where the air pocket is"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Were the eggs older than about a week?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did you start them in cold water?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

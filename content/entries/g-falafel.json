@@ -1,0 +1,57 @@
+{
+  "id": "g-falafel",
+  "typ": "gericht",
+  "titel": "Falafel",
+  "synonyme": [
+    "Falafel selber machen",
+    "Falafel zerfallen",
+    "Kichererbsenbällchen"
+  ],
+  "kurz": "Falafel entstehen aus eingeweichten, aber rohen Kichererbsen: Ihre Stärke bindet erst im heißen Öl. Gekochte Kichererbsen zerfallen.",
+  "bild_im_kopf": "Wie ein Sandburgenrand, der erst in der Sonne fest wird: Feucht und locker geformt, hält er erst durch die Hitze.",
+  "schwierigkeit": "einsteiger",
+  "schluesselmomente": [
+    {
+      "schritt": "Getrocknete Kichererbsen über Nacht einweichen, nicht kochen",
+      "warum": "Rohe Stärke [[quellen|quillt]] erst beim Frittieren und hält dann alles zusammen. Gekochte Kichererbsen sind schon zu weich.",
+      "prinzip": "staerkeverkleisterung"
+    },
+    {
+      "schritt": "Mit Zwiebel, Knoblauch, Kräutern und Gewürzen grob mahlen",
+      "warum": "Grob gemahlen bleiben die Bällchen innen locker und luftig.",
+      "prinzip": "mechanik"
+    },
+    {
+      "schritt": "Masse 30 Minuten kühlen, dann formen",
+      "warum": "Kalte Masse lässt sich besser formen und hält im Öl.",
+      "prinzip": "temperatur"
+    },
+    {
+      "schritt": "Bei etwa 175 °C frittieren, bis sie tief goldbraun sind",
+      "warum": "Die Hitze gart die rohen Kichererbsen durch und bildet die knusprige Kruste.",
+      "prinzip": "knusprig"
+    }
+  ],
+  "links": [
+    "g-hummus",
+    "huelsenfruechte-einweichen",
+    "frittiertes-fettig",
+    "w-huelsenfruechte",
+    "w-frittieren"
+  ],
+  "welten": [
+    "w-huelsenfruechte",
+    "w-frittieren"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a plate of golden falafel balls, one broken open showing a green herby inside, with a small bowl of tahini"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Samen: Hülsenfrüchte"
+    }
+  ],
+  "status": "entwurf"
+}

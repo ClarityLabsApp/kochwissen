@@ -1,0 +1,59 @@
+{
+  "id": "muscheln-garen",
+  "typ": "technik",
+  "titel": "Muscheln garen",
+  "synonyme": [
+    "Miesmuscheln kochen",
+    "Muscheln putzen",
+    "Muscheln geschlossen",
+    "Muscheln öffnen sich nicht",
+    "Venusmuscheln",
+    "Meeresfrüchte"
+  ],
+  "kurz": "Muscheln kommen lebend in den Topf und garen in wenigen Minuten im eigenen Dampf: Sie sind fertig, sobald sie sich öffnen.",
+  "bild_im_kopf": "Wie eine Tür mit Federschloss: Der Muskel hält sie zu, solange er lebt. Die Hitze lässt ihn los, und die Tür springt auf.",
+  "was_passiert": "Ein lebender Schließmuskel hält die Schalen zusammen. In der Hitze gerinnt sein Eiweiß, er lässt los, und die Schale öffnet sich. Gleichzeitig tritt salziger Muschelsaft aus. Er ist die Grundlage jeder Muschelsauce.",
+  "warum_wichtig": "Muscheln verderben schnell, darum zählt beim Einkauf und vor dem Kochen nur eines: Sie müssen leben. Und weil sie so schnell garen, werden sie bei zu langer Hitze zäh und gummig.",
+  "schritte": [
+    "Muscheln in kaltem Wasser abbürsten, den Bart kurz vor dem Kochen abziehen.",
+    "Offene Muscheln antippen: Schließen sie sich nicht, wegwerfen. Zerbrochene ebenfalls.",
+    "Wenig Flüssigkeit (Wein, Wasser) in einem großen Topf stark erhitzen, Muscheln hinein, Deckel drauf.",
+    "Nach etwa 3 bis 5 Minuten einmal schütteln: Sobald sich die meisten geöffnet haben, vom Herd nehmen.",
+    "Den Sud durch ein feines Sieb gießen, falls Sand darin ist."
+  ],
+  "faustregeln": [
+    "Muscheln im Kühlschrank mit einem feuchten Tuch bedeckt lagern, nicht in Wasser: Süßwasser tötet sie.",
+    "Lieber am Einkaufstag kochen, spätestens am Tag danach.",
+    "Muscheln, die nach dem Kochen geschlossen bleiben, nicht aufbrechen und im Zweifel wegwerfen."
+  ],
+  "links": [
+    "daempfen",
+    "eiweiss-gerinnung",
+    "keimwachstum",
+    "g-moules",
+    "w-fisch"
+  ],
+  "welten": [
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a black pot of steamed blue mussels with opened shells, a sprig of parsley and a glass of white wine"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fisch und Meeresfrüchte: Muscheln"
+    },
+    {
+      "titel": "Tasting Table: The rule about not eating closed mussels is actually complicated",
+      "url": "https://www.tastingtable.com/1348663/rule-not-eating-closed-mussels-complicated/"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "mythos": {
+    "behauptung": "Muscheln, die nach dem Kochen zu sind, sind giftig.",
+    "richtig": "Mussels that stay closed after cooking are poisonous."
+  }
+}

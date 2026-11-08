@@ -1,0 +1,30 @@
+{
+  "id": "krustentiere-rot",
+  "titel": "Why shellfish turn red when cooked",
+  "kurz": "The shells of prawns, crabs and lobster contain a red pigment wrapped up grey-blue by a protein. Heat undoes the wrapping and the red appears.",
+  "bild_im_kopf": "Like a red present in grey wrapping paper: only when you tear the paper open do you see the colour.",
+  "was_passiert": "The pigment is called astaxanthin and is actually red. In the living animal it is bound to a protein that makes it look blue-grey. When heated this protein changes ([[eiweiss-denaturierung|denaturation]]) and lets the pigment go. The free astaxanthin colours shell and flesh red and pink.",
+  "warum_wichtig": "The colour reliably shows when prawns are cooked. The same pigment reaches salmon and trout through their diet and turns their flesh pink.",
+  "synonyme": [
+    "why shrimp turn pink",
+    "lobster turns red",
+    "astaxanthin",
+    "crustaceans"
+  ],
+  "faustregeln": [
+    "Prawns are done once they are pink throughout and no longer glassy.",
+    "Frying in the shell releases colour and flavour: the shells make a red stock or a shellfish oil."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "Even moderate heat frees the pigment from the protein"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-fisch",
+      "text": "Farmed salmon is fed astaxanthin, otherwise its flesh would stay pale."
+    }
+  ]
+}

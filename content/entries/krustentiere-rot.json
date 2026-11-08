@@ -1,0 +1,59 @@
+{
+  "id": "krustentiere-rot",
+  "typ": "prozess",
+  "titel": "Warum Krustentiere beim Kochen rot werden",
+  "synonyme": [
+    "Crevetten werden rosa",
+    "Hummer wird rot",
+    "Krebse rot",
+    "Astaxanthin",
+    "Garnelen Farbe",
+    "Krustentiere"
+  ],
+  "kurz": "Im Panzer von Crevetten, Krebsen und Hummer steckt ein roter Farbstoff, den ein Eiweiß grau-blau verpackt. Hitze löst die Verpackung, und das Rot kommt zum Vorschein.",
+  "bild_im_kopf": "Wie ein rotes Geschenk in grauem Packpapier: Erst wenn man das Papier aufreißt, sieht man die Farbe.",
+  "was_passiert": "Der Farbstoff heißt Astaxanthin und ist eigentlich rot. Im lebenden Tier ist er an ein Eiweiß gebunden, das ihn blau-grau erscheinen lässt. Beim Erhitzen verändert sich dieses Eiweiß ([[eiweiss-denaturierung|Denaturierung]]) und lässt den Farbstoff los. Das freie Astaxanthin färbt Panzer und Fleisch rot und rosa.",
+  "warum_wichtig": "Die Farbe zeigt zuverlässig, wann Crevetten gar sind. Derselbe Farbstoff gelangt über die Nahrung in Lachs und Forelle und macht ihr Fleisch rosa.",
+  "faustregeln": [
+    "Crevetten sind gar, sobald sie durchgehend rosa und nicht mehr glasig sind.",
+    "Mit Schale braten gibt Farbe und Aroma ab: Die Schalen eignen sich für einen roten Fond oder ein Krustentieröl."
+  ],
+  "stellschrauben": [
+    {
+      "id": "temperatur",
+      "wirkung": "Schon mäßige Hitze löst den Farbstoff vom Eiweiß"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-fisch",
+      "text": "Lachs aus Zucht bekommt Astaxanthin ins Futter, sonst bliebe sein Fleisch blass."
+    }
+  ],
+  "links": [
+    "eiweiss-denaturierung",
+    "crevetten-gummig",
+    "farbe",
+    "aroma-loeslichkeit",
+    "w-fisch"
+  ],
+  "welten": [
+    "w-fisch"
+  ],
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "one grey-blue raw prawn next to a bright red cooked prawn and a red lobster claw on a white plate"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Fisch und Meeresfrüchte: Farbe der Krebstiere"
+    },
+    {
+      "titel": "Live Science: Why do cooked lobsters turn red?",
+      "url": "https://livescience.com/66093-why-cooked-lobsters-turn-red.html"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

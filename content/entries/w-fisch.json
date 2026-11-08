@@ -11,7 +11,11 @@
     "Lachs",
     "Egli",
     "Felchen",
-    "Crevetten"
+    "Crevetten",
+    "Meeresfrüchte",
+    "Muscheln",
+    "Garnelen",
+    "Tintenfisch"
   ],
   "kurz": "Fischfleisch ist zarter als Fleisch von Landtieren: kurze Muskelfasern, wenig [[kollagen-gelatine|Bindegewebe]], Eiweiß, das schon bei niedrigen Temperaturen gart.",
   "bild_im_kopf": "Wie ein Buch aus dünnen Seiten, die nur lose zusammenkleben: Bei zu viel Hitze fällt es auseinander.",
@@ -27,7 +31,10 @@
     "fisch-klebt",
     "fisch-zerfaellt",
     "pochieren",
-    "saeure-denaturierung"
+    "saeure-denaturierung",
+    "muscheln-garen",
+    "crevetten-gummig",
+    "tintenfisch-zaeh"
   ],
   "quellen": [
     {

@@ -1,0 +1,26 @@
+{
+  "id": "tofu",
+  "titel": "Tofu: soy milk curdles",
+  "kurz": "Tofu is made like cheese: a salt makes the protein in hot soy milk flocculate, and the curds are pressed into a block.",
+  "bild_im_kopf": "Like snowflakes pressed into a snowball: first loose flakes, then a firm block.",
+  "was_passiert": "Soaked soybeans are ground, boiled and strained: that is soy milk. A coagulant such as nigari (magnesium chloride) or calcium sulfate links the proteins into curds. Pressed, this gives firm tofu; unpressed, delicate silken tofu.",
+  "warum_wichtig": "Firm tofu holds a lot of water. Pressing and drying it before frying gives a crisp crust instead of a pale surface.",
+  "synonyme": [
+    "how tofu is made",
+    "making tofu",
+    "nigari",
+    "silken tofu",
+    "crispy tofu"
+  ],
+  "faustregeln": [
+    "For crispy tofu: slice, press between kitchen paper under a weight for 15 minutes.",
+    "Dust with a little starch and fry in hot oil without stirring.",
+    "Do not fry silken tofu; use it for sauces, desserts and soups."
+  ],
+  "stellschrauben": [
+    {
+      "id": "feuchtigkeit",
+      "wirkung": "The drier the surface, the crispier"
+    }
+  ]
+}

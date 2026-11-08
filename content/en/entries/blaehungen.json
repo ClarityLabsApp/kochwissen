@@ -1,0 +1,25 @@
+{
+  "id": "blaehungen",
+  "titel": "Why beans cause wind",
+  "kurz": "Legumes contain sugars our gut cannot break down: gut bacteria [[fermentation|ferment]] them, and that produces gas.",
+  "bild_im_kopf": "Like a parcel with no key that fits: we can't open it, so others further down do, and it gets noisy.",
+  "was_passiert": "Certain sugars in legumes (oligosaccharides) consist of several linked building blocks. Our small intestine lacks the enzyme to split them. They travel undigested into the large intestine, where bacteria ferment them. This produces gases.",
+  "warum_wichtig": "Some of these sugars dissolve into the soaking water. Pouring it away and cooking the legumes until really soft means eating a little less of them.",
+  "synonyme": [
+    "beans flatulence",
+    "why beans make you gassy",
+    "digestible legumes"
+  ],
+  "faustregeln": [
+    "Pour away the soaking water and cook in fresh water.",
+    "Cook until thoroughly soft, not just [[al-dente|al dente]].",
+    "Lentils and split peas are often easier to digest than large beans.",
+    "Spices such as caraway or fennel are said to help, but this is not well proven."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zeit",
+      "wirkung": "Longer soaking and cooking dissolves more of these sugars"
+    }
+  ]
+}
