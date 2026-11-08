@@ -67,7 +67,7 @@ export default function SiteNav({ worlds }: { worlds: Record<"de" | "en", World[
         <button type="button" className="nav-icon" aria-label={H.search} aria-expanded={open === "suche"} onClick={toggleSearch}>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
         </button>
-        <Link href={`${ln("/")}#merkliste`} className="nav-icon nav-merk" aria-label={`${H.merk} (${merk.length})`}>
+        <Link href={ln("/merkliste")} aria-current={here("/merkliste")} className="nav-icon nav-merk" aria-label={`${H.merk} (${merk.length})`}>
           <svg width="16" height="18" viewBox="0 0 16 20" fill={merk.length ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2" aria-hidden><path d="M2 2h12v16l-6-4-6 4z" /></svg>
           {merk.length > 0 && <small>{merk.length}</small>}
         </Link>

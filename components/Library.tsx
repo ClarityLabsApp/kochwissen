@@ -5,7 +5,7 @@ import { search } from "@/lib/search";
 import { href, t, type Lang } from "@/lib/i18n";
 import { GROUPS, groupOfType } from "@/lib/nav";
 import { DOORS } from "@/lib/home";
-import { addMerk, useMemo2 } from "@/lib/memo";
+import { useMemo2 } from "@/lib/memo";
 
 export interface LibItem {
   id: string; typ: string; titel: string; status: string; pilot: boolean;
@@ -32,10 +32,8 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
   const [q, setQ] = useState("");
   const [active, setActive] = useState<Set<string>>(new Set());
   const [door, setDoor] = useState(0);
-  const merk = useMemo2("merk"), gelesen = useMemo2("read");
+  const gelesen = useMemo2("read");
   const readSet = useMemo(() => new Set(gelesen), [gelesen]);
-  const [incoming, setIncoming] = useState<string[]>([]);
-  const [copied, setCopied] = useState(false);
   // Zusätzliche Suchwörter (Ursachen, Faustregeln, andere Sprache) erst laden, wenn jemand sucht.
   const [extras, setExtras] = useState<Record<string, string> | undefined>();
   const wantExtras = q.trim().length > 0;
@@ -63,8 +61,9 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
     if (g) { window.location.replace(ln(`/${g}`)); return; }
     const q0 = u.searchParams.get("q");
     if (q0) { setQ(q0); setTimeout(() => document.getElementById("q")?.scrollIntoView({ block: "start" }), 50); }
+    // Alte geteilte Merklisten-Links (?merk=) führen zur Merkliste.
     const m = u.searchParams.get("merk");
-    if (m) setIncoming(m.split(",").filter((id) => byId.has(id)).slice(0, 200));
+    if (m) { window.location.replace(`${ln("/merkliste")}?merk=${encodeURIComponent(m)}`); return; }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const typing = (v: string) => {
@@ -73,15 +72,6 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
     if (v.trim()) u.searchParams.set("q", v); else u.searchParams.delete("q");
     window.history.replaceState(window.history.state, "", u);
   };
-  const clearIncoming = () => { setIncoming([]); const u = new URL(window.location.href); u.searchParams.delete("merk"); window.history.replaceState(window.history.state, "", u); };
-  const shareMerk = async () => {
-    const url = `${window.location.origin}${href(lang, "/")}?merk=${merk.join(",")}`;
-    try {
-      if (navigator.share) { await navigator.share({ title: "Garum", url }); return; }
-      await navigator.clipboard.writeText(url); setCopied(true); setTimeout(() => setCopied(false), 2500);
-    } catch { /* abgebrochen */ }
-  };
-  const merkItems = merk.map((id) => byId.get(id)).filter(Boolean) as LibItem[];
   const plain = (s: string) => s.replace(/\[\[[a-z0-9-]+\|([^\]]+)\]\]/g, "$1").replace(/\[\[([a-z0-9-]+)\]\]/g, (_, id) => byId.get(id)?.titel ?? id);
 
   let list = items.filter((e) => (!active.size || active.has(e.typ)) && (!res || res.has(e.id)));
@@ -130,32 +120,6 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
               </div>
             </div>
           ))}
-        </section>
-      )}
-      {!res && incoming.length > 0 && (
-        <div className="merk-in">
-          <p>{T.memo.shared(incoming.length)}</p>
-          <div className="vis-row">
-            <button type="button" className="vis-btn" onClick={() => { addMerk(incoming); clearIncoming(); }}>{T.memo.take}</button>
-            <button type="button" className="linkbtn" onClick={clearIncoming}>{T.memo.dismiss}</button>
-          </div>
-        </div>
-      )}
-      {!res && merkItems.length > 0 && (
-        <section className="block merk-list" id="merkliste" aria-label={T.memo.list}>
-          <div className="merk-head"><span className="mono">{T.memo.list} · {merkItems.length}</span>
-            <button type="button" className="linkbtn" onClick={shareMerk}>{copied ? T.memo.copied : `${T.memo.share} →`}</button></div>
-          <div className="seen">{merkItems.map((e) => {
-            const pic = pictureOf(e, has);
-            return (
-              <Link key={e.id} href={ln(`/eintrag/${e.id}`)} className="seen-item">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                {pic ? <img src={`/illustrationen/${pic}.webp`} alt="" width={96} height={96} loading="lazy" /> : <span className="tile2-ph" style={{ background: `var(--t-${e.typ})` }} />}
-                <span>{e.titel}</span>
-              </Link>
-            );
-          })}</div>
-          <span className="mono merk-hint">{T.memo.hint}</span>
         </section>
       )}
       {!res && worlds.length > 0 && (

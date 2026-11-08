@@ -675,3 +675,21 @@ a.tag { text-decoration: none; color: #fff; }
 .alk-bar i { display: block; height: 100%; background: #9a2f4a; }
 .alk-v { text-align: right; }
 .ww-saw { width: 220px; max-width: 100%; height: auto; }
+
+/* Merkliste */
+.merk-head { margin-bottom: 12px; }
+.merk-empty { padding: 18px; background: var(--paper-2); border: 1px solid var(--rule); display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+.merk-empty p { margin: 0; }
+.merk-grid { list-style: none; margin: 0 0 32px; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 10px; }
+.merk-grid li { position: relative; background: var(--paper-2); border: 1px solid var(--rule); }
+.merk-grid li:hover { border-color: var(--ink); }
+.merk-grid a { display: flex; gap: 12px; align-items: center; padding: 10px 40px 10px 10px; text-decoration: none; color: var(--ink); }
+.merk-grid img, .merk-grid .tile2-ph { flex: 0 0 72px; width: 72px; height: 72px; object-fit: contain; }
+.mg-txt { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.mg-txt .mono { font-size: 10px; display: inline-flex; align-items: center; gap: 6px; color: var(--sepia); }
+.mg-txt .mono i { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.mg-txt strong { font: 600 18px/1.2 var(--f-display); }
+.mg-txt .k { font-size: 14px; line-height: 1.35; color: var(--sepia); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.mg-x { position: absolute; top: 6px; right: 6px; width: 28px; height: 28px; border: 0; background: none; color: var(--sepia); font-size: 20px; line-height: 1; cursor: pointer; border-radius: 50%; }
+.mg-x:hover { background: var(--paper); color: var(--crust); }
+@media (max-width: 700px) { .merk-grid { grid-template-columns: minmax(0, 1fr); } }
