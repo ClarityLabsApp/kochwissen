@@ -11,7 +11,7 @@
     "Rotwein",
     "Kochwein"
   ],
-  "kurz": "Wein bringt Säure, Aromen und etwas Süße in Saucen und Schmorgerichte. Der Alkohol löst Aromen und verdampft größtenteils.",
+  "kurz": "Wein bringt Säure, Aromen und etwas Süße in Saucen und Schmorgerichte. Der Alkohol löst Aromen und verdampft nur zum Teil.",
   "bild_im_kopf": "Wie ein Gewürz in flüssiger Form.",
   "rolle": [
     {
@@ -35,7 +35,9 @@
   "links": [
     "deglacieren",
     "reduktion",
-    "saeure"
+    "saeure",
+    "wein-kochen",
+    "wein-essen"
   ],
   "welten": [
     "w-saucen"

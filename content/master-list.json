@@ -1,7 +1,7 @@
 {
   "version": 1,
   "stand": "2026-11-02",
-  "anzahl": 401,
+  "anzahl": 404,
   "eintraege": [
     {
       "id": "w-fleisch",
@@ -10056,6 +10056,105 @@
       ],
       "visual": {
         "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "wein-kochen",
+      "typ": "prozess",
+      "titel": "Wein beim Kochen: Was im Topf bleibt",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "wein",
+        "deglacieren",
+        "reduktion",
+        "gerbstoffe",
+        "sauce-wein",
+        "wein-essen",
+        "w-saucen"
+      ],
+      "welten": [
+        "w-saucen",
+        "w-fleisch"
+      ],
+      "synonyme": [
+        "Kochen mit Wein",
+        "welcher Wein zum Kochen",
+        "Wein ablöschen",
+        "Kochwein",
+        "Alkohol verkocht",
+        "Wein Sauce",
+        "Weißwein oder Rotwein kochen",
+        "Alkohol Kinder Sauce"
+      ],
+      "visual": {
+        "vorlage": "alkoholrest"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "wein-essen",
+      "typ": "prozess",
+      "titel": "Warum Wein zu Essen passt",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "gerbstoffe",
+        "mundgefuehl",
+        "kontraste",
+        "geschmack-balance",
+        "salz-geschmack",
+        "schaerfe",
+        "suess",
+        "wein-kochen",
+        "flavor-pairing"
+      ],
+      "welten": [
+        "w-fleisch",
+        "w-milch"
+      ],
+      "synonyme": [
+        "Weinbegleitung",
+        "welcher Wein passt zu",
+        "Wein zum Essen",
+        "Rotwein zu Fisch",
+        "Wein zu Käse",
+        "Wein zu Dessert",
+        "Wein zu scharfem Essen",
+        "Food Pairing Wein"
+      ],
+      "visual": {
+        "vorlage": "weinwaage"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "sauce-wein",
+      "typ": "symptom",
+      "titel": "Sauce schmeckt nach Wein: sauer, bitter oder roh",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "wein-kochen",
+        "reduktion",
+        "montieren",
+        "gerbstoffe",
+        "deglacieren",
+        "w-saucen"
+      ],
+      "welten": [
+        "w-saucen"
+      ],
+      "synonyme": [
+        "Weinsauce bitter",
+        "Rotweinsauce bitter",
+        "Sauce zu sauer Wein",
+        "Sauce schmeckt nach Alkohol",
+        "Weißweinsauce sauer"
+      ],
+      "visual": {
+        "vorlage": "entscheidungsbaum"
       },
       "verlinkt_von": []
     }

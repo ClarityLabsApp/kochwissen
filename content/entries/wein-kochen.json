@@ -1,0 +1,75 @@
+{
+  "id": "wein-kochen",
+  "typ": "prozess",
+  "titel": "Wein beim Kochen: Was im Topf bleibt",
+  "synonyme": [
+    "Kochen mit Wein",
+    "welcher Wein zum Kochen",
+    "Wein ablöschen",
+    "Kochwein",
+    "Alkohol verkocht",
+    "Wein Sauce",
+    "Weißwein oder Rotwein kochen",
+    "Alkohol Kinder Sauce"
+  ],
+  "kurz": "Beim Kochen verfliegen feine Aromen und ein Teil des Alkohols, Säure und [[gerbstoffe|Gerbstoffe]] werden stärker: Beim Kochwein zählt der Stil mehr als der Preis.",
+  "bild_im_kopf": "Wie ein Konzert durch die Wand: Die feinen Geigen hört man nicht mehr, Bass und Trommeln kommen deutlich an.",
+  "was_passiert": "[[wein|Wein]] besteht vor allem aus Wasser, Alkohol, Säure, etwas Zucker, Gerbstoffen und Duftstoffen. Beim [[reduktion|Einkochen]] verdampfen Wasser, ein Teil des Alkohols und die meisten flüchtigen Fruchtaromen. Säure, Zucker und Gerbstoffe verdampfen nicht und werden konzentrierter. Der Alkohol verschwindet langsamer als gedacht: Nach einer Stunde Köcheln bleibt etwa ein Viertel (Richtwert).",
+  "warum_wichtig": "Ein teurer Wein lohnt sich im Topf kaum, ein schlechter verdirbt die Sauce aber zuverlässig. Wer für Kinder oder Menschen kocht, die keinen Alkohol trinken, sollte wissen, dass er nicht ganz verkocht.",
+  "faustregeln": [
+    "Nur Wein verwenden, den man auch trinken würde: Fehler wie Kork oder Oxidation werden beim Einkochen stärker.",
+    "Für Rahmsaucen, Fisch und Risotto: trockener, frischer Weißwein, weil seine Säure das Fett leichter macht.",
+    "Für Schmorgerichte: fruchtiger, eher milder Rotwein; stark gerbstoffhaltige oder im Holz ausgebaute Weine werden eingekocht bitter.",
+    "Wein zuerst um mindestens die Hälfte einkochen, dann erst Fond oder Rahm dazu, sonst schmeckt die Sauce roh und spitz.",
+    "Gesalzenen Kochwein meiden: Er bringt unkontrolliert Salz in die Sauce."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zeit",
+      "wirkung": "Je länger gekocht, desto weniger Alkohol und desto konzentrierter Säure und Gerbstoffe"
+    },
+    {
+      "id": "temperatur",
+      "wirkung": "Sprudelnd kochen treibt Alkohol und Aromen schneller aus als sanftes Köcheln"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-saucen",
+      "text": "Für eine Rotweinsauce den Wein mit Schalotten fast sirupartig einkochen, dann Fond dazu und zum Schluss kalte Butter einrühren."
+    },
+    {
+      "welt": "w-fleisch",
+      "text": "Beim Schmoren gart der Wein stundenlang mit: Ein milder Rotwein bleibt rund, ein sehr herber wird bitter."
+    }
+  ],
+  "links": [
+    "wein",
+    "deglacieren",
+    "reduktion",
+    "gerbstoffe",
+    "sauce-wein",
+    "wein-essen",
+    "w-saucen"
+  ],
+  "welten": [
+    "w-saucen",
+    "w-fleisch"
+  ],
+  "visual": {
+    "vorlage": "alkoholrest",
+    "illustration": "a bottle of red and a bottle of white wine beside a small pot of reducing dark wine sauce with a wooden spoon"
+  },
+  "quellen": [
+    {
+      "titel": "USDA Table of Nutrient Retention Factors, Release 6 (2007): Alkohol",
+      "url": "https://www.ars.usda.gov/ARSUserFiles/80400525/Data/retn/retn06.pdf"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Wein, Bier und Spirituosen: Kochen mit Wein"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

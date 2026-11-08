@@ -79,6 +79,8 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - `ParticleSim` – Canvas-Simulationen, eine für **jeden** Prozess (Preset-id = Eintrags-id). Regler: `slider`, `toggle`, `ph` (sauer/neutral/basisch) oder `seg` (eigene Optionen), `reset`. Automatischer Ablauf beim Öffnen: Liste `AUTO`. Neue Presets dort anlegen und in `SIMS` in `Visual.tsx` eintragen
 - `MaillardSim` – Maillard-Reaktion in drei Zoomstufen (Gericht, Oberfläche, Moleküle), ersetzt den alten Prototyp
 - `ExperimentCompare` – Vorher-Nachher für Experimente: `vorlage: vergleich`, `params.vergleich` = Felder mit `gefaess` (glas, flasche, schuessel, teller, pfanne), `inhalt`, `vorher`/`nachher` (farbe, fuell, trueb, schaum, blasen, ballon, kristalle, tropfen, klumpen, bodensatz, tanzen)
+- `WineScale` – „Wein-Waage“ (`vorlage: weinwaage`): Wein und Essen wählen, sechs Regeln als Wippen, Gesamturteil; Daten und Regeln in `lib/wein.ts`
+- `AlcoholChart` – Alkoholrest nach Kochzeit (`vorlage: alkoholrest`, USDA-Werte in `lib/wein.ts`)
 - Kein Prototyp mehr per iframe: `PROTOTYPES` in `lib/content.ts` ist leer, „Steak grau“ nutzt `PanTest`
 
 ## Verlinkung und Tempo
@@ -139,4 +141,5 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - [x] Fermentation & Geschmack: 12 Einträge (Garum, Koji, Edelschimmel, Proteolyse, Bitter, Süß, Zusammenspiel der Geschmäcker, Geschmack und Nase, Flavor Pairing, Xanthan, Experimente Nase zu und Salz gegen Bitterkeit), `scripts/batches/gen_batch_geschmack.py`, 3. November 2026. Startseite verlinkt unter dem Einleitungstext auf `garum` („Warum Garum?“)
 - [x] Welten III: 19 Einträge gegen Lücken in den Welten (Meeresfrüchte: Muscheln, Crevetten, Tintenfisch, Krustentiere rot, Jakobsmuscheln, Moules; Pilze: getrocknete Pilze, Aufwärmen, Rahmpilze; Hülsenfrüchte: Linsen, Salzwasser, Blähungen, Tofu, Falafel; Eier: grüner Rand, Schälen; Obst: Früchte sinken, Mazerieren; Getreide: Quinoa), `scripts/batches/gen_batch_welten3.py`, 8. November 2026
 - [x] Wahrnehmung: 7 Einträge (Mundgefühl, Temperatur und Geschmack, Kontraste, Richtig abschmecken, Augen und Ohren essen mit, Experimente Farbe täuscht und warme Limonade) und Lernpfad `schmecken-lernen` (`scripts/batches/gen_batch_wahrnehmung.py`). Auf `/verstehen` eigener Bereich „Geschmack und Wahrnehmung“ (`WAHRNEHMUNG` in `lib/nav.ts`, quer über die Typen) und oben der Kasten „Die Grundregeln der Küche“ aus dem Lernpfad `grundprinzipien` (8. November 2026)
+- [x] Wein: `wein-kochen` (mit Alkohol-Balken), `wein-essen` (mit Wein-Waage), `sauce-wein` (`scripts/batches/gen_batch_wein.py`, 8. November 2026)
 - [x] Glossar II: 32 neue Begriffe aus Biologie, Chemie und Küchensprache, 43 insgesamt (`scripts/batches/gen_begriffe2.py`, 2. November 2026)

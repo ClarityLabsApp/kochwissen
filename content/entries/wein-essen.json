@@ -1,0 +1,59 @@
+{
+  "id": "wein-essen",
+  "typ": "prozess",
+  "titel": "Warum Wein zu Essen passt",
+  "synonyme": [
+    "Weinbegleitung",
+    "welcher Wein passt zu",
+    "Wein zum Essen",
+    "Rotwein zu Fisch",
+    "Wein zu Käse",
+    "Wein zu Dessert",
+    "Wein zu scharfem Essen",
+    "Food Pairing Wein"
+  ],
+  "kurz": "Ob Wein und Essen zusammenpassen, ist zum Teil Gewohnheit, zum Teil Chemie: [[gerbstoffe|Gerbstoffe]], Säure, Süße und Alkohol verändern, wie Fett, Salz und Schärfe schmecken.",
+  "bild_im_kopf": "Wie ein Tanzpaar: Der eine führt, der andere folgt, und beide sollten etwa gleich viel Schwung haben.",
+  "was_passiert": "Gerbstoffe binden sich an Eiweiß und Fett. Zum Steak wirkt ein kräftiger Rotwein darum weicher, allein pelzig. Säure schneidet durch Fett, wie die Essiggurke zum Braten. Süßes Essen lässt trockenen Wein sauer und bitter schmecken, Salz macht ihn runder. Alkohol verstärkt das Brennen von Chili.",
+  "warum_wichtig": "Diese wenigen Regeln erklären die meisten Klassiker und die meisten Fehlgriffe. Wer sie kennt, braucht keine Tabelle, sondern fragt: Was hat das Essen viel, und was bringt der Wein dagegen mit?",
+  "faustregeln": [
+    "Zu fettem, eiweißreichem Fleisch: Rotwein mit Gerbstoffen.",
+    "Zu Fisch keine gerbstoffreichen Rotweine: Gerbstoffe und Fischöl schmecken zusammen metallisch.",
+    "Zu Fettem und Rahmigem: Wein mit viel Säure, er macht jeden Bissen leichter.",
+    "Zum Dessert: Der Wein muss mindestens so süß sein wie das Essen.",
+    "Zu Scharfem: leichte, eher süße Weine mit wenig Alkohol."
+  ],
+  "stellschrauben": [],
+  "praxis": [],
+  "links": [
+    "gerbstoffe",
+    "mundgefuehl",
+    "kontraste",
+    "geschmack-balance",
+    "salz-geschmack",
+    "schaerfe",
+    "suess",
+    "wein-kochen",
+    "flavor-pairing"
+  ],
+  "welten": [
+    "w-fleisch",
+    "w-milch"
+  ],
+  "visual": {
+    "vorlage": "weinwaage",
+    "illustration": "a glass of red wine beside a seared steak on a board and a glass of white wine beside a piece of salmon, drawn like a balance"
+  },
+  "quellen": [
+    {
+      "titel": "Peyrot des Gachons et al.: Opponency of astringent and fat sensations. Current Biology 22 (2012)",
+      "url": "https://www.sciencedaily.com/releases/2012/10/121008134215.htm"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Wein: Wein und Essen"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "fortgeschritten"
+}

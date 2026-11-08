@@ -1,0 +1,85 @@
+{
+  "id": "sauce-wein",
+  "titel": "Sauce tastes of wine: sour, bitter or raw",
+  "kurz": "A wine sauce that tastes raw, sour or bitter is usually under-reduced, made with too tannic a wine or lacks balancing fat.",
+  "bild_im_kopf": "Like tea that has steeped too long: what is pleasantly brisk at first turns furry and bitter over time.",
+  "synonyme": [
+    "wine sauce bitter",
+    "red wine sauce bitter",
+    "sauce tastes of alcohol",
+    "white wine sauce too sour"
+  ],
+  "faustregeln": [
+    "For a rounded wine sauce: reduce, then extend with stock and bind with cold butter.",
+    "Don't rescue a bitter sauce with more wine, but with fat and a pinch of sweetness."
+  ],
+  "ursachen": [
+    {
+      "titel": "Not reduced enough",
+      "haeufigkeit": 3,
+      "prinzip": "reduktion",
+      "warum": "If stock or cream goes in too early, the wine stays raw: sharp acidity and a hint of alcohol.",
+      "fix": [
+        "Reduce the wine by at least half first",
+        "Then simmer the sauce for a few more minutes"
+      ]
+    },
+    {
+      "titel": "Too tannic or oaky a red",
+      "haeufigkeit": 2,
+      "prinzip": "gerbstoffe",
+      "warum": "[[gerbstoffe|Tannins]] don't evaporate. Reduced, they get stronger and taste bitter and furry.",
+      "fix": [
+        "Use a fruity, soft red",
+        "Rescue: a knob of cold butter or a splash of cream binds the tannins"
+      ]
+    },
+    {
+      "titel": "Acidity without balance",
+      "haeufigkeit": 2,
+      "prinzip": "geschmack-balance",
+      "warum": "White wine brings a lot of acidity. Without fat, salt and a trace of sweetness it stays sharp.",
+      "fix": [
+        "Stir in cold butter, salt and taste",
+        "If needed, a pinch of sugar or a spoonful of cream"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Did you reduce the wine by at least half before adding stock or cream?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Was it a bold, tannic or oaked red?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

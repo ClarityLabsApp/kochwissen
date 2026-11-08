@@ -1,0 +1,110 @@
+{
+  "id": "sauce-wein",
+  "typ": "symptom",
+  "titel": "Sauce schmeckt nach Wein: sauer, bitter oder roh",
+  "synonyme": [
+    "Weinsauce bitter",
+    "Rotweinsauce bitter",
+    "Sauce zu sauer Wein",
+    "Sauce schmeckt nach Alkohol",
+    "Weißweinsauce sauer"
+  ],
+  "kurz": "Eine roh, sauer oder bitter schmeckende Weinsauce ist meist zu wenig eingekocht, mit zu herbem Wein gemacht oder ohne Ausgleich durch Fett.",
+  "bild_im_kopf": "Wie Tee, der zu lange gezogen hat: Was kurz angenehm herb ist, wird mit der Zeit pelzig und bitter.",
+  "ursachen": [
+    {
+      "titel": "Zu wenig eingekocht",
+      "haeufigkeit": 3,
+      "prinzip": "reduktion",
+      "warum": "Wird Fond oder Rahm zu früh dazugegeben, bleibt der Wein roh: spitze Säure und ein Hauch Alkohol.",
+      "fix": [
+        "Wein zuerst um mindestens die Hälfte einkochen",
+        "Die Sauce danach noch einige Minuten köcheln"
+      ]
+    },
+    {
+      "titel": "Zu herber oder holziger Rotwein",
+      "haeufigkeit": 2,
+      "prinzip": "gerbstoffe",
+      "warum": "[[gerbstoffe|Gerbstoffe]] verdampfen nicht. Eingekocht werden sie stärker und schmecken bitter und pelzig.",
+      "fix": [
+        "Fruchtigen, milden Rotwein nehmen",
+        "Retten: ein Stück kalte Butter oder ein Schuss Rahm bindet die Gerbstoffe"
+      ]
+    },
+    {
+      "titel": "Säure ohne Ausgleich",
+      "haeufigkeit": 2,
+      "prinzip": "geschmack-balance",
+      "warum": "Weißwein bringt viel Säure. Ohne Fett, Salz und eine Spur Süße bleibt sie spitz.",
+      "fix": [
+        "Kalte Butter einrühren, salzen und abschmecken",
+        "Bei Bedarf eine Prise Zucker oder ein Löffel Rahm"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Hast du den Wein um mindestens die Hälfte eingekocht, bevor Fond oder Rahm dazukamen?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "War es ein kräftiger, gerbstoffreicher oder im Holz ausgebauter Rotwein?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "faustregeln": [
+    "Für eine runde Weinsauce: [[reduktion|einkochen]], dann mit Fond verlängern und mit kalter Butter binden.",
+    "Bitter gewordene Sauce nicht mit noch mehr Wein retten, sondern mit Fett und einer Prise Süße."
+  ],
+  "links": [
+    "wein-kochen",
+    "reduktion",
+    "montieren",
+    "gerbstoffe",
+    "deglacieren",
+    "w-saucen"
+  ],
+  "welten": [
+    "w-saucen"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a small saucepan of dark red wine sauce with a tasting spoon, a knob of butter and a half-empty wine glass"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Saucen: Weinsaucen"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

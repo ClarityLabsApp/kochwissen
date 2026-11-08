@@ -661,3 +661,17 @@ a.tag { text-decoration: none; color: #fff; }
 .rules li span { font-size: 15px; color: var(--sepia); }
 .hub-sec { scroll-margin-top: 120px; }
 @media (max-width: 700px) { .jump { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; } .jump a { flex: none; } .hub-sec { scroll-margin-top: 70px; } }
+/* Wein-Waage und Alkohol-Balken */
+.ww-pick { display: grid; gap: 12px; margin: 6px 0 12px; }
+.ww-pick > div { display: grid; gap: 5px; }
+.ww-bsp { color: var(--sepia); font-size: 13px; }
+.ww-res { margin: 4px 0 8px; padding: 8px 12px; border-left: 4px solid; background: var(--paper); font-size: 17px; }
+.ww-rules { list-style: none; margin: 0; padding: 0; }
+.ww-rules li { display: grid; grid-template-columns: 220px 1fr; gap: 14px; align-items: center; border-bottom: 1px dotted var(--rule); padding: 2px 0; }
+@media (max-width: 600px) { .ww-rules li { grid-template-columns: 1fr; gap: 0; padding: 6px 0; } }
+.alk { list-style: none; margin: 4px 0 6px; padding: 0; }
+.alk li { display: grid; grid-template-columns: minmax(150px, 220px) 1fr 52px; gap: 10px; align-items: center; padding: 4px 0; font-size: 15px; }
+.alk-bar { height: 12px; background: var(--paper); border: 1px solid var(--rule); }
+.alk-bar i { display: block; height: 100%; background: #9a2f4a; }
+.alk-v { text-align: right; }
+.ww-saw { width: 220px; max-width: 100%; height: auto; }

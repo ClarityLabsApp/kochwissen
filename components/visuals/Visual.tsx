@@ -7,6 +7,8 @@ import ParticleSim, { type Preset } from "./ParticleSim";
 import Spectrum from "./Spectrum";
 import MaillardSim from "./MaillardSim";
 import ExperimentCompare, { type Feld } from "./ExperimentCompare";
+import WineScale from "./WineScale";
+import AlcoholChart from "./AlcoholChart";
 import { href, t, type Lang } from "@/lib/i18n";
 
 // Muss hier stehen: Funktionen aus Client-Modulen sind auf dem Server nicht aufrufbar.
@@ -49,6 +51,8 @@ export default function Visual({ e, lang = "de" }: { e: Entry; lang?: Lang }) {
     blocks.push(<ExperimentCompare key="xp" felder={p.vergleich as Feld[]} vorher={typeof p.vorher === "string" ? p.vorher : undefined} nachher={typeof p.nachher === "string" ? p.nachher : undefined} lang={lang} />);
   }
   if (e.id === "maillard-reaktion") blocks.push(<MaillardSim key="maillard" lang={lang} />);
+  if (e.visual?.vorlage === "weinwaage") blocks.push(<WineScale key="ww" lang={lang} />);
+  if (e.visual?.vorlage === "alkoholrest") blocks.push(<AlcoholChart key="alk" lang={lang} />);
   if (hasSim(e.id)) blocks.push(<ParticleSim key="sim" preset={e.id} lang={lang} />);
 
   if (e.typ === "symptom" && e.visual?.vorlage === "pfannentest") {

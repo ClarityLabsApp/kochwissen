@@ -1,0 +1,43 @@
+{
+  "id": "wein-kochen",
+  "titel": "Cooking with wine: what stays in the pot",
+  "kurz": "When cooking, delicate aromas and part of the alcohol escape while acidity and [[gerbstoffe|tannins]] intensify: with cooking wine, style matters more than price.",
+  "bild_im_kopf": "Like a concert heard through a wall: the delicate violins are gone, the bass and drums come through clearly.",
+  "was_passiert": "[[wein|Wine]] is mostly water, alcohol, acid, a little sugar, tannins and aroma compounds. When reduced, water, part of the alcohol and most of the volatile fruit aromas evaporate. Acid, sugar and tannins do not evaporate and become more concentrated. The alcohol disappears more slowly than expected: after an hour of simmering about a quarter remains (as a guide).",
+  "warum_wichtig": "An expensive wine is hardly worth it in the pot, but a bad one reliably spoils the sauce. Anyone cooking for children or people who don't drink alcohol should know it doesn't fully cook off.",
+  "synonyme": [
+    "cooking with wine",
+    "which wine for cooking",
+    "deglazing with wine",
+    "cooking wine",
+    "does alcohol cook off",
+    "wine sauce"
+  ],
+  "faustregeln": [
+    "Only use wine you would also drink: faults such as cork taint or oxidation get stronger when reduced.",
+    "For cream [[w-saucen|sauces]], fish and risotto: a dry, crisp white wine, because its acidity lightens the fat.",
+    "For braises: a fruity, rather soft red; very tannic or oaked wines turn bitter when reduced.",
+    "Reduce the wine by at least half before adding stock or cream, otherwise the sauce tastes raw and sharp.",
+    "Avoid salted cooking wine: it adds salt to the sauce uncontrollably."
+  ],
+  "stellschrauben": [
+    {
+      "id": "zeit",
+      "wirkung": "The longer it cooks, the less alcohol and the more concentrated acidity and tannins"
+    },
+    {
+      "id": "temperatur",
+      "wirkung": "A rolling boil drives off alcohol and aromas faster than gentle simmering"
+    }
+  ],
+  "praxis": [
+    {
+      "welt": "w-saucen",
+      "text": "For a red wine sauce, reduce the wine with shallots until almost syrupy, then add stock and finally stir in cold butter."
+    },
+    {
+      "welt": "w-fleisch",
+      "text": "When braising, the wine cooks for hours: a soft red stays rounded, a very tannic one turns bitter."
+    }
+  ]
+}

@@ -501,6 +501,30 @@
 [
 "mundgefuehl"
 ]
+],
+[
+"welcher wein zum kochen",
+[
+"wein-kochen"
+]
+],
+[
+"rotwein zu fisch",
+[
+"wein-essen"
+]
+],
+[
+"verkocht alkohol",
+[
+"wein-kochen"
+]
+],
+[
+"rotweinsauce bitter",
+[
+"sauce-wein"
+]
 ]
 ],
 "en": [
@@ -668,6 +692,18 @@
 "how to season to taste",
 [
 "abschmecken"
+]
+],
+[
+"does alcohol cook off",
+[
+"wein-kochen"
+]
+],
+[
+"wine pairing",
+[
+"wein-essen"
 ]
 ]
 ]
