@@ -202,8 +202,8 @@ function Rules({ lang }: { lang: Lang }) {
   const p = lernpfade(lang).find((x) => x.id === PRINZIPIEN_PFAD);
   if (!p) return null;
   return (
-    <section className="rules" aria-label={H.rules}>
-      <div className="rules-head"><span className="mono">{H.rules}</span><Link href={href(lang, `/pfad/${p.id}`)}>{H.pathLink(p.titel)} →</Link></div>
+    <section className="rulebox" aria-label={H.rules}>
+      <div className="rulebox-head"><span className="mono">{H.rules}</span><Link href={href(lang, `/pfad/${p.id}`)}>{H.pathLink(p.titel)} →</Link></div>
       <ol>
         {p.schritte.map((x) => (
           <li key={x.id}><Link href={href(lang, `/eintrag/${x.id}`)}><strong>{titleOf(x.id, lang)}</strong></Link> <span>{plainText(x.warum, lang)}</span></li>
