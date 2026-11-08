@@ -1,7 +1,7 @@
 {
   "version": 1,
   "stand": "2026-11-02",
-  "anzahl": 374,
+  "anzahl": 375,
   "eintraege": [
     {
       "id": "w-fleisch",
@@ -9293,6 +9293,37 @@
         "Tomatensauce Natron",
         "Tomatensauce Zucker",
         "Pelati sauer"
+      ],
+      "visual": {
+        "vorlage": "entscheidungsbaum"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "cheesecake-reisst",
+      "typ": "symptom",
+      "titel": "Cheesecake bekommt Risse",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "eiweiss-gerinnung",
+        "wasserbad",
+        "nachgaren",
+        "kuchen-sinkt-ein",
+        "kerntemperatur",
+        "w-eier"
+      ],
+      "welten": [
+        "w-gebaeck",
+        "w-eier"
+      ],
+      "synonyme": [
+        "Käsekuchen reißt",
+        "Cheesecake Risse",
+        "Käsekuchen Risse oben",
+        "Quarkkuchen reißt",
+        "Cheesecake fällt zusammen",
+        "Cheesecake Wasserbad"
       ],
       "visual": {
         "vorlage": "entscheidungsbaum"

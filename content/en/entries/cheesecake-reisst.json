@@ -1,0 +1,87 @@
+{
+  "id": "cheesecake-reisst",
+  "titel": "Cheesecake cracks on top",
+  "kurz": "Cheesecake is an egg custard: baked too hot, cooled too fast or beaten too airy, the egg contracts and the top cracks.",
+  "bild_im_kopf": "Like a mud puddle in the sun: it dries out, shrinks and cracks into plates.",
+  "synonyme": [
+    "cracked cheesecake",
+    "cheesecake cracking",
+    "cheesecake sinks",
+    "cheesecake water bath"
+  ],
+  "faustregeln": [
+    "For a smooth top: take it out while the centre still wobbles, because it carries on cooking and sets as it cools.",
+    "Cool it slowly, first in the open oven, then at room temperature, and only then in the fridge.",
+    "If it cracks anyway: let it cool completely and cover it with fruit, whipped cream or sweetened sour cream."
+  ],
+  "ursachen": [
+    {
+      "titel": "Baked too hot or too long",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "Overheated egg protein turns stiff and squeezes out water. The filling can no longer give way as it shrinks while cooling.",
+      "fix": [
+        "Bake gently, around 150 to 160 °C (as a guide)",
+        "Take it out when the edge is set and the centre still wobbles: about 65 to 70 °C inside",
+        "A water bath keeps the heat gentle and even"
+      ]
+    },
+    {
+      "titel": "Cooled too quickly",
+      "haeufigkeit": 2,
+      "prinzip": "nachgaren",
+      "warum": "The cake shrinks as it cools. If the edge sticks to the tin or it cools abruptly, the middle tears apart.",
+      "fix": [
+        "Switch off the oven, open the door a crack and let the cake cool inside",
+        "Run a knife around the edge straight after baking"
+      ]
+    },
+    {
+      "titel": "Too much air beaten in",
+      "haeufigkeit": 2,
+      "prinzip": "aufschlagen",
+      "warum": "Batter beaten until foamy rises in the oven like a soufflé and collapses as it cools. The top cracks as it does.",
+      "fix": [
+        "Use cream cheese and eggs at room temperature; then it turns smooth without beating",
+        "Mix on low speed only until everything is combined"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "Was the cake already completely firm in the centre when you took it out?",
+      "antworten": [
+        [
+          "No",
+          "u0"
+        ],
+        [
+          "Yes",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Did it rise high in the oven and sink again as it cooled?",
+      "antworten": [
+        [
+          "Yes",
+          "u1"
+        ],
+        [
+          "No",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "id": "cheesecake-reisst",
+  "typ": "symptom",
+  "titel": "Cheesecake bekommt Risse",
+  "synonyme": [
+    "Käsekuchen reißt",
+    "Cheesecake Risse",
+    "Käsekuchen Risse oben",
+    "Quarkkuchen reißt",
+    "Cheesecake fällt zusammen",
+    "Cheesecake Wasserbad"
+  ],
+  "kurz": "Cheesecake ist eine Eiercreme: Wird er zu heiß gebacken, zu schnell abgekühlt oder schaumig geschlagen, zieht sich das Ei zusammen und die Oberfläche reißt.",
+  "bild_im_kopf": "Wie eine Schlammpfütze in der Sonne: Sie trocknet aus, schrumpft und reißt in Schollen auf.",
+  "ursachen": [
+    {
+      "titel": "Zu heiß oder zu lange gebacken",
+      "haeufigkeit": 3,
+      "prinzip": "eiweiss-gerinnung",
+      "warum": "Überhitztes Eiweiß wird steif und drückt Wasser hinaus. Die Masse kann nicht mehr nachgeben, wenn sie beim Abkühlen schrumpft.",
+      "fix": [
+        "Sanft backen, um 150 bis 160 °C (Richtwert)",
+        "Herausnehmen, wenn der Rand fest ist und die Mitte noch wackelt: innen etwa 65 bis 70 °C",
+        "Ein Wasserbad hält die Hitze sanft und gleichmäßig"
+      ]
+    },
+    {
+      "titel": "Zu schnell abgekühlt",
+      "haeufigkeit": 2,
+      "prinzip": "nachgaren",
+      "warum": "Beim Abkühlen schrumpft der Kuchen. Klebt der Rand an der Form oder kühlt er schlagartig ab, reißt die Mitte auseinander.",
+      "fix": [
+        "Ofen ausschalten, Tür einen Spalt öffnen und den Kuchen darin auskühlen lassen",
+        "Gleich nach dem Backen mit einem Messer am Rand entlangfahren"
+      ]
+    },
+    {
+      "titel": "Zu viel Luft eingerührt",
+      "haeufigkeit": 2,
+      "prinzip": "aufschlagen",
+      "warum": "Schaumig geschlagene Masse geht im Ofen auf wie ein Soufflé und fällt beim Abkühlen zusammen. Dabei reißt die Oberfläche.",
+      "fix": [
+        "Frischkäse und Eier bei Raumtemperatur verwenden, dann glatt wird es auch ohne Schlagen",
+        "Auf niedriger Stufe nur verrühren, bis alles verbunden ist"
+      ]
+    }
+  ],
+  "diagnose": {
+    "q1": {
+      "frage": "War der Kuchen beim Herausnehmen schon in der Mitte ganz fest?",
+      "antworten": [
+        [
+          "Nein",
+          "u0"
+        ],
+        [
+          "Ja",
+          "q2"
+        ]
+      ]
+    },
+    "q2": {
+      "frage": "Ging er im Ofen hoch auf und sank beim Abkühlen wieder ein?",
+      "antworten": [
+        [
+          "Ja",
+          "u1"
+        ],
+        [
+          "Nein",
+          "u2"
+        ]
+      ]
+    },
+    "u0": {
+      "ursache": 0
+    },
+    "u1": {
+      "ursache": 1
+    },
+    "u2": {
+      "ursache": 2
+    }
+  },
+  "faustregeln": [
+    "Für eine glatte Oberfläche: Herausnehmen, solange die Mitte noch wackelt, weil sie beim Abkühlen [[nachgaren|nachgart]] und fest wird.",
+    "Langsam abkühlen lassen, erst im offenen Ofen, dann bei Raumtemperatur, erst danach in den Kühlschrank.",
+    "Ist er trotzdem gerissen: ganz auskühlen lassen und mit Früchten, Rahm oder gesüßtem Sauerrahm bedecken."
+  ],
+  "links": [
+    "eiweiss-gerinnung",
+    "wasserbad",
+    "nachgaren",
+    "kuchen-sinkt-ein",
+    "kerntemperatur",
+    "w-eier"
+  ],
+  "welten": [
+    "w-gebaeck",
+    "w-eier"
+  ],
+  "visual": {
+    "vorlage": "entscheidungsbaum",
+    "illustration": "a round baked cheesecake in a springform pan with a long crack across its golden top, a wooden spoon and a kitchen thermometer beside it"
+  },
+  "quellen": [
+    {
+      "titel": "King Arthur Baking: Why did my cheesecake crack?",
+      "url": "https://www.kingarthurbaking.com/blog/2024/05/09/why-did-my-cheesecake-crack"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Eier: Eiercremes"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}
