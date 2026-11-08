@@ -52,7 +52,14 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
   const readSet = useMemo(() => new Set(gelesen), [gelesen]);
   const [incoming, setIncoming] = useState<string[]>([]);
   const [copied, setCopied] = useState(false);
-  const found = useMemo(() => (q.trim() ? search(items, q) : null), [items, q]);
+  // Zusätzliche Suchwörter (Ursachen, Faustregeln, andere Sprache) erst laden, wenn jemand sucht.
+  const [extras, setExtras] = useState<Record<string, string> | undefined>();
+  const wantExtras = q.trim().length > 0;
+  useEffect(() => {
+    if (!wantExtras || extras) return;
+    fetch(`/suche-index/${lang}`).then((r) => (r.ok ? r.json() : undefined)).then((x) => x && setExtras(x)).catch(() => {});
+  }, [wantExtras, extras, lang]);
+  const found = useMemo(() => (q.trim() ? search(items, q, extras) : null), [items, q, extras]);
   const res = found?.scores ?? null;
   const best = (found?.best ?? null) as LibItem | null;
   const isWritten = (e: LibItem) => e.status !== "geplant";

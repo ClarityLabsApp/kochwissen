@@ -79,8 +79,8 @@ export function libraryData(lang: Lang = "de") {
   const tr = (id: string) => (lang === "en" ? en.get(id) : undefined);
   const items = [...master.values()].map((m) => ({
     ...m,
-    titel: tr(m.id)?.titel ?? m.titel,
-    synonyme: tr(m.id)?.synonyme ?? m.synonyme,
+    titel: tr(m.id)?.titel ?? entries.get(m.id)?.titel ?? m.titel,
+    synonyme: tr(m.id)?.synonyme ?? entries.get(m.id)?.synonyme ?? m.synonyme,
     status: entries.has(m.id) ? entries.get(m.id)!.status : m.status,
     kurz: tr(m.id)?.kurz ?? entries.get(m.id)?.kurz ?? null,
   }));
@@ -182,4 +182,26 @@ export function reviewList(homeIds: string[]): ReviewItem[] {
     const grund = home ? "Startseite" : path ? "Lernpfad" : b >= 8 ? "oft verlinkt" : "";
     return { id: e.id, titel: e.titel, typ: e.typ, kurz: plainText(e.kurz), prio, grund };
   }).sort((a, b) => b.prio - a.prio);
+}
+
+/** Zusätzliche Suchwörter je Eintrag (wird erst beim Tippen geladen): Titel und Synonyme der anderen Sprache,
+ *  Ursachen mit Lösungen, Faustregeln, Schlüsselmomente, Material. Glossar-Markierungen werden entfernt. */
+export function searchExtras(lang: Lang = "de"): Record<string, string> {
+  const { entries, master, en } = load();
+  const strip = (s: string) => s.replace(/\[\[[a-z0-9-]+\|([^\]]+)\]\]/g, "$1").replace(/\[\[([a-z0-9-]+)\]\]/g, (_, id) => id.replace(/-/g, " "));
+  const out: Record<string, string> = {};
+  for (const id of new Set([...master.keys(), ...entries.keys()])) {
+    const de = entries.get(id), tr = en.get(id), m = master.get(id);
+    const e = lang === "en" ? getEntry(id, "en") : de;
+    const other = lang === "en" ? [de?.titel ?? m?.titel, ...(de?.synonyme ?? m?.synonyme ?? [])] : [tr?.titel, ...(tr?.synonyme ?? [])];
+    const parts: (string | undefined)[] = [...other];
+    if (e) {
+      for (const u of e.ursachen ?? []) parts.push(u.titel, ...u.fix);
+      parts.push(...(e.faustregeln ?? []), ...(e.schluesselmomente ?? []).map((s) => s.schritt), ...(e.material ?? []), ...(e.hebel ?? []));
+      if (e.mythos) parts.push(e.mythos.behauptung);
+    }
+    const txt = strip(parts.filter(Boolean).join(" · "));
+    if (txt) out[id] = txt.slice(0, 900);
+  }
+  return out;
 }
