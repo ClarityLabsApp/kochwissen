@@ -21,6 +21,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...pair("/", 1),
     ...pair("/pfad", 0.8),
+    ...["/probleme", "/ziele", "/verstehen", "/ausprobieren"].flatMap((p) => pair(p, 0.8)),
+    ...pair("/alle", 0.5),
     ...lernpfade().flatMap((p) => pair(`/pfad/${p.id}`, 0.7, enPaths.has(p.id))),
     ...allIds().flatMap((id) => pair(`/eintrag/${id}`, 0.6, isTranslated(id))),
     ...pair("/impressum", 0.1),

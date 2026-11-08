@@ -4,6 +4,7 @@ import Link from "next/link";
 import Library from "@/components/Library";
 import { appearsIn, hasPicture, libraryData, lernpfade } from "@/lib/content";
 import { href, t, type Lang } from "@/lib/i18n";
+import { MoreGroups } from "./HubView";
 
 /** Bis zu drei Bilder für einen Lernpfad: eigene Bilder der Schritte, sonst Bilder, bei denen die Schritte vorkommen. */
 export function pfadPics(ids: string[]) {
@@ -25,6 +26,7 @@ export default function HomeView({ lang }: { lang: Lang }) {
         <p className="name-note"><Link href={href(lang, "/eintrag/garum")}><span className="mono">{T.home.nameQ}</span> {T.home.nameA} →</Link></p>
       </header>
       <Library items={items} illus={illus} lang={lang} pfade={lernpfade(lang).map((p) => ({ id: p.id, titel: p.titel, n: p.schritte.length, dauer: p.dauer, fuer: p.fuer, pics: pfadPics(p.schritte.map((x) => x.id)) }))} />
+      <MoreGroups lang={lang} />
     </main>
   );
 }

@@ -205,3 +205,8 @@ export function searchExtras(lang: Lang = "de"): Record<string, string> {
   }
   return out;
 }
+
+/** Lebensmittel-Welten mit Bild, in der Reihenfolge der Masterliste (für Menü und Startseite). */
+export function worldList(lang: Lang = "de"): { id: string; titel: string }[] {
+  return libraryData(lang).filter((e) => e.typ === "welt" && hasPicture(e.id)).map((e) => ({ id: e.id, titel: e.titel }));
+}

@@ -10,7 +10,9 @@ import StepFlow from "@/components/visuals/StepFlow";
 import PathNav from "@/components/PathNav";
 import PrintButton from "@/components/PrintButton";
 import MerkButton from "@/components/MerkButton";
-import { appearsIn, getEntry, getMasterItem, hasPicture, isTranslated, lernpfade, plainText, titleOf, typOf, type Typ } from "@/lib/content";
+import { appearsIn, getEntry, getMasterItem, hasPicture, isTranslated, lernpfade, libraryData, plainText, titleOf, typOf, type Typ } from "@/lib/content";
+import { GROUPS, groupOfType } from "@/lib/nav";
+import { Crumbs, Row } from "./HubView";
 import { href, t, type Lang } from "@/lib/i18n";
 import { CONTACT_EMAIL, OWNER, SITE_URL } from "@/lib/site";
 
@@ -42,7 +44,7 @@ function entryJsonLd(id: string, lang: Lang) {
       "@context": "https://schema.org", "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Garum", item: home },
-        { "@type": "ListItem", position: 2, name: cat, item: `${home}${home.endsWith("/") ? "" : "/"}?k=${typ}` },
+        { "@type": "ListItem", position: 2, name: groupOfType(typ) ? t(lang).hub[groupOfType(typ)!][0] : cat, item: SITE_URL + href(lang, groupOfType(typ) ? `/${groupOfType(typ)}` : "/") },
         { "@type": "ListItem", position: 3, name: e.titel, item: url },
       ],
     },
@@ -96,11 +98,16 @@ export default function EntryView({ id, lang }: { id: string; lang: Lang }) {
   const ln = (p: string) => href(lang, p);
 
   const hasIllu = existsSync(join(process.cwd(), "public/illustrationen", `${id}.webp`));
+  const H = T.hub, grp = groupOfType(typ);
+  const w0 = typ === "welt" ? undefined : (e?.welten ?? m?.welten ?? [])[0];
+  const crumbs = <Crumbs lang={lang} trail={typ === "welt" ? [[H.welten, "/#welten"]] : [...(grp ? [[H[grp][0], `/${grp}`] as [string, string]] : []), ...(w0 ? [[titleOf(w0, lang), `/eintrag/${w0}`] as [string, string]] : [])]} />;
   const head = (
     <div className={`ehead${hasIllu ? " with-illu" : ""}`}>
       <div className="ehead-text">
         <div className="eyebrow">
-          <span className="tag" style={{ background: `var(--t-${typ})` }}>{T.types[typ]?.[2] ?? typ}</span>
+          {groupOfType(typ)
+            ? <Link className="tag" href={ln(`/${groupOfType(typ)}`)} style={{ background: `var(--t-${typ})` }}>{T.types[typ]?.[2] ?? typ}</Link>
+            : <span className="tag" style={{ background: `var(--t-${typ})` }}>{T.types[typ]?.[2] ?? typ}</span>}
           {e?.schwierigkeit && <span className="mono">{T.level[e.schwierigkeit] ?? e.schwierigkeit}</span>}
           <span className="mono">{T.status[e ? e.status : "geplant"] ?? e?.status}</span>
           {e && <MerkButton id={id} lang={lang} />}
@@ -120,6 +127,7 @@ export default function EntryView({ id, lang }: { id: string; lang: Lang }) {
     return (
       <main className="wrap" lang={lang}>
         <article className="entry">
+          {crumbs}
           {head}
           <p className="planned-note">{L.planned}</p>
           {related.length > 0 && <div className="block"><span className="mono">{L.related}</span><Chips ids={related} lang={lang} /></div>}
@@ -158,10 +166,12 @@ export default function EntryView({ id, lang }: { id: string; lang: Lang }) {
     <main className="wrap" lang={untranslated ? "de" : lang}>
       {!untranslated && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(entryJsonLd(id, lang)).replace(/</g, "\\u003c") }} />}
       <article className="entry">
+        {crumbs}
         {head}
         {untranslated && <p className="untranslated" lang="en">{L.notTranslated}</p>}
         <PathNav entry={e.id} paths={paths} lang={lang} />
         <p className="kurz"><strong>{L.short}</strong> <R text={e.kurz} /></p>
+        {typ === "welt" && <WorldHub id={id} titel={e.titel} lang={lang} />}
         {e.bild_im_kopf && <div className="box"><span className="mono">{L.picture}</span><p><R text={e.bild_im_kopf} /></p></div>}
         <Visual e={e} lang={lang} />
         {e.bedeutung && <div className="block"><h2>{L.means(e.titel)}</h2><div className="prose"><p><R text={e.bedeutung} /></p></div></div>}
@@ -240,6 +250,7 @@ export default function EntryView({ id, lang }: { id: string; lang: Lang }) {
           const rest = (e.links ?? []).filter((id) => !inText.has(id) && !seen.includes(id));
           return rest.length ? <div className="block"><span className="mono">{L.related}</span><Chips ids={rest} lang={lang} /></div> : null;
         })()}
+        {typ !== "welt" && <NextBlock id={id} lang={lang} />}
         {(() => {
           // Rückmeldung zum Eintrag: öffnet eine E-Mail mit Titel und Link im Betreff
           const url = `${SITE_URL}${href(lang, `/eintrag/${e.id}`)}`;
@@ -254,5 +265,78 @@ export default function EntryView({ id, lang }: { id: string; lang: Lang }) {
         <PathNav entry={e.id} paths={paths} lang={lang} />
       </article>
     </main>
+  );
+}
+
+
+type LibEntry = ReturnType<typeof libraryData>[number];
+const writtenItems = (lang: Lang) => libraryData(lang).filter((x) => x.status !== "geplant");
+
+/** Welt-Seite: alles zu diesem Lebensmittel, nach den vier Fragen geordnet. */
+function WorldHub({ id, titel, lang }: { id: string; titel: string; lang: Lang }) {
+  const H = t(lang).hub;
+  const inWorld = writtenItems(lang).filter((x) => x.welten?.includes(id) && x.id !== id);
+  const cols = GROUPS.map((g) => [g, inWorld.filter((x) => g.types.includes(x.typ)).sort((a, b) => a.titel.localeCompare(b.titel, lang))] as const).filter(([, r]) => r.length);
+  if (!inWorld.length) return null;
+  const MAX = 6;
+  return (
+    <section className="world-hub" aria-label={H.inWorld(titel)}>
+      <h2>{H.inWorld(titel)}</h2>
+      <p>{H.inWorldLede(inWorld.length)}</p>
+      <div className="world-cols">
+        {cols.map(([g, r]) => (
+          <div key={g.key} className="world-col">
+            <h3 className="mono"><i style={{ background: `var(--t-${g.color})` }} />{H[g.key][0]} · {r.length}</h3>
+            <ul className="hub-list">{r.slice(0, MAX).map((x) => <Row key={x.id} e={x} lang={lang} />)}</ul>
+            {r.length > MAX && (
+              <details><summary>{H.showAll(r.length)} ↓</summary><ul className="hub-list">{r.slice(MAX).map((x) => <Row key={x.id} e={x} lang={lang} />)}</ul></details>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+/** „Wie weiter?“: drei Karten am Ende eines Eintrags, damit man nicht in einer Sackgasse landet. */
+function NextBlock({ id, lang }: { id: string; lang: Lang }) {
+  const H = t(lang).hub, T = t(lang);
+  const all = writtenItems(lang);
+  const byId = new Map(all.map((x) => [x.id, x]));
+  const e = getEntry(id, lang);
+  if (!e) return null;
+  const links = [...(e.ursachen ?? []).map((u) => u.prinzip).filter(Boolean) as string[], ...(e.schluesselmomente ?? []).map((x) => x.prinzip).filter(Boolean) as string[], ...(e.links ?? [])]
+    .filter((x) => x !== id && byId.has(x));
+  const used = new Set<string>([id]);
+  const pick = (cands: string[]) => { const x = cands.find((c) => !used.has(c)); if (x) used.add(x); return x; };
+  const why = e.typ === "prozess"
+    ? pick(links.filter((x) => ["technik", "ziel", "symptom"].includes(byId.get(x)!.typ)))
+    : pick(links.filter((x) => byId.get(x)!.typ === "prozess"));
+  const w0 = e.welten?.[0];
+  const hash = [...id].reduce((a, c) => a + c.charCodeAt(0), 0);
+  const sameWorld = w0 ? all.filter((x) => x.welten?.includes(w0) && x.typ !== "welt" && x.id !== id && x.typ !== "begriff") : [];
+  const rotated = [...sameWorld.filter((x) => hasPicture(x.id)), ...sameWorld.filter((x) => !hasPicture(x.id))];
+  const off = rotated.length ? hash % rotated.length : 0;
+  const world = pick([...rotated.slice(off), ...rotated.slice(0, off)].map((x) => x.id));
+  const rel = pick([...links.filter((x) => hasPicture(x)), ...links]);
+  const cards = [[why, H.nextWhy], [world, w0 ? H.nextWorld(titleOf(w0, lang)) : H.nextRelated], [rel, H.nextRelated]].filter(([x]) => x) as [string, string][];
+  if (!cards.length) return null;
+  return (
+    <section className="next-block" aria-label={H.next}>
+      <h2>{H.next}</h2>
+      <div className="next-cards">
+        {cards.map(([x, label]) => {
+          const it = byId.get(x)!;
+          const pic = hasPicture(x) ? x : (it.welten ?? []).find(hasPicture);
+          return (
+            <Link key={x} href={href(lang, `/eintrag/${x}`)} className="next-card" style={{ ["--c" as string]: `var(--t-${it.typ})` }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              {pic ? <img src={`/illustrationen/${pic}.webp`} alt="" width={64} height={64} loading="lazy" /> : <span className="ph" style={{ background: `var(--t-${it.typ})` }} />}
+              <span><span className="mono">{label} · {T.types[it.typ]?.[2]}</span><strong>{it.titel}</strong></span>
+            </Link>
+          );
+        })}
+      </div>
+    </section>
   );
 }

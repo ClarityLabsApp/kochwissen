@@ -8,6 +8,7 @@ import "@fontsource/jetbrains-mono/600.css";
 import "./globals.css";
 import PrintHelper from "@/components/PrintHelper";
 import SiteNav from "@/components/SiteNav";
+import { worldList } from "@/lib/content";
 import SiteFooter from "@/components/SiteFooter";
 import { Analytics } from "@vercel/analytics/next";
 
@@ -29,7 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <a href="#inhalt" className="skip">Zum Inhalt springen · Skip to content</a>
         <PrintHelper />
         <div className="wrap wide" style={{ paddingBottom: 0, gap: 0 }}>
-          <SiteNav />
+          <SiteNav worlds={{ de: worldList("de"), en: worldList("en") }} />
         </div>
         <div id="inhalt">{children}</div>
         <SiteFooter />

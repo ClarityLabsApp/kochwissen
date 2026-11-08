@@ -16,6 +16,19 @@ export function switchPath(pathname: string, to: Lang) {
 }
 
 const de = {
+  hub: {
+    probleme: ["Probleme lösen", "Etwas ist schiefgegangen? Finde heraus, warum, und wie es nächstes Mal klappt."],
+    ziele: ["Ziele erreichen", "Knuspriger, saftiger, luftiger: die Hebel dafür."],
+    verstehen: ["Verstehen", "Was in Pfanne, Ofen und Teig passiert, welche Handgriffe helfen und was jede Zutat tut."],
+    ausprobieren: ["Ausprobieren", "Warum Rezepte funktionieren, Experimente für die Küche und Grundzutaten selber machen."],
+    navProbleme: "Probleme", navZiele: "Ziele", navVerstehen: "Verstehen", navAusprobieren: "Ausprobieren",
+    welten: "Welten", allWorlds: "Alle Welten auf einen Blick", az: "Alle Einträge von A bis Z", azTitle: "Alle Einträge", azLede: (n: number) => `${n} Einträge, alphabetisch.`,
+    search: "Suchen", searchPh: "Suchen …", menu: "Menü", close: "Schließen", merk: "Merkliste",
+    inWorld: (w: string) => `Alles zu ${w}`, inWorldLede: (n: number) => `${n} Einträge, nach Frage geordnet.`,
+    next: "Wie weiter?", nextPath: "Nächster Schritt im Lernpfad", nextWhy: "Verstehen, warum", nextWorld: (w: string) => `Mehr zu ${w}`, nextRelated: "Passt dazu",
+    jump: "Springe zu", other: "Weitere", showAll: (n: number) => `Alle ${n} zeigen`, explore: "Alles entdecken", exploreLede: "Vier Fragen, ein Ziel: verstehen, was in der Küche passiert.",
+    vorgaenge: "Vorgänge", worldsLede: "Wähle ein Lebensmittel und sieh alles dazu: Probleme, Ziele, Vorgänge und Rezepte.",
+  },
   nav: { library: "Bibliothek", paths: "Lernpfade", skip: "Zum Inhalt springen" },
   home: {
     eyebrow: (n: number, m: number) => `Die Bibliothek · ${n} von ${m} Einträgen geschrieben`,
@@ -34,7 +47,7 @@ const de = {
   doors: {
     symptom: ["Etwas ist schiefgegangen", "Finde heraus, warum, und wie es nächstes Mal klappt.", "Alle Probleme"],
     ziel: ["Ich will, dass es … wird", "Knuspriger, saftiger, luftiger: die Hebel dafür.", "Alle Ziele"],
-    prozess: ["Ich will verstehen", "Was in Pfanne, Ofen und Teig wirklich passiert.", "Alle Prozesse"],
+    prozess: ["Ich will verstehen", "Was in Pfanne, Ofen und Teig wirklich passiert.", "Alles zum Verstehen"],
     tab: ["Schiefgelaufen", "Mein Ziel", "Verstehen"],
     pathLink: "Lernpfad: Die 10 wichtigsten Prinzipien",
   },
@@ -79,6 +92,19 @@ const de = {
 
 type Dict = typeof de;
 const en: Dict = {
+  hub: {
+    probleme: ["Fix problems", "Something went wrong? Find out why, and how to get it right next time."],
+    ziele: ["Reach goals", "Crispier, juicier, lighter: the levers for it."],
+    verstehen: ["Understand", "What happens in the pan, the oven and the dough, which techniques help and what each ingredient does."],
+    ausprobieren: ["Try it", "Why recipes work, kitchen experiments and basic ingredients made from scratch."],
+    navProbleme: "Problems", navZiele: "Goals", navVerstehen: "Understand", navAusprobieren: "Try it",
+    welten: "Foods", allWorlds: "All foods at a glance", az: "All entries from A to Z", azTitle: "All entries", azLede: (n: number) => `${n} entries, alphabetically.`,
+    search: "Search", searchPh: "Search …", menu: "Menu", close: "Close", merk: "Saved",
+    inWorld: (w: string) => `Everything about ${w}`, inWorldLede: (n: number) => `${n} entries, ordered by question.`,
+    next: "Where next?", nextPath: "Next step in the learning path", nextWhy: "Understand why", nextWorld: (w: string) => `More on ${w}`, nextRelated: "Goes with this",
+    jump: "Jump to", other: "Other", showAll: (n: number) => `Show all ${n}`, explore: "Explore everything", exploreLede: "Four questions, one aim: understand what happens in the kitchen.",
+    vorgaenge: "Processes", worldsLede: "Pick a food and see everything about it: problems, goals, processes and recipes.",
+  },
   nav: { library: "Library", paths: "Learning paths", skip: "Skip to content" },
   home: {
     eyebrow: (n, m) => `The library · ${n} of ${m} entries written`,
@@ -97,7 +123,7 @@ const en: Dict = {
   doors: {
     symptom: ["Something went wrong", "Find out why, and how to get it right next time.", "All problems"],
     ziel: ["I want it to be …", "Crispier, juicier, lighter: the levers for it.", "All goals"],
-    prozess: ["I want to understand", "What really happens in the pan, the oven and the dough.", "All processes"],
+    prozess: ["I want to understand", "What really happens in the pan, the oven and the dough.", "Everything to understand"],
     tab: ["Went wrong", "My goal", "Understand"],
     pathLink: "Learning path: The 10 key principles",
   },
