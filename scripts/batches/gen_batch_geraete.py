@@ -26,9 +26,9 @@ def T(id, titel, syn, kurz, bild, was, warum, schritte, regeln, links, illu, que
     e = {"id": id, "typ": "technik", "titel": titel, "synonyme": syn, "kurz": kurz, "bild_im_kopf": bild, "was_passiert": was, "warum_wichtig": warum,
          "schritte": schritte, "faustregeln": regeln, "links": links, "welten": list(welten), "visual": {"vorlage": "ablauf", "illustration": illu},
          "quellen": quellen, "status": "entwurf", "schwierigkeit": schw}
-    if mythos:  # L((behauptung, richtig), (claim, truth))
-        de, en = res(mythos, 0), res(mythos, 1)
-        e["mythos"] = {"behauptung": L(de[0], en[0]), "richtig": L(de[1], en[1])}
+    if mythos:  # L((behauptung, claim), (richtig, truth))
+        claim, truth = res(mythos, 0), res(mythos, 1)  # je (deutsch, englisch)
+        e["mythos"] = {"behauptung": L(*claim), "richtig": L(*truth)}
     return e
 
 
