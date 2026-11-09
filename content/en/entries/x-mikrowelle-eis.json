@@ -1,0 +1,28 @@
+{
+  "id": "x-mikrowelle-eis",
+  "titel": "Ice stays cold in the microwave",
+  "kurz": "A glass of water and a glass of ice cubes, microwaved for the same time: the water gets hot, the ice barely melts. That is why frozen food thaws so unevenly.",
+  "bild_im_kopf": "Like dancers in a crowded lift: the music plays, but nobody can turn.",
+  "beobachtung": "The water has become noticeably warm. Only a little of the ice has melted, and the meltwater at the bottom is warm while the cubes stay cold.",
+  "erklaerung": "Microwaves heat by twisting water [[molekuel|molecules]] back and forth. In ice the molecules are trapped in a rigid lattice and can barely turn. Liquid water absorbs the energy much better. As soon as a little ice melts somewhere, that very spot heats up fast. That is how the edges cook during defrosting while the centre is still frozen.",
+  "dauer": "5 minutes",
+  "synonyme": [
+    "microwave experiment",
+    "ice cube microwave",
+    "ice doesn't melt in microwave",
+    "why microwave defrosting is uneven"
+  ],
+  "schritte": [
+    "Fill one glass with ice cubes and the other to the same height with cold water.",
+    "Heat only the glass of water for 30 seconds on full power, then feel or measure it.",
+    "Then heat only the glass of ice for the same time.",
+    "Compare: how warm is the water, and how much ice has melted?"
+  ],
+  "material": [
+    "two identical microwave-safe glasses",
+    "ice cubes",
+    "cold water",
+    "a microwave",
+    "a thermometer, if you have one"
+  ]
+}

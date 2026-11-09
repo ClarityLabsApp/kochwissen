@@ -1,0 +1,54 @@
+{
+  "id": "schnellkochtopf",
+  "typ": "technik",
+  "titel": "Schnellkochtopf: Kochen über 100 °C",
+  "synonyme": [
+    "Dampfkochtopf",
+    "Drucktopf",
+    "Schnellkochtopf Zeiten",
+    "Instant Pot",
+    "Schnellkochtopf Bohnen"
+  ],
+  "kurz": "Im dicht verschlossenen Topf steigt der Druck, und Wasser kocht erst bei etwa 120 °C. Diese 20 Grad mehr machen Schmorfleisch und Hülsenfrüchte etwa dreimal so schnell weich.",
+  "bild_im_kopf": "Wie ein Deckel auf der Siedegrenze: Der Dampf darf nicht entweichen, also klettert die Temperatur weiter.",
+  "was_passiert": "Beim Kochen entsteht Dampf, der im geschlossenen Topf nicht entweichen kann. Der Druck steigt auf knapp das Doppelte, und damit der [[siedepunkt-druck|Siedepunkt]] auf rund 115 bis 120 °C. Bei dieser Temperatur löst sich [[kollagen-gelatine|Bindegewebe]] zu Gelatine viel schneller, und die Zellwände von Bohnen werden rascher weich. Bräunung gibt es im Topf trotzdem keine, weil alles feucht bleibt.",
+  "warum_wichtig": "Ein Ragout in 40 statt 120 Minuten, Kichererbsen ohne stundenlanges Köcheln: Das spart viel Zeit. Weil man nicht hineinschauen kann, braucht es aber verlässliche Zeiten und etwas Vorsicht.",
+  "schritte": [
+    "Fleisch vorher in einer Pfanne oder im offenen Topf anbraten, weil unter Druck nichts bräunt.",
+    "Topf höchstens zu zwei Dritteln füllen, bei Hülsenfrüchten und Reis nur bis zur Hälfte.",
+    "Immer genug Flüssigkeit zugeben, mindestens so viel, wie die Anleitung nennt.",
+    "Deckel schließen, auf Druck bringen, dann die Hitze herunterschalten und die Zeit ab erreichtem Druck messen.",
+    "Den Druck ganz entweichen lassen, bevor man den Deckel öffnet."
+  ],
+  "faustregeln": [
+    "Für Hülsenfrüchte: wenig füllen und etwas Öl zugeben, weil ihr Schaum das Ventil verstopfen kann.",
+    "Für zartes Gemüse und Fisch: lieber nicht, weil sie in Minuten zerfallen.",
+    "Ventil und Dichtungsring regelmäßig prüfen und reinigen."
+  ],
+  "links": [
+    "siedepunkt-druck",
+    "kollagen-gelatine",
+    "schmoren",
+    "bohnen-nicht-weich",
+    "fond"
+  ],
+  "welten": [
+    "w-geraete"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a stainless steel pressure cooker with a locked lid and a small valve releasing a wisp of steam"
+  },
+  "quellen": [
+    {
+      "titel": "Wikipedia: Pressure cooking",
+      "url": "https://en.wikipedia.org/wiki/Pressure_cooking"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kochen mit Wasser: Druck und Siedepunkt"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "fortgeschritten"
+}

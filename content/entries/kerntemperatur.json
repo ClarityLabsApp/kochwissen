@@ -18,5 +18,8 @@
     }
   ],
   "status": "geprueft",
-  "schwierigkeit": "einsteiger"
+  "schwierigkeit": "einsteiger",
+  "welten": [
+    "w-geraete"
+  ]
 }

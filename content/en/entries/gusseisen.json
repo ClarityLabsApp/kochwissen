@@ -1,0 +1,32 @@
+{
+  "id": "gusseisen",
+  "titel": "Seasoning and caring for cast iron",
+  "kurz": "The black layer on cast iron and carbon steel pans is not dirt but oil that was bonded into a hard, smooth layer at high heat. It protects against rust and makes food stick less.",
+  "bild_im_kopf": "Like a varnish you bake on yourself: every thin coat makes the surface smoother.",
+  "was_passiert": "When a very thin film of oil is heated past its smoke point, the fat [[molekuel|molecules]] link up into a solid network, a kind of plastic. This patina bonds to the iron and fills its pores. Cast iron is heavy and conducts heat rather poorly: it heats slowly and unevenly. In return it stores a lot of heat and barely cools when searing.",
+  "warum_wichtig": "Well seasoned, an iron pan sears steaks with a crust no non-stick pan can match, and it lasts a lifetime. Badly cared for, it rusts and everything sticks.",
+  "synonyme": [
+    "cast iron skillet",
+    "seasoning a pan",
+    "carbon steel pan",
+    "cast iron soap",
+    "cast iron rust",
+    "pan patina"
+  ],
+  "faustregeln": [
+    "For a smooth patina: many thin coats instead of one thick one, because thick oil stays sticky.",
+    "Preheat for ten minutes on medium heat before searing, because cast iron heats unevenly.",
+    "Cook long acidic braises with tomato or wine in an enamelled pot instead, because acid attacks the patina."
+  ],
+  "schritte": [
+    "Wash the pan and dry it completely on the hob.",
+    "Rub in a teaspoon of neutral oil and wipe almost all of it off with kitchen paper: it should look matt, not oily.",
+    "Heat it upside down in the oven at 230 to 250 °C for an hour, then let it cool in the oven.",
+    "Repeat three or four times.",
+    "After cooking, rinse it hot, dry it on the hob and oil it very thinly."
+  ],
+  "mythos": {
+    "behauptung": "Eine gut eingebrannte Patina ist fest verbunden und verträgt etwas Spülmittel. Schaden richten Einweichen und Nässe an, weil das Eisen dann rostet.",
+    "richtig": "A well-seasoned patina is firmly bonded and can take a little washing-up liquid. Soaking and leaving it wet do the damage, because the iron then rusts."
+  }
+}

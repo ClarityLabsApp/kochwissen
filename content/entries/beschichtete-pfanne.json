@@ -1,0 +1,58 @@
+{
+  "id": "beschichtete-pfanne",
+  "typ": "technik",
+  "titel": "Beschichtete Pfanne richtig nutzen",
+  "synonyme": [
+    "Teflonpfanne",
+    "Antihaftpfanne",
+    "Antihaft Beschichtung",
+    "Pfanne Beschichtung kaputt",
+    "Keramikpfanne"
+  ],
+  "kurz": "Eine Antihaft-Beschichtung ist so glatt, dass Eiweiß kaum Halt findet. Sie ist ideal für Eier und Fisch, verträgt aber keine sehr große Hitze.",
+  "bild_im_kopf": "Wie Wassertropfen auf einer Lotusblüte: Nichts kann sich festhalten.",
+  "was_passiert": "Klassische Beschichtungen bestehen aus PTFE, einem Kunststoff, an dem fast nichts haftet. Ab etwa 260 °C beginnt er sich zu zersetzen, und es entstehen Dämpfe. Eine leere Pfanne erreicht diese Temperatur auf starker Flamme oder Induktion in wenigen Minuten, mit Essen darin kaum. Keramikbeschichtungen vertragen mehr Hitze, verlieren ihre Glätte aber schneller.",
+  "warum_wichtig": "Für eine dunkle Kruste auf Steak braucht es mehr Hitze, als die Beschichtung mag. Wer das weiß, nimmt für jede Aufgabe die passende Pfanne, und die beschichtete hält viel länger.",
+  "schritte": [
+    "Fett oder Bratgut vor dem Erhitzen in die Pfanne geben, nie leer stark aufheizen.",
+    "Höchstens mittlere bis mittelhohe Stufe verwenden.",
+    "Mit Holz- oder Silikonwendern arbeiten, nicht mit Metall.",
+    "Die Pfanne abkühlen lassen, bevor sie ins Wasser kommt.",
+    "Von Hand mit weichem Schwamm spülen."
+  ],
+  "faustregeln": [
+    "Für Eier, Pfannkuchen und Fisch: die beschichtete Pfanne, weil Eiweiß darauf nicht anhaftet.",
+    "Für Steak und scharfes Anbraten: Eisen oder Edelstahl, weil die Kruste mehr Hitze braucht, als die Beschichtung verträgt.",
+    "Ist die Beschichtung zerkratzt oder klebt alles, ersetzen."
+  ],
+  "links": [
+    "pfannenmaterial",
+    "induktion",
+    "fisch-klebt",
+    "pfanne-vorheizen",
+    "gusseisen"
+  ],
+  "welten": [
+    "w-geraete"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a non-stick frying pan with a perfectly sliding fried egg and a silicone spatula beside it"
+  },
+  "quellen": [
+    {
+      "titel": "Poison Control (National Capital Poison Center): Teflon flu",
+      "url": "https://www.poison.org/articles/teflon-flu"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kochgeschirr und Wärmequellen"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "mythos": {
+    "behauptung": "Beschichtete Pfannen sind immer giftig.",
+    "richtig": "Non-stick pans are always toxic."
+  }
+}

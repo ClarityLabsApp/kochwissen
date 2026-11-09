@@ -525,6 +525,54 @@
 [
 "sauce-wein"
 ]
+],
+[
+"airfryer pommes",
+[
+"airfryer"
+]
+],
+[
+"pfanne geht nicht auf induktion",
+[
+"induktion"
+]
+],
+[
+"mikrowelle kalte stellen",
+[
+"mikrowelle"
+]
+],
+[
+"gusseisen einbrennen",
+[
+"gusseisen"
+]
+],
+[
+"teflon pfanne zu heiss",
+[
+"beschichtete-pfanne"
+]
+],
+[
+"pizzastein aufheizen",
+[
+"pizzastein"
+]
+],
+[
+"messer schärfen",
+[
+"messer"
+]
+],
+[
+"wok gemüse wässrig",
+[
+"wok"
+]
 ]
 ],
 "en": [
@@ -704,6 +752,24 @@
 "wine pairing",
 [
 "wein-essen"
+]
+],
+[
+"air fryer chips",
+[
+"airfryer"
+]
+],
+[
+"seasoning cast iron",
+[
+"gusseisen"
+]
+],
+[
+"pressure cooker",
+[
+"schnellkochtopf"
 ]
 ]
 ]

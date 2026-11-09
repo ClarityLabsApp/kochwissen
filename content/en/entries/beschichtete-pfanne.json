@@ -1,0 +1,31 @@
+{
+  "id": "beschichtete-pfanne",
+  "titel": "Using a non-stick pan properly",
+  "kurz": "A non-stick coating is so slick that protein can barely grip it. It is ideal for eggs and fish, but cannot take very high heat.",
+  "bild_im_kopf": "Like water drops on a lotus leaf: nothing can get a hold.",
+  "was_passiert": "Classic coatings are made of PTFE, a plastic that almost nothing sticks to. From about 260 °C it starts to break down and gives off fumes. An empty pan reaches that temperature on a strong flame or induction within minutes, but hardly ever with food in it. Ceramic coatings tolerate more heat but lose their slickness faster.",
+  "warum_wichtig": "A dark crust on steak needs more heat than the coating likes. Knowing this, you use the right pan for each job, and the non-stick one lasts much longer.",
+  "synonyme": [
+    "non-stick pan",
+    "Teflon pan",
+    "nonstick coating",
+    "ruined non-stick pan",
+    "ceramic pan"
+  ],
+  "faustregeln": [
+    "For eggs, pancakes and fish: the non-stick pan, because protein doesn't stick to it.",
+    "For steak and hard searing: iron or stainless steel, because the crust needs more heat than the coating can take.",
+    "Replace it once the coating is scratched or everything sticks."
+  ],
+  "schritte": [
+    "Put fat or food into the pan before heating, never heat it empty on high.",
+    "Use medium to medium-high heat at most.",
+    "Use wooden or silicone spatulas, not metal.",
+    "Let the pan cool down before it goes into water.",
+    "Wash it by hand with a soft sponge."
+  ],
+  "mythos": {
+    "behauptung": "Bei normaler Kochhitze ist PTFE stabil. Problematisch wird es erst bei Überhitzung, typischerweise in einer leer aufgeheizten Pfanne.",
+    "richtig": "At normal cooking heat PTFE is stable. It only becomes a problem when overheated, typically in a pan heated empty."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "w-geraete",
+  "typ": "welt",
+  "titel": "Geräte & Werkzeug",
+  "synonyme": [
+    "Küchengeräte",
+    "Pfannen",
+    "Töpfe",
+    "Herd",
+    "Backofen",
+    "Kochgeschirr"
+  ],
+  "kurz": "Jedes Gerät bringt die Wärme auf eigene Art ins Essen: durch Kontakt, heiße Luft, Strahlung, Dampf oder Mikrowellen. Wer das weiß, versteht, warum dasselbe Rezept anders herauskommt.",
+  "bild_im_kopf": "Wie verschiedene Wege auf denselben Berg: Das Ziel ist gleich, aber Tempo und Aussicht unterscheiden sich.",
+  "was_passiert": "Eine Pfanne gibt Wärme durch direkten Kontakt weiter, ein Ofen über heiße Luft und Strahlung. Ein Dampfgarer nutzt kondensierenden Dampf, eine Mikrowelle erwärmt das Wasser im Essen selbst. Material und Masse entscheiden, wie viel Wärme ein Gerät speichert und wie schnell es sie abgibt.",
+  "warum_wichtig": "Viele Fehler liegen nicht am Rezept, sondern am Gerät: Eine leichte Pfanne kühlt beim Anbraten ab, ein Airfryer bräunt schneller als der Ofen.",
+  "faustregeln": [
+    "Für Kruste: viel Masse und viel Hitze, also schwere Pfanne, Pizzastahl oder heißes Gusseisen.",
+    "Für Zartes wie Eier und Fisch: eine Pfanne, die schnell reagiert und nicht klebt.",
+    "Rezepte für ein anderes Gerät als Startpunkt nehmen und früher nachschauen."
+  ],
+  "links": [
+    "waermeleitung",
+    "konvektion",
+    "waermestrahlung",
+    "pfannenmaterial"
+  ],
+  "visual": {
+    "vorlage": "keine",
+    "illustration": "a heavy cast-iron skillet, a copper saucepan, a chef's knife and a wooden spoon arranged together"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kochgeschirr und Wärmequellen"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "airfryer",
+  "typ": "technik",
+  "titel": "Airfryer: Heißluft statt Fett",
+  "synonyme": [
+    "Heißluftfritteuse",
+    "Air Fryer",
+    "Airfryer Pommes",
+    "Heissluftfritteuse",
+    "Airfryer Temperatur"
+  ],
+  "kurz": "Ein Airfryer ist ein kleiner Umluftofen mit sehr starkem Gebläse. Die schnelle Luft trocknet die Oberfläche rasch, darum bräunt er schneller als der Backofen.",
+  "bild_im_kopf": "Wie ein Föhn neben einem lauen Sommerwind: Gleich warme Luft, aber der Föhn trocknet die Haare viel schneller.",
+  "was_passiert": "Ein Heizstab sitzt direkt über dem Korb, ein Ventilator jagt die heiße Luft schnell um das Essen. Schnelle Luft reißt die feuchte, kühle Schicht an der Oberfläche weg. So verdampft das Wasser außen rasch, und die Oberfläche wird heiß genug für die [[maillard-reaktion|Maillard-Reaktion]]. Frittiert wird dabei nichts: Das Gargut liegt in Luft, nicht in Öl.",
+  "warum_wichtig": "Weil der Airfryer stärker trocknet und bräunt als ein Backofen, verbrennen Ofenrezepte darin leicht außen, bevor sie innen gar sind. Ein Löffel Öl macht den Unterschied zwischen trocken-braun und knusprig.",
+  "schritte": [
+    "Das Gargut trocken tupfen und mit wenig Öl rundum benetzen, etwa ein Teelöffel pro Portion.",
+    "Nur eine Lage in den Korb geben, damit die Luft überall hinkommt.",
+    "Ofenrezepte etwa 20 °C tiefer einstellen und nach zwei Dritteln der Zeit nachschauen.",
+    "Zwischendurch den Korb schütteln oder wenden.",
+    "Bei Pommes und Wedges: vorher kurz in Wasser vorkochen, dann im Airfryer fertig garen."
+  ],
+  "faustregeln": [
+    "Für knusprige Kartoffeln: vorkochen und wenig Öl, weil die Stärke außen eine Kruste bildet und das Öl die Wärme besser überträgt.",
+    "Für flüssige Teige: nicht in den Korb, weil das Gebläse sie verbläst und sie durch das Gitter laufen.",
+    "Für Saftiges wie Pouletbrust: [[kerntemperatur|Kerntemperatur]] messen, weil der Airfryer außen schneller ist als innen."
+  ],
+  "links": [
+    "konvektion",
+    "maillard-reaktion",
+    "verdampfen",
+    "umluft-ober-unterhitze",
+    "wedges-nicht-knusprig",
+    "g-pommes",
+    "kerntemperatur"
+  ],
+  "welten": [
+    "w-geraete"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a small black air fryer with its basket pulled out, filled with golden potato wedges"
+  },
+  "quellen": [
+    {
+      "titel": "PBS NOVA: How air fryers work, scientifically speaking",
+      "url": "https://www.pbs.org/wgbh/nova/article/how-air-fryers-work-physics-convection"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kochgeschirr und Wärmequellen"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "mythos": {
+    "behauptung": "Der Airfryer frittiert ohne Öl.",
+    "richtig": "An air fryer fries without oil."
+  }
+}

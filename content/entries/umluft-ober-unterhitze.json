@@ -33,7 +33,8 @@
   "welten": [
     "w-gebaeck",
     "w-brot",
-    "w-gemuese"
+    "w-gemuese",
+    "w-geraete"
   ],
   "visual": {
     "vorlage": "skala",

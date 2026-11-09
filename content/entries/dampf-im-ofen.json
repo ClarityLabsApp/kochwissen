@@ -31,7 +31,8 @@
     "dampflockerung"
   ],
   "welten": [
-    "w-brot"
+    "w-brot",
+    "w-geraete"
   ],
   "visual": {
     "vorlage": "ablauf"

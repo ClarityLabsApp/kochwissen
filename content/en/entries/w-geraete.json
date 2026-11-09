@@ -1,0 +1,21 @@
+{
+  "id": "w-geraete",
+  "titel": "Equipment & tools",
+  "kurz": "Every appliance gets heat into food in its own way: by contact, hot air, radiation, steam or microwaves. Knowing this explains why the same recipe turns out differently.",
+  "bild_im_kopf": "Like different trails up the same mountain: the summit is the same, but pace and view differ.",
+  "was_passiert": "A pan passes on heat by direct contact, an oven through hot air and radiation. A steamer uses condensing steam, a microwave heats the water inside the food itself. Material and mass decide how much heat a tool stores and how fast it releases it.",
+  "warum_wichtig": "Many failures are not down to the recipe but to the equipment: a thin pan cools down when searing, an air fryer browns faster than the oven.",
+  "synonyme": [
+    "kitchen appliances",
+    "pans",
+    "pots",
+    "stove",
+    "oven",
+    "cookware"
+  ],
+  "faustregeln": [
+    "For a crust: lots of mass and lots of heat, so a heavy pan, a pizza steel or hot cast iron.",
+    "For delicate things like eggs and fish: a pan that reacts fast and doesn't stick.",
+    "Treat recipes written for another appliance as a starting point and check earlier."
+  ]
+}

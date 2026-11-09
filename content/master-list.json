@@ -1,7 +1,7 @@
 {
   "version": 1,
   "stand": "2026-11-02",
-  "anzahl": 404,
+  "anzahl": 415,
   "eintraege": [
     {
       "id": "w-fleisch",
@@ -2482,7 +2482,9 @@
         "waermeleitung",
         "steak-grau"
       ],
-      "welten": [],
+      "welten": [
+        "w-geraete"
+      ],
       "synonyme": [
         "Gusseisen",
         "Edelstahl"
@@ -3131,7 +3133,8 @@
         "x-tanzender-tropfen"
       ],
       "welten": [
-        "w-fleisch"
+        "w-fleisch",
+        "w-geraete"
       ],
       "synonyme": [
         "Wassertropfen-Test"
@@ -3179,7 +3182,8 @@
       ],
       "welten": [
         "w-fleisch",
-        "w-fisch"
+        "w-fisch",
+        "w-geraete"
       ],
       "synonyme": [
         "Vakuumgaren"
@@ -3245,7 +3249,8 @@
       ],
       "welten": [
         "w-gemuese",
-        "w-fisch"
+        "w-fisch",
+        "w-geraete"
       ],
       "synonyme": [],
       "visual": {
@@ -3585,7 +3590,8 @@
         "dampflockerung"
       ],
       "welten": [
-        "w-brot"
+        "w-brot",
+        "w-geraete"
       ],
       "synonyme": [],
       "visual": {
@@ -5853,7 +5859,8 @@
       "welten": [
         "w-eier",
         "w-fleisch",
-        "w-getreide"
+        "w-getreide",
+        "w-geraete"
       ],
       "synonyme": [
         "Siedepunkt",
@@ -6989,7 +6996,8 @@
       "welten": [
         "w-gebaeck",
         "w-brot",
-        "w-gemuese"
+        "w-gemuese",
+        "w-geraete"
       ],
       "synonyme": [
         "Umluft",
@@ -10155,6 +10163,314 @@
       ],
       "visual": {
         "vorlage": "entscheidungsbaum"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "w-geraete",
+      "typ": "welt",
+      "titel": "Geräte & Werkzeug",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "waermeleitung",
+        "konvektion",
+        "waermestrahlung",
+        "pfannenmaterial"
+      ],
+      "welten": [],
+      "synonyme": [
+        "Küchengeräte",
+        "Pfannen",
+        "Töpfe",
+        "Herd",
+        "Backofen",
+        "Kochgeschirr"
+      ],
+      "visual": {
+        "vorlage": "keine"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "airfryer",
+      "typ": "technik",
+      "titel": "Airfryer: Heißluft statt Fett",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "konvektion",
+        "maillard-reaktion",
+        "verdampfen",
+        "umluft-ober-unterhitze",
+        "wedges-nicht-knusprig",
+        "g-pommes",
+        "kerntemperatur"
+      ],
+      "welten": [
+        "w-geraete"
+      ],
+      "synonyme": [
+        "Heißluftfritteuse",
+        "Air Fryer",
+        "Airfryer Pommes",
+        "Heissluftfritteuse",
+        "Airfryer Temperatur"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "induktion",
+      "typ": "technik",
+      "titel": "Induktion: Der Topf heizt sich selbst",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "waermeleitung",
+        "pfannenmaterial",
+        "pfanne-vorheizen",
+        "beschichtete-pfanne",
+        "rauchpunkt"
+      ],
+      "welten": [
+        "w-geraete"
+      ],
+      "synonyme": [
+        "Induktionsherd",
+        "Induktionskochfeld",
+        "Induktion Pfanne",
+        "Induktion Topf geht nicht",
+        "Magnet Test Pfanne"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "mikrowelle",
+      "typ": "technik",
+      "titel": "Mikrowelle: Wärme von innen?",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "waermeleitung",
+        "verdampfen",
+        "keimwachstum",
+        "eiskristalle",
+        "x-mikrowelle-eis",
+        "daempfen"
+      ],
+      "welten": [
+        "w-geraete"
+      ],
+      "synonyme": [
+        "Mikrowelle aufwärmen",
+        "Mikrowelle ungleichmäßig",
+        "Mikrowelle kalte Stellen",
+        "Mikrowelle auftauen",
+        "Mikrowelle Metall"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "schnellkochtopf",
+      "typ": "technik",
+      "titel": "Schnellkochtopf: Kochen über 100 °C",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "siedepunkt-druck",
+        "kollagen-gelatine",
+        "schmoren",
+        "bohnen-nicht-weich",
+        "fond"
+      ],
+      "welten": [
+        "w-geraete"
+      ],
+      "synonyme": [
+        "Dampfkochtopf",
+        "Drucktopf",
+        "Schnellkochtopf Zeiten",
+        "Instant Pot",
+        "Schnellkochtopf Bohnen"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "gusseisen",
+      "typ": "technik",
+      "titel": "Gusseisen einbrennen und pflegen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "pfannenmaterial",
+        "rauchpunkt",
+        "oxidation-fett",
+        "pfanne-vorheizen",
+        "maillard-reaktion",
+        "waermeleitung"
+      ],
+      "welten": [
+        "w-geraete"
+      ],
+      "synonyme": [
+        "Gusseisenpfanne",
+        "Eisenpfanne einbrennen",
+        "Pfanne einbrennen",
+        "Gusseisen Seife",
+        "Gusseisen rostet",
+        "Patina Pfanne"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "beschichtete-pfanne",
+      "typ": "technik",
+      "titel": "Beschichtete Pfanne richtig nutzen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "pfannenmaterial",
+        "induktion",
+        "fisch-klebt",
+        "pfanne-vorheizen",
+        "gusseisen"
+      ],
+      "welten": [
+        "w-geraete"
+      ],
+      "synonyme": [
+        "Teflonpfanne",
+        "Antihaftpfanne",
+        "Antihaft Beschichtung",
+        "Pfanne Beschichtung kaputt",
+        "Keramikpfanne"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "pizzastein",
+      "typ": "technik",
+      "titel": "Pizzastein und Pizzastahl",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "waermeleitung",
+        "ofentrieb",
+        "g-pizza",
+        "dampflockerung",
+        "boden-durchgeweicht"
+      ],
+      "welten": [
+        "w-geraete"
+      ],
+      "synonyme": [
+        "Pizzastein",
+        "Pizzastahl",
+        "Backstahl",
+        "Backstein Ofen",
+        "Pizza knusprig Boden"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "messer",
+      "typ": "technik",
+      "titel": "Scharfe Messer: Schneiden statt quetschen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "zwiebel",
+        "kraeuter-schwarz",
+        "enzym-braeunung",
+        "saft-beim-schneiden"
+      ],
+      "welten": [
+        "w-geraete"
+      ],
+      "synonyme": [
+        "Messer schärfen",
+        "Wetzstahl",
+        "Messer abziehen",
+        "Zwiebeln schneiden weinen",
+        "stumpfes Messer"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "wok",
+      "typ": "technik",
+      "titel": "Wok: Große Hitze, kleine Mengen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "leidenfrost",
+        "maillard-reaktion",
+        "verdampfen",
+        "gusseisen",
+        "rauchpunkt"
+      ],
+      "welten": [
+        "w-geraete"
+      ],
+      "synonyme": [
+        "Wok braten",
+        "Pfannenrühren",
+        "Stir fry",
+        "Wok Hei",
+        "Wok auf Induktion",
+        "Wokpfanne einbrennen"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "x-mikrowelle-eis",
+      "typ": "experiment",
+      "titel": "Eis bleibt in der Mikrowelle kalt",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "mikrowelle",
+        "eiskristalle",
+        "waermeleitung"
+      ],
+      "welten": [
+        "w-geraete"
+      ],
+      "synonyme": [
+        "Mikrowelle Experiment",
+        "Eiswürfel Mikrowelle",
+        "Mikrowelle Eis schmilzt nicht",
+        "Auftauen Mikrowelle warum"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
       },
       "verlinkt_von": []
     }

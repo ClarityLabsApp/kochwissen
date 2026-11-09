@@ -1,0 +1,57 @@
+{
+  "id": "messer",
+  "typ": "technik",
+  "titel": "Scharfe Messer: Schneiden statt quetschen",
+  "synonyme": [
+    "Messer schärfen",
+    "Wetzstahl",
+    "Messer abziehen",
+    "Zwiebeln schneiden weinen",
+    "stumpfes Messer"
+  ],
+  "kurz": "Eine scharfe Klinge trennt Zellen sauber, eine stumpfe quetscht sie. Das merkt man an tränenden Augen bei Zwiebeln, an braunen Rändern bei Kräutern und an Saft auf dem Brett.",
+  "bild_im_kopf": "Wie eine Schere und eine Zange: Beide trennen, aber nur eine lässt glatte Kanten.",
+  "was_passiert": "Beim Schneiden mit stumpfem Messer muss man drücken, und der Druck zerreißt viele Zellen neben dem Schnitt. Ihr Inhalt tritt aus: Bei [[zwiebel|Zwiebeln]] entsteht daraus der Reizstoff, bei Kräutern bräunt die Schnittkante. Eine Studie zeigte 2025, dass stumpfe Klingen mehr feine Tröpfchen aus der Zwiebel sprühen. Mit der Zeit biegt sich die feine Schneide um. Der Wetzstahl richtet sie wieder auf, erst der Schleifstein trägt Metall ab und formt eine neue Schneide.",
+  "warum_wichtig": "Ein scharfes Messer ist sicherer, weil es nicht abrutscht, und es macht Schnittgut schöner und haltbarer.",
+  "schritte": [
+    "Vor dem Kochen die Klinge ein paar Mal pro Seite über den Wetzstahl ziehen, im flachen Winkel.",
+    "Zieht das Messer nicht mehr durch eine Tomatenhaut, ist Schleifen fällig.",
+    "Auf dem Schleifstein im gleichbleibenden Winkel von etwa 15 bis 20 Grad schleifen, erst grob, dann fein.",
+    "Mit ziehender Bewegung schneiden statt nur zu drücken.",
+    "Auf Holz oder Kunststoff schneiden, nicht auf Glas oder Stein."
+  ],
+  "faustregeln": [
+    "Für Zwiebeln: ein scharfes Messer, weil weniger zerstörte Zellen weniger Reizstoff freisetzen.",
+    "Für Kräuter: mit einem Schnitt durch, nicht hacken, weil gequetschte Blätter schwarz werden.",
+    "Nicht in die Spülmaschine: Hitze, Lauge und Anstoßen machen die Schneide stumpf."
+  ],
+  "links": [
+    "zwiebel",
+    "kraeuter-schwarz",
+    "enzym-braeunung",
+    "saft-beim-schneiden"
+  ],
+  "welten": [
+    "w-geraete"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a chef's knife on a wooden board with neatly diced onion and a honing steel lying alongside"
+  },
+  "quellen": [
+    {
+      "titel": "Washington Times: Sharper blades could help reduce onion-slicing tears (Cornell-Studie, 2025)",
+      "url": "https://www.washingtontimes.com/news/2025/may/21/sharper-blades-could-help-reduce-onion-slicing-tears-scientists/"
+    },
+    {
+      "titel": "Misen: Honing vs. sharpening",
+      "url": "https://misen.com/blogs/news/honing-vs-sharpening"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Gemüse: Zwiebeln"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

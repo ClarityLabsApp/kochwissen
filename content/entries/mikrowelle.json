@@ -1,0 +1,59 @@
+{
+  "id": "mikrowelle",
+  "typ": "technik",
+  "titel": "Mikrowelle: Wärme von innen?",
+  "synonyme": [
+    "Mikrowelle aufwärmen",
+    "Mikrowelle ungleichmäßig",
+    "Mikrowelle kalte Stellen",
+    "Mikrowelle auftauen",
+    "Mikrowelle Metall"
+  ],
+  "kurz": "Mikrowellen bringen Wassermoleküle zum Hin- und Herdrehen, und das erzeugt Wärme. Sie dringen aber nur wenige Zentimeter ein. Den Rest übernimmt langsame Wärmeleitung, darum gibt es kalte Stellen.",
+  "bild_im_kopf": "Wie Kompassnadeln, die einem kreisenden Magneten folgen: Das ständige Mitdrehen reibt und wärmt, aber nur, solange der Magnet nah genug ist.",
+  "was_passiert": "Wassermoleküle haben eine Plus- und eine Minusseite. Das Feld der Mikrowelle kippt Milliarden Mal pro Sekunde, und die [[molekuel|Moleküle]] drehen sich mit. Die Reibung untereinander wird zu Wärme. Im Innern des Garraums bilden sich Zonen mit viel und wenig Energie, deshalb dreht sich der Teller. Weil die Oberfläche feucht bleibt und nicht über 100 °C kommt, bräunt nichts.",
+  "warum_wichtig": "Die Mikrowelle ist für Aufwärmen, Schmelzen und Gemüse ideal, aber ungleichmäßig. Bei Resten zählt das: Kalte Stellen können Keime überleben lassen.",
+  "schritte": [
+    "Das Essen flach und ringförmig verteilen, die Mitte frei lassen.",
+    "Mit einem Teller oder Deckel abdecken, damit der Dampf mitgart.",
+    "Nach der Hälfte der Zeit umrühren oder wenden.",
+    "Nach dem Erhitzen ein bis zwei Minuten stehen lassen, damit sich die Wärme verteilt.",
+    "Prüfen, ob es überall dampfend heiß ist, besonders in der Mitte."
+  ],
+  "faustregeln": [
+    "Für Reste: überall dampfend heiß erhitzen, weil kalte Stellen Keime überleben lassen.",
+    "Für Gefrorenes: mit Auftaustufe arbeiten, weil Eis die Mikrowellen kaum aufnimmt und sonst die Ränder schon garen.",
+    "Kein Metall mit Kanten oder Goldrand: An Spitzen sammelt sich das Feld und es funkt."
+  ],
+  "links": [
+    "waermeleitung",
+    "verdampfen",
+    "keimwachstum",
+    "eiskristalle",
+    "x-mikrowelle-eis",
+    "daempfen"
+  ],
+  "welten": [
+    "w-geraete"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a white microwave oven with its door open and a covered bowl of soup on the glass turntable"
+  },
+  "quellen": [
+    {
+      "titel": "University of Nebraska–Lincoln: Microwave safety",
+      "url": "https://food.unl.edu/article/microwave-safety/"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kochgeschirr und Wärmequellen"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "mythos": {
+    "behauptung": "Die Mikrowelle zerstört die Vitamine im Essen.",
+    "richtig": "The microwave destroys the vitamins in food."
+  }
+}

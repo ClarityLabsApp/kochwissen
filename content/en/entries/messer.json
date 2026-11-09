@@ -1,0 +1,27 @@
+{
+  "id": "messer",
+  "titel": "Sharp knives: cutting instead of crushing",
+  "kurz": "A sharp blade cuts cells cleanly, a blunt one crushes them. You notice it in watering eyes over onions, brown edges on herbs and juice on the board.",
+  "bild_im_kopf": "Like scissors and pliers: both separate things, but only one leaves clean edges.",
+  "was_passiert": "Cutting with a blunt knife needs pressure, and the pressure tears many cells beside the cut. Their contents leak out: in [[zwiebel|onions]] this produces the irritant, in herbs the cut edge browns. A 2025 study showed that blunt blades spray more fine droplets from the onion. Over time the fine edge bends over. A honing steel straightens it again; only a whetstone removes metal and forms a new edge.",
+  "warum_wichtig": "A sharp knife is safer because it doesn't slip, and it makes cut food look better and keep longer.",
+  "synonyme": [
+    "sharpening knives",
+    "honing steel",
+    "honing a knife",
+    "onions crying",
+    "blunt knife"
+  ],
+  "faustregeln": [
+    "For onions: a sharp knife, because fewer damaged cells release less irritant.",
+    "For herbs: slice through in one cut rather than chopping, because crushed leaves turn black.",
+    "Keep it out of the dishwasher: heat, detergent and knocks dull the edge."
+  ],
+  "schritte": [
+    "Before cooking, draw the blade over the honing steel a few times on each side, at a shallow angle.",
+    "If the knife no longer slices through a tomato skin, it needs sharpening.",
+    "On a whetstone, sharpen at a constant angle of about 15 to 20 degrees, coarse first, then fine.",
+    "Cut with a drawing motion instead of just pressing down.",
+    "Cut on wood or plastic, not on glass or stone."
+  ]
+}

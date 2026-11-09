@@ -1,0 +1,31 @@
+{
+  "id": "mikrowelle",
+  "titel": "Microwave: heat from the inside?",
+  "kurz": "Microwaves make water [[molekuel|molecules]] twist back and forth, and that creates heat. But they only penetrate a few centimetres. Slow conduction does the rest, which is why there are cold spots.",
+  "bild_im_kopf": "Like compass needles following a circling magnet: the constant turning rubs and warms, but only while the magnet is close enough.",
+  "was_passiert": "Water molecules have a plus side and a minus side. The microwave field flips billions of times a second, and the molecules turn with it. Their friction with one another becomes heat. Inside the oven there are zones with more and less energy, which is why the plate turns. Because the surface stays moist and does not exceed 100 °C, nothing browns.",
+  "warum_wichtig": "The microwave is ideal for reheating, melting and vegetables, but it is uneven. With leftovers that matters: cold spots can let germs survive.",
+  "synonyme": [
+    "microwave reheating",
+    "microwave uneven",
+    "microwave cold spots",
+    "microwave defrosting",
+    "metal in microwave"
+  ],
+  "faustregeln": [
+    "For leftovers: heat until [[daempfen|steaming]] hot everywhere, because cold spots let germs survive.",
+    "For frozen food: use the defrost setting, because ice hardly absorbs microwaves and the edges would cook first.",
+    "No metal with edges or gold rims: the field concentrates at points and it sparks."
+  ],
+  "schritte": [
+    "Spread the food out flat in a ring, leaving the centre empty.",
+    "Cover it with a plate or lid so the steam helps cook it.",
+    "Stir or turn it halfway through.",
+    "After heating, let it stand for one or two minutes so the heat evens out.",
+    "Check that it is steaming hot everywhere, especially in the middle."
+  ],
+  "mythos": {
+    "behauptung": "Jede Hitze baut empfindliche Vitamine ab. Weil die Mikrowelle kurz und mit wenig Wasser gart, bleibt bei Gemüse oft sogar mehr erhalten als beim Kochen im Topf.",
+    "richtig": "Any heat breaks down delicate vitamins. Because the microwave cooks briefly with little water, vegetables often keep more of them than when boiled in a pot."
+  }
+}

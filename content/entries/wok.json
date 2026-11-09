@@ -1,0 +1,55 @@
+{
+  "id": "wok",
+  "typ": "technik",
+  "titel": "Wok: Große Hitze, kleine Mengen",
+  "synonyme": [
+    "Wok braten",
+    "Pfannenrühren",
+    "Stir fry",
+    "Wok Hei",
+    "Wok auf Induktion",
+    "Wokpfanne einbrennen"
+  ],
+  "kurz": "Im Wok brät man kleine Stücke sehr heiß und kurz, unter ständigem Bewegen. Zu viel auf einmal kühlt ihn ab, und dann dünstet das Gemüse statt zu braten.",
+  "bild_im_kopf": "Wie eine Bühne mit einem Scheinwerfer: Wer im Licht steht, wird heiß, wer am Rand wartet, bleibt warm.",
+  "was_passiert": "Der dünne Stahl am Boden wird sehr heiß, die steilen Seiten bleiben kühler. Durch das Bewegen kommt jedes Stück kurz an den heißen Grund und dann wieder an den Rand. Auf einem starken Gasbrenner schlagen Flammen über den Rand, und verdampfende Öltröpfchen geben das typische rauchige Aroma, das Wok Hei. Auf dem Haushaltsherd fehlt diese Leistung, darum zählt die Menge umso mehr.",
+  "warum_wichtig": "Die meisten Wokgerichte zu Hause werden wässrig, weil zu viel auf einmal im Wok liegt. Wer in Portionen brät, bekommt Bräunung und Biss.",
+  "schritte": [
+    "Alles vorher schneiden und bereitstellen: Während des Bratens bleibt keine Zeit.",
+    "Den Wok heiß werden lassen, bis ein Wassertropfen tanzt, dann erst Öl hinein.",
+    "Fleisch und Gemüse getrennt und in kleinen Portionen braten, jeweils herausnehmen.",
+    "Zum Schluss alles zurück in den Wok, Sauce darüber und kurz durchschwenken.",
+    "Auf Induktion oder Glaskeramik einen Wok mit flachem Boden nehmen."
+  ],
+  "faustregeln": [
+    "Für Bräunung am Haushaltsherd: höchstens zwei Handvoll pro Durchgang, weil mehr den Wok unter 100 °C drückt.",
+    "Für Gemüse mit Biss: gut abgetrocknet hinein, weil nasses Gemüse die Hitze schluckt.",
+    "Einen Stahlwok wie [[gusseisen|Gusseisen einbrennen und pflegen]]."
+  ],
+  "links": [
+    "leidenfrost",
+    "maillard-reaktion",
+    "verdampfen",
+    "gusseisen",
+    "rauchpunkt"
+  ],
+  "welten": [
+    "w-geraete"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a carbon steel wok tossing strips of vegetables and beef over a blue gas flame"
+  },
+  "quellen": [
+    {
+      "titel": "Cook's Illustrated: The science of stir-frying in a wok",
+      "url": "https://www.americastestkitchen.com/cooksillustrated/articles/2189-the-science-of-stir-frying-in-a-wok"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kochgeschirr und Wärmequellen"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

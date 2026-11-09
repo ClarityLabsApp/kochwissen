@@ -1,0 +1,31 @@
+{
+  "id": "airfryer",
+  "titel": "Air fryer: hot air instead of fat",
+  "kurz": "An air fryer is a small convection oven with a very strong fan. The fast air dries the surface quickly, so it browns faster than a full oven.",
+  "bild_im_kopf": "Like a hairdryer next to a mild summer breeze: the air is equally warm, but the hairdryer dries hair much faster.",
+  "was_passiert": "A heating element sits right above the basket, and a fan drives the hot air rapidly around the food. Fast air strips away the moist, cool layer at the surface. Water evaporates quickly on the outside, and the surface gets hot enough for the [[maillard-reaktion|Maillard reaction]]. Nothing is actually fried: the food sits in air, not in oil.",
+  "warum_wichtig": "Because an air fryer dries and browns more strongly than an oven, oven recipes easily burn outside before they are done inside. A spoonful of oil makes the difference between dry-brown and crisp.",
+  "synonyme": [
+    "air fryer",
+    "air fryer chips",
+    "air fryer fries",
+    "air fryer temperature",
+    "hot-air fryer"
+  ],
+  "faustregeln": [
+    "For crisp potatoes: par-boil and use a little oil, because the starch forms a crust and the oil transfers heat better.",
+    "For runny batters: keep them out of the basket, because the fan blows them about and they run through the grate.",
+    "For juicy things like chicken breast: measure the [[kerntemperatur|core temperature]], because the air fryer works faster outside than inside."
+  ],
+  "schritte": [
+    "Pat the food dry and coat it all over with a little oil, about a teaspoon per portion.",
+    "Put only one layer in the basket so the air can reach everywhere.",
+    "Set oven recipes about 20 °C lower and check after two thirds of the time.",
+    "Shake the basket or turn the food halfway through.",
+    "For chips and wedges: par-boil them in water first, then finish in the air fryer."
+  ],
+  "mythos": {
+    "behauptung": "Er backt mit sehr schneller heißer Luft. Das Ergebnis ähnelt guten Ofen-Pommes, nicht Frittiertem, und etwas Öl braucht es trotzdem.",
+    "richtig": "It bakes with very fast hot air. The result is like good oven chips, not deep-fried ones, and it still needs a little oil."
+  }
+}

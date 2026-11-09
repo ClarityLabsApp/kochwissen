@@ -1,0 +1,64 @@
+{
+  "id": "gusseisen",
+  "typ": "technik",
+  "titel": "Gusseisen einbrennen und pflegen",
+  "synonyme": [
+    "Gusseisenpfanne",
+    "Eisenpfanne einbrennen",
+    "Pfanne einbrennen",
+    "Gusseisen Seife",
+    "Gusseisen rostet",
+    "Patina Pfanne"
+  ],
+  "kurz": "Die schwarze Schicht auf Gusseisen und Eisenpfannen ist kein Schmutz, sondern Öl, das bei großer Hitze zu einer harten, glatten Schicht verbunden wurde. Sie schützt vor Rost und lässt das Bratgut weniger kleben.",
+  "bild_im_kopf": "Wie ein Lack, den man selbst einbrennt: Jede dünne Schicht macht die Oberfläche glatter.",
+  "was_passiert": "Erhitzt man eine hauchdünne Ölschicht über ihren [[rauchpunkt|Rauchpunkt]], verbinden sich die Fettmoleküle zu einem festen Netz, einer Art Kunststoff. Diese Patina haftet am Eisen und füllt seine Poren. Gusseisen ist schwer und leitet Wärme eher schlecht: Es heizt langsam und ungleich auf. Dafür speichert es viel Wärme und kühlt beim Anbraten kaum ab.",
+  "warum_wichtig": "Gut eingebrannt brät eine Eisenpfanne Steaks mit einer Kruste, die keine beschichtete Pfanne schafft, und hält ein Leben lang. Falsch gepflegt rostet sie und alles klebt.",
+  "schritte": [
+    "Die Pfanne waschen und auf dem Herd vollständig trocknen.",
+    "Einen Teelöffel neutrales Öl einreiben und mit Küchenpapier fast alles wieder abwischen: Sie soll matt aussehen, nicht ölig.",
+    "Kopfüber eine Stunde im Ofen bei 230 bis 250 °C erhitzen, dann im Ofen abkühlen lassen.",
+    "Drei- bis viermal wiederholen.",
+    "Nach dem Kochen heiß abspülen, auf dem Herd trocknen und hauchdünn einölen."
+  ],
+  "faustregeln": [
+    "Für eine glatte Patina: viele dünne Schichten statt einer dicken, weil dickes Öl klebrig bleibt.",
+    "Vor dem Anbraten zehn Minuten auf mittlerer Hitze vorheizen, weil Gusseisen ungleich aufheizt.",
+    "Lange saure Schmorgerichte mit Tomate oder Wein lieber im Emailtopf, weil Säure die Patina angreift."
+  ],
+  "links": [
+    "pfannenmaterial",
+    "rauchpunkt",
+    "oxidation-fett",
+    "pfanne-vorheizen",
+    "maillard-reaktion",
+    "waermeleitung"
+  ],
+  "welten": [
+    "w-geraete"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a black cast-iron skillet with a glossy seasoned surface, a small bottle of oil and a folded cloth"
+  },
+  "quellen": [
+    {
+      "titel": "Virginia Tech: Food scientist busts cast-iron myths (2024)",
+      "url": "https://news.vt.edu/articles/2024/08/cast-iron-myths.html"
+    },
+    {
+      "titel": "America's Test Kitchen: Busting cast-iron myths",
+      "url": "https://www.americastestkitchen.com/lessons/articles/2355-busting-cast-iron-myths"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kochgeschirr und Wärmequellen"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "mythos": {
+    "behauptung": "Gusseisen darf nie mit Spülmittel in Berührung kommen.",
+    "richtig": "Cast iron must never touch washing-up liquid."
+  }
+}

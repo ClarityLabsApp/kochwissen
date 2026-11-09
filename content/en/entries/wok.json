@@ -1,0 +1,27 @@
+{
+  "id": "wok",
+  "titel": "Wok: high heat, small batches",
+  "kurz": "In a wok you fry small pieces very hot and fast, keeping them moving. Too much at once cools it down, and the vegetables steam instead of frying.",
+  "bild_im_kopf": "Like a stage with one spotlight: whoever stands in the light gets hot, whoever waits at the edge stays warm.",
+  "was_passiert": "The thin steel at the bottom gets very hot, the steep sides stay cooler. Tossing brings each piece briefly to the hot base and back to the edge. On a powerful gas burner flames lick over the rim, and vaporising oil droplets give the typical smoky aroma, called wok hei. A home hob lacks this power, so the batch size matters all the more.",
+  "warum_wichtig": "Most home stir-fries turn watery because too much is in the wok at once. Frying in batches gives browning and bite.",
+  "synonyme": [
+    "stir-fry",
+    "wok cooking",
+    "wok hei",
+    "wok on induction",
+    "seasoning a wok"
+  ],
+  "faustregeln": [
+    "For browning on a home hob: no more than two handfuls per batch, because more pushes the wok below 100 °C.",
+    "For crunchy vegetables: add them well dried, because wet vegetables swallow the heat.",
+    "Season and care for a carbon steel wok like cast iron."
+  ],
+  "schritte": [
+    "Cut and lay out everything beforehand: there is no time once frying starts.",
+    "Let the wok get hot until a drop of water dances, only then add oil.",
+    "Fry meat and vegetables separately and in small batches, taking each out.",
+    "At the end put everything back, add the sauce and toss briefly.",
+    "On induction or ceramic hobs, use a wok with a flat base."
+  ]
+}

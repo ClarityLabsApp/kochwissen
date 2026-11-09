@@ -1,0 +1,49 @@
+{
+  "id": "x-mikrowelle-eis",
+  "typ": "experiment",
+  "titel": "Eis bleibt in der Mikrowelle kalt",
+  "synonyme": [
+    "Mikrowelle Experiment",
+    "Eiswürfel Mikrowelle",
+    "Mikrowelle Eis schmilzt nicht",
+    "Auftauen Mikrowelle warum"
+  ],
+  "kurz": "Ein Glas Wasser und ein Glas Eiswürfel, gleich lang in der Mikrowelle: Das Wasser wird heiß, das Eis schmilzt kaum. Darum taut Gefrorenes so ungleichmäßig auf.",
+  "bild_im_kopf": "Wie Tänzer in einem vollen Lift: Die Musik spielt, aber niemand kann sich drehen.",
+  "material": [
+    "zwei gleiche mikrowellenfeste Gläser",
+    "Eiswürfel",
+    "kaltes Wasser",
+    "eine Mikrowelle",
+    "ein Thermometer, falls vorhanden"
+  ],
+  "schritte": [
+    "Ein Glas mit Eiswürfeln füllen, das andere gleich hoch mit kaltem Wasser.",
+    "Nur das Glas mit Wasser 30 Sekunden auf voller Stufe erhitzen und fühlen oder messen.",
+    "Dann nur das Glas mit Eis gleich lang erhitzen.",
+    "Vergleichen: Wie warm ist das Wasser, wie viel Eis ist geschmolzen?"
+  ],
+  "beobachtung": "Das Wasser ist deutlich warm geworden. Vom Eis ist nur wenig geschmolzen, und das Schmelzwasser am Boden ist warm, während die Würfel kalt bleiben.",
+  "erklaerung": "Mikrowellen erwärmen, indem sie Wassermoleküle hin- und herdrehen. Im Eis sind die [[molekuel|Moleküle]] in einem festen Gitter gefangen und können sich kaum drehen. Flüssiges Wasser nimmt die Energie viel besser auf. Sobald irgendwo ein wenig Eis schmilzt, wird genau diese Stelle schnell heiß. So garen beim Auftauen die Ränder, während die Mitte noch gefroren ist.",
+  "dauer": "5 Minuten",
+  "links": [
+    "mikrowelle",
+    "eiskristalle",
+    "waermeleitung"
+  ],
+  "welten": [
+    "w-geraete"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "two glasses side by side, one with steaming water and one with ice cubes, in front of a microwave"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Wärme und Garmethoden: Mikrowellen"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

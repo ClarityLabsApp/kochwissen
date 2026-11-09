@@ -1,0 +1,27 @@
+{
+  "id": "schnellkochtopf",
+  "titel": "Pressure cooker: boiling above 100 °C",
+  "kurz": "In the tightly sealed pot the pressure rises, and water only boils at around 120 °C. Those extra 20 degrees make braising meat and pulses tender about three times as fast.",
+  "bild_im_kopf": "Like a lid on the boiling limit: the steam cannot escape, so the temperature keeps climbing.",
+  "was_passiert": "Cooking makes steam that cannot escape from the sealed pot. The pressure rises to almost double, and with it the boiling point to around 115 to 120 °C. At this temperature connective tissue turns to gelatine much faster, and the cell walls of beans soften more quickly. There is still no browning in the pot, because everything stays moist.",
+  "warum_wichtig": "A ragout in 40 instead of 120 minutes, chickpeas without hours of simmering: that saves a lot of time. Because you cannot look inside, it needs reliable times and some care.",
+  "synonyme": [
+    "pressure cooker",
+    "instant pot",
+    "pressure cooker times",
+    "pressure cooking beans",
+    "stovetop pressure cooker"
+  ],
+  "faustregeln": [
+    "For pulses: fill it only partly and add a little oil, because their foam can block the valve.",
+    "For delicate vegetables and fish: better not, because they fall apart within minutes.",
+    "Check and clean the valve and sealing ring regularly."
+  ],
+  "schritte": [
+    "Brown meat first in a pan or in the open pot, because nothing browns under pressure.",
+    "Fill the pot no more than two thirds, and only half for pulses and rice.",
+    "Always add enough liquid, at least as much as the instructions say.",
+    "Close the lid, bring it up to pressure, then turn the heat down and time from the moment pressure is reached.",
+    "Let the pressure release completely before opening the lid."
+  ]
+}

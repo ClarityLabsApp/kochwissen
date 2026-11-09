@@ -1,0 +1,57 @@
+{
+  "id": "induktion",
+  "typ": "technik",
+  "titel": "Induktion: Der Topf heizt sich selbst",
+  "synonyme": [
+    "Induktionsherd",
+    "Induktionskochfeld",
+    "Induktion Pfanne",
+    "Induktion Topf geht nicht",
+    "Magnet Test Pfanne"
+  ],
+  "kurz": "Unter dem Glas erzeugt eine Spule ein wechselndes Magnetfeld. Es erzeugt im Topfboden elektrische Ströme, und der Boden erhitzt sich selbst. Das Kochfeld bleibt dabei fast kalt.",
+  "bild_im_kopf": "Wie eine Fernbedienung für Wärme: Das Kochfeld gibt nur den Befehl, heiß wird der Topf.",
+  "was_passiert": "Das Magnetfeld wechselt zehntausende Male pro Sekunde die Richtung. In einem Topfboden aus magnetischem Metall entstehen dadurch Wirbelströme, und der Widerstand des Metalls wandelt sie in Wärme um. Weil keine heiße Platte dazwischen liegt, reagiert die Hitze sofort auf den Regler. Die Wärme entsteht über der ringförmigen Spule, die Mitte großer Pfannen bleibt oft etwas kühler.",
+  "warum_wichtig": "Induktion ist schnell und genau wie Gas, aber eine leere Pfanne wird in Sekunden glühend heiß. Das kann Öl verbrennen und Beschichtungen beschädigen.",
+  "schritte": [
+    "Mit einem Magneten am Topfboden prüfen: Bleibt er haften, funktioniert der Topf auf Induktion.",
+    "Die Pfanne passend zur Kochzone wählen, nicht viel kleiner.",
+    "Pfannen auf mittlerer Stufe vorheizen, nicht auf Booster.",
+    "Bei großen Pfannen das Bratgut öfter verschieben, weil die Mitte etwas kühler bleibt.",
+    "Zum Warmhalten früh herunterschalten: Die Hitze geht sofort zurück."
+  ],
+  "faustregeln": [
+    "Für beschichtete Pfannen: nie leer auf höchster Stufe heizen, weil sie in Sekunden über 260 °C kommen.",
+    "Für gleichmäßiges Anbraten: einen dicken Boden mit Alukern wählen, weil Aluminium die Wärme von der Spule in die Fläche verteilt."
+  ],
+  "links": [
+    "waermeleitung",
+    "pfannenmaterial",
+    "pfanne-vorheizen",
+    "beschichtete-pfanne",
+    "rauchpunkt"
+  ],
+  "welten": [
+    "w-geraete"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a stainless steel pan on a black glass induction hob with a small horseshoe magnet stuck to the pan base"
+  },
+  "quellen": [
+    {
+      "titel": "Explain that Stuff: How do induction cooktops work?",
+      "url": "https://www.explainthatstuff.com/induction-cooktops.html"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kochgeschirr und Wärmequellen"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger",
+  "mythos": {
+    "behauptung": "Induktion ist ungesund wegen der Strahlung.",
+    "richtig": "Induction is unhealthy because of radiation."
+  }
+}

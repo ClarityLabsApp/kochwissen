@@ -1,0 +1,30 @@
+{
+  "id": "induktion",
+  "titel": "Induction: the pan heats itself",
+  "kurz": "Under the glass, a coil creates an alternating magnetic field. It induces electric currents in the base of the pan, and the base heats itself. The hob itself stays almost cold.",
+  "bild_im_kopf": "Like a remote control for heat: the hob only gives the command, the pan is what gets hot.",
+  "was_passiert": "The magnetic field changes direction tens of thousands of times a second. In a pan base made of magnetic metal, this creates eddy currents, and the resistance of the metal turns them into heat. With no hot plate in between, the heat responds to the dial immediately. Heat forms above the ring-shaped coil, so the centre of large pans often stays a little cooler.",
+  "warum_wichtig": "Induction is as fast and precise as gas, but an empty pan gets scorching hot within seconds. That can burn oil and damage coatings.",
+  "synonyme": [
+    "induction hob",
+    "induction cooktop",
+    "induction pan",
+    "pan doesn't work on induction",
+    "magnet test pan"
+  ],
+  "faustregeln": [
+    "For non-stick pans: never heat them empty on the highest setting, because they go above 260 °C within seconds.",
+    "For even searing: choose a thick base with an aluminium core, because aluminium spreads the heat from the coil across the surface."
+  ],
+  "schritte": [
+    "Test with a magnet on the base of the pan: if it sticks, the pan works on induction.",
+    "Choose a pan to match the cooking zone, not much smaller.",
+    "Preheat pans on a medium setting, not on boost.",
+    "In large pans move the food around more often, because the centre stays a little cooler.",
+    "To keep things warm, turn down early: the heat drops immediately."
+  ],
+  "mythos": {
+    "behauptung": "Das Magnetfeld ist schwach und reicht nur wenige Zentimeter weit. Für den Alltag gilt es als unbedenklich, wenn der Topf richtig auf der Zone steht.",
+    "richtig": "The magnetic field is weak and reaches only a few centimetres. For everyday use it is considered safe when the pan sits properly on the zone."
+  }
+}

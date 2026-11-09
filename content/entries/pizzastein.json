@@ -1,0 +1,54 @@
+{
+  "id": "pizzastein",
+  "typ": "technik",
+  "titel": "Pizzastein und Pizzastahl",
+  "synonyme": [
+    "Pizzastein",
+    "Pizzastahl",
+    "Backstahl",
+    "Backstein Ofen",
+    "Pizza knusprig Boden"
+  ],
+  "kurz": "Ein Pizzastein oder -stahl speichert Ofenhitze und gibt sie auf einen Schlag an den Teigboden ab. So geht der Rand schnell auf, und der Boden wird knusprig, bevor der Belag austrocknet.",
+  "bild_im_kopf": "Wie ein Akku für Hitze: Er lädt sich lange auf und entlädt sich in wenigen Minuten.",
+  "was_passiert": "Ein Backblech ist dünn und kühlt ab, sobald kalter Teig darauf liegt. Ein Stein hat viel Masse und speichert entsprechend viel Wärme. Stahl speichert ähnlich viel, leitet sie aber rund zehnmal besser weiter und bräunt den Boden schneller. Der kräftige Wärmestoß lässt Wasser im Teig schlagartig verdampfen, und der Teig springt auf.",
+  "warum_wichtig": "Ein Haushaltsofen schafft nur etwa 250 bis 280 °C, ein Pizzaofen über 400 °C. Ein heißer Stein oder Stahl gleicht einen Teil dieses Unterschieds aus, und auch Brot bekommt mehr [[ofentrieb|Ofentrieb]].",
+  "schritte": [
+    "Stein oder Stahl in den kalten Ofen legen, im oberen Drittel.",
+    "Den Ofen auf höchste Stufe stellen und 45 bis 60 Minuten aufheizen.",
+    "Die Pizza auf einer bemehlten Schaufel oder Backpapier einschießen.",
+    "Für die letzten ein bis zwei Minuten den Grill zuschalten, damit der Belag oben bräunt.",
+    "Stein im Ofen abkühlen lassen, nicht mit Wasser [[abschrecken|abschrecken]]."
+  ],
+  "faustregeln": [
+    "Für schnelle, dunkle Böden: Stahl, weil er die Wärme besser weiterleitet.",
+    "Für dicke Teige und Brot: Stein, weil er sanfter abgibt und weniger verbrennt.",
+    "Ein Stein bricht bei schnellem Temperaturwechsel: immer mit dem Ofen zusammen aufheizen und abkühlen."
+  ],
+  "links": [
+    "waermeleitung",
+    "ofentrieb",
+    "g-pizza",
+    "dampflockerung",
+    "boden-durchgeweicht"
+  ],
+  "welten": [
+    "w-geraete"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a round pizza with a blistered crust on a dark rectangular baking steel next to a wooden pizza peel"
+  },
+  "quellen": [
+    {
+      "titel": "King Arthur Baking: Pizza steel vs. stone (2026)",
+      "url": "https://www.kingarthurbaking.com/blog/2026/07/17/pizza-steel-vs-stone"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Kochgeschirr und Wärmequellen"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

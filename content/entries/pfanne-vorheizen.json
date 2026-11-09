@@ -30,7 +30,8 @@
   ],
   "welten": [
     "w-fleisch",
-    "w-fisch"
+    "w-fisch",
+    "w-geraete"
   ],
   "visual": {
     "vorlage": "ablauf"

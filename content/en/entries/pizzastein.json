@@ -1,0 +1,27 @@
+{
+  "id": "pizzastein",
+  "titel": "Pizza stone and pizza steel",
+  "kurz": "A pizza stone or steel stores oven heat and delivers it to the base of the dough in one go. The rim rises fast, and the base crisps before the topping dries out.",
+  "bild_im_kopf": "Like a battery for heat: it charges for a long time and discharges in a few minutes.",
+  "was_passiert": "A baking sheet is thin and cools as soon as cold dough lands on it. A stone has a lot of mass and stores a matching amount of heat. Steel stores a similar amount but passes it on about ten times better, so it browns the base faster. The strong burst of heat flashes the water in the dough to steam, and the dough springs up.",
+  "warum_wichtig": "A home oven reaches only about 250 to 280 °C, a [[g-pizza|pizza]] oven over 400 °C. A hot stone or steel makes up part of that gap, and bread gets more [[ofentrieb|oven spring]] too.",
+  "synonyme": [
+    "pizza stone",
+    "pizza steel",
+    "baking steel",
+    "baking stone",
+    "crisp pizza base"
+  ],
+  "faustregeln": [
+    "For fast, dark bases: steel, because it passes the heat on better.",
+    "For thick doughs and bread: stone, because it releases heat more gently and burns less.",
+    "A stone cracks with sudden changes in temperature: always heat it up and cool it down with the oven."
+  ],
+  "schritte": [
+    "Put the stone or steel in the cold oven, in the upper third.",
+    "Set the oven to its highest setting and preheat for 45 to 60 minutes.",
+    "Slide the pizza on from a floured peel or baking paper.",
+    "Switch on the grill for the last one or two minutes so the topping browns on top.",
+    "Let the stone cool in the oven, do not quench it with water."
+  ]
+}
