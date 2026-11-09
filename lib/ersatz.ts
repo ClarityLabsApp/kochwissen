@@ -1,0 +1,131 @@
+// „Was tun, wenn … fehlt?“: häufige Ersatzlösungen mit dem Warum. Mengen sind Richtwerte
+// (Quellen: Colorado State University Extension „Ingredient Substitutions“, King Arthur Baking, McGee).
+// Texte als Paare [deutsch, englisch]. `zu` = Einträge, die das Warum erklären; der erste ist der „Hauptort“ der Zutat.
+
+type T2 = [string, string];
+export interface Ersatz { id: string; gruppe: string; fehlt: T2; statt: { wie: T2; gut?: T2 }[]; warum: T2; achtung?: T2; zu: string[] }
+
+export const GRUPPEN: Record<string, T2> = {
+  lockern: ["Backtriebmittel", "Raising agents"],
+  milch: ["Milchprodukte", "Dairy"],
+  backen: ["Eier, Fett und Zucker", "Eggs, fat and sugar"],
+  binden: ["Binden und Gelieren", "Thickening and setting"],
+  wuerzen: ["Würzen und Ablöschen", "Seasoning and deglazing"],
+};
+
+export const ERSATZ: Ersatz[] = [
+  { id: "backpulver", gruppe: "lockern", fehlt: ["Backpulver", "Baking powder"],
+    statt: [
+      { wie: ["Für 1 TL Backpulver: ¼ TL Natron, ½ TL Weinsteinpulver und ¼ TL Speisestärke mischen.", "For 1 tsp baking powder: mix ¼ tsp bicarbonate of soda, ½ tsp cream of tartar and ¼ tsp cornflour."], gut: ["Wirkt fast wie gekauftes Backpulver.", "Works almost like shop-bought baking powder."] },
+      { wie: ["¼ TL Natron und dafür 125 ml Milch im Rezept durch Buttermilch oder Joghurt ersetzen.", "¼ tsp bicarbonate of soda, and swap 125 ml of the milk in the recipe for buttermilk or yoghurt."], gut: ["Für Rührteige, Muffins und Pfannkuchen.", "For cake batters, muffins and pancakes."] },
+    ],
+    warum: ["Backpulver ist Natron mit einer trockenen Säure. Natron allein braucht eine Säure, sonst entsteht kaum Gas und der Teig schmeckt seifig.", "Baking powder is bicarbonate of soda with a dry acid. Bicarbonate on its own needs an acid, otherwise it makes little gas and the dough tastes soapy."],
+    achtung: ["Selbst gemischtes Backpulver reagiert sofort mit Flüssigkeit: Teig gleich in den Ofen.", "Home-mixed baking powder reacts as soon as it gets wet: put the batter in the oven straight away."],
+    zu: ["backpulver", "natron", "chemische-lockerung", "l-backpulver"] },
+  { id: "natron", gruppe: "lockern", fehlt: ["Natron", "Bicarbonate of soda"],
+    statt: [{ wie: ["Etwa die dreifache Menge Backpulver nehmen: 3 TL statt 1 TL Natron.", "Use about three times as much baking powder: 3 tsp instead of 1 tsp bicarbonate."] }],
+    warum: ["Natron ist rund dreimal so stark wie Backpulver, weil Backpulver zum großen Teil aus Säure und Stärke besteht.", "Bicarbonate is about three times as strong as baking powder, because baking powder is largely acid and starch."],
+    achtung: ["Die Säure im Rezept (Buttermilch, Honig, Kakao) bleibt dann erhalten: Das Gebäck schmeckt etwas säuerlicher und bräunt weniger. So viel Backpulver kann leicht bitter schmecken.", "The acid in the recipe (buttermilk, honey, cocoa) then stays: the bake tastes a little tangier and browns less. That much baking powder can taste slightly bitter."],
+    zu: ["natron", "backpulver", "chemische-lockerung"] },
+  { id: "hefe", gruppe: "lockern", fehlt: ["Frischhefe oder Trockenhefe", "Fresh or dried yeast"],
+    statt: [
+      { wie: ["1 Würfel Frischhefe (42 g) entspricht etwa 2 Päckchen Trockenhefe (2 × 7 g).", "1 cube of fresh yeast (42 g) equals about 2 sachets of dried yeast (2 × 7 g)."] },
+      { wie: ["Trockenhefe direkt unter das Mehl mischen, Frischhefe in lauwarmer Flüssigkeit auflösen.", "Mix dried yeast straight into the flour, dissolve fresh yeast in lukewarm liquid."] },
+    ],
+    warum: ["Beides sind dieselben Hefepilze. Trockenhefe hat kaum noch Wasser und ist darum dreimal so konzentriert.", "Both are the same yeast. Dried yeast has almost no water left, so it is three times as concentrated."],
+    achtung: ["Ganz ohne Hefe gibt es keinen gleichwertigen Ersatz: Backpulver lockert, bringt aber nicht das Aroma der Gärung.", "Without any yeast there is no equal substitute: baking powder raises, but does not bring the flavour of fermentation."],
+    zu: ["hefe", "hefegaerung", "l-sauerteig"] },
+
+  { id: "buttermilch", gruppe: "milch", fehlt: ["Buttermilch", "Buttermilk"],
+    statt: [
+      { wie: ["250 ml Milch mit 1 EL Zitronensaft oder Essig verrühren und 5 bis 10 Minuten stehen lassen.", "Stir 1 tbsp lemon juice or vinegar into 250 ml milk and leave for 5 to 10 minutes."] },
+      { wie: ["Naturjoghurt, nach Bedarf mit etwas Milch verdünnt.", "Plain yoghurt, thinned with a little milk if needed."] },
+    ],
+    warum: ["Im Backen zählt vor allem die Säure der Buttermilch: Sie reagiert mit Natron und macht den Teig zart.", "In baking it is mainly buttermilk's acidity that counts: it reacts with bicarbonate and makes the dough tender."],
+    zu: ["l-buttermilch-ersatz", "milch", "saeure", "natron"] },
+  { id: "sauerrahm", gruppe: "milch", fehlt: ["Saurer Halbrahm, Crème fraîche, Schmand", "Soured cream, crème fraîche"],
+    statt: [
+      { wie: ["Griechischer Joghurt in gleicher Menge.", "Greek yoghurt in the same amount."], gut: ["Für Dips, Kuchen und kalte Saucen.", "For dips, cakes and cold sauces."] },
+      { wie: ["Für warme Saucen: Joghurt mit 1 TL Stärke pro 150 g verrühren und nicht mehr kochen lassen.", "For hot sauces: stir 1 tsp cornflour into every 150 g yoghurt and don't let it boil."] },
+    ],
+    warum: ["Crème fraîche hat rund 30 % Fett, das schützt ihr Eiweiß beim Kochen. Joghurt hat wenig Fett: Sein Eiweiß gerinnt in der Hitze zu Flocken, Stärke bremst das.", "Crème fraîche has around 30 % fat, which protects its protein when cooked. Yoghurt has little fat: its protein curdles into flecks in the heat, and starch slows this down."],
+    zu: ["l-creme-fraiche", "joghurt", "eiweiss-gerinnung"] },
+  { id: "rahm", gruppe: "milch", fehlt: ["Rahm (Sahne) zum Kochen", "Cream for cooking"],
+    statt: [
+      { wie: ["Für 250 ml Rahm: 180 ml Milch und 75 g geschmolzene Butter.", "For 250 ml cream: 180 ml milk and 75 g melted butter."], gut: ["Für Saucen, Suppen und Gebäck.", "For sauces, soups and baking."] },
+      { wie: ["Crème fraîche, mit etwas Milch verdünnt.", "Crème fraîche thinned with a little milk."] },
+    ],
+    warum: ["Rahm ist Milch mit viel Fett. Butter bringt das Fett zurück, die Milch das Wasser und das Eiweiß.", "Cream is milk with a lot of fat. Butter adds the fat back, the milk brings the water and protein."],
+    achtung: ["Diese Mischung lässt sich nicht schlagen: Für Schlagrahm braucht es mindestens rund 30 % Fett in feinen Tröpfchen.", "This mix cannot be whipped: whipping cream needs at least around 30 % fat in fine droplets."],
+    zu: ["sahne", "butter", "milch", "emulsion"] },
+  { id: "mascarpone", gruppe: "milch", fehlt: ["Mascarpone", "Mascarpone"],
+    statt: [{ wie: ["Doppelrahm-Frischkäse mit etwas Rahm glatt rühren, etwa 4 Teile Frischkäse auf 1 Teil Rahm.", "Beat full-fat cream cheese smooth with a little cream, about 4 parts cream cheese to 1 part cream."] }],
+    warum: ["Mascarpone ist mit Säure gedickter Rahm und sehr fettreich. Frischkäse ist fester und säuerlicher, der Rahm gleicht Fett und Cremigkeit aus.", "Mascarpone is cream thickened with acid and very rich. Cream cheese is firmer and tangier; the cream makes up the fat and creaminess."],
+    zu: ["l-mascarpone", "l-frischkaese", "sahne"] },
+
+  { id: "ei", gruppe: "backen", fehlt: ["Ei im Kuchen", "Egg in a cake"],
+    statt: [
+      { wie: ["Zum Binden: 1 EL gemahlene Leinsamen mit 3 EL Wasser 10 Minuten quellen lassen, pro Ei.", "To bind: soak 1 tbsp ground linseed in 3 tbsp water for 10 minutes, per egg."], gut: ["Für Muffins, Brownies, Vollkorngebäck.", "For muffins, brownies, wholemeal bakes."] },
+      { wie: ["Für Saftigkeit: 60 g Apfelmus oder eine halbe zerdrückte Banane pro Ei.", "For moisture: 60 g apple purée or half a mashed banana per egg."] },
+      { wie: ["Fehlt nur eines von drei Eiern: 1 EL Speisestärke mit 2 EL Wasser.", "If only one of three eggs is missing: 1 tbsp cornflour with 2 tbsp water."] },
+    ],
+    warum: ["Ei erledigt im Teig mehrere Aufgaben: Eiweiß bindet und stützt beim Backen, Eigelb macht saftig und emulgiert. Ein Ersatz übernimmt meist nur eine davon.", "Egg does several jobs in a batter: the white binds and sets during baking, the yolk adds moisture and emulsifies. A substitute usually covers only one of them."],
+    achtung: ["Bei mehr als zwei Eiern und bei Biskuit, Soufflé oder Eischnee gibt es keinen guten Ersatz: Dort ist das Ei das Gerüst.", "With more than two eggs, and for sponge, soufflé or whisked egg white, there is no good substitute: there the egg is the structure."],
+    zu: ["ei", "eiweiss", "eigelb", "eiweiss-gerinnung", "emulsion"] },
+  { id: "butter", gruppe: "backen", fehlt: ["Butter im Kuchen", "Butter in a cake"],
+    statt: [{ wie: ["Für 100 g Butter etwa 80 g neutrales Öl und 1 bis 2 EL Milch.", "For 100 g butter, about 80 g neutral oil and 1 to 2 tbsp milk."], gut: ["Für Rührkuchen, Muffins, Karottenkuchen: Sie werden saftiger.", "For loaf cakes, muffins, carrot cake: they turn out moister."] }],
+    warum: ["Butter besteht zu rund 82 % aus Fett, der Rest ist vor allem Wasser. Öl ist reines Fett, darum braucht es weniger davon und etwas Flüssigkeit dazu.", "Butter is around 82 % fat, the rest is mostly water. Oil is pure fat, so you need less of it plus a little liquid."],
+    achtung: ["Nicht für Mürbeteig, Blätterteig, Guetzli zum Ausstechen und Buttercreme: Dort gibt feste, kalte Butter die Struktur.", "Not for shortcrust, puff pastry, cut-out biscuits or buttercream: there firm, cold butter provides the structure."],
+    zu: ["butter", "oel", "fett-kristallisation", "kuchen-trocken"] },
+  { id: "zucker-honig", gruppe: "backen", fehlt: ["Zucker (durch Honig ersetzen)", "Sugar (replacing with honey)"],
+    statt: [{ wie: ["Etwa drei Viertel der Zuckermenge als Honig nehmen, die übrige Flüssigkeit im Rezept etwas verringern, eine Prise Natron dazugeben und den Ofen um 10 bis 15 °C tiefer stellen.", "Use about three quarters of the sugar quantity as honey, reduce the other liquid in the recipe a little, add a pinch of bicarbonate and lower the oven by 10 to 15 °C."] }],
+    warum: ["Honig ist süßer als Zucker, enthält aber rund ein Fünftel Wasser und ist leicht sauer. Sein Fruchtzucker bräunt schneller.", "Honey is sweeter than sugar, but contains around a fifth water and is slightly acidic. Its fructose browns faster."],
+    achtung: ["Gebäck mit Honig wird weicher und bleibt länger feucht, aber nicht knusprig. Für Baisers und knusprige Guetzli nicht geeignet.", "Bakes made with honey are softer and stay moist longer, but don't turn crisp. Not suitable for meringues or crisp biscuits."],
+    zu: ["honig", "zucker", "zucker-feuchtigkeit", "maillard-reaktion"] },
+  { id: "brauner-zucker", gruppe: "backen", fehlt: ["Brauner Zucker", "Brown sugar"],
+    statt: [
+      { wie: ["Weißer Zucker mit etwas Melasse oder Zuckerrübensirup, etwa 1 EL auf 200 g.", "White sugar with a little molasses or black treacle, about 1 tbsp per 200 g."] },
+      { wie: ["Nur weißer Zucker in gleicher Menge.", "Just white sugar in the same amount."], gut: ["Geht, aber Guetzli werden knuspriger und weniger karamellig.", "Works, but biscuits turn crisper and less caramel-like."] },
+    ],
+    warum: ["Brauner Zucker ist Zucker mit einem Rest Melasse. Sie bringt Aroma, etwas Säure und zieht Feuchtigkeit an, darum bleiben Cookies damit weich.", "Brown sugar is sugar with some molasses left in. It brings flavour, a little acidity and draws in moisture, which is why cookies made with it stay soft."],
+    zu: ["l-brauner-zucker", "zucker", "zucker-feuchtigkeit"] },
+  { id: "puderzucker", gruppe: "backen", fehlt: ["Puderzucker", "Icing sugar"],
+    statt: [{ wie: ["Kristallzucker im Mixer oder in der Kaffeemühle sehr fein mahlen, pro 100 g 1 TL Stärke dazu.", "Grind granulated sugar very finely in a blender or coffee grinder, adding 1 tsp cornflour per 100 g."] }],
+    warum: ["Puderzucker löst sich sofort, weil die Körnchen winzig sind. Die Stärke verhindert, dass er klumpt.", "Icing sugar dissolves instantly because its grains are tiny. The starch stops it clumping."],
+    zu: ["l-puderzucker", "zucker"] },
+
+  { id: "staerke", gruppe: "binden", fehlt: ["Speisestärke (Maizena)", "Cornflour"],
+    statt: [
+      { wie: ["Doppelte Menge Mehl, also 2 EL Mehl für 1 EL Stärke, und einige Minuten länger köcheln lassen.", "Twice the amount of flour, so 2 tbsp flour for 1 tbsp cornflour, and simmer a few minutes longer."] },
+      { wie: ["Kartoffelstärke in gleicher Menge.", "Potato starch in the same amount."], gut: ["Bindet schneller, aber bei langem Kochen wird die Sauce wieder dünner.", "Thickens faster, but the sauce thins again with long cooking."] },
+    ],
+    warum: ["Mehl enthält nur rund drei Viertel Stärke, dazu Eiweiß. Darum braucht es mehr davon, und es muss länger kochen, damit es nicht mehlig schmeckt.", "Flour is only about three quarters starch, plus protein. So you need more of it, and it has to cook longer so it doesn't taste floury."],
+    zu: ["staerke", "staerkeverkleisterung", "mehl", "sauce-zu-duenn", "sauce-klumpig"] },
+  { id: "gelatine", gruppe: "binden", fehlt: ["Gelatine (vegetarisch)", "Gelatine (vegetarian)"],
+    statt: [{ wie: ["Agar-Agar, Richtwert 1 bis 2 g für 500 ml Flüssigkeit statt 6 Blatt Gelatine. Mit der Flüssigkeit 2 Minuten sprudelnd kochen, Packung beachten.", "Agar-agar, about 1 to 2 g per 500 ml liquid instead of 6 sheets of gelatine. Boil it with the liquid for 2 minutes, and follow the packet."] }],
+    warum: ["Gelatine ist tierisches Eiweiß, das schon bei Körpertemperatur schmilzt. Agar ist ein Faserstoff aus Algen: Er muss kochen, wird beim Abkühlen fest und schmilzt erst wieder bei rund 85 °C.", "Gelatine is an animal protein that melts at body temperature. Agar is a fibre from seaweed: it has to boil, sets as it cools and only melts again at around 85 °C."],
+    achtung: ["Agar macht fester und etwas brüchiger, nicht so zart schmelzend. Für Mousse und Panna cotta lieber knapp dosieren.", "Agar sets firmer and a little more brittle, not as meltingly soft. Use it sparingly for mousse and panna cotta."],
+    zu: ["agar-agar", "gelatine", "gelbildung-gelatine"] },
+
+  { id: "wein", gruppe: "wuerzen", fehlt: ["Wein zum Ablöschen", "Wine for deglazing"],
+    statt: [
+      { wie: ["Brühe mit 1 TL Zitronensaft oder Essig pro 250 ml.", "Stock with 1 tsp lemon juice or vinegar per 250 ml."] },
+      { wie: ["Für Rotwein: Brühe mit einem Schuss Traubensaft und Rotweinessig.", "For red wine: stock with a splash of grape juice and red wine vinegar."] },
+    ],
+    warum: ["Wein bringt in die Sauce vor allem Säure und Fruchtaroma. Die Säure macht die Sauce frisch, sie lässt sich mit Essig oder Zitrone nachbauen.", "Wine mainly brings acidity and fruity flavour to a sauce. The acidity makes the sauce taste fresh, and vinegar or lemon can recreate it."],
+    zu: ["wein-kochen", "saeure", "fond", "reduktion"] },
+  { id: "zitrone", gruppe: "wuerzen", fehlt: ["Zitronensaft", "Lemon juice"],
+    statt: [{ wie: ["Etwa die halbe Menge milden Essig, also ½ TL Essig für 1 TL Zitronensaft.", "About half as much mild vinegar, so ½ tsp vinegar for 1 tsp lemon juice."] }],
+    warum: ["Für Säure in Dressing, Sauce oder Buttermilch zählt nur die Säure, und Essig wirkt stärker.", "For acidity in a dressing, sauce or buttermilk only the acid counts, and vinegar is stronger."],
+    achtung: ["Den Duft der Zitronenschale ersetzt Essig nicht: Für Abrieb gibt es keinen Ersatz.", "Vinegar doesn't replace the scent of lemon zest: for zest there is no substitute."],
+    zu: ["saeure", "abschmecken-saeure"] },
+  { id: "kraeuter", gruppe: "wuerzen", fehlt: ["Frische Kräuter", "Fresh herbs"],
+    statt: [{ wie: ["Getrocknete Kräuter, etwa ein Drittel der Menge: 1 TL getrocknet für 1 EL frisch.", "Dried herbs, about a third of the amount: 1 tsp dried for 1 tbsp fresh."], gut: ["Gut bei Oregano, Thymian, Rosmarin, Majoran.", "Good for oregano, thyme, rosemary, marjoram."] }],
+    warum: ["Beim Trocknen geht das Wasser weg, die Aromastoffe bleiben konzentriert zurück. Getrocknete Kräuter brauchen Hitze und Zeit, um ihr Aroma abzugeben.", "Drying removes the water and concentrates the aromas. Dried herbs need heat and time to release their flavour."],
+    achtung: ["Getrocknete Kräuter früh mitkochen, frische am Schluss. Basilikum, Petersilie, Koriander und Schnittlauch verlieren getrocknet fast alles.", "Add dried herbs early, fresh ones at the end. Basil, parsley, coriander and chives lose almost everything when dried."],
+    zu: ["w-kraeuter-gewuerze", "aroma-loeslichkeit", "kraeuter-schwarz"] },
+  { id: "salz", gruppe: "wuerzen", fehlt: ["Die richtige Salzsorte", "The right kind of salt"],
+    statt: [{ wie: ["Salz nach Gewicht tauschen, nicht nach Löffeln: Ein Löffel Flockensalz salzt deutlich schwächer als ein Löffel feines Salz.", "Swap salt by weight, not by spoon: a spoonful of flaky salt is much less salty than a spoonful of fine salt."] }],
+    warum: ["Alle Speisesalze sind fast reines Natriumchlorid. Unterschiedlich ist nur die Korngröße: Große Flocken lassen mehr Luft im Löffel.", "All table salts are almost pure sodium chloride. Only the crystal size differs: large flakes leave more air in the spoon."],
+    zu: ["salz", "salzgehalt", "essen-versalzen"] },
+];

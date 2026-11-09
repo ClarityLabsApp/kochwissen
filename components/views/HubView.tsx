@@ -173,7 +173,9 @@ export default function HubView({ group, lang }: { group: GroupKey; lang: Lang }
       { id: "techniken", title: T.types.technik[0], pic: hasPicture("cat-technik") ? "cat-technik" : undefined, n: tech.length,
         body: byWorld(tech).map(([w, r]) => <div key={w || "x"}><h3>{w ? titleOf(w, lang) : H.other}</h3>{list(r)}</div>) },
       { id: "zutaten", title: T.types.zutat[0], pic: hasPicture("cat-zutat") ? "cat-zutat" : undefined, n: items.filter((e) => e.typ === "zutat").length,
-        body: <Tiles items={items.filter((e) => e.typ === "zutat")} lang={lang} /> },
+        body: <>
+          <Link href={href(lang, "/ersatz")} className="ers-hint"><span>{lang === "en" ? "Out of something? What to use instead, and why." : "Etwas fehlt? Was du stattdessen nimmst und warum."}</span><em>{lang === "en" ? "Substitutes" : "Zutaten ersetzen"} →</em></Link>
+          <Tiles items={items.filter((e) => e.typ === "zutat")} lang={lang} /></> },
       { id: "stellschrauben", title: T.types.stellschraube[0], pic: hasPicture("cat-stellschraube") ? "cat-stellschraube" : undefined, n: items.filter((e) => e.typ === "stellschraube").length,
         body: list(items.filter((e) => e.typ === "stellschraube")) },
       { id: "begriffe", title: T.types.begriff[0], pic: hasPicture("cat-begriff") ? "cat-begriff" : undefined, n: items.filter((e) => e.typ === "begriff").length,

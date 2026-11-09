@@ -10,6 +10,7 @@ import StepFlow from "@/components/visuals/StepFlow";
 import PathNav from "@/components/PathNav";
 import PrintButton from "@/components/PrintButton";
 import MerkButton from "@/components/MerkButton";
+import { ERSATZ } from "@/lib/ersatz";
 import { appearsIn, getEntry, getMasterItem, hasPicture, isTranslated, lernpfade, libraryData, plainText, titleOf, typOf, type Typ } from "@/lib/content";
 import { GROUPS, groupOfType } from "@/lib/nav";
 import { Crumbs, Row } from "./HubView";
@@ -178,6 +179,17 @@ export default function EntryView({ id, lang }: { id: string; lang: Lang }) {
         {e.was_passiert && <div className="block"><h2>{L.happens}</h2><div className="prose"><p><R text={e.was_passiert} /></p></div></div>}
         {e.warum_wichtig && <div className="block"><h2>{L.why}</h2><div className="prose"><p><R text={e.warum_wichtig} /></p></div></div>}
         {seenStrip}
+        {(() => {
+          const c = ERSATZ.find((x) => x.zu.slice(0, 2).includes(e.id));
+          if (!c) return null;
+          const fehlt = c.fehlt[lang === "en" ? 1 : 0];
+          return (
+            <Link href={`${ln("/ersatz")}#${c.id}`} className="ers-hint">
+              <span>{lang === "en" ? `Out of ${fehlt.toLowerCase()}? What to use instead.` : `${fehlt} fehlt? Was du stattdessen nimmst.`}</span>
+              <em>{lang === "en" ? "Substitutes" : "Ersatz"} →</em>
+            </Link>
+          );
+        })()}
         {(e.typ === "experiment" || e.typ === "labor") && e.material?.length ? (
           <div className="exp"><div className="exp-head"><span className="mono">{L.need}{e.dauer ? ` · ${e.dauer}` : ""}</span><PrintButton label={L.print} /></div>
             <ul className="plain">{e.material.map((x) => <li key={x}>{x}</li>)}</ul>

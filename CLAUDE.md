@@ -96,7 +96,7 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - Adresse zentral in `lib/site.ts` (in Produktion https://garum.guide).
 
 - Impressum und Datenschutz: `/impressum`, `/datenschutz` (und `/en/…`), Texte in `components/views/LegalView.tsx`, Kontakt `CONTACT_EMAIL` in `lib/site.ts` (Weiterleitung über den Domain-Anbieter). Fußzeile `components/SiteFooter.tsx` auf jeder Seite.
-- Merkliste und „gelesen“ ohne Konto: `lib/memo.ts` (localStorage), Knopf `components/MerkButton.tsx` auf Eintragsseiten, Bereich „Deine Merkliste“ auf der Startseite, teilbar als Link `/?merk=id1,id2`.
+- Merkliste und „gelesen“ ohne Konto: `lib/memo.ts` (localStorage), Knopf `components/MerkButton.tsx` auf Eintragsseiten, Seite `/merkliste`, teilbar als Link `/merkliste?merk=id1,id2`.
 - Schriften werden selbst ausgeliefert (`@fontsource…` in `app/layout.tsx`), keine Verbindung zu Google Fonts. Keine Cookies, kein Tracking.
 
 ## Englische Version
@@ -143,4 +143,7 @@ In `components/visuals/`, ausgewählt in `Visual.tsx`:
 - [x] Wahrnehmung: 7 Einträge (Mundgefühl, Temperatur und Geschmack, Kontraste, Richtig abschmecken, Augen und Ohren essen mit, Experimente Farbe täuscht und warme Limonade) und Lernpfad `schmecken-lernen` (`scripts/batches/gen_batch_wahrnehmung.py`). Auf `/verstehen` eigener Bereich „Geschmack und Wahrnehmung“ (`WAHRNEHMUNG` in `lib/nav.ts`, quer über die Typen) und oben der Kasten „Die Grundregeln der Küche“ aus dem Lernpfad `grundprinzipien` (8. November 2026)
 - [x] Wein: `wein-kochen` (mit Alkohol-Balken), `wein-essen` (mit Wein-Waage), `sauce-wein` (`scripts/batches/gen_batch_wein.py`, 8. November 2026)
 - [x] Merkliste als eigene Seite `/merkliste` (Lesezeichen im Menü), nicht mehr auf der Startseite; geteilte Links `?merk=` landen dort (`components/MerkList.tsx`, 8. November 2026)
+- [x] Fehlersuche `/fehlersuche`: Was kochst du (10 Gruppen aus Welten, `lib/fehlersuche.ts`) → Was ist passiert → häufigste Ursache mit Handgriff, darunter die Diagnose des Eintrags (`components/Troubleshooter.tsx`, Zustand in `?b=…&p=…`). Verlinkt auf /probleme, Startseite und Fußzeile (9. November 2026)
+- [x] Welt Geräte & Werkzeug (`w-geraete`): Airfryer, Induktion, Mikrowelle, Schnellkochtopf, Gusseisen, beschichtete Pfanne, Pizzastein, Messer, Wok, Experiment Eis in der Mikrowelle; bestehende Geräte-Einträge zugeordnet (`scripts/batches/gen_batch_geraete.py`, 9. November 2026)
+- [x] Zutaten ersetzen `/ersatz`: 18 Fälle mit Ersatz, Warum und Achtung, Daten in `lib/ersatz.ts` (zweisprachig), Filter `components/ErsatzList.tsx`. Hinweis-Kasten auf den Einträgen der Zutat (`zu[0..1]`) und auf /verstehen bei den Zutaten (9. November 2026)
 - [x] Glossar II: 32 neue Begriffe aus Biologie, Chemie und Küchensprache, 43 insgesamt (`scripts/batches/gen_begriffe2.py`, 2. November 2026)

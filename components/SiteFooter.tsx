@@ -12,6 +12,8 @@ export default function SiteFooter() {
       <nav className="footer-map mono" aria-label={T.hub.explore}>
         {(["probleme", "ziele", "verstehen", "ausprobieren"] as const).map((k) => <Link key={k} href={href(lang, `/${k}`)}>{T.hub[k][0]}</Link>)}
         <Link href={href(lang, "/pfad")}>{T.nav.paths}</Link>
+        <Link href={href(lang, "/fehlersuche")}>{lang === "en" ? "Troubleshooting" : "Fehlersuche"}</Link>
+        <Link href={href(lang, "/ersatz")}>{lang === "en" ? "Substitutes" : "Zutaten ersetzen"}</Link>
         <Link href={href(lang, "/alle")}>{T.hub.azTitle}</Link>
       </nav>
       <footer className="site">
