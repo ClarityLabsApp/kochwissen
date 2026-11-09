@@ -190,6 +190,12 @@ export default function HubView({ group, lang }: { group: GroupKey; lang: Lang }
         <p>{H[group][1]}</p>
       </header>
       {group === "verstehen" && <Rules lang={lang} />}
+      {group === "probleme" && (
+        <Link href={href(lang, "/fehlersuche")} className="ts-cta">
+          <span><strong>{lang === "en" ? "Troubleshooting" : "Fehlersuche"}</strong><br /><span>{lang === "en" ? "Going wrong right now? Three clicks to the fix." : "Geht gerade etwas schief? In drei Klicks zur Rettung."}</span></span>
+          <em>{lang === "en" ? "Start" : "Starten"} →</em>
+        </Link>
+      )}
       <Sections sections={sections} lang={lang} />
       <MoreGroups lang={lang} except={group} />
     </main>

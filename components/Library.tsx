@@ -116,6 +116,7 @@ export default function Library({ items, illus = [], pfade = [], lang = "de" }: 
                   ))}
                 </ul>
               <div className="door-foot">
+                {d.typ === "symptom" && <Link className="linkbtn" href={ln("/fehlersuche")}>{lang === "en" ? "Troubleshooting" : "Fehlersuche"} →</Link>}
                 <Link className="linkbtn" href={ln(`/${d.group}`)}>{T.doors[d.typ as "symptom"][2]} ({items.filter((e) => GROUPS.find((g) => g.key === d.group)!.types.includes(e.typ)).length}) →</Link>
               </div>
             </div>
