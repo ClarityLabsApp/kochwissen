@@ -88,7 +88,7 @@ add(Z("mehltyp", L("Mehltypen: Was die Zahl auf der Packung bedeutet", "Flour ty
          "With wholemeal flour let the dough soak for 20 to 30 minutes so the bran can take up water."]),
       ["mehl", "roggenmehl", "glutenbildung", "brot-zu-dicht", "teig-klebt"],
       ["w-brot", "w-getreide", "w-gebaeck"],
-      "four small heaps of flour in a row from bright white to speckled brown wholemeal, with a wheat ear",
+      "four small heaps of flour on a dark wooden board in a row, from pure white to speckled brown wholemeal, each in a small wooden scoop, with a wheat ear",
       [CB("2.4 Flour Streams and Types of Wheat Flour", "02%3A_Flour/2.04%3A_Flour_Streams_and_Types_of_Wheat_Flour"),
        {"titel": "Cuisine Helvetica: Swiss flour types", "url": "https://cuisinehelvetica.com/swiss-flour-types/"},
        MC("Kapitel Getreide und Mehl", "Chapter on grains and flour")]))
@@ -143,7 +143,7 @@ add({"id": "x-ei-schwimmtest", "typ": "experiment", "titel": L("Wie alt ist das 
                      "The test shows age, not whether an egg has gone off. An egg that smells odd when cracked should be thrown away, however it behaved in the water."),
      "dauer": L("5 Minuten", "5 minutes"),
      "links": ["ei", "eier-schaelen", "eiweiss", "ph-wert"], "welten": ["w-eier"],
-     "visual": {"vorlage": "ablauf", "illustration": "three tall glasses of water with eggs: one lying flat at the bottom, one standing upright, one floating near the top"},
+     "visual": {"vorlage": "ablauf", "illustration": "three upright tall glasses of water standing side by side: in the first an egg lies flat on the bottom, in the second an egg stands on its tip at the bottom, in the third an egg floats near the surface"},
      "quellen": [MC("Kapitel Eier: Qualität und Alter", "Chapter on eggs: quality and age"), CB("7.5 Storing Eggs", "07%3A_Eggs/7.05%3A_Storing_Eggs")],
      "status": "entwurf", "schwierigkeit": "einsteiger"})
 
