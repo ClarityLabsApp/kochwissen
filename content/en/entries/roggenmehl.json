@@ -1,0 +1,36 @@
+{
+  "id": "roggenmehl",
+  "titel": "Rye flour: why rye bread needs acid",
+  "kurz": "Rye flour forms hardly any usable gluten network. Its dough holds together through gums that bind a lot of water, and it needs acid so [[krume|the crumb]] doesn't turn gummy.",
+  "bild_im_kopf": "Like paste instead of a rubber band: it sticks and holds together, but it doesn't spring back.",
+  "was_passiert": "Rye contains protein, but it doesn't form an elastic network like wheat. Instead it has a lot of gums (pentosans) that bind many times their weight in water and make the dough sticky. Rye [[mehl|flour]] also brings plenty of starch-splitting enzymes (amylases). They keep working in the oven until the starch sets, and can break it down to sugar. Acid from [[sauerteig|sourdough]] slows these enzymes.",
+  "warum_wichtig": "Treat rye like wheat and you get a sticky dough and a loaf that stays damp and gummy inside. With sourdough, brief mixing and patience after baking it turns moist and sliceable.",
+  "synonyme": [
+    "rye",
+    "rye bread",
+    "gummy rye bread",
+    "sticky rye dough",
+    "rye sourdough",
+    "pentosans"
+  ],
+  "faustregeln": [
+    "For breads with a lot of rye: make most of the rye into sourdough, because the acid slows the enzymes.",
+    "Mix rye dough briefly rather than kneading for long: there is no gluten network to build.",
+    "Work with wet hands or a dough scraper, not with extra flour.",
+    "Let rye bread rest for at least a day after baking, because the crumb only firms up as it cools."
+  ],
+  "rolle": [
+    {
+      "rolle": "binds a lot of water",
+      "prozess": "staerkeverkleisterung"
+    },
+    {
+      "rolle": "brings active enzymes",
+      "prozess": "amylase"
+    },
+    {
+      "rolle": "needs acid",
+      "prozess": "sauerteig"
+    }
+  ]
+}

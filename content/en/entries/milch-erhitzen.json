@@ -1,0 +1,29 @@
+{
+  "id": "milch-erhitzen",
+  "titel": "Pasteurised, UHT, raw: what heat does to milk",
+  "kurz": "Milk is heated to kill pathogens. The hotter, the longer it keeps, but the more it tastes cooked.",
+  "bild_im_kopf": "Like a thermostat for shelf life: every extra degree buys time and costs a little freshness.",
+  "was_passiert": "To pasteurise, milk is briefly heated to 72 to 75 °C for 15 to 30 seconds. That kills pathogens but not all bacteria, so it belongs in the fridge. UHT milk is heated above 135 °C for a few seconds and packed sterile: unopened it keeps for months. In the process, [[milchzucker|milk sugar]] and protein react a little with each other, and sulphur compounds are released from the protein. That is where the slight cooked taste comes from.",
+  "warum_wichtig": "For yoghurt, fresh cheese or cheese it matters how the milk was treated: strongly heated protein curdles differently. And raw milk from the farm can contain pathogens.",
+  "synonyme": [
+    "pasteurisation",
+    "pasteurised milk",
+    "UHT milk",
+    "long-life milk",
+    "raw milk",
+    "boiling raw milk",
+    "homogenised milk",
+    "cooked taste milk"
+  ],
+  "faustregeln": [
+    "For raw milk: bring it to the boil before drinking, because it can contain pathogens.",
+    "For fresh cheese and cheese: no UHT milk, because its strongly heated protein curdles only soft and crumbly.",
+    "Homogenised means the fat has been broken into tiny droplets, so the cream no longer rises."
+  ],
+  "schritte": [
+    "Bring raw milk from a farm or milk vending machine to the boil before drinking it.",
+    "Stir constantly and keep the heat medium so nothing catches on the bottom of the pan.",
+    "Cool boiled milk quickly and keep it in the fridge.",
+    "For homemade yoghurt use pasteurised or UHT milk, not raw."
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "stand": "2026-11-02",
-  "anzahl": 415,
+  "anzahl": 422,
   "eintraege": [
     {
       "id": "w-fleisch",
@@ -10471,6 +10471,240 @@
       ],
       "visual": {
         "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "roggenmehl",
+      "typ": "zutat",
+      "titel": "Roggenmehl: Warum Roggenbrot Säure braucht",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "mehl",
+        "mehltyp",
+        "glutenbildung",
+        "sauerteig",
+        "l-sauerteig",
+        "amylase",
+        "brot-zu-dicht",
+        "staerkeverkleisterung"
+      ],
+      "welten": [
+        "w-brot",
+        "w-getreide"
+      ],
+      "synonyme": [
+        "Roggen",
+        "Roggenbrot",
+        "Roggenbrot klitschig",
+        "Roggenteig klebt",
+        "Roggensauerteig",
+        "Pentosane"
+      ],
+      "visual": {
+        "vorlage": "punktmatrix"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "mehltyp",
+      "typ": "zutat",
+      "titel": "Mehltypen: Was die Zahl auf der Packung bedeutet",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "mehl",
+        "roggenmehl",
+        "glutenbildung",
+        "brot-zu-dicht",
+        "teig-klebt"
+      ],
+      "welten": [
+        "w-brot",
+        "w-getreide",
+        "w-gebaeck"
+      ],
+      "synonyme": [
+        "Mehltype",
+        "Type 405",
+        "Type 550",
+        "Type 1050",
+        "Weissmehl",
+        "Halbweissmehl",
+        "Ruchmehl",
+        "Vollkornmehl",
+        "Ausmahlgrad",
+        "Mehl Unterschied"
+      ],
+      "visual": {
+        "vorlage": "punktmatrix"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "milch-erhitzen",
+      "typ": "technik",
+      "titel": "Pasteurisiert, UHT, Rohmilch: Was Hitze mit Milch macht",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "milch",
+        "kasein",
+        "keimwachstum",
+        "maillard-reaktion",
+        "l-joghurt",
+        "l-frischkaese",
+        "emulsion"
+      ],
+      "welten": [
+        "w-milch"
+      ],
+      "synonyme": [
+        "pasteurisieren",
+        "Pasteurisierung",
+        "UHT-Milch",
+        "H-Milch",
+        "Rohmilch",
+        "Rohmilch abkochen",
+        "Milch homogenisiert",
+        "Kochgeschmack Milch"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "x-ei-schwimmtest",
+      "typ": "experiment",
+      "titel": "Wie alt ist das Ei? Der Schwimmtest",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "ei",
+        "eier-schaelen",
+        "eiweiss",
+        "ph-wert"
+      ],
+      "welten": [
+        "w-eier"
+      ],
+      "synonyme": [
+        "Ei frisch testen",
+        "Ei schwimmt",
+        "Eier Frischetest",
+        "Ei Wasserglas",
+        "Luftkammer Ei"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "geliermittel",
+      "typ": "zutat",
+      "titel": "Agar, Alginat, Carrageen: Gelieren ohne Gelatine",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "gelbildung-gelatine",
+        "gelatine",
+        "agar-agar",
+        "xanthan",
+        "pektin",
+        "kalzium-pektin",
+        "ph-wert"
+      ],
+      "welten": [
+        "w-suesses"
+      ],
+      "synonyme": [
+        "Hydrokolloide",
+        "Geliermittel vegan",
+        "Agar-Agar",
+        "Alginat",
+        "Natriumalginat",
+        "Carrageen",
+        "Gellan",
+        "Johannisbrotkernmehl",
+        "Guarkernmehl",
+        "Sphärifikation",
+        "Molekularküche"
+      ],
+      "visual": {
+        "vorlage": "punktmatrix"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "glutenfrei-backen",
+      "typ": "technik",
+      "titel": "Glutenfrei backen: Was den Kleber ersetzt",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "glutenbildung",
+        "mehl",
+        "xanthan",
+        "staerkeverkleisterung",
+        "ei",
+        "brot-zu-dicht",
+        "mehltyp"
+      ],
+      "welten": [
+        "w-brot",
+        "w-gebaeck",
+        "w-getreide"
+      ],
+      "synonyme": [
+        "glutenfrei",
+        "glutenfreies Brot",
+        "glutenfreies Mehl",
+        "ohne Gluten backen",
+        "Flohsamenschalen",
+        "Xanthan backen",
+        "glutenfreier Kuchen bröselt"
+      ],
+      "visual": {
+        "vorlage": "ablauf"
+      },
+      "verlinkt_von": []
+    },
+    {
+      "id": "zuckerersatz",
+      "typ": "zutat",
+      "titel": "Zuckerersatz beim Backen",
+      "status": "entwurf",
+      "pilot": false,
+      "links": [
+        "zucker",
+        "zucker-feuchtigkeit",
+        "karamellisierung",
+        "maillard-reaktion",
+        "hefegaerung",
+        "suess",
+        "zucker-kristallisation"
+      ],
+      "welten": [
+        "w-gebaeck",
+        "w-suesses"
+      ],
+      "synonyme": [
+        "Süßstoff",
+        "Süßstoff backen",
+        "Erythrit",
+        "Xylit",
+        "Stevia",
+        "Sucralose",
+        "Aspartam",
+        "Zuckeralkohol",
+        "zuckerfrei backen",
+        "Birkenzucker"
+      ],
+      "visual": {
+        "vorlage": "punktmatrix"
       },
       "verlinkt_von": []
     }

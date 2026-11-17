@@ -1,0 +1,64 @@
+{
+  "id": "glutenfrei-backen",
+  "typ": "technik",
+  "titel": "Glutenfrei backen: Was den Kleber ersetzt",
+  "synonyme": [
+    "glutenfrei",
+    "glutenfreies Brot",
+    "glutenfreies Mehl",
+    "ohne Gluten backen",
+    "Flohsamenschalen",
+    "Xanthan backen",
+    "glutenfreier Kuchen bröselt"
+  ],
+  "kurz": "Ohne [[glutenbildung|Gluten]] fehlt dem Teig das dehnbare Netz, das Gas festhält und das Gebäck zusammenhält. Andere Stoffe übernehmen seine Aufgaben: Stärke gibt Gerüst, Bindemittel wie Xanthan oder Flohsamenschalen halten Wasser und Gas.",
+  "bild_im_kopf": "Wie ein Zelt ohne Gestänge: Die Plane allein steht nicht, man braucht andere Stangen.",
+  "was_passiert": "Weizenkleber macht drei Dinge: Er bindet, er ist dehnbar und er wird im Ofen fest. Glutenfreie [[mehl|Mehle]] wie Reis, Mais, Buchweizen oder Hirse liefern Stärke, aber kein Netz. Bindemittel wie [[xanthan|Xanthan]] oder Flohsamenschalen bilden mit Wasser ein zähes Gel, das Gasbläschen umschließt. Eier helfen, weil ihr Eiweiß beim Backen fest wird. Darum sind glutenfreie Brotteige eher ein dicker Brei als ein Teig.",
+  "warum_wichtig": "Wer Weizenmehl einfach 1:1 durch glutenfreies Mehl ersetzt, bekommt bröselige Kuchen und flache, feuchte Brote. Mit Mischung, Bindemittel und mehr Wasser gelingt es.",
+  "schritte": [
+    "Mehle mischen: ein Teil mit Geschmack und Eiweiß (Buchweizen, Hirse, Hafer glutenfrei) und ein Teil Stärke (Mais, Kartoffel, Reis).",
+    "Ein Bindemittel zugeben, wenn die Mischung keines enthält: Xanthan oder Flohsamenschalen, in kleinen Mengen nach Packung.",
+    "Für Brot deutlich mehr Wasser nehmen als bei Weizen: Der Teig soll weich und klebrig sein.",
+    "Den Teig 15 bis 30 Minuten quellen lassen, bevor er geformt wird.",
+    "Lange und gut durchbacken, Brot vollständig auskühlen lassen, bevor man es anschneidet."
+  ],
+  "faustregeln": [
+    "Für luftiges Brot: Flohsamenschalen, weil ihr Gel Gas besonders gut festhält.",
+    "Für Kuchen und Muffins: Xanthan und Eier, weil sie binden, ohne zäh zu machen.",
+    "Für Zöliakie zählt auch die Küche: eigene Bretter, Siebe und Backformen, und auf zertifiziert glutenfreie Produkte achten."
+  ],
+  "links": [
+    "glutenbildung",
+    "mehl",
+    "xanthan",
+    "staerkeverkleisterung",
+    "ei",
+    "brot-zu-dicht",
+    "mehltyp"
+  ],
+  "welten": [
+    "w-brot",
+    "w-gebaeck",
+    "w-getreide"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a sliced gluten-free loaf with an open crumb beside small bowls of buckwheat flour, rice flour and psyllium husk"
+  },
+  "quellen": [
+    {
+      "titel": "America's Test Kitchen: Gluten-free binders and leaveners",
+      "url": "https://americastestkitchen.com/guides/gluten-free/gluten-free-binders-and-leaveners"
+    },
+    {
+      "titel": "Rodriguez-Velazquez: Chemistry of Cooking, 2.10 Other Grains and Flours (LibreTexts, CC BY-NC-SA 4.0)",
+      "url": "https://chem.libretexts.org/Bookshelves/Biological_Chemistry/Chemistry_of_Cooking_(Rodriguez-Velazquez)/02%3A_Flour/2.10%3A_Other_Grains_and_Flours"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot: Gluten"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "fortgeschritten"
+}

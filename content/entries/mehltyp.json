@@ -1,0 +1,69 @@
+{
+  "id": "mehltyp",
+  "typ": "zutat",
+  "titel": "Mehltypen: Was die Zahl auf der Packung bedeutet",
+  "synonyme": [
+    "Mehltype",
+    "Type 405",
+    "Type 550",
+    "Type 1050",
+    "Weissmehl",
+    "Halbweissmehl",
+    "Ruchmehl",
+    "Vollkornmehl",
+    "Ausmahlgrad",
+    "Mehl Unterschied"
+  ],
+  "kurz": "Die Typenzahl misst, wie viele Mineralstoffe im Mehl stecken, also wie viel vom äußeren Korn mitgemahlen wurde. Je höher die Zahl, desto dunkler, kräftiger und durstiger ist das Mehl.",
+  "bild_im_kopf": "Wie beim Schälen eines Apfels: Je dicker man schält, desto heller bleibt, was übrig ist.",
+  "rolle": [
+    {
+      "rolle": "bestimmt die Wasseraufnahme",
+      "prozess": "staerkeverkleisterung"
+    },
+    {
+      "rolle": "Kleber für die Struktur",
+      "prozess": "glutenbildung"
+    }
+  ],
+  "was_passiert": "Das Innere des Korns ist fast reine Stärke mit Eiweiß und arm an Mineralstoffen. Die äußeren Schichten und die Schale sind reich an Mineralstoffen, Fasern und Aroma. Verbrennt man [[mehl|Mehl]], bleibt Asche übrig: In Deutschland gibt die Typenzahl an, wie viele Milligramm Asche 100 g Mehl (in der Trockenmasse) hinterlassen. Type 405 enthält also rund 0,4 % Mineralstoffe. In der Schweiz heißen die Stufen Weissmehl, Halbweissmehl, Ruchmehl und Vollkornmehl.",
+  "warum_wichtig": "Dunkleres Mehl nimmt mehr Wasser auf, macht Teige kompakter und schmeckt kräftiger. Wer in einem Rezept die Mehlsorte wechselt, muss deshalb oft die Wassermenge anpassen.",
+  "faustregeln": [
+    "Ungefähre Entsprechungen: Weissmehl ≈ Type 405 bis 550, Halbweissmehl ≈ Type 812, Ruchmehl ≈ Type 1050, Vollkornmehl = ganzes Korn.",
+    "Für feine Kuchen und Guetzli: helles Mehl, weil es wenig Schale enthält und zart bleibt.",
+    "Für Brot mit viel Geschmack: Halbweiss- oder Ruchmehl, mit etwas mehr Wasser als beim Weissmehl.",
+    "Bei Vollkornmehl den Teig 20 bis 30 Minuten quellen lassen, damit die Schale Wasser aufnimmt."
+  ],
+  "links": [
+    "mehl",
+    "roggenmehl",
+    "glutenbildung",
+    "brot-zu-dicht",
+    "teig-klebt"
+  ],
+  "welten": [
+    "w-brot",
+    "w-getreide",
+    "w-gebaeck"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix",
+    "illustration": "four small heaps of flour in a row from bright white to speckled brown wholemeal, with a wheat ear"
+  },
+  "quellen": [
+    {
+      "titel": "Rodriguez-Velazquez: Chemistry of Cooking, 2.4 Flour Streams and Types of Wheat Flour (LibreTexts, CC BY-NC-SA 4.0)",
+      "url": "https://chem.libretexts.org/Bookshelves/Biological_Chemistry/Chemistry_of_Cooking_(Rodriguez-Velazquez)/02%3A_Flour/2.04%3A_Flour_Streams_and_Types_of_Wheat_Flour"
+    },
+    {
+      "titel": "Cuisine Helvetica: Swiss flour types",
+      "url": "https://cuisinehelvetica.com/swiss-flour-types/"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Getreide und Mehl"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

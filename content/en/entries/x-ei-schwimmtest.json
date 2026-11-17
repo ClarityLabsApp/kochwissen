@@ -1,0 +1,28 @@
+{
+  "id": "x-ei-schwimmtest",
+  "titel": "How old is the egg? The float test",
+  "kurz": "A fresh egg lies flat at the bottom of a glass of water, an older one stands up, a very old one floats. The reason is the air pocket in the egg, which grows every day.",
+  "bild_im_kopf": "Like a life jacket that slowly inflates itself.",
+  "beobachtung": "Very fresh eggs lie flat. After one or two weeks the blunt end lifts, after several weeks the egg stands upright or rises.",
+  "erklaerung": "The eggshell has thousands of tiny pores. Water evaporates through them, and [[kohlendioxid|carbon dioxide]] escapes from the white. Air takes their place and collects in the air pocket at the blunt end. The bigger it gets, the more the egg floats. As the carbon dioxide escapes, the white becomes more alkaline and runnier over time, which is why older eggs are easier to peel.",
+  "dauer": "5 minutes",
+  "sicherheit": "The test shows age, not whether an egg has gone off. An egg that smells odd when cracked should be thrown away, however it behaved in the water.",
+  "synonyme": [
+    "egg freshness test",
+    "egg floats",
+    "egg float test",
+    "egg in water glass",
+    "egg air cell"
+  ],
+  "schritte": [
+    "Fill the glass with cold water.",
+    "Gently lower an egg in with the spoon.",
+    "Watch how it settles: flat, tilted, upright or floating.",
+    "Repeat with the other eggs and compare the dates on the packs."
+  ],
+  "material": [
+    "a tall glass of cold water",
+    "eggs with different dates, if you have them",
+    "a spoon"
+  ]
+}

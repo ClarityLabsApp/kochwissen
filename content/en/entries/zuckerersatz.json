@@ -1,0 +1,36 @@
+{
+  "id": "zuckerersatz",
+  "titel": "Sugar substitutes in baking",
+  "kurz": "Sugar doesn't just sweeten, it also gives bakes bulk, browning, moisture and tenderness. Sweeteners usually replace only the sweetness, which is why a 1:1 swap rarely works.",
+  "bild_im_kopf": "Like an actor playing five parts: a stand-in usually covers only one of them.",
+  "was_passiert": "[[zucker|Sugar]] dissolves in the dough, binds water, gets in the way of gluten forming and browns in the oven. Intense sweeteners like stevia or sucralose are hundreds of times sweeter, so you need only traces and get no bulk. Aspartame loses sweetness in the heat. Sugar alcohols such as erythritol and xylitol do bring bulk. Erythritol is a little less sweet, cools in the mouth and can recrystallise. Xylitol sweetens about as much as sugar but is poisonous to dogs.",
+  "warum_wichtig": "Knowing what role the sugar plays in a recipe lets you choose the right substitute and expect changes in colour, volume and texture.",
+  "synonyme": [
+    "sweetener",
+    "baking with sweetener",
+    "erythritol",
+    "xylitol",
+    "stevia",
+    "sucralose",
+    "aspartame",
+    "sugar alcohol",
+    "sugar-free baking",
+    "birch sugar"
+  ],
+  "faustregeln": [
+    "For cakes and biscuits: choose a sugar alcohol or a blend with bulk, not pure sweetener, because sugar gives volume there.",
+    "Bakes made with substitutes often brown less: go by time and a skewer test, not by colour.",
+    "In yeast doughs leave in a little sugar, because the yeast needs it as food.",
+    "Keep xylitol and anything baked with it out of reach of dogs."
+  ],
+  "rolle": [
+    {
+      "rolle": "gives bulk and tenderness",
+      "prozess": "zucker-feuchtigkeit"
+    },
+    {
+      "rolle": "browns",
+      "prozess": "karamellisierung"
+    }
+  ]
+}

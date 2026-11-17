@@ -1,0 +1,62 @@
+{
+  "id": "milch-erhitzen",
+  "typ": "technik",
+  "titel": "Pasteurisiert, UHT, Rohmilch: Was Hitze mit Milch macht",
+  "synonyme": [
+    "pasteurisieren",
+    "Pasteurisierung",
+    "UHT-Milch",
+    "H-Milch",
+    "Rohmilch",
+    "Rohmilch abkochen",
+    "Milch homogenisiert",
+    "Kochgeschmack Milch"
+  ],
+  "kurz": "Milch wird erhitzt, um Krankheitserreger abzutöten. Je heißer, desto länger hält sie, aber umso mehr schmeckt sie gekocht.",
+  "bild_im_kopf": "Wie ein Thermostat für Haltbarkeit: Jeder Grad mehr kauft Zeit und kostet etwas Frische.",
+  "was_passiert": "Beim Pasteurisieren wird Milch kurz auf 72 bis 75 °C erhitzt, für 15 bis 30 Sekunden. Das tötet Krankheitserreger, aber nicht alle Keime, darum gehört sie in den Kühlschrank. UHT-Milch wird für wenige Sekunden über 135 °C erhitzt und keimfrei abgefüllt: Sie hält ungeöffnet monatelang. Dabei reagieren [[milchzucker|Milchzucker]] und Eiweiß ein wenig miteinander, und Schwefelstoffe aus dem Eiweiß werden frei. Daher kommt der leichte Kochgeschmack.",
+  "warum_wichtig": "Für Joghurt, Frischkäse oder Käse zählt, wie die Milch behandelt wurde: Stark erhitztes Eiweiß gerinnt anders. Und Rohmilch vom Hof kann Krankheitserreger enthalten.",
+  "schritte": [
+    "Rohmilch vom Hof oder Milchautomaten vor dem Trinken aufkochen.",
+    "Dabei ständig rühren und die Hitze mittel halten, damit nichts am Topfboden anbrennt.",
+    "Abgekochte Milch rasch abkühlen und im Kühlschrank aufbewahren.",
+    "Für selbst gemachten Joghurt pasteurisierte oder UHT-Milch nehmen, nicht rohe."
+  ],
+  "faustregeln": [
+    "Für Rohmilch: vor dem Trinken aufkochen, weil sie Krankheitserreger enthalten kann.",
+    "Für Frischkäse und Käse: keine UHT-Milch, weil ihr stark erhitztes Eiweiß nur weich und brüchig gerinnt.",
+    "Homogenisiert heißt: Das Fett wurde in winzige Tröpfchen zerteilt, darum rahmt die Milch nicht mehr auf."
+  ],
+  "links": [
+    "milch",
+    "kasein",
+    "keimwachstum",
+    "maillard-reaktion",
+    "l-joghurt",
+    "l-frischkaese",
+    "emulsion"
+  ],
+  "welten": [
+    "w-milch"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "a glass milk bottle, a small saucepan of steaming milk and a carton of long-life milk side by side"
+  },
+  "quellen": [
+    {
+      "titel": "Verbraucherzentrale: Rund um die Milch",
+      "url": "https://www.verbraucherzentrale.de/wissen/lebensmittel/lebensmittelproduktion/rund-um-die-milch-erzeugung-verarbeitung-und-angebote-12775"
+    },
+    {
+      "titel": "Rodriguez-Velazquez: Chemistry of Cooking, 6.2 Milk (LibreTexts, CC BY-NC-SA 4.0)",
+      "url": "https://chem.libretexts.org/Bookshelves/Biological_Chemistry/Chemistry_of_Cooking_(Rodriguez-Velazquez)/06%3A_Dairy_Products/6.02%3A_Milk"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Milch und Milchprodukte"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

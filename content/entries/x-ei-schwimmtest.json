@@ -1,0 +1,54 @@
+{
+  "id": "x-ei-schwimmtest",
+  "typ": "experiment",
+  "titel": "Wie alt ist das Ei? Der Schwimmtest",
+  "synonyme": [
+    "Ei frisch testen",
+    "Ei schwimmt",
+    "Eier Frischetest",
+    "Ei Wasserglas",
+    "Luftkammer Ei"
+  ],
+  "kurz": "Ein frisches Ei liegt flach am Boden eines Wasserglases, ein älteres stellt sich auf, ein sehr altes schwimmt. Der Grund ist die Luftblase im Ei, die mit jedem Tag wächst.",
+  "bild_im_kopf": "Wie eine Schwimmweste, die sich langsam selbst aufbläst.",
+  "material": [
+    "ein hohes Glas mit kaltem Wasser",
+    "Eier mit verschiedenem Datum, wenn vorhanden",
+    "ein Löffel"
+  ],
+  "schritte": [
+    "Das Glas mit kaltem Wasser füllen.",
+    "Ein Ei mit dem Löffel vorsichtig hineinlegen.",
+    "Beobachten, wie es liegt: flach, schräg, aufrecht oder schwimmend.",
+    "Mit den anderen Eiern wiederholen und das Datum auf der Packung vergleichen."
+  ],
+  "beobachtung": "Ganz frische Eier liegen flach. Nach ein bis zwei Wochen hebt sich das stumpfe Ende, nach mehreren Wochen steht das Ei aufrecht oder treibt nach oben.",
+  "erklaerung": "Die Eierschale hat Tausende winzige Poren. Durch sie verdunstet Wasser, und [[kohlendioxid|Kohlendioxid]] entweicht aus dem [[eiweiss|Eiweiß]]. An ihrer Stelle dringt Luft ein und sammelt sich am stumpfen Ende in der Luftkammer. Je größer sie wird, desto mehr Auftrieb hat das Ei. Weil das Kohlendioxid entweicht, wird das Eiweiß mit der Zeit basischer und dünnflüssiger, darum lassen sich ältere Eier leichter schälen.",
+  "sicherheit": "Der Test zeigt das Alter, nicht ob ein Ei verdorben ist. Ein Ei, das nach dem Aufschlagen auffällig riecht, gehört weg, egal wie es im Wasser lag.",
+  "dauer": "5 Minuten",
+  "links": [
+    "ei",
+    "eier-schaelen",
+    "eiweiss",
+    "ph-wert"
+  ],
+  "welten": [
+    "w-eier"
+  ],
+  "visual": {
+    "vorlage": "ablauf",
+    "illustration": "three tall glasses of water with eggs: one lying flat at the bottom, one standing upright, one floating near the top"
+  },
+  "quellen": [
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Eier: Qualität und Alter"
+    },
+    {
+      "titel": "Rodriguez-Velazquez: Chemistry of Cooking, 7.5 Storing Eggs (LibreTexts, CC BY-NC-SA 4.0)",
+      "url": "https://chem.libretexts.org/Bookshelves/Biological_Chemistry/Chemistry_of_Cooking_(Rodriguez-Velazquez)/07%3A_Eggs/7.05%3A_Storing_Eggs"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

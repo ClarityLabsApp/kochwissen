@@ -1,0 +1,71 @@
+{
+  "id": "geliermittel",
+  "typ": "zutat",
+  "titel": "Agar, Alginat, Carrageen: Gelieren ohne Gelatine",
+  "synonyme": [
+    "Hydrokolloide",
+    "Geliermittel vegan",
+    "Agar-Agar",
+    "Alginat",
+    "Natriumalginat",
+    "Carrageen",
+    "Gellan",
+    "Johannisbrotkernmehl",
+    "Guarkernmehl",
+    "Sphärifikation",
+    "Molekularküche"
+  ],
+  "kurz": "Viele Gelier- und Verdickungsmittel kommen aus Algen, Samen oder Bakterien. Es sind lange Zuckerketten, die Wasser einfangen, und jede hat eigene Regeln: Manche brauchen Hitze, manche Kalzium, manche vertragen keine Säure.",
+  "bild_im_kopf": "Wie verschiedene Schlüssel für dasselbe Schloss: Alle sperren Wasser ein, aber jeder dreht anders.",
+  "rolle": [
+    {
+      "rolle": "bindet Wasser zu einem Gel",
+      "prozess": "gelbildung-gelatine"
+    },
+    {
+      "rolle": "braucht Kalzium (Alginat)",
+      "prozess": "kalzium-pektin"
+    }
+  ],
+  "was_passiert": "[[gelatine|Gelatine]] ist Eiweiß aus [[kollagen-gelatine|Kollagen]] und schmilzt schon bei Körpertemperatur. [[agar-agar|Agar]] aus Rotalgen muss kochen, wird um 40 °C fest und schmilzt erst wieder um 85 °C. Alginat aus Braunalgen geliert kalt, sobald es auf Kalzium trifft. Ein Tropfen in Kalziumwasser bekommt so eine dünne Haut (Sphärifikation). Carrageen gibt es in festen und weichen Sorten, Johannisbrot- und Guarkernmehl verdicken, ohne fest zu werden.",
+  "warum_wichtig": "Wer weiß, was ein Mittel braucht, kann Gelatine vegetarisch ersetzen oder warm servierbare Gelees machen. Und man versteht, warum ein Rezept mit Ananas oder Zitronensaft nicht fest wurde.",
+  "faustregeln": [
+    "Für warm servierte Gelees: Agar, weil es erst um 85 °C wieder schmilzt.",
+    "Agar mindestens zwei Minuten sprudelnd kochen, sonst geliert es nicht.",
+    "Für Sphärifikation: rund 0,5 % Alginat in der Flüssigkeit und ein Bad mit etwa 0,5 % Calciumchlorid, Richtwerte aus der Molekularküche.",
+    "Sehr saure Flüssigkeiten gelieren mit Alginat schlecht, weil es unter einem [[ph-wert|pH-Wert]] von etwa 3,6 ausflockt.",
+    "Mengen variieren je nach Produkt stark: Packungsangabe hat Vorrang."
+  ],
+  "links": [
+    "gelbildung-gelatine",
+    "gelatine",
+    "agar-agar",
+    "xanthan",
+    "pektin",
+    "kalzium-pektin",
+    "ph-wert"
+  ],
+  "welten": [
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix",
+    "illustration": "small glass bowls with a clear amber jelly cube, tiny orange spheres like caviar on a spoon, and a little dish of white powder"
+  },
+  "quellen": [
+    {
+      "titel": "Rodriguez-Velazquez: Chemistry of Cooking, 1.5 Gelatinization (LibreTexts, CC BY-NC-SA 4.0)",
+      "url": "https://chem.libretexts.org/Bookshelves/Biological_Chemistry/Chemistry_of_Cooking_(Rodriguez-Velazquez)/01%3A_Thickening_and_Concentrating_Flavors/1.05%3A_Gelatinization"
+    },
+    {
+      "titel": "Rodriguez-Velazquez: Chemistry of Cooking, 1.7 Non-traditional thickeners (LibreTexts, CC BY-NC-SA 4.0)",
+      "url": "https://chem.libretexts.org/Bookshelves/Biological_Chemistry/Chemistry_of_Cooking_(Rodriguez-Velazquez)/01%3A_Thickening_and_Concentrating_Flavors/1.07%3A_Non-traditional_thickeners"
+    },
+    {
+      "titel": "HarvardX Science & Cooking: Spherification how-to",
+      "url": "https://courses.edx.org/asset-v1:HarvardX+SPU27x+2015_Q2+type@asset+block/Spherification_how-to.pdf"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "fortgeschritten"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "mehltyp",
+  "titel": "Flour types: what the number on the packet means",
+  "kurz": "The type number measures how much mineral matter is in the flour, so how much of the outer grain was milled in. The higher the number, the darker, more flavourful and thirstier the flour.",
+  "bild_im_kopf": "Like peeling an apple: the thicker you peel, the paler what's left.",
+  "was_passiert": "The inside of the grain is almost pure starch with protein and low in minerals. The outer layers and the bran are rich in minerals, fibre and flavour. Burn [[mehl|flour]] and ash remains: in Germany the type number states how many milligrams of ash 100 g of flour (in dry matter) leave behind. Type 405 therefore contains about 0.4 % minerals. In Switzerland the grades are called Weissmehl, Halbweissmehl, Ruchmehl and Vollkornmehl.",
+  "warum_wichtig": "Darker flour absorbs more water, makes doughs denser and tastes stronger. If you swap the flour in a recipe, you often have to adjust the amount of water.",
+  "synonyme": [
+    "flour type",
+    "type 405",
+    "type 550",
+    "German flour types",
+    "Swiss flour",
+    "Ruchmehl",
+    "extraction rate",
+    "wholemeal flour",
+    "flour difference"
+  ],
+  "faustregeln": [
+    "Rough equivalents: Swiss Weissmehl ≈ German type 405 to 550, Halbweissmehl ≈ type 812, Ruchmehl ≈ type 1050, wholemeal = whole grain.",
+    "For delicate cakes and biscuits: pale flour, because it contains little bran and stays tender.",
+    "For bread with lots of flavour: half-white or Ruchmehl, with a little more water than for white flour.",
+    "With wholemeal flour let the dough soak for 20 to 30 minutes so the bran can take up water."
+  ],
+  "rolle": [
+    {
+      "rolle": "decides water absorption",
+      "prozess": "staerkeverkleisterung"
+    },
+    {
+      "rolle": "gluten for structure",
+      "prozess": "glutenbildung"
+    }
+  ]
+}

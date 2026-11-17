@@ -1,0 +1,70 @@
+{
+  "id": "zuckerersatz",
+  "typ": "zutat",
+  "titel": "Zuckerersatz beim Backen",
+  "synonyme": [
+    "Süßstoff",
+    "Süßstoff backen",
+    "Erythrit",
+    "Xylit",
+    "Stevia",
+    "Sucralose",
+    "Aspartam",
+    "Zuckeralkohol",
+    "zuckerfrei backen",
+    "Birkenzucker"
+  ],
+  "kurz": "Zucker süßt nicht nur, er gibt Gebäck auch Masse, Bräune, Feuchtigkeit und Zartheit. Süßstoffe ersetzen meist nur die Süße, darum klappt ein Tausch 1:1 selten.",
+  "bild_im_kopf": "Wie ein Schauspieler, der fünf Rollen spielt: Ein Ersatz übernimmt meist nur eine davon.",
+  "rolle": [
+    {
+      "rolle": "gibt Masse und Zartheit",
+      "prozess": "zucker-feuchtigkeit"
+    },
+    {
+      "rolle": "bräunt",
+      "prozess": "karamellisierung"
+    }
+  ],
+  "was_passiert": "[[zucker|Zucker]] löst sich im Teig, bindet Wasser, stört die Bildung des Klebers und bräunt im Ofen. Intensive Süßstoffe wie Stevia oder Sucralose sind hundertfach süßer, man braucht nur Spuren und hat keine Masse. Aspartam verliert in der Hitze an Süße. Zuckeralkohole wie Erythrit und Xylit bringen Masse mit. Erythrit ist etwas weniger süß, kühlt im Mund und kann wieder auskristallisieren. Xylit süßt etwa wie Zucker, ist aber für Hunde giftig.",
+  "warum_wichtig": "Wer weiß, welche Rolle der Zucker im Rezept spielt, wählt den passenden Ersatz und rechnet damit, dass sich Farbe, Volumen und Biss ändern.",
+  "faustregeln": [
+    "Für Kuchen und Guetzli: einen Zuckeralkohol oder eine Mischung mit Masse wählen, nicht reinen Süßstoff, weil Zucker dort Volumen gibt.",
+    "Mit Ersatz gebackenes bräunt oft schwächer: nach Zeit und Garprobe gehen, nicht nach Farbe.",
+    "Bei Teigen mit Hefe etwas Zucker drinlassen, weil die Hefe ihn als Futter braucht.",
+    "Xylit und damit Gebackenes für Hunde unerreichbar aufbewahren."
+  ],
+  "links": [
+    "zucker",
+    "zucker-feuchtigkeit",
+    "karamellisierung",
+    "maillard-reaktion",
+    "hefegaerung",
+    "suess",
+    "zucker-kristallisation"
+  ],
+  "welten": [
+    "w-gebaeck",
+    "w-suesses"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix",
+    "illustration": "a sugar bowl beside small jars of white erythritol crystals and green stevia leaves, with a muffin"
+  },
+  "quellen": [
+    {
+      "titel": "National Geographic: Baking with sugar substitutes (2013)",
+      "url": "https://www.nationalgeographic.com/science/article/130717-sugar-substitutes-nutrasweet-splenda-stevia-baking"
+    },
+    {
+      "titel": "Rodriguez-Velazquez: Chemistry of Cooking, 4.8 Sugar Substitutes (LibreTexts, CC BY-NC-SA 4.0)",
+      "url": "https://chem.libretexts.org/Bookshelves/Biological_Chemistry/Chemistry_of_Cooking_(Rodriguez-Velazquez)/04%3A_Sugar/4.08%3A_Sugar_Substitutes_(ADD_US)"
+    },
+    {
+      "titel": "Rodriguez-Velazquez: Chemistry of Cooking, 4.3 The Application of Sugar (LibreTexts, CC BY-NC-SA 4.0)",
+      "url": "https://chem.libretexts.org/Bookshelves/Biological_Chemistry/Chemistry_of_Cooking_(Rodriguez-Velazquez)/04%3A_Sugar/4.03%3A_The_Application_of_Sugar"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "einsteiger"
+}

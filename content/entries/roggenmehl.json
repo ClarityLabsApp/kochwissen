@@ -1,0 +1,71 @@
+{
+  "id": "roggenmehl",
+  "typ": "zutat",
+  "titel": "Roggenmehl: Warum Roggenbrot Säure braucht",
+  "synonyme": [
+    "Roggen",
+    "Roggenbrot",
+    "Roggenbrot klitschig",
+    "Roggenteig klebt",
+    "Roggensauerteig",
+    "Pentosane"
+  ],
+  "kurz": "Roggenmehl bildet kaum ein tragfähiges Klebernetz. Sein Teig hält durch Schleimstoffe, die viel Wasser binden, und er braucht Säure, damit die [[krume|Krume]] nicht klitschig wird.",
+  "bild_im_kopf": "Wie Kleister statt Gummiband: Er klebt und hält zusammen, aber er federt nicht.",
+  "rolle": [
+    {
+      "rolle": "bindet viel Wasser",
+      "prozess": "staerkeverkleisterung"
+    },
+    {
+      "rolle": "bringt aktive Enzyme mit",
+      "prozess": "amylase"
+    },
+    {
+      "rolle": "braucht Säure",
+      "prozess": "sauerteig"
+    }
+  ],
+  "was_passiert": "Roggen enthält Eiweiß, aber es bildet kein elastisches Netz wie beim Weizen. Dafür hat er viele Schleimstoffe (Pentosane), die ein Vielfaches ihres Gewichts an Wasser binden und den Teig klebrig machen. Roggenmehl bringt außerdem viele stärkeabbauende [[enzym|Enzyme]] ([[amylase|Amylasen]]) mit. Sie arbeiten im Ofen weiter, bis die Stärke fest wird, und können sie zu Zucker zerlegen. Säure aus dem [[sauerteig|Sauerteig]] bremst diese Enzyme.",
+  "warum_wichtig": "Wer Roggen wie Weizen behandelt, bekommt einen klebrigen Teig und ein Brot, das innen feucht und speckig bleibt. Mit Sauerteig, kurzem Kneten und Geduld nach dem Backen wird es saftig und schnittfest.",
+  "faustregeln": [
+    "Für Brote mit viel Roggen: den Großteil des Roggens als [[l-sauerteig|Sauerteig ansetzen]], weil die Säure die Enzyme bremst.",
+    "Roggenteig nur kurz mischen statt lange kneten: Es gibt kein Klebernetz, das man aufbauen könnte.",
+    "Mit nassen Händen oder einem Teigschaber arbeiten, nicht mit zusätzlichem [[mehl|Mehl]].",
+    "Roggenbrot nach dem Backen mindestens einen Tag ruhen lassen, weil sich die Krume erst beim Abkühlen festigt."
+  ],
+  "links": [
+    "mehl",
+    "mehltyp",
+    "glutenbildung",
+    "sauerteig",
+    "l-sauerteig",
+    "amylase",
+    "brot-zu-dicht",
+    "staerkeverkleisterung"
+  ],
+  "welten": [
+    "w-brot",
+    "w-getreide"
+  ],
+  "visual": {
+    "vorlage": "punktmatrix",
+    "illustration": "a dark round rye loaf with a cracked floury crust next to a small sack of grey rye flour and a few rye ears"
+  },
+  "quellen": [
+    {
+      "titel": "Rodriguez-Velazquez: Chemistry of Cooking, 2.9 Rye Flour (LibreTexts, CC BY-NC-SA 4.0)",
+      "url": "https://chem.libretexts.org/Bookshelves/Biological_Chemistry/Chemistry_of_Cooking_(Rodriguez-Velazquez)/02%3A_Flour/2.09%3A_Rye_Flour"
+    },
+    {
+      "titel": "The Fresh Loaf: Rye flour",
+      "url": "https://www.thefreshloaf.com/handbook/rye-flour"
+    },
+    {
+      "titel": "Harold McGee: On Food and Cooking (2004)",
+      "stelle": "Kapitel Brot: Roggen"
+    }
+  ],
+  "status": "entwurf",
+  "schwierigkeit": "fortgeschritten"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "geliermittel",
+  "titel": "Agar, alginate, carrageenan: setting without gelatine",
+  "kurz": "Many gelling and thickening agents come from seaweed, seeds or bacteria. They are long sugar chains that trap water, and each has its own rules: some need heat, some need calcium, some can't take acid.",
+  "bild_im_kopf": "Like different keys for the same lock: all of them lock water in, but each one turns differently.",
+  "was_passiert": "[[gelatine|Gelatine]] is protein from collagen and melts at body temperature. [[agar-agar|Agar]] from red seaweed has to boil, sets at around 40 °C and only melts again around 85 °C. Alginate from brown seaweed sets cold as soon as it meets calcium. A drop in calcium water gets a thin skin this way (spherification). Carrageenan comes in firm and soft types, while locust bean and guar gum thicken without setting.",
+  "warum_wichtig": "Knowing what each agent needs lets you replace gelatine with a vegetarian option or make jellies you can serve warm. And you understand why a recipe with pineapple or lemon juice didn't set.",
+  "synonyme": [
+    "hydrocolloids",
+    "vegan gelling agent",
+    "agar",
+    "alginate",
+    "sodium alginate",
+    "carrageenan",
+    "gellan",
+    "locust bean gum",
+    "guar gum",
+    "spherification",
+    "molecular gastronomy"
+  ],
+  "faustregeln": [
+    "For jellies served warm: agar, because it only melts again around 85 °C.",
+    "Boil agar for at least two minutes, otherwise it won't set.",
+    "For spherification: about 0.5 % alginate in the liquid and a bath of about 0.5 % calcium chloride, guide values from modernist cooking.",
+    "Very acidic liquids set poorly with alginate, because it clumps below a pH of about 3.6.",
+    "Amounts vary a lot between products: the packet instructions come first."
+  ],
+  "rolle": [
+    {
+      "rolle": "binds water into a gel",
+      "prozess": "gelbildung-gelatine"
+    },
+    {
+      "rolle": "needs calcium (alginate)",
+      "prozess": "kalzium-pektin"
+    }
+  ]
+}

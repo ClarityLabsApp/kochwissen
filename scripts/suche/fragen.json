@@ -573,6 +573,54 @@
 [
 "wok"
 ]
+],
+[
+"roggenbrot klitschig",
+[
+"roggenmehl"
+]
+],
+[
+"was bedeutet type 405",
+[
+"mehltyp"
+]
+],
+[
+"ruchmehl",
+[
+"mehltyp"
+]
+],
+[
+"rohmilch abkochen",
+[
+"milch-erhitzen"
+]
+],
+[
+"ei frisch testen",
+[
+"x-ei-schwimmtest"
+]
+],
+[
+"agar alginat",
+[
+"geliermittel"
+]
+],
+[
+"glutenfrei backen",
+[
+"glutenfrei-backen"
+]
+],
+[
+"mit erythrit backen",
+[
+"zuckerersatz"
+]
 ]
 ],
 "en": [
@@ -770,6 +818,24 @@
 "pressure cooker",
 [
 "schnellkochtopf"
+]
+],
+[
+"gummy rye bread",
+[
+"roggenmehl"
+]
+],
+[
+"egg float test",
+[
+"x-ei-schwimmtest"
+]
+],
+[
+"gluten-free bread",
+[
+"glutenfrei-backen"
 ]
 ]
 ]
